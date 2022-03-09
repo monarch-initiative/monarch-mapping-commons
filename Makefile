@@ -30,8 +30,11 @@ data/input/%.sssom.tsv: data/input/
 add-confidence:
 	python -m scripts.add_confidence
 
-data/input/%.ptable.tsv: data/input/confident_%.sssom.tsv
+data/output/%.ptable.tsv: data/input/confident_%.sssom.tsv
 	sssom ptable $< -o $@
+
+data/output/combo.owl: data/input/
+	robot merge -i $<doid.owl -i $<icd10cm.owl -i $<mondo.owl -i $<ncit.owl -i $<ordo.owl --output $@
 
 .PHONY: sssom
 sssom:
@@ -39,8 +42,8 @@ sssom:
 #	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall git+https://github.com/mapping-commons/sssom-py.git@curie_detection_patch
 #	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall sssom==0.3.7
 
-dirs: data/ data/input/ data/tmp/
-data/input/ data/tmp/:
+dirs: data/ data/input/ data/tmp/ data/output
+data/input/ data/tmp/ data/output/:
 	mkdir -p $@
 
 .PHONY: clean
