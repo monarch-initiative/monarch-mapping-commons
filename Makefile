@@ -50,9 +50,13 @@ boomer:
 		   --prefixes $(OUTPUT)/prefix.yaml \
 		   --output $(OUTPUT)/boomer_output \
 		   --window-count 20 \
-		   --runs 100
+		   --runs 100 \
+		   --restrict-output-to-prefixes=MONDO \
+		   --restrict-output-to-prefixes=ICD10CM \
+		   --restrict-output-to-prefixes=ICD10
+
 	find $(OUTPUT)/boomer_output -name "*.json" -type 'f' -size -500c -delete
-	
+
 .PHONY: sssom
 sssom:
 	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall git+https://github.com/mapping-commons/sssom-py.git@curie_detection_patch
