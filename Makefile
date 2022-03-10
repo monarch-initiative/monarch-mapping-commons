@@ -51,9 +51,8 @@ boomer:
 		   --output $(OUTPUT)/boomer_output \
 		   --window-count 20 \
 		   --runs 100
-	tar -vczf $(OUTPUT)/boomer_output.gz $(OUTPUT)/boomer_output
-	rm -rf $(OUTPUT)/boomer_output
-
+	find $(OUTPUT)/boomer_output -name "*.json" -type 'f' -size -500c -delete
+	
 .PHONY: sssom
 sssom:
 	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall git+https://github.com/mapping-commons/sssom-py.git@curie_detection_patch
