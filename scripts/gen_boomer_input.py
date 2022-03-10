@@ -31,6 +31,7 @@ for fn in TSVS:
         write_table(msdf, of)
 
 combined_df = pd.concat(df_list, axis=0, ignore_index=True)
+combined_df = combined_df.drop_duplicates()
 
 with open(PREFIX_YAML_FILE, "w") as yml:
     yaml.dump(prefix_map,yml)
