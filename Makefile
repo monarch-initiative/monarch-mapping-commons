@@ -33,8 +33,10 @@ add-confidence:
 data/output/%.ptable.tsv: data/input/confident_%.sssom.tsv
 	sssom ptable $< -o $@
 
-data/output/combo.owl: data/input/
-	robot merge -i $<doid.owl -i $<icd10cm.owl -i $<mondo.owl -i $<ncit.owl -i $<ordo.owl --output $@
+# data/output/combo.owl: data/input/
+# 	robot merge -i $<doid.owl -i $<icd10cm.owl -i $<mondo.owl -i $<ncit.owl -i $<ordo.owl --output $@
+data/output/combo.owl: data/input/*.owl
+	robot merge $(addprefix -i, $^) --output $@
 
 .PHONY: sssom
 sssom:
