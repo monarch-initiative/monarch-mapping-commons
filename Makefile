@@ -39,7 +39,7 @@ gen-boomer-input:
 # data/output/combo.owl: data/input/
 # 	robot merge -i $<doid.owl -i $<icd10cm.owl -i $<mondo.owl -i $<ncit.owl -i $<ordo.owl --output $@
 $(OUTPUT)/combo.owl: $(INPUT)/*.owl
-	robot merge $(addprefix -i, $^) --output $@
+	robot merge $(addprefix -i , $^) --output $@
 
 .PHONY: ptable
 ptable: $(INPUT)/combined_sssom.tsv
