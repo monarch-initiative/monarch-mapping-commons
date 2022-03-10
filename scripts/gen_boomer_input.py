@@ -5,10 +5,13 @@ from sssom.parsers import read_sssom_table
 from sssom.writers import write_table
 from sssom.util import MappingSetDataFrame
 import pandas as pd
+import yaml
 
 INPUT_DIR = join(dirname(dirname(__file__)), "data/input")
+OUTPUT_DIR = join(dirname(dirname(__file__)), "data/output")
 OUT_PREFIX = 'confident_'
 TSVS = [x for x in listdir(INPUT_DIR) if x.endswith('.tsv') and not x.startswith(OUT_PREFIX)]
+PREFIX_YAML_FILE = join(OUTPUT_DIR, "prefix.yaml")
 
 metadata = dict()
 prefix_map = dict()
@@ -28,6 +31,10 @@ for fn in TSVS:
         write_table(msdf, of)
 
 combined_df = pd.concat(df_list, axis=0, ignore_index=True)
+
+with open(PREFIX_YAML_FILE, "w") as yml:
+    yaml.dump(prefix_map,yml)
+
 combined_msdf = MappingSetDataFrame(df=combined_df, prefix_map=prefix_map, metadata=metadata)
 with open(join(INPUT_DIR, "combined_sssom.tsv"), "w") as combo_file:
     write_table(combined_msdf, combo_file)
