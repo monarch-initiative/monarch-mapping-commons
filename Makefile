@@ -35,7 +35,6 @@ $(INPUT)/%.sssom.tsv: $(INPUT)/
 gen-boomer-input:
 	python -m scripts.gen_boomer_input
 
-
 # data/output/combo.owl: data/input/
 # 	robot merge -i $<doid.owl -i $<icd10cm.owl -i $<mondo.owl -i $<ncit.owl -i $<ordo.owl --output $@
 $(OUTPUT)/combo.owl: $(INPUT)/*.owl
@@ -52,6 +51,7 @@ boomer:
 		   --output $(OUTPUT)/boomer_output \
 		   --window-count 20 \
 		   --runs 100
+	tar -xczf boomer_output.gz boomer_output
 
 .PHONY: sssom
 sssom:
