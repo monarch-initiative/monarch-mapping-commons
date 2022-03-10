@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c34d939bffb6cf6efeea31ed7c5fa5f0e84dc1da83cf54faab1de7a4027183c7",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:N60",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3039",
+          "type" : "CLASS",
+          "lbl" : "Breast Fibrocystic Change"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:N60",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3039",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C3039",
+            "ICD10CM:N60"
+          ]
+        }
+      ]
+    }
+  ]
+}

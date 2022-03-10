@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:589fe38222e3b8ff41577be3d027dd3d5c710adf7cf5c8d190a30c4a27abb259",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C90.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3242",
+          "type" : "CLASS",
+          "lbl" : "Plasma Cell Myeloma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C90.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3242",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C90.0",
+            "NCI:C3242"
+          ]
+        }
+      ]
+    }
+  ]
+}

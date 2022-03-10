@@ -1,0 +1,72 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:adc57e3698ce2bad57dce27d409cc883590f32db04034cbda5d4b023cae598a7",
+      "nodes" : [
+        {
+          "id" : "NCI:C3547",
+          "type" : "CLASS",
+          "lbl" : "Malignant Pleural Neoplasm"
+        },
+        {
+          "id" : "NCI:C3332",
+          "type" : "CLASS",
+          "lbl" : "Pleural Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:C38.4",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:D38.2",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "NCI:C3547",
+          "pred" : "asserted_is_a",
+          "obj" : "NCI:C3332",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C38.4",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3547",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D38.2",
+          "pred" : "is_a",
+          "obj" : "NCI:C3332",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C38.4",
+            "NCI:C3547"
+          ]
+        }
+      ]
+    }
+  ]
+}

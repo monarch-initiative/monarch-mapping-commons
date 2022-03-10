@@ -1,0 +1,115 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:80dcf6f5ebdcdcf9e01288d34e607b6faf8a1fa7c85f772d0645c557a9ea7baf",
+      "nodes" : [
+        {
+          "id" : "NCI:C9357",
+          "type" : "CLASS",
+          "lbl" : "Hodgkin Lymphoma"
+        },
+        {
+          "id" : "NCI:C9283",
+          "type" : "CLASS",
+          "lbl" : "Lymphocyte-Depleted Classic Hodgkin Lymphoma"
+        },
+        {
+          "id" : "ICD10CM:C81.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C81",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C81.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3517",
+          "type" : "CLASS",
+          "lbl" : "Mixed Cellularity Classic Hodgkin Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "NCI:C3517",
+          "pred" : "asserted_is_a",
+          "obj" : "NCI:C9357",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C81",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C9357",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C81.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3517",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "NCI:C9283",
+          "pred" : "asserted_is_a",
+          "obj" : "NCI:C9357",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C81.3",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C9283",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C9357",
+            "ICD10CM:C81"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "NCI:C9283",
+            "ICD10CM:C81.3"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "NCI:C3517",
+            "ICD10CM:C81.2"
+          ]
+        }
+      ]
+    }
+  ]
+}

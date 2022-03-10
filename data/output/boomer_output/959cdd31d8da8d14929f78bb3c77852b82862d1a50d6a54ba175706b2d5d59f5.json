@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:959cdd31d8da8d14929f78bb3c77852b82862d1a50d6a54ba175706b2d5d59f5",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C22.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3099",
+          "type" : "CLASS",
+          "lbl" : "Hepatocellular Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C22.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3099",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C22.0",
+            "NCI:C3099"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b418f60ec1ce5ade85f7d1fad34b743af0135b19ad2ff2a3c2183683cb55273d",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C13.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C7190",
+          "type" : "CLASS",
+          "lbl" : "Malignant Hypopharyngeal Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:C13.2",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C13.1",
+          "pred" : "is_a",
+          "obj" : "NCI:C7190",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C13.2",
+          "pred" : "is_a",
+          "obj" : "NCI:C7190",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}

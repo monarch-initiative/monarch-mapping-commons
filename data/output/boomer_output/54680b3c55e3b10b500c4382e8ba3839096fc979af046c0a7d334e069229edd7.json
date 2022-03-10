@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:54680b3c55e3b10b500c4382e8ba3839096fc979af046c0a7d334e069229edd7",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:I20",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C51221",
+          "type" : "CLASS",
+          "lbl" : "Angina"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:I20",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C51221",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C51221",
+            "ICD10CM:I20"
+          ]
+        }
+      ]
+    }
+  ]
+}

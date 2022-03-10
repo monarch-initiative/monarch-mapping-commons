@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c2d85d60831d0a40eb0657deef241f3229202f5a94103fcf83e063299c9fbdef",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C91.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3163",
+          "type" : "CLASS",
+          "lbl" : "Chronic Lymphocytic Leukemia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C91.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3163",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C3163",
+            "ICD10CM:C91.1"
+          ]
+        }
+      ]
+    }
+  ]
+}

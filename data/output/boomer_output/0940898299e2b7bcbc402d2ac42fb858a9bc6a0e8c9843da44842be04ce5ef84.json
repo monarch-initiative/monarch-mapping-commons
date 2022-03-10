@@ -1,0 +1,35 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0940898299e2b7bcbc402d2ac42fb858a9bc6a0e8c9843da44842be04ce5ef84",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:K70.30",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C34782",
+          "type" : "CLASS",
+          "lbl" : "Alcoholic Cirrhosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:K70.30",
+          "pred" : "is_a",
+          "obj" : "NCI:C34782",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}

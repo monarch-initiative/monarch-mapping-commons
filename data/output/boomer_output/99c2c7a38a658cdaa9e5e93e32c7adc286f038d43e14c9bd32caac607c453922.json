@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:99c2c7a38a658cdaa9e5e93e32c7adc286f038d43e14c9bd32caac607c453922",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:K22.7",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C2891",
+          "type" : "CLASS",
+          "lbl" : "Barrett Esophagus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:K22.7",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C2891",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C2891",
+            "ICD10CM:K22.7"
+          ]
+        }
+      ]
+    }
+  ]
+}

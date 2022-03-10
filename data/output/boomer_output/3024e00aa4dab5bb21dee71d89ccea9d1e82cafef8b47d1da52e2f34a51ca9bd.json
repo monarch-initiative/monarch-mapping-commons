@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3024e00aa4dab5bb21dee71d89ccea9d1e82cafef8b47d1da52e2f34a51ca9bd",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C32.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3544",
+          "type" : "CLASS",
+          "lbl" : "Malignant Glottis Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C32.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3544",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C3544",
+            "ICD10CM:C32.0"
+          ]
+        }
+      ]
+    }
+  ]
+}

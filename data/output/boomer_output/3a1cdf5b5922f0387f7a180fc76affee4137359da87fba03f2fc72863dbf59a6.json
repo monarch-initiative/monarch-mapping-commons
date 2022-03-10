@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3a1cdf5b5922f0387f7a180fc76affee4137359da87fba03f2fc72863dbf59a6",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C18.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C9329",
+          "type" : "CLASS",
+          "lbl" : "Malignant Cecum Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C18.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C9329",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C18.0",
+            "NCI:C9329"
+          ]
+        }
+      ]
+    }
+  ]
+}

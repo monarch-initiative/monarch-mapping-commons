@@ -1,0 +1,58 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:87622da2b99f5d6d934c1260c78e5132a385fd7eb7de799200f7976b565c7123",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C11",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C9321",
+          "type" : "CLASS",
+          "lbl" : "Malignant Nasopharyngeal Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:C11.1",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C11",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C9321",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C11.1",
+          "pred" : "is_a",
+          "obj" : "NCI:C9321",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C9321",
+            "ICD10CM:C11"
+          ]
+        }
+      ]
+    }
+  ]
+}

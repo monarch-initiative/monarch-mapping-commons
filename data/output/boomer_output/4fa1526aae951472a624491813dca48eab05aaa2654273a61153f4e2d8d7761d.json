@@ -1,0 +1,123 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4fa1526aae951472a624491813dca48eab05aaa2654273a61153f4e2d8d7761d",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C64.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C64.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C120456",
+          "type" : "CLASS",
+          "lbl" : "Malignant Kidney Neoplasm Except Pelvis"
+        },
+        {
+          "id" : "ICD10CM:C64",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C7548",
+          "type" : "CLASS",
+          "lbl" : "Malignant Kidney Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:C64.9",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C7A.093",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C7A.093",
+          "pred" : "is_a",
+          "obj" : "NCI:C7548",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C64.2",
+          "pred" : "is_a",
+          "obj" : "NCI:C120456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "NCI:C120456",
+          "pred" : "asserted_is_a",
+          "obj" : "NCI:C7548",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C64.9",
+          "pred" : "is_a",
+          "obj" : "NCI:C120456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C64.1",
+          "pred" : "is_a",
+          "obj" : "NCI:C120456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C64",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C120456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C64",
+            "NCI:C120456"
+          ]
+        }
+      ]
+    }
+  ]
+}

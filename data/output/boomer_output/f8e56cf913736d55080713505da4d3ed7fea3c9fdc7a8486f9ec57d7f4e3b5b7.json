@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f8e56cf913736d55080713505da4d3ed7fea3c9fdc7a8486f9ec57d7f4e3b5b7",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C19",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C7420",
+          "type" : "CLASS",
+          "lbl" : "Malignant Rectosigmoid Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C19",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C7420",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C19",
+            "NCI:C7420"
+          ]
+        }
+      ]
+    }
+  ]
+}

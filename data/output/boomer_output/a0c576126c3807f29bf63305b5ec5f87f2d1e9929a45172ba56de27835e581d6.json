@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a0c576126c3807f29bf63305b5ec5f87f2d1e9929a45172ba56de27835e581d6",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C22.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3728",
+          "type" : "CLASS",
+          "lbl" : "Hepatoblastoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C22.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3728",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C22.2",
+            "NCI:C3728"
+          ]
+        }
+      ]
+    }
+  ]
+}

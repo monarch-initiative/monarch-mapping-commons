@@ -1,0 +1,92 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:306dfa337e3c7f3e20bcc7a453d9aa40b41050f1bd4d0b881d6059248540730c",
+      "nodes" : [
+        {
+          "id" : "DOID:1088",
+          "type" : "CLASS",
+          "lbl" : "meningocele"
+        },
+        {
+          "id" : "DOID:0080016",
+          "type" : "CLASS",
+          "lbl" : "spina bifida"
+        },
+        {
+          "id" : "NCI:C101214",
+          "type" : "CLASS",
+          "lbl" : "Spina Bifida"
+        },
+        {
+          "id" : "MESH:D008588",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:1088",
+          "pred" : "asserted_is_a",
+          "obj" : "DOID:0080016",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080016",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C101214",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080016",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C101214",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1088",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MESH:D008588",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C101214",
+            "DOID:0080016"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "DOID:1088",
+            "MESH:D008588"
+          ]
+        }
+      ]
+    }
+  ]
+}

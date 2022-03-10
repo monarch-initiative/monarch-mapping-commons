@@ -1,0 +1,151 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fcf404730f94b2a72cb4f20760f865ae34ce465e9b475710ce62e63c6f0450e1",
+      "nodes" : [
+        {
+          "id" : "NCI:C7404",
+          "type" : "CLASS",
+          "lbl" : "Malignant Tonsillar Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:C02.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C09",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C02.4",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C02.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C01",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3524",
+          "type" : "CLASS",
+          "lbl" : "Malignant Posterior Tongue Neoplasm"
+        },
+        {
+          "id" : "NCI:C9345",
+          "type" : "CLASS",
+          "lbl" : "Malignant Tongue Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:C02.1",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C01",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3524",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C02.1",
+          "pred" : "is_a",
+          "obj" : "NCI:C9345",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C02.0",
+          "pred" : "is_a",
+          "obj" : "NCI:C9345",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C09",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C7404",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C02.2",
+          "pred" : "is_a",
+          "obj" : "NCI:C9345",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "NCI:C3524",
+          "pred" : "asserted_is_a",
+          "obj" : "NCI:C9345",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C02.4",
+          "pred" : "is_a",
+          "obj" : "NCI:C7404",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C3524",
+            "ICD10CM:C01"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "NCI:C7404",
+            "ICD10CM:C09"
+          ]
+        }
+      ]
+    }
+  ]
+}

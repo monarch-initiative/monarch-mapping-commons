@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:771c24f316ca7b6e8f028eeb0528fa1bd3a08c13e3850289df9f131448a843a2",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C30.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C4765",
+          "type" : "CLASS",
+          "lbl" : "Malignant Middle Ear Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C30.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C4765",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C4765",
+            "ICD10CM:C30.1"
+          ]
+        }
+      ]
+    }
+  ]
+}

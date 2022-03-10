@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8dc0b27961cfd04295016c91f9c650b22f22e5382485c0c5a8311603213ca4fd",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:D47.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C4345",
+          "type" : "CLASS",
+          "lbl" : "Myeloproliferative Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:D47.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C4345",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:D47.1",
+            "NCI:C4345"
+          ]
+        }
+      ]
+    }
+  ]
+}

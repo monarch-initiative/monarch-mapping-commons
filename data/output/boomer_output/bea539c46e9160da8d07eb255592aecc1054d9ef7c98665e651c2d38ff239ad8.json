@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bea539c46e9160da8d07eb255592aecc1054d9ef7c98665e651c2d38ff239ad8",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:D75.81",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3248",
+          "type" : "CLASS",
+          "lbl" : "Myelofibrosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:D75.81",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3248",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:D75.81",
+            "NCI:C3248"
+          ]
+        }
+      ]
+    }
+  ]
+}

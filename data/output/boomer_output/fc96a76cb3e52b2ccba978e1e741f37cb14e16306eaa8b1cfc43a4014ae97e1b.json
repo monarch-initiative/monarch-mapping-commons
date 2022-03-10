@@ -1,0 +1,52 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fc96a76cb3e52b2ccba978e1e741f37cb14e16306eaa8b1cfc43a4014ae97e1b",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:Z94.81",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C135522",
+          "type" : "CLASS",
+          "lbl" : "Graft Status"
+        },
+        {
+          "id" : "ICD10CM:Z94",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:Z94.81",
+          "pred" : "is_a",
+          "obj" : "NCI:C135522",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Z94",
+          "pred" : "is_a",
+          "obj" : "NCI:C135522",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}

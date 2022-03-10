@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c0495769a745fe73ab2ff2c0000f57319d0e2005520968f0bf104ca01ab23caf",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:D70",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C107102",
+          "type" : "CLASS",
+          "lbl" : "Agranulocytosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:D70",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C107102",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:D70",
+            "NCI:C107102"
+          ]
+        }
+      ]
+    }
+  ]
+}

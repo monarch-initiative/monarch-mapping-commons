@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:db6cf826a5d90d7e340c95f9239a2603d06377dee5ac88f9397ec69aafc96c4c",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C18.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C9333",
+          "type" : "CLASS",
+          "lbl" : "Malignant Appendix Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C18.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C9333",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C18.1",
+            "NCI:C9333"
+          ]
+        }
+      ]
+    }
+  ]
+}

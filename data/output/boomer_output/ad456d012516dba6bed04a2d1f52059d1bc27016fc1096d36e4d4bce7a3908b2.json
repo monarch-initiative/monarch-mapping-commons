@@ -1,0 +1,72 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ad456d012516dba6bed04a2d1f52059d1bc27016fc1096d36e4d4bce7a3908b2",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C71.7",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3570",
+          "type" : "CLASS",
+          "lbl" : "Malignant Brain Stem Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:D43.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3139",
+          "type" : "CLASS",
+          "lbl" : "Infratentorial Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C71.7",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3570",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D43.1",
+          "pred" : "is_a",
+          "obj" : "NCI:C3139",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "NCI:C3570",
+          "pred" : "asserted_is_a",
+          "obj" : "NCI:C3139",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C3570",
+            "ICD10CM:C71.7"
+          ]
+        }
+      ]
+    }
+  ]
+}

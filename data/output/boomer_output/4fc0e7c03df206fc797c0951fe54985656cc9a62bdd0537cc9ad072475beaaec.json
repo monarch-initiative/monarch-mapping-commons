@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4fc0e7c03df206fc797c0951fe54985656cc9a62bdd0537cc9ad072475beaaec",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C92.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3520",
+          "type" : "CLASS",
+          "lbl" : "Myeloid Sarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C92.3",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3520",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C3520",
+            "ICD10CM:C92.3"
+          ]
+        }
+      ]
+    }
+  ]
+}

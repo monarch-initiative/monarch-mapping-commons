@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7e9881cf75aa047ad9bd37ccd4fd6368f53d25a217e8570c443f2ba4f3076251",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C54.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C27815",
+          "type" : "CLASS",
+          "lbl" : "Malignant Endometrial Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C54.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C27815",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C54.1",
+            "NCI:C27815"
+          ]
+        }
+      ]
+    }
+  ]
+}

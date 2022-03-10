@@ -1,0 +1,152 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ebe354f39474418a0e24aa02a296ecd2554dcc6f90fb14c5aa7088dee8937feb",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C15.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C7478",
+          "type" : "CLASS",
+          "lbl" : "Malignant Esophageal Neoplasm"
+        },
+        {
+          "id" : "NCI:C3533",
+          "type" : "CLASS",
+          "lbl" : "Malignant Neoplasm of the Upper Third of the Esophagus"
+        },
+        {
+          "id" : "NCI:C3535",
+          "type" : "CLASS",
+          "lbl" : "Malignant Neoplasm of the Lower Third of the Esophagus"
+        },
+        {
+          "id" : "ICD10CM:C15.5",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C15",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C15.4",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3534",
+          "type" : "CLASS",
+          "lbl" : "Malignant Neoplasm of the Middle Third of the Esophagus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C15.5",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3535",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C15.4",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3534",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C15.3",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3533",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "NCI:C3535",
+          "pred" : "asserted_is_a",
+          "obj" : "NCI:C7478",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "NCI:C3533",
+          "pred" : "asserted_is_a",
+          "obj" : "NCI:C7478",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C15",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C7478",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "NCI:C3534",
+          "pred" : "asserted_is_a",
+          "obj" : "NCI:C7478",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C7478",
+            "ICD10CM:C15"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "NCI:C3534",
+            "ICD10CM:C15.4"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "NCI:C3535",
+            "ICD10CM:C15.5"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "ICD10CM:C15.3",
+            "NCI:C3533"
+          ]
+        }
+      ]
+    }
+  ]
+}

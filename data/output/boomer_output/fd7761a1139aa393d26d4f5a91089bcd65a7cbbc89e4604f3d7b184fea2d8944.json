@@ -1,0 +1,72 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fd7761a1139aa393d26d4f5a91089bcd65a7cbbc89e4604f3d7b184fea2d8944",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C75.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C4769",
+          "type" : "CLASS",
+          "lbl" : "Malignant Pituitary Gland Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:D44.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3330",
+          "type" : "CLASS",
+          "lbl" : "Pituitary Gland Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C75.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C4769",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D44.3",
+          "pred" : "is_a",
+          "obj" : "NCI:C3330",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "NCI:C4769",
+          "pred" : "asserted_is_a",
+          "obj" : "NCI:C3330",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C75.1",
+            "NCI:C4769"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c4befe3370625d4c64a9ce27435ca89bcf6bf10ec9c0a914f91d8b813a74700c",
+      "nodes" : [
+        {
+          "id" : "NCI:C9318",
+          "type" : "CLASS",
+          "lbl" : "Malignant Floor of the Mouth Neoplasm"
+        },
+        {
+          "id" : "NCI:C9314",
+          "type" : "CLASS",
+          "lbl" : "Malignant Oral Cavity Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:C04.8",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C04.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C06.2",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C04.0",
+          "pred" : "is_a",
+          "obj" : "NCI:C9318",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C06.2",
+          "pred" : "is_a",
+          "obj" : "NCI:C9314",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C04.8",
+          "pred" : "is_a",
+          "obj" : "NCI:C9318",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "NCI:C9318",
+          "pred" : "asserted_is_a",
+          "obj" : "NCI:C9314",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}

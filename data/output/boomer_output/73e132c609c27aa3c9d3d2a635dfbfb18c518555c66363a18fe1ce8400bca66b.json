@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:73e132c609c27aa3c9d3d2a635dfbfb18c518555c66363a18fe1ce8400bca66b",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C83.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C8851",
+          "type" : "CLASS",
+          "lbl" : "Diffuse Large B-Cell Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C83.3",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C8851",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C83.3",
+            "NCI:C8851"
+          ]
+        }
+      ]
+    }
+  ]
+}

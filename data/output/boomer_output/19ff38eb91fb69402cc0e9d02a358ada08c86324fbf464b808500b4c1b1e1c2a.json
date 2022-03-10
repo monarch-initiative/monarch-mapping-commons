@@ -1,0 +1,140 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:19ff38eb91fb69402cc0e9d02a358ada08c86324fbf464b808500b4c1b1e1c2a",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:D37.8",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:D49.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C8609",
+          "type" : "CLASS",
+          "lbl" : "Malignant Hepatobiliary Neoplasm"
+        },
+        {
+          "id" : "NCI:C8614",
+          "type" : "CLASS",
+          "lbl" : "Hepatobiliary Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:D37.9",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:D37.6",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3052",
+          "type" : "CLASS",
+          "lbl" : "Digestive System Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:C22",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C22",
+          "pred" : "is_a",
+          "obj" : "NCI:C8609",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D37.9",
+          "pred" : "is_a",
+          "obj" : "NCI:C3052",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "NCI:C8609",
+          "pred" : "asserted_is_a",
+          "obj" : "NCI:C3052",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "NCI:C8609",
+          "pred" : "asserted_is_a",
+          "obj" : "NCI:C8614",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "NCI:C8614",
+          "pred" : "asserted_is_a",
+          "obj" : "NCI:C3052",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D49.0",
+          "pred" : "is_a",
+          "obj" : "NCI:C3052",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D37.6",
+          "pred" : "is_a",
+          "obj" : "NCI:C8614",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D37.8",
+          "pred" : "is_a",
+          "obj" : "NCI:C3052",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:70f051941aca8c553cfc1ba795717b8c18b55dd8ad2c61275bddf6e01fb850a1",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C68.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C7507",
+          "type" : "CLASS",
+          "lbl" : "Malignant Urethral Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C68.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C7507",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C7507",
+            "ICD10CM:C68.0"
+          ]
+        }
+      ]
+    }
+  ]
+}

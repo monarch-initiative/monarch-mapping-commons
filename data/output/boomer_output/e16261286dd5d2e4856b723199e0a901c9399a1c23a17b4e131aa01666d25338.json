@@ -1,0 +1,35 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e16261286dd5d2e4856b723199e0a901c9399a1c23a17b4e131aa01666d25338",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C47.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C4961",
+          "type" : "CLASS",
+          "lbl" : "Malignant Peripheral Nervous System Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C47.0",
+          "pred" : "is_a",
+          "obj" : "NCI:C4961",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}

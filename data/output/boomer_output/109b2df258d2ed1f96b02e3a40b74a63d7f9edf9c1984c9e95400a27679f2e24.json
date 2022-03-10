@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:109b2df258d2ed1f96b02e3a40b74a63d7f9edf9c1984c9e95400a27679f2e24",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C31.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3540",
+          "type" : "CLASS",
+          "lbl" : "Malignant Maxillary Sinus Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C31.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3540",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C31.0",
+            "NCI:C3540"
+          ]
+        }
+      ]
+    }
+  ]
+}

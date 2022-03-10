@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ded8c9c54053756b9e223efebdf822e2ac3c4ae9d8cb9bbc9ace9a77206b177d",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C31.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3541",
+          "type" : "CLASS",
+          "lbl" : "Malignant Ethmoid Sinus Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C31.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3541",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C3541",
+            "ICD10CM:C31.1"
+          ]
+        }
+      ]
+    }
+  ]
+}

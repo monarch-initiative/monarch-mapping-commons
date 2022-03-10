@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e962a3952a9645381e9d8623787237baf97ac818336b3031e6edca890a6b3b68",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C83.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C4337",
+          "type" : "CLASS",
+          "lbl" : "Mantle Cell Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C83.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C4337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C83.1",
+            "NCI:C4337"
+          ]
+        }
+      ]
+    }
+  ]
+}

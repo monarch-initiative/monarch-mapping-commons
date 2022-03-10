@@ -1,0 +1,75 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:227e4739b4b5d62cf338f7cba7d65c98da97bc02a18f5320045a5fe0d0f6193f",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C67",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C9334",
+          "type" : "CLASS",
+          "lbl" : "Malignant Bladder Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:C67.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C67.4",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C67",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C9334",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C67.1",
+          "pred" : "is_a",
+          "obj" : "NCI:C9334",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C67.4",
+          "pred" : "is_a",
+          "obj" : "NCI:C9334",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C9334",
+            "ICD10CM:C67"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f2b24d761f433ff83e482dff54fb68b0fd9da2a9546800f18fe092036f7559a7",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C82",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3209",
+          "type" : "CLASS",
+          "lbl" : "Follicular Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C82",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3209",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C3209",
+            "ICD10CM:C82"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bb5b976691d33e6b63fd7b61687db2239c565b3bbe8572623d7942faadfd974b",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C51.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3557",
+          "type" : "CLASS",
+          "lbl" : "Malignant Clitoral Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C51.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3557",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C3557",
+            "ICD10CM:C51.2"
+          ]
+        }
+      ]
+    }
+  ]
+}
