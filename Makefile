@@ -8,7 +8,7 @@ GET_TTLS=$(patsubst %, data/tmp/%.ttl, $(TTLS))
 GET_MAPPINGS=$(patsubst %, data/input/%.sssom.tsv, $(MAPS))
 GET_PTABLES=$(patsubst %, data/input/%.ptable.tsv, $(MAPS))
 
-all: get-onts get-mappings add-confidence
+all: get-onts get-mappings add-conf-and-merge data/output/combo.owl
 
 get-onts: $(GET_OWLS) $(GET_TTLS) data/input/icd10cm.owl
 get-mappings: $(GET_MAPPINGS) | sssom
@@ -27,8 +27,8 @@ data/input/icd10cm.owl: data/tmp/icd10cm.ttl | data/tmp/
 data/input/%.sssom.tsv: data/input/
 	wget https://raw.githubusercontent.com/mapping-commons/disease-mappings/new_mappings/mappings/$*.sssom.tsv -O $@
 
-add-confidence:
-	python -m scripts.add_confidence
+add-conf-and-merge:
+	python -m scripts.add_conf_and_agg_sssom
 
 data/output/%.ptable.tsv: data/input/confident_%.sssom.tsv
 	sssom ptable $< -o $@
