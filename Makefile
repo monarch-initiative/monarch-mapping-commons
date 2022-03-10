@@ -51,7 +51,8 @@ boomer:
 		   --output $(OUTPUT)/boomer_output \
 		   --window-count 20 \
 		   --runs 100
-	tar -xczf boomer_output.gz boomer_output
+	tar -vczf $(OUTPUT)/boomer_output.gz $(OUTPUT)/boomer_output
+	rm -rf $(OUTPUT)/boomer_output
 
 .PHONY: sssom
 sssom:
