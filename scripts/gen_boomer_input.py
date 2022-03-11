@@ -33,7 +33,7 @@ for fn in TSVS:
 combined_df = pd.concat(df_list, axis=0, ignore_index=True)
 combined_df = combined_df.drop_duplicates()
 
-with open(PREFIX_YAML_FILE, "w") as yml:
+with open(PREFIX_YAML_FILE, "w+") as yml:
     yaml.dump(prefix_map,yml)
 
 combined_msdf = MappingSetDataFrame(df=combined_df, prefix_map=prefix_map, metadata=metadata)

@@ -3,9 +3,11 @@ DATA = data
 INPUT = data/input
 OUTPUT = data/output
 
-OWLS=ncit ordo doid mondo
+# OWLS=ncit ordo doid mondo
+OWLS=mondo
 TTLS=icd10cm
-MAPS= ncit ordo doid mondo_hasdbref_icd10cm ncit_icd10_2016 ncit_icd10_2017
+# MAPS= ncit ordo doid mondo_hasdbref_icd10cm ncit_icd10_2016 ncit_icd10_2017
+MAPS = mondo_hasdbref_icd10cm
 GET_OWLS=$(patsubst %, $(INPUT)/%.owl, $(OWLS))
 GET_TTLS=$(patsubst %, data/tmp/%.ttl, $(TTLS))
 GET_MAPPINGS=$(patsubst %, $(INPUT)/%.sssom.tsv, $(MAPS))
@@ -28,6 +30,9 @@ $(INPUT)/%.owl: | $(INPUT)/
 
 $(INPUT)/icd10cm.owl: data/tmp/icd10cm.ttl | data/tmp/
 	robot convert --input $< --format ttl --output $@
+
+$(INPUT)/mondo_hasdbref_icd10cm.sssom.tsv: $(INPUT)/
+	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_hasdbxref_icd10cm.sssom.tsv -O $@
 
 $(INPUT)/%.sssom.tsv: $(INPUT)/
 	wget https://raw.githubusercontent.com/mapping-commons/disease-mappings/new_mappings/mappings/$*.sssom.tsv -O $@
@@ -69,3 +74,17 @@ $(INPUT)/ data/tmp/ $(OUTPUT)/ $(OUTPUT)/boomer_output:
 .PHONY: clean
 clean: data
 	rm -rf $<
+
+################
+JSONS=$(wildcard rhea-boom/*.json)
+PNGS=$(patsubst %.json, %.png, $(JSONS))
+
+rhea-boom/%.json: rhea-boom
+
+%.dot: %.json
+	og2dot.js -s rhea-go-style.json $< >$@
+
+%.png: %.dot
+	dot $< -Tpng -Grankdir=BT >$@
+
+pngs: $(PNGS)
