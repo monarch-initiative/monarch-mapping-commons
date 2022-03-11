@@ -57,8 +57,7 @@ boomer:
 		   --window-count 20 \
 		   --runs 100 \
 		   --restrict-output-to-prefixes=MONDO \
-		   --restrict-output-to-prefixes=ICD10CM \
-		   --restrict-output-to-prefixes=ICD10
+		   --restrict-output-to-prefixes=ICD10CM
 
 	find $(OUTPUT)/boomer_output -name "*.json" -type 'f' -size -500c -delete
 
