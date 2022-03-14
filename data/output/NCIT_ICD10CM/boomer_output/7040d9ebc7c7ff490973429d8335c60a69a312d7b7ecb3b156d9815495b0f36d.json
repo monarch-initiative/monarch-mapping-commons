@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7040d9ebc7c7ff490973429d8335c60a69a312d7b7ecb3b156d9815495b0f36d",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C84.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3246",
+          "type" : "CLASS",
+          "lbl" : "Mycosis Fungoides"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C84.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3246",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C84.0",
+            "NCI:C3246"
+          ]
+        }
+      ]
+    }
+  ]
+}

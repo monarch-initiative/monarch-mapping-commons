@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c86c48311e40216e363abcfea97caab3f79c6df295c854bc706f851222b1acb9",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C83.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C7540",
+          "type" : "CLASS",
+          "lbl" : "Small Lymphocytic Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C83.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C7540",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C7540",
+            "ICD10CM:C83.0"
+          ]
+        }
+      ]
+    }
+  ]
+}

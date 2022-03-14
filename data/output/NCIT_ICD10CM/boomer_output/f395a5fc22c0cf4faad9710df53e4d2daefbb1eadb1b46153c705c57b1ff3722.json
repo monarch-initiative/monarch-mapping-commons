@@ -1,0 +1,52 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f395a5fc22c0cf4faad9710df53e4d2daefbb1eadb1b46153c705c57b1ff3722",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:D49.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3355",
+          "type" : "CLASS",
+          "lbl" : "Respiratory System Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:D38.1",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:D49.1",
+          "pred" : "is_a",
+          "obj" : "NCI:C3355",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D38.1",
+          "pred" : "is_a",
+          "obj" : "NCI:C3355",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}
