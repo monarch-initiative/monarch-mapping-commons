@@ -1,0 +1,92 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:75bc61191f2570c7bf3a3470466aa1c2072da7e42165570f8f954c2a596eb648",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C16.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C16.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C9331",
+          "type" : "CLASS",
+          "lbl" : "Malignant Gastric Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:C16",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C16.0",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C16.0",
+          "pred" : "is_a",
+          "obj" : "NCI:C9331",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C16.3",
+          "pred" : "is_a",
+          "obj" : "NCI:C9331",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C16",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C9331",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C16.2",
+          "pred" : "is_a",
+          "obj" : "NCI:C9331",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C9331",
+            "ICD10CM:C16"
+          ]
+        }
+      ]
+    }
+  ]
+}
