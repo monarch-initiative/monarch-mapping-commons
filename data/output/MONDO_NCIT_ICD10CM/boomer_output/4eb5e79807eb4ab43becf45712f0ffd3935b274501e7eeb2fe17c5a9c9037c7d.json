@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4eb5e79807eb4ab43becf45712f0ffd3935b274501e7eeb2fe17c5a9c9037c7d",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C81.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C7258",
+          "type" : "CLASS",
+          "lbl" : "Nodular Lymphocyte Predominant Hodgkin Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C81.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C7258",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C7258",
+            "ICD10CM:C81.0"
+          ]
+        }
+      ]
+    }
+  ]
+}

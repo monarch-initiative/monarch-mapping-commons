@@ -1,0 +1,52 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3de08e501972766b458d7b70b6d092d5b56c11832ada4dbc03997243fa5e49c6",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:D35.02",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3629",
+          "type" : "CLASS",
+          "lbl" : "Benign Adrenal Gland Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:D35.00",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:D35.02",
+          "pred" : "is_a",
+          "obj" : "NCI:C3629",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D35.00",
+          "pred" : "is_a",
+          "obj" : "NCI:C3629",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}

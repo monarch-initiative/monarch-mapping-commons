@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:83f436e1b35facf1d3fbdafd184650db125d282c3792ed1d9027eff8b22c2335",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C51",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C7502",
+          "type" : "CLASS",
+          "lbl" : "Malignant Vulvar Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C51",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C7502",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C7502",
+            "ICD10CM:C51"
+          ]
+        }
+      ]
+    }
+  ]
+}

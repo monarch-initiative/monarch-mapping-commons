@@ -1,0 +1,58 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:21ce3495a65751079e25df4bbd749bd3e5cb4aeafa4cb84a59be1673466f845d",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C71",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3568",
+          "type" : "CLASS",
+          "lbl" : "Malignant Brain Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:C71.5",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C71",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3568",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C71.5",
+          "pred" : "is_a",
+          "obj" : "NCI:C3568",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C3568",
+            "ICD10CM:C71"
+          ]
+        }
+      ]
+    }
+  ]
+}
