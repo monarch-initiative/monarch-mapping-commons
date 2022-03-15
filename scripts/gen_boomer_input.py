@@ -12,11 +12,19 @@ OUTPUT_DIR = join(dirname(dirname(__file__)), "data/output")
 OUT_PREFIX = 'confident_'
 TSVS = [x for x in listdir(INPUT_DIR) if x.endswith('.tsv') and not x.startswith(OUT_PREFIX)]
 PREFIX_YAML_FILE = join(OUTPUT_DIR, "prefix.yaml")
+PREFIX_RECON_YAML = join(dirname(dirname(__file__)), "prefix_reconciliation.yaml")
 
 metadata = dict()
 prefix_map = dict()
 msdf_list = []
 df_list = []
+# Read recon file
+with open(PREFIX_RECON_YAML, "r") as pref_rec:
+    prefix_reconciliation = yaml.safe_load(pref_rec)
+
+prefix_synonyms = prefix_reconciliation[0]['prefix_synonyms']
+prefix_expansion = prefix_reconciliation[1]['prefix_expansion_reconciliation']
+
 for fn in TSVS:
     fp = join(INPUT_DIR, fn)
     print(f"Loading file:{fn} ")
@@ -24,6 +32,21 @@ for fn in TSVS:
     msdf.df['confidence'] = 0.8
     metadata.update({k:v for k,v in msdf.metadata.items() if k not in metadata.keys()})
     prefix_map.update({k:v for k,v in msdf.prefix_map.items() if k not in prefix_map.keys()})
+    # UPDATE PREFIX_MAP based on PREFIX_RECON_YAML
+    for k in prefix_map.keys():
+        prefix_syn_key = [s for s in prefix_synonyms.keys() if k == s]
+        if len(prefix_syn_key) > 0:
+            for sk in prefix_syn_key:
+                correct_key = prefix_synonyms[sk]
+                correct_value = prefix_expansion[correct_key]
+                prefix_map.pop(sk, None)
+                # Check if key exists.
+                # If not, then condition applies.
+                # If we want to change value regardless,
+                # remove 'if' condition
+                if correct_key not in prefix_map.keys():
+                    prefix_map[correct_key] = correct_value
+    
     msdf_list.append(msdf)
     df_list.append(msdf.df)
     out_fn = OUT_PREFIX+fn
