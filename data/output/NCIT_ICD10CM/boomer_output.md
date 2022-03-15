@@ -1,9 +1,3 @@
-## [ICD10CM:C22](http://apps.who.int/classifications/icd10/browse/2010/en#/C22) [ICD10CM:C24.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C24.9) [ICD10CM:C24](http://apps.who.int/classifications/icd10/browse/2010/en#/C24) [Malignant Hepatobiliary Neoplasm](http://purl.obolibrary.org/obo/NCIT_C8609)
-
-- [Malignant Hepatobiliary Neoplasm](http://purl.obolibrary.org/obo/NCIT_C8609) ProperSuperClassOf [ICD10CM:C22](http://apps.who.int/classifications/icd10/browse/2010/en#/C22)	(most probable)	0.8
-- [Malignant Hepatobiliary Neoplasm](http://purl.obolibrary.org/obo/NCIT_C8609) SiblingOf [ICD10CM:C24](http://apps.who.int/classifications/icd10/browse/2010/en#/C24)	(most probable)	0.8
-- [Malignant Hepatobiliary Neoplasm](http://purl.obolibrary.org/obo/NCIT_C8609) SiblingOf [ICD10CM:C24.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C24.9)	(most probable)	0.8
-
 ## [Diffuse Large B-Cell Lymphoma](http://purl.obolibrary.org/obo/NCIT_C8851) [ICD10CM:C83.30](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.30) [ICD10CM:C83.31](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.31) [ICD10CM:C83.32](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.32) [ICD10CM:C83.33](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.33) [ICD10CM:C83.38](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.38) [ICD10CM:C83.39](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.39) [ICD10CM:C83.3](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.3) [ICD10CM:C83.89](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.89) [ICD10CM:C83](http://apps.who.int/classifications/icd10/browse/2010/en#/C83)
 
 - [Diffuse Large B-Cell Lymphoma](http://purl.obolibrary.org/obo/NCIT_C8851) SiblingOf [ICD10CM:C83](http://apps.who.int/classifications/icd10/browse/2010/en#/C83)	(most probable)	0.8
@@ -26,19 +20,19 @@
 
 ## [Cytomegaloviral Infection](http://purl.obolibrary.org/obo/NCIT_C53649) [ICD10CM:B25.9](http://apps.who.int/classifications/icd10/browse/2010/en#/B25.9) [ICD10CM:B25](http://apps.who.int/classifications/icd10/browse/2010/en#/B25)
 
-- [Cytomegaloviral Infection](http://purl.obolibrary.org/obo/NCIT_C53649) SiblingOf [ICD10CM:B25.9](http://apps.who.int/classifications/icd10/browse/2010/en#/B25.9)	(most probable)	0.8
 - [Cytomegaloviral Infection](http://purl.obolibrary.org/obo/NCIT_C53649) EquivalentTo [ICD10CM:B25](http://apps.who.int/classifications/icd10/browse/2010/en#/B25)	(most probable)	0.8
+- [Cytomegaloviral Infection](http://purl.obolibrary.org/obo/NCIT_C53649) SiblingOf [ICD10CM:B25.9](http://apps.who.int/classifications/icd10/browse/2010/en#/B25.9)	(most probable)	0.8
 
 ## [Hematopoietic and Lymphoid Cell Neoplasm](http://purl.obolibrary.org/obo/NCIT_C27134) [ICD10CM:C96.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C96.9) [ICD10CM:C96](http://apps.who.int/classifications/icd10/browse/2010/en#/C96) [ICD10CM:D47](http://apps.who.int/classifications/icd10/browse/2010/en#/D47)
 
-- [Hematopoietic and Lymphoid Cell Neoplasm](http://purl.obolibrary.org/obo/NCIT_C27134) SiblingOf [ICD10CM:C96](http://apps.who.int/classifications/icd10/browse/2010/en#/C96)	(most probable)	0.8
 - [Hematopoietic and Lymphoid Cell Neoplasm](http://purl.obolibrary.org/obo/NCIT_C27134) SiblingOf [ICD10CM:C96.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C96.9)	(most probable)	0.8
 - [Hematopoietic and Lymphoid Cell Neoplasm](http://purl.obolibrary.org/obo/NCIT_C27134) SiblingOf [ICD10CM:D47](http://apps.who.int/classifications/icd10/browse/2010/en#/D47)	(most probable)	0.8
+- [Hematopoietic and Lymphoid Cell Neoplasm](http://purl.obolibrary.org/obo/NCIT_C27134) SiblingOf [ICD10CM:C96](http://apps.who.int/classifications/icd10/browse/2010/en#/C96)	(most probable)	0.8
 
 ## [ICD10CM:C79.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C79.8) [ICD10CM:C79](http://apps.who.int/classifications/icd10/browse/2010/en#/C79) [Metastatic Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C36263)
 
-- [Metastatic Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C36263) SiblingOf [ICD10CM:C79](http://apps.who.int/classifications/icd10/browse/2010/en#/C79)	(most probable)	0.8
 - [Metastatic Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C36263) SiblingOf [ICD10CM:C79.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C79.8)	(most probable)	0.8
+- [Metastatic Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C36263) SiblingOf [ICD10CM:C79](http://apps.who.int/classifications/icd10/browse/2010/en#/C79)	(most probable)	0.8
 
 ## SINGLETONS
 
@@ -55,7 +49,6 @@
 - [Bone Marrow Donor](http://purl.obolibrary.org/obo/NCIT_C153141) EquivalentTo [ICD10CM:Z52.3](http://apps.who.int/classifications/icd10/browse/2010/en#/Z52.3)	(most probable)	0.8
 - [Screening for Colorectal Cancer](http://purl.obolibrary.org/obo/NCIT_C15549) SiblingOf [ICD10CM:Z12.11](http://apps.who.int/classifications/icd10/browse/2010/en#/Z12.11)	(most probable)	0.8
 - [Elevated Serum CA-125 Tumor Antigen](http://purl.obolibrary.org/obo/NCIT_C142104) EquivalentTo [ICD10CM:R97.1](http://apps.who.int/classifications/icd10/browse/2010/en#/R97.1)	(most probable)	0.8
-- [Circadian Rhythm Sleep Disorder](http://purl.obolibrary.org/obo/NCIT_C95071) SiblingOf [ICD10:Z91.3](http://test-curie-forboomer-to-work.com/icdZ91.3)	(most probable)	0.8
 - [Recurrent Acute Myeloid Leukemia](http://purl.obolibrary.org/obo/NCIT_C148427) EquivalentTo [ICD10CM:C92.02](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.02)	(most probable)	0.8
 - [Malignant Neoplasm of the Middle Third of the Esophagus](http://purl.obolibrary.org/obo/NCIT_C3534) EquivalentTo [ICD10CM:C15.4](http://apps.who.int/classifications/icd10/browse/2010/en#/C15.4)	(most probable)	0.8
 - [Acute Myeloid Leukemia with Multilineage Dysplasia in Remission](http://purl.obolibrary.org/obo/NCIT_C156724) EquivalentTo [ICD10CM:C92.A1](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.A1)	(most probable)	0.8
@@ -70,7 +63,6 @@
 - [Clinical Relapse of Multiple Myeloma or Plasma Cell Leukemia by IMWG](http://purl.obolibrary.org/obo/NCIT_C123908) SiblingOf [ICD10CM:C90.02](http://apps.who.int/classifications/icd10/browse/2010/en#/C90.02)	(most probable)	0.8
 - [Myeloid Leukemia in Remission](http://purl.obolibrary.org/obo/NCIT_C4899) SiblingOf [ICD10CM:C92.Z1](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.Z1)	(most probable)	0.8
 - [Atypical Carcinoid Tumor](http://purl.obolibrary.org/obo/NCIT_C72074) SiblingOf [ICD10CM:C7A.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C7A.00)	(most probable)	0.8
-- [Behavioral Disorder](http://purl.obolibrary.org/obo/NCIT_C35470) SiblingOf [ICD10:Z64.2](http://test-curie-forboomer-to-work.com/icdZ64.2)	(most probable)	0.8
 - [Infectious Disorder](http://purl.obolibrary.org/obo/NCIT_C26726) SiblingOf [ICD10CM:B99](http://apps.who.int/classifications/icd10/browse/2010/en#/B99)	(most probable)	0.8
 - [Malignant Spinal Cord Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3572) EquivalentTo [ICD10CM:C72.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C72.0)	(most probable)	0.8
 - [Hormonal Contraception](http://purl.obolibrary.org/obo/NCIT_C92808) SiblingOf [ICD10CM:Z79.3](http://apps.who.int/classifications/icd10/browse/2010/en#/Z79.3)	(most probable)	0.8
@@ -121,6 +113,7 @@
 - [Alcoholic Liver Disease](http://purl.obolibrary.org/obo/NCIT_C34783) EquivalentTo [ICD10CM:K70](http://apps.who.int/classifications/icd10/browse/2010/en#/K70)	(most probable)	0.8
 - [Phakomatosis](http://purl.obolibrary.org/obo/NCIT_C84348) SiblingOf [ICD10CM:Q85](http://apps.who.int/classifications/icd10/browse/2010/en#/Q85)	(most probable)	0.8
 - [Liver Sarcoma](http://purl.obolibrary.org/obo/NCIT_C4437) SiblingOf [ICD10CM:C22.4](http://apps.who.int/classifications/icd10/browse/2010/en#/C22.4)	(most probable)	0.8
+- [Accident](http://purl.obolibrary.org/obo/NCIT_C34340) SiblingOf [ICD10:V99](http://icd10data.org/V99)	(most probable)	0.8
 - [Malignant Vaginal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7410) EquivalentTo [ICD10CM:C52](http://apps.who.int/classifications/icd10/browse/2010/en#/C52)	(most probable)	0.8
 - [Myelofibrosis](http://purl.obolibrary.org/obo/NCIT_C3248) EquivalentTo [ICD10CM:D75.81](http://apps.who.int/classifications/icd10/browse/2010/en#/D75.81)	(most probable)	0.8
 - [Pain](http://purl.obolibrary.org/obo/NCIT_C3303) ProperSuperClassOf [ICD10CM:R52](http://apps.who.int/classifications/icd10/browse/2010/en#/R52)	(most probable)	0.8
@@ -133,10 +126,10 @@
 - [Inpatient](http://purl.obolibrary.org/obo/NCIT_C25182) SiblingOf [ICD10CM:Z76.4](http://apps.who.int/classifications/icd10/browse/2010/en#/Z76.4)	(most probable)	0.8
 - [Soft Tissue Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3377) SiblingOf [ICD10CM:D48.1](http://apps.who.int/classifications/icd10/browse/2010/en#/D48.1)	(most probable)	0.8
 - [Hernia with Obstruction without Mention of Gangrene](http://purl.obolibrary.org/obo/NCIT_C35641) ProperSuperClassOf [ICD10CM:K43.3](http://apps.who.int/classifications/icd10/browse/2010/en#/K43.3)	(most probable)	0.8
+- [Behavioral Disorder](http://purl.obolibrary.org/obo/NCIT_C35470) SiblingOf [ICD10:Z64.2](http://icd10data.org/Z64.2)	(most probable)	0.8
 - [Chronic Leukemia](http://purl.obolibrary.org/obo/NCIT_C3483) SiblingOf [ICD10CM:C95.10](http://apps.who.int/classifications/icd10/browse/2010/en#/C95.10)	(most probable)	0.8
 - [Malignant Duodenal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9328) EquivalentTo [ICD10CM:C17.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C17.0)	(most probable)	0.8
 - [Home Care](http://purl.obolibrary.org/obo/NCIT_C99957) SiblingOf [ICD10CM:Z63.6](http://apps.who.int/classifications/icd10/browse/2010/en#/Z63.6)	(most probable)	0.8
-- [Accident](http://purl.obolibrary.org/obo/NCIT_C34340) SiblingOf [ICD10:V99](http://test-curie-forboomer-to-work.com/icdV99)	(most probable)	0.8
 - [Malignant Urinary System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9297) SiblingOf [ICD10CM:C68.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C68.9)	(most probable)	0.8
 - [Benign Thymus Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4458) EquivalentTo [ICD10CM:D15.0](http://apps.who.int/classifications/icd10/browse/2010/en#/D15.0)	(most probable)	0.8
 - [Malignant Choroid Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3566) ProperSuperClassOf [ICD10CM:C69.30](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.30)	(most probable)	0.8
@@ -159,6 +152,7 @@
 - [Essential Thrombocythemia](http://purl.obolibrary.org/obo/NCIT_C3407) EquivalentTo [ICD10CM:D47.3](http://apps.who.int/classifications/icd10/browse/2010/en#/D47.3)	(most probable)	0.8
 - [Malignant Hard Palate Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3528) EquivalentTo [ICD10CM:C05.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C05.0)	(most probable)	0.8
 - [Malignant Extrahepatic Bile Duct Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7483) EquivalentTo [ICD10CM:C24.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C24.0)	(most probable)	0.8
+- [Circadian Rhythm Sleep Disorder](http://purl.obolibrary.org/obo/NCIT_C95071) SiblingOf [ICD10:Z91.3](http://icd10data.org/Z91.3)	(most probable)	0.8
 - [Metastatic Carcinoid Tumor](http://purl.obolibrary.org/obo/NCIT_C6431) SiblingOf [ICD10CM:C7B.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C7B.00)	(most probable)	0.8
 - [Malignant Uvula Neoplasm](http://purl.obolibrary.org/obo/NCIT_C35177) EquivalentTo [ICD10CM:C05.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C05.2)	(most probable)	0.8
 - [Myelodysplastic Syndrome with Isolated del(5q)](http://purl.obolibrary.org/obo/NCIT_C6867) EquivalentTo [ICD10CM:D46.C](http://apps.who.int/classifications/icd10/browse/2010/en#/D46.C)	(most probable)	0.8
@@ -195,17 +189,17 @@
 - [Malignant Neoplasm of the Upper Third of the Esophagus](http://purl.obolibrary.org/obo/NCIT_C3533) EquivalentTo [ICD10CM:C15.3](http://apps.who.int/classifications/icd10/browse/2010/en#/C15.3)	(most probable)	0.8
 - [Genitourinary Signs and Symptoms](http://purl.obolibrary.org/obo/NCIT_C5035) SiblingOf [ICD10CM:N99](http://apps.who.int/classifications/icd10/browse/2010/en#/N99)	(most probable)	0.8
 - [Malignant Rectal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7418) EquivalentTo [ICD10CM:C20](http://apps.who.int/classifications/icd10/browse/2010/en#/C20)	(most probable)	0.8
-- [Malignant Neoplasm of the Cervical Esophagus](http://purl.obolibrary.org/obo/NCIT_C4763) EquivalentTo [ICD10:C15.0](http://test-curie-forboomer-to-work.com/icdC15.0)	(most probable)	0.8
 - [Myeloproliferative Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4345) EquivalentTo [ICD10CM:D47.1](http://apps.who.int/classifications/icd10/browse/2010/en#/D47.1)	(most probable)	0.8
 - [Metastatic Malignant Neoplasm in the Brain](http://purl.obolibrary.org/obo/NCIT_C3813) SiblingOf [ICD10CM:C79.31](http://apps.who.int/classifications/icd10/browse/2010/en#/C79.31)	(most probable)	0.8
 - [Cancer Screening](http://purl.obolibrary.org/obo/NCIT_C15406) SiblingOf [ICD10CM:Z12](http://apps.who.int/classifications/icd10/browse/2010/en#/Z12)	(most probable)	0.8
 - [Urinary System Disorder](http://purl.obolibrary.org/obo/NCIT_C3430) SiblingOf [ICD10CM:N28.89](http://apps.who.int/classifications/icd10/browse/2010/en#/N28.89)	(most probable)	0.8
 - [Solitary Pulmonary Nodule](http://purl.obolibrary.org/obo/NCIT_C55818) EquivalentTo [ICD10CM:R91.1](http://apps.who.int/classifications/icd10/browse/2010/en#/R91.1)	(most probable)	0.8
 - [Benign Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3677) SiblingOf [ICD10CM:D36.7](http://apps.who.int/classifications/icd10/browse/2010/en#/D36.7)	(most probable)	0.8
-- [Malignant Major Salivary Gland Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4762) SiblingOf [ICD10CM:C08.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C08.9)	(most probable)	0.8
 - [Acute Leukemia in Remission](http://purl.obolibrary.org/obo/NCIT_C4897) SiblingOf [ICD10CM:C95.01](http://apps.who.int/classifications/icd10/browse/2010/en#/C95.01)	(most probable)	0.8
 - [Malignant Pharyngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7545) SiblingOf [ICD10CM:C14.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C14.0)	(most probable)	0.8
 - [Acute Promyelocytic Leukemia with PML-RARA](http://purl.obolibrary.org/obo/NCIT_C3182) EquivalentTo [ICD10CM:C92.4](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.4)	(most probable)	0.8
+- [Malignant Major Salivary Gland Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4762) SiblingOf [ICD10CM:C08.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C08.9)	(most probable)	0.8
+- [Abnormal Hematopoietic and Lymphoid Cell](http://purl.obolibrary.org/obo/NCIT_C36987) SiblingOf [ICD10:R72](http://icd10data.org/R72)	(most probable)	0.8
 - [Acute Myeloid Leukemia in Remission](http://purl.obolibrary.org/obo/NCIT_C3588) EquivalentTo [ICD10CM:C92.01](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.01)	(most probable)	0.8
 - [Metastatic Malignant Neoplasm in the Breast](http://purl.obolibrary.org/obo/NCIT_C7511) SiblingOf [ICD10CM:C79.81](http://apps.who.int/classifications/icd10/browse/2010/en#/C79.81)	(most probable)	0.8
 - [Primary Cutaneous T-Cell Non-Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C3467) SiblingOf [ICD10CM:C84.A3](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.A3)	(most probable)	0.8
@@ -225,15 +219,15 @@
 - [Infratentorial Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3139) ProperSuperClassOf [ICD10CM:D43.1](http://apps.who.int/classifications/icd10/browse/2010/en#/D43.1)	(most probable)	0.8
 - [Idiopathic Aplastic Anemia](http://purl.obolibrary.org/obo/NCIT_C61230) EquivalentTo [ICD10CM:D61.3](http://apps.who.int/classifications/icd10/browse/2010/en#/D61.3)	(most probable)	0.8
 - [Pleural Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3332) ProperSuperClassOf [ICD10CM:D38.2](http://apps.who.int/classifications/icd10/browse/2010/en#/D38.2)	(most probable)	0.8
-- [Abnormal Hematopoietic and Lymphoid Cell](http://purl.obolibrary.org/obo/NCIT_C36987) SiblingOf [ICD10:R72](http://test-curie-forboomer-to-work.com/icdR72)	(most probable)	0.8
 - [Malignant Pleural Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3547) EquivalentTo [ICD10CM:C38.4](http://apps.who.int/classifications/icd10/browse/2010/en#/C38.4)	(most probable)	0.8
 - [Metastatic Malignant Neoplasm in the Liver](http://purl.obolibrary.org/obo/NCIT_C4758) SiblingOf [ICD10CM:C78.7](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.7)	(most probable)	0.8
 - [Malignant Submandibular Gland Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3526) EquivalentTo [ICD10CM:C08.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C08.0)	(most probable)	0.8
 - [Device-Related Infection](http://purl.obolibrary.org/obo/NCIT_C78255) SiblingOf [ICD10CM:T80.2](http://apps.who.int/classifications/icd10/browse/2010/en#/T80.2)	(most probable)	0.8
 - [Liver Neuroendocrine Tumor](http://purl.obolibrary.org/obo/NCIT_C5783) SiblingOf [ICD10CM:C7B.02](http://apps.who.int/classifications/icd10/browse/2010/en#/C7B.02)	(most probable)	0.8
 - [Congenital Anemia](http://purl.obolibrary.org/obo/NCIT_C35228) SiblingOf [ICD10CM:P61.4](http://apps.who.int/classifications/icd10/browse/2010/en#/P61.4)	(most probable)	0.8
-- [Malignant Spermatic Cord Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3559) ProperSuperClassOf [ICD10CM:C63.10](http://apps.who.int/classifications/icd10/browse/2010/en#/C63.10)	(most probable)	0.8
 - [Acquired Hemolytic Anemia](http://purl.obolibrary.org/obo/NCIT_C34377) EquivalentTo [ICD10CM:D59](http://apps.who.int/classifications/icd10/browse/2010/en#/D59)	(most probable)	0.8
+- [Malignant Spermatic Cord Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3559) ProperSuperClassOf [ICD10CM:C63.10](http://apps.who.int/classifications/icd10/browse/2010/en#/C63.10)	(most probable)	0.8
+- [Malignant Neoplasm of the Cervical Esophagus](http://purl.obolibrary.org/obo/NCIT_C4763) EquivalentTo [ICD10:C15.0](http://icd10data.org/C15.0)	(most probable)	0.8
 - [Liver and Intrahepatic Bile Duct Carcinoma](http://purl.obolibrary.org/obo/NCIT_C7927) SiblingOf [ICD10CM:C22.7](http://apps.who.int/classifications/icd10/browse/2010/en#/C22.7)	(most probable)	0.8
 - [Malignant Anterior Tongue Neoplasm](http://purl.obolibrary.org/obo/NCIT_C6061) SiblingOf [ICD10CM:C02.3](http://apps.who.int/classifications/icd10/browse/2010/en#/C02.3)	(most probable)	0.8
 - [Lung Atypical Carcinoid Tumor](http://purl.obolibrary.org/obo/NCIT_C45551) SiblingOf [ICD10CM:C7A.090](http://apps.who.int/classifications/icd10/browse/2010/en#/C7A.090)	(most probable)	0.8
@@ -294,13 +288,6 @@
 - [Mature T-Cell and NK-Cell Non-Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C3468) EquivalentTo [ICD10CM:C84](http://apps.who.int/classifications/icd10/browse/2010/en#/C84)	(most probable)	0.8
 - [Mature T-Cell and NK-Cell Non-Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C3468) SiblingOf [ICD10CM:C84.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.9)	(most probable)	0.8
 
-## [ICD10:C92.7](http://test-curie-forboomer-to-work.com/icdC92.7) [ICD10CM:C92.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.9) [ICD10CM:C92.Z](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.Z) [ICD10CM:C92](http://apps.who.int/classifications/icd10/browse/2010/en#/C92) [Myeloid Leukemia](http://purl.obolibrary.org/obo/NCIT_C3172)
-
-- [Myeloid Leukemia](http://purl.obolibrary.org/obo/NCIT_C3172) EquivalentTo [ICD10CM:C92](http://apps.who.int/classifications/icd10/browse/2010/en#/C92)	(most probable)	0.8
-- [Myeloid Leukemia](http://purl.obolibrary.org/obo/NCIT_C3172) SiblingOf [ICD10CM:C92.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.9)	(most probable)	0.8
-- [Myeloid Leukemia](http://purl.obolibrary.org/obo/NCIT_C3172) SiblingOf [ICD10:C92.7](http://test-curie-forboomer-to-work.com/icdC92.7)	(most probable)	0.8
-- [Myeloid Leukemia](http://purl.obolibrary.org/obo/NCIT_C3172) SiblingOf [ICD10CM:C92.Z](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.Z)	(most probable)	0.8
-
 ## [Acute Lymphoblastic Leukemia](http://purl.obolibrary.org/obo/NCIT_C3167) [ICD10CM:C91.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C91.00) [ICD10CM:C91.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C91.0)
 
 - [Acute Lymphoblastic Leukemia](http://purl.obolibrary.org/obo/NCIT_C3167) SiblingOf [ICD10CM:C91.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C91.00)	(most probable)	0.8
@@ -308,16 +295,16 @@
 
 ## [ICD10CM:C69.60](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.60) [ICD10CM:C69.61](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.61) [ICD10CM:C69.62](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.62) [ICD10CM:C69.6](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.6) [Malignant Orbit Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3562)
 
+- [Malignant Orbit Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3562) EquivalentTo [ICD10CM:C69.6](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.6)	(most probable)	0.8
 - [Malignant Orbit Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3562) ProperSuperClassOf [ICD10CM:C69.61](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.61)	(most probable)	0.8
 - [Malignant Orbit Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3562) ProperSuperClassOf [ICD10CM:C69.60](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.60)	(most probable)	0.8
-- [Malignant Orbit Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3562) EquivalentTo [ICD10CM:C69.6](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.6)	(most probable)	0.8
 - [Malignant Orbit Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3562) ProperSuperClassOf [ICD10CM:C69.62](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.62)	(most probable)	0.8
 
 ## [ICD10CM:C81.40](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.40) [ICD10CM:C81.41](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.41) [ICD10CM:C81.48](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.48) [Lymphocyte-Rich Classic Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C6913)
 
+- [Lymphocyte-Rich Classic Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C6913) SiblingOf [ICD10CM:C81.41](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.41)	(most probable)	0.8
 - [Lymphocyte-Rich Classic Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C6913) SiblingOf [ICD10CM:C81.48](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.48)	(most probable)	0.8
 - [Lymphocyte-Rich Classic Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C6913) SiblingOf [ICD10CM:C81.40](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.40)	(most probable)	0.8
-- [Lymphocyte-Rich Classic Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C6913) SiblingOf [ICD10CM:C81.41](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.41)	(most probable)	0.8
 
 ## [B-Cell Non-Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C3457) [ICD10CM:C85.10](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.10) [ICD10CM:C85.16](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.16) [ICD10CM:C85.17](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.17) [ICD10CM:C85.18](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.18) [ICD10CM:C85.19](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.19)
 
@@ -338,14 +325,14 @@
 
 ## [Carcinoid Tumor](http://purl.obolibrary.org/obo/NCIT_C2915) [ICD10CM:D3A.00](http://apps.who.int/classifications/icd10/browse/2010/en#/D3A.00) [ICD10CM:D3A.8](http://apps.who.int/classifications/icd10/browse/2010/en#/D3A.8)
 
-- [Carcinoid Tumor](http://purl.obolibrary.org/obo/NCIT_C2915) SiblingOf [ICD10CM:D3A.00](http://apps.who.int/classifications/icd10/browse/2010/en#/D3A.00)	(most probable)	0.8
 - [Carcinoid Tumor](http://purl.obolibrary.org/obo/NCIT_C2915) SiblingOf [ICD10CM:D3A.8](http://apps.who.int/classifications/icd10/browse/2010/en#/D3A.8)	(most probable)	0.8
+- [Carcinoid Tumor](http://purl.obolibrary.org/obo/NCIT_C2915) SiblingOf [ICD10CM:D3A.00](http://apps.who.int/classifications/icd10/browse/2010/en#/D3A.00)	(most probable)	0.8
 
 ## [ICD10CM:C11.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C11.1) [ICD10CM:C11.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C11.9) [ICD10CM:C11](http://apps.who.int/classifications/icd10/browse/2010/en#/C11) [Malignant Nasopharyngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9321)
 
-- [Malignant Nasopharyngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9321) EquivalentTo [ICD10CM:C11](http://apps.who.int/classifications/icd10/browse/2010/en#/C11)	(most probable)	0.8
 - [Malignant Nasopharyngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9321) ProperSuperClassOf [ICD10CM:C11.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C11.1)	(most probable)	0.8
 - [Malignant Nasopharyngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9321) SiblingOf [ICD10CM:C11.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C11.9)	(most probable)	0.8
+- [Malignant Nasopharyngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9321) EquivalentTo [ICD10CM:C11](http://apps.who.int/classifications/icd10/browse/2010/en#/C11)	(most probable)	0.8
 
 ## [ICD10CM:C77.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C77.0) [ICD10CM:C77.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C77.1) [ICD10CM:C77.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C77.2) [ICD10CM:C77.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C77.9) [ICD10CM:C77](http://apps.who.int/classifications/icd10/browse/2010/en#/C77) [Metastatic Malignant Neoplasm in the Lymph Nodes](http://purl.obolibrary.org/obo/NCIT_C4904)
 
@@ -376,26 +363,26 @@
 
 ## [ICD10CM:C90.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C90.00) [ICD10CM:C90.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C90.0) [Plasma Cell Myeloma](http://purl.obolibrary.org/obo/NCIT_C3242)
 
-- [Plasma Cell Myeloma](http://purl.obolibrary.org/obo/NCIT_C3242) SiblingOf [ICD10CM:C90.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C90.00)	(most probable)	0.8
 - [Plasma Cell Myeloma](http://purl.obolibrary.org/obo/NCIT_C3242) EquivalentTo [ICD10CM:C90.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C90.0)	(most probable)	0.8
+- [Plasma Cell Myeloma](http://purl.obolibrary.org/obo/NCIT_C3242) SiblingOf [ICD10CM:C90.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C90.00)	(most probable)	0.8
 
 ## [ICD10CM:C00.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C00.0) [ICD10CM:C00.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C00.2) [ICD10CM:C44.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.0) [Malignant Lip Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7485)
 
-- [Malignant Lip Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7485) ProperSuperClassOf [ICD10CM:C00.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C00.2)	(most probable)	0.8
 - [Malignant Lip Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7485) EquivalentTo [ICD10CM:C44.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.0)	(most probable)	0.8
 - [Malignant Lip Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7485) ProperSuperClassOf [ICD10CM:C00.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C00.0)	(most probable)	0.8
+- [Malignant Lip Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7485) ProperSuperClassOf [ICD10CM:C00.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C00.2)	(most probable)	0.8
 
 ## [Digestive System Carcinoma In Situ](http://purl.obolibrary.org/obo/NCIT_C35180) [ICD10CM:D01.40](http://apps.who.int/classifications/icd10/browse/2010/en#/D01.40) [ICD10CM:D01](http://apps.who.int/classifications/icd10/browse/2010/en#/D01)
 
-- [Digestive System Carcinoma In Situ](http://purl.obolibrary.org/obo/NCIT_C35180) SiblingOf [ICD10CM:D01](http://apps.who.int/classifications/icd10/browse/2010/en#/D01)	(most probable)	0.8
 - [Digestive System Carcinoma In Situ](http://purl.obolibrary.org/obo/NCIT_C35180) SiblingOf [ICD10CM:D01.40](http://apps.who.int/classifications/icd10/browse/2010/en#/D01.40)	(most probable)	0.8
+- [Digestive System Carcinoma In Situ](http://purl.obolibrary.org/obo/NCIT_C35180) SiblingOf [ICD10CM:D01](http://apps.who.int/classifications/icd10/browse/2010/en#/D01)	(most probable)	0.8
 
 ## [ICD10CM:C32.3](http://apps.who.int/classifications/icd10/browse/2010/en#/C32.3) [ICD10CM:C32.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C32.8) [ICD10CM:C32.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C32.9) [ICD10CM:C32](http://apps.who.int/classifications/icd10/browse/2010/en#/C32) [Malignant Laryngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7484)
 
-- [Malignant Laryngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7484) ProperSuperClassOf [ICD10CM:C32.3](http://apps.who.int/classifications/icd10/browse/2010/en#/C32.3)	(most probable)	0.8
 - [Malignant Laryngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7484) EquivalentTo [ICD10CM:C32](http://apps.who.int/classifications/icd10/browse/2010/en#/C32)	(most probable)	0.8
-- [Malignant Laryngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7484) SiblingOf [ICD10CM:C32.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C32.8)	(most probable)	0.8
 - [Malignant Laryngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7484) SiblingOf [ICD10CM:C32.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C32.9)	(most probable)	0.8
+- [Malignant Laryngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7484) SiblingOf [ICD10CM:C32.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C32.8)	(most probable)	0.8
+- [Malignant Laryngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7484) ProperSuperClassOf [ICD10CM:C32.3](http://apps.who.int/classifications/icd10/browse/2010/en#/C32.3)	(most probable)	0.8
 
 ## [ICD10CM:C18.7](http://apps.who.int/classifications/icd10/browse/2010/en#/C18.7) [ICD10CM:C19](http://apps.who.int/classifications/icd10/browse/2010/en#/C19) [Malignant Rectosigmoid Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7420)
 
@@ -405,9 +392,9 @@
 ## [ICD10CM:C06.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C06.2) [ICD10CM:C06.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C06.8) [ICD10CM:C06.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C06.9) [ICD10CM:C06](http://apps.who.int/classifications/icd10/browse/2010/en#/C06) [Malignant Oral Cavity Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9314)
 
 - [Malignant Oral Cavity Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9314) SiblingOf [ICD10CM:C06](http://apps.who.int/classifications/icd10/browse/2010/en#/C06)	(most probable)	0.8
-- [Malignant Oral Cavity Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9314) ProperSuperClassOf [ICD10CM:C06.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C06.2)	(most probable)	0.8
-- [Malignant Oral Cavity Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9314) SiblingOf [ICD10CM:C06.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C06.8)	(most probable)	0.8
 - [Malignant Oral Cavity Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9314) SiblingOf [ICD10CM:C06.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C06.9)	(most probable)	0.8
+- [Malignant Oral Cavity Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9314) SiblingOf [ICD10CM:C06.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C06.8)	(most probable)	0.8
+- [Malignant Oral Cavity Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9314) ProperSuperClassOf [ICD10CM:C06.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C06.2)	(most probable)	0.8
 
 ## [ICD10CM:C16.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C16.0) [ICD10CM:C16.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C16.2) [ICD10CM:C16.3](http://apps.who.int/classifications/icd10/browse/2010/en#/C16.3) [ICD10CM:C16.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C16.8) [ICD10CM:C16.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C16.9) [ICD10CM:C16](http://apps.who.int/classifications/icd10/browse/2010/en#/C16) [Malignant Gastric Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9331)
 
@@ -420,14 +407,14 @@
 
 ## [Healthy Subject](http://purl.obolibrary.org/obo/NCIT_C49651) [ICD10CM:Y99.2](http://apps.who.int/classifications/icd10/browse/2010/en#/Y99.2) [ICD10CM:Z76.3](http://apps.who.int/classifications/icd10/browse/2010/en#/Z76.3)
 
-- [Healthy Subject](http://purl.obolibrary.org/obo/NCIT_C49651) SiblingOf [ICD10CM:Z76.3](http://apps.who.int/classifications/icd10/browse/2010/en#/Z76.3)	(most probable)	0.8
 - [Healthy Subject](http://purl.obolibrary.org/obo/NCIT_C49651) SiblingOf [ICD10CM:Y99.2](http://apps.who.int/classifications/icd10/browse/2010/en#/Y99.2)	(most probable)	0.8
+- [Healthy Subject](http://purl.obolibrary.org/obo/NCIT_C49651) SiblingOf [ICD10CM:Z76.3](http://apps.who.int/classifications/icd10/browse/2010/en#/Z76.3)	(most probable)	0.8
 
 ## [ICD10CM:C47.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C47.0) [ICD10CM:C47.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C47.8) [ICD10CM:C47](http://apps.who.int/classifications/icd10/browse/2010/en#/C47) [Malignant Peripheral Nervous System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4961)
 
 - [Malignant Peripheral Nervous System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4961) SiblingOf [ICD10CM:C47](http://apps.who.int/classifications/icd10/browse/2010/en#/C47)	(most probable)	0.8
-- [Malignant Peripheral Nervous System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4961) SiblingOf [ICD10CM:C47.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C47.8)	(most probable)	0.8
 - [Malignant Peripheral Nervous System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4961) ProperSuperClassOf [ICD10CM:C47.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C47.0)	(most probable)	0.8
+- [Malignant Peripheral Nervous System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4961) SiblingOf [ICD10CM:C47.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C47.8)	(most probable)	0.8
 
 ## [ICD10CM:C03.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C03.1) [ICD10CM:C03.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C03.9) [Malignant Gingival Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9317)
 
@@ -452,30 +439,29 @@
 
 ## [ICD10CM:D05.8](http://apps.who.int/classifications/icd10/browse/2010/en#/D05.8) [ICD10CM:D05.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D05.9) [ICD10CM:D05](http://apps.who.int/classifications/icd10/browse/2010/en#/D05) [Stage 0 Breast Cancer AJCC v6 and v7](http://purl.obolibrary.org/obo/NCIT_C3641)
 
-- [Stage 0 Breast Cancer AJCC v6 and v7](http://purl.obolibrary.org/obo/NCIT_C3641) SiblingOf [ICD10CM:D05.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D05.9)	(most probable)	0.8
 - [Stage 0 Breast Cancer AJCC v6 and v7](http://purl.obolibrary.org/obo/NCIT_C3641) ProperSubClassOf [ICD10CM:D05](http://apps.who.int/classifications/icd10/browse/2010/en#/D05)	(most probable)	0.8
+- [Stage 0 Breast Cancer AJCC v6 and v7](http://purl.obolibrary.org/obo/NCIT_C3641) SiblingOf [ICD10CM:D05.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D05.9)	(most probable)	0.8
 - [Stage 0 Breast Cancer AJCC v6 and v7](http://purl.obolibrary.org/obo/NCIT_C3641) SiblingOf [ICD10CM:D05.8](http://apps.who.int/classifications/icd10/browse/2010/en#/D05.8)	(most probable)	0.8
 
-## [ICD10:C94.7](http://test-curie-forboomer-to-work.com/icdC94.7) [ICD10CM:C94.80](http://apps.who.int/classifications/icd10/browse/2010/en#/C94.80) [ICD10CM:C94.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C94.8) [ICD10CM:C94](http://apps.who.int/classifications/icd10/browse/2010/en#/C94) [ICD10CM:C95.90](http://apps.who.int/classifications/icd10/browse/2010/en#/C95.90) [ICD10CM:C95.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C95.9) [ICD10CM:C95](http://apps.who.int/classifications/icd10/browse/2010/en#/C95) [Leukemia](http://purl.obolibrary.org/obo/NCIT_C3161)
+## [ICD10:C80.9](http://icd10data.org/C80.9) [ICD10CM:C76.5](http://apps.who.int/classifications/icd10/browse/2010/en#/C76.5) [ICD10CM:C76.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C76.8) [ICD10CM:C76](http://apps.who.int/classifications/icd10/browse/2010/en#/C76) [ICD10CM:C80.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C80.0) [ICD10CM:C80](http://apps.who.int/classifications/icd10/browse/2010/en#/C80) [Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9305)
 
-- [Leukemia](http://purl.obolibrary.org/obo/NCIT_C3161) SiblingOf [ICD10:C94.7](http://test-curie-forboomer-to-work.com/icdC94.7)	(most probable)	0.8
-- [Leukemia](http://purl.obolibrary.org/obo/NCIT_C3161) SiblingOf [ICD10CM:C94](http://apps.who.int/classifications/icd10/browse/2010/en#/C94)	(most probable)	0.8
-- [Leukemia](http://purl.obolibrary.org/obo/NCIT_C3161) SiblingOf [ICD10CM:C94.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C94.8)	(most probable)	0.8
-- [Leukemia](http://purl.obolibrary.org/obo/NCIT_C3161) SiblingOf [ICD10CM:C95.90](http://apps.who.int/classifications/icd10/browse/2010/en#/C95.90)	(most probable)	0.8
-- [Leukemia](http://purl.obolibrary.org/obo/NCIT_C3161) SiblingOf [ICD10CM:C95.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C95.9)	(most probable)	0.8
-- [Leukemia](http://purl.obolibrary.org/obo/NCIT_C3161) SiblingOf [ICD10CM:C94.80](http://apps.who.int/classifications/icd10/browse/2010/en#/C94.80)	(most probable)	0.8
-- [Leukemia](http://purl.obolibrary.org/obo/NCIT_C3161) SiblingOf [ICD10CM:C95](http://apps.who.int/classifications/icd10/browse/2010/en#/C95)	(most probable)	0.8
+- [Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9305) ProperSuperClassOf [ICD10CM:C76.5](http://apps.who.int/classifications/icd10/browse/2010/en#/C76.5)	(most probable)	0.8
+- [Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9305) SiblingOf [ICD10:C80.9](http://icd10data.org/C80.9)	(most probable)	0.8
+- [Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9305) ProperSuperClassOf [ICD10CM:C76](http://apps.who.int/classifications/icd10/browse/2010/en#/C76)	(most probable)	0.8
+- [Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9305) ProperSuperClassOf [ICD10CM:C80.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C80.0)	(most probable)	0.8
+- [Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9305) ProperSuperClassOf [ICD10CM:C80](http://apps.who.int/classifications/icd10/browse/2010/en#/C80)	(most probable)	0.8
+- [Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9305) SiblingOf [ICD10CM:C76.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C76.8)	(most probable)	0.8
 
 ## [ICD10CM:C21.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C21.0) [ICD10CM:C21.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C21.1) [ICD10CM:C21](http://apps.who.int/classifications/icd10/browse/2010/en#/C21) [Malignant Anal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7379)
 
+- [Malignant Anal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7379) SiblingOf [ICD10CM:C21](http://apps.who.int/classifications/icd10/browse/2010/en#/C21)	(most probable)	0.8
 - [Malignant Anal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7379) ProperSuperClassOf [ICD10CM:C21.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C21.1)	(most probable)	0.8
 - [Malignant Anal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7379) SiblingOf [ICD10CM:C21.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C21.0)	(most probable)	0.8
-- [Malignant Anal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7379) SiblingOf [ICD10CM:C21](http://apps.who.int/classifications/icd10/browse/2010/en#/C21)	(most probable)	0.8
 
 ## [Acute Myeloid Leukemia](http://purl.obolibrary.org/obo/NCIT_C3171) [ICD10CM:C92.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.00) [ICD10CM:C92.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.0)
 
-- [Acute Myeloid Leukemia](http://purl.obolibrary.org/obo/NCIT_C3171) SiblingOf [ICD10CM:C92.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.00)	(most probable)	0.8
 - [Acute Myeloid Leukemia](http://purl.obolibrary.org/obo/NCIT_C3171) EquivalentTo [ICD10CM:C92.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.0)	(most probable)	0.8
+- [Acute Myeloid Leukemia](http://purl.obolibrary.org/obo/NCIT_C3171) SiblingOf [ICD10CM:C92.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.00)	(most probable)	0.8
 
 ## [ICD10CM:C44.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.1) [ICD10CM:C44.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.2) [ICD10CM:C44.300](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.300) [ICD10CM:C44.3](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.3) [ICD10CM:C44.4](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.4) [ICD10CM:C44.5](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.5) [ICD10CM:C44.6](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.6) [ICD10CM:C44.7](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.7) [ICD10CM:C44.89](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.89) [ICD10CM:C44.90](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.90) [ICD10CM:C44.99](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.99) [ICD10CM:C44.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.9) [ICD10CM:C44](http://apps.who.int/classifications/icd10/browse/2010/en#/C44) [Malignant Skin Neoplasm](http://purl.obolibrary.org/obo/NCIT_C2920)
 
@@ -495,36 +481,36 @@
 
 ## [Anaplastic Large Cell Lymphoma, ALK-Negative](http://purl.obolibrary.org/obo/NCIT_C37194) [ICD10CM:C84.72](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.72) [ICD10CM:C84.7](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.7)
 
-- [Anaplastic Large Cell Lymphoma, ALK-Negative](http://purl.obolibrary.org/obo/NCIT_C37194) SiblingOf [ICD10CM:C84.72](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.72)	(most probable)	0.8
 - [Anaplastic Large Cell Lymphoma, ALK-Negative](http://purl.obolibrary.org/obo/NCIT_C37194) EquivalentTo [ICD10CM:C84.7](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.7)	(most probable)	0.8
+- [Anaplastic Large Cell Lymphoma, ALK-Negative](http://purl.obolibrary.org/obo/NCIT_C37194) SiblingOf [ICD10CM:C84.72](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.72)	(most probable)	0.8
 
 ## [ICD10CM:C7A.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C7A.1) [ICD10CM:C7A.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C7A.8) [ICD10CM:C7A](http://apps.who.int/classifications/icd10/browse/2010/en#/C7A) [Neuroendocrine Carcinoma](http://purl.obolibrary.org/obo/NCIT_C3773)
 
+- [Neuroendocrine Carcinoma](http://purl.obolibrary.org/obo/NCIT_C3773) SiblingOf [ICD10CM:C7A.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C7A.8)	(most probable)	0.8
 - [Neuroendocrine Carcinoma](http://purl.obolibrary.org/obo/NCIT_C3773) SiblingOf [ICD10CM:C7A.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C7A.1)	(most probable)	0.8
 - [Neuroendocrine Carcinoma](http://purl.obolibrary.org/obo/NCIT_C3773) ProperSubClassOf [ICD10CM:C7A](http://apps.who.int/classifications/icd10/browse/2010/en#/C7A)	(most probable)	0.8
-- [Neuroendocrine Carcinoma](http://purl.obolibrary.org/obo/NCIT_C3773) SiblingOf [ICD10CM:C7A.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C7A.8)	(most probable)	0.8
 
 ## [ICD10CM:D38.1](http://apps.who.int/classifications/icd10/browse/2010/en#/D38.1) [ICD10CM:D49.1](http://apps.who.int/classifications/icd10/browse/2010/en#/D49.1) [Respiratory System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3355)
 
-- [Respiratory System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3355) ProperSuperClassOf [ICD10CM:D49.1](http://apps.who.int/classifications/icd10/browse/2010/en#/D49.1)	(most probable)	0.8
 - [Respiratory System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3355) ProperSuperClassOf [ICD10CM:D38.1](http://apps.who.int/classifications/icd10/browse/2010/en#/D38.1)	(most probable)	0.8
+- [Respiratory System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3355) ProperSuperClassOf [ICD10CM:D49.1](http://apps.who.int/classifications/icd10/browse/2010/en#/D49.1)	(most probable)	0.8
 
 ## [ICD10CM:C48.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C48.1) [ICD10CM:C48.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C48.2) [Malignant Peritoneal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3538)
 
-- [Malignant Peritoneal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3538) SiblingOf [ICD10CM:C48.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C48.2)	(most probable)	0.8
 - [Malignant Peritoneal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3538) SiblingOf [ICD10CM:C48.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C48.1)	(most probable)	0.8
+- [Malignant Peritoneal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3538) SiblingOf [ICD10CM:C48.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C48.2)	(most probable)	0.8
 
 ## [ICD10CM:C91.90](http://apps.who.int/classifications/icd10/browse/2010/en#/C91.90) [ICD10CM:C91.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C91.9) [ICD10CM:C91.Z0](http://apps.who.int/classifications/icd10/browse/2010/en#/C91.Z0) [ICD10CM:C91](http://apps.who.int/classifications/icd10/browse/2010/en#/C91) [Lymphoid Leukemia](http://purl.obolibrary.org/obo/NCIT_C7539)
 
-- [Lymphoid Leukemia](http://purl.obolibrary.org/obo/NCIT_C7539) SiblingOf [ICD10CM:C91.Z0](http://apps.who.int/classifications/icd10/browse/2010/en#/C91.Z0)	(most probable)	0.8
+- [Lymphoid Leukemia](http://purl.obolibrary.org/obo/NCIT_C7539) SiblingOf [ICD10CM:C91.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C91.9)	(most probable)	0.8
 - [Lymphoid Leukemia](http://purl.obolibrary.org/obo/NCIT_C7539) SiblingOf [ICD10CM:C91.90](http://apps.who.int/classifications/icd10/browse/2010/en#/C91.90)	(most probable)	0.8
 - [Lymphoid Leukemia](http://purl.obolibrary.org/obo/NCIT_C7539) EquivalentTo [ICD10CM:C91](http://apps.who.int/classifications/icd10/browse/2010/en#/C91)	(most probable)	0.8
-- [Lymphoid Leukemia](http://purl.obolibrary.org/obo/NCIT_C7539) SiblingOf [ICD10CM:C91.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C91.9)	(most probable)	0.8
+- [Lymphoid Leukemia](http://purl.obolibrary.org/obo/NCIT_C7539) SiblingOf [ICD10CM:C91.Z0](http://apps.who.int/classifications/icd10/browse/2010/en#/C91.Z0)	(most probable)	0.8
 
 ## [Digestive System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3052) [ICD10CM:D37.8](http://apps.who.int/classifications/icd10/browse/2010/en#/D37.8) [ICD10CM:D37.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D37.9) [ICD10CM:D49.0](http://apps.who.int/classifications/icd10/browse/2010/en#/D49.0)
 
-- [Digestive System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3052) ProperSuperClassOf [ICD10CM:D37.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D37.9)	(most probable)	0.8
 - [Digestive System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3052) ProperSuperClassOf [ICD10CM:D37.8](http://apps.who.int/classifications/icd10/browse/2010/en#/D37.8)	(most probable)	0.8
+- [Digestive System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3052) ProperSuperClassOf [ICD10CM:D37.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D37.9)	(most probable)	0.8
 - [Digestive System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3052) ProperSuperClassOf [ICD10CM:D49.0](http://apps.who.int/classifications/icd10/browse/2010/en#/D49.0)	(most probable)	0.8
 
 ## [Chronic Myelogenous Leukemia, BCR-ABL1 Positive](http://purl.obolibrary.org/obo/NCIT_C3174) [ICD10CM:C92.10](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.10) [ICD10CM:C92.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.1)
@@ -534,10 +520,10 @@
 
 ## [ICD10CM:C57.4](http://apps.who.int/classifications/icd10/browse/2010/en#/C57.4) [ICD10CM:C57.7](http://apps.who.int/classifications/icd10/browse/2010/en#/C57.7) [ICD10CM:C57.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C57.9) [ICD10CM:C57](http://apps.who.int/classifications/icd10/browse/2010/en#/C57) [Malignant Female Reproductive System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4913)
 
-- [Malignant Female Reproductive System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4913) SiblingOf [ICD10CM:C57](http://apps.who.int/classifications/icd10/browse/2010/en#/C57)	(most probable)	0.8
 - [Malignant Female Reproductive System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4913) SiblingOf [ICD10CM:C57.4](http://apps.who.int/classifications/icd10/browse/2010/en#/C57.4)	(most probable)	0.8
 - [Malignant Female Reproductive System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4913) SiblingOf [ICD10CM:C57.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C57.9)	(most probable)	0.8
 - [Malignant Female Reproductive System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4913) SiblingOf [ICD10CM:C57.7](http://apps.who.int/classifications/icd10/browse/2010/en#/C57.7)	(most probable)	0.8
+- [Malignant Female Reproductive System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4913) SiblingOf [ICD10CM:C57](http://apps.who.int/classifications/icd10/browse/2010/en#/C57)	(most probable)	0.8
 
 ## [Hematologic and Lymphocytic Disorder](http://purl.obolibrary.org/obo/NCIT_C26323) [ICD10CM:D75.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D75.9) [ICD10CM:D75](http://apps.who.int/classifications/icd10/browse/2010/en#/D75)
 
@@ -556,8 +542,8 @@
 
 ## [ICD10CM:C46.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C46.1) [ICD10CM:C46.4](http://apps.who.int/classifications/icd10/browse/2010/en#/C46.4) [ICD10CM:C46](http://apps.who.int/classifications/icd10/browse/2010/en#/C46) [Kaposi Sarcoma](http://purl.obolibrary.org/obo/NCIT_C9087)
 
-- [Kaposi Sarcoma](http://purl.obolibrary.org/obo/NCIT_C9087) EquivalentTo [ICD10CM:C46](http://apps.who.int/classifications/icd10/browse/2010/en#/C46)	(most probable)	0.8
 - [Kaposi Sarcoma](http://purl.obolibrary.org/obo/NCIT_C9087) ProperSuperClassOf [ICD10CM:C46.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C46.1)	(most probable)	0.8
+- [Kaposi Sarcoma](http://purl.obolibrary.org/obo/NCIT_C9087) EquivalentTo [ICD10CM:C46](http://apps.who.int/classifications/icd10/browse/2010/en#/C46)	(most probable)	0.8
 - [Kaposi Sarcoma](http://purl.obolibrary.org/obo/NCIT_C9087) ProperSuperClassOf [ICD10CM:C46.4](http://apps.who.int/classifications/icd10/browse/2010/en#/C46.4)	(most probable)	0.8
 
 ## [ICD10CM:C02.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C02.0) [ICD10CM:C02.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C02.1) [ICD10CM:C02.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C02.2) [ICD10CM:C02.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C02.9) [ICD10CM:C02](http://apps.who.int/classifications/icd10/browse/2010/en#/C02) [Malignant Tongue Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9345)
@@ -570,29 +556,35 @@
 
 ## [ICD10CM:C84.40](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.40) [ICD10CM:C84.49](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.49) [ICD10CM:C84.4](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.4) [Peripheral T-Cell Lymphoma, Not Otherwise Specified](http://purl.obolibrary.org/obo/NCIT_C4340)
 
-- [Peripheral T-Cell Lymphoma, Not Otherwise Specified](http://purl.obolibrary.org/obo/NCIT_C4340) SiblingOf [ICD10CM:C84.49](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.49)	(most probable)	0.8
 - [Peripheral T-Cell Lymphoma, Not Otherwise Specified](http://purl.obolibrary.org/obo/NCIT_C4340) SiblingOf [ICD10CM:C84.40](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.40)	(most probable)	0.8
 - [Peripheral T-Cell Lymphoma, Not Otherwise Specified](http://purl.obolibrary.org/obo/NCIT_C4340) SiblingOf [ICD10CM:C84.4](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.4)	(most probable)	0.8
+- [Peripheral T-Cell Lymphoma, Not Otherwise Specified](http://purl.obolibrary.org/obo/NCIT_C4340) SiblingOf [ICD10CM:C84.49](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.49)	(most probable)	0.8
 
 ## [Healthcare Encounter](http://purl.obolibrary.org/obo/NCIT_C154624) [ICD10CM:Z53](http://apps.who.int/classifications/icd10/browse/2010/en#/Z53) [ICD10CM:Z71](http://apps.who.int/classifications/icd10/browse/2010/en#/Z71) [ICD10CM:Z76.89](http://apps.who.int/classifications/icd10/browse/2010/en#/Z76.89) [ICD10CM:Z76](http://apps.who.int/classifications/icd10/browse/2010/en#/Z76)
 
+- [Healthcare Encounter](http://purl.obolibrary.org/obo/NCIT_C154624) SiblingOf [ICD10CM:Z76.89](http://apps.who.int/classifications/icd10/browse/2010/en#/Z76.89)	(most probable)	0.8
 - [Healthcare Encounter](http://purl.obolibrary.org/obo/NCIT_C154624) SiblingOf [ICD10CM:Z71](http://apps.who.int/classifications/icd10/browse/2010/en#/Z71)	(most probable)	0.8
 - [Healthcare Encounter](http://purl.obolibrary.org/obo/NCIT_C154624) SiblingOf [ICD10CM:Z76](http://apps.who.int/classifications/icd10/browse/2010/en#/Z76)	(most probable)	0.8
 - [Healthcare Encounter](http://purl.obolibrary.org/obo/NCIT_C154624) SiblingOf [ICD10CM:Z53](http://apps.who.int/classifications/icd10/browse/2010/en#/Z53)	(most probable)	0.8
-- [Healthcare Encounter](http://purl.obolibrary.org/obo/NCIT_C154624) SiblingOf [ICD10CM:Z76.89](http://apps.who.int/classifications/icd10/browse/2010/en#/Z76.89)	(most probable)	0.8
+
+## [ICD10:D46.7](http://icd10data.org/D46.7) [ICD10CM:D46.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D46.9) [ICD10CM:D46](http://apps.who.int/classifications/icd10/browse/2010/en#/D46) [Myelodysplastic Syndrome](http://purl.obolibrary.org/obo/NCIT_C3247)
+
+- [Myelodysplastic Syndrome](http://purl.obolibrary.org/obo/NCIT_C3247) SiblingOf [ICD10:D46.7](http://icd10data.org/D46.7)	(most probable)	0.8
+- [Myelodysplastic Syndrome](http://purl.obolibrary.org/obo/NCIT_C3247) EquivalentTo [ICD10CM:D46](http://apps.who.int/classifications/icd10/browse/2010/en#/D46)	(most probable)	0.8
+- [Myelodysplastic Syndrome](http://purl.obolibrary.org/obo/NCIT_C3247) SiblingOf [ICD10CM:D46.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D46.9)	(most probable)	0.8
 
 ## [ICD10CM:C64.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C64.1) [ICD10CM:C64.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C64.2) [ICD10CM:C64.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C64.9) [ICD10CM:C64](http://apps.who.int/classifications/icd10/browse/2010/en#/C64) [Malignant Kidney Neoplasm Except Pelvis](http://purl.obolibrary.org/obo/NCIT_C120456)
 
-- [Malignant Kidney Neoplasm Except Pelvis](http://purl.obolibrary.org/obo/NCIT_C120456) EquivalentTo [ICD10CM:C64](http://apps.who.int/classifications/icd10/browse/2010/en#/C64)	(most probable)	0.8
-- [Malignant Kidney Neoplasm Except Pelvis](http://purl.obolibrary.org/obo/NCIT_C120456) ProperSuperClassOf [ICD10CM:C64.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C64.1)	(most probable)	0.8
 - [Malignant Kidney Neoplasm Except Pelvis](http://purl.obolibrary.org/obo/NCIT_C120456) ProperSuperClassOf [ICD10CM:C64.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C64.2)	(most probable)	0.8
+- [Malignant Kidney Neoplasm Except Pelvis](http://purl.obolibrary.org/obo/NCIT_C120456) ProperSuperClassOf [ICD10CM:C64.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C64.1)	(most probable)	0.8
+- [Malignant Kidney Neoplasm Except Pelvis](http://purl.obolibrary.org/obo/NCIT_C120456) EquivalentTo [ICD10CM:C64](http://apps.who.int/classifications/icd10/browse/2010/en#/C64)	(most probable)	0.8
 - [Malignant Kidney Neoplasm Except Pelvis](http://purl.obolibrary.org/obo/NCIT_C120456) ProperSuperClassOf [ICD10CM:C64.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C64.9)	(most probable)	0.8
 
 ## [ICD10CM:C04.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C04.0) [ICD10CM:C04.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C04.8) [ICD10CM:C04.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C04.9) [Malignant Floor of the Mouth Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9318)
 
-- [Malignant Floor of the Mouth Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9318) ProperSuperClassOf [ICD10CM:C04.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C04.0)	(most probable)	0.8
-- [Malignant Floor of the Mouth Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9318) ProperSuperClassOf [ICD10CM:C04.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C04.8)	(most probable)	0.8
 - [Malignant Floor of the Mouth Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9318) SiblingOf [ICD10CM:C04.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C04.9)	(most probable)	0.8
+- [Malignant Floor of the Mouth Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9318) ProperSuperClassOf [ICD10CM:C04.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C04.8)	(most probable)	0.8
+- [Malignant Floor of the Mouth Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9318) ProperSuperClassOf [ICD10CM:C04.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C04.0)	(most probable)	0.8
 
 ## [Abnormal Finding](http://purl.obolibrary.org/obo/NCIT_C82547) [ICD10CM:R83](http://apps.who.int/classifications/icd10/browse/2010/en#/R83) [ICD10CM:R87](http://apps.who.int/classifications/icd10/browse/2010/en#/R87) [ICD10CM:R90](http://apps.who.int/classifications/icd10/browse/2010/en#/R90) [ICD10CM:R91.8](http://apps.who.int/classifications/icd10/browse/2010/en#/R91.8) [ICD10CM:R93](http://apps.who.int/classifications/icd10/browse/2010/en#/R93)
 
@@ -627,8 +619,8 @@
 
 ## [ICD10CM:C70.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C70.0) [ICD10CM:C70.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C70.9) [Malignant Neoplasm of the Meninges](http://purl.obolibrary.org/obo/NCIT_C4628)
 
-- [Malignant Neoplasm of the Meninges](http://purl.obolibrary.org/obo/NCIT_C4628) SiblingOf [ICD10CM:C70.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C70.9)	(most probable)	0.8
 - [Malignant Neoplasm of the Meninges](http://purl.obolibrary.org/obo/NCIT_C4628) ProperSuperClassOf [ICD10CM:C70.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C70.0)	(most probable)	0.8
+- [Malignant Neoplasm of the Meninges](http://purl.obolibrary.org/obo/NCIT_C4628) SiblingOf [ICD10CM:C70.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C70.9)	(most probable)	0.8
 
 ## [ICD10CM:C83.50](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.50) [ICD10CM:C83.51](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.51) [ICD10CM:C83.52](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.52) [ICD10CM:C83.56](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.56) [ICD10CM:C83.58](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.58) [ICD10CM:C83.59](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.59) [ICD10CM:C83.5](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.5) [Lymphoblastic Lymphoma](http://purl.obolibrary.org/obo/NCIT_C9360)
 
@@ -642,21 +634,21 @@
 
 ## [ICD10CM:D46.20](http://apps.who.int/classifications/icd10/browse/2010/en#/D46.20) [ICD10CM:D46.2](http://apps.who.int/classifications/icd10/browse/2010/en#/D46.2) [Myelodysplastic Syndrome with Excess Blasts](http://purl.obolibrary.org/obo/NCIT_C7506)
 
-- [Myelodysplastic Syndrome with Excess Blasts](http://purl.obolibrary.org/obo/NCIT_C7506) EquivalentTo [ICD10CM:D46.2](http://apps.who.int/classifications/icd10/browse/2010/en#/D46.2)	(most probable)	0.8
 - [Myelodysplastic Syndrome with Excess Blasts](http://purl.obolibrary.org/obo/NCIT_C7506) SiblingOf [ICD10CM:D46.20](http://apps.who.int/classifications/icd10/browse/2010/en#/D46.20)	(most probable)	0.8
+- [Myelodysplastic Syndrome with Excess Blasts](http://purl.obolibrary.org/obo/NCIT_C7506) EquivalentTo [ICD10CM:D46.2](http://apps.who.int/classifications/icd10/browse/2010/en#/D46.2)	(most probable)	0.8
 
 ## [ICD10CM:C83.10](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.10) [ICD10CM:C83.18](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.18) [ICD10CM:C83.19](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.19) [ICD10CM:C83.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.1) [Mantle Cell Lymphoma](http://purl.obolibrary.org/obo/NCIT_C4337)
 
-- [Mantle Cell Lymphoma](http://purl.obolibrary.org/obo/NCIT_C4337) SiblingOf [ICD10CM:C83.18](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.18)	(most probable)	0.8
 - [Mantle Cell Lymphoma](http://purl.obolibrary.org/obo/NCIT_C4337) SiblingOf [ICD10CM:C83.10](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.10)	(most probable)	0.8
-- [Mantle Cell Lymphoma](http://purl.obolibrary.org/obo/NCIT_C4337) SiblingOf [ICD10CM:C83.19](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.19)	(most probable)	0.8
 - [Mantle Cell Lymphoma](http://purl.obolibrary.org/obo/NCIT_C4337) EquivalentTo [ICD10CM:C83.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.1)	(most probable)	0.8
+- [Mantle Cell Lymphoma](http://purl.obolibrary.org/obo/NCIT_C4337) SiblingOf [ICD10CM:C83.19](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.19)	(most probable)	0.8
+- [Mantle Cell Lymphoma](http://purl.obolibrary.org/obo/NCIT_C4337) SiblingOf [ICD10CM:C83.18](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.18)	(most probable)	0.8
 
 ## [Breast Ductal Carcinoma In Situ](http://purl.obolibrary.org/obo/NCIT_C2924) [ICD10CM:D05.10](http://apps.who.int/classifications/icd10/browse/2010/en#/D05.10) [ICD10CM:D05.11](http://apps.who.int/classifications/icd10/browse/2010/en#/D05.11) [ICD10CM:D05.12](http://apps.who.int/classifications/icd10/browse/2010/en#/D05.12)
 
 - [Breast Ductal Carcinoma In Situ](http://purl.obolibrary.org/obo/NCIT_C2924) SiblingOf [ICD10CM:D05.10](http://apps.who.int/classifications/icd10/browse/2010/en#/D05.10)	(most probable)	0.8
-- [Breast Ductal Carcinoma In Situ](http://purl.obolibrary.org/obo/NCIT_C2924) SiblingOf [ICD10CM:D05.11](http://apps.who.int/classifications/icd10/browse/2010/en#/D05.11)	(most probable)	0.8
 - [Breast Ductal Carcinoma In Situ](http://purl.obolibrary.org/obo/NCIT_C2924) SiblingOf [ICD10CM:D05.12](http://apps.who.int/classifications/icd10/browse/2010/en#/D05.12)	(most probable)	0.8
+- [Breast Ductal Carcinoma In Situ](http://purl.obolibrary.org/obo/NCIT_C2924) SiblingOf [ICD10CM:D05.11](http://apps.who.int/classifications/icd10/browse/2010/en#/D05.11)	(most probable)	0.8
 
 ## [Acute Megakaryoblastic Leukemia](http://purl.obolibrary.org/obo/NCIT_C3170) [ICD10CM:C94.20](http://apps.who.int/classifications/icd10/browse/2010/en#/C94.20) [ICD10CM:C94.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C94.2)
 
@@ -675,36 +667,57 @@
 
 ## [Follicular Lymphoma](http://purl.obolibrary.org/obo/NCIT_C3209) [ICD10CM:C82.80](http://apps.who.int/classifications/icd10/browse/2010/en#/C82.80) [ICD10CM:C82.90](http://apps.who.int/classifications/icd10/browse/2010/en#/C82.90) [ICD10CM:C82.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C82.9) [ICD10CM:C82](http://apps.who.int/classifications/icd10/browse/2010/en#/C82)
 
+- [Follicular Lymphoma](http://purl.obolibrary.org/obo/NCIT_C3209) EquivalentTo [ICD10CM:C82](http://apps.who.int/classifications/icd10/browse/2010/en#/C82)	(most probable)	0.8
 - [Follicular Lymphoma](http://purl.obolibrary.org/obo/NCIT_C3209) SiblingOf [ICD10CM:C82.80](http://apps.who.int/classifications/icd10/browse/2010/en#/C82.80)	(most probable)	0.8
 - [Follicular Lymphoma](http://purl.obolibrary.org/obo/NCIT_C3209) SiblingOf [ICD10CM:C82.90](http://apps.who.int/classifications/icd10/browse/2010/en#/C82.90)	(most probable)	0.8
 - [Follicular Lymphoma](http://purl.obolibrary.org/obo/NCIT_C3209) SiblingOf [ICD10CM:C82.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C82.9)	(most probable)	0.8
-- [Follicular Lymphoma](http://purl.obolibrary.org/obo/NCIT_C3209) EquivalentTo [ICD10CM:C82](http://apps.who.int/classifications/icd10/browse/2010/en#/C82)	(most probable)	0.8
 
 ## [Benign Bone Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4880) [ICD10CM:D16.21](http://apps.who.int/classifications/icd10/browse/2010/en#/D16.21) [ICD10CM:D16.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D16.9)
 
-- [Benign Bone Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4880) ProperSuperClassOf [ICD10CM:D16.21](http://apps.who.int/classifications/icd10/browse/2010/en#/D16.21)	(most probable)	0.8
 - [Benign Bone Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4880) SiblingOf [ICD10CM:D16.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D16.9)	(most probable)	0.8
+- [Benign Bone Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4880) ProperSuperClassOf [ICD10CM:D16.21](http://apps.who.int/classifications/icd10/browse/2010/en#/D16.21)	(most probable)	0.8
 
 ## [ICD10CM:C85.22](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.22) [ICD10CM:C85.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.2) [Primary Mediastinal (Thymic) Large B-Cell Lymphoma](http://purl.obolibrary.org/obo/NCIT_C9280)
 
-- [Primary Mediastinal (Thymic) Large B-Cell Lymphoma](http://purl.obolibrary.org/obo/NCIT_C9280) EquivalentTo [ICD10CM:C85.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.2)	(most probable)	0.8
 - [Primary Mediastinal (Thymic) Large B-Cell Lymphoma](http://purl.obolibrary.org/obo/NCIT_C9280) SiblingOf [ICD10CM:C85.22](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.22)	(most probable)	0.8
+- [Primary Mediastinal (Thymic) Large B-Cell Lymphoma](http://purl.obolibrary.org/obo/NCIT_C9280) EquivalentTo [ICD10CM:C85.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.2)	(most probable)	0.8
+
+## [ICD10:C94.7](http://icd10data.org/C94.7) [ICD10CM:C94.80](http://apps.who.int/classifications/icd10/browse/2010/en#/C94.80) [ICD10CM:C94.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C94.8) [ICD10CM:C94](http://apps.who.int/classifications/icd10/browse/2010/en#/C94) [ICD10CM:C95.90](http://apps.who.int/classifications/icd10/browse/2010/en#/C95.90) [ICD10CM:C95.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C95.9) [ICD10CM:C95](http://apps.who.int/classifications/icd10/browse/2010/en#/C95) [Leukemia](http://purl.obolibrary.org/obo/NCIT_C3161)
+
+- [Leukemia](http://purl.obolibrary.org/obo/NCIT_C3161) SiblingOf [ICD10CM:C94](http://apps.who.int/classifications/icd10/browse/2010/en#/C94)	(most probable)	0.8
+- [Leukemia](http://purl.obolibrary.org/obo/NCIT_C3161) SiblingOf [ICD10CM:C94.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C94.8)	(most probable)	0.8
+- [Leukemia](http://purl.obolibrary.org/obo/NCIT_C3161) SiblingOf [ICD10CM:C95.90](http://apps.who.int/classifications/icd10/browse/2010/en#/C95.90)	(most probable)	0.8
+- [Leukemia](http://purl.obolibrary.org/obo/NCIT_C3161) SiblingOf [ICD10CM:C95.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C95.9)	(most probable)	0.8
+- [Leukemia](http://purl.obolibrary.org/obo/NCIT_C3161) SiblingOf [ICD10:C94.7](http://icd10data.org/C94.7)	(most probable)	0.8
+- [Leukemia](http://purl.obolibrary.org/obo/NCIT_C3161) SiblingOf [ICD10CM:C94.80](http://apps.who.int/classifications/icd10/browse/2010/en#/C94.80)	(most probable)	0.8
+- [Leukemia](http://purl.obolibrary.org/obo/NCIT_C3161) SiblingOf [ICD10CM:C95](http://apps.who.int/classifications/icd10/browse/2010/en#/C95)	(most probable)	0.8
 
 ## [Classic Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C7164) [ICD10CM:C81.70](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.70) [ICD10CM:C81.71](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.71) [ICD10CM:C81.78](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.78)
 
-- [Classic Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C7164) SiblingOf [ICD10CM:C81.78](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.78)	(most probable)	0.8
-- [Classic Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C7164) SiblingOf [ICD10CM:C81.71](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.71)	(most probable)	0.8
 - [Classic Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C7164) SiblingOf [ICD10CM:C81.70](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.70)	(most probable)	0.8
+- [Classic Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C7164) SiblingOf [ICD10CM:C81.71](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.71)	(most probable)	0.8
+- [Classic Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C7164) SiblingOf [ICD10CM:C81.78](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.78)	(most probable)	0.8
 
 ## [Aplastic Anemia](http://purl.obolibrary.org/obo/NCIT_C2870) [ICD10CM:D61.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D61.9) [ICD10CM:D61](http://apps.who.int/classifications/icd10/browse/2010/en#/D61)
 
-- [Aplastic Anemia](http://purl.obolibrary.org/obo/NCIT_C2870) SiblingOf [ICD10CM:D61](http://apps.who.int/classifications/icd10/browse/2010/en#/D61)	(most probable)	0.8
 - [Aplastic Anemia](http://purl.obolibrary.org/obo/NCIT_C2870) SiblingOf [ICD10CM:D61.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D61.9)	(most probable)	0.8
+- [Aplastic Anemia](http://purl.obolibrary.org/obo/NCIT_C2870) SiblingOf [ICD10CM:D61](http://apps.who.int/classifications/icd10/browse/2010/en#/D61)	(most probable)	0.8
 
 ## [ICD10CM:C81.30](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.30) [ICD10CM:C81.3](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.3) [Lymphocyte-Depleted Classic Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C9283)
 
-- [Lymphocyte-Depleted Classic Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C9283) EquivalentTo [ICD10CM:C81.3](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.3)	(most probable)	0.8
 - [Lymphocyte-Depleted Classic Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C9283) SiblingOf [ICD10CM:C81.30](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.30)	(most probable)	0.8
+- [Lymphocyte-Depleted Classic Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C9283) EquivalentTo [ICD10CM:C81.3](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.3)	(most probable)	0.8
+
+## [ICD10:C97](http://icd10data.org/C97) [ICD10CM:C80.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C80.1) [Primary Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C84509)
+
+- [Primary Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C84509) SiblingOf [ICD10:C97](http://icd10data.org/C97)	(most probable)	0.8
+- [Primary Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C84509) SiblingOf [ICD10CM:C80.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C80.1)	(most probable)	0.8
+
+## [ICD10CM:C22](http://apps.who.int/classifications/icd10/browse/2010/en#/C22) [ICD10CM:C24.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C24.9) [ICD10CM:C24](http://apps.who.int/classifications/icd10/browse/2010/en#/C24) [Malignant Hepatobiliary Neoplasm](http://purl.obolibrary.org/obo/NCIT_C8609)
+
+- [Malignant Hepatobiliary Neoplasm](http://purl.obolibrary.org/obo/NCIT_C8609) SiblingOf [ICD10CM:C24](http://apps.who.int/classifications/icd10/browse/2010/en#/C24)	(most probable)	0.8
+- [Malignant Hepatobiliary Neoplasm](http://purl.obolibrary.org/obo/NCIT_C8609) SiblingOf [ICD10CM:C24.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C24.9)	(most probable)	0.8
+- [Malignant Hepatobiliary Neoplasm](http://purl.obolibrary.org/obo/NCIT_C8609) ProperSuperClassOf [ICD10CM:C22](http://apps.who.int/classifications/icd10/browse/2010/en#/C22)	(most probable)	0.8
 
 ## [ICD10CM:C81.10](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.10) [ICD10CM:C81.11](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.11) [ICD10CM:C81.12](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.12) [ICD10CM:C81.15](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.15) [ICD10CM:C81.18](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.18) [ICD10CM:C81.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C81.1) [Nodular Sclerosis Classic Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C3518)
 
@@ -725,14 +738,14 @@
 
 ## [ICD10CM:C15.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C15.8) [ICD10CM:C15.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C15.9) [ICD10CM:C15](http://apps.who.int/classifications/icd10/browse/2010/en#/C15) [Malignant Esophageal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7478)
 
-- [Malignant Esophageal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7478) SiblingOf [ICD10CM:C15.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C15.8)	(most probable)	0.8
 - [Malignant Esophageal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7478) SiblingOf [ICD10CM:C15.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C15.9)	(most probable)	0.8
+- [Malignant Esophageal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7478) SiblingOf [ICD10CM:C15.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C15.8)	(most probable)	0.8
 - [Malignant Esophageal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7478) EquivalentTo [ICD10CM:C15](http://apps.who.int/classifications/icd10/browse/2010/en#/C15)	(most probable)	0.8
 
 ## [Benign Adrenal Gland Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3629) [ICD10CM:D35.00](http://apps.who.int/classifications/icd10/browse/2010/en#/D35.00) [ICD10CM:D35.02](http://apps.who.int/classifications/icd10/browse/2010/en#/D35.02)
 
-- [Benign Adrenal Gland Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3629) ProperSuperClassOf [ICD10CM:D35.02](http://apps.who.int/classifications/icd10/browse/2010/en#/D35.02)	(most probable)	0.8
 - [Benign Adrenal Gland Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3629) ProperSuperClassOf [ICD10CM:D35.00](http://apps.who.int/classifications/icd10/browse/2010/en#/D35.00)	(most probable)	0.8
+- [Benign Adrenal Gland Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3629) ProperSuperClassOf [ICD10CM:D35.02](http://apps.who.int/classifications/icd10/browse/2010/en#/D35.02)	(most probable)	0.8
 
 ## [Burkitt Lymphoma](http://purl.obolibrary.org/obo/NCIT_C2912) [ICD10CM:C83.70](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.70) [ICD10CM:C83.71](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.71) [ICD10CM:C83.73](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.73) [ICD10CM:C83.78](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.78) [ICD10CM:C83.79](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.79) [ICD10CM:C83.7](http://apps.who.int/classifications/icd10/browse/2010/en#/C83.7)
 
@@ -772,8 +785,8 @@
 
 ## [Blood Donor](http://purl.obolibrary.org/obo/NCIT_C132448) [ICD10CM:Z52.00](http://apps.who.int/classifications/icd10/browse/2010/en#/Z52.00) [ICD10CM:Z52.090](http://apps.who.int/classifications/icd10/browse/2010/en#/Z52.090)
 
-- [Blood Donor](http://purl.obolibrary.org/obo/NCIT_C132448) SiblingOf [ICD10CM:Z52.090](http://apps.who.int/classifications/icd10/browse/2010/en#/Z52.090)	(most probable)	0.8
 - [Blood Donor](http://purl.obolibrary.org/obo/NCIT_C132448) SiblingOf [ICD10CM:Z52.00](http://apps.who.int/classifications/icd10/browse/2010/en#/Z52.00)	(most probable)	0.8
+- [Blood Donor](http://purl.obolibrary.org/obo/NCIT_C132448) SiblingOf [ICD10CM:Z52.090](http://apps.who.int/classifications/icd10/browse/2010/en#/Z52.090)	(most probable)	0.8
 
 ## [ICD10CM:C57.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C57.00) [ICD10CM:C57.02](http://apps.who.int/classifications/icd10/browse/2010/en#/C57.02) [ICD10CM:C57.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C57.0) [Malignant Fallopian Tube Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7480)
 
@@ -793,32 +806,23 @@
 
 ## [ICD10CM:C65.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C65.1) [ICD10CM:C65.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C65.2) [ICD10CM:C65.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C65.9) [ICD10CM:C65](http://apps.who.int/classifications/icd10/browse/2010/en#/C65) [Malignant Renal Pelvis Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7525)
 
-- [Malignant Renal Pelvis Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7525) EquivalentTo [ICD10CM:C65](http://apps.who.int/classifications/icd10/browse/2010/en#/C65)	(most probable)	0.8
-- [Malignant Renal Pelvis Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7525) ProperSuperClassOf [ICD10CM:C65.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C65.9)	(most probable)	0.8
 - [Malignant Renal Pelvis Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7525) ProperSuperClassOf [ICD10CM:C65.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C65.2)	(most probable)	0.8
+- [Malignant Renal Pelvis Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7525) ProperSuperClassOf [ICD10CM:C65.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C65.9)	(most probable)	0.8
+- [Malignant Renal Pelvis Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7525) EquivalentTo [ICD10CM:C65](http://apps.who.int/classifications/icd10/browse/2010/en#/C65)	(most probable)	0.8
 - [Malignant Renal Pelvis Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7525) ProperSuperClassOf [ICD10CM:C65.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C65.1)	(most probable)	0.8
 
 ## [ICD10CM:C78.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.00) [ICD10CM:C78.01](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.01) [ICD10CM:C78.02](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.02) [ICD10CM:C78.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.0) [Metastatic Malignant Neoplasm in the Lung](http://purl.obolibrary.org/obo/NCIT_C3577)
 
+- [Metastatic Malignant Neoplasm in the Lung](http://purl.obolibrary.org/obo/NCIT_C3577) SiblingOf [ICD10CM:C78.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.00)	(most probable)	0.8
+- [Metastatic Malignant Neoplasm in the Lung](http://purl.obolibrary.org/obo/NCIT_C3577) SiblingOf [ICD10CM:C78.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.0)	(most probable)	0.8
 - [Metastatic Malignant Neoplasm in the Lung](http://purl.obolibrary.org/obo/NCIT_C3577) SiblingOf [ICD10CM:C78.01](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.01)	(most probable)	0.8
 - [Metastatic Malignant Neoplasm in the Lung](http://purl.obolibrary.org/obo/NCIT_C3577) SiblingOf [ICD10CM:C78.02](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.02)	(most probable)	0.8
-- [Metastatic Malignant Neoplasm in the Lung](http://purl.obolibrary.org/obo/NCIT_C3577) SiblingOf [ICD10CM:C78.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.0)	(most probable)	0.8
-- [Metastatic Malignant Neoplasm in the Lung](http://purl.obolibrary.org/obo/NCIT_C3577) SiblingOf [ICD10CM:C78.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.00)	(most probable)	0.8
 
 ## [ICD10CM:C53.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C53.8) [ICD10CM:C53.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C53.9) [ICD10CM:C53](http://apps.who.int/classifications/icd10/browse/2010/en#/C53) [Malignant Cervical Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9311)
 
 - [Malignant Cervical Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9311) EquivalentTo [ICD10CM:C53](http://apps.who.int/classifications/icd10/browse/2010/en#/C53)	(most probable)	0.8
 - [Malignant Cervical Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9311) SiblingOf [ICD10CM:C53.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C53.8)	(most probable)	0.8
 - [Malignant Cervical Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9311) SiblingOf [ICD10CM:C53.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C53.9)	(most probable)	0.8
-
-## [ICD10:C80.9](http://test-curie-forboomer-to-work.com/icdC80.9) [ICD10CM:C76.5](http://apps.who.int/classifications/icd10/browse/2010/en#/C76.5) [ICD10CM:C76.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C76.8) [ICD10CM:C76](http://apps.who.int/classifications/icd10/browse/2010/en#/C76) [ICD10CM:C80.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C80.0) [ICD10CM:C80](http://apps.who.int/classifications/icd10/browse/2010/en#/C80) [Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9305)
-
-- [Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9305) ProperSuperClassOf [ICD10CM:C76.5](http://apps.who.int/classifications/icd10/browse/2010/en#/C76.5)	(most probable)	0.8
-- [Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9305) ProperSuperClassOf [ICD10CM:C76](http://apps.who.int/classifications/icd10/browse/2010/en#/C76)	(most probable)	0.8
-- [Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9305) SiblingOf [ICD10:C80.9](http://test-curie-forboomer-to-work.com/icdC80.9)	(most probable)	0.8
-- [Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9305) ProperSuperClassOf [ICD10CM:C80.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C80.0)	(most probable)	0.8
-- [Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9305) ProperSuperClassOf [ICD10CM:C80](http://apps.who.int/classifications/icd10/browse/2010/en#/C80)	(most probable)	0.8
-- [Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9305) SiblingOf [ICD10CM:C76.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C76.8)	(most probable)	0.8
 
 ## [ICD10CM:C72.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C72.9) [ICD10CM:C72](http://apps.who.int/classifications/icd10/browse/2010/en#/C72) [Malignant Central Nervous System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4627)
 
@@ -864,16 +868,12 @@
 - [Brain Disorder](http://purl.obolibrary.org/obo/NCIT_C96413) SiblingOf [ICD10CM:G93.89](http://apps.who.int/classifications/icd10/browse/2010/en#/G93.89)	(most probable)	0.8
 - [Brain Disorder](http://purl.obolibrary.org/obo/NCIT_C96413) SiblingOf [ICD10CM:G93.9](http://apps.who.int/classifications/icd10/browse/2010/en#/G93.9)	(most probable)	0.8
 
-## [ICD10:C97](http://test-curie-forboomer-to-work.com/icdC97) [ICD10CM:C80.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C80.1) [Primary Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C84509)
+## [ICD10:C92.7](http://icd10data.org/C92.7) [ICD10CM:C92.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.9) [ICD10CM:C92.Z](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.Z) [ICD10CM:C92](http://apps.who.int/classifications/icd10/browse/2010/en#/C92) [Myeloid Leukemia](http://purl.obolibrary.org/obo/NCIT_C3172)
 
-- [Primary Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C84509) SiblingOf [ICD10CM:C80.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C80.1)	(most probable)	0.8
-- [Primary Malignant Neoplasm](http://purl.obolibrary.org/obo/NCIT_C84509) SiblingOf [ICD10:C97](http://test-curie-forboomer-to-work.com/icdC97)	(most probable)	0.8
-
-## [ICD10:D46.7](http://test-curie-forboomer-to-work.com/icdD46.7) [ICD10CM:D46.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D46.9) [ICD10CM:D46](http://apps.who.int/classifications/icd10/browse/2010/en#/D46) [Myelodysplastic Syndrome](http://purl.obolibrary.org/obo/NCIT_C3247)
-
-- [Myelodysplastic Syndrome](http://purl.obolibrary.org/obo/NCIT_C3247) SiblingOf [ICD10:D46.7](http://test-curie-forboomer-to-work.com/icdD46.7)	(most probable)	0.8
-- [Myelodysplastic Syndrome](http://purl.obolibrary.org/obo/NCIT_C3247) EquivalentTo [ICD10CM:D46](http://apps.who.int/classifications/icd10/browse/2010/en#/D46)	(most probable)	0.8
-- [Myelodysplastic Syndrome](http://purl.obolibrary.org/obo/NCIT_C3247) SiblingOf [ICD10CM:D46.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D46.9)	(most probable)	0.8
+- [Myeloid Leukemia](http://purl.obolibrary.org/obo/NCIT_C3172) SiblingOf [ICD10:C92.7](http://icd10data.org/C92.7)	(most probable)	0.8
+- [Myeloid Leukemia](http://purl.obolibrary.org/obo/NCIT_C3172) EquivalentTo [ICD10CM:C92](http://apps.who.int/classifications/icd10/browse/2010/en#/C92)	(most probable)	0.8
+- [Myeloid Leukemia](http://purl.obolibrary.org/obo/NCIT_C3172) SiblingOf [ICD10CM:C92.Z](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.Z)	(most probable)	0.8
+- [Myeloid Leukemia](http://purl.obolibrary.org/obo/NCIT_C3172) SiblingOf [ICD10CM:C92.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.9)	(most probable)	0.8
 
 ## [ICD10CM:C44.320](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.320) [ICD10CM:C44.329](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.329) [ICD10CM:C44.42](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.42) [ICD10CM:C44.82](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.82) [ICD10CM:C44.92](http://apps.who.int/classifications/icd10/browse/2010/en#/C44.92) [Skin Squamous Cell Carcinoma](http://purl.obolibrary.org/obo/NCIT_C4819)
 
@@ -900,10 +900,10 @@
 
 ## [ICD10CM:C69.20](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.20) [ICD10CM:C69.21](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.21) [ICD10CM:C69.22](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.22) [ICD10CM:C69.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.2) [Malignant Retinal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3216)
 
-- [Malignant Retinal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3216) ProperSuperClassOf [ICD10CM:C69.22](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.22)	(most probable)	0.8
-- [Malignant Retinal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3216) ProperSuperClassOf [ICD10CM:C69.21](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.21)	(most probable)	0.8
 - [Malignant Retinal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3216) EquivalentTo [ICD10CM:C69.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.2)	(most probable)	0.8
 - [Malignant Retinal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3216) ProperSuperClassOf [ICD10CM:C69.20](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.20)	(most probable)	0.8
+- [Malignant Retinal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3216) ProperSuperClassOf [ICD10CM:C69.21](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.21)	(most probable)	0.8
+- [Malignant Retinal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3216) ProperSuperClassOf [ICD10CM:C69.22](http://apps.who.int/classifications/icd10/browse/2010/en#/C69.22)	(most probable)	0.8
 
 ## [ICD10CM:C02.4](http://apps.who.int/classifications/icd10/browse/2010/en#/C02.4) [ICD10CM:C09.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C09.8) [ICD10CM:C09.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C09.9) [ICD10CM:C09](http://apps.who.int/classifications/icd10/browse/2010/en#/C09) [Malignant Tonsillar Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7404)
 
@@ -941,8 +941,8 @@
 
 ## [Chronic Lymphocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C3163) [ICD10CM:C91.10](http://apps.who.int/classifications/icd10/browse/2010/en#/C91.10) [ICD10CM:C91.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C91.1)
 
-- [Chronic Lymphocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C3163) SiblingOf [ICD10CM:C91.10](http://apps.who.int/classifications/icd10/browse/2010/en#/C91.10)	(most probable)	0.8
 - [Chronic Lymphocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C3163) EquivalentTo [ICD10CM:C91.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C91.1)	(most probable)	0.8
+- [Chronic Lymphocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C3163) SiblingOf [ICD10CM:C91.10](http://apps.who.int/classifications/icd10/browse/2010/en#/C91.10)	(most probable)	0.8
 
 ## [Cutaneous Melanoma](http://purl.obolibrary.org/obo/NCIT_C3510) [ICD10CM:C43.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.0) [ICD10CM:C43.30](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.30) [ICD10CM:C43.31](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.31) [ICD10CM:C43.39](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.39) [ICD10CM:C43.4](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.4) [ICD10CM:C43.52](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.52) [ICD10CM:C43.59](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.59) [ICD10CM:C43.5](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.5) [ICD10CM:C43.60](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.60) [ICD10CM:C43.61](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.61) [ICD10CM:C43.6](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.6) [ICD10CM:C43.70](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.70) [ICD10CM:C43.71](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.71) [ICD10CM:C43.72](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.72) [ICD10CM:C43.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.8) [ICD10CM:C43.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.9) [ICD10CM:C43](http://apps.who.int/classifications/icd10/browse/2010/en#/C43)
 
@@ -966,10 +966,10 @@
 
 ## [ICD10CM:D03.4](http://apps.who.int/classifications/icd10/browse/2010/en#/D03.4) [ICD10CM:D03.59](http://apps.who.int/classifications/icd10/browse/2010/en#/D03.59) [ICD10CM:D03.8](http://apps.who.int/classifications/icd10/browse/2010/en#/D03.8) [ICD10CM:D03.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D03.9) [Stage 0 Cutaneous Melanoma AJCC v6 and v7](http://purl.obolibrary.org/obo/NCIT_C8423)
 
-- [Stage 0 Cutaneous Melanoma AJCC v6 and v7](http://purl.obolibrary.org/obo/NCIT_C8423) SiblingOf [ICD10CM:D03.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D03.9)	(most probable)	0.8
-- [Stage 0 Cutaneous Melanoma AJCC v6 and v7](http://purl.obolibrary.org/obo/NCIT_C8423) SiblingOf [ICD10CM:D03.59](http://apps.who.int/classifications/icd10/browse/2010/en#/D03.59)	(most probable)	0.8
 - [Stage 0 Cutaneous Melanoma AJCC v6 and v7](http://purl.obolibrary.org/obo/NCIT_C8423) SiblingOf [ICD10CM:D03.8](http://apps.who.int/classifications/icd10/browse/2010/en#/D03.8)	(most probable)	0.8
+- [Stage 0 Cutaneous Melanoma AJCC v6 and v7](http://purl.obolibrary.org/obo/NCIT_C8423) SiblingOf [ICD10CM:D03.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D03.9)	(most probable)	0.8
 - [Stage 0 Cutaneous Melanoma AJCC v6 and v7](http://purl.obolibrary.org/obo/NCIT_C8423) SiblingOf [ICD10CM:D03.4](http://apps.who.int/classifications/icd10/browse/2010/en#/D03.4)	(most probable)	0.8
+- [Stage 0 Cutaneous Melanoma AJCC v6 and v7](http://purl.obolibrary.org/obo/NCIT_C8423) SiblingOf [ICD10CM:D03.59](http://apps.who.int/classifications/icd10/browse/2010/en#/D03.59)	(most probable)	0.8
 
 ## [ICD10CM:C25.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C25.0) [ICD10CM:C25.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C25.1) [ICD10CM:C25.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C25.2) [ICD10CM:C25.3](http://apps.who.int/classifications/icd10/browse/2010/en#/C25.3) [ICD10CM:C25.7](http://apps.who.int/classifications/icd10/browse/2010/en#/C25.7) [ICD10CM:C25.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C25.8) [ICD10CM:C25.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C25.9) [ICD10CM:C25](http://apps.who.int/classifications/icd10/browse/2010/en#/C25) [Malignant Pancreatic Neoplasm](http://purl.obolibrary.org/obo/NCIT_C9005)
 
@@ -1003,9 +1003,9 @@
 
 ## [ICD10CM:C78.6](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.6) [ICD10CM:C78.89](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.89) [ICD10CM:C78.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.8) [Metastatic Malignant Neoplasm in the Abdominal Cavity](http://purl.obolibrary.org/obo/NCIT_C8615)
 
-- [Metastatic Malignant Neoplasm in the Abdominal Cavity](http://purl.obolibrary.org/obo/NCIT_C8615) SiblingOf [ICD10CM:C78.89](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.89)	(most probable)	0.8
-- [Metastatic Malignant Neoplasm in the Abdominal Cavity](http://purl.obolibrary.org/obo/NCIT_C8615) SiblingOf [ICD10CM:C78.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.8)	(most probable)	0.8
 - [Metastatic Malignant Neoplasm in the Abdominal Cavity](http://purl.obolibrary.org/obo/NCIT_C8615) SiblingOf [ICD10CM:C78.6](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.6)	(most probable)	0.8
+- [Metastatic Malignant Neoplasm in the Abdominal Cavity](http://purl.obolibrary.org/obo/NCIT_C8615) SiblingOf [ICD10CM:C78.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.8)	(most probable)	0.8
+- [Metastatic Malignant Neoplasm in the Abdominal Cavity](http://purl.obolibrary.org/obo/NCIT_C8615) SiblingOf [ICD10CM:C78.89](http://apps.who.int/classifications/icd10/browse/2010/en#/C78.89)	(most probable)	0.8
 
 ## [Acute Myeloid Leukemia with MLL Rearrangement](http://purl.obolibrary.org/obo/NCIT_C174129) [ICD10CM:C92.60](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.60) [ICD10CM:C92.6](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.6)
 
@@ -1022,26 +1022,26 @@
 
 ## [Benign Respiratory System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C8531) [ICD10CM:D14.30](http://apps.who.int/classifications/icd10/browse/2010/en#/D14.30) [ICD10CM:D14.31](http://apps.who.int/classifications/icd10/browse/2010/en#/D14.31) [ICD10CM:D14.3](http://apps.who.int/classifications/icd10/browse/2010/en#/D14.3)
 
+- [Benign Respiratory System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C8531) ProperSuperClassOf [ICD10CM:D14.31](http://apps.who.int/classifications/icd10/browse/2010/en#/D14.31)	(most probable)	0.8
 - [Benign Respiratory System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C8531) ProperSuperClassOf [ICD10CM:D14.3](http://apps.who.int/classifications/icd10/browse/2010/en#/D14.3)	(most probable)	0.8
 - [Benign Respiratory System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C8531) ProperSuperClassOf [ICD10CM:D14.30](http://apps.who.int/classifications/icd10/browse/2010/en#/D14.30)	(most probable)	0.8
-- [Benign Respiratory System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C8531) ProperSuperClassOf [ICD10CM:D14.31](http://apps.who.int/classifications/icd10/browse/2010/en#/D14.31)	(most probable)	0.8
 
 ## [Acute Myelomonocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C7463) [ICD10CM:C92.50](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.50) [ICD10CM:C92.5](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.5)
 
-- [Acute Myelomonocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C7463) SiblingOf [ICD10CM:C92.50](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.50)	(most probable)	0.8
 - [Acute Myelomonocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C7463) EquivalentTo [ICD10CM:C92.5](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.5)	(most probable)	0.8
+- [Acute Myelomonocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C7463) SiblingOf [ICD10CM:C92.50](http://apps.who.int/classifications/icd10/browse/2010/en#/C92.50)	(most probable)	0.8
 
 ## [ICD10CM:Z00.00](http://apps.who.int/classifications/icd10/browse/2010/en#/Z00.00) [ICD10CM:Z00.1](http://apps.who.int/classifications/icd10/browse/2010/en#/Z00.1) [ICD10CM:Z00.6](http://apps.who.int/classifications/icd10/browse/2010/en#/Z00.6) [ICD10CM:Z00](http://apps.who.int/classifications/icd10/browse/2010/en#/Z00) [Medical Examination](http://purl.obolibrary.org/obo/NCIT_C25305)
 
-- [Medical Examination](http://purl.obolibrary.org/obo/NCIT_C25305) SiblingOf [ICD10CM:Z00.00](http://apps.who.int/classifications/icd10/browse/2010/en#/Z00.00)	(most probable)	0.8
 - [Medical Examination](http://purl.obolibrary.org/obo/NCIT_C25305) SiblingOf [ICD10CM:Z00.1](http://apps.who.int/classifications/icd10/browse/2010/en#/Z00.1)	(most probable)	0.8
-- [Medical Examination](http://purl.obolibrary.org/obo/NCIT_C25305) SiblingOf [ICD10CM:Z00](http://apps.who.int/classifications/icd10/browse/2010/en#/Z00)	(most probable)	0.8
+- [Medical Examination](http://purl.obolibrary.org/obo/NCIT_C25305) SiblingOf [ICD10CM:Z00.00](http://apps.who.int/classifications/icd10/browse/2010/en#/Z00.00)	(most probable)	0.8
 - [Medical Examination](http://purl.obolibrary.org/obo/NCIT_C25305) SiblingOf [ICD10CM:Z00.6](http://apps.who.int/classifications/icd10/browse/2010/en#/Z00.6)	(most probable)	0.8
+- [Medical Examination](http://purl.obolibrary.org/obo/NCIT_C25305) SiblingOf [ICD10CM:Z00](http://apps.who.int/classifications/icd10/browse/2010/en#/Z00)	(most probable)	0.8
 
 ## [ICD10CM:C45.7](http://apps.who.int/classifications/icd10/browse/2010/en#/C45.7) [ICD10CM:C45.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C45.9) [ICD10CM:C45](http://apps.who.int/classifications/icd10/browse/2010/en#/C45) [Mesothelioma](http://purl.obolibrary.org/obo/NCIT_C3234)
 
-- [Mesothelioma](http://purl.obolibrary.org/obo/NCIT_C3234) EquivalentTo [ICD10CM:C45](http://apps.who.int/classifications/icd10/browse/2010/en#/C45)	(most probable)	0.8
 - [Mesothelioma](http://purl.obolibrary.org/obo/NCIT_C3234) SiblingOf [ICD10CM:C45.7](http://apps.who.int/classifications/icd10/browse/2010/en#/C45.7)	(most probable)	0.8
+- [Mesothelioma](http://purl.obolibrary.org/obo/NCIT_C3234) EquivalentTo [ICD10CM:C45](http://apps.who.int/classifications/icd10/browse/2010/en#/C45)	(most probable)	0.8
 - [Mesothelioma](http://purl.obolibrary.org/obo/NCIT_C3234) SiblingOf [ICD10CM:C45.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C45.9)	(most probable)	0.8
 
 ## [ICD10CM:C38.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C38.1) [ICD10CM:C38.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C38.2) [ICD10CM:C38.3](http://apps.who.int/classifications/icd10/browse/2010/en#/C38.3) [Malignant Mediastinal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3549)
@@ -1053,9 +1053,9 @@
 ## [ICD10CM:C56.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C56.1) [ICD10CM:C56.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C56.2) [ICD10CM:C56.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C56.9) [ICD10CM:C56](http://apps.who.int/classifications/icd10/browse/2010/en#/C56) [Malignant Ovarian Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7431)
 
 - [Malignant Ovarian Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7431) ProperSuperClassOf [ICD10CM:C56.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C56.2)	(most probable)	0.8
-- [Malignant Ovarian Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7431) ProperSuperClassOf [ICD10CM:C56.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C56.9)	(most probable)	0.8
 - [Malignant Ovarian Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7431) EquivalentTo [ICD10CM:C56](http://apps.who.int/classifications/icd10/browse/2010/en#/C56)	(most probable)	0.8
 - [Malignant Ovarian Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7431) ProperSuperClassOf [ICD10CM:C56.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C56.1)	(most probable)	0.8
+- [Malignant Ovarian Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7431) ProperSuperClassOf [ICD10CM:C56.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C56.9)	(most probable)	0.8
 
 ## [Eyelid Melanoma](http://purl.obolibrary.org/obo/NCIT_C4358) [ICD10CM:C43.12](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.12) [ICD10CM:C43.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C43.1)
 
@@ -1064,14 +1064,14 @@
 
 ## [ICD10CM:C51.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C51.9) [ICD10CM:C51](http://apps.who.int/classifications/icd10/browse/2010/en#/C51) [Malignant Vulvar Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7502)
 
-- [Malignant Vulvar Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7502) SiblingOf [ICD10CM:C51.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C51.9)	(most probable)	0.8
 - [Malignant Vulvar Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7502) EquivalentTo [ICD10CM:C51](http://apps.who.int/classifications/icd10/browse/2010/en#/C51)	(most probable)	0.8
+- [Malignant Vulvar Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7502) SiblingOf [ICD10CM:C51.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C51.9)	(most probable)	0.8
 
 ## [ICD10CM:C72.30](http://apps.who.int/classifications/icd10/browse/2010/en#/C72.30) [ICD10CM:C72.32](http://apps.who.int/classifications/icd10/browse/2010/en#/C72.32) [ICD10CM:C72.3](http://apps.who.int/classifications/icd10/browse/2010/en#/C72.3) [ICD10CM:C72.59](http://apps.who.int/classifications/icd10/browse/2010/en#/C72.59) [Malignant Cranial Nerve Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3571)
 
 - [Malignant Cranial Nerve Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3571) ProperSuperClassOf [ICD10CM:C72.30](http://apps.who.int/classifications/icd10/browse/2010/en#/C72.30)	(most probable)	0.8
-- [Malignant Cranial Nerve Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3571) ProperSuperClassOf [ICD10CM:C72.32](http://apps.who.int/classifications/icd10/browse/2010/en#/C72.32)	(most probable)	0.8
 - [Malignant Cranial Nerve Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3571) ProperSuperClassOf [ICD10CM:C72.3](http://apps.who.int/classifications/icd10/browse/2010/en#/C72.3)	(most probable)	0.8
+- [Malignant Cranial Nerve Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3571) ProperSuperClassOf [ICD10CM:C72.32](http://apps.who.int/classifications/icd10/browse/2010/en#/C72.32)	(most probable)	0.8
 - [Malignant Cranial Nerve Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3571) ProperSuperClassOf [ICD10CM:C72.59](http://apps.who.int/classifications/icd10/browse/2010/en#/C72.59)	(most probable)	0.8
 
 ## [ICD10CM:C85.80](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.80) [ICD10CM:C85.81](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.81) [ICD10CM:C85.82](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.82) [ICD10CM:C85.83](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.83) [ICD10CM:C85.85](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.85) [ICD10CM:C85.88](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.88) [ICD10CM:C85.89](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.89) [ICD10CM:C85.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.8) [ICD10CM:C85.90](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.90) [ICD10CM:C85.91](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.91) [ICD10CM:C85.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C85.9) [ICD10CM:C85](http://apps.who.int/classifications/icd10/browse/2010/en#/C85) [Non-Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C3211)
@@ -1091,20 +1091,20 @@
 
 ## [Chronic Myelomonocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C3178) [ICD10CM:C93.10](http://apps.who.int/classifications/icd10/browse/2010/en#/C93.10) [ICD10CM:C93.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C93.1)
 
-- [Chronic Myelomonocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C3178) EquivalentTo [ICD10CM:C93.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C93.1)	(most probable)	0.8
 - [Chronic Myelomonocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C3178) SiblingOf [ICD10CM:C93.10](http://apps.who.int/classifications/icd10/browse/2010/en#/C93.10)	(most probable)	0.8
+- [Chronic Myelomonocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C3178) EquivalentTo [ICD10CM:C93.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C93.1)	(most probable)	0.8
 
 ## [ICD10CM:C71.5](http://apps.who.int/classifications/icd10/browse/2010/en#/C71.5) [ICD10CM:C71.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C71.8) [ICD10CM:C71.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C71.9) [ICD10CM:C71](http://apps.who.int/classifications/icd10/browse/2010/en#/C71) [Malignant Brain Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3568)
 
-- [Malignant Brain Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3568) SiblingOf [ICD10CM:C71.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C71.9)	(most probable)	0.8
-- [Malignant Brain Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3568) SiblingOf [ICD10CM:C71.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C71.8)	(most probable)	0.8
-- [Malignant Brain Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3568) ProperSuperClassOf [ICD10CM:C71.5](http://apps.who.int/classifications/icd10/browse/2010/en#/C71.5)	(most probable)	0.8
 - [Malignant Brain Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3568) EquivalentTo [ICD10CM:C71](http://apps.who.int/classifications/icd10/browse/2010/en#/C71)	(most probable)	0.8
+- [Malignant Brain Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3568) SiblingOf [ICD10CM:C71.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C71.9)	(most probable)	0.8
+- [Malignant Brain Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3568) ProperSuperClassOf [ICD10CM:C71.5](http://apps.who.int/classifications/icd10/browse/2010/en#/C71.5)	(most probable)	0.8
+- [Malignant Brain Neoplasm](http://purl.obolibrary.org/obo/NCIT_C3568) SiblingOf [ICD10CM:C71.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C71.8)	(most probable)	0.8
 
 ## [Acute Erythroid Leukemia](http://purl.obolibrary.org/obo/NCIT_C8923) [ICD10CM:C94.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C94.00) [ICD10CM:C94.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C94.0)
 
-- [Acute Erythroid Leukemia](http://purl.obolibrary.org/obo/NCIT_C8923) EquivalentTo [ICD10CM:C94.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C94.0)	(most probable)	0.8
 - [Acute Erythroid Leukemia](http://purl.obolibrary.org/obo/NCIT_C8923) SiblingOf [ICD10CM:C94.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C94.00)	(most probable)	0.8
+- [Acute Erythroid Leukemia](http://purl.obolibrary.org/obo/NCIT_C8923) EquivalentTo [ICD10CM:C94.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C94.0)	(most probable)	0.8
 
 ## [Congenital Combined Immunodeficiency](http://purl.obolibrary.org/obo/NCIT_C27871) [ICD10CM:D81.8](http://apps.who.int/classifications/icd10/browse/2010/en#/D81.8) [ICD10CM:D81.9](http://apps.who.int/classifications/icd10/browse/2010/en#/D81.9)
 
@@ -1113,8 +1113,8 @@
 
 ## [ICD10CM:C30](http://apps.who.int/classifications/icd10/browse/2010/en#/C30) [ICD10CM:C76.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C76.0) [Malignant Head and Neck Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4013)
 
-- [Malignant Head and Neck Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4013) SiblingOf [ICD10CM:C76.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C76.0)	(most probable)	0.8
 - [Malignant Head and Neck Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4013) ProperSuperClassOf [ICD10CM:C30](http://apps.who.int/classifications/icd10/browse/2010/en#/C30)	(most probable)	0.8
+- [Malignant Head and Neck Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4013) SiblingOf [ICD10CM:C76.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C76.0)	(most probable)	0.8
 
 ## [Anaplastic Large Cell Lymphoma, ALK-Positive](http://purl.obolibrary.org/obo/NCIT_C37193) [ICD10CM:C84.60](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.60) [ICD10CM:C84.61](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.61) [ICD10CM:C84.64](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.64) [ICD10CM:C84.68](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.68) [ICD10CM:C84.69](http://apps.who.int/classifications/icd10/browse/2010/en#/C84.69)
 
@@ -1152,8 +1152,8 @@
 
 ## [Acute Monocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C4861) [ICD10CM:C93.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C93.9) [ICD10CM:C93.Z0](http://apps.who.int/classifications/icd10/browse/2010/en#/C93.Z0) [ICD10CM:C93](http://apps.who.int/classifications/icd10/browse/2010/en#/C93)
 
-- [Acute Monocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C4861) SiblingOf [ICD10CM:C93.Z0](http://apps.who.int/classifications/icd10/browse/2010/en#/C93.Z0)	(most probable)	0.8
 - [Acute Monocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C4861) EquivalentTo [ICD10CM:C93](http://apps.who.int/classifications/icd10/browse/2010/en#/C93)	(most probable)	0.8
+- [Acute Monocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C4861) SiblingOf [ICD10CM:C93.Z0](http://apps.who.int/classifications/icd10/browse/2010/en#/C93.Z0)	(most probable)	0.8
 - [Acute Monocytic Leukemia](http://purl.obolibrary.org/obo/NCIT_C4861) SiblingOf [ICD10CM:C93.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C93.9)	(most probable)	0.8
 
 ## [ICD10CM:C34.00](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.00) [ICD10CM:C34.01](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.01) [ICD10CM:C34.02](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.02) [ICD10CM:C34.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.0) [ICD10CM:C34.10](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.10) [ICD10CM:C34.11](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.11) [ICD10CM:C34.12](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.12) [ICD10CM:C34.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.1) [ICD10CM:C34.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.2) [ICD10CM:C34.30](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.30) [ICD10CM:C34.31](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.31) [ICD10CM:C34.32](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.32) [ICD10CM:C34.3](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.3) [ICD10CM:C34.80](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.80) [ICD10CM:C34.81](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.81) [ICD10CM:C34.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.8) [ICD10CM:C34.90](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.90) [ICD10CM:C34.91](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.91) [ICD10CM:C34.92](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.92) [ICD10CM:C34.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C34.9) [ICD10CM:C34](http://apps.who.int/classifications/icd10/browse/2010/en#/C34) [ICD10CM:C39.0](http://apps.who.int/classifications/icd10/browse/2010/en#/C39.0) [Malignant Respiratory System Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4571)
@@ -1183,14 +1183,14 @@
 
 ## [ICD10CM:C17.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C17.2) [ICD10CM:C17.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C17.9) [ICD10CM:C17](http://apps.who.int/classifications/icd10/browse/2010/en#/C17) [Malignant Small Intestinal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7523)
 
-- [Malignant Small Intestinal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7523) SiblingOf [ICD10CM:C17.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C17.9)	(most probable)	0.8
 - [Malignant Small Intestinal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7523) EquivalentTo [ICD10CM:C17](http://apps.who.int/classifications/icd10/browse/2010/en#/C17)	(most probable)	0.8
+- [Malignant Small Intestinal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7523) SiblingOf [ICD10CM:C17.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C17.9)	(most probable)	0.8
 - [Malignant Small Intestinal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7523) ProperSuperClassOf [ICD10CM:C17.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C17.2)	(most probable)	0.8
 
 ## [Brain Neoplasm](http://purl.obolibrary.org/obo/NCIT_C2907) [ICD10CM:D43.2](http://apps.who.int/classifications/icd10/browse/2010/en#/D43.2) [ICD10CM:D49.6](http://apps.who.int/classifications/icd10/browse/2010/en#/D49.6)
 
-- [Brain Neoplasm](http://purl.obolibrary.org/obo/NCIT_C2907) ProperSuperClassOf [ICD10CM:D43.2](http://apps.who.int/classifications/icd10/browse/2010/en#/D43.2)	(most probable)	0.8
 - [Brain Neoplasm](http://purl.obolibrary.org/obo/NCIT_C2907) ProperSuperClassOf [ICD10CM:D49.6](http://apps.who.int/classifications/icd10/browse/2010/en#/D49.6)	(most probable)	0.8
+- [Brain Neoplasm](http://purl.obolibrary.org/obo/NCIT_C2907) ProperSuperClassOf [ICD10CM:D43.2](http://apps.who.int/classifications/icd10/browse/2010/en#/D43.2)	(most probable)	0.8
 
 ## [ICD10CM:D02.20](http://apps.who.int/classifications/icd10/browse/2010/en#/D02.20) [ICD10CM:D02.2](http://apps.who.int/classifications/icd10/browse/2010/en#/D02.2) [Stage 0 Lung Cancer AJCC v6 and v7](http://purl.obolibrary.org/obo/NCIT_C27467)
 
@@ -1199,10 +1199,10 @@
 
 ## [ICD10CM:C13.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C13.1) [ICD10CM:C13.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C13.2) [ICD10CM:C13.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C13.8) [ICD10CM:C13.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C13.9) [Malignant Hypopharyngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7190)
 
-- [Malignant Hypopharyngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7190) SiblingOf [ICD10CM:C13.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C13.9)	(most probable)	0.8
-- [Malignant Hypopharyngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7190) ProperSuperClassOf [ICD10CM:C13.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C13.2)	(most probable)	0.8
 - [Malignant Hypopharyngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7190) SiblingOf [ICD10CM:C13.8](http://apps.who.int/classifications/icd10/browse/2010/en#/C13.8)	(most probable)	0.8
+- [Malignant Hypopharyngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7190) SiblingOf [ICD10CM:C13.9](http://apps.who.int/classifications/icd10/browse/2010/en#/C13.9)	(most probable)	0.8
 - [Malignant Hypopharyngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7190) ProperSuperClassOf [ICD10CM:C13.1](http://apps.who.int/classifications/icd10/browse/2010/en#/C13.1)	(most probable)	0.8
+- [Malignant Hypopharyngeal Neoplasm](http://purl.obolibrary.org/obo/NCIT_C7190) ProperSuperClassOf [ICD10CM:C13.2](http://apps.who.int/classifications/icd10/browse/2010/en#/C13.2)	(most probable)	0.8
 
 ## [Graft Status](http://purl.obolibrary.org/obo/NCIT_C135522) [ICD10CM:Z94.81](http://apps.who.int/classifications/icd10/browse/2010/en#/Z94.81) [ICD10CM:Z94](http://apps.who.int/classifications/icd10/browse/2010/en#/Z94)
 
