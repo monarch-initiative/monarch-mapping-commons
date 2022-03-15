@@ -33,8 +33,7 @@ for fn in TSVS:
     metadata.update({k:v for k,v in msdf.metadata.items() if k not in metadata.keys()})
     prefix_map.update({k:v for k,v in msdf.prefix_map.items() if k not in prefix_map.keys()})
     # UPDATE PREFIX_MAP based on PREFIX_RECON_YAML
-    new_prefix_map = prefix_map.copy()
-    for k in new_prefix_map.keys():
+    for k, _ in prefix_map.items():
         prefix_syn_key = [s for s in prefix_synonyms.keys() if k == s]
         if len(prefix_syn_key) > 0:
             for sk in prefix_syn_key:
