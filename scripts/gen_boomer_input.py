@@ -1,3 +1,4 @@
+import logging
 from os import listdir
 from os.path import join
 from posixpath import dirname
@@ -21,9 +22,9 @@ df_list = []
 # Read recon file
 with open(PREFIX_RECON_YAML, "r") as pref_rec:
     prefix_reconciliation = yaml.safe_load(pref_rec)
-
-prefix_synonyms = prefix_reconciliation[0]['prefix_synonyms']
-prefix_expansion = prefix_reconciliation[1]['prefix_expansion_reconciliation']
+import pdb; pdb.set_trace()
+prefix_synonyms = prefix_reconciliation['prefix_synonyms']
+prefix_expansion = prefix_reconciliation['prefix_expansion_reconciliation']
 
 for fn in TSVS:
     fp = join(INPUT_DIR, fn)
@@ -39,13 +40,17 @@ for fn in TSVS:
             for sk in prefix_syn_key:
                 correct_key = prefix_synonyms[sk]
                 correct_value = prefix_expansion[correct_key]
-                prefix_map.pop(sk, None)
+                # prefix_map.pop(sk, None)
                 # Check if key exists.
                 # If not, then condition applies.
-                # If we want to change value regardless,
-                # remove 'if' condition
+                
                 if correct_key not in prefix_map.keys():
+                    prefix_map[sk] = correct_value
+                    logging.info(f"Adding prefix_map {sk}: {correct_value}")
+                else:
                     prefix_map[correct_key] = correct_value
+                    logging.warning(f"key: {correct_key} already present in prefix_map. Not replacing value.")
+                    
     
     msdf_list.append(msdf)
     df_list.append(msdf.df)
