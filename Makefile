@@ -5,11 +5,11 @@ OUTPUT = data/output
 TMP = data/tmp
 
 # OWLS=ncit ordo doid mondo
-ONTOLOGIES=ncit icd10cm
-ONTOLOGY_PREFIXES=NCIT ICD10CM ICD10 #In the final solution REMOVE ICD10 
-BOOMER_INPUT=icd10cm ncit
+ONTOLOGIES= mondo icd10cm
+ONTOLOGY_PREFIXES= MONDO ICD10CM #In the final solution REMOVE ICD10 
+BOOMER_INPUT=icd10cm  mondo
 # MAPS= ncit ordo doid mondo_hasdbref_icd10cm ncit_icd10_2016 ncit_icd10_2017
-MAPS = ncit_icd10_2016 ncit_icd10_2017
+MAPS = mondo_hasdbref_icd10cm
 GET_OWLS=$(patsubst %, $(TMP)/%.owl, $(ONTOLOGIES))
 GET_MAPPINGS=$(patsubst %, $(INPUT)/%.sssom.tsv, $(MAPS))
 BOOMER_INPUT_FILES=$(patsubst %, $(TMP)/%.owl, $(BOOMER_INPUT))
@@ -39,6 +39,8 @@ $(TMP)/icd10cm.owl: $(TMP)/icd10cm.ttl | $(TMP)/
 $(INPUT)/mondo_hasdbref_icd10cm.sssom.tsv: $(INPUT)/
 	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_hasdbxref_icd10cm.sssom.tsv -O $@
 
+$(INPUT)/mondo_exactmatch_icd10cm.sssom.tsv: $(INPUT)/
+	wget https://raw.githubusercontent.com/monarch-initiative/mondo/45f95c89d96d38db3d10b69cbb88a514afe01bff/src/ontology/mappings/mondo_exactmatch_icd10cm.sssom.tsv -O $@
 $(INPUT)/%.sssom.tsv: $(INPUT)/
 	wget https://raw.githubusercontent.com/mapping-commons/disease-mappings/main/mappings/$*.sssom.tsv -O $@
 
