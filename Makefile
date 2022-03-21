@@ -56,9 +56,9 @@ boomer:
 		   --ontology $(OUTPUT)/combo.owl \
 		   --prefixes $(OUTPUT)/prefix.yaml \
 		   --output $(OUTPUT)/boomer_output \
-		   --window-count 20 \
-		   --runs 100 \
-		   $(addprefix --restrict-output-to-prefixes=, $(ONTOLOGY_PREFIXES))
+		   --window-count 1 \
+		   --runs 100 
+		#    $(addprefix --restrict-output-to-prefixes=, $(ONTOLOGY_PREFIXES))
 
 	find $(OUTPUT)/boomer_output -name "*.json" -type 'f' -size -500c -delete
 
@@ -76,15 +76,15 @@ $(INPUT)/ $(TMP)/ $(OUTPUT)/ $(OUTPUT)/boomer_output:
 clean: data
 	rm -rf $<
 
+EXCLUDE_JSON= singletons.json
 JSONS=$(wildcard $(OUTPUT)/boomer_output/*.json)
 PNGS=$(patsubst %.json, %.png, $(JSONS))
 
 $(OUTPUT)/boomer_output/%.json: $(OUTPUT)/boomer_output
 
 %.dot: %.json
-	og2dot.js -s boomer-style.json $< >$@
-
+	og2dot.js -s boomer-style.json $< >$@ 
 %.png: %.dot
 	dot $< -Tpng -Grankdir=BT >$@
 
-pngs:$(PNGS)
+pngs: $(PNGS) 
