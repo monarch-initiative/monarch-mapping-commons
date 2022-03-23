@@ -56,7 +56,7 @@ boomer:
 		   --ontology $(OUTPUT)/combo.owl \
 		   --prefixes $(OUTPUT)/prefix.yaml \
 		   --output $(OUTPUT)/boomer_output \
-		   --window-count 1 \
+		   --window-count 10 \
 		   --runs 100 
 		#    $(addprefix --restrict-output-to-prefixes=, $(ONTOLOGY_PREFIXES))
 
