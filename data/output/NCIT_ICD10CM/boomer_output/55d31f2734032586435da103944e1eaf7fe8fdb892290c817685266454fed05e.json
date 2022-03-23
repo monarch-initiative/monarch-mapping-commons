@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:55d31f2734032586435da103944e1eaf7fe8fdb892290c817685266454fed05e",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C15",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C7478",
+          "type" : "CLASS",
+          "lbl" : "Malignant Esophageal Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C15",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C7478",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C7478",
+            "ICD10CM:C15"
+          ]
+        }
+      ]
+    }
+  ]
+}

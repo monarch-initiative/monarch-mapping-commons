@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6a7aa65eda86a1985d6a82c6e87780d8b43076a70582b1d9184f044cde05e5f3",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C57.02",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C7480",
+          "type" : "CLASS",
+          "lbl" : "Malignant Fallopian Tube Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:C57.00",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C57.0",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C57.02",
+          "pred" : "is_a",
+          "obj" : "NCI:C7480",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C57.00",
+          "pred" : "is_a",
+          "obj" : "NCI:C7480",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C57.0",
+          "pred" : "is_a",
+          "obj" : "NCI:C7480",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}

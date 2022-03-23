@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fe86c193334caa74111b3c745aee130193fa82d8ec4c958fb532ebc6d1a96e0e",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C84.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3366",
+          "type" : "CLASS",
+          "lbl" : "Sezary Syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C84.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3366",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C3366",
+            "ICD10CM:C84.1"
+          ]
+        }
+      ]
+    }
+  ]
+}
