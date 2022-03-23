@@ -1,0 +1,35 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ab9f397aadab143bed0fc0a978bfdc74fca04236dc0fe149a50884f7178a33a1",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C70.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C4628",
+          "type" : "CLASS",
+          "lbl" : "Malignant Neoplasm of the Meninges"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C70.0",
+          "pred" : "is_a",
+          "obj" : "NCI:C4628",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}

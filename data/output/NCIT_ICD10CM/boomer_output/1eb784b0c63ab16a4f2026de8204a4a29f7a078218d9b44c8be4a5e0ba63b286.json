@@ -1,0 +1,92 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1eb784b0c63ab16a4f2026de8204a4a29f7a078218d9b44c8be4a5e0ba63b286",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C69.6",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C69.60",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C69.61",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3562",
+          "type" : "CLASS",
+          "lbl" : "Malignant Orbit Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:C69.62",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C69.6",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3562",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C69.61",
+          "pred" : "is_a",
+          "obj" : "NCI:C3562",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C69.60",
+          "pred" : "is_a",
+          "obj" : "NCI:C3562",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C69.62",
+          "pred" : "is_a",
+          "obj" : "NCI:C3562",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C69.6",
+            "NCI:C3562"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e3cf8981cbe327728f8e7233b390779603e49764a1f42b395b8b05cbd15c141e",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C92.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C3171",
+          "type" : "CLASS",
+          "lbl" : "Acute Myeloid Leukemia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C92.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C3171",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C3171",
+            "ICD10CM:C92.0"
+          ]
+        }
+      ]
+    }
+  ]
+}

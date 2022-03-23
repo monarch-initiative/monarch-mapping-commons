@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:267e957cf53f2daef4bc88e34a148c3137987821cf9ed1ec0f344af4ce545864",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:D14.30",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C8531",
+          "type" : "CLASS",
+          "lbl" : "Benign Respiratory System Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:D14.31",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:D14.3",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:D14.30",
+          "pred" : "is_a",
+          "obj" : "NCI:C8531",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D14.31",
+          "pred" : "is_a",
+          "obj" : "NCI:C8531",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D14.3",
+          "pred" : "is_a",
+          "obj" : "NCI:C8531",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}

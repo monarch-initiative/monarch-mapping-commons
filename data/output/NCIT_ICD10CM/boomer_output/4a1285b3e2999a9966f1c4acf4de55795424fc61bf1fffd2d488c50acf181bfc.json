@@ -1,0 +1,41 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4a1285b3e2999a9966f1c4acf4de55795424fc61bf1fffd2d488c50acf181bfc",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C81",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C9357",
+          "type" : "CLASS",
+          "lbl" : "Hodgkin Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C81",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C9357",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C9357",
+            "ICD10CM:C81"
+          ]
+        }
+      ]
+    }
+  ]
+}

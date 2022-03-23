@@ -1,0 +1,92 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:056ddf13f6d6b5e0024986e81ae9ef4da6f01823915114673ab80caefea97113",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C64.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C64.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C120456",
+          "type" : "CLASS",
+          "lbl" : "Malignant Kidney Neoplasm Except Pelvis"
+        },
+        {
+          "id" : "ICD10CM:C64",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C64.9",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C64.9",
+          "pred" : "is_a",
+          "obj" : "NCI:C120456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C64.2",
+          "pred" : "is_a",
+          "obj" : "NCI:C120456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C64.1",
+          "pred" : "is_a",
+          "obj" : "NCI:C120456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C64",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C120456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C64",
+            "NCI:C120456"
+          ]
+        }
+      ]
+    }
+  ]
+}
