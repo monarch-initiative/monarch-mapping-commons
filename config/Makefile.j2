@@ -14,6 +14,9 @@ all: prepare-data boomer
 .PHONY: prepare-data
 prepare-data: $(patsubst %, prepare-data-%, $(ALL_RUNS))
 
+.PHONY: reports
+reports: $(patsubst %, reports-%, $(ALL_RUNS))
+
 {% for run in config.boomer_config.runs %}
 .PHONY: prepare-data-{{ run.id }}
 prepare-data-{{ run.id }}: $(BOOMER_INPUT_DIR)/{{ run.id }}/combined.ptable.tsv $(BOOMER_INPUT_DIR)/{{ run.id }}/prefix.yaml $(BOOMER_INPUT_DIR)/{{ run.id }}/symbiont-merged-all.owl 
@@ -88,7 +91,7 @@ boomer-{{ run.id }}: | $(BOOMER_OUTPUT_DIR)/{{ run.id }}/
 	boomer --ptable $(BOOMER_INPUT_DIR)/{{ run.id }}/combined.ptable.tsv \
 		--ontology $(BOOMER_INPUT_DIR)/{{ run.id }}/symbiont-merged-all.owl \
 		--prefixes $(BOOMER_INPUT_DIR)/{{ run.id }}/prefix.yaml \
-		--output $(BOOMER_OUTPUT_DIR)/{{ run.id }}/ \
+		--output $(BOOMER_OUTPUT_DIR)/{{ run.id }}/{{ run.id }} \
 		--window-count {{ run.window_count }} \
 		--runs {{ run.runs }} \{% if run.restrict_output_to_prefixes is defined %}
 		--restrict-output-to-prefixes={{ run.restrict_output_to_prefixes.first }} \
@@ -114,6 +117,6 @@ PNGS_{{ run.id.upper() }}=$(patsubst %.json, %.png, $(filter-out singletons, $(J
 
 .PHONY: reports-{{ run.id }}
 reports-{{ run.id }}: $(PNGS_{{ run.id.upper() }})
-{%- endfor %}
+{% endfor %}
 
 include custom.Makefile
