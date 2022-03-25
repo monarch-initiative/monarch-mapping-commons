@@ -1,4 +1,3 @@
-from os import listdir
 from os.path import join
 from pathlib import Path
 from sssom.parsers import read_sssom_table
