@@ -71,13 +71,10 @@ $(TMP_DIR)/{{ mapping.local_name }}: | $(TMP_DIR)/
 {% endfor %}
 
 $(BOOMER_INPUT_DIR)/%/combined.sssom.tsv $(BOOMER_INPUT_DIR)/%/prefix.yaml: $(ALL_MAPPINGS) | $(BOOMER_INPUT_DIR)/%/
-	echo "Harshad, I need to be fixed." &&\
-	cp ../../config/dummy.prefix.yaml $(BOOMER_INPUT_DIR)/$*/prefix.yaml &&\
-	cp ../../config/dummy.combined.sssom.tsv $(BOOMER_INPUT_DIR)/$*/combined.sssom.tsv
-	#python -m scripts.gen_boomer_input \
-	#	--combined-sssom $(BOOMER_INPUT_DIR)/$*/combined.sssom.tsv \
-	#	--prefix-sssom $(BOOMER_INPUT_DIR)/$*/prefix.yaml \
-	#	--config {{ config.symbiont_config }}
+	python $(HOME_DIR)/scripts/gen_boomer_input.py run \
+		--source-location $(TMP_DIR) \
+		--target-location $(BOOMER_INPUT_DIR)/$* \
+		--config {{ config.symbiont_config }}
 
 $(BOOMER_INPUT_DIR)/%/combined.ptable.tsv: $(BOOMER_INPUT_DIR)/%/combined.sssom.tsv
 	sssom ptable $< -o $@
