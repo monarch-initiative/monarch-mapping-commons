@@ -2,7 +2,7 @@ from os.path import join
 from pathlib import Path
 from sssom.parsers import read_sssom_table
 from sssom.writers import write_table
-from sssom.util import MappingSetDataFrame
+from sssom.util import MappingSetDataFrame, reconcile_prefix_and_data
 import pandas as pd
 import yaml
 import click
@@ -73,13 +73,14 @@ def run(config:Path, source_location:Path, target_location:Path):
 
     combined_df = pd.concat(df_list, axis=0, ignore_index=True)
     combined_df = combined_df.drop_duplicates()
-
-    with open(PREFIX_YAML_FILE, "w+") as yml:
-        yaml.dump(prefix_map,yml)
-
     combined_msdf = MappingSetDataFrame(df=combined_df, prefix_map=prefix_map, metadata=metadata)
+    
+    export_msdf = reconcile_prefix_and_data(combined_msdf,config_yaml["custom_prefix_map"])
+    
+    with open(PREFIX_YAML_FILE, "w+") as yml:
+        yaml.dump(export_msdf.prefix_map,yml)
     with open(COMBINED_SSSOM, "w") as combo_file:
-        write_table(combined_msdf, combo_file)
+        write_table(export_msdf, combo_file)
 
 
 if __name__ == "__main__":
