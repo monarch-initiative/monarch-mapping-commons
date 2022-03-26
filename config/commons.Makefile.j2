@@ -1,12 +1,14 @@
 PROJECT_DIR=projects
-CONFIGDIR=config
-MAKEFILE_TEMPLATE=$(CONFIGDIR)/project.Makefile.j2
+CONFIG_DIR=config
+MAPPINGS_DIR=mappings
+
+$(MAPPINGS_DIR)/:
+	mkdir -p $@
+
+MAKEFILE_TEMPLATE=$(CONFIG_DIR)/project.Makefile.j2
 
 ALL_PROJECTS=$(strip $(patsubst %.symbiont.yaml, %, $(notdir $(wildcard $(PROJECT_DIR)/*.yaml))))
 ALL_SYMBIONT = $(patsubst %, symbiont-%, $(ALL_PROJECTS))
-
-p:
-	echo $(ALL_SYMBIONT)
 
 all: $(ALL_SYMBIONT)
 
@@ -20,10 +22,10 @@ symbiont-%:
 ## Mappings #########
 #####################
 
-ALL_MAPPINGS={% for mapping in mapping_set_references %}$(TMP_DIR)/{{ mapping.local_name }} {% endfor %}
+ALL_MAPPINGS={% for mapping in mapping_set_references %}$(MAPPINGS_DIR)/{{ mapping.local_name }} {% endfor %}
 
 {% for mapping in mapping_set_references %}
-$(TMP_DIR)/{{ mapping.local_name }}: | $(TMP_DIR)/
+$(MAPPINGS_DIR)/{{ mapping.local_name }}: | $(MAPPINGS_DIR)/
 	wget {{ mapping.mirror_from|default(mapping.mapping_set_id) }} -O $@
 {% endfor %}
 
