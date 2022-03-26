@@ -1,6 +1,6 @@
-# Monarch Mapping Commobs
+# Monarch Mapping Commons
 
-Building a fully executable workflow for reconciling ontologies using boomer.
+This is the Mapping Commons of the Monarch Initiative. It contains all mappings used in and around the knowledge graph underlying https://monarchinitiative.org/. 
 
 ## How to run the workflows
 
