@@ -1,12 +1,14 @@
 PROJECT_DIR=projects
-CONFIGDIR=config
-MAKEFILE_TEMPLATE=$(CONFIGDIR)/project.Makefile.j2
+CONFIG_DIR=config
+MAPPINGS_DIR=mappings
+
+$(MAPPINGS_DIR)/:
+	mkdir -p $@
+
+MAKEFILE_TEMPLATE=$(CONFIG_DIR)/project.Makefile.j2
 
 ALL_PROJECTS=$(strip $(patsubst %.symbiont.yaml, %, $(notdir $(wildcard $(PROJECT_DIR)/*.yaml))))
 ALL_SYMBIONT = $(patsubst %, symbiont-%, $(ALL_PROJECTS))
-
-p:
-	echo $(ALL_SYMBIONT)
 
 all: $(ALL_SYMBIONT)
 
@@ -20,25 +22,25 @@ symbiont-%:
 ## Mappings #########
 #####################
 
-ALL_MAPPINGS=$(TMP_DIR)/empty.sssom.tsv $(TMP_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv $(TMP_DIR)/mondo_exactmatch_icd10cm.sssom.tsv $(TMP_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv $(TMP_DIR)/mondo_broadmatch_icd10cm.sssom.tsv $(TMP_DIR)/ncit_icd10_2017.sssom.tsv 
+ALL_MAPPINGS=$(MAPPINGS_DIR)/empty.sssom.tsv $(MAPPINGS_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_exactmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_broadmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/ncit_icd10_2017.sssom.tsv 
 
 
-$(TMP_DIR)/empty.sssom.tsv: | $(TMP_DIR)/
+$(MAPPINGS_DIR)/empty.sssom.tsv: | $(MAPPINGS_DIR)/
 	wget https://raw.githubusercontent.com/mapping-commons/mapping-commons.github.io/main/mappings/empty.sssom.tsv -O $@
 
-$(TMP_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv: | $(TMP_DIR)/
+$(MAPPINGS_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv: | $(MAPPINGS_DIR)/
 	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_hasdbxref_icd10cm.sssom.tsv -O $@
 
-$(TMP_DIR)/mondo_exactmatch_icd10cm.sssom.tsv: | $(TMP_DIR)/
+$(MAPPINGS_DIR)/mondo_exactmatch_icd10cm.sssom.tsv: | $(MAPPINGS_DIR)/
 	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_exactmatch_icd10cm.sssom.tsv -O $@
 
-$(TMP_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv: | $(TMP_DIR)/
+$(MAPPINGS_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv: | $(MAPPINGS_DIR)/
 	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_narrowmatch_icd10cm.sssom.tsv -O $@
 
-$(TMP_DIR)/mondo_broadmatch_icd10cm.sssom.tsv: | $(TMP_DIR)/
+$(MAPPINGS_DIR)/mondo_broadmatch_icd10cm.sssom.tsv: | $(MAPPINGS_DIR)/
 	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_broadmatch_icd10cm.sssom.tsv -O $@
 
-$(TMP_DIR)/ncit_icd10_2017.sssom.tsv: | $(TMP_DIR)/
+$(MAPPINGS_DIR)/ncit_icd10_2017.sssom.tsv: | $(MAPPINGS_DIR)/
 	wget https://raw.githubusercontent.com/mapping-commons/disease-mappings/main/mappings/ncit_icd10_2017.sssom.tsv -O $@
 
 
