@@ -27,7 +27,13 @@ boomer: $(patsubst %, boomer-%, $(ALL_RUNS))
 
 .PHONY: clean
 clean:
-	rm -rf ./$(DATA)/*
+	rm -rf ./$(BOOMER_OUTPUT_DIR)/*
+	rm -rf ./$(BOOMER_INPUT_DIR)/*
+	rm -rf ./$(TMP_DIR)/*
+
+.PHONY: reset_boomer_output
+reset_boomer_output:
+	rm -rf ./$(BOOMER_OUTPUT_DIR)/*
 
 #####################
 ### Dependencies ####
@@ -88,7 +94,7 @@ boomer-{{ run.id }}: | $(BOOMER_OUTPUT_DIR)/{{ run.id }}/
 	boomer --ptable $(BOOMER_INPUT_DIR)/{{ run.id }}/combined.ptable.tsv \
 		--ontology $(BOOMER_INPUT_DIR)/{{ run.id }}/symbiont-merged-all.owl \
 		--prefixes $(BOOMER_INPUT_DIR)/{{ run.id }}/prefix.yaml \
-		--output $(BOOMER_OUTPUT_DIR)/{{ run.id }}/{{ run.id }} \
+		--output $(BOOMER_OUTPUT_DIR)/{{ run.id }}/boomer_output \
 		--window-count {{ run.window_count }} \
 		--runs {{ run.runs }} \{% if run.restrict_output_to_prefixes is defined %}
 		--restrict-output-to-prefixes={{ run.restrict_output_to_prefixes.first }} \
@@ -109,7 +115,7 @@ boomer-{{ run.id }}: | $(BOOMER_OUTPUT_DIR)/{{ run.id }}/
 	test `wc -c <$<` -gt 650000 || dot $< -Tpng -Grankdir=BT >$@
 
 {% for run in config.boomer_config.runs %}
-JSONS_{{ run.id.upper() }}=$(wildcard $(BOOMER_OUTPUT_DIR)/{{ run.id }}/{{ run.id }}/*.json)
+JSONS_{{ run.id.upper() }}=$(wildcard $(BOOMER_OUTPUT_DIR)/{{ run.id }}/boomer_output/*.json)
 PNGS_{{ run.id.upper() }}=$(patsubst %.json, %.png, $(filter-out singletons, $(JSONS_{{ run.id.upper() }})))
 
 .PHONY: reports-{{ run.id }}

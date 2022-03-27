@@ -20,26 +20,26 @@ config:
         runs: 10
         mappings:
           - empty.sssom.tsv
-      - id: has_dbxref
-        window_count: 100
-        runs: 10
-        mappings:
-          - mondo_hasdbxref_icd10cm.sssom.tsv
+#      - id: has_dbxref
+#        window_count: 100
+#        runs: 10
+#        mappings:
+#          - mondo_hasdbxref_icd10cm.sssom.tsv
       - id: exact_match_only
-        window_count: 100
-        runs: 10
+        window_count: 10
+        runs: 1
         mappings:
           - mondo_exactmatch_icd10cm.sssom.tsv
       - id: all_precise
-        window_count: 100
-        runs: 10
+        window_count: 10
+        runs: 1
         mappings:
           - mondo_exactmatch_icd10cm.sssom.tsv
           - mondo_narrowmatch_icd10cm.sssom.tsv
           - mondo_broadmatch_icd10cm.sssom.tsv
       - id: all
-        window_count: 100
-        runs: 10
+        window_count: 10
+        runs: 1
         mappings:
           - mondo_exactmatch_icd10cm.sssom.tsv
           - mondo_narrowmatch_icd10cm.sssom.tsv
