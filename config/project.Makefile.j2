@@ -106,10 +106,10 @@ boomer-{{ run.id }}: | $(BOOMER_OUTPUT_DIR)/{{ run.id }}/
 %.dot: %.json
 	og2dot.js -s {{ config.boomer_style }} $< >$@ 
 %.png: %.dot
-	dot $< -Tpng -Grankdir=BT >$@
+	test `wc -c <$<` -gt 650000 || dot $< -Tpng -Grankdir=BT >$@
 
 {% for run in config.boomer_config.runs %}
-JSONS_{{ run.id.upper() }}=$(wildcard $(BOOMER_OUTPUT_DIR)/{{ run.id }}/*.json)
+JSONS_{{ run.id.upper() }}=$(wildcard $(BOOMER_OUTPUT_DIR)/{{ run.id }}/{{ run.id }}/*.json)
 PNGS_{{ run.id.upper() }}=$(patsubst %.json, %.png, $(filter-out singletons, $(JSONS_{{ run.id.upper() }})))
 
 .PHONY: reports-{{ run.id }}
