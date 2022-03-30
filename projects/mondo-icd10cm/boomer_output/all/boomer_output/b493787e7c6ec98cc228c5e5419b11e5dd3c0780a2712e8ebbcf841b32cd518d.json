@@ -1,0 +1,106 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b493787e7c6ec98cc228c5e5419b11e5dd3c0780a2712e8ebbcf841b32cd518d",
+      "nodes" : [
+        {
+          "id" : "MONDO:0019324",
+          "type" : "CLASS",
+          "lbl" : "pemphigus foliaceus"
+        },
+        {
+          "id" : "MONDO:0018745",
+          "type" : "CLASS",
+          "lbl" : "superficial pemphigus"
+        },
+        {
+          "id" : "ICD10CM:L10.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016164",
+          "type" : "CLASS",
+          "lbl" : "herpetiform pemphigus"
+        },
+        {
+          "id" : "ICD10CM:L10.3",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:L10.2",
+          "pred" : "is_a",
+          "obj" : "MONDO:0016164",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018745",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:L10.3",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:L10.2",
+          "pred" : "is_a",
+          "obj" : "MONDO:0018745",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:L10.2",
+          "pred" : "is_a",
+          "obj" : "MONDO:0019324",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019324",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0018745",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016164",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0018745",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}
