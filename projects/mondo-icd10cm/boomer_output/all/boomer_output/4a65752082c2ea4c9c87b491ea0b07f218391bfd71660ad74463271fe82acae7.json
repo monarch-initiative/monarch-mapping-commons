@@ -1,0 +1,85 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4a65752082c2ea4c9c87b491ea0b07f218391bfd71660ad74463271fe82acae7",
+      "nodes" : [
+        {
+          "id" : "MONDO:0015045",
+          "type" : "CLASS",
+          "lbl" : "alpha-heavy chain disease"
+        },
+        {
+          "id" : "MONDO:0019464",
+          "type" : "CLASS",
+          "lbl" : "heavy chain disease"
+        },
+        {
+          "id" : "ICD10CM:C88.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C88.2",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015045",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0019464",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019464",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:C88.3",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C88.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019464",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015045",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:C88.3",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C88.2",
+            "MONDO:0019464"
+          ]
+        }
+      ]
+    }
+  ]
+}
