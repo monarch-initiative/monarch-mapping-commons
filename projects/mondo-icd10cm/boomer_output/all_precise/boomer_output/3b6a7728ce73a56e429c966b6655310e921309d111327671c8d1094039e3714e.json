@@ -1,0 +1,135 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3b6a7728ce73a56e429c966b6655310e921309d111327671c8d1094039e3714e",
+      "nodes" : [
+        {
+          "id" : "MONDO:0009251",
+          "type" : "CLASS",
+          "lbl" : "fructose-1,6-bisphosphatase deficiency"
+        },
+        {
+          "id" : "ICD10CM:E74.12",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009249",
+          "type" : "CLASS",
+          "lbl" : "hereditary fructose intolerance"
+        },
+        {
+          "id" : "MONDO:0009252",
+          "type" : "CLASS",
+          "lbl" : "essential fructosuria"
+        },
+        {
+          "id" : "ICD10CM:E74.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:E74.11",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:E74.1",
+          "pred" : "is_a",
+          "obj" : "MONDO:0009251",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:E74.12",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:E74.1",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009249",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:E74.1",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:E74.12",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009249",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:E74.11",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009252",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:E74.11",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:E74.1",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009252",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:E74.1",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009252",
+            "ICD10CM:E74.11"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "MONDO:0009249",
+            "ICD10CM:E74.12"
+          ]
+        }
+      ]
+    }
+  ]
+}
