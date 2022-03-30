@@ -1,0 +1,119 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d7ef72944a2409927a74e444b05c92c94bd7b2358def230c45095759e0a9fa17",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:B47.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:B47.9",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:B47.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:B47",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016823",
+          "type" : "CLASS",
+          "lbl" : "mycetoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:B47.1",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:B47",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:B47",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016823",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:B47.9",
+          "pred" : "is_a",
+          "obj" : "MONDO:0016823",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:B47.0",
+          "pred" : "is_a",
+          "obj" : "MONDO:0016823",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:B47.0",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:B47",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:B47.9",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:B47",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:B47.1",
+          "pred" : "is_a",
+          "obj" : "MONDO:0016823",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016823",
+            "ICD10CM:B47"
+          ]
+        }
+      ]
+    }
+  ]
+}
