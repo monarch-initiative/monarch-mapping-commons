@@ -1,0 +1,67 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6f029b1746a19b2760e116efb3db81a96440d8df97003448103f8551ba52aef0",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:A68.9",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:A68",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019633",
+          "type" : "CLASS",
+          "lbl" : "relapsing fever"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:A68.9",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:A68",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:A68",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019633",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:A68.9",
+          "pred" : "is_a",
+          "obj" : "MONDO:0019633",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:A68",
+            "MONDO:0019633"
+          ]
+        }
+      ]
+    }
+  ]
+}
