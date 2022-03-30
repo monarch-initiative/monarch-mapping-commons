@@ -1,0 +1,202 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c0aec60bffcfd33ff4dc86af816722901a70cc34b48ab9229ad7b1cb5c14d461",
+      "nodes" : [
+        {
+          "id" : "MONDO:0018826",
+          "type" : "CLASS",
+          "lbl" : "Lewis-Sumner syndrome"
+        },
+        {
+          "id" : "ICD10CM:G61.82",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:G61.8",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016102",
+          "type" : "CLASS",
+          "lbl" : "subacute inflammatory demyelinating polyneuropathy"
+        },
+        {
+          "id" : "MONDO:0016176",
+          "type" : "CLASS",
+          "lbl" : "axonal polyneuropathy associated with IgG/IgM/IgA monoclonal gammopathy"
+        },
+        {
+          "id" : "MONDO:0019109",
+          "type" : "CLASS",
+          "lbl" : "CANOMAD syndrome"
+        },
+        {
+          "id" : "MONDO:0016171",
+          "type" : "CLASS",
+          "lbl" : "polyradiculoneuropathy associated with IgG/IgA/IgM monoclonal gammopathy without known antibodies"
+        },
+        {
+          "id" : "MONDO:0016170",
+          "type" : "CLASS",
+          "lbl" : "chronic polyradiculoneuropathy"
+        },
+        {
+          "id" : "MONDO:0018979",
+          "type" : "CLASS",
+          "lbl" : "multifocal motor neuropathy"
+        },
+        {
+          "id" : "MONDO:0018977",
+          "type" : "CLASS",
+          "lbl" : "polyneuropathy associated with IgM monoclonal gammapathy with anti-MAG"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018979",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:G61.8",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:G61.8",
+          "pred" : "is_a",
+          "obj" : "MONDO:0018977",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:G61.82",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018979",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:G61.82",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:G61.8",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:G61.8",
+          "pred" : "is_a",
+          "obj" : "MONDO:0016170",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:G61.8",
+          "pred" : "is_a",
+          "obj" : "MONDO:0016176",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016171",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0016170",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:G61.8",
+          "pred" : "is_a",
+          "obj" : "MONDO:0019109",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:G61.8",
+          "pred" : "is_a",
+          "obj" : "MONDO:0016102",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016171",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:G61.8",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:G61.8",
+          "pred" : "is_a",
+          "obj" : "MONDO:0018826",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018979",
+            "ICD10CM:G61.82"
+          ]
+        }
+      ]
+    }
+  ]
+}
