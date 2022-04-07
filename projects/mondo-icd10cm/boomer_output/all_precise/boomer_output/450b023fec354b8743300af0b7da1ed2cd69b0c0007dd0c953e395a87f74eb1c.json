@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:450b023fec354b8743300af0b7da1ed2cd69b0c0007dd0c953e395a87f74eb1c",
+      "nodes" : [
+        {
+          "id" : "MONDO:0013452",
+          "type" : "CLASS",
+          "lbl" : "multisystemic smooth muscle dysfunction syndrome"
+        },
+        {
+          "id" : "MONDO:0016028",
+          "type" : "CLASS",
+          "lbl" : "erythromelalgia"
+        },
+        {
+          "id" : "ICD10CM:I73.81",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007571",
+          "type" : "CLASS",
+          "lbl" : "primary erythermalgia"
+        },
+        {
+          "id" : "ICD10CM:I73.8",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:I73.8",
+          "pred" : "is_a",
+          "obj" : "MONDO:0013452",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007571",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0016028",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016028",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:I73.8",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:I73.81",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016028",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007571",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:I73.8",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:I73.81",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:I73.8",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:I73.81",
+            "MONDO:0016028"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:69e13189e349bb074f4c92af5cb96dc2fe98931f7bd82f13a9a7d1cd9dc4e457",
+      "nodes" : [
+        {
+          "id" : "MONDO:0015504",
+          "type" : "CLASS",
+          "lbl" : "larynx anomaly"
+        },
+        {
+          "id" : "ICD10CM:Q31.8",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015396",
+          "type" : "CLASS",
+          "lbl" : "congenital laryngeal cyst"
+        },
+        {
+          "id" : "ICD10CM:Q31.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:Q31.9",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007879",
+          "type" : "CLASS",
+          "lbl" : "larynx atresia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015504",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:Q31.9",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q31.8",
+          "pred" : "is_a",
+          "obj" : "MONDO:0015396",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015504",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:Q31.0",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q31.8",
+          "pred" : "is_a",
+          "obj" : "MONDO:0015504",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015396",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0015504",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007879",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0015504",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q31.8",
+          "pred" : "is_a",
+          "obj" : "MONDO:0007879",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}

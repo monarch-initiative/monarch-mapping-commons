@@ -1,0 +1,123 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bddbf7d2ee7e445932bcbf6a162f2060055a796f5eaf63699e491962f689f45a",
+      "nodes" : [
+        {
+          "id" : "MONDO:0016064",
+          "type" : "CLASS",
+          "lbl" : "cleft palate"
+        },
+        {
+          "id" : "ICD10CM:Q35.7",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010560",
+          "type" : "CLASS",
+          "lbl" : "cleft palate with or without ankyloglossia, X-linked"
+        },
+        {
+          "id" : "MONDO:0015479",
+          "type" : "CLASS",
+          "lbl" : "submucosal cleft palate"
+        },
+        {
+          "id" : "ICD10CM:Q35.9",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:Q35.5",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:Q35.9",
+          "pred" : "is_a",
+          "obj" : "MONDO:0015479",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016064",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:Q35.7",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q35.9",
+          "pred" : "is_a",
+          "obj" : "MONDO:0016064",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016064",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:Q35.5",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010560",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0016064",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q35.9",
+          "pred" : "is_a",
+          "obj" : "MONDO:0010560",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015479",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0016064",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}

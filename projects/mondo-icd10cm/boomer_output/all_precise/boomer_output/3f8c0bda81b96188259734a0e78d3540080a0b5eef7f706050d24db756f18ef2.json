@@ -1,0 +1,70 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3f8c0bda81b96188259734a0e78d3540080a0b5eef7f706050d24db756f18ef2",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:Q84.6",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008060",
+          "type" : "CLASS",
+          "lbl" : "nonsyndromic congenital nail disorder 1"
+        },
+        {
+          "id" : "ICD10CM:L60.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011595",
+          "type" : "CLASS",
+          "lbl" : "nonsyndromic congenital nail disorder 7"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:Q84.6",
+          "pred" : "is_a",
+          "obj" : "MONDO:0008060",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:L60.3",
+          "pred" : "is_a",
+          "obj" : "MONDO:0008060",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q84.6",
+          "pred" : "is_a",
+          "obj" : "MONDO:0011595",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}
