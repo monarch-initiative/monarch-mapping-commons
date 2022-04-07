@@ -1,0 +1,139 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:324140d22c2fadeeb23ab9654e21134a11054be05af6a539683b62552496a54a",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:Q23",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020403",
+          "type" : "CLASS",
+          "lbl" : "congenital mitral valve agenesis"
+        },
+        {
+          "id" : "MONDO:0019818",
+          "type" : "CLASS",
+          "lbl" : "cleft mitral valve"
+        },
+        {
+          "id" : "MONDO:0020401",
+          "type" : "CLASS",
+          "lbl" : "congenital unguarded mitral orifice"
+        },
+        {
+          "id" : "MONDO:0019817",
+          "type" : "CLASS",
+          "lbl" : "congenital mitral valve insufficiency and/or stenosis"
+        },
+        {
+          "id" : "ICD10CM:Q23.3",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:Q23.3",
+          "pred" : "is_a",
+          "obj" : "MONDO:0019817",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020401",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0019817",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q23.3",
+          "pred" : "is_a",
+          "obj" : "MONDO:0019818",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q23.3",
+          "pred" : "is_a",
+          "obj" : "MONDO:0020403",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020403",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0019817",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q23.3",
+          "pred" : "is_a",
+          "obj" : "MONDO:0020401",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q23",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019817",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q23.3",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:Q23",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:Q23",
+            "MONDO:0019817"
+          ]
+        }
+      ]
+    }
+  ]
+}

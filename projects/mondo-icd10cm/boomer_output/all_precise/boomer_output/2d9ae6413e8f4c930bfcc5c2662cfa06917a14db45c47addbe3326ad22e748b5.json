@@ -1,0 +1,119 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2d9ae6413e8f4c930bfcc5c2662cfa06917a14db45c47addbe3326ad22e748b5",
+      "nodes" : [
+        {
+          "id" : "MONDO:0005825",
+          "type" : "CLASS",
+          "lbl" : "leptospirosis"
+        },
+        {
+          "id" : "ICD10CM:A27.8",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:A27.9",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:A27",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:A27.0",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:A27.8",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:A27",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:A27.0",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:A27",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:A27.9",
+          "pred" : "is_a",
+          "obj" : "MONDO:0005825",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:A27",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005825",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:A27.9",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:A27",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:A27.0",
+          "pred" : "is_a",
+          "obj" : "MONDO:0005825",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:A27.8",
+          "pred" : "is_a",
+          "obj" : "MONDO:0005825",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:A27",
+            "MONDO:0005825"
+          ]
+        }
+      ]
+    }
+  ]
+}
