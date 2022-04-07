@@ -3,7 +3,7 @@ description: We harmonise our mappings between Mondo and ICD10CM.
 ontologies:
   - id: mondo
     prefix: MONDO
-    mirror_from: 
+    mirror_from:
   - id: icd10cm
     prefix: ICD10CM
 config:
@@ -20,26 +20,26 @@ config:
         runs: 10
         mappings:
           - empty.sssom.tsv
-      - id: has_dbxref
-        window_count: 100
-        runs: 10
-        mappings:
-          - mondo_hasdbxref_icd10cm.sssom.tsv
+#      - id: has_dbxref
+#        window_count: 100
+#        runs: 10
+#        mappings:
+#          - mondo_hasdbxref_icd10cm.sssom.tsv
       - id: exact_match_only
-        window_count: 100
-        runs: 10
+        window_count: 10
+        runs: 1
         mappings:
           - mondo_exactmatch_icd10cm.sssom.tsv
       - id: all_precise
-        window_count: 100
-        runs: 10
+        window_count: 10
+        runs: 1
         mappings:
           - mondo_exactmatch_icd10cm.sssom.tsv
           - mondo_narrowmatch_icd10cm.sssom.tsv
           - mondo_broadmatch_icd10cm.sssom.tsv
       - id: all
-        window_count: 100
-        runs: 10
+        window_count: 10
+        runs: 1
         mappings:
           - mondo_exactmatch_icd10cm.sssom.tsv
           - mondo_narrowmatch_icd10cm.sssom.tsv
@@ -47,33 +47,34 @@ config:
           - ncit_icd10_2017.sssom.tsv
 mapping_registry:
   mapping_registry_id: https://w3id.org/sssom/commons/monarch/icd10-mondo-alignment
-  documentation: https://github.com/monarch-initiative/boomer-workflow
-  homepage: https://github.com/monarch-initiative/boomer-workflow
+  imports:
+    - id: https://w3id.org/sssom/commons/monarch
+      registry_url: https://raw.githubusercontent.com/monarch-initiative/monarch-mapping-commons/d08bd150cdadffb02c59c86d427c6605aa47a3af/registry.yaml
   mapping_set_references:
-    - mapping_set_id: http://w3id.org/sssom/commons/general/empty.sssom.tsv
-      mirror_from: https://raw.githubusercontent.com/mapping-commons/mapping-commons.github.io/main/mappings/empty.sssom.tsv
-      local_name: empty.sssom.tsv
-      registry_confidence: 0.01
-    - mapping_set_id: http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_icd10cm.sssom.tsv
-      local_name: mondo_hasdbxref_icd10cm.sssom.tsv
-      mirror_from: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_hasdbxref_icd10cm.sssom.tsv
-      registry_confidence: 0.5
-    - mapping_set_id: http://purl.obolibrary.org/obo/mondo/mappings/mondo_exactmatch_icd10cm.sssom.tsv
-      local_name: mondo_exactmatch_icd10cm.sssom.tsv
-      mirror_from: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_exactmatch_icd10cm.sssom.tsv
-      registry_confidence: 0.99
-    - mapping_set_id: http://purl.obolibrary.org/obo/mondo/mappings/mondo_narrowmatch_icd10cm.sssom.tsv
-      local_name: mondo_narrowmatch_icd10cm.sssom.tsv
-      mirror_from: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_narrowmatch_icd10cm.sssom.tsv
-      registry_confidence: 0.75
-    - mapping_set_id: http://purl.obolibrary.org/obo/mondo/mappings/mondo_broadmatch_icd10cm.sssom.tsv
-      local_name: mondo_broadmatch_icd10cm.sssom.tsv
-      mirror_from: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_broadmatch_icd10cm.sssom.tsv
-      registry_confidence: 0.75
-    - mapping_set_id: http://w3id.org/sssom/commons/disease/ncit_icd10_2017.sssom.tsv
-      mirror_from: https://raw.githubusercontent.com/mapping-commons/disease-mappings/main/mappings/ncit_icd10_2017.sssom.tsv
-      local_name: ncit_icd10_2017.sssom.tsv
-      registry_confidence: 0.8
+  - mapping_set_id: http://w3id.org/sssom/commons/general/empty.sssom.tsv
+    mirror_from: https://raw.githubusercontent.com/mapping-commons/mapping-commons.github.io/main/mappings/empty.sssom.tsv
+    local_name: empty.sssom.tsv
+    registry_confidence: 0.01
+  - mapping_set_id: http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_icd10cm.sssom.tsv
+    local_name: mondo_hasdbxref_icd10cm.sssom.tsv
+    mirror_from: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_hasdbxref_icd10cm.sssom.tsv
+    registry_confidence: 0.5
+  - mapping_set_id: http://purl.obolibrary.org/obo/mondo/mappings/mondo_exactmatch_icd10cm.sssom.tsv
+    local_name: mondo_exactmatch_icd10cm.sssom.tsv
+    mirror_from: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_exactmatch_icd10cm.sssom.tsv
+    registry_confidence: 0.99
+  - mapping_set_id: http://purl.obolibrary.org/obo/mondo/mappings/mondo_narrowmatch_icd10cm.sssom.tsv
+    local_name: mondo_narrowmatch_icd10cm.sssom.tsv
+    mirror_from: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_narrowmatch_icd10cm.sssom.tsv
+    registry_confidence: 0.75
+  - mapping_set_id: http://purl.obolibrary.org/obo/mondo/mappings/mondo_broadmatch_icd10cm.sssom.tsv
+    local_name: mondo_broadmatch_icd10cm.sssom.tsv
+    mirror_from: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_broadmatch_icd10cm.sssom.tsv
+    registry_confidence: 0.75
+  - mapping_set_id: http://w3id.org/sssom/commons/disease/ncit_icd10_2017.sssom.tsv
+    mirror_from: https://raw.githubusercontent.com/mapping-commons/disease-mappings/main/mappings/ncit_icd10_2017.sssom.tsv
+    local_name: ncit_icd10_2017.sssom.tsv
+    registry_confidence: 0.8
 custom_prefix_map:
   prefix_synonyms:
     ICD10: ICD10CM
