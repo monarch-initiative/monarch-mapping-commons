@@ -55,7 +55,7 @@ def _load_default_info(msdf:MappingSetDataFrame)-> MappingSetDataFrame:
         logging.warning(f"There seems to be no default values\
              for mapping_set_id provided.")
     return msdf
-    
+
 
 @cli.command()
 @click.option("--config", "-c", type=click.Path(exists=True), help=f"Path to the config folder.")
@@ -75,7 +75,7 @@ def run(config:Path, source_location:Path, target_location:Path):
                         info for info in config_yaml["config"]["boomer_config"]["runs"]
                         if info["id"] == id
                     ]
-    
+
     if len(concerned_run_list) == 1 :
         concerned_run = concerned_run_list[0]
     elif len(concerned_run_list) > 1:
@@ -123,9 +123,9 @@ def run(config:Path, source_location:Path, target_location:Path):
     combined_df = pd.concat(df_list, axis=0, ignore_index=True)
     combined_df = combined_df.drop_duplicates()
     combined_msdf = MappingSetDataFrame(df=combined_df, prefix_map=prefix_map, metadata=metadata)
-    
+
     export_msdf = reconcile_prefix_and_data(combined_msdf,config_yaml["custom_prefix_map"])
-    
+
     with open(PREFIX_YAML_FILE, "w+") as yml:
         yaml.dump(export_msdf.prefix_map,yml)
     with open(COMBINED_SSSOM, "w") as combo_file:
@@ -134,4 +134,3 @@ def run(config:Path, source_location:Path, target_location:Path):
 
 if __name__ == "__main__":
     cli()
-

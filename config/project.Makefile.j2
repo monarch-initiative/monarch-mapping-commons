@@ -1,0 +1,125 @@
+TMP_DIR = tmp
+BOOMER_INPUT_DIR = boomer_input
+BOOMER_OUTPUT_DIR = boomer_output
+
+ALL_RUNS={% for run in config.boomer_config.runs %}{{ run.id }} {% endfor %}
+
+$(TMP_DIR)/ {% for run in config.boomer_config.runs %}$(TMP_DIR)/{{ run.id }}/ $(BOOMER_INPUT_DIR)/{{ run.id }}/ $(BOOMER_OUTPUT_DIR)/{{ run.id }}/ {% endfor %}:
+	mkdir -p $@
+
+.PHONY: all
+all: prepare-data boomer
+	make reports # Needs to be run like this, because the jsons are unknown before the boomer run
+
+.PHONY: prepare-data
+prepare-data: $(patsubst %, prepare-data-%, $(ALL_RUNS))
+
+.PHONY: reports
+reports: $(patsubst %, reports-%, $(ALL_RUNS))
+
+{% for run in config.boomer_config.runs %}
+.PHONY: prepare-data-{{ run.id }}
+prepare-data-{{ run.id }}: $(BOOMER_INPUT_DIR)/{{ run.id }}/combined.ptable.tsv $(BOOMER_INPUT_DIR)/{{ run.id }}/prefix.yaml $(BOOMER_INPUT_DIR)/{{ run.id }}/symbiont-merged-all.owl 
+{% endfor %}
+
+.PHONY: boomer
+boomer: $(patsubst %, boomer-%, $(ALL_RUNS))
+
+.PHONY: clean
+clean:
+	rm -rf ./$(BOOMER_OUTPUT_DIR)/*
+	rm -rf ./$(BOOMER_INPUT_DIR)/*
+	rm -rf ./$(TMP_DIR)/*
+
+.PHONY: reset_boomer_output
+reset_boomer_output:
+	rm -rf ./$(BOOMER_OUTPUT_DIR)/*
+
+#####################
+### Dependencies ####
+#####################
+
+.PHONY: sssom
+sssom:
+	echo "skipping.."
+#	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall git+https://github.com/mapping-commons/sssom-py.git@curie_detection_patch
+#	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall sssom==0.3.7
+
+#####################
+## Ontologies #######
+#####################
+
+ONTOLOGIES= {% for ontology in ontologies %}{{ ontology.id }} {% endfor %}
+ONTOLOGY_PREFIXES= {% for ontology in ontologies %}{{ ontology.prefix }} {% endfor %}
+
+ALL_ONTOLOGIES=$(patsubst %, $(TMP_DIR)/%.owl, $(ONTOLOGIES))
+
+{% for ontology in ontologies %}
+$(TMP_DIR)/{{ ontology.id }}.owl: | $(TMP_DIR)/
+	wget {{ ontology.mirror_from|default('http://purl.obolibrary.org/obo/' ~ ontology.id ~ '.owl', true)}} -O $@
+{% endfor %}
+
+$(TMP_DIR)/symbiont-merged-all.owl: $(ALL_ONTOLOGIES)
+	robot merge $(addprefix -i , $^) --output $@
+
+$(BOOMER_INPUT_DIR)/%/symbiont-merged-all.owl: $(TMP_DIR)/symbiont-merged-all.owl
+	cp $< $@
+
+#####################
+## Mappings #########
+#####################
+
+ALL_MAPPINGS={% for mapping in mapping_registry.mapping_set_references %}$(TMP_DIR)/{{ mapping.local_name }} {% endfor %}
+
+{% for mapping in mapping_registry.mapping_set_references %}
+$(TMP_DIR)/{{ mapping.local_name }}: | $(TMP_DIR)/
+	wget {{ mapping.mirror_from|default(mapping.mapping_set_id) }} -O $@
+{% endfor %}
+
+$(BOOMER_INPUT_DIR)/%/combined.sssom.tsv $(BOOMER_INPUT_DIR)/%/prefix.yaml: $(ALL_MAPPINGS) | $(BOOMER_INPUT_DIR)/%/
+	python $(HOME_DIR)/scripts/gen_boomer_input.py run \
+		--source-location $(TMP_DIR) \
+		--target-location $(BOOMER_INPUT_DIR)/$* \
+		--config {{ config.symbiont_config }}
+
+$(BOOMER_INPUT_DIR)/%/combined.ptable.tsv: $(BOOMER_INPUT_DIR)/%/combined.sssom.tsv
+	sssom ptable $< -o $@
+
+#####################
+## Boomer ###########
+#####################
+
+{% for run in config.boomer_config.runs %}
+boomer-{{ run.id }}: | $(BOOMER_OUTPUT_DIR)/{{ run.id }}/
+	boomer --ptable $(BOOMER_INPUT_DIR)/{{ run.id }}/combined.ptable.tsv \
+		--ontology $(BOOMER_INPUT_DIR)/{{ run.id }}/symbiont-merged-all.owl \
+		--prefixes $(BOOMER_INPUT_DIR)/{{ run.id }}/prefix.yaml \
+		--output $(BOOMER_OUTPUT_DIR)/{{ run.id }}/boomer_output \
+		--window-count {{ run.window_count }} \
+		--runs {{ run.runs }} \{% if run.restrict_output_to_prefixes is defined %}
+		--restrict-output-to-prefixes={{ run.restrict_output_to_prefixes.first }} \
+		--restrict-output-to-prefixes={{ run.restrict_output_to_prefixes.second }} \
+		{%- elif config.boomer_config.defaults.restrict_output_to_prefixes %}
+		--restrict-output-to-prefixes={{ config.boomer_config.defaults.restrict_output_to_prefixes.first }} \
+		--restrict-output-to-prefixes={{ config.boomer_config.defaults.restrict_output_to_prefixes.second }}{% endif %}
+	find $(BOOMER_OUTPUT_DIR)/{{ run.id }} -name "*.json" -type 'f' -size -500c -delete # Hack for removing individual singleton json files.
+{% endfor %}
+
+#####################
+## Reports ##########
+#####################
+
+%.dot: %.json
+	og2dot.js -s {{ config.boomer_style }} $< >$@ 
+%.png: %.dot
+	test `wc -c <$<` -gt 650000 || dot $< -Tpng -Grankdir=BT >$@
+
+{% for run in config.boomer_config.runs %}
+JSONS_{{ run.id.upper() }}=$(wildcard $(BOOMER_OUTPUT_DIR)/{{ run.id }}/boomer_output/*.json)
+PNGS_{{ run.id.upper() }}=$(patsubst %.json, %.png, $(filter-out singletons, $(JSONS_{{ run.id.upper() }})))
+
+.PHONY: reports-{{ run.id }}
+reports-{{ run.id }}: $(PNGS_{{ run.id.upper() }})
+{% endfor %}
+
+include custom.Makefile

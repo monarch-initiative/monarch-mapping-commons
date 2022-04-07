@@ -1,0 +1,130 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:05065450f8ae91c0a4d22b5876f0284111b257b6c380248118c1eec69e053346",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:B87.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:B87.4",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:B87.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:B87.9",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019147",
+          "type" : "CLASS",
+          "lbl" : "myiasis"
+        },
+        {
+          "id" : "ICD10CM:B87.8",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015623",
+          "type" : "CLASS",
+          "lbl" : "cavitary myiasis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015623",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:B87.8",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019147",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:B87.9",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015623",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0019147",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019147",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:B87.2",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019147",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:B87.8",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019147",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:B87.4",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019147",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:B87.3",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7211078df022d169f5d070ffdf3ac5de5dfd1a0dfdb5af705ea80f0c17e34144",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:H53.51",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018852",
+          "type" : "CLASS",
+          "lbl" : "achromatopsia"
+        },
+        {
+          "id" : "MONDO:0008610",
+          "type" : "CLASS",
+          "lbl" : "blue color blindness"
+        },
+        {
+          "id" : "MONDO:0010563",
+          "type" : "CLASS",
+          "lbl" : "blue cone monochromacy"
+        },
+        {
+          "id" : "ICD10CM:H53.5",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001703",
+          "type" : "CLASS",
+          "lbl" : "color vision disorder"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018852",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0001703",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:H53.51",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018852",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008610",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0001703",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:H53.51",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:H53.5",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010563",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0001703",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:H53.5",
+          "pred" : "is_a",
+          "obj" : "MONDO:0001703",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010563",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0018852",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018852",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:H53.5",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010563",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:H53.5",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:H53.5",
+          "pred" : "is_a",
+          "obj" : "MONDO:0008610",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:H53.51",
+            "MONDO:0018852"
+          ]
+        }
+      ]
+    }
+  ]
+}
