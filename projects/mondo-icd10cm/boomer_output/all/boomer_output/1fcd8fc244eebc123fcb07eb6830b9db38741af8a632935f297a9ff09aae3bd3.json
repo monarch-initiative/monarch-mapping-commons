@@ -1,0 +1,63 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1fcd8fc244eebc123fcb07eb6830b9db38741af8a632935f297a9ff09aae3bd3",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:D47.4",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009692",
+          "type" : "CLASS",
+          "lbl" : "primary myelofibrosis"
+        },
+        {
+          "id" : "ICD10CM:D47.Z2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015564",
+          "type" : "CLASS",
+          "lbl" : "Castleman disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:D47.4",
+          "pred" : "is_a",
+          "obj" : "MONDO:0009692",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D47.Z2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015564",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:D47.Z2",
+            "MONDO:0015564"
+          ]
+        }
+      ]
+    }
+  ]
+}

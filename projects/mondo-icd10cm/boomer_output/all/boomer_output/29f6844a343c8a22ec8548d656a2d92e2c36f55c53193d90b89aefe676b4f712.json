@@ -1,0 +1,117 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:29f6844a343c8a22ec8548d656a2d92e2c36f55c53193d90b89aefe676b4f712",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:E34.52",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021023",
+          "type" : "CLASS",
+          "lbl" : "complete androgen insensitivity syndrome"
+        },
+        {
+          "id" : "ICD10CM:E34.51",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010720",
+          "type" : "CLASS",
+          "lbl" : "partial androgen insensitivity syndrome"
+        },
+        {
+          "id" : "ICD10CM:E34.5",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:E34.52",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:E34.5",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:E34.52",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010720",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:E34.51",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:E34.5",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010720",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:E34.5",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021023",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:E34.5",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:E34.51",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021023",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021023",
+            "ICD10CM:E34.51"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "ICD10CM:E34.52",
+            "MONDO:0010720"
+          ]
+        }
+      ]
+    }
+  ]
+}

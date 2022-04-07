@@ -1,0 +1,107 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:49a78445c120f39abfbcce45ed0893fe727d6907a0d1554c12db81803d91b934",
+      "nodes" : [
+        {
+          "id" : "MONDO:0011018",
+          "type" : "CLASS",
+          "lbl" : "brachyolmia-amelogenesis imperfecta syndrome"
+        },
+        {
+          "id" : "MONDO:0015262",
+          "type" : "CLASS",
+          "lbl" : "brachyolmia"
+        },
+        {
+          "id" : "ICD10CM:Q76.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018662",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive brachyolmia"
+        },
+        {
+          "id" : "MONDO:0013360",
+          "type" : "CLASS",
+          "lbl" : "brachyolmia, Maroteaux type"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:Q76.3",
+          "pred" : "is_a",
+          "obj" : "MONDO:0013360",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q76.3",
+          "pred" : "is_a",
+          "obj" : "MONDO:0011018",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q76.3",
+          "pred" : "is_a",
+          "obj" : "MONDO:0015262",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013360",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0015262",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018662",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0015262",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q76.3",
+          "pred" : "is_a",
+          "obj" : "MONDO:0018662",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}

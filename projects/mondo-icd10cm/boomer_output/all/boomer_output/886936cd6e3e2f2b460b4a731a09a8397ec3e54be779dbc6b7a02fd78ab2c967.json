@@ -1,0 +1,108 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:886936cd6e3e2f2b460b4a731a09a8397ec3e54be779dbc6b7a02fd78ab2c967",
+      "nodes" : [
+        {
+          "id" : "MONDO:0018468",
+          "type" : "CLASS",
+          "lbl" : "proton-pump inhibitor-responsive esophageal eosinophilia"
+        },
+        {
+          "id" : "ICD10CM:K20",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005361",
+          "type" : "CLASS",
+          "lbl" : "eosinophilic esophagitis"
+        },
+        {
+          "id" : "ICD10CM:K20.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCI:C9224",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:K20",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCI:C9224",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:K20.0",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:K20",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005361",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:K20",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.25
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:K20",
+          "pred" : "is_a",
+          "obj" : "MONDO:0018468",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:K20.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005361",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCI:C9224",
+            "ICD10CM:K20"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "ICD10CM:K20.0",
+            "MONDO:0005361"
+          ]
+        }
+      ]
+    }
+  ]
+}

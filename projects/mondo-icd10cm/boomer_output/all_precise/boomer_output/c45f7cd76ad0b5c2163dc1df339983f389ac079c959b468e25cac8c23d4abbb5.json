@@ -1,0 +1,89 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c45f7cd76ad0b5c2163dc1df339983f389ac079c959b468e25cac8c23d4abbb5",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:Q51.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015840",
+          "type" : "CLASS",
+          "lbl" : "complete septate uterus"
+        },
+        {
+          "id" : "MONDO:0015839",
+          "type" : "CLASS",
+          "lbl" : "septate uterus"
+        },
+        {
+          "id" : "MONDO:0015841",
+          "type" : "CLASS",
+          "lbl" : "partial septate uterus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:Q51.2",
+          "pred" : "is_a",
+          "obj" : "MONDO:0015841",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q51.2",
+          "pred" : "is_a",
+          "obj" : "MONDO:0015840",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q51.2",
+          "pred" : "is_a",
+          "obj" : "MONDO:0015839",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 7.5
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015840",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0015839",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015841",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0015839",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+      ]
+    }
+  ]
+}
