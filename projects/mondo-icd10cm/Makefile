@@ -51,7 +51,7 @@ reset_boomer_output:
 .PHONY: sssom
 sssom:
 	echo "skipping.."
-#	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall git+https://github.com/mapping-commons/sssom-py.git@curie_detection_patch
+#	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall git+https://github.com/mapping-commons/sssom-py.git@master
 #	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall sssom==0.3.7
 
 #####################
@@ -81,7 +81,7 @@ $(BOOMER_INPUT_DIR)/%/symbiont-merged-all.owl: $(TMP_DIR)/symbiont-merged-all.ow
 ## Mappings #########
 #####################
 
-ALL_MAPPINGS=$(TMP_DIR)/empty.sssom.tsv $(TMP_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv $(TMP_DIR)/mondo_exactmatch_icd10cm.sssom.tsv $(TMP_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv $(TMP_DIR)/mondo_broadmatch_icd10cm.sssom.tsv $(TMP_DIR)/ncit_icd10_2017.sssom.tsv 
+ALL_MAPPINGS=$(TMP_DIR)/empty.sssom.tsv $(TMP_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv $(TMP_DIR)/mondo_exactmatch_icd10cm.sssom.tsv $(TMP_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv $(TMP_DIR)/mondo_broadmatch_icd10cm.sssom.tsv $(TMP_DIR)/ncit_icd10_2017.sssom.tsv $(TMP_DIR)/mondo.sssom.tsv
 
 
 $(TMP_DIR)/empty.sssom.tsv: | $(TMP_DIR)/
@@ -102,12 +102,15 @@ $(TMP_DIR)/mondo_broadmatch_icd10cm.sssom.tsv: | $(TMP_DIR)/
 $(TMP_DIR)/ncit_icd10_2017.sssom.tsv: | $(TMP_DIR)/
 	wget https://raw.githubusercontent.com/mapping-commons/disease-mappings/main/mappings/ncit_icd10_2017.sssom.tsv -O $@
 
+$(TMP_DIR)/mondo.sssom.tsv: | $(TMP_DIR)/
+	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo.sssom.tsv -O $@
 
 $(BOOMER_INPUT_DIR)/%/combined.sssom.tsv $(BOOMER_INPUT_DIR)/%/prefix.yaml: $(ALL_MAPPINGS) | $(BOOMER_INPUT_DIR)/%/
 	python $(HOME_DIR)/scripts/gen_boomer_input.py run \
 		--source-location $(TMP_DIR) \
 		--target-location $(BOOMER_INPUT_DIR)/$* \
-		--config ../mondo-icd10cm.symbiont.yaml
+		--config ../mondo-all.symbiont.yaml
+#		--config ../mondo-icd10cm.symbiont.yaml
 
 $(BOOMER_INPUT_DIR)/%/combined.ptable.tsv: $(BOOMER_INPUT_DIR)/%/combined.sssom.tsv
 	sssom ptable $< -o $@
