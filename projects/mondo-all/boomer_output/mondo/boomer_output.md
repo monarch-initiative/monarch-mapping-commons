@@ -1130,8 +1130,8 @@
 
 ## [ICD10CM:E70-E88](http://purl.bioontology.org/ontology/ICD10CM/E70-E88) [ICD10CM:E70-E90](http://purl.bioontology.org/ontology/ICD10CM/E70-E90) [metabolic disease](http://purl.obolibrary.org/obo/MONDO_0005066)
 
-- [metabolic disease](http://purl.obolibrary.org/obo/MONDO_0005066) SiblingOf [ICD10CM:E70-E90](http://purl.bioontology.org/ontology/ICD10CM/E70-E90)		0.0050000000000000044
-- [metabolic disease](http://purl.obolibrary.org/obo/MONDO_0005066) EquivalentTo [ICD10CM:E70-E88](http://purl.bioontology.org/ontology/ICD10CM/E70-E88)	(most probable)	0.99
+- [metabolic disease](http://purl.obolibrary.org/obo/MONDO_0005066) SiblingOf [ICD10CM:E70-E88](http://purl.bioontology.org/ontology/ICD10CM/E70-E88)		0.0050000000000000044
+- [metabolic disease](http://purl.obolibrary.org/obo/MONDO_0005066) EquivalentTo [ICD10CM:E70-E90](http://purl.bioontology.org/ontology/ICD10CM/E70-E90)	(most probable)	0.99
 
 ## [ICD10CM:I00-I99](http://purl.bioontology.org/ontology/ICD10CM/I00-I99) [ICD10CM:I70-I79](http://purl.bioontology.org/ontology/ICD10CM/I70-I79) [vascular disorder](http://purl.obolibrary.org/obo/MONDO_0005385)
 
@@ -1140,26 +1140,26 @@
 
 ## [ICD10CM:I10-I16](http://purl.bioontology.org/ontology/ICD10CM/I10-I16) [ICD10CM:I15](http://purl.bioontology.org/ontology/ICD10CM/I15) [hypertensive disorder](http://purl.obolibrary.org/obo/MONDO_0005044)
 
-- [hypertensive disorder](http://purl.obolibrary.org/obo/MONDO_0005044) ProperSuperClassOf [ICD10CM:I15](http://purl.bioontology.org/ontology/ICD10CM/I15)		0.0025000000000000022
-- [hypertensive disorder](http://purl.obolibrary.org/obo/MONDO_0005044) EquivalentTo [ICD10CM:I10-I16](http://purl.bioontology.org/ontology/ICD10CM/I10-I16)	(most probable)	0.99
+- [hypertensive disorder](http://purl.obolibrary.org/obo/MONDO_0005044) ProperSubClassOf [ICD10CM:I10-I16](http://purl.bioontology.org/ontology/ICD10CM/I10-I16)		0.0025000000000000022
+- [hypertensive disorder](http://purl.obolibrary.org/obo/MONDO_0005044) EquivalentTo [ICD10CM:I15](http://purl.bioontology.org/ontology/ICD10CM/I15)	(most probable)	0.99
 
 ## [ICD10CM:N20-N23](http://purl.bioontology.org/ontology/ICD10CM/N20-N23) [ICD10CM:N21](http://purl.bioontology.org/ontology/ICD10CM/N21) [urolithiasis](http://purl.obolibrary.org/obo/MONDO_0024647)
 
-- [urolithiasis](http://purl.obolibrary.org/obo/MONDO_0024647) ProperSubClassOf [ICD10CM:N20-N23](http://purl.bioontology.org/ontology/ICD10CM/N20-N23)		0.0025000000000000022
-- [urolithiasis](http://purl.obolibrary.org/obo/MONDO_0024647) EquivalentTo [ICD10CM:N21](http://purl.bioontology.org/ontology/ICD10CM/N21)	(most probable)	0.99
+- [urolithiasis](http://purl.obolibrary.org/obo/MONDO_0024647) ProperSuperClassOf [ICD10CM:N21](http://purl.bioontology.org/ontology/ICD10CM/N21)		0.0025000000000000022
+- [urolithiasis](http://purl.obolibrary.org/obo/MONDO_0024647) EquivalentTo [ICD10CM:N20-N23](http://purl.bioontology.org/ontology/ICD10CM/N20-N23)	(most probable)	0.99
 
 ## [ICD10CM:M15-M19](http://purl.bioontology.org/ontology/ICD10CM/M15-M19) [ICD10CM:M19](http://purl.bioontology.org/ontology/ICD10CM/M19) [osteoarthritis](http://purl.obolibrary.org/obo/MONDO_0005178)
 
-- [osteoarthritis](http://purl.obolibrary.org/obo/MONDO_0005178) ProperSubClassOf [ICD10CM:M15-M19](http://purl.bioontology.org/ontology/ICD10CM/M15-M19)		0.0025000000000000022
-- [osteoarthritis](http://purl.obolibrary.org/obo/MONDO_0005178) EquivalentTo [ICD10CM:M19](http://purl.bioontology.org/ontology/ICD10CM/M19)	(most probable)	0.99
+- [osteoarthritis](http://purl.obolibrary.org/obo/MONDO_0005178) ProperSuperClassOf [ICD10CM:M19](http://purl.bioontology.org/ontology/ICD10CM/M19)		0.0025000000000000022
+- [osteoarthritis](http://purl.obolibrary.org/obo/MONDO_0005178) EquivalentTo [ICD10CM:M15-M19](http://purl.bioontology.org/ontology/ICD10CM/M15-M19)	(most probable)	0.99
 
 ## [ICD10CM:N40-N51](http://purl.bioontology.org/ontology/ICD10CM/N40-N51) [ICD10CM:N40-N53](http://purl.bioontology.org/ontology/ICD10CM/N40-N53) [male reproductive system disorder](http://purl.obolibrary.org/obo/MONDO_0003150)
 
-- [male reproductive system disorder](http://purl.obolibrary.org/obo/MONDO_0003150) SiblingOf [ICD10CM:N40-N51](http://purl.bioontology.org/ontology/ICD10CM/N40-N51)		0.0050000000000000044
-- [male reproductive system disorder](http://purl.obolibrary.org/obo/MONDO_0003150) EquivalentTo [ICD10CM:N40-N53](http://purl.bioontology.org/ontology/ICD10CM/N40-N53)	(most probable)	0.99
+- [male reproductive system disorder](http://purl.obolibrary.org/obo/MONDO_0003150) SiblingOf [ICD10CM:N40-N53](http://purl.bioontology.org/ontology/ICD10CM/N40-N53)		0.0050000000000000044
+- [male reproductive system disorder](http://purl.obolibrary.org/obo/MONDO_0003150) EquivalentTo [ICD10CM:N40-N51](http://purl.bioontology.org/ontology/ICD10CM/N40-N51)	(most probable)	0.99
 
 ## [ICD10CM:I85.01](http://purl.bioontology.org/ontology/ICD10CM/I85.01) [ICD10CM:I85.0](http://purl.bioontology.org/ontology/ICD10CM/I85.0) [esophageal varices with bleeding](http://purl.obolibrary.org/obo/MONDO_0021645)
 
-- [esophageal varices with bleeding](http://purl.obolibrary.org/obo/MONDO_0021645) ProperSuperClassOf [ICD10CM:I85.01](http://purl.bioontology.org/ontology/ICD10CM/I85.01)		0.0025000000000000022
-- [esophageal varices with bleeding](http://purl.obolibrary.org/obo/MONDO_0021645) EquivalentTo [ICD10CM:I85.0](http://purl.bioontology.org/ontology/ICD10CM/I85.0)	(most probable)	0.99
+- [esophageal varices with bleeding](http://purl.obolibrary.org/obo/MONDO_0021645) ProperSubClassOf [ICD10CM:I85.0](http://purl.bioontology.org/ontology/ICD10CM/I85.0)		0.0025000000000000022
+- [esophageal varices with bleeding](http://purl.obolibrary.org/obo/MONDO_0021645) EquivalentTo [ICD10CM:I85.01](http://purl.bioontology.org/ontology/ICD10CM/I85.01)	(most probable)	0.99
 
