@@ -1,0 +1,67 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b96994df92f0795a131505619ffe5ac1fd263867358d1b5e4b717fd6c1f3c750",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:I15",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:I10-I16",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005044",
+          "type" : "CLASS",
+          "lbl" : "hypertensive disorder"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:I15",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:I10-I16",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:I15",
+          "pred" : "is_a",
+          "obj" : "MONDO:0005044",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.025000000000000022
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:I10-I16",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005044",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005044",
+            "ICD10CM:I10-I16"
+          ]
+        }
+      ]
+    }
+  ]
+}

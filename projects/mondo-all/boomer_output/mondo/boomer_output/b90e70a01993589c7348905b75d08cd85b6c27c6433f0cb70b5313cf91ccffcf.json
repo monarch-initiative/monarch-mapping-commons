@@ -1,0 +1,67 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b90e70a01993589c7348905b75d08cd85b6c27c6433f0cb70b5313cf91ccffcf",
+      "nodes" : [
+        {
+          "id" : "MONDO:0024647",
+          "type" : "CLASS",
+          "lbl" : "urolithiasis"
+        },
+        {
+          "id" : "ICD10CM:N20-N23",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:N21",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024647",
+          "pred" : "is_a",
+          "obj" : "ICD10CM:N20-N23",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.025000000000000022
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:N21",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:N20-N23",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:N21",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024647",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024647",
+            "ICD10CM:N21"
+          ]
+        }
+      ]
+    }
+  ]
+}
