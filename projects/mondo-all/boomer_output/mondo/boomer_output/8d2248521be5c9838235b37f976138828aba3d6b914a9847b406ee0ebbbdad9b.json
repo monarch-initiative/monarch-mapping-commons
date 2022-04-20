@@ -4,13 +4,13 @@
       "id" : "urn:clique:8d2248521be5c9838235b37f976138828aba3d6b914a9847b406ee0ebbbdad9b",
       "nodes" : [
         {
+          "id" : "ICD10CM:M15-M19",
+          "type" : "CLASS"
+        },
+        {
           "id" : "MONDO:0005178",
           "type" : "CLASS",
           "lbl" : "osteoarthritis"
-        },
-        {
-          "id" : "ICD10CM:M15-M19",
-          "type" : "CLASS"
         },
         {
           "id" : "ICD10CM:M19",
@@ -19,20 +19,7 @@
       ],
       "edges" : [
         {
-          "sub" : "MONDO:0005178",
-          "pred" : "is_a",
-          "obj" : "ICD10CM:M15-M19",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.025000000000000022
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "ICD10CM:M19",
+          "sub" : "ICD10CM:M15-M19",
           "pred" : "owl:equivalentClass",
           "obj" : "MONDO:0005178",
           "meta" : {
@@ -40,6 +27,19 @@
               {
                 "pred" : "https://w3id.org/kgviz/penwidth",
                 "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:M19",
+          "pred" : "is_a",
+          "obj" : "MONDO:0005178",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.025000000000000022
               }
             ]
           }
@@ -57,8 +57,8 @@
       "equivalentNodesSets" : [
         {
           "nodeIds" : [
-            "MONDO:0005178",
-            "ICD10CM:M19"
+            "ICD10CM:M15-M19",
+            "MONDO:0005178"
           ]
         }
       ]
