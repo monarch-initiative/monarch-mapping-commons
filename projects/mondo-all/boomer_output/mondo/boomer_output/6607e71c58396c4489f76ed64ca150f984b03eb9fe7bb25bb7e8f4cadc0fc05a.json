@@ -4,6 +4,10 @@
       "id" : "urn:clique:6607e71c58396c4489f76ed64ca150f984b03eb9fe7bb25bb7e8f4cadc0fc05a",
       "nodes" : [
         {
+          "id" : "ICD10CM:I85.01",
+          "type" : "CLASS"
+        },
+        {
           "id" : "MONDO:0021645",
           "type" : "CLASS",
           "lbl" : "esophageal varices with bleeding"
@@ -11,22 +15,31 @@
         {
           "id" : "ICD10CM:I85.0",
           "type" : "CLASS"
-        },
-        {
-          "id" : "ICD10CM:I85.01",
-          "type" : "CLASS"
         }
       ],
       "edges" : [
         {
-          "sub" : "MONDO:0021645",
+          "sub" : "ICD10CM:I85.01",
           "pred" : "is_a",
-          "obj" : "ICD10CM:I85.0",
+          "obj" : "MONDO:0021645",
           "meta" : {
             "basicPropertyValues" : [
               {
                 "pred" : "https://w3id.org/kgviz/penwidth",
                 "val" : 0.025000000000000022
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:I85.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021645",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
               }
             ]
           }
@@ -39,25 +52,12 @@
             "basicPropertyValues" : [
             ]
           }
-        },
-        {
-          "sub" : "ICD10CM:I85.01",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0021645",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 9.9
-              }
-            ]
-          }
         }
       ],
       "equivalentNodesSets" : [
         {
           "nodeIds" : [
-            "ICD10CM:I85.01",
+            "ICD10CM:I85.0",
             "MONDO:0021645"
           ]
         }
