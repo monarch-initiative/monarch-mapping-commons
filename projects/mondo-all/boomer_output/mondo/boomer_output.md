@@ -1140,13 +1140,13 @@
 
 ## [ICD10CM:I10-I16](http://purl.bioontology.org/ontology/ICD10CM/I10-I16) [ICD10CM:I15](http://purl.bioontology.org/ontology/ICD10CM/I15) [hypertensive disorder](http://purl.obolibrary.org/obo/MONDO_0005044)
 
-- [hypertensive disorder](http://purl.obolibrary.org/obo/MONDO_0005044) ProperSuperClassOf [ICD10CM:I15](http://purl.bioontology.org/ontology/ICD10CM/I15)		0.0025000000000000022
-- [hypertensive disorder](http://purl.obolibrary.org/obo/MONDO_0005044) EquivalentTo [ICD10CM:I10-I16](http://purl.bioontology.org/ontology/ICD10CM/I10-I16)	(most probable)	0.99
+- [hypertensive disorder](http://purl.obolibrary.org/obo/MONDO_0005044) ProperSubClassOf [ICD10CM:I10-I16](http://purl.bioontology.org/ontology/ICD10CM/I10-I16)		0.0025000000000000022
+- [hypertensive disorder](http://purl.obolibrary.org/obo/MONDO_0005044) EquivalentTo [ICD10CM:I15](http://purl.bioontology.org/ontology/ICD10CM/I15)	(most probable)	0.99
 
 ## [ICD10CM:N20-N23](http://purl.bioontology.org/ontology/ICD10CM/N20-N23) [ICD10CM:N21](http://purl.bioontology.org/ontology/ICD10CM/N21) [urolithiasis](http://purl.obolibrary.org/obo/MONDO_0024647)
 
-- [urolithiasis](http://purl.obolibrary.org/obo/MONDO_0024647) ProperSubClassOf [ICD10CM:N20-N23](http://purl.bioontology.org/ontology/ICD10CM/N20-N23)		0.0025000000000000022
-- [urolithiasis](http://purl.obolibrary.org/obo/MONDO_0024647) EquivalentTo [ICD10CM:N21](http://purl.bioontology.org/ontology/ICD10CM/N21)	(most probable)	0.99
+- [urolithiasis](http://purl.obolibrary.org/obo/MONDO_0024647) ProperSuperClassOf [ICD10CM:N21](http://purl.bioontology.org/ontology/ICD10CM/N21)		0.0025000000000000022
+- [urolithiasis](http://purl.obolibrary.org/obo/MONDO_0024647) EquivalentTo [ICD10CM:N20-N23](http://purl.bioontology.org/ontology/ICD10CM/N20-N23)	(most probable)	0.99
 
 ## [ICD10CM:M15-M19](http://purl.bioontology.org/ontology/ICD10CM/M15-M19) [ICD10CM:M19](http://purl.bioontology.org/ontology/ICD10CM/M19) [osteoarthritis](http://purl.obolibrary.org/obo/MONDO_0005178)
 
@@ -1160,6 +1160,6 @@
 
 ## [ICD10CM:I85.01](http://purl.bioontology.org/ontology/ICD10CM/I85.01) [ICD10CM:I85.0](http://purl.bioontology.org/ontology/ICD10CM/I85.0) [esophageal varices with bleeding](http://purl.obolibrary.org/obo/MONDO_0021645)
 
-- [esophageal varices with bleeding](http://purl.obolibrary.org/obo/MONDO_0021645) ProperSuperClassOf [ICD10CM:I85.01](http://purl.bioontology.org/ontology/ICD10CM/I85.01)		0.0025000000000000022
-- [esophageal varices with bleeding](http://purl.obolibrary.org/obo/MONDO_0021645) EquivalentTo [ICD10CM:I85.0](http://purl.bioontology.org/ontology/ICD10CM/I85.0)	(most probable)	0.99
+- [esophageal varices with bleeding](http://purl.obolibrary.org/obo/MONDO_0021645) ProperSubClassOf [ICD10CM:I85.0](http://purl.bioontology.org/ontology/ICD10CM/I85.0)		0.0025000000000000022
+- [esophageal varices with bleeding](http://purl.obolibrary.org/obo/MONDO_0021645) EquivalentTo [ICD10CM:I85.01](http://purl.bioontology.org/ontology/ICD10CM/I85.01)	(most probable)	0.99
 
