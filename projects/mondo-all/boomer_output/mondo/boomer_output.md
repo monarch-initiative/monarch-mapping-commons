@@ -1150,8 +1150,8 @@
 
 ## [ICD10CM:M15-M19](http://purl.bioontology.org/ontology/ICD10CM/M15-M19) [ICD10CM:M19](http://purl.bioontology.org/ontology/ICD10CM/M19) [osteoarthritis](http://purl.obolibrary.org/obo/MONDO_0005178)
 
-- [osteoarthritis](http://purl.obolibrary.org/obo/MONDO_0005178) ProperSubClassOf [ICD10CM:M15-M19](http://purl.bioontology.org/ontology/ICD10CM/M15-M19)		0.0025000000000000022
-- [osteoarthritis](http://purl.obolibrary.org/obo/MONDO_0005178) EquivalentTo [ICD10CM:M19](http://purl.bioontology.org/ontology/ICD10CM/M19)	(most probable)	0.99
+- [osteoarthritis](http://purl.obolibrary.org/obo/MONDO_0005178) ProperSuperClassOf [ICD10CM:M19](http://purl.bioontology.org/ontology/ICD10CM/M19)		0.0025000000000000022
+- [osteoarthritis](http://purl.obolibrary.org/obo/MONDO_0005178) EquivalentTo [ICD10CM:M15-M19](http://purl.bioontology.org/ontology/ICD10CM/M15-M19)	(most probable)	0.99
 
 ## [ICD10CM:N40-N51](http://purl.bioontology.org/ontology/ICD10CM/N40-N51) [ICD10CM:N40-N53](http://purl.bioontology.org/ontology/ICD10CM/N40-N53) [male reproductive system disorder](http://purl.obolibrary.org/obo/MONDO_0003150)
 
