@@ -4,7 +4,7 @@ ontologies:
   - id: mondo
     prefix: MONDO
   - id: mondo-ingest
-    mirror_from: https://www.dropbox.com/s/czwjrhrit655iwc/mondo-ingest.owl?dl=0
+    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2022-04-26/mondo-ingest.owl
 config:
   symbiont_config: ../mondo-all.symbiont.yaml
   boomer_style: ../../config/boomer-style.json
@@ -12,8 +12,8 @@ config:
     defaults:
     runs:
       - id: no_mappings
-        window_count: 100
-        runs: 10
+        window_count: 1000
+        runs: 1
         mappings:
           - empty.sssom.tsv
 #      - id: has_dbxref
@@ -22,12 +22,12 @@ config:
 #        mappings:
 #          - mondo_hasdbxref_icd10cm.sssom.tsv
       - id: mondo
-        window_count: 10
+        window_count: 1000
         runs: 1
         mappings:
           - mondo_exactmatch_icd10cm.sssom.tsv
       - id: all
-        window_count: 10
+        window_count: 1
         runs: 1
         mappings:
           - mondo_exactmatch_icd10cm.sssom.tsv
