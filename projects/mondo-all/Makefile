@@ -64,7 +64,7 @@ $(TMP_DIR)/mondo.owl: | $(TMP_DIR)/
 	wget http://purl.obolibrary.org/obo/mondo.owl -O $@
 
 $(TMP_DIR)/mondo-ingest.owl: | $(TMP_DIR)/
-	wget https://www.dropbox.com/s/czwjrhrit655iwc/mondo-ingest.owl?dl=0 -O $@
+	wget https://github.com/monarch-initiative/mondo-ingest/releases/download/v2022-04-26/mondo-ingest.owl -O $@
 
 
 $(TMP_DIR)/symbiont-merged-all.owl: $(ALL_ONTOLOGIES)
@@ -121,8 +121,8 @@ boomer-no_mappings: | $(BOOMER_OUTPUT_DIR)/no_mappings/
 		--ontology $(BOOMER_INPUT_DIR)/no_mappings/symbiont-merged-all.owl \
 		--prefixes $(BOOMER_INPUT_DIR)/no_mappings/prefix.yaml \
 		--output $(BOOMER_OUTPUT_DIR)/no_mappings/boomer_output \
-		--window-count 100 \
-		--runs 10 \ 
+		--window-count 1000 \
+		--runs 1 \ 
 	find $(BOOMER_OUTPUT_DIR)/no_mappings -name "*.json" -type 'f' -size -500c -delete # Hack for removing individual singleton json files.
 
 boomer-mondo: | $(BOOMER_OUTPUT_DIR)/mondo/
@@ -130,7 +130,7 @@ boomer-mondo: | $(BOOMER_OUTPUT_DIR)/mondo/
 		--ontology $(BOOMER_INPUT_DIR)/mondo/symbiont-merged-all.owl \
 		--prefixes $(BOOMER_INPUT_DIR)/mondo/prefix.yaml \
 		--output $(BOOMER_OUTPUT_DIR)/mondo/boomer_output \
-		--window-count 10 \
+		--window-count 1000 \
 		--runs 1 \ 
 	find $(BOOMER_OUTPUT_DIR)/mondo -name "*.json" -type 'f' -size -500c -delete # Hack for removing individual singleton json files.
 
@@ -139,8 +139,8 @@ boomer-all: | $(BOOMER_OUTPUT_DIR)/all/
 		--ontology $(BOOMER_INPUT_DIR)/all/symbiont-merged-all.owl \
 		--prefixes $(BOOMER_INPUT_DIR)/all/prefix.yaml \
 		--output $(BOOMER_OUTPUT_DIR)/all/boomer_output \
-		--window-count 10 \
-		--runs 1 \ 
+		--window-count 1 \
+		--runs 10 \ 
 	find $(BOOMER_OUTPUT_DIR)/all -name "*.json" -type 'f' -size -500c -delete # Hack for removing individual singleton json files.
 
 
