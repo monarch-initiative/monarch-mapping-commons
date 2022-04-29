@@ -1,4 +1,9 @@
 ## SINGLETONS
+Method: singletons
+Score: -11.306627835188909
+Estimated probability: 1.0
+Confidence: 1.0
+Subsequent scores (max 10): 
 
 - [bilateral renal agenesis](http://purl.obolibrary.org/obo/MONDO_0015986) EquivalentTo [ICD10CM:Q60.1](http://purl.bioontology.org/ontology/ICD10CM/Q60.1)	(most probable)	0.99
 - [endometriosis in cutaneous scar](http://purl.obolibrary.org/obo/MONDO_0001287) EquivalentTo [ICD10CM:N80.6](http://purl.bioontology.org/ontology/ICD10CM/N80.6)	(most probable)	0.99
@@ -216,6 +221,7 @@
 - [oropharynx cancer](http://purl.obolibrary.org/obo/MONDO_0004608) EquivalentTo [ICD10CM:C10](http://purl.bioontology.org/ontology/ICD10CM/C10)	(most probable)	0.99
 - [dyskinesia of esophagus](http://purl.obolibrary.org/obo/MONDO_0004729) EquivalentTo [ICD10CM:K22.4](http://purl.bioontology.org/ontology/ICD10CM/K22.4)	(most probable)	0.99
 - [trench fever](http://purl.obolibrary.org/obo/MONDO_0005991) EquivalentTo [ICD10CM:A79.0](http://purl.bioontology.org/ontology/ICD10CM/A79.0)	(most probable)	0.99
+- [ainhum](http://purl.obolibrary.org/obo/MONDO_0007074) EquivalentTo [ICD10CM:L94.6](http://purl.bioontology.org/ontology/ICD10CM/L94.6)	(most probable)	0.99
 - [Q fever](http://purl.obolibrary.org/obo/MONDO_0019186) EquivalentTo [ICD10CM:A78](http://purl.bioontology.org/ontology/ICD10CM/A78)	(most probable)	0.99
 - [myocardial infarction](http://purl.obolibrary.org/obo/MONDO_0005068) EquivalentTo [ICD10CM:I21](http://purl.bioontology.org/ontology/ICD10CM/I21)	(most probable)	0.99
 - [Klebsiella pneumonia](http://purl.obolibrary.org/obo/MONDO_0030602) EquivalentTo [ICD10CM:J15.0](http://purl.bioontology.org/ontology/ICD10CM/J15.0)	(most probable)	0.99
@@ -246,8 +252,6 @@
 - [Dieulafoy lesion](http://purl.obolibrary.org/obo/MONDO_0001427) EquivalentTo [ICD10CM:K31.82](http://purl.bioontology.org/ontology/ICD10CM/K31.82)	(most probable)	0.99
 - [Pthirus pubis infestation](http://purl.obolibrary.org/obo/MONDO_0001794) EquivalentTo [ICD10CM:B85.3](http://purl.bioontology.org/ontology/ICD10CM/B85.3)	(most probable)	0.99
 - [transient neonatal neutropenia](http://purl.obolibrary.org/obo/MONDO_0001241) EquivalentTo [ICD10CM:P61.5](http://purl.bioontology.org/ontology/ICD10CM/P61.5)	(most probable)	0.99
-- [obsolete sudden infant death syndrome](http://purl.obolibrary.org/obo/MONDO_0010086) EquivalentTo [ICD10CM:R95](http://purl.bioontology.org/ontology/ICD10CM/R95)	(most probable)	0.99
-- [ainhum](http://purl.obolibrary.org/obo/MONDO_0007074) EquivalentTo [ICD10CM:L94.6](http://purl.bioontology.org/ontology/ICD10CM/L94.6)	(most probable)	0.99
 - [soft palate cancer](http://purl.obolibrary.org/obo/MONDO_0004611) EquivalentTo [ICD10CM:C05.1](http://purl.bioontology.org/ontology/ICD10CM/C05.1)	(most probable)	0.99
 - [tuberculosis](http://purl.obolibrary.org/obo/MONDO_0018076) EquivalentTo [ICD10CM:A15-A19](http://purl.bioontology.org/ontology/ICD10CM/A15-A19)	(most probable)	0.99
 - [benign neoplasm of appendix](http://purl.obolibrary.org/obo/MONDO_0021465) EquivalentTo [ICD10CM:D12.1](http://purl.bioontology.org/ontology/ICD10CM/D12.1)	(most probable)	0.99
@@ -937,7 +941,6 @@
 - [anodontia](http://purl.obolibrary.org/obo/MONDO_0008797) EquivalentTo [ICD10CM:K00.0](http://purl.bioontology.org/ontology/ICD10CM/K00.0)	(most probable)	0.99
 - [clonic hemifacial spasm](http://purl.obolibrary.org/obo/MONDO_0007713) EquivalentTo [ICD10CM:G51.3](http://purl.bioontology.org/ontology/ICD10CM/G51.3)	(most probable)	0.99
 - [gastroparesis](http://purl.obolibrary.org/obo/MONDO_0006769) EquivalentTo [ICD10CM:K31.84](http://purl.bioontology.org/ontology/ICD10CM/K31.84)	(most probable)	0.99
-- [obsolete atrophy of prostate](http://purl.obolibrary.org/obo/MONDO_0002264) EquivalentTo [ICD10CM:N42.2](http://purl.bioontology.org/ontology/ICD10CM/N42.2)	(most probable)	0.99
 - [acute salpingitis](http://purl.obolibrary.org/obo/MONDO_0001173) EquivalentTo [ICD10CM:N70.01](http://purl.bioontology.org/ontology/ICD10CM/N70.01)	(most probable)	0.99
 - [brucellosis](http://purl.obolibrary.org/obo/MONDO_0005683) EquivalentTo [ICD10CM:A23](http://purl.bioontology.org/ontology/ICD10CM/A23)	(most probable)	0.99
 - [cervicofacial actinomycosis](http://purl.obolibrary.org/obo/MONDO_0005699) EquivalentTo [ICD10CM:A42.2](http://purl.bioontology.org/ontology/ICD10CM/A42.2)	(most probable)	0.99
@@ -1129,37 +1132,72 @@
 - [female infertility of uterine origin](http://purl.obolibrary.org/obo/MONDO_0001753) EquivalentTo [ICD10CM:N97.2](http://purl.bioontology.org/ontology/ICD10CM/N97.2)	(most probable)	0.99
 
 ## [ICD10CM:E70-E88](http://purl.bioontology.org/ontology/ICD10CM/E70-E88) [ICD10CM:E70-E90](http://purl.bioontology.org/ontology/ICD10CM/E70-E90) [metabolic disease](http://purl.obolibrary.org/obo/MONDO_0005066)
+Method: exhaustive search
+Score: -5.3083677024015365
+Estimated probability: 0.24905660377358496
+Confidence: 0.5
+Subsequent scores (max 10): -5.3083677024015365, -6.001514882961482, -6.001514882961482, -6.001514882961482, -6.001514882961482, -10.59663473309607, -11.289781913656016, -11.289781913656016, -11.289781913656016, -11.289781913656016
 
-- [metabolic disease](http://purl.obolibrary.org/obo/MONDO_0005066) SiblingOf [ICD10CM:E70-E90](http://purl.bioontology.org/ontology/ICD10CM/E70-E90)		0.0050000000000000044
-- [metabolic disease](http://purl.obolibrary.org/obo/MONDO_0005066) EquivalentTo [ICD10CM:E70-E88](http://purl.bioontology.org/ontology/ICD10CM/E70-E88)	(most probable)	0.99
+- [metabolic disease](http://purl.obolibrary.org/obo/MONDO_0005066) EquivalentTo [ICD10CM:E70-E90](http://purl.bioontology.org/ontology/ICD10CM/E70-E90)	(most probable)	0.99
+- [metabolic disease](http://purl.obolibrary.org/obo/MONDO_0005066) SiblingOf [ICD10CM:E70-E88](http://purl.bioontology.org/ontology/ICD10CM/E70-E88)		0.0050000000000000044
 
 ## [ICD10CM:I00-I99](http://purl.bioontology.org/ontology/ICD10CM/I00-I99) [ICD10CM:I70-I79](http://purl.bioontology.org/ontology/ICD10CM/I70-I79) [vascular disorder](http://purl.obolibrary.org/obo/MONDO_0005385)
+Method: exhaustive search
+Score: -6.001514882961482
+Estimated probability: 0.49315068493150677
+Confidence: 0.5
+Subsequent scores (max 10): -6.001514882961482, -10.59663473309607, -11.289781913656016, -11.289781913656016, -11.982929094215962, -11.982929094215962, -11.982929094215962
 
-- [vascular disorder](http://purl.obolibrary.org/obo/MONDO_0005385) ProperSuperClassOf [ICD10CM:I70-I79](http://purl.bioontology.org/ontology/ICD10CM/I70-I79)		0.0025000000000000022
 - [vascular disorder](http://purl.obolibrary.org/obo/MONDO_0005385) EquivalentTo [ICD10CM:I00-I99](http://purl.bioontology.org/ontology/ICD10CM/I00-I99)	(most probable)	0.99
+- [vascular disorder](http://purl.obolibrary.org/obo/MONDO_0005385) ProperSuperClassOf [ICD10CM:I70-I79](http://purl.bioontology.org/ontology/ICD10CM/I70-I79)		0.0025000000000000022
 
 ## [ICD10CM:I10-I16](http://purl.bioontology.org/ontology/ICD10CM/I10-I16) [ICD10CM:I15](http://purl.bioontology.org/ontology/ICD10CM/I15) [hypertensive disorder](http://purl.obolibrary.org/obo/MONDO_0005044)
+Method: exhaustive search
+Score: -6.001514882961482
+Estimated probability: 0.49315068493150677
+Confidence: 0.5
+Subsequent scores (max 10): -6.001514882961482, -10.59663473309607, -11.289781913656016, -11.289781913656016, -11.982929094215962, -11.982929094215962, -11.982929094215962
 
-- [hypertensive disorder](http://purl.obolibrary.org/obo/MONDO_0005044) ProperSubClassOf [ICD10CM:I10-I16](http://purl.bioontology.org/ontology/ICD10CM/I10-I16)		0.0025000000000000022
 - [hypertensive disorder](http://purl.obolibrary.org/obo/MONDO_0005044) EquivalentTo [ICD10CM:I15](http://purl.bioontology.org/ontology/ICD10CM/I15)	(most probable)	0.99
+- [hypertensive disorder](http://purl.obolibrary.org/obo/MONDO_0005044) ProperSubClassOf [ICD10CM:I10-I16](http://purl.bioontology.org/ontology/ICD10CM/I10-I16)		0.0025000000000000022
 
 ## [ICD10CM:N20-N23](http://purl.bioontology.org/ontology/ICD10CM/N20-N23) [ICD10CM:N21](http://purl.bioontology.org/ontology/ICD10CM/N21) [urolithiasis](http://purl.obolibrary.org/obo/MONDO_0024647)
+Method: exhaustive search
+Score: -6.001514882961482
+Estimated probability: 0.49315068493150677
+Confidence: 0.5
+Subsequent scores (max 10): -6.001514882961482, -10.59663473309607, -11.289781913656016, -11.289781913656016, -11.982929094215962, -11.982929094215962, -11.982929094215962
 
-- [urolithiasis](http://purl.obolibrary.org/obo/MONDO_0024647) ProperSuperClassOf [ICD10CM:N21](http://purl.bioontology.org/ontology/ICD10CM/N21)		0.0025000000000000022
 - [urolithiasis](http://purl.obolibrary.org/obo/MONDO_0024647) EquivalentTo [ICD10CM:N20-N23](http://purl.bioontology.org/ontology/ICD10CM/N20-N23)	(most probable)	0.99
+- [urolithiasis](http://purl.obolibrary.org/obo/MONDO_0024647) ProperSuperClassOf [ICD10CM:N21](http://purl.bioontology.org/ontology/ICD10CM/N21)		0.0025000000000000022
 
 ## [ICD10CM:M15-M19](http://purl.bioontology.org/ontology/ICD10CM/M15-M19) [ICD10CM:M19](http://purl.bioontology.org/ontology/ICD10CM/M19) [osteoarthritis](http://purl.obolibrary.org/obo/MONDO_0005178)
+Method: exhaustive search
+Score: -6.001514882961482
+Estimated probability: 0.49315068493150677
+Confidence: 0.5
+Subsequent scores (max 10): -6.001514882961482, -10.59663473309607, -11.289781913656016, -11.289781913656016, -11.982929094215962, -11.982929094215962, -11.982929094215962
 
-- [osteoarthritis](http://purl.obolibrary.org/obo/MONDO_0005178) ProperSuperClassOf [ICD10CM:M19](http://purl.bioontology.org/ontology/ICD10CM/M19)		0.0025000000000000022
 - [osteoarthritis](http://purl.obolibrary.org/obo/MONDO_0005178) EquivalentTo [ICD10CM:M15-M19](http://purl.bioontology.org/ontology/ICD10CM/M15-M19)	(most probable)	0.99
+- [osteoarthritis](http://purl.obolibrary.org/obo/MONDO_0005178) ProperSuperClassOf [ICD10CM:M19](http://purl.bioontology.org/ontology/ICD10CM/M19)		0.0025000000000000022
 
 ## [ICD10CM:N40-N51](http://purl.bioontology.org/ontology/ICD10CM/N40-N51) [ICD10CM:N40-N53](http://purl.bioontology.org/ontology/ICD10CM/N40-N53) [male reproductive system disorder](http://purl.obolibrary.org/obo/MONDO_0003150)
+Method: exhaustive search
+Score: -5.3083677024015365
+Estimated probability: 0.24905660377358496
+Confidence: 0.5
+Subsequent scores (max 10): -5.3083677024015365, -6.001514882961482, -6.001514882961482, -6.001514882961482, -6.001514882961482, -10.59663473309607, -11.289781913656016, -11.289781913656016, -11.289781913656016, -11.289781913656016
 
-- [male reproductive system disorder](http://purl.obolibrary.org/obo/MONDO_0003150) SiblingOf [ICD10CM:N40-N53](http://purl.bioontology.org/ontology/ICD10CM/N40-N53)		0.0050000000000000044
-- [male reproductive system disorder](http://purl.obolibrary.org/obo/MONDO_0003150) EquivalentTo [ICD10CM:N40-N51](http://purl.bioontology.org/ontology/ICD10CM/N40-N51)	(most probable)	0.99
+- [male reproductive system disorder](http://purl.obolibrary.org/obo/MONDO_0003150) EquivalentTo [ICD10CM:N40-N53](http://purl.bioontology.org/ontology/ICD10CM/N40-N53)	(most probable)	0.99
+- [male reproductive system disorder](http://purl.obolibrary.org/obo/MONDO_0003150) SiblingOf [ICD10CM:N40-N51](http://purl.bioontology.org/ontology/ICD10CM/N40-N51)		0.0050000000000000044
 
 ## [ICD10CM:I85.01](http://purl.bioontology.org/ontology/ICD10CM/I85.01) [ICD10CM:I85.0](http://purl.bioontology.org/ontology/ICD10CM/I85.0) [esophageal varices with bleeding](http://purl.obolibrary.org/obo/MONDO_0021645)
+Method: exhaustive search
+Score: -6.001514882961482
+Estimated probability: 0.49315068493150677
+Confidence: 0.5
+Subsequent scores (max 10): -6.001514882961482, -10.59663473309607, -11.289781913656016, -11.289781913656016, -11.982929094215962, -11.982929094215962, -11.982929094215962
 
-- [esophageal varices with bleeding](http://purl.obolibrary.org/obo/MONDO_0021645) ProperSubClassOf [ICD10CM:I85.0](http://purl.bioontology.org/ontology/ICD10CM/I85.0)		0.0025000000000000022
-- [esophageal varices with bleeding](http://purl.obolibrary.org/obo/MONDO_0021645) EquivalentTo [ICD10CM:I85.01](http://purl.bioontology.org/ontology/ICD10CM/I85.01)	(most probable)	0.99
+- [esophageal varices with bleeding](http://purl.obolibrary.org/obo/MONDO_0021645) EquivalentTo [ICD10CM:I85.0](http://purl.bioontology.org/ontology/ICD10CM/I85.0)	(most probable)	0.99
+- [esophageal varices with bleeding](http://purl.obolibrary.org/obo/MONDO_0021645) ProperSuperClassOf [ICD10CM:I85.01](http://purl.bioontology.org/ontology/ICD10CM/I85.01)		0.0025000000000000022
 
