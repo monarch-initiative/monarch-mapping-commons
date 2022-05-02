@@ -50,7 +50,6 @@ sssom:
 #####################
 
 ONTOLOGIES= {% for ontology in ontologies %}{{ ontology.id }} {% endfor %}
-ONTOLOGY_PREFIXES= {% for ontology in ontologies %}{{ ontology.prefix }} {% endfor %}
 
 ALL_ONTOLOGIES=$(patsubst %, $(TMP_DIR)/%.owl, $(ONTOLOGIES))
 
@@ -99,9 +98,9 @@ boomer-{{ run.id }}: | $(BOOMER_OUTPUT_DIR)/{{ run.id }}/
 		--runs {{ run.runs }} \{% if run.restrict_output_to_prefixes is defined %}
 		--restrict-output-to-prefixes={{ run.restrict_output_to_prefixes.first }} \
 		--restrict-output-to-prefixes={{ run.restrict_output_to_prefixes.second }} \
-		{%- elif config.boomer_config.defaults.restrict_output_to_prefixes %}
+		{% else %} {% if config.boomer_config.defaults.restrict_output_to_prefixes is defined %}
 		--restrict-output-to-prefixes={{ config.boomer_config.defaults.restrict_output_to_prefixes.first }} \
-		--restrict-output-to-prefixes={{ config.boomer_config.defaults.restrict_output_to_prefixes.second }}{% endif %}
+		--restrict-output-to-prefixes={{ config.boomer_config.defaults.restrict_output_to_prefixes.second }}{% endif %}{% endif %}
 	find $(BOOMER_OUTPUT_DIR)/{{ run.id }} -name "*.json" -type 'f' -size -500c -delete # Hack for removing individual singleton json files.
 {% endfor %}
 

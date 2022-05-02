@@ -17,13 +17,13 @@ symbiont-%:
 	mkdir -p $(PROJECT_DIR)/$*
 	j2 $(MAKEFILE_TEMPLATE) $(PROJECT_DIR)/$*.symbiont.yaml > $(PROJECT_DIR)/$*/Makefile
 	touch $(PROJECT_DIR)/$*/custom.Makefile
-	cd $(PROJECT_DIR)/$* && make all HOME_DIR=$(shell pwd)
+	cd $(PROJECT_DIR)/$* && make reset_boomer_output && make all HOME_DIR=$(shell pwd) -B
 
 #####################
 ## Mappings #########
 #####################
 
-ALL_MAPPINGS=$(MAPPINGS_DIR)/empty.sssom.tsv $(MAPPINGS_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_exactmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_broadmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/ncit_icd10_2017.sssom.tsv $(MAPPINGS_DIR)/mondo_icd10cm_boomer.sssom.tsv 
+ALL_MAPPINGS=$(MAPPINGS_DIR)/empty.sssom.tsv $(MAPPINGS_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_exactmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_broadmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/ncit_icd10_2017.sssom.tsv $(MAPPINGS_DIR)/mondo_icd10cm_boomer.sssom.tsv $(MAPPINGS_DIR)/mondo.sssom.tsv 
 
 
 $(MAPPINGS_DIR)/empty.sssom.tsv: | $(MAPPINGS_DIR)/
@@ -46,6 +46,9 @@ $(MAPPINGS_DIR)/ncit_icd10_2017.sssom.tsv: | $(MAPPINGS_DIR)/
 
 $(MAPPINGS_DIR)/mondo_icd10cm_boomer.sssom.tsv: | $(MAPPINGS_DIR)/
 	wget http://w3id.org/sssom/commons/monarch/mondo_icd10cm_boomer.sssom.tsv -O $@
+
+$(MAPPINGS_DIR)/mondo.sssom.tsv: | $(MAPPINGS_DIR)/
+	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo.sssom.tsv -O $@
 
 
 mappings: $(ALL_MAPPINGS)
