@@ -4,7 +4,7 @@ ontologies:
   - id: mondo
     prefix: MONDO
   - id: mondo-ingest
-    mirror_from: https://www.dropbox.com/s/czwjrhrit655iwc/mondo-ingest.owl?dl=0
+    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2022-04-26/mondo-ingest.owl
 config:
   symbiont_config: ../mondo-all.symbiont.yaml
   boomer_style: ../../config/boomer-style.json
@@ -12,8 +12,8 @@ config:
     defaults:
     runs:
       - id: no_mappings
-        window_count: 100
-        runs: 10
+        window_count: 1000
+        runs: 1
         mappings:
           - empty.sssom.tsv
 #      - id: has_dbxref
@@ -22,18 +22,19 @@ config:
 #        mappings:
 #          - mondo_hasdbxref_icd10cm.sssom.tsv
       - id: mondo
-        window_count: 10
+        window_count: 1000
         runs: 1
         mappings:
           - mondo_exactmatch_icd10cm.sssom.tsv
       - id: all
-        window_count: 10
+        window_count: 1
         runs: 1
         mappings:
           - mondo_exactmatch_icd10cm.sssom.tsv
           - mondo_narrowmatch_icd10cm.sssom.tsv
           - mondo_broadmatch_icd10cm.sssom.tsv
           - ncit_icd10_2017.sssom.tsv
+          - mondo.sssom.tsv
 mapping_registry:
   mapping_registry_id: https://w3id.org/sssom/commons/monarch/icd10-mondo-alignment
   imports:
@@ -64,6 +65,11 @@ mapping_registry:
     mirror_from: https://raw.githubusercontent.com/mapping-commons/disease-mappings/main/mappings/ncit_icd10_2017.sssom.tsv
     local_name: ncit_icd10_2017.sssom.tsv
     registry_confidence: 0.8
+  - mapping_set_id: http://w3id.org/sssom/commons/general/mondo.sssom.tsv
+    mirror_from: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo.sssom.tsv
+    local_name: mondo.sssom.tsv
+    registry_confidence: 0.99
+
 custom_prefix_map:
   prefix_synonyms:
     ICD10: ICD10CM
