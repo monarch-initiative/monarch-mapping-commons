@@ -1,0 +1,58 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:036bfd3fb57b3f5fdd7af70e8e19f2f0686743dfbb66efe5c12ccff95b461d04",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:N40-N53",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003150",
+          "type" : "CLASS",
+          "lbl" : "male reproductive system disorder"
+        },
+        {
+          "id" : "ICD10CM:N40-N51",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:N40-N53",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003150",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003150",
+          "pred" : "siblingOf",
+          "obj" : "ICD10CM:N40-N51",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:N40-N53",
+            "MONDO:0003150"
+          ]
+        }
+      ]
+    }
+  ]
+}

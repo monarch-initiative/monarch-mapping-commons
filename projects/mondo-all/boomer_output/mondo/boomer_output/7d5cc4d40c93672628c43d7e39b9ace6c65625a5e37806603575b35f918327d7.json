@@ -1,0 +1,67 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7d5cc4d40c93672628c43d7e39b9ace6c65625a5e37806603575b35f918327d7",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:I00-I99",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:I70-I79",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005385",
+          "type" : "CLASS",
+          "lbl" : "vascular disorder"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:I70-I79",
+          "pred" : "asserted_is_a",
+          "obj" : "ICD10CM:I00-I99",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:I00-I99",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005385",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:I70-I79",
+          "pred" : "is_a",
+          "obj" : "MONDO:0005385",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.025000000000000022
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005385",
+            "ICD10CM:I00-I99"
+          ]
+        }
+      ]
+    }
+  ]
+}

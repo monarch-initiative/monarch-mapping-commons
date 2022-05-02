@@ -7,8 +7,8 @@ This is the Mapping Commons of the Monarch Initiative. It contains all mappings 
 Clone the repo first:
 
 ```
-git clone https://github.com/monarch-initiative/boomer-workflow
-cd boomer-workflow
+git clone https://github.com/monarch-initiative/monarch-mapping-commons
+cd monarch-mapping-commons
 ```
 
 Now we can run all configured workflows:
