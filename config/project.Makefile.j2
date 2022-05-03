@@ -95,6 +95,7 @@ boomer-{{ run.id }}: | $(BOOMER_OUTPUT_DIR)/{{ run.id }}/
 		--prefixes $(BOOMER_INPUT_DIR)/{{ run.id }}/prefix.yaml \
 		--output $(BOOMER_OUTPUT_DIR)/{{ run.id }}/boomer_output \
 		--window-count {{ run.window_count }} \
+		--exhaustive-search-limit {{ run.exhaustive_search_limit|default(15) }} \
 		--runs {{ run.runs }} \{% if run.restrict_output_to_prefixes is defined %}
 		--restrict-output-to-prefixes={{ run.restrict_output_to_prefixes.first }} \
 		--restrict-output-to-prefixes={{ run.restrict_output_to_prefixes.second }} \
