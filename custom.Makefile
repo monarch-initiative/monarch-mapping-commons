@@ -10,4 +10,12 @@ $(TMP_DIR)/mondo_icd10cm_boomer.json: $(MONDO_ICD10CM_BOOMER) | $(TMP_DIR)/
 	$(ROBOT) query -i $< --update sparql/equivalent_to_exactmatch.ru convert -o $@
 
 $(MAPPINGS_DIR)/mondo_icd10cm_boomer.sssom.tsv: $(TMP_DIR)/mondo_icd10cm_boomer.json
-	sssom parse $< --input-format obographs-json -m config/dummy.metadata.yaml -o $@
+	sssom parse $< --input-format obographs-json -m config/metadata.yaml --prefix-map-mode merged -o $@
+
+MONDO_JSON=http://purl.obolibrary.org/obo/mondo/mondo.json
+
+$(TMP_DIR)/mondo.json:
+	wget $(MONDO_JSON) -O $@
+
+$(MAPPINGS_DIR)/mondo_all.sssom.tsv: $(TMP_DIR)/mondo.json
+	sssom parse $< --input-format obographs-json -m config/metadata.yaml --prefix-map-mode merged -o $@

@@ -80,26 +80,26 @@ $(BOOMER_INPUT_DIR)/%/symbiont-merged-all.owl: $(TMP_DIR)/symbiont-merged-all.ow
 ALL_MAPPINGS=$(TMP_DIR)/empty.sssom.tsv $(TMP_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv $(TMP_DIR)/mondo_exactmatch_icd10cm.sssom.tsv $(TMP_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv $(TMP_DIR)/mondo_broadmatch_icd10cm.sssom.tsv $(TMP_DIR)/ncit_icd10_2017.sssom.tsv $(TMP_DIR)/mondo.sssom.tsv 
 
 
-$(TMP_DIR)/empty.sssom.tsv: | $(TMP_DIR)/
-	wget https://raw.githubusercontent.com/mapping-commons/mapping-commons.github.io/main/mappings/empty.sssom.tsv -O $@
+$(TMP_DIR)/empty.sssom.tsv: ../../mappings/empty.sssom.tsv | $(TMP_DIR)/
+	cp $< $@
 
-$(TMP_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv: | $(TMP_DIR)/
-	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_hasdbxref_icd10cm.sssom.tsv -O $@
+$(TMP_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv: ../../mappings/mondo_hasdbxref_icd10cm.sssom.tsv | $(TMP_DIR)/
+	cp $< $@
 
-$(TMP_DIR)/mondo_exactmatch_icd10cm.sssom.tsv: | $(TMP_DIR)/
-	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_exactmatch_icd10cm.sssom.tsv -O $@
+$(TMP_DIR)/mondo_exactmatch_icd10cm.sssom.tsv: ../../mappings/mondo_exactmatch_icd10cm.sssom.tsv | $(TMP_DIR)/
+	cp $< $@
 
-$(TMP_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv: | $(TMP_DIR)/
-	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_narrowmatch_icd10cm.sssom.tsv -O $@
+$(TMP_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv: ../../mappings/mondo_narrowmatch_icd10cm.sssom.tsv | $(TMP_DIR)/
+	cp $< $@
 
-$(TMP_DIR)/mondo_broadmatch_icd10cm.sssom.tsv: | $(TMP_DIR)/
-	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_broadmatch_icd10cm.sssom.tsv -O $@
+$(TMP_DIR)/mondo_broadmatch_icd10cm.sssom.tsv: ../../mappings/mondo_broadmatch_icd10cm.sssom.tsv | $(TMP_DIR)/
+	cp $< $@
 
-$(TMP_DIR)/ncit_icd10_2017.sssom.tsv: | $(TMP_DIR)/
-	wget https://raw.githubusercontent.com/mapping-commons/disease-mappings/main/mappings/ncit_icd10_2017.sssom.tsv -O $@
+$(TMP_DIR)/ncit_icd10_2017.sssom.tsv: ../../mappings/ncit_icd10_2017.sssom.tsv | $(TMP_DIR)/
+	cp $< $@
 
-$(TMP_DIR)/mondo.sssom.tsv: | $(TMP_DIR)/
-	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo.sssom.tsv -O $@
+$(TMP_DIR)/mondo.sssom.tsv: ../../mappings/mondo.sssom.tsv | $(TMP_DIR)/
+	cp $< $@
 
 
 $(BOOMER_INPUT_DIR)/%/combined.sssom.tsv $(BOOMER_INPUT_DIR)/%/prefix.yaml: $(ALL_MAPPINGS) | $(BOOMER_INPUT_DIR)/%/
@@ -140,7 +140,7 @@ boomer-all: | $(BOOMER_OUTPUT_DIR)/all/
 		--prefixes $(BOOMER_INPUT_DIR)/all/prefix.yaml \
 		--output $(BOOMER_OUTPUT_DIR)/all/boomer_output \
 		--window-count 1 \
-		--runs 10 \ 
+		--runs 1 \ 
 	find $(BOOMER_OUTPUT_DIR)/all -name "*.json" -type 'f' -size -500c -delete # Hack for removing individual singleton json files.
 
 
