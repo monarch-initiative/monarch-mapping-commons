@@ -7,15 +7,15 @@ IM=monarchinitiative/mapping-commons
 ROBOT=robot
 
 build-no-cache:
-	@docker build --no-cache -t $(IM):$(VERSION) . --load \
+	@docker build --no-cache -t $(IM):$(VERSION) . \
 	&& docker tag $(IM):$(VERSION) $(IM):latest
 
 build:
-	@docker build -t $(IM):$(VERSION) . --load \
+	@docker build -t $(IM):$(VERSION) . \
 	&& docker tag $(IM):$(VERSION) $(IM):latest
 	
 build-use-cache-dev:
-	@docker build -t $(DEV):$(VERSION) . --load \
+	@docker build -t $(DEV):$(VERSION) . \
 	&& docker tag $(DEV):$(VERSION) $(DEV):latest
 
 clean:
