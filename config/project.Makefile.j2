@@ -71,8 +71,8 @@ $(BOOMER_INPUT_DIR)/%/symbiont-merged-all.owl: $(TMP_DIR)/symbiont-merged-all.ow
 ALL_MAPPINGS={% for mapping in mapping_registry.mapping_set_references %}$(TMP_DIR)/{{ mapping.local_name }} {% endfor %}
 
 {% for mapping in mapping_registry.mapping_set_references %}
-$(TMP_DIR)/{{ mapping.local_name }}: | $(TMP_DIR)/
-	wget {{ mapping.mirror_from|default(mapping.mapping_set_id) }} -O $@
+$(TMP_DIR)/{{ mapping.local_name }}: {{ mapping_dir|default('../../mappings')}}/{{ mapping.local_name }} | $(TMP_DIR)/
+	cp $< $@
 {% endfor %}
 
 $(BOOMER_INPUT_DIR)/%/combined.sssom.tsv $(BOOMER_INPUT_DIR)/%/prefix.yaml: $(ALL_MAPPINGS) | $(BOOMER_INPUT_DIR)/%/
