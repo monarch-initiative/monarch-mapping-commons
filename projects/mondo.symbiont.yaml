@@ -3,17 +3,8 @@ description: We harmonise our mappings between Mondo and OMIM, ORDO and DO.
 ontologies:
   - id: mondo
     prefix: MONDO
-  - id: omim
-    prefix: OMIM
-    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2022-04-26/omim.owl
-  - id: doid
-    prefix: DOID
-    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2022-04-26/doid.owl
-  - id: ordo
-    prefix: Orphanet
-    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2022-04-26/ordo.owl
 config:
-  symbiont_config: ../mondo-omim-ordo-do.symbiont.yaml
+  symbiont_config: ../mondo.symbiont.yaml
   boomer_style: ../../config/boomer-style.json
   boomer_config:
     defaults:
@@ -31,8 +22,8 @@ config:
           - mondo.sssom.tsv
       - id: mondo_all
         window_count: 1
-        runs: 1
         exhaustive_search_limit: 10
+        runs: 1
         mappings:
           - mondo_all.sssom.tsv
           - mondo.sssom.tsv
