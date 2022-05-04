@@ -20,27 +20,27 @@ config:
         runs: 1
         mappings:
           - empty.sssom.tsv
-      - id: mondo_exact
-        window_count: 1
-        exhaustive_search_limit: 10
-        runs: 1
-        mappings:
-          - mondo.sssom.tsv
-      - id: mondo_all
-        window_count: 1
-        runs: 1
-        exhaustive_search_limit: 10
-        mappings:
-          - mondo_all.sssom.tsv
-          - mondo.sssom.tsv
-      - id: all
-        window_count: 1
-        exhaustive_search_limit: 10
-        runs: 1
-        mappings:
-          - mondo_all.sssom.tsv
-          - mondo.sssom.tsv
-          - ncit_icd10_2017.sssom.tsv
+      # - id: mondo_exact
+      #   window_count: 1
+      #   exhaustive_search_limit: 10
+      #   runs: 1
+      #   mappings:
+      #     - mondo.sssom.tsv
+      # - id: mondo_all
+      #   window_count: 1
+      #   runs: 1
+      #   exhaustive_search_limit: 10
+      #   mappings:
+      #     - mondo_all.sssom.tsv
+      #     - mondo.sssom.tsv
+      # - id: all
+      #   window_count: 1
+      #   exhaustive_search_limit: 10
+      #   runs: 1
+      #   mappings:
+      #     - mondo_all.sssom.tsv
+      #     - mondo.sssom.tsv
+      #     - ncit_icd10_2017.sssom.tsv
 mapping_registry:
   mapping_set_references:
   - local_name: empty.sssom.tsv
