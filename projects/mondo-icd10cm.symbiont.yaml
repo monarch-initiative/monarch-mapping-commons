@@ -3,9 +3,9 @@ description: We harmonise our mappings between Mondo and ICD10CM.
 ontologies:
   - id: mondo
     prefix: MONDO
-    mirror_from:
   - id: icd10cm
     prefix: ICD10CM
+    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2022-04-26/icd10cm.owl
 config:
   symbiont_config: ../mondo-icd10cm.symbiont.yaml
   boomer_style: ../../config/boomer-style.json
@@ -16,29 +16,30 @@ config:
         second: ICD10CM
     runs:
       - id: no_mappings
-        window_count: 100
-        runs: 10
+        window_count: 1
+        runs: 1
         mappings:
           - empty.sssom.tsv
-      - id: exact_match_only
-        window_count: 10
+      - id: mondo_exact
+        window_count: 1
+        exhaustive_search_limit: 10
         runs: 1
         mappings:
-          - mondo_exactmatch_icd10cm.sssom.tsv
-      - id: all_precise
-        window_count: 10
+          - mondo.sssom.tsv
+      - id: mondo_all
+        window_count: 1
         runs: 1
+        exhaustive_search_limit: 10
         mappings:
-          - mondo_exactmatch_icd10cm.sssom.tsv
-          - mondo_narrowmatch_icd10cm.sssom.tsv
-          - mondo_broadmatch_icd10cm.sssom.tsv
+          - mondo_all.sssom.tsv
+          - mondo.sssom.tsv
       - id: all
-        window_count: 10
+        window_count: 1
+        exhaustive_search_limit: 10
         runs: 1
         mappings:
-          - mondo_exactmatch_icd10cm.sssom.tsv
-          - mondo_narrowmatch_icd10cm.sssom.tsv
-          - mondo_broadmatch_icd10cm.sssom.tsv
+          - mondo_all.sssom.tsv
+          - mondo.sssom.tsv
           - ncit_icd10_2017.sssom.tsv
 mapping_registry:
   mapping_set_references:
