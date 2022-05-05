@@ -12,3 +12,4 @@ make -f docker.Makefile build
 
 sh run.sh make IM=$IM MEMORY=$MEMORY mappings
 sh run.sh make IM=$IM MEMORY=$MEMORY all
+echo "The Mapping Commons run has been successfully completed."
