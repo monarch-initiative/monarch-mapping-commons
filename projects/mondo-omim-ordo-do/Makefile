@@ -2,9 +2,9 @@ TMP_DIR = tmp
 BOOMER_INPUT_DIR = boomer_input
 BOOMER_OUTPUT_DIR = boomer_output
 
-ALL_RUNS=no_mappings mondo_exact mondo_all 
+ALL_RUNS=no_mappings mondo_exact 
 
-$(TMP_DIR)/ $(TMP_DIR)/no_mappings/ $(BOOMER_INPUT_DIR)/no_mappings/ $(BOOMER_OUTPUT_DIR)/no_mappings/ $(TMP_DIR)/mondo_exact/ $(BOOMER_INPUT_DIR)/mondo_exact/ $(BOOMER_OUTPUT_DIR)/mondo_exact/ $(TMP_DIR)/mondo_all/ $(BOOMER_INPUT_DIR)/mondo_all/ $(BOOMER_OUTPUT_DIR)/mondo_all/ :
+$(TMP_DIR)/ $(TMP_DIR)/no_mappings/ $(BOOMER_INPUT_DIR)/no_mappings/ $(BOOMER_OUTPUT_DIR)/no_mappings/ $(TMP_DIR)/mondo_exact/ $(BOOMER_INPUT_DIR)/mondo_exact/ $(BOOMER_OUTPUT_DIR)/mondo_exact/ :
 	mkdir -p $@
 
 .PHONY: all
@@ -23,9 +23,6 @@ prepare-data-no_mappings: $(BOOMER_INPUT_DIR)/no_mappings/combined.ptable.tsv $(
 
 .PHONY: prepare-data-mondo_exact
 prepare-data-mondo_exact: $(BOOMER_INPUT_DIR)/mondo_exact/combined.ptable.tsv $(BOOMER_INPUT_DIR)/mondo_exact/prefix.yaml $(BOOMER_INPUT_DIR)/mondo_exact/symbiont-merged-all.owl 
-
-.PHONY: prepare-data-mondo_all
-prepare-data-mondo_all: $(BOOMER_INPUT_DIR)/mondo_all/combined.ptable.tsv $(BOOMER_INPUT_DIR)/mondo_all/prefix.yaml $(BOOMER_INPUT_DIR)/mondo_all/symbiont-merged-all.owl 
 
 
 .PHONY: boomer
@@ -115,7 +112,8 @@ boomer-no_mappings: | $(BOOMER_OUTPUT_DIR)/no_mappings/
 		--ontology $(BOOMER_INPUT_DIR)/no_mappings/symbiont-merged-all.owl \
 		--prefixes $(BOOMER_INPUT_DIR)/no_mappings/prefix.yaml \
 		--output $(BOOMER_OUTPUT_DIR)/no_mappings/boomer_output \
-		--window-count 1000 \
+		--window-count 1 \
+		--exhaustive-search-limit 15 \
 		--runs 1 \ 
 	find $(BOOMER_OUTPUT_DIR)/no_mappings -name "*.json" -type 'f' -size -500c -delete # Hack for removing individual singleton json files.
 
@@ -124,18 +122,10 @@ boomer-mondo_exact: | $(BOOMER_OUTPUT_DIR)/mondo_exact/
 		--ontology $(BOOMER_INPUT_DIR)/mondo_exact/symbiont-merged-all.owl \
 		--prefixes $(BOOMER_INPUT_DIR)/mondo_exact/prefix.yaml \
 		--output $(BOOMER_OUTPUT_DIR)/mondo_exact/boomer_output \
-		--window-count 1000 \
+		--window-count 1 \
+		--exhaustive-search-limit 10 \
 		--runs 1 \ 
 	find $(BOOMER_OUTPUT_DIR)/mondo_exact -name "*.json" -type 'f' -size -500c -delete # Hack for removing individual singleton json files.
-
-boomer-mondo_all: | $(BOOMER_OUTPUT_DIR)/mondo_all/
-	boomer --ptable $(BOOMER_INPUT_DIR)/mondo_all/combined.ptable.tsv \
-		--ontology $(BOOMER_INPUT_DIR)/mondo_all/symbiont-merged-all.owl \
-		--prefixes $(BOOMER_INPUT_DIR)/mondo_all/prefix.yaml \
-		--output $(BOOMER_OUTPUT_DIR)/mondo_all/boomer_output \
-		--window-count 1 \
-		--runs 1 \ 
-	find $(BOOMER_OUTPUT_DIR)/mondo_all -name "*.json" -type 'f' -size -500c -delete # Hack for removing individual singleton json files.
 
 
 #####################
@@ -159,12 +149,6 @@ PNGS_MONDO_EXACT=$(patsubst %.json, %.png, $(filter-out singletons, $(JSONS_MOND
 
 .PHONY: reports-mondo_exact
 reports-mondo_exact: $(PNGS_MONDO_EXACT)
-
-JSONS_MONDO_ALL=$(wildcard $(BOOMER_OUTPUT_DIR)/mondo_all/boomer_output/*.json)
-PNGS_MONDO_ALL=$(patsubst %.json, %.png, $(filter-out singletons, $(JSONS_MONDO_ALL)))
-
-.PHONY: reports-mondo_all
-reports-mondo_all: $(PNGS_MONDO_ALL)
 
 
 include custom.Makefile
