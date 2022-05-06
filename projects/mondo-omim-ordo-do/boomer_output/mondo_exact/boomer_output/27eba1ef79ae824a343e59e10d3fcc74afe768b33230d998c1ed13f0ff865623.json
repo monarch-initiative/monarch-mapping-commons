@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:27eba1ef79ae824a343e59e10d3fcc74afe768b33230d998c1ed13f0ff865623",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280030",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013607",
+          "type" : "CLASS",
+          "lbl" : "monocytopenia with susceptibility to infections"
+        },
+        {
+          "id" : "Orphanet:228423",
+          "type" : "CLASS",
+          "lbl" : "Monocytopenia with susceptibility to infections"
+        },
+        {
+          "id" : "OMIM:614172",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013607",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:228423",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013607",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614172",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3280030",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013607",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013607",
+            "Orphanet:228423",
+            "OMIM:614172",
+            "UMLS:C3280030"
+          ]
+        }
+      ]
+    }
+  ]
+}

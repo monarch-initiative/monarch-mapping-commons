@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:db71b81233befe59f88f600eb014942e990909b3fba52396feef15c9e60adb2e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553298",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013829",
+          "type" : "CLASS",
+          "lbl" : "UV-sensitive syndrome 2"
+        },
+        {
+          "id" : "OMIM:614621",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3553298",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013829",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013829",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614621",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3553298",
+            "MONDO:0013829",
+            "OMIM:614621"
+          ]
+        }
+      ]
+    }
+  ]
+}

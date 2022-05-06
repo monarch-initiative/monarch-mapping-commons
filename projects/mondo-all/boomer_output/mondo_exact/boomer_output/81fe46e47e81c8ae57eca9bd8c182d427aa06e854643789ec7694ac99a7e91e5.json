@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:81fe46e47e81c8ae57eca9bd8c182d427aa06e854643789ec7694ac99a7e91e5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1368903",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2660",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002379",
+          "type" : "CLASS",
+          "lbl" : "cystic teratoma"
+        },
+        {
+          "id" : "NCIT:C9014",
+          "type" : "CLASS",
+          "lbl" : "Cystic Teratoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1368903",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002379",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002379",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9014",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2660",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002379",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1368903",
+            "MONDO:0002379",
+            "NCIT:C9014",
+            "DOID:2660"
+          ]
+        }
+      ]
+    }
+  ]
+}

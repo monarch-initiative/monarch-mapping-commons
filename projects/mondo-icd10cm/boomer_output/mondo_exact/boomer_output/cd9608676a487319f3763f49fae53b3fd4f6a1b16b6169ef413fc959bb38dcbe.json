@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cd9608676a487319f3763f49fae53b3fd4f6a1b16b6169ef413fc959bb38dcbe",
+      "nodes" : [
+        {
+          "id" : "MESH:C538111",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1838655",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010813",
+          "type" : "CLASS",
+          "lbl" : "pancreatic beta cell agenesis with neonatal diabetes mellitus"
+        },
+        {
+          "id" : "OMIM:600089",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010813",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600089",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1838655",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010813",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538111",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010813",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010813",
+            "OMIM:600089",
+            "UMLS:C1838655",
+            "MESH:C538111"
+          ]
+        }
+      ]
+    }
+  ]
+}

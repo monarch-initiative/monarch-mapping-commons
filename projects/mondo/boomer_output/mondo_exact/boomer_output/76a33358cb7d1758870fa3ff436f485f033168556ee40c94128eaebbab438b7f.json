@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:76a33358cb7d1758870fa3ff436f485f033168556ee40c94128eaebbab438b7f",
+      "nodes" : [
+        {
+          "id" : "Orphanet:181412",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0302280",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:267395000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015898",
+          "type" : "CLASS",
+          "lbl" : "adrenogenital syndrome"
+        },
+        {
+          "id" : "UMLS:CN200506",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D047808",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0302280",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015898",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015898",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN200506",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:267395000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015898",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015898",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:181412",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D047808",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015898",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:267395000",
+            "MESH:D047808",
+            "Orphanet:181412",
+            "MONDO:0015898",
+            "UMLS:C0302280"
+          ]
+        }
+      ]
+    }
+  ]
+}

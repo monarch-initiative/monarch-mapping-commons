@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:41684a8005e397660f062d7df4ada3b85c278516898a254c62a02b8740838a11",
+      "nodes" : [
+        {
+          "id" : "NCIT:C8053",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN204631",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018172",
+          "type" : "CLASS",
+          "lbl" : "malignant sex cord stromal tumor of ovary"
+        },
+        {
+          "id" : "UMLS:C1334609",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:35808",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018172",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8053",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018172",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:35808",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018172",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN204631",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334609",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018172",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C8053",
+            "MONDO:0018172",
+            "Orphanet:35808",
+            "UMLS:C1334609"
+          ]
+        }
+      ]
+    }
+  ]
+}

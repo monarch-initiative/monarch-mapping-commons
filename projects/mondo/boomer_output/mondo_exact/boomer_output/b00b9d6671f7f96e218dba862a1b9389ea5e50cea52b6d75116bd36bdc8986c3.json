@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b00b9d6671f7f96e218dba862a1b9389ea5e50cea52b6d75116bd36bdc8986c3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335942",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6025",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003739",
+          "type" : "CLASS",
+          "lbl" : "selective immunoglobulin deficiency disease"
+        },
+        {
+          "id" : "NCIT:C27870",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003739",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27870",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335942",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003739",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6025",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003739",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003739",
+            "NCIT:C27870",
+            "UMLS:C1335942",
+            "DOID:6025"
+          ]
+        }
+      ]
+    }
+  ]
+}

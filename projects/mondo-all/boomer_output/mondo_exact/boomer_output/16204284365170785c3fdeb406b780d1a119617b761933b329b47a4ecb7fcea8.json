@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:16204284365170785c3fdeb406b780d1a119617b761933b329b47a4ecb7fcea8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2703042",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021138",
+          "type" : "CLASS",
+          "lbl" : "bone marrow cancer"
+        },
+        {
+          "id" : "NCIT:C35501",
+          "type" : "CLASS",
+          "lbl" : "Malignant Bone Marrow Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2703042",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021138",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021138",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35501",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2703042",
+            "MONDO:0021138",
+            "NCIT:C35501"
+          ]
+        }
+      ]
+    }
+  ]
+}

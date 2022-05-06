@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:060f54d2d83d96537d0444d5310aee2901dd84b73521491ef161a3aae279bb8a",
+      "nodes" : [
+        {
+          "id" : "MONDO:0027772",
+          "type" : "CLASS",
+          "lbl" : "lung colloid adenocarcinoma"
+        },
+        {
+          "id" : "UMLS:C1708776",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080304",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080303",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C45512",
+          "type" : "CLASS",
+          "lbl" : "Lung Colloid Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1708776",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0027772",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080303",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0027772",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0027772",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0080304",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0027772",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C45512",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1708776",
+            "MONDO:0027772",
+            "DOID:0080303",
+            "NCIT:C45512"
+          ]
+        }
+      ]
+    }
+  ]
+}

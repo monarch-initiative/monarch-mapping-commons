@@ -1,0 +1,76 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:450ff7019d79deb60ec6d7ceed94c7f71bf8923a07d95317ecb7502625346ff9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1843852",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016809",
+          "type" : "CLASS",
+          "lbl" : "spinocerebellar ataxia with epilepsy"
+        },
+        {
+          "id" : "Orphanet:254881",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN202060",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1843852",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016809",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016809",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:254881",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016809",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN202060",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1843852",
+            "MONDO:0016809",
+            "Orphanet:254881"
+          ]
+        }
+      ]
+    }
+  ]
+}

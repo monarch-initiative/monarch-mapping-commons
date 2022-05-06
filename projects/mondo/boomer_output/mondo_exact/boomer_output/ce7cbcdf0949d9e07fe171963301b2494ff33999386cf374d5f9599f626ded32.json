@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ce7cbcdf0949d9e07fe171963301b2494ff33999386cf374d5f9599f626ded32",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0346303",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019611",
+          "type" : "CLASS",
+          "lbl" : "TSH-secreting pituitary adenoma"
+        },
+        {
+          "id" : "NCIT:C8011",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:91347",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019611",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8011",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019611",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:91347",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0346303",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019611",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C8011",
+            "MONDO:0019611",
+            "Orphanet:91347",
+            "UMLS:C0346303"
+          ]
+        }
+      ]
+    }
+  ]
+}

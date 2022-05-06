@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b36431e36e00ca3bb6cb430af8ec7b16cdf9efb6601bef04249e803eda2ae60b",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226145",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018430",
+          "type" : "CLASS",
+          "lbl" : "partial corpus callosum agenesis-cerebellar vermis hypoplasia with posterior fossa cysts syndrome"
+        },
+        {
+          "id" : "Orphanet:401959",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018430",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:401959",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226145",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018430",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:401959",
+            "MONDO:0018430",
+            "UMLS:CN226145"
+          ]
+        }
+      ]
+    }
+  ]
+}

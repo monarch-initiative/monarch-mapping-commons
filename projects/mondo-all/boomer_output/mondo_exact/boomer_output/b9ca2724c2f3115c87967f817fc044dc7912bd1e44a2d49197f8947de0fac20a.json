@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b9ca2724c2f3115c87967f817fc044dc7912bd1e44a2d49197f8947de0fac20a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3554609",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014067",
+          "type" : "CLASS",
+          "lbl" : "short ulna-dysmorphism-hypotonia-intellectual disability syndrome"
+        },
+        {
+          "id" : "Orphanet:357175",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:615162",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014067",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:357175",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3554609",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014067",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014067",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615162",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014067",
+            "Orphanet:357175",
+            "UMLS:C3554609",
+            "OMIM:615162"
+          ]
+        }
+      ]
+    }
+  ]
+}

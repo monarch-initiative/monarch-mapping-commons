@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a518bb3e1f6183ac3477f9f1d336d19bcc788e475f646126824f533d17717403",
+      "nodes" : [
+        {
+          "id" : "SCTID:64715009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C4907",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0152105",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001302",
+          "type" : "CLASS",
+          "lbl" : "hypertensive heart disease"
+        },
+        {
+          "id" : "DOID:11516",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:11516",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001302",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:64715009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001302",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0152105",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001302",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001302",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4907",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001302",
+            "SCTID:64715009",
+            "DOID:11516",
+            "NCIT:C4907",
+            "UMLS:C0152105"
+          ]
+        }
+      ]
+    }
+  ]
+}

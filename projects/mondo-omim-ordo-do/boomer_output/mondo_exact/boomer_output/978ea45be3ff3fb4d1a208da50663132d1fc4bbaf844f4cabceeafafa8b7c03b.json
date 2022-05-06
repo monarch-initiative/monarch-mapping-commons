@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:978ea45be3ff3fb4d1a208da50663132d1fc4bbaf844f4cabceeafafa8b7c03b",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227274",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018162",
+          "type" : "CLASS",
+          "lbl" : "neurometabolic disorder due to serine deficiency"
+        },
+        {
+          "id" : "Orphanet:35705",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227274",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018162",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018162",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:35705",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN227274",
+            "MONDO:0018162",
+            "Orphanet:35705"
+          ]
+        }
+      ]
+    }
+  ]
+}

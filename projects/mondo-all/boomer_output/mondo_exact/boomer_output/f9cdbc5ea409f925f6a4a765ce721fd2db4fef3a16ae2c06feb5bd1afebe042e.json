@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f9cdbc5ea409f925f6a4a765ce721fd2db4fef3a16ae2c06feb5bd1afebe042e",
+      "nodes" : [
+        {
+          "id" : "MESH:C566258",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007151",
+          "type" : "CLASS",
+          "lbl" : "arms, malformation of"
+        },
+        {
+          "id" : "OMIM:107900",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007151",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:107900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566258",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007151",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007151",
+            "OMIM:107900",
+            "MESH:C566258"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ace198990416eca0cb91ca5c2b7b6752938fb51c436500483b01cc4c8af6fc72",
+      "nodes" : [
+        {
+          "id" : "MESH:C563574",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:250460",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1834821",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:1838",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009601",
+          "type" : "CLASS",
+          "lbl" : "metaphyseal dysplasia without hypotrichosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009601",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:250460",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563574",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009601",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009601",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1838",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1834821",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009601",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:250460",
+            "Orphanet:1838",
+            "MONDO:0009601",
+            "UMLS:C1834821",
+            "MESH:C563574"
+          ]
+        }
+      ]
+    }
+  ]
+}

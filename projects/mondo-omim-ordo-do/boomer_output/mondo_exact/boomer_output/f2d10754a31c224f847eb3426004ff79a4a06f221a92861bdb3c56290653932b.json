@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f2d10754a31c224f847eb3426004ff79a4a06f221a92861bdb3c56290653932b",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226642",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015232",
+          "type" : "CLASS",
+          "lbl" : "radial deficiency-tibial hypoplasia syndrome"
+        },
+        {
+          "id" : "Orphanet:1121",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015232",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1121",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226642",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015232",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015232",
+            "Orphanet:1121",
+            "UMLS:CN226642"
+          ]
+        }
+      ]
+    }
+  ]
+}

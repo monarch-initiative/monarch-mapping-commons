@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fabdc19e11317ec9680707fec658c1461dfc2704717be37dfc564544ff19f4b3",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237616",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018587",
+          "type" : "CLASS",
+          "lbl" : "non-recovering obstetric brachial plexus lesion"
+        },
+        {
+          "id" : "Orphanet:439202",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018587",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:439202",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237616",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018587",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:439202",
+            "MONDO:0018587",
+            "UMLS:CN237616"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3e6fabd899add0e666e9994085fe2fce5655b2d816df53deaeb24f86300cd412",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1368275",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:403909004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002939",
+          "type" : "CLASS",
+          "lbl" : "skin pigmented basal cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C9359",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4282",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:403909004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002939",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4282",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002939",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002939",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9359",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1368275",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002939",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002939",
+            "UMLS:C1368275",
+            "DOID:4282",
+            "NCIT:C9359",
+            "SCTID:403909004"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5b7476bfb2b7820d8bb5d88bea501340a66342e291e8aafa2da74dc541975d89",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334426",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000929",
+          "type" : "CLASS",
+          "lbl" : "balloon cell malignant melanoma"
+        },
+        {
+          "id" : "NCIT:C4227",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10044",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:403922007",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0334426",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000929",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:403922007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000929",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000929",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4227",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10044",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000929",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000929",
+            "SCTID:403922007",
+            "DOID:10044",
+            "UMLS:C0334426",
+            "NCIT:C4227"
+          ]
+        }
+      ]
+    }
+  ]
+}

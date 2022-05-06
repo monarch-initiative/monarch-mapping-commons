@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0aec001111bfcbb925c085b2bd75f106f63703adc54f8652819f4616fb0d69bc",
+      "nodes" : [
+        {
+          "id" : "SCTID:39772007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0034887",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021398",
+          "type" : "CLASS",
+          "lbl" : "polyp of rectum"
+        },
+        {
+          "id" : "NCIT:C3351",
+          "type" : "CLASS",
+          "lbl" : "Rectal Polyp"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0034887",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021398",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021398",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3351",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:39772007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021398",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0034887",
+            "MONDO:0021398",
+            "NCIT:C3351",
+            "SCTID:39772007"
+          ]
+        }
+      ]
+    }
+  ]
+}

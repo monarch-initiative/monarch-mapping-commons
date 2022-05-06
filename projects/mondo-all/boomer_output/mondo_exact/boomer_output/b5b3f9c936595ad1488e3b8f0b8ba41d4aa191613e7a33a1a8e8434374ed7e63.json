@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b5b3f9c936595ad1488e3b8f0b8ba41d4aa191613e7a33a1a8e8434374ed7e63",
+      "nodes" : [
+        {
+          "id" : "MESH:C564768",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1848815",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010126",
+          "type" : "CLASS",
+          "lbl" : "thymic aplasia with fetal death"
+        },
+        {
+          "id" : "OMIM:274210",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564768",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010126",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010126",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:274210",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1848815",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010126",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C564768",
+            "MONDO:0010126",
+            "OMIM:274210",
+            "UMLS:C1848815"
+          ]
+        }
+      ]
+    }
+  ]
+}

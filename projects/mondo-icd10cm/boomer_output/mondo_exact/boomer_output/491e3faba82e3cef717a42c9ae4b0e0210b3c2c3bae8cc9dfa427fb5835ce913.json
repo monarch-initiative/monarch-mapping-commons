@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:491e3faba82e3cef717a42c9ae4b0e0210b3c2c3bae8cc9dfa427fb5835ce913",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332627",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6492",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003897",
+          "type" : "CLASS",
+          "lbl" : "breast epithelioid hemangioma"
+        },
+        {
+          "id" : "NCIT:C5211",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332627",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003897",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003897",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5211",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6492",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003897",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332627",
+            "MONDO:0003897",
+            "NCIT:C5211",
+            "DOID:6492"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:247e2de2c101b3078384964769a7752f2ddf165ec474004bc949f496e0fa9f58",
+      "nodes" : [
+        {
+          "id" : "DOID:0110026",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014207",
+          "type" : "CLASS",
+          "lbl" : "age related macular degeneration 14"
+        },
+        {
+          "id" : "OMIM:615489",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014207",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615489",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110026",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014207",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014207",
+            "OMIM:615489",
+            "DOID:0110026"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:843d762e96b27aefa5a1e58fea75aa9a101cef8bd1b41ca71007e14053355a20",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202619",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017180",
+          "type" : "CLASS",
+          "lbl" : "10q22.3q23.3 microduplication syndrome"
+        },
+        {
+          "id" : "Orphanet:276422",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017180",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:276422",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202619",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017180",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:276422",
+            "MONDO:0017180",
+            "UMLS:CN202619"
+          ]
+        }
+      ]
+    }
+  ]
+}

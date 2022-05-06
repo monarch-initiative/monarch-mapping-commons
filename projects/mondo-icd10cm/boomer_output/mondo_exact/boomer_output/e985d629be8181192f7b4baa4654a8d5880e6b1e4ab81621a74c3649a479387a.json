@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e985d629be8181192f7b4baa4654a8d5880e6b1e4ab81621a74c3649a479387a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4014737",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014406",
+          "type" : "CLASS",
+          "lbl" : "pancreatic agenesis 2"
+        },
+        {
+          "id" : "OMIM:615935",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014406",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615935",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4014737",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014406",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:615935",
+            "MONDO:0014406",
+            "UMLS:C4014737"
+          ]
+        }
+      ]
+    }
+  ]
+}

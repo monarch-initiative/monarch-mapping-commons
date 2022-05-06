@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:952be6351a51d4aa4b828330227c36ff5dee61dc685ca7fc68b94f3526fd1576",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226190",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018445",
+          "type" : "CLASS",
+          "lbl" : "global developmental delay - lung cysts - overgrowth - Wilms tumor syndrome"
+        },
+        {
+          "id" : "Orphanet:404476",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:618272",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018445",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:404476",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018445",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:618272",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226190",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018445",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018445",
+            "Orphanet:404476",
+            "OMIM:618272",
+            "UMLS:CN226190"
+          ]
+        }
+      ]
+    }
+  ]
+}

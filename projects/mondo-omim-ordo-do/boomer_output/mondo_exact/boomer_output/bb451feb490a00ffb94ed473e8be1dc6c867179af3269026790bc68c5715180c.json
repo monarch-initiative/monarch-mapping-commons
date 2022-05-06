@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bb451feb490a00ffb94ed473e8be1dc6c867179af3269026790bc68c5715180c",
+      "nodes" : [
+        {
+          "id" : "SCTID:715403006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN206280",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:874",
+          "type" : "CLASS",
+          "lbl" : "Primary adult heart tumor"
+        },
+        {
+          "id" : "MONDO:0019493",
+          "type" : "CLASS",
+          "lbl" : "primary adult heart tumor"
+        },
+        {
+          "id" : "UMLS:C4275152",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206280",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:715403006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019493",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:874",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019493",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4275152",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN206280",
+            "MONDO:0019493",
+            "SCTID:715403006",
+            "Orphanet:874"
+          ]
+        }
+      ]
+    }
+  ]
+}

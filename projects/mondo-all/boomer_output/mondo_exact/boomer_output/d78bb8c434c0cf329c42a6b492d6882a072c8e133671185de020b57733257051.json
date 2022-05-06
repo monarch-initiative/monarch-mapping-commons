@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d78bb8c434c0cf329c42a6b492d6882a072c8e133671185de020b57733257051",
+      "nodes" : [
+        {
+          "id" : "MESH:C565591",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1856970",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009171",
+          "type" : "CLASS",
+          "lbl" : "endothelial dystrophy, congenital hereditary, with nail hypoplasia"
+        },
+        {
+          "id" : "OMIM:226110",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565591",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009171",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009171",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:226110",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1856970",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009171",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009171",
+            "MESH:C565591",
+            "OMIM:226110",
+            "UMLS:C1856970"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1db0ac0f9424748346c1ea83ec15332a5f6801f0f916f804b1fc37af9bbf068c",
+      "nodes" : [
+        {
+          "id" : "OMIM:190360",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1860822",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C566032",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008598",
+          "type" : "CLASS",
+          "lbl" : "trichodysplasia-xeroderma syndrome"
+        },
+        {
+          "id" : "Orphanet:3361",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008598",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:190360",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566032",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008598",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008598",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3361",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1860822",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008598",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C566032",
+            "UMLS:C1860822",
+            "MONDO:0008598",
+            "OMIM:190360",
+            "Orphanet:3361"
+          ]
+        }
+      ]
+    }
+  ]
+}

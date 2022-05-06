@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8cb272aca1c55f90d45e705e867b66324ca08deacaef8c5151aacc8bbbe5bc71",
+      "nodes" : [
+        {
+          "id" : "MESH:C563333",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN207247",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020376",
+          "type" : "CLASS",
+          "lbl" : "early-onset nuclear cataract"
+        },
+        {
+          "id" : "Orphanet:98991",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN207247",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020376",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020376",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98991",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563333",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020376",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN207247",
+            "MONDO:0020376",
+            "Orphanet:98991",
+            "MESH:C563333"
+          ]
+        }
+      ]
+    }
+  ]
+}

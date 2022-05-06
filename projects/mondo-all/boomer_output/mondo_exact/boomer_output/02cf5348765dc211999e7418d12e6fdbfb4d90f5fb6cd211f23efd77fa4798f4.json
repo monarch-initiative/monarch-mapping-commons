@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:02cf5348765dc211999e7418d12e6fdbfb4d90f5fb6cd211f23efd77fa4798f4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334357",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1293",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001602",
+          "type" : "CLASS",
+          "lbl" : "labia minora carcinoma"
+        },
+        {
+          "id" : "NCIT:C9364",
+          "type" : "CLASS",
+          "lbl" : "Labia Minora Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334357",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001602",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9364",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1293",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1334357",
+            "MONDO:0001602",
+            "NCIT:C9364",
+            "DOID:1293"
+          ]
+        }
+      ]
+    }
+  ]
+}

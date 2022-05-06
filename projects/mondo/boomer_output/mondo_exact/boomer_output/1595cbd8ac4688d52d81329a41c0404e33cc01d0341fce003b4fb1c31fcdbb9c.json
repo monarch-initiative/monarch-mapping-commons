@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1595cbd8ac4688d52d81329a41c0404e33cc01d0341fce003b4fb1c31fcdbb9c",
+      "nodes" : [
+        {
+          "id" : "SCTID:372097009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C53.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021309",
+          "type" : "CLASS",
+          "lbl" : "malignant neoplasm of endocervix"
+        },
+        {
+          "id" : "NCIT:C3553",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C53.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021309",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:372097009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021309",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021309",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3553",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C53.0",
+            "MONDO:0021309",
+            "SCTID:372097009",
+            "NCIT:C3553"
+          ]
+        }
+      ]
+    }
+  ]
+}

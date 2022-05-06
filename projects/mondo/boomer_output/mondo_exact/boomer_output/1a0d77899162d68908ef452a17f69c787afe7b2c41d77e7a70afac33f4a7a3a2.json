@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1a0d77899162d68908ef452a17f69c787afe7b2c41d77e7a70afac33f4a7a3a2",
+      "nodes" : [
+        {
+          "id" : "MESH:C563541",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1834531",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008053",
+          "type" : "CLASS",
+          "lbl" : "myopia 2, autosomal dominant"
+        },
+        {
+          "id" : "OMIM:160700",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008053",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:160700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563541",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008053",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1834531",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008053",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008053",
+            "OMIM:160700",
+            "MESH:C563541",
+            "UMLS:C1834531"
+          ]
+        }
+      ]
+    }
+  ]
+}

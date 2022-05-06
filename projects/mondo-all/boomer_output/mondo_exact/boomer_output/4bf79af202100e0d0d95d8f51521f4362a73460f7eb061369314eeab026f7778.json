@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4bf79af202100e0d0d95d8f51521f4362a73460f7eb061369314eeab026f7778",
+      "nodes" : [
+        {
+          "id" : "MESH:C537819",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0795820",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016944",
+          "type" : "CLASS",
+          "lbl" : "partial duplication of the short arm of chromosome 7"
+        },
+        {
+          "id" : "Orphanet:262749",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C537819",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016944",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016944",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:262749",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0795820",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016944",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C537819",
+            "MONDO:0016944",
+            "Orphanet:262749",
+            "UMLS:C0795820"
+          ]
+        }
+      ]
+    }
+  ]
+}

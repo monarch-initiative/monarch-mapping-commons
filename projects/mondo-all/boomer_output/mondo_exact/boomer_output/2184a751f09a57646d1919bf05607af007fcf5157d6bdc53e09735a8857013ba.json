@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2184a751f09a57646d1919bf05607af007fcf5157d6bdc53e09735a8857013ba",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332139",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3024",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002493",
+          "type" : "CLASS",
+          "lbl" : "prostatic acinar adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C5596",
+          "type" : "CLASS",
+          "lbl" : "Prostate Acinar Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3024",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002493",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5596",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332139",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3024",
+            "MONDO:0002493",
+            "NCIT:C5596",
+            "UMLS:C1332139"
+          ]
+        }
+      ]
+    }
+  ]
+}

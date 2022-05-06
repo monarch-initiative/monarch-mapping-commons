@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:04e0159a1e64697c4f5d45db5a2b22e8fb33c1409e119ab639fde860f2db6fff",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3151140",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060270",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013438",
+          "type" : "CLASS",
+          "lbl" : "pontocerebellar hypoplasia type 2D"
+        },
+        {
+          "id" : "OMIM:613811",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013438",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613811",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3151140",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013438",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060270",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013438",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:613811",
+            "MONDO:0013438",
+            "UMLS:C3151140",
+            "DOID:0060270"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cc14ac04389f5cf1d362c23c5e73247084cbfab83310acfe525e31a4c52dde38",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809719",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014218",
+          "type" : "CLASS",
+          "lbl" : "severe dermatitis-multiple allergies-metabolic wasting syndrome"
+        },
+        {
+          "id" : "Orphanet:369992",
+          "type" : "CLASS",
+          "lbl" : "Severe dermatitis-multiple allergies-metabolic wasting syndrome"
+        },
+        {
+          "id" : "OMIM:615508",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014218",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:369992",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3809719",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014218",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014218",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615508",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:369992",
+            "MONDO:0014218",
+            "UMLS:C3809719",
+            "OMIM:615508"
+          ]
+        }
+      ]
+    }
+  ]
+}

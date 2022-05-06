@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:75acead768916929a5c0680b945bcc428d2660ade9c04ba3c98adb0aa9269956",
+      "nodes" : [
+        {
+          "id" : "MESH:D001282",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:5370000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005310",
+          "type" : "CLASS",
+          "lbl" : "atrial flutter"
+        },
+        {
+          "id" : "NCIT:C51224",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005310",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C51224",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:5370000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005310",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D001282",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005310",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005310",
+            "NCIT:C51224",
+            "SCTID:5370000",
+            "MESH:D001282"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b367a600b1f5f70179ad23bf12659b1efab6d95877bdc51cc2b4f2515709ec93",
+      "nodes" : [
+        {
+          "id" : "MESH:C566669",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1866770",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008456",
+          "type" : "CLASS",
+          "lbl" : "spinocerebellar ataxia with rigidity and peripheral neuropathy"
+        },
+        {
+          "id" : "OMIM:183050",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1866770",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566669",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008456",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:183050",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008456",
+            "UMLS:C1866770",
+            "MESH:C566669",
+            "OMIM:183050"
+          ]
+        }
+      ]
+    }
+  ]
+}

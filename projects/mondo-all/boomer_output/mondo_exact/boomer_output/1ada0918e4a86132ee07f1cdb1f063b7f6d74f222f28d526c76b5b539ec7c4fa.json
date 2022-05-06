@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1ada0918e4a86132ee07f1cdb1f063b7f6d74f222f28d526c76b5b539ec7c4fa",
+      "nodes" : [
+        {
+          "id" : "MONDO:0005837",
+          "type" : "CLASS",
+          "lbl" : "mandibular cancer"
+        },
+        {
+          "id" : "MESH:D008339",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2338",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C35178",
+          "type" : "CLASS",
+          "lbl" : "Malignant Neoplasm of Lower Jaw Bone"
+        },
+        {
+          "id" : "SCTID:448668007",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D008339",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005837",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:448668007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005837",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005837",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35178",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2338",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005837",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:2338",
+            "SCTID:448668007",
+            "NCIT:C35178",
+            "MONDO:0005837",
+            "MESH:D008339"
+          ]
+        }
+      ]
+    }
+  ]
+}

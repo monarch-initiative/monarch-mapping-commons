@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:58eb8c6246c5f15ce0a3bb7003a8c8172ebd215fa45ff0137b61ef585008e0c0",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0751360",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009715",
+          "type" : "CLASS",
+          "lbl" : "myotonia congenita, autosomal recessive"
+        },
+        {
+          "id" : "OMIM:255700",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0751360",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009715",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:255700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009715",
+            "UMLS:C0751360",
+            "OMIM:255700"
+          ]
+        }
+      ]
+    }
+  ]
+}

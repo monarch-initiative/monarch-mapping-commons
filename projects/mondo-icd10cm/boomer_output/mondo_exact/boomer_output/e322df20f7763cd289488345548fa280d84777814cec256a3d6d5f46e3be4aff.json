@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e322df20f7763cd289488345548fa280d84777814cec256a3d6d5f46e3be4aff",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4014393",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014355",
+          "type" : "CLASS",
+          "lbl" : "cardiomyopathy, dilated, with woolly hair, keratoderma, and tooth agenesis"
+        },
+        {
+          "id" : "OMIM:615821",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014355",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615821",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4014393",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014355",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:615821",
+            "MONDO:0014355",
+            "UMLS:C4014393"
+          ]
+        }
+      ]
+    }
+  ]
+}

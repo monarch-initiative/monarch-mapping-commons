@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b7fcad9be44a10d2eb2c1ed7dff593eab674fa540e5e95968cc703fa686beead",
+      "nodes" : [
+        {
+          "id" : "MESH:C565610",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1857143",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009137",
+          "type" : "CLASS",
+          "lbl" : "dysmyelination with jaundice"
+        },
+        {
+          "id" : "OMIM:224250",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1857143",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009137",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009137",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:224250",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565610",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009137",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1857143",
+            "MONDO:0009137",
+            "OMIM:224250",
+            "MESH:C565610"
+          ]
+        }
+      ]
+    }
+  ]
+}

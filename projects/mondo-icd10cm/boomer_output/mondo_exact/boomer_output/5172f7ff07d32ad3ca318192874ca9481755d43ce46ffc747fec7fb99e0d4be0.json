@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5172f7ff07d32ad3ca318192874ca9481755d43ce46ffc747fec7fb99e0d4be0",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204431",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018095",
+          "type" : "CLASS",
+          "lbl" : "Weaver-Williams syndrome"
+        },
+        {
+          "id" : "Orphanet:3448",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018095",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3448",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204431",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018095",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018095",
+            "Orphanet:3448",
+            "UMLS:CN204431"
+          ]
+        }
+      ]
+    }
+  ]
+}

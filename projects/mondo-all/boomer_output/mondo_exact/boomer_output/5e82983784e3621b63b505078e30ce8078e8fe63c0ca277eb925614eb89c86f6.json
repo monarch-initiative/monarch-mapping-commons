@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5e82983784e3621b63b505078e30ce8078e8fe63c0ca277eb925614eb89c86f6",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203618",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017722",
+          "type" : "CLASS",
+          "lbl" : "Sandhoff disease, juvenile form"
+        },
+        {
+          "id" : "Orphanet:309162",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017722",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309162",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203618",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017722",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017722",
+            "Orphanet:309162",
+            "UMLS:CN203618"
+          ]
+        }
+      ]
+    }
+  ]
+}

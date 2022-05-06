@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:16319d2e10a5b3ce6cb31bed3595cd65826fc2256eb2482aca2ebe2559d348e7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332327",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5146",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003300",
+          "type" : "CLASS",
+          "lbl" : "appendix leiomyoma"
+        },
+        {
+          "id" : "NCIT:C5514",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003300",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5514",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5146",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332327",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003300",
+            "NCIT:C5514",
+            "DOID:5146",
+            "UMLS:C1332327"
+          ]
+        }
+      ]
+    }
+  ]
+}

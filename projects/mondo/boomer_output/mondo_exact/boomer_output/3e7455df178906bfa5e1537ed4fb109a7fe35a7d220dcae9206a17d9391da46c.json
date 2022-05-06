@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3e7455df178906bfa5e1537ed4fb109a7fe35a7d220dcae9206a17d9391da46c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553517",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080508",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013864",
+          "type" : "CLASS",
+          "lbl" : "Cornelia de Lange syndrome 4"
+        },
+        {
+          "id" : "OMIM:614701",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080508",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013864",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013864",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614701",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3553517",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013864",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013864",
+            "DOID:0080508",
+            "OMIM:614701",
+            "UMLS:C3553517"
+          ]
+        }
+      ]
+    }
+  ]
+}

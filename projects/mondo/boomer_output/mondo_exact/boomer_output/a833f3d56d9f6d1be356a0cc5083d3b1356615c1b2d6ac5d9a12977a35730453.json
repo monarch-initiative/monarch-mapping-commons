@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a833f3d56d9f6d1be356a0cc5083d3b1356615c1b2d6ac5d9a12977a35730453",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204726",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018208",
+          "type" : "CLASS",
+          "lbl" : "neurofibromatosis type 1 due to NF1 mutation or intragenic deletion"
+        },
+        {
+          "id" : "Orphanet:363700",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018208",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:363700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204726",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018208",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018208",
+            "Orphanet:363700",
+            "UMLS:CN204726"
+          ]
+        }
+      ]
+    }
+  ]
+}

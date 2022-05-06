@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:99bdaf9595edc173084cb355b191336dd108a41e24be038d8d51969687abb370",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280415",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013680",
+          "type" : "CLASS",
+          "lbl" : "cognitive impairment with or without cerebellar ataxia"
+        },
+        {
+          "id" : "OMIM:614306",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3280415",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013680",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013680",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614306",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013680",
+            "UMLS:C3280415",
+            "OMIM:614306"
+          ]
+        }
+      ]
+    }
+  ]
+}

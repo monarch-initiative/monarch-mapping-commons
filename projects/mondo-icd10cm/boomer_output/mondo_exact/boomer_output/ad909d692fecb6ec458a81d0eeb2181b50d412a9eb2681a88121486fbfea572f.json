@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ad909d692fecb6ec458a81d0eeb2181b50d412a9eb2681a88121486fbfea572f",
+      "nodes" : [
+        {
+          "id" : "MONDO:0021510",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of prostate"
+        },
+        {
+          "id" : "NCIT:C3613",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:D29.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0154009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:92308005",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021510",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3613",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D29.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021510",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92308005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021510",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0154009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021510",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C3613",
+            "UMLS:C0154009",
+            "SCTID:92308005",
+            "MONDO:0021510",
+            "ICD10CM:D29.1"
+          ]
+        }
+      ]
+    }
+  ]
+}

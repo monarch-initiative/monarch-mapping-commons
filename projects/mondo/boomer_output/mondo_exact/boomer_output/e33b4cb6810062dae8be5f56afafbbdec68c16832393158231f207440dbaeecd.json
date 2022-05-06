@@ -1,0 +1,76 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e33b4cb6810062dae8be5f56afafbbdec68c16832393158231f207440dbaeecd",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN043592",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019220",
+          "type" : "CLASS",
+          "lbl" : "inborn disorder of cobalamin metabolism and transport"
+        },
+        {
+          "id" : "Orphanet:79171",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN227587",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019220",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79171",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN043592",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019220",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019220",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN227587",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:79171",
+            "MONDO:0019220",
+            "UMLS:CN043592"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dcf013fafb320dd4e1e11e712435574b5230b4d64567725c141bc1fc4bce969b",
+      "nodes" : [
+        {
+          "id" : "MESH:D013009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0100226",
+          "type" : "CLASS",
+          "lbl" : "parasomnia, sleepwalking type"
+        },
+        {
+          "id" : "OMIM:613938",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0100226",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613938",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D013009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0100226",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0100226",
+            "OMIM:613938",
+            "MESH:D013009"
+          ]
+        }
+      ]
+    }
+  ]
+}

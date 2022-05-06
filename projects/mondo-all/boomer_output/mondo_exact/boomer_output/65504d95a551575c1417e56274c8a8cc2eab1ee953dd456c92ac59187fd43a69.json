@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:65504d95a551575c1417e56274c8a8cc2eab1ee953dd456c92ac59187fd43a69",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201421",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016457",
+          "type" : "CLASS",
+          "lbl" : "ptosis-upper ocular movement limitation-absence of lacrimal punctum syndrome"
+        },
+        {
+          "id" : "Orphanet:228396",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016457",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:228396",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201421",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016457",
+            "Orphanet:228396",
+            "UMLS:CN201421"
+          ]
+        }
+      ]
+    }
+  ]
+}

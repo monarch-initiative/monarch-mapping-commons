@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:edf27d24c0b58c745be2d2bb9975497fe3d3cdff3b99a1857a72d85c0a2d446a",
+      "nodes" : [
+        {
+          "id" : "MESH:C564496",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1845286",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010352",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability, X-linked 82"
+        },
+        {
+          "id" : "OMIM:300518",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1845286",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010352",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010352",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300518",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564496",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010352",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010352",
+            "UMLS:C1845286",
+            "OMIM:300518",
+            "MESH:C564496"
+          ]
+        }
+      ]
+    }
+  ]
+}

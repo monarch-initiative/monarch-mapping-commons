@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:caf82e48fb7c6d844db6e62083050e4a5e8f0313f4d101249029a92b4d0edcb2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0342127",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C35171",
+          "type" : "CLASS",
+          "lbl" : "Toxic Nodular Goiter"
+        },
+        {
+          "id" : "MONDO:0001252",
+          "type" : "CLASS",
+          "lbl" : "Plummer disease"
+        },
+        {
+          "id" : "SCTID:57777000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:11277",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0001252",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35171",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0342127",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001252",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:57777000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001252",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:11277",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001252",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0342127",
+            "DOID:11277",
+            "NCIT:C35171",
+            "MONDO:0001252",
+            "SCTID:57777000"
+          ]
+        }
+      ]
+    }
+  ]
+}

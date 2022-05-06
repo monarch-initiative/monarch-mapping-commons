@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3f0271642707034f4257579b96f07b8a4d06fbf2281fd7f44618ce6f8afe0c5d",
+      "nodes" : [
+        {
+          "id" : "MESH:C563447",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1833341",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010928",
+          "type" : "CLASS",
+          "lbl" : "dwarfism, familial, with muscle spasms"
+        },
+        {
+          "id" : "OMIM:600771",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C563447",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010928",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010928",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600771",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1833341",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010928",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C563447",
+            "MONDO:0010928",
+            "OMIM:600771",
+            "UMLS:C1833341"
+          ]
+        }
+      ]
+    }
+  ]
+}

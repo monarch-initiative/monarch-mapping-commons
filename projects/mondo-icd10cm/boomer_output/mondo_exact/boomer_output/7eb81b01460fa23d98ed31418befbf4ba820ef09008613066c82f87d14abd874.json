@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7eb81b01460fa23d98ed31418befbf4ba820ef09008613066c82f87d14abd874",
+      "nodes" : [
+        {
+          "id" : "MESH:D005536",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0016514",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005765",
+          "type" : "CLASS",
+          "lbl" : "foot and mouth disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0016514",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005765",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D005536",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005765",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005765",
+            "UMLS:C0016514",
+            "MESH:D005536"
+          ]
+        }
+      ]
+    }
+  ]
+}

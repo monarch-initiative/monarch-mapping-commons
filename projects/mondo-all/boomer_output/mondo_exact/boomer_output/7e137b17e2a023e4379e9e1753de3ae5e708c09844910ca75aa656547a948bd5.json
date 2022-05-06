@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7e137b17e2a023e4379e9e1753de3ae5e708c09844910ca75aa656547a948bd5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310752",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014880",
+          "type" : "CLASS",
+          "lbl" : "Duane retraction syndrome 3 with or without deafness"
+        },
+        {
+          "id" : "OMIM:617041",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014880",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617041",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310752",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014880",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014880",
+            "OMIM:617041",
+            "UMLS:C4310752"
+          ]
+        }
+      ]
+    }
+  ]
+}

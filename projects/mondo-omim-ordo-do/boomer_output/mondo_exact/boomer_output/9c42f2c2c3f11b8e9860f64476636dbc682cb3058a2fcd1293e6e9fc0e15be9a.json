@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9c42f2c2c3f11b8e9860f64476636dbc682cb3058a2fcd1293e6e9fc0e15be9a",
+      "nodes" : [
+        {
+          "id" : "DOID:0111707",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010849",
+          "type" : "CLASS",
+          "lbl" : "palmoplantar keratoderma, Bothnian type"
+        },
+        {
+          "id" : "Orphanet:2337",
+          "type" : "CLASS",
+          "lbl" : "Non-epidermolytic palmoplantar keratoderma"
+        },
+        {
+          "id" : "OMIM:600231",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010849",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600231",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010849",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111707",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010849",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:600231",
+            "MONDO:0010849",
+            "Orphanet:2337",
+            "DOID:0111707"
+          ]
+        }
+      ]
+    }
+  ]
+}

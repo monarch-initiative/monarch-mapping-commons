@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bb3b89bc81854c8784ca95098130eadce27eec9d0ef5d7cc0aa9030ee09f628a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203803",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017830",
+          "type" : "CLASS",
+          "lbl" : "severe Canavan disease"
+        },
+        {
+          "id" : "Orphanet:314911",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203803",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017830",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017830",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:314911",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN203803",
+            "MONDO:0017830",
+            "Orphanet:314911"
+          ]
+        }
+      ]
+    }
+  ]
+}

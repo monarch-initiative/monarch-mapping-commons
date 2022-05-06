@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e1f55e2bb8bcdf20cd04323949d4d3bdc355d40c35eed7ba199409e45ea859e1",
+      "nodes" : [
+        {
+          "id" : "DOID:0111751",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010779",
+          "type" : "CLASS",
+          "lbl" : "mitochondrial non-syndromic sensorineural hearing loss"
+        },
+        {
+          "id" : "Orphanet:90641",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:500008",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010779",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:90641",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010779",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:500008",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111751",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010779",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010779",
+            "Orphanet:90641",
+            "OMIM:500008",
+            "DOID:0111751"
+          ]
+        }
+      ]
+    }
+  ]
+}

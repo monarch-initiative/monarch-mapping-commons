@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c5ad45fdbdc1d752b61a6b01cd7920346999a77f61131abd6124df82fa5a122d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1512750",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004010",
+          "type" : "CLASS",
+          "lbl" : "infiltrating renal pelvis/ureter urothelial carcinoma"
+        },
+        {
+          "id" : "NCIT:C39879",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1512750",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004010",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004010",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39879",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004010",
+            "UMLS:C1512750",
+            "NCIT:C39879"
+          ]
+        }
+      ]
+    }
+  ]
+}

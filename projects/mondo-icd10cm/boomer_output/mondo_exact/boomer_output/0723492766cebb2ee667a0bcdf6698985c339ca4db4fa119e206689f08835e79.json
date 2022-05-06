@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0723492766cebb2ee667a0bcdf6698985c339ca4db4fa119e206689f08835e79",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280441",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013684",
+          "type" : "CLASS",
+          "lbl" : "vesicoureteral reflux 6"
+        },
+        {
+          "id" : "OMIM:614319",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3280441",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013684",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013684",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614319",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013684",
+            "OMIM:614319",
+            "UMLS:C3280441"
+          ]
+        }
+      ]
+    }
+  ]
+}

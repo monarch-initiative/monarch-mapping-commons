@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ad760d0e2525619b1aefa737e243ded4bd2d83695d584bf29364349239bcef7c",
+      "nodes" : [
+        {
+          "id" : "MESH:D016137",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017069",
+          "type" : "CLASS",
+          "lbl" : "spina bifida cystica"
+        },
+        {
+          "id" : "NCIT:C101201",
+          "type" : "CLASS",
+          "lbl" : "Myelomeningocele"
+        },
+        {
+          "id" : "Orphanet:268744",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017069",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:268744",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D016137",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017069",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017069",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C101201",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017069",
+            "Orphanet:268744",
+            "MESH:D016137",
+            "NCIT:C101201"
+          ]
+        }
+      ]
+    }
+  ]
+}

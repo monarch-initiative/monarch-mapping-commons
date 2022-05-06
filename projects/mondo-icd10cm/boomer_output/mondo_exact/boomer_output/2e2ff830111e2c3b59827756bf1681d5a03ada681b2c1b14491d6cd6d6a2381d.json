@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2e2ff830111e2c3b59827756bf1681d5a03ada681b2c1b14491d6cd6d6a2381d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334941",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021075",
+          "type" : "CLASS",
+          "lbl" : "neoplastic polyp"
+        },
+        {
+          "id" : "NCIT:C7068",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334941",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021075",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021075",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7068",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1334941",
+            "MONDO:0021075",
+            "NCIT:C7068"
+          ]
+        }
+      ]
+    }
+  ]
+}

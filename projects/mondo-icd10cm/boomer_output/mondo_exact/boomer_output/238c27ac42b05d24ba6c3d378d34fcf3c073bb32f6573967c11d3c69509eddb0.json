@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:238c27ac42b05d24ba6c3d378d34fcf3c073bb32f6573967c11d3c69509eddb0",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3275998",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011173",
+          "type" : "CLASS",
+          "lbl" : "thrombocythemia 2"
+        },
+        {
+          "id" : "OMIM:601977",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011173",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601977",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3275998",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011173",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011173",
+            "OMIM:601977",
+            "UMLS:C3275998"
+          ]
+        }
+      ]
+    }
+  ]
+}

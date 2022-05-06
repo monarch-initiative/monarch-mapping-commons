@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:58c49558cf405da54ae9ba6eebc9a71a8f878b691affc1acb53ca4c0bdc695ca",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN199425",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111199",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015355",
+          "type" : "CLASS",
+          "lbl" : "distal hereditary motor neuropathy type 7"
+        },
+        {
+          "id" : "Orphanet:139589",
+          "type" : "CLASS",
+          "lbl" : "Distal hereditary motor neuropathy type 7"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0111199",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015355",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015355",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:139589",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN199425",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015355",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0111199",
+            "MONDO:0015355",
+            "UMLS:CN199425"
+          ]
+        }
+      ]
+    }
+  ]
+}

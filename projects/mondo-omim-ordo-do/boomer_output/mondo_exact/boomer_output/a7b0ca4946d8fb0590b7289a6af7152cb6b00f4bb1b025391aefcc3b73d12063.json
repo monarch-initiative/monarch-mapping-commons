@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a7b0ca4946d8fb0590b7289a6af7152cb6b00f4bb1b025391aefcc3b73d12063",
+      "nodes" : [
+        {
+          "id" : "MONDO:0002038",
+          "type" : "CLASS",
+          "lbl" : "head and neck carcinoma"
+        },
+        {
+          "id" : "UMLS:C3887461",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C35850",
+          "type" : "CLASS",
+          "lbl" : "Head and Neck Carcinoma"
+        },
+        {
+          "id" : "DOID:1542",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1334927",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:1542",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002038",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002038",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35850",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002038",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1334927",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3887461",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002038",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:1542",
+            "MONDO:0002038",
+            "NCIT:C35850",
+            "UMLS:C3887461"
+          ]
+        }
+      ]
+    }
+  ]
+}

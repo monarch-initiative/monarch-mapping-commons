@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1507a0dc47a58a28064c63263aa0b24fc4994b1faf50de0ccea30d6593ff253c",
+      "nodes" : [
+        {
+          "id" : "SCTID:4510004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001316",
+          "type" : "CLASS",
+          "lbl" : "streptococcal meningitis"
+        },
+        {
+          "id" : "ICD10CM:G00.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0154639",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:11574",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:11574",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001316",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:4510004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001316",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0154639",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001316",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:G00.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001316",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0154639",
+            "ICD10CM:G00.2",
+            "MONDO:0001316",
+            "DOID:11574",
+            "SCTID:4510004"
+          ]
+        }
+      ]
+    }
+  ]
+}

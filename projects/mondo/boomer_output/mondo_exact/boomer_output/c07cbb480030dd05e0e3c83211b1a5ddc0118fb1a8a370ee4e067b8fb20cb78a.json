@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c07cbb480030dd05e0e3c83211b1a5ddc0118fb1a8a370ee4e067b8fb20cb78a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334437",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8389",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004546",
+          "type" : "CLASS",
+          "lbl" : "lumbar plexus neoplasm"
+        },
+        {
+          "id" : "NCIT:C5824",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334437",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004546",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004546",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5824",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8389",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004546",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004546",
+            "UMLS:C1334437",
+            "NCIT:C5824",
+            "DOID:8389"
+          ]
+        }
+      ]
+    }
+  ]
+}

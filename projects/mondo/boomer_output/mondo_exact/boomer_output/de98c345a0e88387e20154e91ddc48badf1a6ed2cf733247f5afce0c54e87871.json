@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:de98c345a0e88387e20154e91ddc48badf1a6ed2cf733247f5afce0c54e87871",
+      "nodes" : [
+        {
+          "id" : "MESH:C566652",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1866619",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011115",
+          "type" : "CLASS",
+          "lbl" : "spastic paraplegia and Evans syndrome"
+        },
+        {
+          "id" : "OMIM:601608",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C566652",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011115",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011115",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601608",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1866619",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011115",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011115",
+            "MESH:C566652",
+            "OMIM:601608",
+            "UMLS:C1866619"
+          ]
+        }
+      ]
+    }
+  ]
+}

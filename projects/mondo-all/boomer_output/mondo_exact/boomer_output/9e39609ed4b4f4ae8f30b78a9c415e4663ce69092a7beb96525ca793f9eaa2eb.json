@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9e39609ed4b4f4ae8f30b78a9c415e4663ce69092a7beb96525ca793f9eaa2eb",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207251",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020379",
+          "type" : "CLASS",
+          "lbl" : "early-onset zonular cataract"
+        },
+        {
+          "id" : "Orphanet:98995",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN207251",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020379",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020379",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98995",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN207251",
+            "MONDO:0020379",
+            "Orphanet:98995"
+          ]
+        }
+      ]
+    }
+  ]
+}

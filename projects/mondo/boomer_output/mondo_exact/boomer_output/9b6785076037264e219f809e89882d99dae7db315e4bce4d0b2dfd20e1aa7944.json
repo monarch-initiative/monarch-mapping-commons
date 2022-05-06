@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9b6785076037264e219f809e89882d99dae7db315e4bce4d0b2dfd20e1aa7944",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225670",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008794",
+          "type" : "CLASS",
+          "lbl" : "anhidrosis, familial generalized, with abnormal or absent sweat glands"
+        },
+        {
+          "id" : "OMIM:206600",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4225670",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008794",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008794",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:206600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008794",
+            "UMLS:C4225670",
+            "OMIM:206600"
+          ]
+        }
+      ]
+    }
+  ]
+}

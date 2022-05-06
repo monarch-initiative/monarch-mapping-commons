@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1a1709231fb7618af201e25ef1387ed6a16b8f73646fe3228941774a4777b5f5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1456781",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044794",
+          "type" : "CLASS",
+          "lbl" : "benign melanocytic skin nevus"
+        },
+        {
+          "id" : "NCIT:C7571",
+          "type" : "CLASS",
+          "lbl" : "Benign Skin Melanocytic Nevus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1456781",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044794",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044794",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7571",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1456781",
+            "MONDO:0044794",
+            "NCIT:C7571"
+          ]
+        }
+      ]
+    }
+  ]
+}

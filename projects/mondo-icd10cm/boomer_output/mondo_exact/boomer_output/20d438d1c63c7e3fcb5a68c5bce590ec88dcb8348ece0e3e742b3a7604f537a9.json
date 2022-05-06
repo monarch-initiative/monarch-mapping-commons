@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:20d438d1c63c7e3fcb5a68c5bce590ec88dcb8348ece0e3e742b3a7604f537a9",
+      "nodes" : [
+        {
+          "id" : "MESH:C566692",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008417",
+          "type" : "CLASS",
+          "lbl" : "sclerocornea, autosomal dominant"
+        },
+        {
+          "id" : "OMIM:181700",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008417",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:181700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566692",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008417",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:181700",
+            "MONDO:0008417",
+            "MESH:C566692"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:462276e855d81510a618955dc56e431c29a781b6676edc8182a7cc19af9d137b",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226927",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016434",
+          "type" : "CLASS",
+          "lbl" : "acquired dermis elastic tissue disorder"
+        },
+        {
+          "id" : "Orphanet:228218",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016434",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:228218",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226927",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016434",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:228218",
+            "MONDO:0016434",
+            "UMLS:CN226927"
+          ]
+        }
+      ]
+    }
+  ]
+}

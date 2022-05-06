@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:27125ccb4dd5c5594851e6c33cc6799b875d8abdb6ee05a6d38ae890cc3e7648",
+      "nodes" : [
+        {
+          "id" : "MESH:C537006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1835488",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007887",
+          "type" : "CLASS",
+          "lbl" : "leiomyoma of vulva and esophagus"
+        },
+        {
+          "id" : "OMIM:150700",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1835488",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007887",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007887",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:150700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007887",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007887",
+            "UMLS:C1835488",
+            "OMIM:150700",
+            "MESH:C537006"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2a0136c13874e919844a8409945f57ac62057f84ba8fd64f5bb657b021464acc",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334277",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005050",
+          "type" : "CLASS",
+          "lbl" : "invasive ductal and lobular carcinoma"
+        },
+        {
+          "id" : "NCIT:C7688",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334277",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005050",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005050",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7688",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1334277",
+            "MONDO:0005050",
+            "NCIT:C7688"
+          ]
+        }
+      ]
+    }
+  ]
+}

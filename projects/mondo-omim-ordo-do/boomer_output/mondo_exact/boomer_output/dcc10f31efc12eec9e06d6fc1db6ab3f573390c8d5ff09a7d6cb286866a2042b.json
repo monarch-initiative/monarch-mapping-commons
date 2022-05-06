@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dcc10f31efc12eec9e06d6fc1db6ab3f573390c8d5ff09a7d6cb286866a2042b",
+      "nodes" : [
+        {
+          "id" : "MESH:C536092",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011940",
+          "type" : "CLASS",
+          "lbl" : "mycobacterium tuberculosis, susceptibility to"
+        },
+        {
+          "id" : "OMIM:607948",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C536092",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011940",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011940",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607948",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C536092",
+            "MONDO:0011940",
+            "OMIM:607948"
+          ]
+        }
+      ]
+    }
+  ]
+}

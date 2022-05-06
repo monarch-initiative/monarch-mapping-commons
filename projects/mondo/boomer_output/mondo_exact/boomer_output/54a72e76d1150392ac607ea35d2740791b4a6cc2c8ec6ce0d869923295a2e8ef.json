@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:54a72e76d1150392ac607ea35d2740791b4a6cc2c8ec6ce0d869923295a2e8ef",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1318550",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015040",
+          "type" : "CLASS",
+          "lbl" : "myelodysplastic syndrome with excess blasts-1"
+        },
+        {
+          "id" : "NCIT:C7167",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:100019",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015040",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7167",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1318550",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015040",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015040",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100019",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015040",
+            "NCIT:C7167",
+            "UMLS:C1318550",
+            "Orphanet:100019"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:38c3b6685f4507ad2afe2a12429c457bfbe7981ec3e0b325701b54282bb6155e",
+      "nodes" : [
+        {
+          "id" : "Orphanet:3232",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:124490",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007421",
+          "type" : "CLASS",
+          "lbl" : "deafness-ear malformation-facial palsy syndrome"
+        },
+        {
+          "id" : "MESH:C565123",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:716243005",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565123",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007421",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007421",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3232",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:716243005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007421",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007421",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:124490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007421",
+            "SCTID:716243005",
+            "OMIM:124490",
+            "Orphanet:3232",
+            "MESH:C565123"
+          ]
+        }
+      ]
+    }
+  ]
+}

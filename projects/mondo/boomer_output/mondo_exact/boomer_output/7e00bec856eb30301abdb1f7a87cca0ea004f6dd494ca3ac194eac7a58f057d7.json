@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7e00bec856eb30301abdb1f7a87cca0ea004f6dd494ca3ac194eac7a58f057d7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3810350",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014317",
+          "type" : "CLASS",
+          "lbl" : "pancytopenia-developmental delay syndrome"
+        },
+        {
+          "id" : "Orphanet:401764",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:615715",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014317",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:401764",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3810350",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014317",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014317",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:401764",
+            "MONDO:0014317",
+            "UMLS:C3810350",
+            "OMIM:615715"
+          ]
+        }
+      ]
+    }
+  ]
+}

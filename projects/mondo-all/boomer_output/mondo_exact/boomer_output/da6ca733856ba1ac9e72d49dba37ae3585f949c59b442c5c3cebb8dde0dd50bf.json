@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:da6ca733856ba1ac9e72d49dba37ae3585f949c59b442c5c3cebb8dde0dd50bf",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207015",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020125",
+          "type" : "CLASS",
+          "lbl" : "acquired neuromuscular junction disease"
+        },
+        {
+          "id" : "Orphanet:98494",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN207015",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020125",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020125",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98494",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020125",
+            "UMLS:CN207015",
+            "Orphanet:98494"
+          ]
+        }
+      ]
+    }
+  ]
+}

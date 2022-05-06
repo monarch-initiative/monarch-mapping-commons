@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c65ec35b85822a79698ec617c6f2b1771bc048ddecc03550005d07c28ca80b7d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225269",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014705",
+          "type" : "CLASS",
+          "lbl" : "craniosynostosis 6"
+        },
+        {
+          "id" : "OMIM:616602",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014705",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225269",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014705",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014705",
+            "OMIM:616602",
+            "UMLS:C4225269"
+          ]
+        }
+      ]
+    }
+  ]
+}

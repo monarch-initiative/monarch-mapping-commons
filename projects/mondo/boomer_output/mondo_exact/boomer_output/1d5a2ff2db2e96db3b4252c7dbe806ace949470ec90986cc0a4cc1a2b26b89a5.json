@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1d5a2ff2db2e96db3b4252c7dbe806ace949470ec90986cc0a4cc1a2b26b89a5",
+      "nodes" : [
+        {
+          "id" : "SCTID:51603000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0263417",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019033",
+          "type" : "CLASS",
+          "lbl" : "primary cutis verticis gyrata"
+        },
+        {
+          "id" : "Orphanet:671",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019033",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:671",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0263417",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019033",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:51603000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019033",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019033",
+            "Orphanet:671",
+            "UMLS:C0263417",
+            "SCTID:51603000"
+          ]
+        }
+      ]
+    }
+  ]
+}

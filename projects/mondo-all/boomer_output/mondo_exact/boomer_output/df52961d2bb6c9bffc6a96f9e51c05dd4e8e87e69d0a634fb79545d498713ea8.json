@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:df52961d2bb6c9bffc6a96f9e51c05dd4e8e87e69d0a634fb79545d498713ea8",
+      "nodes" : [
+        {
+          "id" : "MESH:C535515",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1849451",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009956",
+          "type" : "CLASS",
+          "lbl" : "red skin pigment anomaly of new guinea"
+        },
+        {
+          "id" : "OMIM:266350",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C535515",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009956",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009956",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:266350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1849451",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009956",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009956",
+            "MESH:C535515",
+            "OMIM:266350",
+            "UMLS:C1849451"
+          ]
+        }
+      ]
+    }
+  ]
+}

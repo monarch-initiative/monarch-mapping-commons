@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c4868306ccc03417cfa4a870af2a1794e69d0971121f94a88270c0f84efc3f84",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3898105",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019433",
+          "type" : "CLASS",
+          "lbl" : "oligoarticular juvenile idiopathic arthritis"
+        },
+        {
+          "id" : "Orphanet:85410",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2931171",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C119032",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C536312",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C536312",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019433",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019433",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C3898105",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019433",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:85410",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019433",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C119032",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2931171",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019433",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2931171",
+            "Orphanet:85410",
+            "MONDO:0019433",
+            "MESH:C536312",
+            "NCIT:C119032"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ef8fced47934bb76df20da0f9f17d3d1538cb5ebf815837047227d8aa8a5ded6",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204231",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018016",
+          "type" : "CLASS",
+          "lbl" : "classic neuroendocrine tumor of appendix"
+        },
+        {
+          "id" : "Orphanet:329977",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018016",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:329977",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204231",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018016",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:329977",
+            "MONDO:0018016",
+            "UMLS:CN204231"
+          ]
+        }
+      ]
+    }
+  ]
+}

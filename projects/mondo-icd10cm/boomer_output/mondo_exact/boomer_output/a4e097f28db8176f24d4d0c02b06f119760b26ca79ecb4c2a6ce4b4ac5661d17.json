@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a4e097f28db8176f24d4d0c02b06f119760b26ca79ecb4c2a6ce4b4ac5661d17",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3281152",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060401",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013798",
+          "type" : "CLASS",
+          "lbl" : "chromosome 16q22 deletion syndrome"
+        },
+        {
+          "id" : "OMIM:614541",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0060401",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013798",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013798",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614541",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3281152",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013798",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0060401",
+            "MONDO:0013798",
+            "OMIM:614541",
+            "UMLS:C3281152"
+          ]
+        }
+      ]
+    }
+  ]
+}

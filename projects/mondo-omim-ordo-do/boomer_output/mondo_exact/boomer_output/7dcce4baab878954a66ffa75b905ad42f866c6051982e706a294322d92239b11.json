@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7dcce4baab878954a66ffa75b905ad42f866c6051982e706a294322d92239b11",
+      "nodes" : [
+        {
+          "id" : "SCTID:717262004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4273963",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019627",
+          "type" : "CLASS",
+          "lbl" : "isolated congenital alacrima"
+        },
+        {
+          "id" : "Orphanet:91416",
+          "type" : "CLASS",
+          "lbl" : "Isolated congenital alacrima"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4273963",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019627",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019627",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:91416",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:717262004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019627",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019627",
+            "UMLS:C4273963",
+            "Orphanet:91416",
+            "SCTID:717262004"
+          ]
+        }
+      ]
+    }
+  ]
+}

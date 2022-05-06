@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a908f60da9e34514e525a1370af0a142f6250fede3908a08e7762941f2c6f2bd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334274",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4012",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006350",
+          "type" : "CLASS",
+          "lbl" : "papillary transitional cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C4122",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006350",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4122",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4012",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334274",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006350",
+            "NCIT:C4122",
+            "DOID:4012",
+            "UMLS:C0334274"
+          ]
+        }
+      ]
+    }
+  ]
+}

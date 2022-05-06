@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a6ba089ac603565839e42b88e6fd63f0b2f739da17f4a5f0e4e3ddaf8df7e4bc",
+      "nodes" : [
+        {
+          "id" : "MESH:C537637",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:Q93.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0022762",
+          "type" : "CLASS",
+          "lbl" : "chromosome 4 short arm deletion"
+        },
+        {
+          "id" : "Orphanet:261884",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0022762",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:261884",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q93.3",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022762",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537637",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022762",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:261884",
+            "MONDO:0022762",
+            "ICD10CM:Q93.3",
+            "MESH:C537637"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:db8777ee4bf6e6a63b8ae35c30ec39084915e08fcc0e8b3f55cbce6c297dc25d",
+      "nodes" : [
+        {
+          "id" : "MESH:D001176",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0003886",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008779",
+          "type" : "CLASS",
+          "lbl" : "arthrogryposis"
+        },
+        {
+          "id" : "NCIT:C84572",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008779",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C84572",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0003886",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008779",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D001176",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008779",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008779",
+            "NCIT:C84572",
+            "UMLS:C0003886",
+            "MESH:D001176"
+          ]
+        }
+      ]
+    }
+  ]
+}

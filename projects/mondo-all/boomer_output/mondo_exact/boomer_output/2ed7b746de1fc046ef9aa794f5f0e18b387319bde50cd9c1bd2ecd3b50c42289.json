@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2ed7b746de1fc046ef9aa794f5f0e18b387319bde50cd9c1bd2ecd3b50c42289",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335979",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5926",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003708",
+          "type" : "CLASS",
+          "lbl" : "extrahepatic bile duct small cell adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C5845",
+          "type" : "CLASS",
+          "lbl" : "Extrahepatic Bile Duct Small Cell Neuroendocrine Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5926",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003708",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003708",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5845",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335979",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003708",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5926",
+            "MONDO:0003708",
+            "NCIT:C5845",
+            "UMLS:C1335979"
+          ]
+        }
+      ]
+    }
+  ]
+}

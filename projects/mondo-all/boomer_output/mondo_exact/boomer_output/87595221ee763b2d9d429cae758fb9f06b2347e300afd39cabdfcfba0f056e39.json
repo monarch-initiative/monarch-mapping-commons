@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:87595221ee763b2d9d429cae758fb9f06b2347e300afd39cabdfcfba0f056e39",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3469605",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013781",
+          "type" : "CLASS",
+          "lbl" : "pseudohypoaldosteronism type 2D"
+        },
+        {
+          "id" : "Orphanet:300525",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:614495",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013781",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614495",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3469605",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013781",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013781",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:300525",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013781",
+            "OMIM:614495",
+            "UMLS:C3469605",
+            "Orphanet:300525"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1b50563d8b4d4fd87a8f36319930c1e951f1b4ee63beaf3a439ffccc8a09cf03",
+      "nodes" : [
+        {
+          "id" : "DOID:0050826",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0264776",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C78649",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0264882",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000471",
+          "type" : "CLASS",
+          "lbl" : "tricuspid valve disorder"
+        },
+        {
+          "id" : "SCTID:20721001",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000471",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0264776",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050826",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000471",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0264882",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000471",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000471",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C78649",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:20721001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000471",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0264882",
+            "SCTID:20721001",
+            "MONDO:0000471",
+            "NCIT:C78649",
+            "DOID:0050826"
+          ]
+        }
+      ]
+    }
+  ]
+}

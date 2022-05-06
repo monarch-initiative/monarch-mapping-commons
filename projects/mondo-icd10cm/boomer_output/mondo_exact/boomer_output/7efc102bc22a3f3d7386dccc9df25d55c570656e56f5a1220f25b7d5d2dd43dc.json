@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7efc102bc22a3f3d7386dccc9df25d55c570656e56f5a1220f25b7d5d2dd43dc",
+      "nodes" : [
+        {
+          "id" : "SCTID:721234004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4303475",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017935",
+          "type" : "CLASS",
+          "lbl" : "hyperinsulinism due to HNF1A deficiency"
+        },
+        {
+          "id" : "Orphanet:324575",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4303475",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017935",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:721234004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017935",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017935",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:324575",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4303475",
+            "MONDO:0017935",
+            "SCTID:721234004",
+            "Orphanet:324575"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a85491352a50eed483c99c9aadcfcc4d26053a1504be878dcc4a563b2c66eb19",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227676",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019690",
+          "type" : "CLASS",
+          "lbl" : "filamin-related bone disorder"
+        },
+        {
+          "id" : "Orphanet:93425",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227676",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019690",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019690",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93425",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019690",
+            "UMLS:CN227676",
+            "Orphanet:93425"
+          ]
+        }
+      ]
+    }
+  ]
+}

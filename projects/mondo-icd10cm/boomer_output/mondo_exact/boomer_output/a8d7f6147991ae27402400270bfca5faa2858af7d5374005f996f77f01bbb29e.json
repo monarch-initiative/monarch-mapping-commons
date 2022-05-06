@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a8d7f6147991ae27402400270bfca5faa2858af7d5374005f996f77f01bbb29e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3642344",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006116",
+          "type" : "CLASS",
+          "lbl" : "breast carcinoma by gene expression profile"
+        },
+        {
+          "id" : "NCIT:C53553",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3642344",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006116",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006116",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C53553",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006116",
+            "UMLS:C3642344",
+            "NCIT:C53553"
+          ]
+        }
+      ]
+    }
+  ]
+}

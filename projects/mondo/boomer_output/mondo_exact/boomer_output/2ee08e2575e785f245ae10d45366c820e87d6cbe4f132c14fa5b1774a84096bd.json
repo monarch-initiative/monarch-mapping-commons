@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2ee08e2575e785f245ae10d45366c820e87d6cbe4f132c14fa5b1774a84096bd",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237737",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018671",
+          "type" : "CLASS",
+          "lbl" : "IgG4-related kidney disease"
+        },
+        {
+          "id" : "Orphanet:449395",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018671",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:449395",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237737",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018671",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018671",
+            "Orphanet:449395",
+            "UMLS:CN237737"
+          ]
+        }
+      ]
+    }
+  ]
+}

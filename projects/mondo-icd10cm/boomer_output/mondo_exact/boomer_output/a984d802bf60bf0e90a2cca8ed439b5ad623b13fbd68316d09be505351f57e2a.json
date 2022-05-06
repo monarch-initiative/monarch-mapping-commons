@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a984d802bf60bf0e90a2cca8ed439b5ad623b13fbd68316d09be505351f57e2a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1266178",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4856",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003170",
+          "type" : "CLASS",
+          "lbl" : "gliofibroma"
+        },
+        {
+          "id" : "NCIT:C5419",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003170",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5419",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4856",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003170",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1266178",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003170",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C5419",
+            "MONDO:0003170",
+            "DOID:4856",
+            "UMLS:C1266178"
+          ]
+        }
+      ]
+    }
+  ]
+}

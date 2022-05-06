@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d5d119a9939cb1509d614c140322b8005f610dbd0b5d00eaf0fdf88389b2410e",
+      "nodes" : [
+        {
+          "id" : "MESH:C564382",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1843757",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011854",
+          "type" : "CLASS",
+          "lbl" : "secretory diarrhea, myopathy, and deafness"
+        },
+        {
+          "id" : "OMIM:607540",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564382",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011854",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011854",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607540",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1843757",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011854",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C564382",
+            "MONDO:0011854",
+            "OMIM:607540",
+            "UMLS:C1843757"
+          ]
+        }
+      ]
+    }
+  ]
+}

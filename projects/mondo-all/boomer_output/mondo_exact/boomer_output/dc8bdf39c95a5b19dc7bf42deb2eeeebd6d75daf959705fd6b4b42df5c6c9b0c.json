@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dc8bdf39c95a5b19dc7bf42deb2eeeebd6d75daf959705fd6b4b42df5c6c9b0c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332551",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6335",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003859",
+          "type" : "CLASS",
+          "lbl" : "bilateral meningioma of optic nerve"
+        },
+        {
+          "id" : "NCIT:C5304",
+          "type" : "CLASS",
+          "lbl" : "Bilateral Optic Nerve Meningioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003859",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5304",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6335",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003859",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332551",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003859",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003859",
+            "NCIT:C5304",
+            "DOID:6335",
+            "UMLS:C1332551"
+          ]
+        }
+      ]
+    }
+  ]
+}

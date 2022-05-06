@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e0be7402f242f22303b8a90775695ddbf6755287be8b9a898193507115236e6a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1511187",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6210",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003810",
+          "type" : "CLASS",
+          "lbl" : "bladder diffuse clear cell adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C39849",
+          "type" : "CLASS",
+          "lbl" : "Bladder Diffuse Clear Cell Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1511187",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003810",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003810",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39849",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6210",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003810",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1511187",
+            "MONDO:0003810",
+            "NCIT:C39849",
+            "DOID:6210"
+          ]
+        }
+      ]
+    }
+  ]
+}

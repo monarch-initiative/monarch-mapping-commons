@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:60b77e89917fc458bc0738457c3eedfe883f69496b3fc64fc828411241a08f63",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227184",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017716",
+          "type" : "CLASS",
+          "lbl" : "disorder of carnitine cycle and carnitine transport"
+        },
+        {
+          "id" : "Orphanet:309130",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017716",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309130",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227184",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017716",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017716",
+            "Orphanet:309130",
+            "UMLS:CN227184"
+          ]
+        }
+      ]
+    }
+  ]
+}

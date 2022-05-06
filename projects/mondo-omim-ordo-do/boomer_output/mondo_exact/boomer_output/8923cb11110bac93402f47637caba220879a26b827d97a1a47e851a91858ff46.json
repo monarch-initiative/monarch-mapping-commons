@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8923cb11110bac93402f47637caba220879a26b827d97a1a47e851a91858ff46",
+      "nodes" : [
+        {
+          "id" : "SCTID:48723006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009421",
+          "type" : "CLASS",
+          "lbl" : "hypogonadism, male"
+        },
+        {
+          "id" : "OMIM:241100",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009421",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:241100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:48723006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009421",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:241100",
+            "MONDO:0009421",
+            "SCTID:48723006"
+          ]
+        }
+      ]
+    }
+  ]
+}

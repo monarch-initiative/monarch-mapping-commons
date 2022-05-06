@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fa221114fec11c9c061688960343f33034e0518c9b2c88d7410102e027c3334b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0280950",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0045054",
+          "type" : "CLASS",
+          "lbl" : "cancer-related condition"
+        },
+        {
+          "id" : "NCIT:C8278",
+          "type" : "CLASS",
+          "lbl" : "Cancer-Related Condition"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0045054",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8278",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0280950",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0045054",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0045054",
+            "NCIT:C8278",
+            "UMLS:C0280950"
+          ]
+        }
+      ]
+    }
+  ]
+}

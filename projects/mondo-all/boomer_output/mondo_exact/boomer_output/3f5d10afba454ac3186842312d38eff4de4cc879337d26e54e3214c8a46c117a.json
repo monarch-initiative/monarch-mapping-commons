@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3f5d10afba454ac3186842312d38eff4de4cc879337d26e54e3214c8a46c117a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204519",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:720520009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4304022",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:352723",
+          "type" : "CLASS",
+          "lbl" : "Attenuated Chédiak-Higashi syndrome"
+        },
+        {
+          "id" : "MONDO:0018133",
+          "type" : "CLASS",
+          "lbl" : "attenuated Chédiak-Higashi syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:720520009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018133",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4304022",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018133",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018133",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:352723",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018133",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN204519",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:720520009",
+            "MONDO:0018133",
+            "UMLS:C4304022",
+            "Orphanet:352723"
+          ]
+        }
+      ]
+    }
+  ]
+}

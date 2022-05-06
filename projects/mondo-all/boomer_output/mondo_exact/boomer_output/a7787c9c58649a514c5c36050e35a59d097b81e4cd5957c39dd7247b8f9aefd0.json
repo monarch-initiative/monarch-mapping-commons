@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a7787c9c58649a514c5c36050e35a59d097b81e4cd5957c39dd7247b8f9aefd0",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203257",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017526",
+          "type" : "CLASS",
+          "lbl" : "polydactyly of a triphalangeal thumb, bilateral"
+        },
+        {
+          "id" : "Orphanet:295150",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017526",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:295150",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203257",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017526",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017526",
+            "Orphanet:295150",
+            "UMLS:CN203257"
+          ]
+        }
+      ]
+    }
+  ]
+}

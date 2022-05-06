@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5af5732ac2a81b8eda47cf6a10ca4bc838b3031ea83c1025a792e2756d48888b",
+      "nodes" : [
+        {
+          "id" : "MESH:C580055",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN227278",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018174",
+          "type" : "CLASS",
+          "lbl" : "hereditary glaucoma"
+        },
+        {
+          "id" : "Orphanet:359",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018174",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:359",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C580055",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018174",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227278",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018174",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018174",
+            "Orphanet:359",
+            "MESH:C580055",
+            "UMLS:CN227278"
+          ]
+        }
+      ]
+    }
+  ]
+}

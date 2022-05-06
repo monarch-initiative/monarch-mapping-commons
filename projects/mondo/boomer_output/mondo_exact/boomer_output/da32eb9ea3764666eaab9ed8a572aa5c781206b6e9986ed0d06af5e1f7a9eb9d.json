@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:da32eb9ea3764666eaab9ed8a572aa5c781206b6e9986ed0d06af5e1f7a9eb9d",
+      "nodes" : [
+        {
+          "id" : "OMIM:172500",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008242",
+          "type" : "CLASS",
+          "lbl" : "photomyoclonus, diabetes mellitus, deafness, nephropathy, and cerebral dysfunction"
+        },
+        {
+          "id" : "MESH:C538113",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:237612000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1809475",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:237612000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008242",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008242",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:172500",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538113",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008242",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1809475",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008242",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008242",
+            "OMIM:172500",
+            "UMLS:C1809475",
+            "MESH:C538113",
+            "SCTID:237612000"
+          ]
+        }
+      ]
+    }
+  ]
+}

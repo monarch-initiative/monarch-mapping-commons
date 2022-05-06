@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d2d8d43ed60e3ed39f2ce77245041af743e633f2baa21c801cd98a2b08b784e6",
+      "nodes" : [
+        {
+          "id" : "DOID:0080089",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008051",
+          "type" : "CLASS",
+          "lbl" : "tubular aggregate myopathy"
+        },
+        {
+          "id" : "Orphanet:2593",
+          "type" : "CLASS",
+          "lbl" : "Tubular aggregate myopathy"
+        },
+        {
+          "id" : "OMIMPS:160565",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008051",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2593",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080089",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008051",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008051",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:160565",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:2593",
+            "MONDO:0008051",
+            "DOID:0080089",
+            "OMIMPS:160565"
+          ]
+        }
+      ]
+    }
+  ]
+}

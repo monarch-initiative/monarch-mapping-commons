@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a80b26406780fd9a3a9841dd6c350502ad56f08b79ff9be077b656f418beb48e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332973",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4207",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002915",
+          "type" : "CLASS",
+          "lbl" : "childhood infratentorial neoplasm"
+        },
+        {
+          "id" : "NCIT:C5802",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332973",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002915",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002915",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5802",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4207",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002915",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332973",
+            "MONDO:0002915",
+            "NCIT:C5802",
+            "DOID:4207"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2a162aa6bfa1de1f32440563501a8520811a882ac6d000ccb903b97fd54722e8",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226593",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015087",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant complex spastic paraplegia"
+        },
+        {
+          "id" : "Orphanet:100979",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015087",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100979",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226593",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015087",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:100979",
+            "MONDO:0015087",
+            "UMLS:CN226593"
+          ]
+        }
+      ]
+    }
+  ]
+}

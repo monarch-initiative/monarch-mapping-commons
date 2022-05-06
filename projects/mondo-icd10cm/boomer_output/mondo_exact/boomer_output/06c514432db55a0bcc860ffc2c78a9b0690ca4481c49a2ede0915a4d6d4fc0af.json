@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:06c514432db55a0bcc860ffc2c78a9b0690ca4481c49a2ede0915a4d6d4fc0af",
+      "nodes" : [
+        {
+          "id" : "MESH:D020031",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0149678",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005111",
+          "type" : "CLASS",
+          "lbl" : "Epstein-Barr virus infection"
+        },
+        {
+          "id" : "NCIT:C38759",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0149678",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005111",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005111",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C38759",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D020031",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005111",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0149678",
+            "MONDO:0005111",
+            "NCIT:C38759",
+            "MESH:D020031"
+          ]
+        }
+      ]
+    }
+  ]
+}

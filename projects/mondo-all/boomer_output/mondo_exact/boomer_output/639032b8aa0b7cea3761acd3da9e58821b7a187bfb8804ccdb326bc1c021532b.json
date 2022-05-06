@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:639032b8aa0b7cea3761acd3da9e58821b7a187bfb8804ccdb326bc1c021532b",
+      "nodes" : [
+        {
+          "id" : "MESH:C563407",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1832917",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010978",
+          "type" : "CLASS",
+          "lbl" : "portal vein, cavernous transformation of"
+        },
+        {
+          "id" : "OMIM:601004",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010978",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601004",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563407",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010978",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1832917",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010978",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010978",
+            "OMIM:601004",
+            "MESH:C563407",
+            "UMLS:C1832917"
+          ]
+        }
+      ]
+    }
+  ]
+}

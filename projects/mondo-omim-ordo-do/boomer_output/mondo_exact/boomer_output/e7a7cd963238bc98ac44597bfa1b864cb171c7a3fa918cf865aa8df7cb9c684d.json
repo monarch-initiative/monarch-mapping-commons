@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e7a7cd963238bc98ac44597bfa1b864cb171c7a3fa918cf865aa8df7cb9c684d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN034131",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024540",
+          "type" : "CLASS",
+          "lbl" : "Jervell and Lange-Nielsen syndrome 1"
+        },
+        {
+          "id" : "OMIM:220400",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN034131",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024540",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0024540",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:220400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024540",
+            "UMLS:CN034131",
+            "OMIM:220400"
+          ]
+        }
+      ]
+    }
+  ]
+}

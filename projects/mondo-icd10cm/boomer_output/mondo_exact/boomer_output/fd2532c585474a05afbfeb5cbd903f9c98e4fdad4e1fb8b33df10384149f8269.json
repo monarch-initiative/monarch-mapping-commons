@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fd2532c585474a05afbfeb5cbd903f9c98e4fdad4e1fb8b33df10384149f8269",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN239493",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017161",
+          "type" : "CLASS",
+          "lbl" : "frontotemporal dementia with motor neuron disease"
+        },
+        {
+          "id" : "Orphanet:275872",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIMPS:105550",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017161",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:275872",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN239493",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017161",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017161",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:105550",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017161",
+            "Orphanet:275872",
+            "UMLS:CN239493",
+            "OMIMPS:105550"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f8a5ae2225f1e5142e628db3c72844be71c5b15fa48fd97b073075ad38f18730",
+      "nodes" : [
+        {
+          "id" : "MESH:C537594",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2931542",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017577",
+          "type" : "CLASS",
+          "lbl" : "spontaneous periodic hypothermia"
+        },
+        {
+          "id" : "Orphanet:29822",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2931542",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017577",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537594",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017577",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017577",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:29822",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2931542",
+            "MONDO:0017577",
+            "MESH:C537594",
+            "Orphanet:29822"
+          ]
+        }
+      ]
+    }
+  ]
+}

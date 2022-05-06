@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5f47652ef46192d9cf41116422c833ed721b7658c6db87ff6ef39df23fba5107",
+      "nodes" : [
+        {
+          "id" : "SCTID:768555009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN203780",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017811",
+          "type" : "CLASS",
+          "lbl" : "severe neonatal hypotonia-seizures-encephalopathy syndrome due to 5q31.3 microdeletion"
+        },
+        {
+          "id" : "Orphanet:314655",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017811",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:314655",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203780",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017811",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:768555009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017811",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017811",
+            "Orphanet:314655",
+            "UMLS:CN203780",
+            "SCTID:768555009"
+          ]
+        }
+      ]
+    }
+  ]
+}

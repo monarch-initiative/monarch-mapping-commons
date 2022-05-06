@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:20181977183830dd0c79ae0b2852a2091fc83bdb86ab8e2bf161f17590ba914b",
+      "nodes" : [
+        {
+          "id" : "MESH:C565596",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1856990",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009164",
+          "type" : "CLASS",
+          "lbl" : "encephalopathy, axonal, with necrotizing myopathy, cardiomyopathy, and cataracts"
+        },
+        {
+          "id" : "OMIM:225740",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565596",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009164",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1856990",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009164",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009164",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:225740",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009164",
+            "MESH:C565596",
+            "OMIM:225740",
+            "UMLS:C1856990"
+          ]
+        }
+      ]
+    }
+  ]
+}

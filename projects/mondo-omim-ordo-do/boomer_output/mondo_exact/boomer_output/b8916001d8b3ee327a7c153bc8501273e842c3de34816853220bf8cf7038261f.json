@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b8916001d8b3ee327a7c153bc8501273e842c3de34816853220bf8cf7038261f",
+      "nodes" : [
+        {
+          "id" : "DOID:0111547",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008373",
+          "type" : "CLASS",
+          "lbl" : "retinal arterial tortuosity"
+        },
+        {
+          "id" : "Orphanet:75326",
+          "type" : "CLASS",
+          "lbl" : "Retinal arterial tortuosity"
+        },
+        {
+          "id" : "OMIM:180000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008373",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:180000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111547",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008373",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008373",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:75326",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008373",
+            "OMIM:180000",
+            "DOID:0111547",
+            "Orphanet:75326"
+          ]
+        }
+      ]
+    }
+  ]
+}

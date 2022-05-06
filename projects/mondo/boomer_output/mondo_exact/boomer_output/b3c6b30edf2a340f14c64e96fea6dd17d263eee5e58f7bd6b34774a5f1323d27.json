@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b3c6b30edf2a340f14c64e96fea6dd17d263eee5e58f7bd6b34774a5f1323d27",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226751",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015846",
+          "type" : "CLASS",
+          "lbl" : "syndromic uterovaginal malformation"
+        },
+        {
+          "id" : "Orphanet:180148",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN226751",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015846",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015846",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:180148",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN226751",
+            "MONDO:0015846",
+            "Orphanet:180148"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:90d8fb3aeaf4437455c2f4cc1ad2e711c7e02bda7cf1e02a1572744f253bc90e",
+      "nodes" : [
+        {
+          "id" : "MESH:C566140",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1861693",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007305",
+          "type" : "CLASS",
+          "lbl" : "cervical vertebral dysplasia"
+        },
+        {
+          "id" : "OMIM:118005",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C566140",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007305",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007305",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:118005",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1861693",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007305",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C566140",
+            "MONDO:0007305",
+            "OMIM:118005",
+            "UMLS:C1861693"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d9f4ba58b6229b50af8282e544610873670f78498a6b5b2fe0ba198af464a5b1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519918",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:136",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006488",
+          "type" : "CLASS",
+          "lbl" : "vaginal carcinosarcoma"
+        },
+        {
+          "id" : "NCIT:C40278",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1519918",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006488",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006488",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40278",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:136",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006488",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1519918",
+            "MONDO:0006488",
+            "NCIT:C40278",
+            "DOID:136"
+          ]
+        }
+      ]
+    }
+  ]
+}

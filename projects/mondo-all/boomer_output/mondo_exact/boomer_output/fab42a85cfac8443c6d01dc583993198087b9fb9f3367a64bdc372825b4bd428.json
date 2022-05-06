@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fab42a85cfac8443c6d01dc583993198087b9fb9f3367a64bdc372825b4bd428",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN199281",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015313",
+          "type" : "CLASS",
+          "lbl" : "choanal atresia, bilateral"
+        },
+        {
+          "id" : "Orphanet:137920",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN199281",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015313",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015313",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:137920",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015313",
+            "UMLS:CN199281",
+            "Orphanet:137920"
+          ]
+        }
+      ]
+    }
+  ]
+}

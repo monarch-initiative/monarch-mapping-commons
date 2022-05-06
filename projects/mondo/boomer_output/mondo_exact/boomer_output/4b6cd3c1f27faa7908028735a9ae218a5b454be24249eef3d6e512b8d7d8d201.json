@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4b6cd3c1f27faa7908028735a9ae218a5b454be24249eef3d6e512b8d7d8d201",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN228621",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000182",
+          "type" : "CLASS",
+          "lbl" : "congenital myasthenic syndrome with tubular aggregates"
+        },
+        {
+          "id" : "OMIMPS:610542",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000182",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:610542",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN228621",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000182",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000182",
+            "OMIMPS:610542",
+            "UMLS:CN228621"
+          ]
+        }
+      ]
+    }
+  ]
+}

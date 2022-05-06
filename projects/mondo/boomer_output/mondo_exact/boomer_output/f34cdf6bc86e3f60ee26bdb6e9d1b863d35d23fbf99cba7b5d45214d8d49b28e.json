@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f34cdf6bc86e3f60ee26bdb6e9d1b863d35d23fbf99cba7b5d45214d8d49b28e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335150",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7994",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004423",
+          "type" : "CLASS",
+          "lbl" : "central nervous system extraskeletal osteosarcoma"
+        },
+        {
+          "id" : "NCIT:C7002",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004423",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7002",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335150",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004423",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7994",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004423",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004423",
+            "NCIT:C7002",
+            "UMLS:C1335150",
+            "DOID:7994"
+          ]
+        }
+      ]
+    }
+  ]
+}

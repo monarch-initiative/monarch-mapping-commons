@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bd8b4696f4599e6781dd1c401cfc97f4a31bbf2402d60a771d494dc7df6b2ff7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334448",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5265",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003357",
+          "type" : "CLASS",
+          "lbl" : "lung leiomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C5667",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334448",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003357",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003357",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5667",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5265",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003357",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003357",
+            "UMLS:C1334448",
+            "NCIT:C5667",
+            "DOID:5265"
+          ]
+        }
+      ]
+    }
+  ]
+}

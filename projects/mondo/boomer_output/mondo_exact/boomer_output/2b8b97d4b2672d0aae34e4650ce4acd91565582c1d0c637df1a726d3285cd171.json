@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2b8b97d4b2672d0aae34e4650ce4acd91565582c1d0c637df1a726d3285cd171",
+      "nodes" : [
+        {
+          "id" : "MESH:D010190",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:126859007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021040",
+          "type" : "CLASS",
+          "lbl" : "pancreatic neoplasm"
+        },
+        {
+          "id" : "NCIT:C3305",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D010190",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021040",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021040",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3305",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:126859007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021040",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021040",
+            "MESH:D010190",
+            "NCIT:C3305",
+            "SCTID:126859007"
+          ]
+        }
+      ]
+    }
+  ]
+}

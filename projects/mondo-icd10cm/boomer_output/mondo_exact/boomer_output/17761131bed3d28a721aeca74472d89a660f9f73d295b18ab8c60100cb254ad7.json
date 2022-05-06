@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:17761131bed3d28a721aeca74472d89a660f9f73d295b18ab8c60100cb254ad7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333976",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024477",
+          "type" : "CLASS",
+          "lbl" : "liver and intrahepatic bile duct neoplasm"
+        },
+        {
+          "id" : "NCIT:C7103",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024477",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7103",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333976",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024477",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C7103",
+            "MONDO:0024477",
+            "UMLS:C1333976"
+          ]
+        }
+      ]
+    }
+  ]
+}

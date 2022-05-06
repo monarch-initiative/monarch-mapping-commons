@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dd6ab8d5ff42e3c574784f72b9c636f7799356c2033a268e4419170d4711c7ef",
+      "nodes" : [
+        {
+          "id" : "SCTID:126499002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN207033",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020172",
+          "type" : "CLASS",
+          "lbl" : "palpebral epidermal tumor"
+        },
+        {
+          "id" : "Orphanet:98581",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN207033",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020172",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020172",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98581",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:126499002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020172",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020172",
+            "UMLS:CN207033",
+            "Orphanet:98581",
+            "SCTID:126499002"
+          ]
+        }
+      ]
+    }
+  ]
+}

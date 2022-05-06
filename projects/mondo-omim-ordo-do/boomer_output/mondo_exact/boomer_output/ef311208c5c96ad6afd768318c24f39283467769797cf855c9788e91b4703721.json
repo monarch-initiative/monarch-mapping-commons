@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ef311208c5c96ad6afd768318c24f39283467769797cf855c9788e91b4703721",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335982",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006405",
+          "type" : "CLASS",
+          "lbl" : "salivary gland small cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C35703",
+          "type" : "CLASS",
+          "lbl" : "Salivary Gland Small Cell Neuroendocrine Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335982",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006405",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006405",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35703",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006405",
+            "UMLS:C1335982",
+            "NCIT:C35703"
+          ]
+        }
+      ]
+    }
+  ]
+}

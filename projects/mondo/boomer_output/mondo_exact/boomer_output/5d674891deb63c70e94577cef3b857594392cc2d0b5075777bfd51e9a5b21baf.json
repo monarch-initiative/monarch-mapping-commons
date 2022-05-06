@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5d674891deb63c70e94577cef3b857594392cc2d0b5075777bfd51e9a5b21baf",
+      "nodes" : [
+        {
+          "id" : "MESH:C564034",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1839076",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010762",
+          "type" : "CLASS",
+          "lbl" : "lymphoma, Hodgkin, Y-linked pseudoautosomal"
+        },
+        {
+          "id" : "OMIM:400021",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010762",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:400021",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564034",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010762",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1839076",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010762",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:400021",
+            "MONDO:0010762",
+            "MESH:C564034",
+            "UMLS:C1839076"
+          ]
+        }
+      ]
+    }
+  ]
+}

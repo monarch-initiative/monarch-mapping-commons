@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c53f3c1a6992f00e6c87cfb61e0a309115567c4be4ab9f838d7d26d7e350b6ef",
+      "nodes" : [
+        {
+          "id" : "SCTID:92289001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0685118",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021514",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of pericardium"
+        },
+        {
+          "id" : "NCIT:C8536",
+          "type" : "CLASS",
+          "lbl" : "Benign Pericardial Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021514",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8536",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92289001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021514",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0685118",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021514",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021514",
+            "NCIT:C8536",
+            "SCTID:92289001",
+            "UMLS:C0685118"
+          ]
+        }
+      ]
+    }
+  ]
+}

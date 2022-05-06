@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0d8c00ebc8bc19a02b25138e06884cc5784af9465e1ebfcfab8b5da55d914e2d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1266036",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080184",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000893",
+          "type" : "CLASS",
+          "lbl" : "mixed mucinous and nonmucinous bronchioloalveolar adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C7270",
+          "type" : "CLASS",
+          "lbl" : "Minimally Invasive Lung Mixed Non-Mucinous and Mucinous Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1266036",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000893",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080184",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000893",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000893",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7270",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1266036",
+            "MONDO:0000893",
+            "DOID:0080184",
+            "NCIT:C7270"
+          ]
+        }
+      ]
+    }
+  ]
+}

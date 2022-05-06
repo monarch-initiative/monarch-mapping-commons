@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ff74f07454663b57b8cc548599b8fffc827969a0979fc041c8ed1d6bc768a706",
+      "nodes" : [
+        {
+          "id" : "MESH:C563550",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1834581",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008041",
+          "type" : "CLASS",
+          "lbl" : "myoclonic epilepsy, Hartung type"
+        },
+        {
+          "id" : "OMIM:159600",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1834581",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008041",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008041",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:159600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563550",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008041",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008041",
+            "UMLS:C1834581",
+            "OMIM:159600",
+            "MESH:C563550"
+          ]
+        }
+      ]
+    }
+  ]
+}

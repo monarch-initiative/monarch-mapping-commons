@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b7a815001c07a3316b0e9eb4e257ba99881c395b4bf1551c413262a7d05700bd",
+      "nodes" : [
+        {
+          "id" : "MESH:C535656",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1853757",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011626",
+          "type" : "CLASS",
+          "lbl" : "acromegaloid features, overgrowth, cleft palate, and hernia"
+        },
+        {
+          "id" : "OMIM:606049",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C535656",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011626",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011626",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:606049",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1853757",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011626",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C535656",
+            "MONDO:0011626",
+            "OMIM:606049",
+            "UMLS:C1853757"
+          ]
+        }
+      ]
+    }
+  ]
+}

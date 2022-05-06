@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:03301abcd84e60b205f1e43586d5e30864409bd7d864c950dd9908c1c3d24f45",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1864497",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080475",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011269",
+          "type" : "CLASS",
+          "lbl" : "psoriasis 2"
+        },
+        {
+          "id" : "OMIM:602723",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1864497",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011269",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080475",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011269",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011269",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:602723",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011269",
+            "UMLS:C1864497",
+            "DOID:0080475",
+            "OMIM:602723"
+          ]
+        }
+      ]
+    }
+  ]
+}

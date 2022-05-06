@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:400a8a6df9c09773ec40456eb91cef7472630752f3d8f4f6b154b7183c3105cd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1867056",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008398",
+          "type" : "CLASS",
+          "lbl" : "salivary substance, Clostridium botulinum type"
+        },
+        {
+          "id" : "OMIM:180950",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1867056",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008398",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008398",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:180950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1867056",
+            "MONDO:0008398",
+            "OMIM:180950"
+          ]
+        }
+      ]
+    }
+  ]
+}

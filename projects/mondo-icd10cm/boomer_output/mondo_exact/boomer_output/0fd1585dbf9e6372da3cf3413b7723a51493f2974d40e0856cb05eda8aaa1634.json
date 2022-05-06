@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0fd1585dbf9e6372da3cf3413b7723a51493f2974d40e0856cb05eda8aaa1634",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207344",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020475",
+          "type" : "CLASS",
+          "lbl" : "dermotrichic syndrome"
+        },
+        {
+          "id" : "Orphanet:99688",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN207344",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020475",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020475",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99688",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN207344",
+            "MONDO:0020475",
+            "Orphanet:99688"
+          ]
+        }
+      ]
+    }
+  ]
+}

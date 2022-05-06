@@ -1,0 +1,133 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:78e746d47aecfe1a5e4d5031f49eb0949d9136e0ed36b1e08d8f5cd967d69934",
+      "nodes" : [
+        {
+          "id" : "SCTID:127021009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D000310",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3950",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C9338",
+          "type" : "CLASS",
+          "lbl" : "Malignant Adrenal Gland Neoplasm"
+        },
+        {
+          "id" : "DOID:3953",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002817",
+          "type" : "CLASS",
+          "lbl" : "adrenal gland cancer"
+        },
+        {
+          "id" : "MONDO:0002814",
+          "type" : "CLASS",
+          "lbl" : "adrenal carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3953",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002817",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3950",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002814",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D000310",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002817",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002814",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0002817",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:127021009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002817",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002817",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9338",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3950",
+            "MONDO:0002814"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "MESH:D000310",
+            "MONDO:0002817",
+            "NCIT:C9338",
+            "SCTID:127021009",
+            "DOID:3953"
+          ]
+        }
+      ]
+    }
+  ]
+}

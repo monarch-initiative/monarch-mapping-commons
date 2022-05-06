@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:45548928a4fb7a4b28554259ed8fb598e2ca695f9381d8aaf447bf3a050920d3",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN873437",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060663",
+          "type" : "CLASS",
+          "lbl" : "congenital heart defects, multiple types, 5"
+        },
+        {
+          "id" : "OMIM:617912",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN873437",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060663",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060663",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617912",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0060663",
+            "UMLS:CN873437",
+            "OMIM:617912"
+          ]
+        }
+      ]
+    }
+  ]
+}

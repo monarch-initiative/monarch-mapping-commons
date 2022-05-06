@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fe161a9b02d6946a207f3b594fb3de64f2d124182a5efc4595e1e8a90821f6b5",
+      "nodes" : [
+        {
+          "id" : "OMIM:607936",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011937",
+          "type" : "CLASS",
+          "lbl" : "peeling skin syndrome 4"
+        },
+        {
+          "id" : "UMLS:C4225407",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1842797",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C564309",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564309",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011937",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011937",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1842797",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011937",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607936",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225407",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011937",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C564309",
+            "MONDO:0011937",
+            "OMIM:607936",
+            "UMLS:C4225407"
+          ]
+        }
+      ]
+    }
+  ]
+}

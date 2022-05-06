@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d72dce1f8879ca24c1387a475f9b3c7580cd1808706969a6278e3a0e0977e7a6",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203920",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017871",
+          "type" : "CLASS",
+          "lbl" : "bilateral massive adrenal hemorrhage"
+        },
+        {
+          "id" : "Orphanet:319205",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203920",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017871",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017871",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:319205",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN203920",
+            "MONDO:0017871",
+            "Orphanet:319205"
+          ]
+        }
+      ]
+    }
+  ]
+}

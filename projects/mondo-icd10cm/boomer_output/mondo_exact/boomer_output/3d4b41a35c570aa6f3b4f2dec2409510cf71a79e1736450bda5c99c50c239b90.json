@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3d4b41a35c570aa6f3b4f2dec2409510cf71a79e1736450bda5c99c50c239b90",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3900100",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017029",
+          "type" : "CLASS",
+          "lbl" : "Langerhans cell histiocytosis specific to adulthood"
+        },
+        {
+          "id" : "NCIT:C114929",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:264750",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017029",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:264750",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3900100",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017029",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017029",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C114929",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017029",
+            "Orphanet:264750",
+            "UMLS:C3900100",
+            "NCIT:C114929"
+          ]
+        }
+      ]
+    }
+  ]
+}

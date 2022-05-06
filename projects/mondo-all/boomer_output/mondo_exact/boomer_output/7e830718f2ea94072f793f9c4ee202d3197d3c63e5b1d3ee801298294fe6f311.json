@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7e830718f2ea94072f793f9c4ee202d3197d3c63e5b1d3ee801298294fe6f311",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0005818",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2218",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000009",
+          "type" : "CLASS",
+          "lbl" : "inherited bleeding disorder, platelet-type"
+        },
+        {
+          "id" : "OMIMPS:231200",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:2218",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000009",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0005818",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000009",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:231200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000009",
+            "DOID:2218",
+            "UMLS:C0005818",
+            "OMIMPS:231200"
+          ]
+        }
+      ]
+    }
+  ]
+}

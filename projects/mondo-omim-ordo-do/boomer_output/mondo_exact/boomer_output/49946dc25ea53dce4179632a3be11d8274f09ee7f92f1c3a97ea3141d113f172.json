@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:49946dc25ea53dce4179632a3be11d8274f09ee7f92f1c3a97ea3141d113f172",
+      "nodes" : [
+        {
+          "id" : "OMIM:268020",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C564841",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1849401",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:3085",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009983",
+          "type" : "CLASS",
+          "lbl" : "retinitis pigmentosa-intellectual disability-deafness-hypogenitalism syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1849401",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009983",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009983",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3085",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564841",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009983",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009983",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:268020",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009983",
+            "MESH:C564841",
+            "OMIM:268020",
+            "Orphanet:3085",
+            "UMLS:C1849401"
+          ]
+        }
+      ]
+    }
+  ]
+}

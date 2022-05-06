@@ -1,0 +1,79 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2f3ce94f6e5d3146fb011b6e526db1bb737dafec50164ae3c681ac66d27f84dd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0280334",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044705",
+          "type" : "CLASS",
+          "lbl" : "paranasal sinus squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C8193",
+          "type" : "CLASS",
+          "lbl" : "Paranasal Sinus Squamous Cell Carcinoma"
+        },
+        {
+          "id" : "Orphanet:500464",
+          "type" : "CLASS",
+          "lbl" : "Squamous cell carcinoma of the nasal cavity and paranasal sinuses"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0280334",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044705",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044705",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:500464",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044705",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8193",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0044705",
+            "UMLS:C0280334",
+            "Orphanet:500464",
+            "NCIT:C8193"
+          ]
+        }
+      ]
+    }
+  ]
+}

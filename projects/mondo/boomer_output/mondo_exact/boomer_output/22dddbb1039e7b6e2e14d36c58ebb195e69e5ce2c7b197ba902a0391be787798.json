@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:22dddbb1039e7b6e2e14d36c58ebb195e69e5ce2c7b197ba902a0391be787798",
+      "nodes" : [
+        {
+          "id" : "DOID:7575",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004286",
+          "type" : "CLASS",
+          "lbl" : "pancreatic intraductal papillary-mucinous neoplasm"
+        },
+        {
+          "id" : "NCIT:C38342",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004286",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C38342",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7575",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004286",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C38342",
+            "MONDO:0004286",
+            "DOID:7575"
+          ]
+        }
+      ]
+    }
+  ]
+}

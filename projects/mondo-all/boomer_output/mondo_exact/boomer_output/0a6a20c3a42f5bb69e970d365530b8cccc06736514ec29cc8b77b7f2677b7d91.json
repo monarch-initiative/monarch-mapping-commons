@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0a6a20c3a42f5bb69e970d365530b8cccc06736514ec29cc8b77b7f2677b7d91",
+      "nodes" : [
+        {
+          "id" : "MONDO:0001889",
+          "type" : "CLASS",
+          "lbl" : "ovarian dysfunction"
+        },
+        {
+          "id" : "ICD10CM:E28",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:37102008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1414",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C113351",
+          "type" : "CLASS",
+          "lbl" : "Ovarian Failure"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:37102008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001889",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:E28",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001889",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001889",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C113351",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1414",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001889",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001889",
+            "NCIT:C113351",
+            "SCTID:37102008",
+            "DOID:1414",
+            "ICD10CM:E28"
+          ]
+        }
+      ]
+    }
+  ]
+}

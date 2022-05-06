@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0df4d96d4441f1bb73984d95de96798d33b411ed404190c3d208e6a96cd16218",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2211850",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7048",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004090",
+          "type" : "CLASS",
+          "lbl" : "vulvar basaloid squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C40286",
+          "type" : "CLASS",
+          "lbl" : "Vulvar Basaloid Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7048",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004090",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004090",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40286",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2211850",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004090",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004090",
+            "DOID:7048",
+            "NCIT:C40286",
+            "UMLS:C2211850"
+          ]
+        }
+      ]
+    }
+  ]
+}

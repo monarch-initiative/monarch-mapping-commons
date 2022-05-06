@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c6a144db3ce0092d5941e12fbcf70644a117c3cc56e0a3aa18c673a1b72ed6a6",
+      "nodes" : [
+        {
+          "id" : "MESH:D008175",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021117",
+          "type" : "CLASS",
+          "lbl" : "lung neoplasm"
+        },
+        {
+          "id" : "NCIT:C3200",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021117",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D008175",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021117",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C3200",
+            "MONDO:0021117",
+            "MESH:D008175"
+          ]
+        }
+      ]
+    }
+  ]
+}

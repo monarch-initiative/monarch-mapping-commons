@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:766b586b1ceed400b2cd235c4da00c696612015f007c30f0bc826dd27d621b34",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN031715",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060364",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0033005",
+          "type" : "CLASS",
+          "lbl" : "Galloway-Mowat syndrome 1"
+        },
+        {
+          "id" : "OMIM:251300",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN031715",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0033005",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0033005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:251300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060364",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0033005",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0033005",
+            "UMLS:CN031715",
+            "OMIM:251300",
+            "DOID:0060364"
+          ]
+        }
+      ]
+    }
+  ]
+}

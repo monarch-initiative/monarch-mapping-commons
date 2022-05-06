@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:228eeb9844d0a5a23d63be8274e25e8f0114a12533852abbe2edb7714ebdd7f5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1134515",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3637",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002716",
+          "type" : "CLASS",
+          "lbl" : "childhood spinal cord tumor"
+        },
+        {
+          "id" : "NCIT:C9234",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3637",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002716",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1134515",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002716",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002716",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9234",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002716",
+            "DOID:3637",
+            "UMLS:C1134515",
+            "NCIT:C9234"
+          ]
+        }
+      ]
+    }
+  ]
+}

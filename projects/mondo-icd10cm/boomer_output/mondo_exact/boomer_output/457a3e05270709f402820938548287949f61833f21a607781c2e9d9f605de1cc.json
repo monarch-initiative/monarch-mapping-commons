@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:457a3e05270709f402820938548287949f61833f21a607781c2e9d9f605de1cc",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4015728",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:8000012",
+          "type" : "CLASS",
+          "lbl" : "neurologic, endocrine, and pancreatic disease, multisystem, infantile-onset 1"
+        },
+        {
+          "id" : "Orphanet:456312",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616263",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:8000012",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:456312",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4015728",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:8000012",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:8000012",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616263",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:8000012",
+            "Orphanet:456312",
+            "UMLS:C4015728",
+            "OMIM:616263"
+          ]
+        }
+      ]
+    }
+  ]
+}

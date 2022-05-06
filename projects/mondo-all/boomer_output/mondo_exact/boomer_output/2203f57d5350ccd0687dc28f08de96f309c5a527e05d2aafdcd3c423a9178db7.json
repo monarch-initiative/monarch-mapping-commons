@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2203f57d5350ccd0687dc28f08de96f309c5a527e05d2aafdcd3c423a9178db7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335688",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1995",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002168",
+          "type" : "CLASS",
+          "lbl" : "rectum sarcoma"
+        },
+        {
+          "id" : "NCIT:C5548",
+          "type" : "CLASS",
+          "lbl" : "Rectal Sarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002168",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5548",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335688",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002168",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1995",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002168",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002168",
+            "NCIT:C5548",
+            "UMLS:C1335688",
+            "DOID:1995"
+          ]
+        }
+      ]
+    }
+  ]
+}

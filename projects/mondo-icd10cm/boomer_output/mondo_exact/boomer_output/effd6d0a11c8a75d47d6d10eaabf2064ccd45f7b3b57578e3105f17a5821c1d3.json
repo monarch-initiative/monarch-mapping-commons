@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:effd6d0a11c8a75d47d6d10eaabf2064ccd45f7b3b57578e3105f17a5821c1d3",
+      "nodes" : [
+        {
+          "id" : "MESH:D015417",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:398100001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015358",
+          "type" : "CLASS",
+          "lbl" : "hereditary motor and sensory neuropathy"
+        },
+        {
+          "id" : "Orphanet:140450",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:398100001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015358",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015358",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:140450",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D015417",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015358",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015358",
+            "SCTID:398100001",
+            "Orphanet:140450",
+            "MESH:D015417"
+          ]
+        }
+      ]
+    }
+  ]
+}

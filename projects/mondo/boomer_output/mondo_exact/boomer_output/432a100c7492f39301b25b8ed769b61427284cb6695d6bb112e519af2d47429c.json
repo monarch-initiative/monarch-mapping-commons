@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:432a100c7492f39301b25b8ed769b61427284cb6695d6bb112e519af2d47429c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0280788",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016700",
+          "type" : "CLASS",
+          "lbl" : "anaplastic ependymoma"
+        },
+        {
+          "id" : "NCIT:C4049",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:251646",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016700",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4049",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016700",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:251646",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0280788",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016700",
+            "NCIT:C4049",
+            "Orphanet:251646",
+            "UMLS:C0280788"
+          ]
+        }
+      ]
+    }
+  ]
+}

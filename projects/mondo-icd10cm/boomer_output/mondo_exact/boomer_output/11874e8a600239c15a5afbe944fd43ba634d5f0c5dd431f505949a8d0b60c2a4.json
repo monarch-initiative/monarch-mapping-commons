@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:11874e8a600239c15a5afbe944fd43ba634d5f0c5dd431f505949a8d0b60c2a4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332270",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7708",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004337",
+          "type" : "CLASS",
+          "lbl" : "perianal skin Paget disease"
+        },
+        {
+          "id" : "NCIT:C7476",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7708",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332270",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004337",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7476",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004337",
+            "DOID:7708",
+            "UMLS:C1332270",
+            "NCIT:C7476"
+          ]
+        }
+      ]
+    }
+  ]
+}

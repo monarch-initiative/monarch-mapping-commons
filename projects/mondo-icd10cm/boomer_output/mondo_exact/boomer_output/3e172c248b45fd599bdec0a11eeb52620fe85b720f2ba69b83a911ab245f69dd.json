@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3e172c248b45fd599bdec0a11eeb52620fe85b720f2ba69b83a911ab245f69dd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4518087",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015552",
+          "type" : "CLASS",
+          "lbl" : "acral dystrophic epidermolysis bullosa"
+        },
+        {
+          "id" : "Orphanet:158673",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN199731",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:733638006",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:733638006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015552",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015552",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4518087",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN199731",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015552",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015552",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:158673",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015552",
+            "SCTID:733638006",
+            "UMLS:CN199731",
+            "Orphanet:158673"
+          ]
+        }
+      ]
+    }
+  ]
+}

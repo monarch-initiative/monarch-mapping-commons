@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a5f14d9fbe2569093a438b60f6ccc0c4d44ca0becfdc8bb64da3c3a37353db73",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332308",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6334",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003858",
+          "type" : "CLASS",
+          "lbl" : "anterior optic tract meningioma"
+        },
+        {
+          "id" : "NCIT:C7538",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003858",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7538",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332308",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003858",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6334",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003858",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003858",
+            "NCIT:C7538",
+            "UMLS:C1332308",
+            "DOID:6334"
+          ]
+        }
+      ]
+    }
+  ]
+}

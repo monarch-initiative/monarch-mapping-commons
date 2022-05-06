@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f17e099afe2785fa4f6c2d782626f15985fc26114c1e9044bf5496694c761a57",
+      "nodes" : [
+        {
+          "id" : "MESH:C537000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016036",
+          "type" : "CLASS",
+          "lbl" : "obsolete Ledderhose disease"
+        },
+        {
+          "id" : "Orphanet:199251",
+          "type" : "CLASS",
+          "lbl" : "Ledderhose disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C537000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016036",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016036",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:199251",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016036",
+            "MESH:C537000",
+            "Orphanet:199251"
+          ]
+        }
+      ]
+    }
+  ]
+}

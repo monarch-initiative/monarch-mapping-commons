@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a62dd981cd5d8c5d0f43fbdd039567ec27c97da9ce142db5cc98fa9b8847a1e9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4531264",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015391",
+          "type" : "CLASS",
+          "lbl" : "nasopharyngeal teratoma"
+        },
+        {
+          "id" : "Orphanet:141107",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4531264",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015391",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015391",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:141107",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4531264",
+            "MONDO:0015391",
+            "Orphanet:141107"
+          ]
+        }
+      ]
+    }
+  ]
+}

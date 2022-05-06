@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fd528d82c591e5d57333644039538068635b11b8038ba007d7c3cc93596b0c55",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3888088",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011814",
+          "type" : "CLASS",
+          "lbl" : "Smith-McCort dysplasia 1"
+        },
+        {
+          "id" : "OMIM:607326",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3888088",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011814",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011814",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607326",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011814",
+            "UMLS:C3888088",
+            "OMIM:607326"
+          ]
+        }
+      ]
+    }
+  ]
+}

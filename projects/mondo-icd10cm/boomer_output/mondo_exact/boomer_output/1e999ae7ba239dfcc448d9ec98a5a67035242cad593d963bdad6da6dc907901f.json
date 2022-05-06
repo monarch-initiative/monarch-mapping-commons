@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1e999ae7ba239dfcc448d9ec98a5a67035242cad593d963bdad6da6dc907901f",
+      "nodes" : [
+        {
+          "id" : "SCTID:87991007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1234",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001500",
+          "type" : "CLASS",
+          "lbl" : "gender identity disorder"
+        },
+        {
+          "id" : "NCIT:C94362",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0001500",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C94362",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1234",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001500",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:87991007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001500",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C94362",
+            "MONDO:0001500",
+            "DOID:1234",
+            "SCTID:87991007"
+          ]
+        }
+      ]
+    }
+  ]
+}

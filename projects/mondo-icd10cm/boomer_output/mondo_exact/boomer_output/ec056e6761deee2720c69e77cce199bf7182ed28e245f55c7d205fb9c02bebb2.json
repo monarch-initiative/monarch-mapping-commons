@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ec056e6761deee2720c69e77cce199bf7182ed28e245f55c7d205fb9c02bebb2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333956",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:482",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003154",
+          "type" : "CLASS",
+          "lbl" : "hemangioma of peripheral nerve"
+        },
+        {
+          "id" : "NCIT:C27507",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:482",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003154",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003154",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27507",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333956",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003154",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:482",
+            "MONDO:0003154",
+            "NCIT:C27507",
+            "UMLS:C1333956"
+          ]
+        }
+      ]
+    }
+  ]
+}

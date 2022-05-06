@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dbdd93afe10fba4be34a4b0b5a2ac8d2f6658df89c0089eee5b1c4e11952b72d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3554593",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014060",
+          "type" : "CLASS",
+          "lbl" : "progressive retinal dystrophy due to retinol transport defect"
+        },
+        {
+          "id" : "Orphanet:352718",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:615147",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014060",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:352718",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3554593",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014060",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014060",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615147",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014060",
+            "Orphanet:352718",
+            "UMLS:C3554593",
+            "OMIM:615147"
+          ]
+        }
+      ]
+    }
+  ]
+}

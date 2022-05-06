@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a442e2590dda86b86324270ac10829a4cf6790685998addba14eef00c997ab68",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336885",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4910",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003200",
+          "type" : "CLASS",
+          "lbl" : "urethra adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C6167",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003200",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6167",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4910",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336885",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003200",
+            "NCIT:C6167",
+            "DOID:4910",
+            "UMLS:C1336885"
+          ]
+        }
+      ]
+    }
+  ]
+}

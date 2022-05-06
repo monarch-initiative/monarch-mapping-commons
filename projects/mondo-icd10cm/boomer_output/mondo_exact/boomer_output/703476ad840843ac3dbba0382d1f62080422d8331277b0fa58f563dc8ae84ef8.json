@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:703476ad840843ac3dbba0382d1f62080422d8331277b0fa58f563dc8ae84ef8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225362",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080107",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014592",
+          "type" : "CLASS",
+          "lbl" : "microcephaly and chorioretinopathy 3"
+        },
+        {
+          "id" : "OMIM:616335",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080107",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014592",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225362",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014592",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014592",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616335",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014592",
+            "DOID:0080107",
+            "UMLS:C4225362",
+            "OMIM:616335"
+          ]
+        }
+      ]
+    }
+  ]
+}

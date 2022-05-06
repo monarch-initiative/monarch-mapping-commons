@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:21ac16d60f9be9b8db8a76db0b29fd92c1bb74f64e6cf6e915bb8ba164a679af",
+      "nodes" : [
+        {
+          "id" : "SCTID:722051004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN227640",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019506",
+          "type" : "CLASS",
+          "lbl" : "obesity-colitis-hypothyroidism-cardiac hypertrophy-developmental delay syndrome"
+        },
+        {
+          "id" : "Orphanet:88643",
+          "type" : "CLASS",
+          "lbl" : "Obesity-colitis-hypothyroidism-cardiac hypertrophy-developmental delay syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227640",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019506",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019506",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:88643",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:722051004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019506",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019506",
+            "UMLS:CN227640",
+            "Orphanet:88643",
+            "SCTID:722051004"
+          ]
+        }
+      ]
+    }
+  ]
+}

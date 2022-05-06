@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:556340cbf76c040c9cb148afcd7227a814da84fd8e0d08b18e7582120f08b7e6",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203401",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017591",
+          "type" : "CLASS",
+          "lbl" : "combined pulmonary fibrosis-emphysema syndrome"
+        },
+        {
+          "id" : "Orphanet:300564",
+          "type" : "CLASS",
+          "lbl" : "Combined pulmonary fibrosis-emphysema syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203401",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017591",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017591",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:300564",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN203401",
+            "MONDO:0017591",
+            "Orphanet:300564"
+          ]
+        }
+      ]
+    }
+  ]
+}

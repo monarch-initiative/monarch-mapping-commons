@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:327648cb06d8dc920bb78206dcecd5a6ddc5e0e610515b6407aac31c799399fb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1866483",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011129",
+          "type" : "CLASS",
+          "lbl" : "glaucoma type 1C"
+        },
+        {
+          "id" : "OMIM:601682",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1866483",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011129",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011129",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601682",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011129",
+            "UMLS:C1866483",
+            "OMIM:601682"
+          ]
+        }
+      ]
+    }
+  ]
+}

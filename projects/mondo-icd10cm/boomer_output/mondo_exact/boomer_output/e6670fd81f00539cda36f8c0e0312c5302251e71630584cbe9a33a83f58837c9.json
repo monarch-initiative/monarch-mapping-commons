@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e6670fd81f00539cda36f8c0e0312c5302251e71630584cbe9a33a83f58837c9",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237725",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018662",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive brachyolmia"
+        },
+        {
+          "id" : "Orphanet:448242",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237725",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018662",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018662",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:448242",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018662",
+            "UMLS:CN237725",
+            "Orphanet:448242"
+          ]
+        }
+      ]
+    }
+  ]
+}

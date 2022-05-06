@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d984d18c937fd61c037ab47f5b51639ff6fad8b8077b383595b5b1757dbf5b16",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310645",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080308",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014993",
+          "type" : "CLASS",
+          "lbl" : "myofibrillar myopathy 8"
+        },
+        {
+          "id" : "OMIM:617258",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4310645",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014993",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014993",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617258",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080308",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014993",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4310645",
+            "MONDO:0014993",
+            "OMIM:617258",
+            "DOID:0080308"
+          ]
+        }
+      ]
+    }
+  ]
+}

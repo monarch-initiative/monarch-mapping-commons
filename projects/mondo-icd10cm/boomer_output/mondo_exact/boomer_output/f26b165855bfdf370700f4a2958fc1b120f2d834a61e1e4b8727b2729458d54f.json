@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f26b165855bfdf370700f4a2958fc1b120f2d834a61e1e4b8727b2729458d54f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2699572",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006178",
+          "type" : "CLASS",
+          "lbl" : "dedifferentiated solitary fibrous tumor"
+        },
+        {
+          "id" : "NCIT:C79948",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006178",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C79948",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2699572",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006178",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006178",
+            "NCIT:C79948",
+            "UMLS:C2699572"
+          ]
+        }
+      ]
+    }
+  ]
+}

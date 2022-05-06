@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3a75f5e4a3c7b49d7de465e99cb3dbd65bda1ee4bef93bd48226ed8ff4fd3fa2",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016803",
+          "type" : "CLASS",
+          "lbl" : "unspecified inborn mitochondrial disorder"
+        },
+        {
+          "id" : "Orphanet:254837",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016803",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016803",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:254837",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN227004",
+            "MONDO:0016803",
+            "Orphanet:254837"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:29b2c2082211b586e6925aa490c3b090d619a538cafbee6ed98f958a4613e7db",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518749",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6514",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003907",
+          "type" : "CLASS",
+          "lbl" : "ovarian yolk sac tumor, polyvesicular vitelline pattern"
+        },
+        {
+          "id" : "NCIT:C39987",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6514",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003907",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518749",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003907",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003907",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39987",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6514",
+            "MONDO:0003907",
+            "UMLS:C1518749",
+            "NCIT:C39987"
+          ]
+        }
+      ]
+    }
+  ]
+}

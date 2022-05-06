@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b58cbccbc24f5b847adb1d10ba767322d329f990341b2e08da734e90d069b47d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334298",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6110",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003771",
+          "type" : "CLASS",
+          "lbl" : "jugular foramen meningioma"
+        },
+        {
+          "id" : "NCIT:C5293",
+          "type" : "CLASS",
+          "lbl" : "Jugular Foramen Meningioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6110",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003771",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003771",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5293",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334298",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003771",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003771",
+            "DOID:6110",
+            "NCIT:C5293",
+            "UMLS:C1334298"
+          ]
+        }
+      ]
+    }
+  ]
+}

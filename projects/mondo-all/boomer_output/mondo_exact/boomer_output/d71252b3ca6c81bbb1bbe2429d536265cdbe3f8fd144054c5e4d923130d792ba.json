@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d71252b3ca6c81bbb1bbe2429d536265cdbe3f8fd144054c5e4d923130d792ba",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN228933",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015366",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive hereditary sensory and autonomic neuropathy"
+        },
+        {
+          "id" : "Orphanet:140477",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015366",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:140477",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN228933",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015366",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015366",
+            "Orphanet:140477",
+            "UMLS:CN228933"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c59fb88e937b63f59e435df98d7c36346a735cc9a2ec6fe3be31fdea78516faa",
+      "nodes" : [
+        {
+          "id" : "MESH:C564793",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010081",
+          "type" : "CLASS",
+          "lbl" : "subaortic stenosis, membranous"
+        },
+        {
+          "id" : "OMIM:271950",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564793",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010081",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010081",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:271950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C564793",
+            "MONDO:0010081",
+            "OMIM:271950"
+          ]
+        }
+      ]
+    }
+  ]
+}

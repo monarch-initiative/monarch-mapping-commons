@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9bb1f7b35dfce034246977291f7c6f5ee7ae68992d84734d12252d57eef03996",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0238393",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4054",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002854",
+          "type" : "CLASS",
+          "lbl" : "prostate sarcoma"
+        },
+        {
+          "id" : "NCIT:C7731",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0238393",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002854",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002854",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7731",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4054",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002854",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0238393",
+            "MONDO:0002854",
+            "NCIT:C7731",
+            "DOID:4054"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5685093cb1fffd7a30120a133bbe7d185e28140dc2e6a03992e68e4b3219c940",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1266023",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7539",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004271",
+          "type" : "CLASS",
+          "lbl" : "pregnancy adenoma"
+        },
+        {
+          "id" : "NCIT:C9473",
+          "type" : "CLASS",
+          "lbl" : "Lactating Adenoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004271",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9473",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1266023",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004271",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7539",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004271",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C9473",
+            "MONDO:0004271",
+            "UMLS:C1266023",
+            "DOID:7539"
+          ]
+        }
+      ]
+    }
+  ]
+}

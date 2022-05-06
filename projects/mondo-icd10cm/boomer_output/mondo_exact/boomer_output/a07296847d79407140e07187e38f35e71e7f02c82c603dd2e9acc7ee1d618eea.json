@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a07296847d79407140e07187e38f35e71e7f02c82c603dd2e9acc7ee1d618eea",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN802781",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080292",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0036482",
+          "type" : "CLASS",
+          "lbl" : "retinitis pigmentosa 81"
+        },
+        {
+          "id" : "OMIM:617871",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080292",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0036482",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN802781",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0036482",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0036482",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617871",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0080292",
+            "MONDO:0036482",
+            "UMLS:CN802781",
+            "OMIM:617871"
+          ]
+        }
+      ]
+    }
+  ]
+}

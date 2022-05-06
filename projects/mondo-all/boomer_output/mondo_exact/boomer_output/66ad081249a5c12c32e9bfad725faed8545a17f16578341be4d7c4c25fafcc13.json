@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:66ad081249a5c12c32e9bfad725faed8545a17f16578341be4d7c4c25fafcc13",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN197522",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015180",
+          "type" : "CLASS",
+          "lbl" : "intestinal disease due to fat malabsorption"
+        },
+        {
+          "id" : "Orphanet:104005",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015180",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:104005",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN197522",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015180",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015180",
+            "Orphanet:104005",
+            "UMLS:CN197522"
+          ]
+        }
+      ]
+    }
+  ]
+}

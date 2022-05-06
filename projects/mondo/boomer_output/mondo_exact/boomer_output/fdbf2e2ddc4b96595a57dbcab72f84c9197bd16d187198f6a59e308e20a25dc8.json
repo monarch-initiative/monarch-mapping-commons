@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fdbf2e2ddc4b96595a57dbcab72f84c9197bd16d187198f6a59e308e20a25dc8",
+      "nodes" : [
+        {
+          "id" : "MESH:C565272",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1853827",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011618",
+          "type" : "CLASS",
+          "lbl" : "liver fibrocystic disease and polydactyly"
+        },
+        {
+          "id" : "OMIM:605944",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011618",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:605944",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565272",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011618",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1853827",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011618",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:605944",
+            "MONDO:0011618",
+            "MESH:C565272",
+            "UMLS:C1853827"
+          ]
+        }
+      ]
+    }
+  ]
+}

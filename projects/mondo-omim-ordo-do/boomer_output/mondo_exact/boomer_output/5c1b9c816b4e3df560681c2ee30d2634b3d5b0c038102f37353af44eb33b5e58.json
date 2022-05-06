@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5c1b9c816b4e3df560681c2ee30d2634b3d5b0c038102f37353af44eb33b5e58",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332962",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7841",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004378",
+          "type" : "CLASS",
+          "lbl" : "pediatric cerebral ependymoblastoma"
+        },
+        {
+          "id" : "NCIT:C6957",
+          "type" : "CLASS",
+          "lbl" : "Childhood Cerebral Embryonal Tumor with Multilayered Rosettes, C19MC-Altered"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004378",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6957",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7841",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004378",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332962",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004378",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004378",
+            "NCIT:C6957",
+            "DOID:7841",
+            "UMLS:C1332962"
+          ]
+        }
+      ]
+    }
+  ]
+}

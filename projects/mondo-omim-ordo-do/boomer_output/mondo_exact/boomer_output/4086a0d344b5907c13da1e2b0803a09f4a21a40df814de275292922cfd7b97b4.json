@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4086a0d344b5907c13da1e2b0803a09f4a21a40df814de275292922cfd7b97b4",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN043575",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016146",
+          "type" : "CLASS",
+          "lbl" : "caveolinopathy"
+        },
+        {
+          "id" : "Orphanet:207078",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN043575",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016146",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016146",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:207078",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016146",
+            "UMLS:CN043575",
+            "Orphanet:207078"
+          ]
+        }
+      ]
+    }
+  ]
+}

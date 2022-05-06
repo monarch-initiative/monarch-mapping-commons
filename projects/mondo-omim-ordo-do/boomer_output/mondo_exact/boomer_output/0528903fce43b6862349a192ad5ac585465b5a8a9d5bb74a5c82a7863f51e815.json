@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0528903fce43b6862349a192ad5ac585465b5a8a9d5bb74a5c82a7863f51e815",
+      "nodes" : [
+        {
+          "id" : "MESH:C564653",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1847360",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011737",
+          "type" : "CLASS",
+          "lbl" : "parkinson disease 10"
+        },
+        {
+          "id" : "OMIM:606852",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564653",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011737",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011737",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:606852",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1847360",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011737",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C564653",
+            "MONDO:0011737",
+            "OMIM:606852",
+            "UMLS:C1847360"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0bd939d36e6eea12e31be8bb0b80c933719806b70a6c3deecac63663cff020cb",
+      "nodes" : [
+        {
+          "id" : "SCTID:768926005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN197321",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015031",
+          "type" : "CLASS",
+          "lbl" : "extraneural perineurioma"
+        },
+        {
+          "id" : "Orphanet:100002",
+          "type" : "CLASS",
+          "lbl" : "Extraneural perineurioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:768926005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015031",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015031",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100002",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN197321",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015031",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:100002",
+            "MONDO:0015031",
+            "SCTID:768926005",
+            "UMLS:CN197321"
+          ]
+        }
+      ]
+    }
+  ]
+}

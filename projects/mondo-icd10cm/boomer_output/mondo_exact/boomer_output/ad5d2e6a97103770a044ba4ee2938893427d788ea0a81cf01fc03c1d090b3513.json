@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ad5d2e6a97103770a044ba4ee2938893427d788ea0a81cf01fc03c1d090b3513",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0519030",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0030602",
+          "type" : "CLASS",
+          "lbl" : "Klebsiella pneumonia"
+        },
+        {
+          "id" : "SCTID:64479007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:J15.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:13272",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:13272",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0030602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:64479007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0030602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0519030",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0030602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:J15.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0030602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0030602",
+            "UMLS:C0519030",
+            "SCTID:64479007",
+            "DOID:13272",
+            "ICD10CM:J15.0"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:92785ed828fbaa1035d6954e8924ed66149accb20b82ca0de71a2abb79d40bfd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225172",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014811",
+          "type" : "CLASS",
+          "lbl" : "cerebellar atrophy, visual impairment, and psychomotor retardation;"
+        },
+        {
+          "id" : "OMIM:616875",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014811",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616875",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225172",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014811",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014811",
+            "OMIM:616875",
+            "UMLS:C4225172"
+          ]
+        }
+      ]
+    }
+  ]
+}

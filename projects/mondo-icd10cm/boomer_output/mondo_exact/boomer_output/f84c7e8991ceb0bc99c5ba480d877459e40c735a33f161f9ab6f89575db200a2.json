@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f84c7e8991ceb0bc99c5ba480d877459e40c735a33f161f9ab6f89575db200a2",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202966",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017326",
+          "type" : "CLASS",
+          "lbl" : "infective dermatitis associated with HTLV-1"
+        },
+        {
+          "id" : "NCIT:C129260",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:289347",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017326",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:289347",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017326",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C129260",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202966",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017326",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:289347",
+            "MONDO:0017326",
+            "NCIT:C129260",
+            "UMLS:CN202966"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e042f101b9ab08400024a829e8a054a098195be62582c60ce26371b4cfa3c425",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3550789",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010308",
+          "type" : "CLASS",
+          "lbl" : "thrombocytopenia, X-linked, with or without dyserythropoietic anemia"
+        },
+        {
+          "id" : "NCIT:C136653",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:300367",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010308",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C136653",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3550789",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010308",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010308",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300367",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C136653",
+            "MONDO:0010308",
+            "UMLS:C3550789",
+            "OMIM:300367"
+          ]
+        }
+      ]
+    }
+  ]
+}

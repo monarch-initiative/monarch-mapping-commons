@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1c6d845655fa872a870aa9a875f69be9147ee75be84ff1668e0a7e78fa8aec53",
+      "nodes" : [
+        {
+          "id" : "DOID:0111379",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0100104",
+          "type" : "CLASS",
+          "lbl" : "fetal akinesia deformation sequence 4"
+        },
+        {
+          "id" : "OMIM:618393",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0100104",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:618393",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111379",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0100104",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0100104",
+            "OMIM:618393",
+            "DOID:0111379"
+          ]
+        }
+      ]
+    }
+  ]
+}

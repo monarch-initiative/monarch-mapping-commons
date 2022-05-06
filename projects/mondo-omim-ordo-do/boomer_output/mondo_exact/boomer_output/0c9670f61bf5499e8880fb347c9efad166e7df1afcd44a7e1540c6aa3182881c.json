@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0c9670f61bf5499e8880fb347c9efad166e7df1afcd44a7e1540c6aa3182881c",
+      "nodes" : [
+        {
+          "id" : "MESH:C567510",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2678479",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012741",
+          "type" : "CLASS",
+          "lbl" : "prostate cancer, hereditary, 12"
+        },
+        {
+          "id" : "OMIM:611868",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012741",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:611868",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567510",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012741",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2678479",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012741",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012741",
+            "OMIM:611868",
+            "MESH:C567510",
+            "UMLS:C2678479"
+          ]
+        }
+      ]
+    }
+  ]
+}

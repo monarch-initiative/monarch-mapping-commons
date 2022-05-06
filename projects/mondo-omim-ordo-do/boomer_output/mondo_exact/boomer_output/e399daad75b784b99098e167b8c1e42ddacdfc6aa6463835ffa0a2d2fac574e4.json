@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e399daad75b784b99098e167b8c1e42ddacdfc6aa6463835ffa0a2d2fac574e4",
+      "nodes" : [
+        {
+          "id" : "MESH:C538269",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1857298",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009098",
+          "type" : "CLASS",
+          "lbl" : "dextrocardia with unusual facies and microphthalmia"
+        },
+        {
+          "id" : "OMIM:221950",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C538269",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009098",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009098",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:221950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1857298",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009098",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009098",
+            "MESH:C538269",
+            "OMIM:221950",
+            "UMLS:C1857298"
+          ]
+        }
+      ]
+    }
+  ]
+}

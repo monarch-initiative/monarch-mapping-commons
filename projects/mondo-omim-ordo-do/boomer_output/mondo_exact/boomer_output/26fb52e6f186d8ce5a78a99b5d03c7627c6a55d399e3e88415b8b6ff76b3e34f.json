@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:26fb52e6f186d8ce5a78a99b5d03c7627c6a55d399e3e88415b8b6ff76b3e34f",
+      "nodes" : [
+        {
+          "id" : "Orphanet:464336",
+          "type" : "CLASS",
+          "lbl" : "BENTA disease"
+        },
+        {
+          "id" : "UMLS:CN242071",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN231446",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014645",
+          "type" : "CLASS",
+          "lbl" : "BENTA disease"
+        },
+        {
+          "id" : "OMIM:616452",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014645",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:464336",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014645",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616452",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014645",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN242071",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN231446",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014645",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:464336",
+            "MONDO:0014645",
+            "OMIM:616452",
+            "UMLS:CN231446"
+          ]
+        }
+      ]
+    }
+  ]
+}

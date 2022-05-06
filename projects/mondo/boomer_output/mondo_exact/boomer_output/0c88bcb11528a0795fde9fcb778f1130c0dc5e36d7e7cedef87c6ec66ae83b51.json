@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0c88bcb11528a0795fde9fcb778f1130c0dc5e36d7e7cedef87c6ec66ae83b51",
+      "nodes" : [
+        {
+          "id" : "OMIM:249650",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009585",
+          "type" : "CLASS",
+          "lbl" : "encephalopathy due to beta-mercaptolactate-cysteine disulfiduria"
+        },
+        {
+          "id" : "MESH:C563085",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0796055",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:1035",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0796055",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009585",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009585",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:249650",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563085",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009585",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009585",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1035",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:1035",
+            "OMIM:249650",
+            "MONDO:0009585",
+            "MESH:C563085",
+            "UMLS:C0796055"
+          ]
+        }
+      ]
+    }
+  ]
+}

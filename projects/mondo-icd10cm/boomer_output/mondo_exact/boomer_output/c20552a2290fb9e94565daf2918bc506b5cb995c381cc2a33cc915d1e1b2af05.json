@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c20552a2290fb9e94565daf2918bc506b5cb995c381cc2a33cc915d1e1b2af05",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280271",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013653",
+          "type" : "CLASS",
+          "lbl" : "Parkinson disease 18, autosomal dominant, susceptibility to"
+        },
+        {
+          "id" : "OMIM:614251",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3280271",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013653",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013653",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614251",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3280271",
+            "MONDO:0013653",
+            "OMIM:614251"
+          ]
+        }
+      ]
+    }
+  ]
+}

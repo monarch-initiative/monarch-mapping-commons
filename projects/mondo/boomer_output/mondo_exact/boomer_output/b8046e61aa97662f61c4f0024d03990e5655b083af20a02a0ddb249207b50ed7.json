@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b8046e61aa97662f61c4f0024d03990e5655b083af20a02a0ddb249207b50ed7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0281373",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006278",
+          "type" : "CLASS",
+          "lbl" : "lung papilloma"
+        },
+        {
+          "id" : "NCIT:C8295",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006278",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8295",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0281373",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006278",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C8295",
+            "MONDO:0006278",
+            "UMLS:C0281373"
+          ]
+        }
+      ]
+    }
+  ]
+}

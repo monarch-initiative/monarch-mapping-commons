@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d49b8bea8e60512797eb2a01b2cf4ab855c2046d9840938fcce7b1db40ea57e5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202279",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016977",
+          "type" : "CLASS",
+          "lbl" : "moderately-differentiated thymic neuroendocrine carcinoma"
+        },
+        {
+          "id" : "Orphanet:263335",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202279",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016977",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016977",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:263335",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN202279",
+            "MONDO:0016977",
+            "Orphanet:263335"
+          ]
+        }
+      ]
+    }
+  ]
+}

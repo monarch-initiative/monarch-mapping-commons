@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:15d161a5f6420b6b74f556e1388e5056c34f001c780a67f8a8287dcac401345c",
+      "nodes" : [
+        {
+          "id" : "MESH:C566595",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1865986",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011174",
+          "type" : "CLASS",
+          "lbl" : "hyperzincemia with functional zinc depletion"
+        },
+        {
+          "id" : "OMIM:601979",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1865986",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011174",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566595",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011174",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011174",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601979",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1865986",
+            "MONDO:0011174",
+            "MESH:C566595",
+            "OMIM:601979"
+          ]
+        }
+      ]
+    }
+  ]
+}

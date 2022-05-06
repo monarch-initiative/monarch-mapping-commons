@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b9912fee071eaf52b3802e305a42660f3a858b547a677dd91fc9a49ce124ce1b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1704778",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4915",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003202",
+          "type" : "CLASS",
+          "lbl" : "pituitary gland basophilic carcinoma"
+        },
+        {
+          "id" : "NCIT:C27392",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003202",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27392",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4915",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003202",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1704778",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003202",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003202",
+            "NCIT:C27392",
+            "DOID:4915",
+            "UMLS:C1704778"
+          ]
+        }
+      ]
+    }
+  ]
+}

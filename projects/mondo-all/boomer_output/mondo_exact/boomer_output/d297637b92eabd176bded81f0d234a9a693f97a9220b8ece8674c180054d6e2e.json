@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d297637b92eabd176bded81f0d234a9a693f97a9220b8ece8674c180054d6e2e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334599",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0037743",
+          "type" : "CLASS",
+          "lbl" : "mediastinal soft tissue cancer"
+        },
+        {
+          "id" : "NCIT:C6642",
+          "type" : "CLASS",
+          "lbl" : "Malignant Mediastinal Soft Tissue Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334599",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0037743",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0037743",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6642",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0037743",
+            "UMLS:C1334599",
+            "NCIT:C6642"
+          ]
+        }
+      ]
+    }
+  ]
+}

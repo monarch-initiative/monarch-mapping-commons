@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1162560ecf2e4a22eb09dcb170b5994ccb12cca905d20abad75a41cfe56dcbb3",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN248531",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0054832",
+          "type" : "CLASS",
+          "lbl" : "corneal dystrophy, posterior polymorphous, 4"
+        },
+        {
+          "id" : "OMIM:618031",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN248531",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0054832",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0054832",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:618031",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN248531",
+            "MONDO:0054832",
+            "OMIM:618031"
+          ]
+        }
+      ]
+    }
+  ]
+}

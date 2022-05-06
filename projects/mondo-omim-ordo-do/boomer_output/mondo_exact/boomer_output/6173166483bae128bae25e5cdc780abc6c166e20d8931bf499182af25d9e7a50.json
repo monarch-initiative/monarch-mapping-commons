@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6173166483bae128bae25e5cdc780abc6c166e20d8931bf499182af25d9e7a50",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332957",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3870",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002798",
+          "type" : "CLASS",
+          "lbl" : "childhood central nervous system primitive neuroectodermal neoplasm"
+        },
+        {
+          "id" : "NCIT:C5961",
+          "type" : "CLASS",
+          "lbl" : "Childhood Central Nervous System Embryonal Tumor, Not Otherwise Specified"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332957",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002798",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002798",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5961",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3870",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002798",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332957",
+            "MONDO:0002798",
+            "NCIT:C5961",
+            "DOID:3870"
+          ]
+        }
+      ]
+    }
+  ]
+}

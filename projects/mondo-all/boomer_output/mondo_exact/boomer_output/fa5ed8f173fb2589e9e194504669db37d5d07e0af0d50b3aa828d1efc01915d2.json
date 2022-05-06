@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fa5ed8f173fb2589e9e194504669db37d5d07e0af0d50b3aa828d1efc01915d2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1266114",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8243",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004512",
+          "type" : "CLASS",
+          "lbl" : "meningeal melanomatosis"
+        },
+        {
+          "id" : "NCIT:C6891",
+          "type" : "CLASS",
+          "lbl" : "Meningeal Melanomatosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:8243",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004512",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1266114",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004512",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004512",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6891",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:8243",
+            "MONDO:0004512",
+            "UMLS:C1266114",
+            "NCIT:C6891"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:17267d3fefb450682d34524e14cb96e54af90982e12e282559aff8d18502058b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336981",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6944",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006622",
+          "type" : "CLASS",
+          "lbl" : "vulvar seborrheic keratosis"
+        },
+        {
+          "id" : "NCIT:C6375",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006622",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6375",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6944",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006622",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336981",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006622",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006622",
+            "NCIT:C6375",
+            "DOID:6944",
+            "UMLS:C1336981"
+          ]
+        }
+      ]
+    }
+  ]
+}

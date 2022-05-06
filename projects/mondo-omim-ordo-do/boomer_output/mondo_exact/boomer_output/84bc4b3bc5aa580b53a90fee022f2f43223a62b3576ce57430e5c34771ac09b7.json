@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:84bc4b3bc5aa580b53a90fee022f2f43223a62b3576ce57430e5c34771ac09b7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2751312",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110146",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000909",
+          "type" : "CLASS",
+          "lbl" : "Bartter disease type 4B"
+        },
+        {
+          "id" : "OMIM:613090",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110146",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000909",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2751312",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000909",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000909",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613090",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000909",
+            "DOID:0110146",
+            "UMLS:C2751312",
+            "OMIM:613090"
+          ]
+        }
+      ]
+    }
+  ]
+}

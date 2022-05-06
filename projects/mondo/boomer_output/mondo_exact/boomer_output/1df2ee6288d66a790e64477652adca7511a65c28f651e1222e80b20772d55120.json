@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1df2ee6288d66a790e64477652adca7511a65c28f651e1222e80b20772d55120",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016805",
+          "type" : "CLASS",
+          "lbl" : "isolated oxidative phosphorylation complex disorder"
+        },
+        {
+          "id" : "Orphanet:254846",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016805",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016805",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:254846",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016805",
+            "UMLS:CN227005",
+            "Orphanet:254846"
+          ]
+        }
+      ]
+    }
+  ]
+}

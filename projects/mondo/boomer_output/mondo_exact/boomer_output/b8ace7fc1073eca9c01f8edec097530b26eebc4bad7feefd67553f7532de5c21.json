@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b8ace7fc1073eca9c01f8edec097530b26eebc4bad7feefd67553f7532de5c21",
+      "nodes" : [
+        {
+          "id" : "DOID:0111296",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0032777",
+          "type" : "CLASS",
+          "lbl" : "generalized epilepsy with febrile seizures plus, type 10"
+        },
+        {
+          "id" : "OMIM:618482",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0032777",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:618482",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111296",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0032777",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0032777",
+            "OMIM:618482",
+            "DOID:0111296"
+          ]
+        }
+      ]
+    }
+  ]
+}

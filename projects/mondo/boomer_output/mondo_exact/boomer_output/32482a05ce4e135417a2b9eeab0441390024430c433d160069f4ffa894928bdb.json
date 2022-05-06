@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:32482a05ce4e135417a2b9eeab0441390024430c433d160069f4ffa894928bdb",
+      "nodes" : [
+        {
+          "id" : "MESH:D000014",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016677",
+          "type" : "CLASS",
+          "lbl" : "toxic or drug-related embryofetopathy"
+        },
+        {
+          "id" : "Orphanet:251529",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016677",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:251529",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D000014",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016677",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016677",
+            "Orphanet:251529",
+            "MESH:D000014"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2deaed12415cdc13449a469056a260a18b90285631badd9e69c4017047529536",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN229258",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020044",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive metabolic cerebellar ataxia"
+        },
+        {
+          "id" : "Orphanet:98096",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN229258",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020044",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020044",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98096",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020044",
+            "UMLS:CN229258",
+            "Orphanet:98096"
+          ]
+        }
+      ]
+    }
+  ]
+}

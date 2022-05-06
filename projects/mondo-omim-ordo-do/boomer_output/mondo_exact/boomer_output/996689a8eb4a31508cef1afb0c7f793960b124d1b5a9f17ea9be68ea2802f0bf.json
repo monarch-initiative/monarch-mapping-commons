@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:996689a8eb4a31508cef1afb0c7f793960b124d1b5a9f17ea9be68ea2802f0bf",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0151544",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050922",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006181",
+          "type" : "CLASS",
+          "lbl" : "digestive system carcinoma"
+        },
+        {
+          "id" : "NCIT:C96963",
+          "type" : "CLASS",
+          "lbl" : "Digestive System Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0151544",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006181",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006181",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C96963",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050922",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006181",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006181",
+            "UMLS:C0151544",
+            "NCIT:C96963",
+            "DOID:0050922"
+          ]
+        }
+      ]
+    }
+  ]
+}

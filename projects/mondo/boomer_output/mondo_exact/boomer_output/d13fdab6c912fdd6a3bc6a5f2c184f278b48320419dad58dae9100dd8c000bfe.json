@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d13fdab6c912fdd6a3bc6a5f2c184f278b48320419dad58dae9100dd8c000bfe",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN229225",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019794",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant cerebellar ataxia type IV"
+        },
+        {
+          "id" : "Orphanet:94149",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019794",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:94149",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN229225",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019794",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:94149",
+            "MONDO:0019794",
+            "UMLS:CN229225"
+          ]
+        }
+      ]
+    }
+  ]
+}

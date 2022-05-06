@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:134279baf830bb0551ddf4765adfe9c3e44daeb913999610080651cebc4c1fdb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334370",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5670",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003575",
+          "type" : "CLASS",
+          "lbl" : "comedocarcinoma"
+        },
+        {
+          "id" : "NCIT:C4188",
+          "type" : "CLASS",
+          "lbl" : "Comedocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0334370",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003575",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003575",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4188",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5670",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003575",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0334370",
+            "MONDO:0003575",
+            "NCIT:C4188",
+            "DOID:5670"
+          ]
+        }
+      ]
+    }
+  ]
+}

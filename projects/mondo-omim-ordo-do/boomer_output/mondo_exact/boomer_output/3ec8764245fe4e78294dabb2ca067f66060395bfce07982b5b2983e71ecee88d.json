@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3ec8764245fe4e78294dabb2ca067f66060395bfce07982b5b2983e71ecee88d",
+      "nodes" : [
+        {
+          "id" : "MESH:C566674",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1866783",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008452",
+          "type" : "CLASS",
+          "lbl" : "spinal muscular atrophy, facioscapulohumeral type"
+        },
+        {
+          "id" : "OMIM:182970",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C566674",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008452",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008452",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:182970",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1866783",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008452",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008452",
+            "OMIM:182970",
+            "MESH:C566674",
+            "UMLS:C1866783"
+          ]
+        }
+      ]
+    }
+  ]
+}

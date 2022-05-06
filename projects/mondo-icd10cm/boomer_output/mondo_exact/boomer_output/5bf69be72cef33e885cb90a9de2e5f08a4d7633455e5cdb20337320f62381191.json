@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5bf69be72cef33e885cb90a9de2e5f08a4d7633455e5cdb20337320f62381191",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202460",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017102",
+          "type" : "CLASS",
+          "lbl" : "isolated focal cortical dysplasia type IIb"
+        },
+        {
+          "id" : "Orphanet:269008",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202460",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017102",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017102",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:269008",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN202460",
+            "MONDO:0017102",
+            "Orphanet:269008"
+          ]
+        }
+      ]
+    }
+  ]
+}

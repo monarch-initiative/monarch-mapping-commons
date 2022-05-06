@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b0867cb9fb2d63ad848d17497e3a2f19c4485d2afe0fbbef404ed6b0009b8195",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227116",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017330",
+          "type" : "CLASS",
+          "lbl" : "malignancy diagnosed during pregnancy"
+        },
+        {
+          "id" : "Orphanet:289385",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017330",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:289385",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227116",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017330",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017330",
+            "Orphanet:289385",
+            "UMLS:CN227116"
+          ]
+        }
+      ]
+    }
+  ]
+}

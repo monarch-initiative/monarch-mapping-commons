@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3b219fcda9307a6211a3c108ced2556c7865fe15f25b6f598f2a92bff98160a3",
+      "nodes" : [
+        {
+          "id" : "MESH:C564087",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1839577",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010697",
+          "type" : "CLASS",
+          "lbl" : "ophthalmoplegia, external, and myopia"
+        },
+        {
+          "id" : "OMIM:311000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010697",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:311000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1839577",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010697",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564087",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010697",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:311000",
+            "MONDO:0010697",
+            "UMLS:C1839577",
+            "MESH:C564087"
+          ]
+        }
+      ]
+    }
+  ]
+}

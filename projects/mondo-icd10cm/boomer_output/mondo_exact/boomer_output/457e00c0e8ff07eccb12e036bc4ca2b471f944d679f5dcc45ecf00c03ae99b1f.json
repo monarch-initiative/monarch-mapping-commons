@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:457e00c0e8ff07eccb12e036bc4ca2b471f944d679f5dcc45ecf00c03ae99b1f",
+      "nodes" : [
+        {
+          "id" : "MESH:C535875",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1855164",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009602",
+          "type" : "CLASS",
+          "lbl" : "metaphyseal modeling abnormality, skin lesions, and spastic paraplegia"
+        },
+        {
+          "id" : "OMIM:250500",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1855164",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535875",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009602",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:250500",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C535875",
+            "MONDO:0009602",
+            "UMLS:C1855164",
+            "OMIM:250500"
+          ]
+        }
+      ]
+    }
+  ]
+}

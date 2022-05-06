@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:550f375ec77367dc6b8e969e69afa4e2e5c3fcf2ed85202937ae5356ab4abc07",
+      "nodes" : [
+        {
+          "id" : "MESH:C535449",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016911",
+          "type" : "CLASS",
+          "lbl" : "partial deletion of the long arm of chromosome 13"
+        },
+        {
+          "id" : "NCIT:C36497",
+          "type" : "CLASS",
+          "lbl" : "Loss of Chromosome 13q"
+        },
+        {
+          "id" : "Orphanet:262101",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016911",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C36497",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535449",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016911",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016911",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:262101",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C36497",
+            "MONDO:0016911",
+            "MESH:C535449",
+            "Orphanet:262101"
+          ]
+        }
+      ]
+    }
+  ]
+}

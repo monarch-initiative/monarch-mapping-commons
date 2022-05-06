@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ca80c88811531d66760011d430e474d253a382dc3960c4ca4f2778f102f371f6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334318",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5658",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003570",
+          "type" : "CLASS",
+          "lbl" : "lipid-rich carcinoma"
+        },
+        {
+          "id" : "NCIT:C4152",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5658",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003570",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003570",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4152",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334318",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003570",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5658",
+            "MONDO:0003570",
+            "NCIT:C4152",
+            "UMLS:C0334318"
+          ]
+        }
+      ]
+    }
+  ]
+}

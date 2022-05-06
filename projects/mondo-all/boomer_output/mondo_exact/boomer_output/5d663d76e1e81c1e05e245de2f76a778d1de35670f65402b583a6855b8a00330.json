@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5d663d76e1e81c1e05e245de2f76a778d1de35670f65402b583a6855b8a00330",
+      "nodes" : [
+        {
+          "id" : "MESH:C566193",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1862101",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007224",
+          "type" : "CLASS",
+          "lbl" : "brachydactyly, type E, with atrial septal defect, type 2"
+        },
+        {
+          "id" : "OMIM:113301",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007224",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:113301",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566193",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007224",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1862101",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007224",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:113301",
+            "MONDO:0007224",
+            "MESH:C566193",
+            "UMLS:C1862101"
+          ]
+        }
+      ]
+    }
+  ]
+}

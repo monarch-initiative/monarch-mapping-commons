@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9825c6da27977ba1782c6b5f2f19dbb3e2e78ab28aa02aa1f6fa7652785b5cce",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2751938",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C567853",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:603513",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:619026",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0033613",
+          "type" : "CLASS",
+          "lbl" : "neurodevelopmental disorder with progressive spasticity and brain white matter abnormalities"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0033613",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603513",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0033613",
+          "pred" : "siblingOf",
+          "obj" : "OMIM:619026",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567853",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0033613",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2751938",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0033613",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:603513",
+            "MONDO:0033613",
+            "MESH:C567853",
+            "UMLS:C2751938"
+          ]
+        }
+      ]
+    }
+  ]
+}

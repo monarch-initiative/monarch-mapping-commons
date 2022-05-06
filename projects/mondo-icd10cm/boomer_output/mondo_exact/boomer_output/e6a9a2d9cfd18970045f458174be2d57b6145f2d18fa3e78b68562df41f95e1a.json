@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e6a9a2d9cfd18970045f458174be2d57b6145f2d18fa3e78b68562df41f95e1a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0598798",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005157",
+          "type" : "CLASS",
+          "lbl" : "lymphoid neoplasm"
+        },
+        {
+          "id" : "NCIT:C7065",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0598798",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005157",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005157",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7065",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0598798",
+            "MONDO:0005157",
+            "NCIT:C7065"
+          ]
+        }
+      ]
+    }
+  ]
+}

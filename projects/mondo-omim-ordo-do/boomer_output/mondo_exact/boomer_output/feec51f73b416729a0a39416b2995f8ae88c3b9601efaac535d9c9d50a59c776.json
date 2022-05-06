@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:feec51f73b416729a0a39416b2995f8ae88c3b9601efaac535d9c9d50a59c776",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204056",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017924",
+          "type" : "CLASS",
+          "lbl" : "central nervous system calcification-deafness-tubular acidosis-anemia syndrome"
+        },
+        {
+          "id" : "Orphanet:3240",
+          "type" : "CLASS",
+          "lbl" : "Central nervous system calcification-deafness-tubular acidosis-anemia syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN204056",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017924",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017924",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3240",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN204056",
+            "MONDO:0017924",
+            "Orphanet:3240"
+          ]
+        }
+      ]
+    }
+  ]
+}

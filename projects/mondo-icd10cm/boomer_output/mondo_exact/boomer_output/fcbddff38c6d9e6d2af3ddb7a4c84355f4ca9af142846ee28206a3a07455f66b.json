@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fcbddff38c6d9e6d2af3ddb7a4c84355f4ca9af142846ee28206a3a07455f66b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334451",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7615",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004309",
+          "type" : "CLASS",
+          "lbl" : "sarcomatosis"
+        },
+        {
+          "id" : "NCIT:C4243",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004309",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4243",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7615",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004309",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334451",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004309",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4243",
+            "MONDO:0004309",
+            "UMLS:C0334451",
+            "DOID:7615"
+          ]
+        }
+      ]
+    }
+  ]
+}

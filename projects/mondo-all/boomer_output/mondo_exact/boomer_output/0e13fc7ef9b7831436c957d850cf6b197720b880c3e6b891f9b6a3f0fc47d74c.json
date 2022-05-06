@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0e13fc7ef9b7831436c957d850cf6b197720b880c3e6b891f9b6a3f0fc47d74c",
+      "nodes" : [
+        {
+          "id" : "MESH:C537977",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859354",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008904",
+          "type" : "CLASS",
+          "lbl" : "camptomelic syndrome, long-limb type"
+        },
+        {
+          "id" : "OMIM:211990",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C537977",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008904",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008904",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:211990",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1859354",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008904",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008904",
+            "MESH:C537977",
+            "OMIM:211990",
+            "UMLS:C1859354"
+          ]
+        }
+      ]
+    }
+  ]
+}

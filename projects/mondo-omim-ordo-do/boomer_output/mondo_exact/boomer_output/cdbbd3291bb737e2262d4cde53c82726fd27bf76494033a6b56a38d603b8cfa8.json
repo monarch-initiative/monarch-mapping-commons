@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cdbbd3291bb737e2262d4cde53c82726fd27bf76494033a6b56a38d603b8cfa8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0155582",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:82523003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001899",
+          "type" : "CLASS",
+          "lbl" : "rheumatic congestive heart failure"
+        },
+        {
+          "id" : "ICD10CM:I09.81",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:14172",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:14172",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001899",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:82523003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001899",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:I09.81",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001899",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0155582",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001899",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0155582",
+            "SCTID:82523003",
+            "DOID:14172",
+            "MONDO:0001899",
+            "ICD10CM:I09.81"
+          ]
+        }
+      ]
+    }
+  ]
+}

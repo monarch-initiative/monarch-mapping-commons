@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b76c01622e42037a4b518a3c83669c0fa86d277209dd6a5dcfdbd4856928918a",
+      "nodes" : [
+        {
+          "id" : "DOID:0111328",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013665",
+          "type" : "CLASS",
+          "lbl" : "epilepsy, juvenile myoclonic, susceptibility to, 9"
+        },
+        {
+          "id" : "OMIM:614280",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013665",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614280",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111328",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013665",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013665",
+            "OMIM:614280",
+            "DOID:0111328"
+          ]
+        }
+      ]
+    }
+  ]
+}

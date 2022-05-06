@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6992be21aed26a2f1d0cfabd81a65d4f1b104227ac64d230b9f212867fda1fa6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3551954",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070238",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011829",
+          "type" : "CLASS",
+          "lbl" : "coenzyme Q10 deficiency, primary, 1"
+        },
+        {
+          "id" : "OMIM:607426",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3551954",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011829",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070238",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011829",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011829",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607426",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011829",
+            "UMLS:C3551954",
+            "OMIM:607426",
+            "DOID:0070238"
+          ]
+        }
+      ]
+    }
+  ]
+}

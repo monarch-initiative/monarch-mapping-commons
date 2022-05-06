@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b90b03a92f7087db55216c665fe4d4ccfe87967cdb24796d32287e33bb2931c0",
+      "nodes" : [
+        {
+          "id" : "MESH:C563349",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1832465",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011039",
+          "type" : "CLASS",
+          "lbl" : "atrophia maculosa varioliformis cutis, familial"
+        },
+        {
+          "id" : "OMIM:601341",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1832465",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011039",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563349",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011039",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011039",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601341",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1832465",
+            "MONDO:0011039",
+            "MESH:C563349",
+            "OMIM:601341"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:21ae85b74554c934329163b78b3893d69fb0dca2e065f81e21f85119439c1c8e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809858",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014239",
+          "type" : "CLASS",
+          "lbl" : "testicular anomalies with or without congenital heart disease"
+        },
+        {
+          "id" : "OMIM:615542",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014239",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615542",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3809858",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014239",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014239",
+            "OMIM:615542",
+            "UMLS:C3809858"
+          ]
+        }
+      ]
+    }
+  ]
+}

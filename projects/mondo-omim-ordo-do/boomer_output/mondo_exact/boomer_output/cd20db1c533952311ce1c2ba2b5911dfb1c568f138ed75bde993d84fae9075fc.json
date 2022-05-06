@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cd20db1c533952311ce1c2ba2b5911dfb1c568f138ed75bde993d84fae9075fc",
+      "nodes" : [
+        {
+          "id" : "SCTID:1086871000119109",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0392037",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:B88.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024303",
+          "type" : "CLASS",
+          "lbl" : "external hirudiniasis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:B88.3",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024303",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:1086871000119109",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024303",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0392037",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024303",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024303",
+            "ICD10CM:B88.3",
+            "SCTID:1086871000119109",
+            "UMLS:C0392037"
+          ]
+        }
+      ]
+    }
+  ]
+}

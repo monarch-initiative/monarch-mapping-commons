@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0bd82287423b8162c16153623da0d5d5c8ac927e7da624fffc3b2051d75c674b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1855733",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:99811",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C537394",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:8000011",
+          "type" : "CLASS",
+          "lbl" : "visceral neuropathy, familial, 1, autosomal recessive"
+        },
+        {
+          "id" : "OMIM:243180",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:8000011",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:243180",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1855733",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:8000011",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:8000011",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99811",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537394",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:8000011",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:99811",
+            "MESH:C537394",
+            "MONDO:8000011",
+            "OMIM:243180",
+            "UMLS:C1855733"
+          ]
+        }
+      ]
+    }
+  ]
+}

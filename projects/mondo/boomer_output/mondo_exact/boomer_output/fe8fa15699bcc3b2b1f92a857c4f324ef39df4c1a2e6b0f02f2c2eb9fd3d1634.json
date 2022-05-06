@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fe8fa15699bcc3b2b1f92a857c4f324ef39df4c1a2e6b0f02f2c2eb9fd3d1634",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207418",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020521",
+          "type" : "CLASS",
+          "lbl" : "Ehlers-Danlos syndrome type 7A"
+        },
+        {
+          "id" : "Orphanet:99875",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN207418",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020521",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020521",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99875",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020521",
+            "UMLS:CN207418",
+            "Orphanet:99875"
+          ]
+        }
+      ]
+    }
+  ]
+}

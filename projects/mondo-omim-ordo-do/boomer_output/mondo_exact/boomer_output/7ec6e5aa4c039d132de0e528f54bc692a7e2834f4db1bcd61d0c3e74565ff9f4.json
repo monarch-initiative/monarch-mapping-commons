@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7ec6e5aa4c039d132de0e528f54bc692a7e2834f4db1bcd61d0c3e74565ff9f4",
+      "nodes" : [
+        {
+          "id" : "SCTID:92206006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0347482",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021528",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of male breast"
+        },
+        {
+          "id" : "NCIT:C4620",
+          "type" : "CLASS",
+          "lbl" : "Benign Male Breast Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021528",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4620",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0347482",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021528",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92206006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021528",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021528",
+            "NCIT:C4620",
+            "UMLS:C0347482",
+            "SCTID:92206006"
+          ]
+        }
+      ]
+    }
+  ]
+}

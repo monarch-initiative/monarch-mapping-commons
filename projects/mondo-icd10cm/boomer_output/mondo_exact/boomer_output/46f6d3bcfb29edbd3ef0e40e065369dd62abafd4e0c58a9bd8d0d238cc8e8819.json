@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:46f6d3bcfb29edbd3ef0e40e065369dd62abafd4e0c58a9bd8d0d238cc8e8819",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1867406",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008350",
+          "type" : "CLASS",
+          "lbl" : "pulmonic stenosis and deafness"
+        },
+        {
+          "id" : "OMIM:178651",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1867406",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008350",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:178651",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008350",
+            "UMLS:C1867406",
+            "OMIM:178651"
+          ]
+        }
+      ]
+    }
+  ]
+}

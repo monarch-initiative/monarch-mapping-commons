@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e28bab6404ec488d4feef037d040eeaa100bc896974affb8a1ddfb79e4cb5742",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202527",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017128",
+          "type" : "CLASS",
+          "lbl" : "inherited digestive tract tumor"
+        },
+        {
+          "id" : "Orphanet:271835",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017128",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:271835",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202527",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017128",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017128",
+            "Orphanet:271835",
+            "UMLS:CN202527"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fe52328b71cee5ee9f1dc530b01a8b1a4a3991662258248aa691c11d32fd39d1",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN199364",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015334",
+          "type" : "CLASS",
+          "lbl" : "branchial arch or oral-acral syndrome"
+        },
+        {
+          "id" : "Orphanet:139036",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015334",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:139036",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN199364",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015334",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:139036",
+            "MONDO:0015334",
+            "UMLS:CN199364"
+          ]
+        }
+      ]
+    }
+  ]
+}

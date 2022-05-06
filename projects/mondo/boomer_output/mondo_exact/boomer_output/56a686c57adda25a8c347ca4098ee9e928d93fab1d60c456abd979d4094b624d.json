@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:56a686c57adda25a8c347ca4098ee9e928d93fab1d60c456abd979d4094b624d",
+      "nodes" : [
+        {
+          "id" : "SCTID:450919004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN199216",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015281",
+          "type" : "CLASS",
+          "lbl" : "atrial standstill"
+        },
+        {
+          "id" : "Orphanet:1344",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015281",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1344",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN199216",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015281",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:450919004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015281",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:1344",
+            "MONDO:0015281",
+            "UMLS:CN199216",
+            "SCTID:450919004"
+          ]
+        }
+      ]
+    }
+  ]
+}

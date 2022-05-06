@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:683930acb9f1c7b53497e3aadc5d6d714ca5b4387e276aa973d0571095fe6187",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202037",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016781",
+          "type" : "CLASS",
+          "lbl" : "maternal 14q32.2 microdeletion syndrome"
+        },
+        {
+          "id" : "Orphanet:254528",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016781",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:254528",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202037",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016781",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016781",
+            "Orphanet:254528",
+            "UMLS:CN202037"
+          ]
+        }
+      ]
+    }
+  ]
+}

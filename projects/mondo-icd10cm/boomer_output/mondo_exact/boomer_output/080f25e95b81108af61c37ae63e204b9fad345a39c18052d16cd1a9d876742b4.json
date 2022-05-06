@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:080f25e95b81108af61c37ae63e204b9fad345a39c18052d16cd1a9d876742b4",
+      "nodes" : [
+        {
+          "id" : "MESH:C565086",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1852008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007475",
+          "type" : "CLASS",
+          "lbl" : "duodenal ulcer, hyperpepsinogenemic 1"
+        },
+        {
+          "id" : "OMIM:126850",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007475",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:126850",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565086",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007475",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1852008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007475",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007475",
+            "OMIM:126850",
+            "MESH:C565086",
+            "UMLS:C1852008"
+          ]
+        }
+      ]
+    }
+  ]
+}

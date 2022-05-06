@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:23c495214415d5d8f8a985a67b231a95e1c9b6a8293ab7f2de60862d613a4c92",
+      "nodes" : [
+        {
+          "id" : "SCTID:198029003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0156307",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0022293",
+          "type" : "CLASS",
+          "lbl" : "vascular disorder of penis"
+        },
+        {
+          "id" : "NCIT:C35218",
+          "type" : "CLASS",
+          "lbl" : "Penile Vascular Disorder"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0156307",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022293",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0022293",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35218",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:198029003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022293",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0156307",
+            "MONDO:0022293",
+            "NCIT:C35218",
+            "SCTID:198029003"
+          ]
+        }
+      ]
+    }
+  ]
+}

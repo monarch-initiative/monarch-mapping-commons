@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d911f29fe9f7c34a4a4c85b8fda1a26e6b7323026dc3aabaa2f1881ca8ae465c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1282974",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:359725000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C131688",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015630",
+          "type" : "CLASS",
+          "lbl" : "von Willebrand disease type 2M"
+        },
+        {
+          "id" : "Orphanet:166090",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:359729006",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1282974",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015630",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015630",
+          "pred" : "siblingOf",
+          "obj" : "SCTID:359725000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:359729006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015630",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015630",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:166090",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015630",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C131688",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015630",
+            "SCTID:359729006",
+            "UMLS:C1282974",
+            "Orphanet:166090",
+            "NCIT:C131688"
+          ]
+        }
+      ]
+    }
+  ]
+}

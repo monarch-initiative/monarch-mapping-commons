@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fe00b3ca6459826c4ff29ac97206eb27df19d692ce63ecd44de0697fa8aa670a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332066",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005104",
+          "type" : "CLASS",
+          "lbl" : "aJCC grade 1 sarcoma"
+        },
+        {
+          "id" : "NCIT:C9419",
+          "type" : "CLASS",
+          "lbl" : "AJCC Grade 1 Sarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332066",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005104",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005104",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9419",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332066",
+            "MONDO:0005104",
+            "NCIT:C9419"
+          ]
+        }
+      ]
+    }
+  ]
+}

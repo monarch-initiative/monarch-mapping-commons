@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4f9cc6bf26d7800be14b698e9902b0c5552c8595e8de425b3c202f78e8d8807d",
+      "nodes" : [
+        {
+          "id" : "MESH:C567867",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2752061",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013033",
+          "type" : "CLASS",
+          "lbl" : "cerebral palsy, spastic quadriplegic, 2"
+        },
+        {
+          "id" : "OMIM:612900",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2752061",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013033",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567867",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013033",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013033",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:612900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2752061",
+            "MONDO:0013033",
+            "MESH:C567867",
+            "OMIM:612900"
+          ]
+        }
+      ]
+    }
+  ]
+}

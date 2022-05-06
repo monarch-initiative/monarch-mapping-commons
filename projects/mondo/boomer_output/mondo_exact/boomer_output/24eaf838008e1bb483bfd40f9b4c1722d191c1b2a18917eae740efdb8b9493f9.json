@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:24eaf838008e1bb483bfd40f9b4c1722d191c1b2a18917eae740efdb8b9493f9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333499",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:371",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002749",
+          "type" : "CLASS",
+          "lbl" : "extracranial neuroblastoma"
+        },
+        {
+          "id" : "NCIT:C5437",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002749",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5437",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333499",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002749",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:371",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002749",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002749",
+            "UMLS:C1333499",
+            "NCIT:C5437",
+            "DOID:371"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3fbca321f18566422b0e52d82dd407dadbc658e2513a708335ed4c0630c77d20",
+      "nodes" : [
+        {
+          "id" : "DOID:0111380",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN236719",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:280200",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN202701",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017219",
+          "type" : "CLASS",
+          "lbl" : "microform holoprosencephaly"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN236719",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017219",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017219",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:280200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111380",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017219",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017219",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN202701",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN236719",
+            "MONDO:0017219",
+            "Orphanet:280200",
+            "DOID:0111380"
+          ]
+        }
+      ]
+    }
+  ]
+}

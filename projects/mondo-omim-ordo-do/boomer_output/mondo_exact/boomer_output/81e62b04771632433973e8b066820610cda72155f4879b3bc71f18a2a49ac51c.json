@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:81e62b04771632433973e8b066820610cda72155f4879b3bc71f18a2a49ac51c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0750071",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060774",
+          "type" : "CLASS",
+          "lbl" : "vaginal fibroepithelial polyp"
+        },
+        {
+          "id" : "NCIT:C4948",
+          "type" : "CLASS",
+          "lbl" : "Vaginal Fibroepithelial Stromal Polyp"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0750071",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060774",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060774",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4948",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0060774",
+            "UMLS:C0750071",
+            "NCIT:C4948"
+          ]
+        }
+      ]
+    }
+  ]
+}

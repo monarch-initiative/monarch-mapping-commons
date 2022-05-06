@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e0731c154da0fc66f443dd8914376c69b9bc7d4ea9f74e03cd00e334885b7e46",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN895589",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060666",
+          "type" : "CLASS",
+          "lbl" : "hypotonia, ataxia, developmental delay, and tooth enamel defect syndrome"
+        },
+        {
+          "id" : "OMIM:617915",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN895589",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060666",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060666",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617915",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN895589",
+            "MONDO:0060666",
+            "OMIM:617915"
+          ]
+        }
+      ]
+    }
+  ]
+}

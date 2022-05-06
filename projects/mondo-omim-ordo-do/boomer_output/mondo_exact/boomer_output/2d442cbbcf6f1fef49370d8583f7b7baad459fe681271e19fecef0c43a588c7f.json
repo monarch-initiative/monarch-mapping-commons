@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2d442cbbcf6f1fef49370d8583f7b7baad459fe681271e19fecef0c43a588c7f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279674",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6740",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006142",
+          "type" : "CLASS",
+          "lbl" : "cervical small cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C7982",
+          "type" : "CLASS",
+          "lbl" : "Cervical Small Cell Neuroendocrine Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0279674",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006142",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006142",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7982",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6740",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006142",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0279674",
+            "MONDO:0006142",
+            "NCIT:C7982",
+            "DOID:6740"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:90812b4f6a428a033c52aef5a87367c1e0b9b7eac46cb54732cc982cc2a3763b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1860403",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:193240",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C536923",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:2997",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008665",
+          "type" : "CLASS",
+          "lbl" : "ptosis-vocal cord paralysis syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008665",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2997",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1860403",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008665",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008665",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:193240",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536923",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008665",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:2997",
+            "UMLS:C1860403",
+            "MESH:C536923",
+            "OMIM:193240",
+            "MONDO:0008665"
+          ]
+        }
+      ]
+    }
+  ]
+}

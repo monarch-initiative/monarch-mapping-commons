@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ca5fa59d7f7d9791a2214868037934a3ce86653232c864ce1f184542c76d4421",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0016978",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021253",
+          "type" : "CLASS",
+          "lbl" : "gallbladder neoplasm"
+        },
+        {
+          "id" : "NCIT:C3048",
+          "type" : "CLASS",
+          "lbl" : "Gallbladder Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021253",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3048",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0016978",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021253",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0016978",
+            "MONDO:0021253",
+            "NCIT:C3048"
+          ]
+        }
+      ]
+    }
+  ]
+}

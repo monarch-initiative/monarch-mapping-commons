@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:628d44e27b47e604d7896dc2f810ee97f9a4dacf23e1435187e9ee2b047bac60",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332328",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:11241",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001237",
+          "type" : "CLASS",
+          "lbl" : "appendix lymphoma"
+        },
+        {
+          "id" : "NCIT:C5513",
+          "type" : "CLASS",
+          "lbl" : "Appendix Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:11241",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001237",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001237",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5513",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332328",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001237",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001237",
+            "DOID:11241",
+            "NCIT:C5513",
+            "UMLS:C1332328"
+          ]
+        }
+      ]
+    }
+  ]
+}

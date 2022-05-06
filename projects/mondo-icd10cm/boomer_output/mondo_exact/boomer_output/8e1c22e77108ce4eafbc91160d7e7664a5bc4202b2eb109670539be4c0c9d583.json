@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8e1c22e77108ce4eafbc91160d7e7664a5bc4202b2eb109670539be4c0c9d583",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237631",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018601",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant myopia-midfacial retrusion-sensorineural hearing loss-rhizomelic dysplasia syndrome"
+        },
+        {
+          "id" : "Orphanet:440354",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237631",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018601",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018601",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:440354",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN237631",
+            "MONDO:0018601",
+            "Orphanet:440354"
+          ]
+        }
+      ]
+    }
+  ]
+}

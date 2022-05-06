@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1320476c9c39136326b7bfc1970a7e89f52d850208efc7cf17a8130b8018193e",
+      "nodes" : [
+        {
+          "id" : "MESH:D014134",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0040582",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021210",
+          "type" : "CLASS",
+          "lbl" : "trachea neoplasm"
+        },
+        {
+          "id" : "NCIT:C3419",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021210",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3419",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D014134",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021210",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0040582",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021210",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021210",
+            "NCIT:C3419",
+            "MESH:D014134",
+            "UMLS:C0040582"
+          ]
+        }
+      ]
+    }
+  ]
+}

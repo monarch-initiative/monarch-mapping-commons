@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:798cd99776391abfc630142202c762bba5fdf8d64945b33df18c5b19cc8d51ac",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1318533",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020115",
+          "type" : "CLASS",
+          "lbl" : "secondary polycythemia"
+        },
+        {
+          "id" : "NCIT:C27178",
+          "type" : "CLASS",
+          "lbl" : "Secondary Polycythemia"
+        },
+        {
+          "id" : "Orphanet:98428",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020115",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98428",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1318533",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020115",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020115",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27178",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020115",
+            "Orphanet:98428",
+            "UMLS:C1318533",
+            "NCIT:C27178"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:70bed9223a2420c8e6e9c874ac506cffa61c0127863c39473794d9ab1dacc8b9",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201233",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016368",
+          "type" : "CLASS",
+          "lbl" : "Rothmund-Thomson syndrome type 1"
+        },
+        {
+          "id" : "Orphanet:221008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:618625",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016368",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:221008",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016368",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:618625",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201233",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016368",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:221008",
+            "MONDO:0016368",
+            "OMIM:618625",
+            "UMLS:CN201233"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c9d3466e941dd97e1455bcd999e1215488317b32f61e5bd422664c4e9391c6e6",
+      "nodes" : [
+        {
+          "id" : "MESH:C535568",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008205",
+          "type" : "CLASS",
+          "lbl" : "patella aplasia/hypoplasia"
+        },
+        {
+          "id" : "Orphanet:86789",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:168860",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008205",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:86789",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535568",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008205",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008205",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:168860",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:86789",
+            "MONDO:0008205",
+            "MESH:C535568",
+            "OMIM:168860"
+          ]
+        }
+      ]
+    }
+  ]
+}

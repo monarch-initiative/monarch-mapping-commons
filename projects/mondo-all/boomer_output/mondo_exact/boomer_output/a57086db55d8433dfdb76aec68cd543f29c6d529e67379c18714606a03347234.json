@@ -1,0 +1,76 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a57086db55d8433dfdb76aec68cd543f29c6d529e67379c18714606a03347234",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN544763",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019218",
+          "type" : "CLASS",
+          "lbl" : "inborn disorder of bile acid synthesis"
+        },
+        {
+          "id" : "Orphanet:79168",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN231736",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019218",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN231736",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019218",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79168",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN544763",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019218",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:79168",
+            "MONDO:0019218",
+            "UMLS:CN544763"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d7f51ecad3626e016910f0c67d8a1a01354ee2a61130f5e3a5f4ac68a1889d98",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809513",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014187",
+          "type" : "CLASS",
+          "lbl" : "aortic aneurysm, familial thoracic 8"
+        },
+        {
+          "id" : "OMIM:615436",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014187",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615436",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3809513",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014187",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014187",
+            "OMIM:615436",
+            "UMLS:C3809513"
+          ]
+        }
+      ]
+    }
+  ]
+}

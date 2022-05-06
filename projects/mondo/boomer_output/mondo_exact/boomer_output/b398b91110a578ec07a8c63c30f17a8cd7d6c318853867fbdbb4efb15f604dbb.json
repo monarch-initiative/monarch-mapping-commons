@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b398b91110a578ec07a8c63c30f17a8cd7d6c318853867fbdbb4efb15f604dbb",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227592",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019225",
+          "type" : "CLASS",
+          "lbl" : "gluconeogenesis disorder"
+        },
+        {
+          "id" : "Orphanet:79177",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227592",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019225",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019225",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79177",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN227592",
+            "MONDO:0019225",
+            "Orphanet:79177"
+          ]
+        }
+      ]
+    }
+  ]
+}

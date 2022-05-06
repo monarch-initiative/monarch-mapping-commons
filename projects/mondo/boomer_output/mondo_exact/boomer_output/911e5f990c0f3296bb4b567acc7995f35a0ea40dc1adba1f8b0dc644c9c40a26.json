@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:911e5f990c0f3296bb4b567acc7995f35a0ea40dc1adba1f8b0dc644c9c40a26",
+      "nodes" : [
+        {
+          "id" : "SCTID:276533002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0349468",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024263",
+          "type" : "CLASS",
+          "lbl" : "neonatal aspiration syndrome"
+        },
+        {
+          "id" : "NCIT:C118312",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024263",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C118312",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0349468",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024263",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:276533002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024263",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024263",
+            "NCIT:C118312",
+            "UMLS:C0349468",
+            "SCTID:276533002"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c8e634881f0e7819016542afbb78d36cccaa5bd2739f96c5a69ec8d2c85ab7bd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336955",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5908",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003698",
+          "type" : "CLASS",
+          "lbl" : "penis verrucous carcinoma"
+        },
+        {
+          "id" : "NCIT:C6982",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5908",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003698",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336955",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003698",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003698",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6982",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003698",
+            "DOID:5908",
+            "UMLS:C1336955",
+            "NCIT:C6982"
+          ]
+        }
+      ]
+    }
+  ]
+}

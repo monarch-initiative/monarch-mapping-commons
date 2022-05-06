@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:baff264d4a6c6f9896e6608937cc236e5aa94288a8f49669b6ad2d4daed01f97",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280216",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013643",
+          "type" : "CLASS",
+          "lbl" : "hyperuricemic nephropathy, familial juvenile type 3"
+        },
+        {
+          "id" : "OMIM:614227",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013643",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614227",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3280216",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013643",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013643",
+            "OMIM:614227",
+            "UMLS:C3280216"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3bfe87c2019a5a44a22af505cc89625ffae24ba71e3d09aa3732e692f9a48b66",
+      "nodes" : [
+        {
+          "id" : "DOID:0110698",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011549",
+          "type" : "CLASS",
+          "lbl" : "hypotrichosis 1"
+        },
+        {
+          "id" : "OMIM:605389",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011549",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:605389",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110698",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011549",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011549",
+            "OMIM:605389",
+            "DOID:0110698"
+          ]
+        }
+      ]
+    }
+  ]
+}

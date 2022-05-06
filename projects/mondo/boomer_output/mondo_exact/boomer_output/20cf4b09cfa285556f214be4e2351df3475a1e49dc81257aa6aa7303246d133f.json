@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:20cf4b09cfa285556f214be4e2351df3475a1e49dc81257aa6aa7303246d133f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225218",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014761",
+          "type" : "CLASS",
+          "lbl" : "hereditary pediatric Behçet-like disease"
+        },
+        {
+          "id" : "Orphanet:476102",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616744",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014761",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616744",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225218",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014761",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014761",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:476102",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:616744",
+            "MONDO:0014761",
+            "UMLS:C4225218",
+            "Orphanet:476102"
+          ]
+        }
+      ]
+    }
+  ]
+}

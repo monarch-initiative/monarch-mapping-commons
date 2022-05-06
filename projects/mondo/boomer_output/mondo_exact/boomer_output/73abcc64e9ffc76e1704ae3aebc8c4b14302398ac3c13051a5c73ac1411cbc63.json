@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:73abcc64e9ffc76e1704ae3aebc8c4b14302398ac3c13051a5c73ac1411cbc63",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4540040",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111406",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0054739",
+          "type" : "CLASS",
+          "lbl" : "Fraser syndrome 3"
+        },
+        {
+          "id" : "OMIM:617667",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0111406",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0054739",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4540040",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0054739",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0054739",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617667",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0111406",
+            "MONDO:0054739",
+            "UMLS:C4540040",
+            "OMIM:617667"
+          ]
+        }
+      ]
+    }
+  ]
+}

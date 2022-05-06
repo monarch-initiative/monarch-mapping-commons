@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8ce4c943da808523973bd0a38b21e61e0b5362fbf19060396a1cc30f0002c18a",
+      "nodes" : [
+        {
+          "id" : "MESH:D065172",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:9899009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044098",
+          "type" : "CLASS",
+          "lbl" : "ovarian ectopic pregnancy"
+        },
+        {
+          "id" : "NCIT:C92945",
+          "type" : "CLASS",
+          "lbl" : "Ovarian Pregnancy"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:9899009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044098",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D065172",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044098",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044098",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C92945",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0044098",
+            "SCTID:9899009",
+            "NCIT:C92945",
+            "MESH:D065172"
+          ]
+        }
+      ]
+    }
+  ]
+}

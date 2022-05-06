@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8a7cadfb1da35dc83b971af7143fe890c6fb99c0c5786b177a8800fafc028828",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519827",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3749",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002763",
+          "type" : "CLASS",
+          "lbl" : "urethral verrucous carcinoma"
+        },
+        {
+          "id" : "NCIT:C39874",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3749",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002763",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1519827",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002763",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002763",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39874",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002763",
+            "UMLS:C1519827",
+            "DOID:3749",
+            "NCIT:C39874"
+          ]
+        }
+      ]
+    }
+  ]
+}

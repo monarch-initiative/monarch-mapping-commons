@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5b49ad58d2506974b17054aaa943ea397b80ff3a6642bb0c2a05ffd5b11e5af6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2713443",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018188",
+          "type" : "CLASS",
+          "lbl" : "genetic intestinal polyposis"
+        },
+        {
+          "id" : "Orphanet:363314",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2713443",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018188",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018188",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:363314",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2713443",
+            "MONDO:0018188",
+            "Orphanet:363314"
+          ]
+        }
+      ]
+    }
+  ]
+}

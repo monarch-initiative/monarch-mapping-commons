@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:39613868b09d61a3a003eb080f4c6f998af6f0753f61087cb8fd023fe7b8c471",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237442",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018462",
+          "type" : "CLASS",
+          "lbl" : "Angelman syndrome due to imprinting defect in 15q11-q13"
+        },
+        {
+          "id" : "Orphanet:411515",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237442",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018462",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018462",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:411515",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018462",
+            "UMLS:CN237442",
+            "Orphanet:411515"
+          ]
+        }
+      ]
+    }
+  ]
+}

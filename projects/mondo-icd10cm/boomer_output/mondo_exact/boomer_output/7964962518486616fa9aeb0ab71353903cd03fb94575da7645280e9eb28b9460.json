@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7964962518486616fa9aeb0ab71353903cd03fb94575da7645280e9eb28b9460",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226655",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015310",
+          "type" : "CLASS",
+          "lbl" : "syndromic optic nerve hypoplasia"
+        },
+        {
+          "id" : "Orphanet:137905",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015310",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:137905",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226655",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015310",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015310",
+            "Orphanet:137905",
+            "UMLS:CN226655"
+          ]
+        }
+      ]
+    }
+  ]
+}

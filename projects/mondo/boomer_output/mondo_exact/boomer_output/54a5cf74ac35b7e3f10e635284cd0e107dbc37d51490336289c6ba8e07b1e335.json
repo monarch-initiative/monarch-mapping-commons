@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:54a5cf74ac35b7e3f10e635284cd0e107dbc37d51490336289c6ba8e07b1e335",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN197503",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015163",
+          "type" : "CLASS",
+          "lbl" : "primary glomerular disease"
+        },
+        {
+          "id" : "Orphanet:102373",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015163",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:102373",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN197503",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015163",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015163",
+            "Orphanet:102373",
+            "UMLS:CN197503"
+          ]
+        }
+      ]
+    }
+  ]
+}

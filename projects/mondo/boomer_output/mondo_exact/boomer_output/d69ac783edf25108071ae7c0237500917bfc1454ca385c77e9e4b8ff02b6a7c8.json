@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d69ac783edf25108071ae7c0237500917bfc1454ca385c77e9e4b8ff02b6a7c8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1112570",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:L10.81",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018974",
+          "type" : "CLASS",
+          "lbl" : "paraneoplastic pemphigus"
+        },
+        {
+          "id" : "Orphanet:63455",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1112570",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018974",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018974",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:63455",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:L10.81",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018974",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018974",
+            "Orphanet:63455",
+            "UMLS:C1112570",
+            "ICD10CM:L10.81"
+          ]
+        }
+      ]
+    }
+  ]
+}

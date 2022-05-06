@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1574c67646fd6f75686bda3b0504c2bea675a8db284ab854c538470b17bebf5d",
+      "nodes" : [
+        {
+          "id" : "SCTID:92220004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0345615",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021493",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of minor salivary gland"
+        },
+        {
+          "id" : "NCIT:C4411",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0345615",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021493",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4411",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92220004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0345615",
+            "MONDO:0021493",
+            "NCIT:C4411",
+            "SCTID:92220004"
+          ]
+        }
+      ]
+    }
+  ]
+}

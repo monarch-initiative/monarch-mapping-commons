@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:51d9ad3a3078a10c8257aa0dc7d3813c80a5277647fa9a1db8af8fc6aa214d73",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN242088",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018711",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability-muscle weakness-short stature-facial dysmorphism syndrome"
+        },
+        {
+          "id" : "Orphanet:457365",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN242088",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018711",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018711",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:457365",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018711",
+            "UMLS:CN242088",
+            "Orphanet:457365"
+          ]
+        }
+      ]
+    }
+  ]
+}

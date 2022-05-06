@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:07573327c77132ad6565cc3d2094835841f447c541a374e8611bb54f3fa97c79",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1516403",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6428",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006132",
+          "type" : "CLASS",
+          "lbl" : "cervical adenoid basal carcinoma"
+        },
+        {
+          "id" : "NCIT:C40213",
+          "type" : "CLASS",
+          "lbl" : "Cervical Adenoid Basal Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6428",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006132",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006132",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40213",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1516403",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006132",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006132",
+            "DOID:6428",
+            "NCIT:C40213",
+            "UMLS:C1516403"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2bac6a4b6433f459aaeb5669079b26004be6bd5cb62df8b8c7d8e8ed94f18410",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334321",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5401",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003433",
+          "type" : "CLASS",
+          "lbl" : "water-clear cell adenoma"
+        },
+        {
+          "id" : "NCIT:C4155",
+          "type" : "CLASS",
+          "lbl" : "Parathyroid Gland Water-Clear Cell Adenoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003433",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4155",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334321",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003433",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5401",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003433",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003433",
+            "NCIT:C4155",
+            "UMLS:C0334321",
+            "DOID:5401"
+          ]
+        }
+      ]
+    }
+  ]
+}

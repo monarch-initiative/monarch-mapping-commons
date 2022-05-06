@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b94a533e925e3d68fa16056b07496ccfe5f8c155add5c91d98556d1411a42159",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333158",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6197",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003800",
+          "type" : "CLASS",
+          "lbl" : "conventional malignant hemangiopericytoma"
+        },
+        {
+          "id" : "NCIT:C9425",
+          "type" : "CLASS",
+          "lbl" : "Conventional Malignant Hemangiopericytoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6197",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003800",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003800",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9425",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333158",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003800",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003800",
+            "DOID:6197",
+            "NCIT:C9425",
+            "UMLS:C1333158"
+          ]
+        }
+      ]
+    }
+  ]
+}

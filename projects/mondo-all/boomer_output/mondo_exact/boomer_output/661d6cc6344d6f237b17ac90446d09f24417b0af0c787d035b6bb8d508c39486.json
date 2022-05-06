@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:661d6cc6344d6f237b17ac90446d09f24417b0af0c787d035b6bb8d508c39486",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1370800",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4896",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003193",
+          "type" : "CLASS",
+          "lbl" : "bile duct adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C27813",
+          "type" : "CLASS",
+          "lbl" : "Bile Duct Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003193",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27813",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1370800",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003193",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4896",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003193",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C27813",
+            "MONDO:0003193",
+            "UMLS:C1370800",
+            "DOID:4896"
+          ]
+        }
+      ]
+    }
+  ]
+}

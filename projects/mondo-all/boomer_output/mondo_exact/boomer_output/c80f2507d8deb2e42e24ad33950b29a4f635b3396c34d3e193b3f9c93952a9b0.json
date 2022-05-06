@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c80f2507d8deb2e42e24ad33950b29a4f635b3396c34d3e193b3f9c93952a9b0",
+      "nodes" : [
+        {
+          "id" : "MESH:C564004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1838656",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010812",
+          "type" : "CLASS",
+          "lbl" : "macrocytosis, familial"
+        },
+        {
+          "id" : "OMIM:600084",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010812",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600084",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1838656",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010812",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010812",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:600084",
+            "MONDO:0010812",
+            "UMLS:C1838656",
+            "MESH:C564004"
+          ]
+        }
+      ]
+    }
+  ]
+}

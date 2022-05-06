@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:11194605bac0aacaf7046d81b66dd1de8db1807e675ae223d0018b151ef172bc",
+      "nodes" : [
+        {
+          "id" : "MESH:C564999",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1850982",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007633",
+          "type" : "CLASS",
+          "lbl" : "Friedreich ataxia, so-called, with optic atrophy and sensorineural deafness"
+        },
+        {
+          "id" : "OMIM:136600",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1850982",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007633",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007633",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:136600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564999",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007633",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007633",
+            "UMLS:C1850982",
+            "OMIM:136600",
+            "MESH:C564999"
+          ]
+        }
+      ]
+    }
+  ]
+}

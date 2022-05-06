@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7df41d1cb673b389767ef97919a0f02f1ffa78fdc54462efc712a43de67eea33",
+      "nodes" : [
+        {
+          "id" : "MESH:C537401",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1848902",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010105",
+          "type" : "CLASS",
+          "lbl" : "teratoma, pineal"
+        },
+        {
+          "id" : "OMIM:273120",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1848902",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010105",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010105",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:273120",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537401",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010105",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1848902",
+            "MONDO:0010105",
+            "OMIM:273120",
+            "MESH:C537401"
+          ]
+        }
+      ]
+    }
+  ]
+}

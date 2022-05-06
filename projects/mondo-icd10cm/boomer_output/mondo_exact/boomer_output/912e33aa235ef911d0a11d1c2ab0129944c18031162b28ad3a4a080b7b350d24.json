@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:912e33aa235ef911d0a11d1c2ab0129944c18031162b28ad3a4a080b7b350d24",
+      "nodes" : [
+        {
+          "id" : "MONDO:0019751",
+          "type" : "CLASS",
+          "lbl" : "autoinflammatory syndrome"
+        },
+        {
+          "id" : "UMLS:C3267073",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C119050",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:93665",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3890737",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:M04-M04",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:M04-M04",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019751",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019751",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C3890737",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019751",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C119050",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3267073",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019751",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019751",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93665",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3267073",
+            "ICD10CM:M04-M04",
+            "NCIT:C119050",
+            "MONDO:0019751",
+            "Orphanet:93665"
+          ]
+        }
+      ]
+    }
+  ]
+}

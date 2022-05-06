@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2bc34f0313c1e8513a3380f0f86806724ef0cc91833af97b274e8b39c81bfa0a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4014605",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014389",
+          "type" : "CLASS",
+          "lbl" : "polyglucosan body myopathy 1 with or without immunodeficiency"
+        },
+        {
+          "id" : "Orphanet:397937",
+          "type" : "CLASS",
+          "lbl" : "Polyglucosan body myopathy type 1"
+        },
+        {
+          "id" : "OMIM:615895",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014389",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:397937",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4014605",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014389",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014389",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615895",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014389",
+            "Orphanet:397937",
+            "UMLS:C4014605",
+            "OMIM:615895"
+          ]
+        }
+      ]
+    }
+  ]
+}

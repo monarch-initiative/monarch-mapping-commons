@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d5fed38645b2c444c0a4a9ac88a674596dbb20a3b1275bb8a1ae56a5c85ac95d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809469",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111386",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014179",
+          "type" : "CLASS",
+          "lbl" : "inclusion body myopathy with early-onset Paget disease with or without frontotemporal dementia 3"
+        },
+        {
+          "id" : "OMIM:615424",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014179",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615424",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111386",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014179",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3809469",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014179",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:615424",
+            "MONDO:0014179",
+            "DOID:0111386",
+            "UMLS:C3809469"
+          ]
+        }
+      ]
+    }
+  ]
+}

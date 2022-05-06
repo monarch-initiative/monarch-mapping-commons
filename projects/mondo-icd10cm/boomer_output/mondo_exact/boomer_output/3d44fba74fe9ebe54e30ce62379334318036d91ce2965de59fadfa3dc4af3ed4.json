@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3d44fba74fe9ebe54e30ce62379334318036d91ce2965de59fadfa3dc4af3ed4",
+      "nodes" : [
+        {
+          "id" : "SCTID:92089006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0347236",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021446",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of epiglottis"
+        },
+        {
+          "id" : "NCIT:C4606",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0347236",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021446",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92089006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021446",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021446",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4606",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0347236",
+            "MONDO:0021446",
+            "SCTID:92089006",
+            "NCIT:C4606"
+          ]
+        }
+      ]
+    }
+  ]
+}

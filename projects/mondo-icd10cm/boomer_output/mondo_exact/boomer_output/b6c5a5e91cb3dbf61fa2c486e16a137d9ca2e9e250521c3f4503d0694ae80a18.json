@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b6c5a5e91cb3dbf61fa2c486e16a137d9ca2e9e250521c3f4503d0694ae80a18",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201495",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016493",
+          "type" : "CLASS",
+          "lbl" : "variant of Guillain-Barre syndrome"
+        },
+        {
+          "id" : "Orphanet:231413",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201495",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016493",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:231413",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016493",
+            "UMLS:CN201495",
+            "Orphanet:231413"
+          ]
+        }
+      ]
+    }
+  ]
+}

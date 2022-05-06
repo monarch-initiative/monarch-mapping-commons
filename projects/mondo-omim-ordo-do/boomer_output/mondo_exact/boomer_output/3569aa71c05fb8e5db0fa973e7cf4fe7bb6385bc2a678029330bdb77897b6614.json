@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3569aa71c05fb8e5db0fa973e7cf4fe7bb6385bc2a678029330bdb77897b6614",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150939",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013362",
+          "type" : "CLASS",
+          "lbl" : "THOC6-related developmental delay-microcephaly-facial dysmorphism syndrome"
+        },
+        {
+          "id" : "Orphanet:363444",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:613680",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013362",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613680",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013362",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:363444",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3150939",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013362",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:613680",
+            "MONDO:0013362",
+            "Orphanet:363444",
+            "UMLS:C3150939"
+          ]
+        }
+      ]
+    }
+  ]
+}

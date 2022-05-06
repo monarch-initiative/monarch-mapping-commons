@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b0b4c991be9031aec848878ac821f922b26aed06b5b316edd54ef03f272e1d7d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519845",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7242",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004162",
+          "type" : "CLASS",
+          "lbl" : "uterine corpus cellular leiomyoma"
+        },
+        {
+          "id" : "NCIT:C40163",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004162",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40163",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1519845",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004162",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7242",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004162",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C40163",
+            "MONDO:0004162",
+            "UMLS:C1519845",
+            "DOID:7242"
+          ]
+        }
+      ]
+    }
+  ]
+}

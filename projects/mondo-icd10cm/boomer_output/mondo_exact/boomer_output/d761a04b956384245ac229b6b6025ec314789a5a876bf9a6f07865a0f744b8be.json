@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d761a04b956384245ac229b6b6025ec314789a5a876bf9a6f07865a0f744b8be",
+      "nodes" : [
+        {
+          "id" : "MESH:C537771",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:33225004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019938",
+          "type" : "CLASS",
+          "lbl" : "anorectal malformation"
+        },
+        {
+          "id" : "Orphanet:96346",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C537771",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019938",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019938",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:96346",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:33225004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019938",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C537771",
+            "MONDO:0019938",
+            "Orphanet:96346",
+            "SCTID:33225004"
+          ]
+        }
+      ]
+    }
+  ]
+}

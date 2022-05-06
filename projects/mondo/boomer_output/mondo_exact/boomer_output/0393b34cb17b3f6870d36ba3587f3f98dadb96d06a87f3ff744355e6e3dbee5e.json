@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0393b34cb17b3f6870d36ba3587f3f98dadb96d06a87f3ff744355e6e3dbee5e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN242153",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018533",
+          "type" : "CLASS",
+          "lbl" : "undifferentiated carcinoma of liver and intrahepatic biliary tract"
+        },
+        {
+          "id" : "Orphanet:424970",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018533",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:424970",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN242153",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018533",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:424970",
+            "MONDO:0018533",
+            "UMLS:CN242153"
+          ]
+        }
+      ]
+    }
+  ]
+}

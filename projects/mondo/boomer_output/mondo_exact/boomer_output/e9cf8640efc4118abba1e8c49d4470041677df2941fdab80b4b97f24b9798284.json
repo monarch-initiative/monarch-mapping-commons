@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e9cf8640efc4118abba1e8c49d4470041677df2941fdab80b4b97f24b9798284",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0236048",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017790",
+          "type" : "CLASS",
+          "lbl" : "gastric adenocarcinoma and proximal polyposis of the stomach"
+        },
+        {
+          "id" : "Orphanet:314022",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:619182",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017790",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:619182",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017790",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:314022",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0236048",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017790",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017790",
+            "OMIM:619182",
+            "UMLS:C0236048",
+            "Orphanet:314022"
+          ]
+        }
+      ]
+    }
+  ]
+}

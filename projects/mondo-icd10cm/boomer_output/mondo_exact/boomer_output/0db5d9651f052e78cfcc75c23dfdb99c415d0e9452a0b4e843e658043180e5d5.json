@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0db5d9651f052e78cfcc75c23dfdb99c415d0e9452a0b4e843e658043180e5d5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336743",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4923",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003209",
+          "type" : "CLASS",
+          "lbl" : "thymus gland adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C6459",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1336743",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003209",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003209",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6459",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4923",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003209",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1336743",
+            "MONDO:0003209",
+            "NCIT:C6459",
+            "DOID:4923"
+          ]
+        }
+      ]
+    }
+  ]
+}

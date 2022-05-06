@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f59ab8f19a6ae07a5265b09f4e808da897e4f29106d2566a20630a5d9bbe5b24",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0859036",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4781",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003137",
+          "type" : "CLASS",
+          "lbl" : "diffuse glomerulonephritis"
+        },
+        {
+          "id" : "NCIT:C35799",
+          "type" : "CLASS",
+          "lbl" : "Diffuse Glomerulonephritis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4781",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003137",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003137",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35799",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0859036",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003137",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003137",
+            "DOID:4781",
+            "NCIT:C35799",
+            "UMLS:C0859036"
+          ]
+        }
+      ]
+    }
+  ]
+}

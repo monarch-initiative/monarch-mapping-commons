@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:275e40e6f4baa5230e0a12bdafa8c03e7c2d2eada91cc295135d3840dac705c0",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809874",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014241",
+          "type" : "CLASS",
+          "lbl" : "leukemia, acute lymphoblastic, susceptibility to, 3"
+        },
+        {
+          "id" : "OMIM:615545",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3809874",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014241",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014241",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615545",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3809874",
+            "MONDO:0014241",
+            "OMIM:615545"
+          ]
+        }
+      ]
+    }
+  ]
+}

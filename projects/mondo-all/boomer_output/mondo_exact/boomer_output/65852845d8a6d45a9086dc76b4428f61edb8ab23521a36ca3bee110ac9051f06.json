@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:65852845d8a6d45a9086dc76b4428f61edb8ab23521a36ca3bee110ac9051f06",
+      "nodes" : [
+        {
+          "id" : "MESH:C564016",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1838875",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010793",
+          "type" : "CLASS",
+          "lbl" : "nephropathy, chronic tubulointerstitial"
+        },
+        {
+          "id" : "OMIM:551200",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1838875",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010793",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564016",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010793",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010793",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:551200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1838875",
+            "MONDO:0010793",
+            "MESH:C564016",
+            "OMIM:551200"
+          ]
+        }
+      ]
+    }
+  ]
+}

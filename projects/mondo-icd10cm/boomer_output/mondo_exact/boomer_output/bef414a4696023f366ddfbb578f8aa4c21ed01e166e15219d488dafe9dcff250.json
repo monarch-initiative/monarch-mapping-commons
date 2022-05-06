@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bef414a4696023f366ddfbb578f8aa4c21ed01e166e15219d488dafe9dcff250",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0266294",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019636",
+          "type" : "CLASS",
+          "lbl" : "renal agenesis, unilateral"
+        },
+        {
+          "id" : "ICD10CM:Q60.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C101220",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:93100",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0266294",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019636",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019636",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019636",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C101220",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q60.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019636",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:93100",
+            "NCIT:C101220",
+            "MONDO:0019636",
+            "ICD10CM:Q60.0",
+            "UMLS:C0266294"
+          ]
+        }
+      ]
+    }
+  ]
+}

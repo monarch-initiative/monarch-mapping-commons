@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e93896d85e93b396c9af642bf82a3d5b62a1c43323c6ea20ff1b0568cc358783",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4014738",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014407",
+          "type" : "CLASS",
+          "lbl" : "megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 2"
+        },
+        {
+          "id" : "OMIM:615937",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014407",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615937",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4014738",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014407",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:615937",
+            "MONDO:0014407",
+            "UMLS:C4014738"
+          ]
+        }
+      ]
+    }
+  ]
+}

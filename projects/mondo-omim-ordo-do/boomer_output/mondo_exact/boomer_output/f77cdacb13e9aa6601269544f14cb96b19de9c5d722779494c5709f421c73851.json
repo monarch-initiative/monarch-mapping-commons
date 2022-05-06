@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f77cdacb13e9aa6601269544f14cb96b19de9c5d722779494c5709f421c73851",
+      "nodes" : [
+        {
+          "id" : "MESH:C563920",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1837946",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012047",
+          "type" : "CLASS",
+          "lbl" : "alopecia universalis congenita, 10Y gonadal dysgenesis, and laryngomalacia"
+        },
+        {
+          "id" : "OMIM:608509",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C563920",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012047",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012047",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608509",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1837946",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012047",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C563920",
+            "MONDO:0012047",
+            "OMIM:608509",
+            "UMLS:C1837946"
+          ]
+        }
+      ]
+    }
+  ]
+}

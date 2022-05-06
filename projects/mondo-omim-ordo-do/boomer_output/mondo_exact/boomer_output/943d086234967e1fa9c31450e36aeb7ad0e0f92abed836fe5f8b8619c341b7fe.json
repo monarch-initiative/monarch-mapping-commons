@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:943d086234967e1fa9c31450e36aeb7ad0e0f92abed836fe5f8b8619c341b7fe",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333597",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7986",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004422",
+          "type" : "CLASS",
+          "lbl" : "cerebral falx meningioma"
+        },
+        {
+          "id" : "NCIT:C5267",
+          "type" : "CLASS",
+          "lbl" : "Falx Cerebri Meningioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7986",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004422",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333597",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004422",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004422",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5267",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004422",
+            "UMLS:C1333597",
+            "DOID:7986",
+            "NCIT:C5267"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3b6b94aabba6f9d443b4bbf5e5c7d4f65d610d63a9244f6c46c230eb93c24ba8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479549",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044321",
+          "type" : "CLASS",
+          "lbl" : "structural heart defects and renal anomalies syndrome"
+        },
+        {
+          "id" : "OMIM:617478",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0044321",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617478",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4479549",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044321",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0044321",
+            "OMIM:617478",
+            "UMLS:C4479549"
+          ]
+        }
+      ]
+    }
+  ]
+}

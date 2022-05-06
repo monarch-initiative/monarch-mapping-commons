@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:75c3830578e141f2a5409ed79b36a6906865dac560eba2f471ad5be4ff174954",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203642",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017738",
+          "type" : "CLASS",
+          "lbl" : "lysosomal glycogen storage disease"
+        },
+        {
+          "id" : "Orphanet:309337",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203642",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017738",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017738",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN203642",
+            "MONDO:0017738",
+            "Orphanet:309337"
+          ]
+        }
+      ]
+    }
+  ]
+}

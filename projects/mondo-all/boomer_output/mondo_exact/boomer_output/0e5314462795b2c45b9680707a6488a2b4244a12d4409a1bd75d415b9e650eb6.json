@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0e5314462795b2c45b9680707a6488a2b4244a12d4409a1bd75d415b9e650eb6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2673477",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016605",
+          "type" : "CLASS",
+          "lbl" : "perinatal lethal hypophosphatasia"
+        },
+        {
+          "id" : "Orphanet:247623",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016605",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:247623",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2673477",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016605",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016605",
+            "Orphanet:247623",
+            "UMLS:C2673477"
+          ]
+        }
+      ]
+    }
+  ]
+}

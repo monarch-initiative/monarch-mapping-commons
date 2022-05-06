@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:330a2dc4e8e6f186fe70a42f0b0dbeb5dbae3b2ebafa10443acfb0846d0b3d83",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203020",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017357",
+          "type" : "CLASS",
+          "lbl" : "transient hyperammonemia of the newborn"
+        },
+        {
+          "id" : "Orphanet:289877",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203020",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017357",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017357",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:289877",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN203020",
+            "MONDO:0017357",
+            "Orphanet:289877"
+          ]
+        }
+      ]
+    }
+  ]
+}

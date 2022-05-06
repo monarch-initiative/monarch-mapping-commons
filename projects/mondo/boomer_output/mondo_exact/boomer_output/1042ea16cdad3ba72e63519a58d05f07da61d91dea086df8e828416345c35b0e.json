@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1042ea16cdad3ba72e63519a58d05f07da61d91dea086df8e828416345c35b0e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335934",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4278",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002936",
+          "type" : "CLASS",
+          "lbl" : "scrotum basal cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C6386",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002936",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6386",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4278",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002936",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335934",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002936",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002936",
+            "NCIT:C6386",
+            "DOID:4278",
+            "UMLS:C1335934"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9c9ac4e1d24eeae89040972a1dd018506998cc9ca02ebb767814da3c966af8c7",
+      "nodes" : [
+        {
+          "id" : "MESH:C565620",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1857228",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009119",
+          "type" : "CLASS",
+          "lbl" : "diverticulosis, small-intestinal"
+        },
+        {
+          "id" : "OMIM:223320",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009119",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:223320",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565620",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009119",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1857228",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009119",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:223320",
+            "MONDO:0009119",
+            "MESH:C565620",
+            "UMLS:C1857228"
+          ]
+        }
+      ]
+    }
+  ]
+}

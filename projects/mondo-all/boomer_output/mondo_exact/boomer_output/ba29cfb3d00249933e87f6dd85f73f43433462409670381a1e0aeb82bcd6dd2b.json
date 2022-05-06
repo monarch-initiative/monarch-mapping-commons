@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ba29cfb3d00249933e87f6dd85f73f43433462409670381a1e0aeb82bcd6dd2b",
+      "nodes" : [
+        {
+          "id" : "OMIM:600460",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:2008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1838121",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010890",
+          "type" : "CLASS",
+          "lbl" : "acrocardiofacial syndrome"
+        },
+        {
+          "id" : "MESH:C563936",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010890",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2008",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563936",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010890",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1838121",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010890",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010890",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600460",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:2008",
+            "MESH:C563936",
+            "OMIM:600460",
+            "MONDO:0010890",
+            "UMLS:C1838121"
+          ]
+        }
+      ]
+    }
+  ]
+}

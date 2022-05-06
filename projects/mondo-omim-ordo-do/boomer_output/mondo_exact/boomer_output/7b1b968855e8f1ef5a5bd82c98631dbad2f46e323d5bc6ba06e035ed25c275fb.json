@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7b1b968855e8f1ef5a5bd82c98631dbad2f46e323d5bc6ba06e035ed25c275fb",
+      "nodes" : [
+        {
+          "id" : "MESH:C567045",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1970440",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012586",
+          "type" : "CLASS",
+          "lbl" : "coronary artery disease, autosomal dominant 2"
+        },
+        {
+          "id" : "OMIM:610947",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012586",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610947",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567045",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012586",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1970440",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012586",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:610947",
+            "MONDO:0012586",
+            "MESH:C567045",
+            "UMLS:C1970440"
+          ]
+        }
+      ]
+    }
+  ]
+}

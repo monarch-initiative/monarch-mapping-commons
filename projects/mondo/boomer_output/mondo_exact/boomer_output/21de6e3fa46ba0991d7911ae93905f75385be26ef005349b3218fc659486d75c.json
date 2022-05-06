@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:21de6e3fa46ba0991d7911ae93905f75385be26ef005349b3218fc659486d75c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0940607",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10655",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001091",
+          "type" : "CLASS",
+          "lbl" : "lipoma of colon"
+        },
+        {
+          "id" : "NCIT:C5493",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:10655",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001091",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001091",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0940607",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001091",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:10655",
+            "MONDO:0001091",
+            "NCIT:C5493",
+            "UMLS:C0940607"
+          ]
+        }
+      ]
+    }
+  ]
+}

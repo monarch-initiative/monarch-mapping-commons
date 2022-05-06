@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b225aed1f70d6215719e46c3b592ee486ffc2898101ad4072c354514706c4e92",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809522",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024568",
+          "type" : "CLASS",
+          "lbl" : "infantile liver failure syndrome 1"
+        },
+        {
+          "id" : "Orphanet:370088",
+          "type" : "CLASS",
+          "lbl" : "Acute infantile liver failure-multisystemic involvement syndrome"
+        },
+        {
+          "id" : "OMIM:615438",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024568",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:370088",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0024568",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615438",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3809522",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024568",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024568",
+            "Orphanet:370088",
+            "OMIM:615438",
+            "UMLS:C3809522"
+          ]
+        }
+      ]
+    }
+  ]
+}

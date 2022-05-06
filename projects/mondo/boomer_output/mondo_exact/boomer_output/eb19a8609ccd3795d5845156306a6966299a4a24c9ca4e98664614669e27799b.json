@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eb19a8609ccd3795d5845156306a6966299a4a24c9ca4e98664614669e27799b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225334",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014629",
+          "type" : "CLASS",
+          "lbl" : "autoimmune interstitial lung disease-arthritis syndrome"
+        },
+        {
+          "id" : "Orphanet:444092",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616414",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014629",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616414",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225334",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014629",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014629",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:444092",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014629",
+            "OMIM:616414",
+            "UMLS:C4225334",
+            "Orphanet:444092"
+          ]
+        }
+      ]
+    }
+  ]
+}

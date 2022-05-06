@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4b5cb004a87c6bcfc234cbada9d5868d13810e45fc266e943150e0a0a55ea5d3",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN029380",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007193",
+          "type" : "CLASS",
+          "lbl" : "primary biliary cholangitis 1"
+        },
+        {
+          "id" : "OMIM:109720",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN029380",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007193",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007193",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:109720",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN029380",
+            "MONDO:0007193",
+            "OMIM:109720"
+          ]
+        }
+      ]
+    }
+  ]
+}

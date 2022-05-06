@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fb03dc7bb1b85cfd5bc9b8926f6f7705d5e67dd90da73b29fb4a0f12028e8464",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3805604",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007628",
+          "type" : "CLASS",
+          "lbl" : "foveal hypoplasia 1"
+        },
+        {
+          "id" : "OMIM:136520",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007628",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:136520",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3805604",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007628",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:136520",
+            "MONDO:0007628",
+            "UMLS:C3805604"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6f8f00b74ee7ba4d6eb94ecd9cd7f618c46f552174a20e51ef1362b29cc8fa3f",
+      "nodes" : [
+        {
+          "id" : "Orphanet:100057",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1304495",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015057",
+          "type" : "CLASS",
+          "lbl" : "renin-angiotensin-aldosterone system-blocker-induced angioedema"
+        },
+        {
+          "id" : "SCTID:403607004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C535293",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:403607004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015057",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015057",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100057",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535293",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015057",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1304495",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015057",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C535293",
+            "Orphanet:100057",
+            "MONDO:0015057",
+            "SCTID:403607004",
+            "UMLS:C1304495"
+          ]
+        }
+      ]
+    }
+  ]
+}

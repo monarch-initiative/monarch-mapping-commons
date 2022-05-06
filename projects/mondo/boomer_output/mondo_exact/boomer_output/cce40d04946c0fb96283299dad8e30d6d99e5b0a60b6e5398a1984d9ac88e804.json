@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cce40d04946c0fb96283299dad8e30d6d99e5b0a60b6e5398a1984d9ac88e804",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280011",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013605",
+          "type" : "CLASS",
+          "lbl" : "brittle cornea syndrome 2"
+        },
+        {
+          "id" : "OMIM:614170",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013605",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614170",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3280011",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013605",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:614170",
+            "MONDO:0013605",
+            "UMLS:C3280011"
+          ]
+        }
+      ]
+    }
+  ]
+}

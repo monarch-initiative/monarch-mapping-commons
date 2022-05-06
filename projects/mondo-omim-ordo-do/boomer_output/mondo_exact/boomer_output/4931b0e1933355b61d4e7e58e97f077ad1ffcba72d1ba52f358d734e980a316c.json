@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4931b0e1933355b61d4e7e58e97f077ad1ffcba72d1ba52f358d734e980a316c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336530",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4522",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003032",
+          "type" : "CLASS",
+          "lbl" : "superior vena cava angiosarcoma"
+        },
+        {
+          "id" : "NCIT:C5378",
+          "type" : "CLASS",
+          "lbl" : "Superior Vena Cava Angiosarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1336530",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003032",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003032",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5378",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4522",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003032",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1336530",
+            "MONDO:0003032",
+            "NCIT:C5378",
+            "DOID:4522"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2faaf1ea4ab83c84f32d5a4a93c8a6464ff8ff0c3370e5086f6e793d52c42bba",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1511197",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5432",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003442",
+          "type" : "CLASS",
+          "lbl" : "bladder papillary urothelial neoplasm"
+        },
+        {
+          "id" : "NCIT:C39857",
+          "type" : "CLASS",
+          "lbl" : "Bladder Papillary Urothelial Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003442",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39857",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1511197",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003442",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5432",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003442",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C39857",
+            "MONDO:0003442",
+            "UMLS:C1511197",
+            "DOID:5432"
+          ]
+        }
+      ]
+    }
+  ]
+}

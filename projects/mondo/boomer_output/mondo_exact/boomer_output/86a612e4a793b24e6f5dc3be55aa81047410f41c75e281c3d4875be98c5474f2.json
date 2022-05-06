@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:86a612e4a793b24e6f5dc3be55aa81047410f41c75e281c3d4875be98c5474f2",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226857",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016160",
+          "type" : "CLASS",
+          "lbl" : "X-linked intellectual disability-epilepsy syndrome"
+        },
+        {
+          "id" : "Orphanet:2076",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN226857",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016160",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016160",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2076",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016160",
+            "UMLS:CN226857",
+            "Orphanet:2076"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eb683a3292105afced0a67217a77d2ed4378b8f49bd82e405f82f5159146f1d2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333509",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10209",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000978",
+          "type" : "CLASS",
+          "lbl" : "extrahepatic bile duct lipoma"
+        },
+        {
+          "id" : "NCIT:C5854",
+          "type" : "CLASS",
+          "lbl" : "Extrahepatic Bile Duct Lipoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333509",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000978",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000978",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5854",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10209",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000978",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000978",
+            "UMLS:C1333509",
+            "NCIT:C5854",
+            "DOID:10209"
+          ]
+        }
+      ]
+    }
+  ]
+}

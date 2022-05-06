@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:51ad5e7af148a2c8ab983711091edfda7c97ac16772973951ce701174a460a73",
+      "nodes" : [
+        {
+          "id" : "MESH:D001361",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C35772",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024298",
+          "type" : "CLASS",
+          "lbl" : "vitamin deficiency disorder"
+        },
+        {
+          "id" : "UMLS:C0376286",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1510471",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:85670002",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024298",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35772",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1510471",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024298",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0024298",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0376286",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:85670002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024298",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D001361",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024298",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D001361",
+            "SCTID:85670002",
+            "MONDO:0024298",
+            "UMLS:C1510471",
+            "NCIT:C35772"
+          ]
+        }
+      ]
+    }
+  ]
+}

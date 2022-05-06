@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f3c764e5cb14acade7b20105ceb2d9969f46944b62affdf9274ee11dfde1f5c8",
+      "nodes" : [
+        {
+          "id" : "MESH:C564415",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1844137",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010603",
+          "type" : "CLASS",
+          "lbl" : "hemophilia A with vascular abnormality"
+        },
+        {
+          "id" : "OMIM:306800",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1844137",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010603",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564415",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010603",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010603",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:306800",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C564415",
+            "MONDO:0010603",
+            "UMLS:C1844137",
+            "OMIM:306800"
+          ]
+        }
+      ]
+    }
+  ]
+}

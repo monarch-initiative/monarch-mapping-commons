@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0264e9a3412b751faafc113ba10712cc225920ffd8f3b7d0e81df797f05bf17f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0854914",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4650",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003075",
+          "type" : "CLASS",
+          "lbl" : "bilateral retinoblastoma"
+        },
+        {
+          "id" : "NCIT:C8713",
+          "type" : "CLASS",
+          "lbl" : "Bilateral Retinoblastoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4650",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003075",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003075",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8713",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0854914",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003075",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C8713",
+            "MONDO:0003075",
+            "DOID:4650",
+            "UMLS:C0854914"
+          ]
+        }
+      ]
+    }
+  ]
+}

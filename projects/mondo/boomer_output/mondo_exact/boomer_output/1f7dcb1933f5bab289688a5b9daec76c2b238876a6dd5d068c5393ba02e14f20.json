@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1f7dcb1933f5bab289688a5b9daec76c2b238876a6dd5d068c5393ba02e14f20",
+      "nodes" : [
+        {
+          "id" : "SCTID:47028006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:Q40.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:12641",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001562",
+          "type" : "CLASS",
+          "lbl" : "displacement of cardia through esophageal hiatus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:47028006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001562",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:12641",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001562",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q40.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001562",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:47028006",
+            "MONDO:0001562",
+            "DOID:12641",
+            "ICD10CM:Q40.1"
+          ]
+        }
+      ]
+    }
+  ]
+}

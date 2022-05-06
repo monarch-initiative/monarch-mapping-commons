@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9df0623abbeeaf738a75482a3f9685757b7534117649d0b45f9fd6c945e6e7f9",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226709",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015586",
+          "type" : "CLASS",
+          "lbl" : "benign familial mesial temporal lobe epilepsy"
+        },
+        {
+          "id" : "Orphanet:163717",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN226709",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015586",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015586",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:163717",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015586",
+            "UMLS:CN226709",
+            "Orphanet:163717"
+          ]
+        }
+      ]
+    }
+  ]
+}

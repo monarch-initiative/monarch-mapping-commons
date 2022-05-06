@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1239284ff2ca4db9323c5a07552096e1ab8e0ac4775926235d96b3393d7e1937",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518875",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3919",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002810",
+          "type" : "CLASS",
+          "lbl" : "pancreatic serous cystic neoplasm"
+        },
+        {
+          "id" : "NCIT:C41248",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002810",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C41248",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3919",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002810",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518875",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002810",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002810",
+            "NCIT:C41248",
+            "DOID:3919",
+            "UMLS:C1518875"
+          ]
+        }
+      ]
+    }
+  ]
+}

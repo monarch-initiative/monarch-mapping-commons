@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:01744269e2496d645d9cfaa69caddf545c2b2f9f078ef8837b4fbc54c257602d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519828",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5643",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003565",
+          "type" : "CLASS",
+          "lbl" : "urethral villous adenoma"
+        },
+        {
+          "id" : "NCIT:C39872",
+          "type" : "CLASS",
+          "lbl" : "Urethral Villous Adenoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5643",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003565",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1519828",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003565",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003565",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39872",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003565",
+            "DOID:5643",
+            "UMLS:C1519828",
+            "NCIT:C39872"
+          ]
+        }
+      ]
+    }
+  ]
+}

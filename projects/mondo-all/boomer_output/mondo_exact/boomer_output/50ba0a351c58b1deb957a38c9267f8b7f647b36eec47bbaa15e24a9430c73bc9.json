@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:50ba0a351c58b1deb957a38c9267f8b7f647b36eec47bbaa15e24a9430c73bc9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1853901",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011607",
+          "type" : "CLASS",
+          "lbl" : "narcolepsy 2, susceptibility to"
+        },
+        {
+          "id" : "OMIM:605841",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011607",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:605841",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1853901",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011607",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:605841",
+            "MONDO:0011607",
+            "UMLS:C1853901"
+          ]
+        }
+      ]
+    }
+  ]
+}

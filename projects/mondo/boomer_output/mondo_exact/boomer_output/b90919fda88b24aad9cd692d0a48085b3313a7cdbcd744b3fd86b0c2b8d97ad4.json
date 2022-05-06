@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b90919fda88b24aad9cd692d0a48085b3313a7cdbcd744b3fd86b0c2b8d97ad4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1511052",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6961",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004053",
+          "type" : "CLASS",
+          "lbl" : "bartholin gland squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C40293",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004053",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40293",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1511052",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004053",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6961",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004053",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C40293",
+            "MONDO:0004053",
+            "UMLS:C1511052",
+            "DOID:6961"
+          ]
+        }
+      ]
+    }
+  ]
+}

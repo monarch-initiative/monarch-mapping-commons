@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:323badb6f9cd4b2e0f2756b9a1bbcfeaaff5f02889debc017fa1ae14890d54dd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335932",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7984",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004421",
+          "type" : "CLASS",
+          "lbl" : "sclerosing breast papilloma"
+        },
+        {
+          "id" : "NCIT:C27944",
+          "type" : "CLASS",
+          "lbl" : "Breast Sclerosing Papilloma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004421",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27944",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7984",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004421",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335932",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004421",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004421",
+            "NCIT:C27944",
+            "DOID:7984",
+            "UMLS:C1335932"
+          ]
+        }
+      ]
+    }
+  ]
+}

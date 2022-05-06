@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4fb6176cd830d985dffc5c69978283bf6d88acf5fd0584fe76d8d1e36fd521d0",
+      "nodes" : [
+        {
+          "id" : "MESH:C562700",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008352",
+          "type" : "CLASS",
+          "lbl" : "pupillary membrane, persistence of"
+        },
+        {
+          "id" : "OMIM:178900",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008352",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:178900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C562700",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008352",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:178900",
+            "MONDO:0008352",
+            "MESH:C562700"
+          ]
+        }
+      ]
+    }
+  ]
+}

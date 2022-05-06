@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:afa376d427c3aed0122a4ef5a45f72fdb351f6c8b644293d31e263edcccc6a4c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN197555",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015201",
+          "type" : "CLASS",
+          "lbl" : "ankyloblepharon filiforme-imperforate anus syndrome"
+        },
+        {
+          "id" : "Orphanet:1074",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN197555",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015201",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015201",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1074",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN197555",
+            "MONDO:0015201",
+            "Orphanet:1074"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0472123b8446980f8ab5efb2d853f82b4c7e2e02673240a9b245218fc45559f8",
+      "nodes" : [
+        {
+          "id" : "MESH:C566632",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1866339",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011139",
+          "type" : "CLASS",
+          "lbl" : "preaxial hallucal polydactyly"
+        },
+        {
+          "id" : "OMIM:601759",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C566632",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011139",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011139",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601759",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1866339",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011139",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011139",
+            "MESH:C566632",
+            "OMIM:601759",
+            "UMLS:C1866339"
+          ]
+        }
+      ]
+    }
+  ]
+}

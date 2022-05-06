@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8d924b60bcb84aa60d032e78410aea4c85deb5df083de7a7d744519d94b1209c",
+      "nodes" : [
+        {
+          "id" : "MESH:C566521",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1865182",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011254",
+          "type" : "CLASS",
+          "lbl" : "brachydactyly, intraventricular septal defect, and deafness"
+        },
+        {
+          "id" : "OMIM:602561",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C566521",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011254",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1865182",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011254",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011254",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:602561",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C566521",
+            "MONDO:0011254",
+            "UMLS:C1865182",
+            "OMIM:602561"
+          ]
+        }
+      ]
+    }
+  ]
+}

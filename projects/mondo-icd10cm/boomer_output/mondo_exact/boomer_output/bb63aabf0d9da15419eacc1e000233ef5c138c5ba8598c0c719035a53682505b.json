@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bb63aabf0d9da15419eacc1e000233ef5c138c5ba8598c0c719035a53682505b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518232",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004032",
+          "type" : "CLASS",
+          "lbl" : "ovarian seromucinous carcinoma"
+        },
+        {
+          "id" : "NCIT:C40090",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1518232",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004032",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004032",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40090",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004032",
+            "UMLS:C1518232",
+            "NCIT:C40090"
+          ]
+        }
+      ]
+    }
+  ]
+}

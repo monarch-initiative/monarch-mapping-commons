@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c4ac2afd942592120517cfaf4e04bb750a0f6a33dc2a7b7680b45f872cd5db81",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2184126",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006268",
+          "type" : "CLASS",
+          "lbl" : "liver diffuse large B-cell lymphoma"
+        },
+        {
+          "id" : "NCIT:C96843",
+          "type" : "CLASS",
+          "lbl" : "Liver Diffuse Large B-Cell Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006268",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C96843",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2184126",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006268",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006268",
+            "NCIT:C96843",
+            "UMLS:C2184126"
+          ]
+        }
+      ]
+    }
+  ]
+}

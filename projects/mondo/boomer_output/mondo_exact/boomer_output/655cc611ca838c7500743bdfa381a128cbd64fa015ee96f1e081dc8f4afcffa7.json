@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:655cc611ca838c7500743bdfa381a128cbd64fa015ee96f1e081dc8f4afcffa7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201062",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016273",
+          "type" : "CLASS",
+          "lbl" : "malignant germ cell tumor of corpus uteri"
+        },
+        {
+          "id" : "Orphanet:213751",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201062",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016273",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016273",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:213751",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016273",
+            "UMLS:CN201062",
+            "Orphanet:213751"
+          ]
+        }
+      ]
+    }
+  ]
+}

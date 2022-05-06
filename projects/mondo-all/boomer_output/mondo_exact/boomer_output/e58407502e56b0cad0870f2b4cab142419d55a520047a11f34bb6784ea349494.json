@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e58407502e56b0cad0870f2b4cab142419d55a520047a11f34bb6784ea349494",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237516",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018511",
+          "type" : "CLASS",
+          "lbl" : "epithelial tumor of the appendix"
+        },
+        {
+          "id" : "Orphanet:423982",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237516",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018511",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018511",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:423982",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN237516",
+            "MONDO:0018511",
+            "Orphanet:423982"
+          ]
+        }
+      ]
+    }
+  ]
+}

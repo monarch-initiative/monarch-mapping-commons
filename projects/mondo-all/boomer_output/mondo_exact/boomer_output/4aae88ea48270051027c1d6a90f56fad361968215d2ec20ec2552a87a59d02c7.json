@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4aae88ea48270051027c1d6a90f56fad361968215d2ec20ec2552a87a59d02c7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN248526",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060733",
+          "type" : "CLASS",
+          "lbl" : "humerofemoral hypoplasia with radiotibial ray deficiency"
+        },
+        {
+          "id" : "OMIM:618022",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0060733",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:618022",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN248526",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060733",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0060733",
+            "OMIM:618022",
+            "UMLS:CN248526"
+          ]
+        }
+      ]
+    }
+  ]
+}

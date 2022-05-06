@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e8443783c581ee53128bd442dfb674ea9b5506b7908518c58fb0da49b4cb95e3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518721",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2143",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002223",
+          "type" : "CLASS",
+          "lbl" : "ovarian malignant mesothelioma"
+        },
+        {
+          "id" : "NCIT:C40444",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002223",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40444",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2143",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002223",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518721",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002223",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002223",
+            "NCIT:C40444",
+            "DOID:2143",
+            "UMLS:C1518721"
+          ]
+        }
+      ]
+    }
+  ]
+}

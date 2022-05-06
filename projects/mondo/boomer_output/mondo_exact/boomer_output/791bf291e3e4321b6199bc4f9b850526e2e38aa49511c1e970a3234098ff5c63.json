@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:791bf291e3e4321b6199bc4f9b850526e2e38aa49511c1e970a3234098ff5c63",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333026",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7807",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004364",
+          "type" : "CLASS",
+          "lbl" : "choroid necrotic melanoma"
+        },
+        {
+          "id" : "NCIT:C6865",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333026",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004364",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004364",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6865",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7807",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004364",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333026",
+            "MONDO:0004364",
+            "NCIT:C6865",
+            "DOID:7807"
+          ]
+        }
+      ]
+    }
+  ]
+}

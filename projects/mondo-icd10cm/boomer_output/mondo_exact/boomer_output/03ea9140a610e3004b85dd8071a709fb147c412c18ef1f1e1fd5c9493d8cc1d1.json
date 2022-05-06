@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:03ea9140a610e3004b85dd8071a709fb147c412c18ef1f1e1fd5c9493d8cc1d1",
+      "nodes" : [
+        {
+          "id" : "MESH:D018332",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:254811006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006749",
+          "type" : "CLASS",
+          "lbl" : "mixed epithelioid and spindle cell melanoma"
+        },
+        {
+          "id" : "NCIT:C66756",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006749",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C66756",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:254811006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006749",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D018332",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006749",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006749",
+            "NCIT:C66756",
+            "SCTID:254811006",
+            "MESH:D018332"
+          ]
+        }
+      ]
+    }
+  ]
+}

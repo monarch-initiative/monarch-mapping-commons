@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7827a3180cabc5bf5ea191bab95abe649d3274c21695034e1498ee0a26335a01",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334410",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000377",
+          "type" : "CLASS",
+          "lbl" : "malignant Leydig cell tumor"
+        },
+        {
+          "id" : "NCIT:C4213",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0334410",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000377",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000377",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4213",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0334410",
+            "MONDO:0000377",
+            "NCIT:C4213"
+          ]
+        }
+      ]
+    }
+  ]
+}

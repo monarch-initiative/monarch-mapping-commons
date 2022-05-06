@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:80f7283a99c6d926c9eeaa410956842be1ce5ab67b09d843c8c30767cc5aa39e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1306247",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3205",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C6970",
+          "type" : "CLASS",
+          "lbl" : "Melanotic Schwannoma"
+        },
+        {
+          "id" : "SCTID:404024000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002558",
+          "type" : "CLASS",
+          "lbl" : "melanotic neurilemmoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002558",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6970",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3205",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002558",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1306247",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002558",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:404024000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002558",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6970",
+            "SCTID:404024000",
+            "UMLS:C1306247",
+            "MONDO:0002558",
+            "DOID:3205"
+          ]
+        }
+      ]
+    }
+  ]
+}

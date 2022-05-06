@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0987c0bd3c5fba8786c3f60ad9ae17438a799afb541958fd3d168d735e13944c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227096",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017132",
+          "type" : "CLASS",
+          "lbl" : "hereditary ATTR amyloidosis"
+        },
+        {
+          "id" : "Orphanet:271861",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227096",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017132",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017132",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:271861",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017132",
+            "UMLS:CN227096",
+            "Orphanet:271861"
+          ]
+        }
+      ]
+    }
+  ]
+}

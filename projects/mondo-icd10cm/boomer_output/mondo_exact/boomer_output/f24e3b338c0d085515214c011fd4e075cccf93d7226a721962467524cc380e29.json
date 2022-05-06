@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f24e3b338c0d085515214c011fd4e075cccf93d7226a721962467524cc380e29",
+      "nodes" : [
+        {
+          "id" : "NCIT:C120084",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:440437",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018604",
+          "type" : "CLASS",
+          "lbl" : "familial colorectal cancer type X"
+        },
+        {
+          "id" : "UMLS:CN237636",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3896578",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018604",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN237636",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3896578",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018604",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018604",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:440437",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018604",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C120084",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018604",
+            "UMLS:C3896578",
+            "Orphanet:440437",
+            "NCIT:C120084"
+          ]
+        }
+      ]
+    }
+  ]
+}

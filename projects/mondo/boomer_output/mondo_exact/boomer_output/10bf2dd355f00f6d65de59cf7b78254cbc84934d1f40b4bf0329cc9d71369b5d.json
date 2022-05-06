@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:10bf2dd355f00f6d65de59cf7b78254cbc84934d1f40b4bf0329cc9d71369b5d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332628",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5997",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003724",
+          "type" : "CLASS",
+          "lbl" : "non-proliferative fibrocystic change of the breast"
+        },
+        {
+          "id" : "NCIT:C6943",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5997",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003724",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332628",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003724",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003724",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6943",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5997",
+            "MONDO:0003724",
+            "UMLS:C1332628",
+            "NCIT:C6943"
+          ]
+        }
+      ]
+    }
+  ]
+}

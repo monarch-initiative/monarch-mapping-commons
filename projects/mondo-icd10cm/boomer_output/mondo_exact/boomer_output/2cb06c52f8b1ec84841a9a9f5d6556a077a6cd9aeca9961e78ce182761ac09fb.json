@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2cb06c52f8b1ec84841a9a9f5d6556a077a6cd9aeca9961e78ce182761ac09fb",
+      "nodes" : [
+        {
+          "id" : "SCTID:73371000119103",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015376",
+          "type" : "CLASS",
+          "lbl" : "first branchial cleft anomaly"
+        },
+        {
+          "id" : "Orphanet:141013",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015376",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:141013",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:73371000119103",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015376",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015376",
+            "Orphanet:141013",
+            "SCTID:73371000119103"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2736b0f415c0e71f22fae8ed28cdb46a1f57cc2d1e7e9a2e59a403f9273207fd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1290008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019296",
+          "type" : "CLASS",
+          "lbl" : "subcutaneous tissue disorder"
+        },
+        {
+          "id" : "Orphanet:79382",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1290008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019296",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019296",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79382",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019296",
+            "UMLS:C1290008",
+            "Orphanet:79382"
+          ]
+        }
+      ]
+    }
+  ]
+}

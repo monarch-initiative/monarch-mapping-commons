@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:16fe73298218328572e85921ae1e19c416c5328e37bc42e38ba9940089758aa7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3554241",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070229",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013995",
+          "type" : "CLASS",
+          "lbl" : "cholestasis, intrahepatic, of pregnancy, 3"
+        },
+        {
+          "id" : "OMIM:614972",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0070229",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013995",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013995",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614972",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3554241",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013995",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0070229",
+            "MONDO:0013995",
+            "OMIM:614972",
+            "UMLS:C3554241"
+          ]
+        }
+      ]
+    }
+  ]
+}

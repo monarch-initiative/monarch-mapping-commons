@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a74b05bc60d8690ec6be1c9e1c6f84d8224b41b9b9497c5d740b80c8bec723fe",
+      "nodes" : [
+        {
+          "id" : "MESH:C565781",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1858419",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011455",
+          "type" : "CLASS",
+          "lbl" : "lissencephaly, familial, with cleft palate and cerebellar hypoplasia"
+        },
+        {
+          "id" : "OMIM:604382",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565781",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011455",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011455",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:604382",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1858419",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011455",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011455",
+            "MESH:C565781",
+            "OMIM:604382",
+            "UMLS:C1858419"
+          ]
+        }
+      ]
+    }
+  ]
+}

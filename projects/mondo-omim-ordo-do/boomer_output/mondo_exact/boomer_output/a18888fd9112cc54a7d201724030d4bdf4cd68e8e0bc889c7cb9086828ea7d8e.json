@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a18888fd9112cc54a7d201724030d4bdf4cd68e8e0bc889c7cb9086828ea7d8e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225422",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010493",
+          "type" : "CLASS",
+          "lbl" : "Diamond-Blackfan anemia 14 with mandibulofacial dysostosis"
+        },
+        {
+          "id" : "OMIM:300946",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010493",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300946",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225422",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010493",
+            "OMIM:300946",
+            "UMLS:C4225422"
+          ]
+        }
+      ]
+    }
+  ]
+}

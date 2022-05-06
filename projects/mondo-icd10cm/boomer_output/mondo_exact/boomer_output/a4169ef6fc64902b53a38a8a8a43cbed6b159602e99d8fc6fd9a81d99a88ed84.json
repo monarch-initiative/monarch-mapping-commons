@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a4169ef6fc64902b53a38a8a8a43cbed6b159602e99d8fc6fd9a81d99a88ed84",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1836448",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:609284",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012239",
+          "type" : "CLASS",
+          "lbl" : "nemaline myopathy 1"
+        },
+        {
+          "id" : "MESH:C538348",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110926",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C538348",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012239",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1836448",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012239",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012239",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609284",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110926",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012239",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C538348",
+            "MONDO:0012239",
+            "OMIM:609284",
+            "UMLS:C1836448",
+            "DOID:0110926"
+          ]
+        }
+      ]
+    }
+  ]
+}

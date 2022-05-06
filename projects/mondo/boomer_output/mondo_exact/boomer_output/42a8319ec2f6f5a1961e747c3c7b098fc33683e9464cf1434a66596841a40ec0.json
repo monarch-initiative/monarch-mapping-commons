@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:42a8319ec2f6f5a1961e747c3c7b098fc33683e9464cf1434a66596841a40ec0",
+      "nodes" : [
+        {
+          "id" : "MESH:D009102",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:57653000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0043726",
+          "type" : "CLASS",
+          "lbl" : "multiple organ dysfunction syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:57653000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043726",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D009102",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043726",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:57653000",
+            "MONDO:0043726",
+            "MESH:D009102"
+          ]
+        }
+      ]
+    }
+  ]
+}

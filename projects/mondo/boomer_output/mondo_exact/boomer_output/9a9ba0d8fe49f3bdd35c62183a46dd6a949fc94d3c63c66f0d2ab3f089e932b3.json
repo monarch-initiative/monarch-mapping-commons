@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9a9ba0d8fe49f3bdd35c62183a46dd6a949fc94d3c63c66f0d2ab3f089e932b3",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN228396",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015159",
+          "type" : "CLASS",
+          "lbl" : "multiple congenital anomalies/dysmorphic syndrome-intellectual disability"
+        },
+        {
+          "id" : "Orphanet:102283",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015159",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:102283",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN228396",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015159",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015159",
+            "Orphanet:102283",
+            "UMLS:CN228396"
+          ]
+        }
+      ]
+    }
+  ]
+}

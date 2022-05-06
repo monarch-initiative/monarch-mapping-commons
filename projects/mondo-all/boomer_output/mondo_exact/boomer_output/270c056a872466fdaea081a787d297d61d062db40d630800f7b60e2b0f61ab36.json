@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:270c056a872466fdaea081a787d297d61d062db40d630800f7b60e2b0f61ab36",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334758",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4892",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003189",
+          "type" : "CLASS",
+          "lbl" : "middle ear adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C6848",
+          "type" : "CLASS",
+          "lbl" : "Middle Ear Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003189",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6848",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4892",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003189",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334758",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003189",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6848",
+            "MONDO:0003189",
+            "DOID:4892",
+            "UMLS:C1334758"
+          ]
+        }
+      ]
+    }
+  ]
+}

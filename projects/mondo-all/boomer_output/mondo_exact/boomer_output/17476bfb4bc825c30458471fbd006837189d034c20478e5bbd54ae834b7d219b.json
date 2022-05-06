@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:17476bfb4bc825c30458471fbd006837189d034c20478e5bbd54ae834b7d219b",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:C15-C26",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3119",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002516",
+          "type" : "CLASS",
+          "lbl" : "digestive system cancer"
+        },
+        {
+          "id" : "NCIT:C4890",
+          "type" : "CLASS",
+          "lbl" : "Malignant Digestive System Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3119",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002516",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C15-C26",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002516",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002516",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4890",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002516",
+            "DOID:3119",
+            "ICD10CM:C15-C26",
+            "NCIT:C4890"
+          ]
+        }
+      ]
+    }
+  ]
+}

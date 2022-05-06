@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6338e8a21b74ec91e31696f64c00cb9ed6a24dc29de6407d71da1fabf965803b",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204730",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018210",
+          "type" : "CLASS",
+          "lbl" : "Alexander disease type II"
+        },
+        {
+          "id" : "Orphanet:363722",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN204730",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018210",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018210",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:363722",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN204730",
+            "MONDO:0018210",
+            "Orphanet:363722"
+          ]
+        }
+      ]
+    }
+  ]
+}

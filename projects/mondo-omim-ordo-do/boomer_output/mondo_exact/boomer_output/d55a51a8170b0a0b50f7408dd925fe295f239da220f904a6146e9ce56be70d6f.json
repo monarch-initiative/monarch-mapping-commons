@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d55a51a8170b0a0b50f7408dd925fe295f239da220f904a6146e9ce56be70d6f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479452",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044312",
+          "type" : "CLASS",
+          "lbl" : "immunoskeletal dysplasia with neurodevelopmental abnormalities"
+        },
+        {
+          "id" : "OMIM:617425",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0044312",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617425",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4479452",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044312",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0044312",
+            "OMIM:617425",
+            "UMLS:C4479452"
+          ]
+        }
+      ]
+    }
+  ]
+}

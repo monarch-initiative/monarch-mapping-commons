@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:88be9ef71c52709a67c030bae80addfc1747a893f6d86c5078f792e0cfa6dc3a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553476",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013857",
+          "type" : "CLASS",
+          "lbl" : "alar cleft, isolated"
+        },
+        {
+          "id" : "OMIM:614687",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3553476",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013857",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013857",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614687",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013857",
+            "UMLS:C3553476",
+            "OMIM:614687"
+          ]
+        }
+      ]
+    }
+  ]
+}

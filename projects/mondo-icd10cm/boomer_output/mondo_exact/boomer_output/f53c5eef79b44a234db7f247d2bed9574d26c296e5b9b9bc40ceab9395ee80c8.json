@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f53c5eef79b44a234db7f247d2bed9574d26c296e5b9b9bc40ceab9395ee80c8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335964",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3503",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002671",
+          "type" : "CLASS",
+          "lbl" : "signet ring cell breast carcinoma"
+        },
+        {
+          "id" : "NCIT:C5175",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335964",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002671",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002671",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5175",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3503",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002671",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002671",
+            "UMLS:C1335964",
+            "NCIT:C5175",
+            "DOID:3503"
+          ]
+        }
+      ]
+    }
+  ]
+}

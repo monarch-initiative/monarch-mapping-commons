@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fe58a1134d3108124321c3d85fcb29a23db66c836f19502d5b14254ccb3b7ac2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332192",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024797",
+          "type" : "CLASS",
+          "lbl" : "adult brain stem neoplasm"
+        },
+        {
+          "id" : "NCIT:C5967",
+          "type" : "CLASS",
+          "lbl" : "Adult Brain Stem Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024797",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5967",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332192",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024797",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024797",
+            "NCIT:C5967",
+            "UMLS:C1332192"
+          ]
+        }
+      ]
+    }
+  ]
+}

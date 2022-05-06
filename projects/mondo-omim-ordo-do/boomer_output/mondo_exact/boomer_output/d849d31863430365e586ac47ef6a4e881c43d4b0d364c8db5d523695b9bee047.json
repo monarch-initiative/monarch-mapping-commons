@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d849d31863430365e586ac47ef6a4e881c43d4b0d364c8db5d523695b9bee047",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237600",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018579",
+          "type" : "CLASS",
+          "lbl" : "disorder of ketone body transport"
+        },
+        {
+          "id" : "Orphanet:438072",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018579",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:438072",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237600",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018579",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:438072",
+            "MONDO:0018579",
+            "UMLS:CN237600"
+          ]
+        }
+      ]
+    }
+  ]
+}

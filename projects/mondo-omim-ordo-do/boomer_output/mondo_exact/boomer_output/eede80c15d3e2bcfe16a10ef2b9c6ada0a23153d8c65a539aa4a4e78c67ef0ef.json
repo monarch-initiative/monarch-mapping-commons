@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eede80c15d3e2bcfe16a10ef2b9c6ada0a23153d8c65a539aa4a4e78c67ef0ef",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206704",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019769",
+          "type" : "CLASS",
+          "lbl" : "X-linked intellectual disability, Sutherland-Haan type"
+        },
+        {
+          "id" : "Orphanet:93950",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206704",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019769",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019769",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN206704",
+            "MONDO:0019769",
+            "Orphanet:93950"
+          ]
+        }
+      ]
+    }
+  ]
+}

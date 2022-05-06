@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1b1083a21ad82009eff6e18f5e83f3269c701d8c27f5356edd2bd4fee612e701",
+      "nodes" : [
+        {
+          "id" : "MESH:C536266",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1853554",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011648",
+          "type" : "CLASS",
+          "lbl" : "radiation-induced meningioma"
+        },
+        {
+          "id" : "OMIM:606190",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011648",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:606190",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536266",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011648",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1853554",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011648",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011648",
+            "OMIM:606190",
+            "MESH:C536266",
+            "UMLS:C1853554"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7c357955adc58cd0cfbc6dcd106dd818e4cff795206ebfee236c73459b2cb5bb",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202019",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016764",
+          "type" : "CLASS",
+          "lbl" : "isolated anophthalmia-microphthalmia syndrome"
+        },
+        {
+          "id" : "Orphanet:2542",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016764",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2542",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202019",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016764",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016764",
+            "Orphanet:2542",
+            "UMLS:CN202019"
+          ]
+        }
+      ]
+    }
+  ]
+}

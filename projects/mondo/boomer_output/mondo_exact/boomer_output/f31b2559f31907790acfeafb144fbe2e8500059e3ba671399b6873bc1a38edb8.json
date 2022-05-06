@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f31b2559f31907790acfeafb144fbe2e8500059e3ba671399b6873bc1a38edb8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332879",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6451",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003882",
+          "type" : "CLASS",
+          "lbl" : "central nervous system fibrosarcoma"
+        },
+        {
+          "id" : "NCIT:C5465",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6451",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003882",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003882",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5465",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332879",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003882",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6451",
+            "MONDO:0003882",
+            "NCIT:C5465",
+            "UMLS:C1332879"
+          ]
+        }
+      ]
+    }
+  ]
+}

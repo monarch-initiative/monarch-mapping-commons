@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:399080b3d6e75bc11404fdb9d9643943d97412729d8bb0b6fb25e8c32713ae77",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN737162",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044725",
+          "type" : "CLASS",
+          "lbl" : "combined immunodeficiency due to GINS1 deficiency"
+        },
+        {
+          "id" : "Orphanet:505227",
+          "type" : "CLASS",
+          "lbl" : "Combined immunodeficiency due to GINS1 deficiency"
+        },
+        {
+          "id" : "OMIM:617827",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0044725",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:505227",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN737162",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044725",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044725",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617827",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:505227",
+            "MONDO:0044725",
+            "UMLS:CN737162",
+            "OMIM:617827"
+          ]
+        }
+      ]
+    }
+  ]
+}

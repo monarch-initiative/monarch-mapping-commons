@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7218a0d3e0b647fb4cf70c4188811a4b98c2ab50e2c9d18f4f4be7bc53f40c5c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3281001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013779",
+          "type" : "CLASS",
+          "lbl" : "Wiskott-Aldrich syndrome 2"
+        },
+        {
+          "id" : "OMIM:614493",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013779",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3281001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013779",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013779",
+            "OMIM:614493",
+            "UMLS:C3281001"
+          ]
+        }
+      ]
+    }
+  ]
+}

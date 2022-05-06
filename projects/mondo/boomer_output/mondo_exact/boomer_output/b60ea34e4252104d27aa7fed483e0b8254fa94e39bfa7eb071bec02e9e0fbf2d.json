@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b60ea34e4252104d27aa7fed483e0b8254fa94e39bfa7eb071bec02e9e0fbf2d",
+      "nodes" : [
+        {
+          "id" : "DOID:0111434",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020737",
+          "type" : "CLASS",
+          "lbl" : "optic atrophy 10 with or without ataxia, intellectual disability, and seizures"
+        },
+        {
+          "id" : "OMIM:616732",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020737",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616732",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111434",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020737",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020737",
+            "OMIM:616732",
+            "DOID:0111434"
+          ]
+        }
+      ]
+    }
+  ]
+}

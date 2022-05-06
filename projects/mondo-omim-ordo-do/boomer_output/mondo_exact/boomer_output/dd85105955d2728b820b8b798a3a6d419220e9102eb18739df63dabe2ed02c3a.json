@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dd85105955d2728b820b8b798a3a6d419220e9102eb18739df63dabe2ed02c3a",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:G47.21",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:80623000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111141",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0393770",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024377",
+          "type" : "CLASS",
+          "lbl" : "circadian rhythm sleep disorder, delayed sleep phase type"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0393770",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024377",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:G47.21",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024377",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111141",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024377",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:80623000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024377",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0111141",
+            "UMLS:C0393770",
+            "SCTID:80623000",
+            "MONDO:0024377",
+            "ICD10CM:G47.21"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ef734d87a0f9689d609b4ae1b2ee693141ff470c432c16dc96fd4426488570ef",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0742115",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3431",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002645",
+          "type" : "CLASS",
+          "lbl" : "cerebritis"
+        },
+        {
+          "id" : "NCIT:C27199",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3431",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002645",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002645",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27199",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0742115",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002645",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002645",
+            "DOID:3431",
+            "NCIT:C27199",
+            "UMLS:C0742115"
+          ]
+        }
+      ]
+    }
+  ]
+}

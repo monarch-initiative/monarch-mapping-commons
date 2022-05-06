@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2780804e62bf916aec41e98f90c1a0eb32d909c038c1c767d44d0cc00d23e12e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334920",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4930",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003211",
+          "type" : "CLASS",
+          "lbl" : "nasal cavity adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C6015",
+          "type" : "CLASS",
+          "lbl" : "Nasal Cavity Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4930",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003211",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003211",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6015",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334920",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003211",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:4930",
+            "MONDO:0003211",
+            "NCIT:C6015",
+            "UMLS:C1334920"
+          ]
+        }
+      ]
+    }
+  ]
+}

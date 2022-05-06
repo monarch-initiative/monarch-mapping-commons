@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:08428463cd166456704f9c2f367be3f4d21a0f7c8957324c92fae970f31ecda2",
+      "nodes" : [
+        {
+          "id" : "SCTID:707551007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:217557",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:J84.842",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016321",
+          "type" : "CLASS",
+          "lbl" : "pulmonary interstitial glycogenosis"
+        },
+        {
+          "id" : "UMLS:C3161106",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016321",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:217557",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:J84.842",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016321",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:707551007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016321",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3161106",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016321",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:707551007",
+            "MONDO:0016321",
+            "UMLS:C3161106",
+            "ICD10CM:J84.842",
+            "Orphanet:217557"
+          ]
+        }
+      ]
+    }
+  ]
+}

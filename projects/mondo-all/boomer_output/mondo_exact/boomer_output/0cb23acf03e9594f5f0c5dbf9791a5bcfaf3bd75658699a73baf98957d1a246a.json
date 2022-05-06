@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0cb23acf03e9594f5f0c5dbf9791a5bcfaf3bd75658699a73baf98957d1a246a",
+      "nodes" : [
+        {
+          "id" : "SCTID:253298003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020386",
+          "type" : "CLASS",
+          "lbl" : "double outlet right ventricle with subaortic or doubly committed ventricular septal defect with pulmonary stenosis"
+        },
+        {
+          "id" : "Orphanet:99043",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020386",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99043",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:253298003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020386",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020386",
+            "Orphanet:99043",
+            "SCTID:253298003"
+          ]
+        }
+      ]
+    }
+  ]
+}

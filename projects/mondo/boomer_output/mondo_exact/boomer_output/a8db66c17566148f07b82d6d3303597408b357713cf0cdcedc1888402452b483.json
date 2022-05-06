@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a8db66c17566148f07b82d6d3303597408b357713cf0cdcedc1888402452b483",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1515283",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3579",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002698",
+          "type" : "CLASS",
+          "lbl" : "testicular gonadoblastoma"
+        },
+        {
+          "id" : "NCIT:C39911",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002698",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39911",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1515283",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002698",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3579",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002698",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C39911",
+            "MONDO:0002698",
+            "UMLS:C1515283",
+            "DOID:3579"
+          ]
+        }
+      ]
+    }
+  ]
+}

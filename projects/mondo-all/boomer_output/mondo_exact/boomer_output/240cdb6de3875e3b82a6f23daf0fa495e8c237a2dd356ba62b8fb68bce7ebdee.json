@@ -1,0 +1,114 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:240cdb6de3875e3b82a6f23daf0fa495e8c237a2dd356ba62b8fb68bce7ebdee",
+      "nodes" : [
+        {
+          "id" : "Orphanet:165707",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015620",
+          "type" : "CLASS",
+          "lbl" : "syndromic urogenital tract malformation"
+        },
+        {
+          "id" : "ICD10CM:Q60-Q64",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN226715",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:83001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019356",
+          "type" : "CLASS",
+          "lbl" : "urogenital tract malformation"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015620",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:165707",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019356",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:83001",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226715",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015620",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015620",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0019356",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q60-Q64",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019356",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN226715",
+            "MONDO:0015620",
+            "Orphanet:165707"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "MONDO:0019356",
+            "Orphanet:83001",
+            "ICD10CM:Q60-Q64"
+          ]
+        }
+      ]
+    }
+  ]
+}

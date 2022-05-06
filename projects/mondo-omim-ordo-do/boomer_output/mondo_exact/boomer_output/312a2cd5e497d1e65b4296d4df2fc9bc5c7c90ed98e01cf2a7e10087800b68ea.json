@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:312a2cd5e497d1e65b4296d4df2fc9bc5c7c90ed98e01cf2a7e10087800b68ea",
+      "nodes" : [
+        {
+          "id" : "MESH:C538315",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0795804",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016901",
+          "type" : "CLASS",
+          "lbl" : "partial deletion of the long arm of chromosome 2"
+        },
+        {
+          "id" : "Orphanet:262010",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0795804",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016901",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016901",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:262010",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538315",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016901",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016901",
+            "UMLS:C0795804",
+            "Orphanet:262010",
+            "MESH:C538315"
+          ]
+        }
+      ]
+    }
+  ]
+}

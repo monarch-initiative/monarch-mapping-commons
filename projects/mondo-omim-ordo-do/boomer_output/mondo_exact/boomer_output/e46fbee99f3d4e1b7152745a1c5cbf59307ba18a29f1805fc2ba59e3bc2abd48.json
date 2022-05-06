@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e46fbee99f3d4e1b7152745a1c5cbf59307ba18a29f1805fc2ba59e3bc2abd48",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0678222",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:254838004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3459",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004989",
+          "type" : "CLASS",
+          "lbl" : "breast carcinoma"
+        },
+        {
+          "id" : "NCIT:C4872",
+          "type" : "CLASS",
+          "lbl" : "Breast Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:254838004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0678222",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3459",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004989",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4872",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:254838004",
+            "NCIT:C4872",
+            "DOID:3459",
+            "UMLS:C0678222",
+            "MONDO:0004989"
+          ]
+        }
+      ]
+    }
+  ]
+}

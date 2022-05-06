@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:569b4840502e3fb307c4aba14bf4dd7b8f475e50225bb7d7430d93aab03dbd1f",
+      "nodes" : [
+        {
+          "id" : "MESH:C567827",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111295",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013470",
+          "type" : "CLASS",
+          "lbl" : "generalized epilepsy with febrile seizures plus, type 7"
+        },
+        {
+          "id" : "OMIM:613863",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C567827",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013470",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613863",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111295",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C567827",
+            "MONDO:0013470",
+            "OMIM:613863",
+            "DOID:0111295"
+          ]
+        }
+      ]
+    }
+  ]
+}

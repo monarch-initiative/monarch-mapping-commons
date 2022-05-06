@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b639087f1ea251e5ec95b0a374a9fdc1d3aa46c838d458a883eb1117e470dda2",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN032489",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060756",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010016",
+          "type" : "CLASS",
+          "lbl" : "sclerosteosis 1"
+        },
+        {
+          "id" : "OMIM:269500",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0060756",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010016",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN032489",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010016",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010016",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:269500",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0060756",
+            "MONDO:0010016",
+            "UMLS:CN032489",
+            "OMIM:269500"
+          ]
+        }
+      ]
+    }
+  ]
+}

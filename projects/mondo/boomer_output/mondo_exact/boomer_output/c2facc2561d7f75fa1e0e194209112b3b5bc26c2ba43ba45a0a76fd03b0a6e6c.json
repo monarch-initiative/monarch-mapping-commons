@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c2facc2561d7f75fa1e0e194209112b3b5bc26c2ba43ba45a0a76fd03b0a6e6c",
+      "nodes" : [
+        {
+          "id" : "SCTID:92589000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0345914",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021299",
+          "type" : "CLASS",
+          "lbl" : "carcinoma in situ of extrahepatic bile duct"
+        },
+        {
+          "id" : "NCIT:C4442",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:92589000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021299",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021299",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4442",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0345914",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021299",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4442",
+            "MONDO:0021299",
+            "SCTID:92589000",
+            "UMLS:C0345914"
+          ]
+        }
+      ]
+    }
+  ]
+}

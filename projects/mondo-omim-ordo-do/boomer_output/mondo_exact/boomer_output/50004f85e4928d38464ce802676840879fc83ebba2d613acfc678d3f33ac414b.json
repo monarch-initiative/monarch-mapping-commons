@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:50004f85e4928d38464ce802676840879fc83ebba2d613acfc678d3f33ac414b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1850384",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009751",
+          "type" : "CLASS",
+          "lbl" : "neuropathy, hereditary sensory, atypical"
+        },
+        {
+          "id" : "MESH:C564946",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070160",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:256860",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0070160",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009751",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1850384",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009751",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009751",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:256860",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564946",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009751",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0070160",
+            "MONDO:0009751",
+            "MESH:C564946",
+            "UMLS:C1850384",
+            "OMIM:256860"
+          ]
+        }
+      ]
+    }
+  ]
+}

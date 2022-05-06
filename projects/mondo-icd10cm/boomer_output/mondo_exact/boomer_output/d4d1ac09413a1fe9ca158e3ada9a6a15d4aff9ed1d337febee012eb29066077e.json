@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d4d1ac09413a1fe9ca158e3ada9a6a15d4aff9ed1d337febee012eb29066077e",
+      "nodes" : [
+        {
+          "id" : "SCTID:123809005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1263724",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0056803",
+          "type" : "CLASS",
+          "lbl" : "sulfur metabolism disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1263724",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0056803",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:123809005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0056803",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0056803",
+            "UMLS:C1263724",
+            "SCTID:123809005"
+          ]
+        }
+      ]
+    }
+  ]
+}

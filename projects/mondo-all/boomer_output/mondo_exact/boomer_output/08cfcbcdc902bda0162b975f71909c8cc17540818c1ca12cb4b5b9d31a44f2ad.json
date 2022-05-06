@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:08cfcbcdc902bda0162b975f71909c8cc17540818c1ca12cb4b5b9d31a44f2ad",
+      "nodes" : [
+        {
+          "id" : "MONDO:0016742",
+          "type" : "CLASS",
+          "lbl" : "mixed germ cell tumor of central nervous system"
+        },
+        {
+          "id" : "Orphanet:252021",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1334785",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN201989",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C7016",
+          "type" : "CLASS",
+          "lbl" : "Central Nervous System Mixed Germ Cell Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016742",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7016",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201989",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016742",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016742",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1334785",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016742",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:252021",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C7016",
+            "MONDO:0016742",
+            "UMLS:CN201989",
+            "Orphanet:252021"
+          ]
+        }
+      ]
+    }
+  ]
+}

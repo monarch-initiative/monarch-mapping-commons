@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e8a6aeb8c7eae0bd0576297323e874eac2d4e460d18b6294609dbc09506a4082",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227595",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019230",
+          "type" : "CLASS",
+          "lbl" : "inborn disorder of ornithine or proline metabolism"
+        },
+        {
+          "id" : "Orphanet:79185",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019230",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79185",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227595",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019230",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019230",
+            "Orphanet:79185",
+            "UMLS:CN227595"
+          ]
+        }
+      ]
+    }
+  ]
+}

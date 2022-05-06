@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cbf11dfc2916382ac5c34664f7214f8b46f533525bfc39125be80f2010e0bd99",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332886",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6017",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003733",
+          "type" : "CLASS",
+          "lbl" : "central nervous system mature teratoma"
+        },
+        {
+          "id" : "NCIT:C7013",
+          "type" : "CLASS",
+          "lbl" : "Central Nervous System Mature Teratoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6017",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003733",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332886",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003733",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003733",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7013",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003733",
+            "DOID:6017",
+            "UMLS:C1332886",
+            "NCIT:C7013"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5b00b09c074c4c4dd53f0da89e5675fa86145f2daab02f96ba55775512c73894",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519851",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6139",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003782",
+          "type" : "CLASS",
+          "lbl" : "uterine corpus epithelioid leiomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C40174",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1519851",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003782",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003782",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40174",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6139",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003782",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003782",
+            "NCIT:C40174",
+            "UMLS:C1519851",
+            "DOID:6139"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f2ee6f4f339c78c9482bc49755db0c4970fba1df3ce7ad3b83b33340f8a7b355",
+      "nodes" : [
+        {
+          "id" : "SCTID:766717008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070305",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015627",
+          "type" : "CLASS",
+          "lbl" : "multiple epiphyseal dysplasia due to collagen 9 anomaly"
+        },
+        {
+          "id" : "Orphanet:166002",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0070305",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015627",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:766717008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015627",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015627",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:166002",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0070305",
+            "MONDO:0015627",
+            "SCTID:766717008",
+            "Orphanet:166002"
+          ]
+        }
+      ]
+    }
+  ]
+}

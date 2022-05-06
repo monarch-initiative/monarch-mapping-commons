@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:48c8d6fdd6882ce7ad1e4bf7913886ce4323ef2524f6205496826c1f741d3d8f",
+      "nodes" : [
+        {
+          "id" : "MESH:C567765",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2751316",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013122",
+          "type" : "CLASS",
+          "lbl" : "glaucoma 3, primary congenital, D"
+        },
+        {
+          "id" : "OMIM:613086",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013122",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613086",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2751316",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013122",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567765",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013122",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013122",
+            "OMIM:613086",
+            "UMLS:C2751316",
+            "MESH:C567765"
+          ]
+        }
+      ]
+    }
+  ]
+}

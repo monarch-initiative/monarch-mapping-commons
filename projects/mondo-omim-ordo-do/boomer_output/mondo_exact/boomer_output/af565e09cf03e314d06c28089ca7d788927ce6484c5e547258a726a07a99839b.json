@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:af565e09cf03e314d06c28089ca7d788927ce6484c5e547258a726a07a99839b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1862062",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018607",
+          "type" : "CLASS",
+          "lbl" : "combined hamartoma of the retina and retinal pigment epithelium"
+        },
+        {
+          "id" : "Orphanet:440727",
+          "type" : "CLASS",
+          "lbl" : "Combined hamartoma of the retina and retinal pigment epithelium"
+        },
+        {
+          "id" : "UMLS:CN237641",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018607",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN237641",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1862062",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018607",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018607",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:440727",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1862062",
+            "MONDO:0018607",
+            "Orphanet:440727"
+          ]
+        }
+      ]
+    }
+  ]
+}

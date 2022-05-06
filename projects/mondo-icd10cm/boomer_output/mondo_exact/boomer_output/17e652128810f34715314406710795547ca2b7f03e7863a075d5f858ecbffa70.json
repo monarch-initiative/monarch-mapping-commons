@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:17e652128810f34715314406710795547ca2b7f03e7863a075d5f858ecbffa70",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333081",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7717",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004341",
+          "type" : "CLASS",
+          "lbl" : "colloid carcinoma of the pancreas"
+        },
+        {
+          "id" : "NCIT:C37214",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7717",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004341",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004341",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C37214",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333081",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004341",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:7717",
+            "MONDO:0004341",
+            "NCIT:C37214",
+            "UMLS:C1333081"
+          ]
+        }
+      ]
+    }
+  ]
+}

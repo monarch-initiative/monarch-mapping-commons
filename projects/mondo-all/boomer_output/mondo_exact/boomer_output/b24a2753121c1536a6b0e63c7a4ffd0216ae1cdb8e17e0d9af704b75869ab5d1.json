@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b24a2753121c1536a6b0e63c7a4ffd0216ae1cdb8e17e0d9af704b75869ab5d1",
+      "nodes" : [
+        {
+          "id" : "SCTID:194802003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0264706",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5847",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003672",
+          "type" : "CLASS",
+          "lbl" : "posterior myocardial infarction"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5847",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003672",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0264706",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003672",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:194802003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003672",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5847",
+            "MONDO:0003672",
+            "UMLS:C0264706",
+            "SCTID:194802003"
+          ]
+        }
+      ]
+    }
+  ]
+}

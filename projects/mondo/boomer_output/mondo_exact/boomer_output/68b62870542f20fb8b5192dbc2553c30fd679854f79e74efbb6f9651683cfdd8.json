@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:68b62870542f20fb8b5192dbc2553c30fd679854f79e74efbb6f9651683cfdd8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0206735",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002971",
+          "type" : "CLASS",
+          "lbl" : "amelanotic melanoma"
+        },
+        {
+          "id" : "NCIT:C3802",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D018328",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4359",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4359",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002971",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002971",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3802",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0206735",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002971",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D018328",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002971",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0206735",
+            "NCIT:C3802",
+            "DOID:4359",
+            "MONDO:0002971",
+            "MESH:D018328"
+          ]
+        }
+      ]
+    }
+  ]
+}

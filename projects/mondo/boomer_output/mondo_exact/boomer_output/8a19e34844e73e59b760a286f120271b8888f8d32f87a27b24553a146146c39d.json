@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8a19e34844e73e59b760a286f120271b8888f8d32f87a27b24553a146146c39d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335502",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4868",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003177",
+          "type" : "CLASS",
+          "lbl" : "prostate adenoid cystic carcinoma"
+        },
+        {
+          "id" : "NCIT:C5539",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335502",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003177",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003177",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5539",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4868",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003177",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003177",
+            "UMLS:C1335502",
+            "NCIT:C5539",
+            "DOID:4868"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1cb3f1a1da6c17ea879c09f7b9c847f271fd20f2de57e75da3ee09ae504914c9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6161",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003787",
+          "type" : "CLASS",
+          "lbl" : "childhood testicular mixed germ cell cancer"
+        },
+        {
+          "id" : "NCIT:C6542",
+          "type" : "CLASS",
+          "lbl" : "Childhood Testicular Mixed Germ Cell Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003787",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6542",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003787",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6161",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003787",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333009",
+            "MONDO:0003787",
+            "NCIT:C6542",
+            "DOID:6161"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c70ef9c0e70859ca0f4071de6d0a3960f193ca2dadce63408e8fc0fd03ab0b16",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0795861",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016949",
+          "type" : "CLASS",
+          "lbl" : "partial duplication of the short arm of chromosome 16"
+        },
+        {
+          "id" : "Orphanet:262794",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016949",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:262794",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0795861",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016949",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:262794",
+            "MONDO:0016949",
+            "UMLS:C0795861"
+          ]
+        }
+      ]
+    }
+  ]
+}

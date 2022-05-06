@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d5c1a97d8a795b3a5fc5aee16645bf7f59933d77af5084ae4f586e3776528d9b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2062889",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020420",
+          "type" : "CLASS",
+          "lbl" : "pulmonary branch stenosis"
+        },
+        {
+          "id" : "NCIT:C99144",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:99084",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020420",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C99144",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020420",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99084",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2062889",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020420",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C99144",
+            "MONDO:0020420",
+            "Orphanet:99084",
+            "UMLS:C2062889"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:364ec34c0511a02f10636656f77d15b7c702aa25cf3ba83b974ea977b5b9ef60",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3808935",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110438",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014095",
+          "type" : "CLASS",
+          "lbl" : "dilated cardiomyopathy 1JJ"
+        },
+        {
+          "id" : "OMIM:615235",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110438",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014095",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014095",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615235",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3808935",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014095",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0110438",
+            "MONDO:0014095",
+            "OMIM:615235",
+            "UMLS:C3808935"
+          ]
+        }
+      ]
+    }
+  ]
+}

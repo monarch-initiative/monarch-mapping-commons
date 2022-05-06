@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b521ecd3f195d83a1de6d19340c45ef5f4d427014514b03b4826a65b587f808c",
+      "nodes" : [
+        {
+          "id" : "MESH:D005266",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5546",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003505",
+          "type" : "CLASS",
+          "lbl" : "femoral cancer"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5546",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003505",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D005266",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003505",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5546",
+            "MONDO:0003505",
+            "MESH:D005266"
+          ]
+        }
+      ]
+    }
+  ]
+}

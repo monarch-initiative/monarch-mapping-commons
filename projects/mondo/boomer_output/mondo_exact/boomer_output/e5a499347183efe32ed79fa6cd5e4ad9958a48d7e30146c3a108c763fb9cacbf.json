@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e5a499347183efe32ed79fa6cd5e4ad9958a48d7e30146c3a108c763fb9cacbf",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332979",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5823",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003659",
+          "type" : "CLASS",
+          "lbl" : "pediatric lymphoma"
+        },
+        {
+          "id" : "NCIT:C5165",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003659",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5165",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332979",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003659",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5823",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003659",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C5165",
+            "MONDO:0003659",
+            "UMLS:C1332979",
+            "DOID:5823"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e93500c1a22db80df4d0631fdf0d988e3745d2771cb18ea396e9ed0151ff93a6",
+      "nodes" : [
+        {
+          "id" : "MESH:C566034",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1860849",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008595",
+          "type" : "CLASS",
+          "lbl" : "trichoepitheliomas, multiple desmoplastic"
+        },
+        {
+          "id" : "OMIM:190345",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008595",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:190345",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1860849",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008595",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566034",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008595",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008595",
+            "OMIM:190345",
+            "UMLS:C1860849",
+            "MESH:C566034"
+          ]
+        }
+      ]
+    }
+  ]
+}

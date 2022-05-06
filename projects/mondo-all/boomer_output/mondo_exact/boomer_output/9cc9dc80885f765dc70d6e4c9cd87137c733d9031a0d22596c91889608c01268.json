@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9cc9dc80885f765dc70d6e4c9cd87137c733d9031a0d22596c91889608c01268",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332982",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4546",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003041",
+          "type" : "CLASS",
+          "lbl" : "pediatric mesenchymal chondrosarcoma"
+        },
+        {
+          "id" : "NCIT:C27374",
+          "type" : "CLASS",
+          "lbl" : "Childhood Mesenchymal Chondrosarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003041",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27374",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4546",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003041",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332982",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003041",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003041",
+            "NCIT:C27374",
+            "DOID:4546",
+            "UMLS:C1332982"
+          ]
+        }
+      ]
+    }
+  ]
+}

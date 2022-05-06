@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6e381768cc9a11a9f3f96dccdf4aa02d151ebc877f17abcdb9b26728577d9872",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334704",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3379",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002632",
+          "type" : "CLASS",
+          "lbl" : "metachronous osteosarcoma of the bone"
+        },
+        {
+          "id" : "NCIT:C38157",
+          "type" : "CLASS",
+          "lbl" : "Metachronous Osteosarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3379",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002632",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002632",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C38157",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334704",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002632",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3379",
+            "MONDO:0002632",
+            "NCIT:C38157",
+            "UMLS:C1334704"
+          ]
+        }
+      ]
+    }
+  ]
+}

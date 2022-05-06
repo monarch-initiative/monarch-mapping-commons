@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fe4cf1cb02ec3af91335e30fe51f1655b10d11a6c0b6ac7009e3a74f777c2165",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553989",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013947",
+          "type" : "CLASS",
+          "lbl" : "young adult-onset distal hereditary motor neuropathy"
+        },
+        {
+          "id" : "Orphanet:314485",
+          "type" : "CLASS",
+          "lbl" : "Young adult-onset distal hereditary motor neuropathy"
+        },
+        {
+          "id" : "OMIM:614881",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013947",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614881",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3553989",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013947",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013947",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:314485",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:614881",
+            "MONDO:0013947",
+            "UMLS:C3553989",
+            "Orphanet:314485"
+          ]
+        }
+      ]
+    }
+  ]
+}

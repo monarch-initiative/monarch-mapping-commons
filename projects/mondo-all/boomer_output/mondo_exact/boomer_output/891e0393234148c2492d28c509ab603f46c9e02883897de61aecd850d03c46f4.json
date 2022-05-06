@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:891e0393234148c2492d28c509ab603f46c9e02883897de61aecd850d03c46f4",
+      "nodes" : [
+        {
+          "id" : "SCTID:92165001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3116",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002513",
+          "type" : "CLASS",
+          "lbl" : "kidney benign neoplasm"
+        },
+        {
+          "id" : "NCIT:C4778",
+          "type" : "CLASS",
+          "lbl" : "Benign Kidney Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3116",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002513",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92165001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002513",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002513",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4778",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002513",
+            "DOID:3116",
+            "NCIT:C4778",
+            "SCTID:92165001"
+          ]
+        }
+      ]
+    }
+  ]
+}

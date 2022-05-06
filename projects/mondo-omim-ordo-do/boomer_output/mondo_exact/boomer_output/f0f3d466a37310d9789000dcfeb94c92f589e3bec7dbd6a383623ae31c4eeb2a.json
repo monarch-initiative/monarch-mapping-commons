@@ -1,0 +1,115 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f0f3d466a37310d9789000dcfeb94c92f589e3bec7dbd6a383623ae31c4eeb2a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336904",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004491",
+          "type" : "CLASS",
+          "lbl" : "uterine corpus choriocarcinoma"
+        },
+        {
+          "id" : "MONDO:0004490",
+          "type" : "CLASS",
+          "lbl" : "gestational uterine corpus choriocarcinoma"
+        },
+        {
+          "id" : "NCIT:C27246",
+          "type" : "CLASS",
+          "lbl" : "Uterine Corpus Choriocarcinoma"
+        },
+        {
+          "id" : "DOID:8188",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8187",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:8188",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004491",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004491",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27246",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336904",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004491",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004490",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0004491",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8187",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:8187",
+            "MONDO:0004490"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "MONDO:0004491",
+            "NCIT:C27246",
+            "DOID:8188",
+            "UMLS:C1336904"
+          ]
+        }
+      ]
+    }
+  ]
+}

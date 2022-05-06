@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:29e2761c8675350fffb74521a79a6ff62fd62336ed9c8d9f8425bf70c2330955",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3151185",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110088",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013441",
+          "type" : "CLASS",
+          "lbl" : "asphyxiating thoracic dystrophy 4"
+        },
+        {
+          "id" : "OMIM:613819",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110088",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013441",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013441",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613819",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3151185",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013441",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0110088",
+            "MONDO:0013441",
+            "OMIM:613819",
+            "UMLS:C3151185"
+          ]
+        }
+      ]
+    }
+  ]
+}

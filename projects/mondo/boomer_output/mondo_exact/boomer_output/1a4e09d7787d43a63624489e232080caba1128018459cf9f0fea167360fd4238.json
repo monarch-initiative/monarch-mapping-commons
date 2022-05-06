@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1a4e09d7787d43a63624489e232080caba1128018459cf9f0fea167360fd4238",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1843256",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:607676",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:70592",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011888",
+          "type" : "CLASS",
+          "lbl" : "immunodeficiency 67"
+        },
+        {
+          "id" : "MESH:C564352",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564352",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011888",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1843256",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011888",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011888",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:70592",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011888",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607676",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:607676",
+            "MONDO:0011888",
+            "UMLS:C1843256",
+            "MESH:C564352",
+            "Orphanet:70592"
+          ]
+        }
+      ]
+    }
+  ]
+}

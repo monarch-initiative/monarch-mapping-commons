@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:86ec2ead210773aefe9e3b131222d7d3aa8cddd1e149c5d8656592cf9fec3c35",
+      "nodes" : [
+        {
+          "id" : "MESH:C564422",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1844440",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010597",
+          "type" : "CLASS",
+          "lbl" : "glutamyl ribose-5-phosphate storage disease"
+        },
+        {
+          "id" : "OMIM:305920",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010597",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:305920",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1844440",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010597",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564422",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010597",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010597",
+            "OMIM:305920",
+            "UMLS:C1844440",
+            "MESH:C564422"
+          ]
+        }
+      ]
+    }
+  ]
+}

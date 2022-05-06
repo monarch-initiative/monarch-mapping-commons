@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c271cf5446cb7d56b65268fb81fd3de5948447b0c6977372bbebf943bbe63043",
+      "nodes" : [
+        {
+          "id" : "MESH:C564937",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1850341",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009765",
+          "type" : "CLASS",
+          "lbl" : "ocular myopathy with curare sensitivity"
+        },
+        {
+          "id" : "OMIM:257600",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1850341",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009765",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009765",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:257600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564937",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009765",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1850341",
+            "MONDO:0009765",
+            "OMIM:257600",
+            "MESH:C564937"
+          ]
+        }
+      ]
+    }
+  ]
+}

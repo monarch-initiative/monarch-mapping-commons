@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f4bed70f9bb62e948a7eaee803b9c3fe9c5243ac8567e8563fa17ac54f5befaa",
+      "nodes" : [
+        {
+          "id" : "MESH:C564110",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1839842",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010646",
+          "type" : "CLASS",
+          "lbl" : "macular dystrophy, X-linked"
+        },
+        {
+          "id" : "OMIM:309100",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010646",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:309100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564110",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010646",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1839842",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010646",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010646",
+            "OMIM:309100",
+            "MESH:C564110",
+            "UMLS:C1839842"
+          ]
+        }
+      ]
+    }
+  ]
+}

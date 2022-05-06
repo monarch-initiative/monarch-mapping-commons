@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:90184a930f01c7ea5f046a8ac942f8c36db205b96dbed57a7d2a26dd68e3cd8e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1516418",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7598",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004296",
+          "type" : "CLASS",
+          "lbl" : "cervical lymphoepithelioma-like carcinoma"
+        },
+        {
+          "id" : "NCIT:C40193",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004296",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40193",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7598",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004296",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1516418",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004296",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004296",
+            "NCIT:C40193",
+            "DOID:7598",
+            "UMLS:C1516418"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:92cf4833fc1cd323384455174c50d20cce928514f10a5a270e351006dbc13537",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333370",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8409",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004552",
+          "type" : "CLASS",
+          "lbl" : "microinvasive cervical squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C36094",
+          "type" : "CLASS",
+          "lbl" : "Early Invasive Cervical Squamous Cell Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:8409",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004552",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333370",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004552",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004552",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C36094",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:8409",
+            "MONDO:0004552",
+            "UMLS:C1333370",
+            "NCIT:C36094"
+          ]
+        }
+      ]
+    }
+  ]
+}

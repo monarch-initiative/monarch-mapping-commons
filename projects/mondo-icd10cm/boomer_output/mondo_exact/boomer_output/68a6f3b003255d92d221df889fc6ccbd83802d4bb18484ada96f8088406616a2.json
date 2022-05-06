@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:68a6f3b003255d92d221df889fc6ccbd83802d4bb18484ada96f8088406616a2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280574",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013712",
+          "type" : "CLASS",
+          "lbl" : "surfactant metabolism dysfunction, pulmonary, 5"
+        },
+        {
+          "id" : "OMIM:614370",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013712",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614370",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3280574",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013712",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013712",
+            "OMIM:614370",
+            "UMLS:C3280574"
+          ]
+        }
+      ]
+    }
+  ]
+}

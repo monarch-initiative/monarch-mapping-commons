@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8aeb18b7eb1cca091f56d6197defd442fa1d058ac1baa2553e79674d57d8ebf5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN197348",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015056",
+          "type" : "CLASS",
+          "lbl" : "acquired angioedema type 1"
+        },
+        {
+          "id" : "Orphanet:100056",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN197348",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015056",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015056",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100056",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015056",
+            "UMLS:CN197348",
+            "Orphanet:100056"
+          ]
+        }
+      ]
+    }
+  ]
+}

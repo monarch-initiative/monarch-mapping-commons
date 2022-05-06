@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3b81f00dbe56124ed736812d9f86e5c62a9ebfe34b6a52c4f87a477ac7f94a7b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310785",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014841",
+          "type" : "CLASS",
+          "lbl" : "trichothiodystrophy 6, nonphotosensitive"
+        },
+        {
+          "id" : "OMIM:616943",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4310785",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014841",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014841",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616943",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014841",
+            "UMLS:C4310785",
+            "OMIM:616943"
+          ]
+        }
+      ]
+    }
+  ]
+}

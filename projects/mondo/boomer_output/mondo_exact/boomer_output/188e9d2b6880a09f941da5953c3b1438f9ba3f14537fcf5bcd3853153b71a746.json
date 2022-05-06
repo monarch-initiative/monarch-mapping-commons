@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:188e9d2b6880a09f941da5953c3b1438f9ba3f14537fcf5bcd3853153b71a746",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334618",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:193",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002149",
+          "type" : "CLASS",
+          "lbl" : "reproductive system cancer"
+        },
+        {
+          "id" : "NCIT:C36076",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:193",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002149",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002149",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C36076",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334618",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002149",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:193",
+            "MONDO:0002149",
+            "NCIT:C36076",
+            "UMLS:C1334618"
+          ]
+        }
+      ]
+    }
+  ]
+}

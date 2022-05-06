@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:481b4826869361aa01d8ec2613fc4fbe278a4409fc8251fa022a5f14089bff7d",
+      "nodes" : [
+        {
+          "id" : "SCTID:448476001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3165028",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017866",
+          "type" : "CLASS",
+          "lbl" : "subpulmonary stenosis"
+        },
+        {
+          "id" : "Orphanet:3190",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3165028",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017866",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:448476001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017866",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017866",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3190",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3165028",
+            "MONDO:0017866",
+            "SCTID:448476001",
+            "Orphanet:3190"
+          ]
+        }
+      ]
+    }
+  ]
+}

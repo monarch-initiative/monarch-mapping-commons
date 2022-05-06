@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d91089eb77007ee1f01402b85f780fb313fe5e358f6d9f77339275772ce0c6b6",
+      "nodes" : [
+        {
+          "id" : "SCTID:60735000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:12959",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:H02.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0152226",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001604",
+          "type" : "CLASS",
+          "lbl" : "lagophthalmos"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:H02.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001604",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:12959",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001604",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:60735000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001604",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0152226",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001604",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:60735000",
+            "DOID:12959",
+            "MONDO:0001604",
+            "UMLS:C0152226",
+            "ICD10CM:H02.2"
+          ]
+        }
+      ]
+    }
+  ]
+}

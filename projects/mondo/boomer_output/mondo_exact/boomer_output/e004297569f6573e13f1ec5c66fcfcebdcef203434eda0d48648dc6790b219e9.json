@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e004297569f6573e13f1ec5c66fcfcebdcef203434eda0d48648dc6790b219e9",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN072330",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008021",
+          "type" : "CLASS",
+          "lbl" : "Cowden syndrome 1"
+        },
+        {
+          "id" : "OMIM:158350",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008021",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:158350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN072330",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008021",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:158350",
+            "MONDO:0008021",
+            "UMLS:CN072330"
+          ]
+        }
+      ]
+    }
+  ]
+}

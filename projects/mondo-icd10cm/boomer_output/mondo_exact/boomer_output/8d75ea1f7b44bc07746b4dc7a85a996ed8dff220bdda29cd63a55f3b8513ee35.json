@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8d75ea1f7b44bc07746b4dc7a85a996ed8dff220bdda29cd63a55f3b8513ee35",
+      "nodes" : [
+        {
+          "id" : "MESH:C565476",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1855796",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009434",
+          "type" : "CLASS",
+          "lbl" : "hypoproteinemia, hypercatabolic"
+        },
+        {
+          "id" : "OMIM:241600",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1855796",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009434",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565476",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009434",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009434",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:241600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1855796",
+            "MONDO:0009434",
+            "MESH:C565476",
+            "OMIM:241600"
+          ]
+        }
+      ]
+    }
+  ]
+}

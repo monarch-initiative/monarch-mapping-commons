@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a39a8b091bb61811a2341333d20e820e7256efe396277f9c054499d3111850b3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332606",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2127",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002214",
+          "type" : "CLASS",
+          "lbl" : "brain germinoma"
+        },
+        {
+          "id" : "NCIT:C6284",
+          "type" : "CLASS",
+          "lbl" : "Brain Germinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002214",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6284",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332606",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002214",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2127",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002214",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002214",
+            "NCIT:C6284",
+            "UMLS:C1332606",
+            "DOID:2127"
+          ]
+        }
+      ]
+    }
+  ]
+}

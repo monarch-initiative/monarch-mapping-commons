@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4241f20fb9baa840618fbb34bc4c3e8b700a38c51b7a3aa7dbc793772c94d225",
+      "nodes" : [
+        {
+          "id" : "MESH:C565711",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1857795",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012428",
+          "type" : "CLASS",
+          "lbl" : "kyphoscoliosis 1"
+        },
+        {
+          "id" : "OMIM:610170",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1857795",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012428",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565711",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012428",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012428",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610170",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1857795",
+            "MONDO:0012428",
+            "MESH:C565711",
+            "OMIM:610170"
+          ]
+        }
+      ]
+    }
+  ]
+}

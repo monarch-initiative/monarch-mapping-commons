@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b3ee89cc1916be14145ba71e635ebe1bbaab10d60aac542c1c9397c343e3ecdb",
+      "nodes" : [
+        {
+          "id" : "Orphanet:281090",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN202782",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4274085",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017264",
+          "type" : "CLASS",
+          "lbl" : "syndromic recessive X-linked ichthyosis"
+        },
+        {
+          "id" : "SCTID:717041008",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202782",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017264",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017264",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:281090",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017264",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4274085",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:717041008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017264",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017264",
+            "UMLS:CN202782",
+            "Orphanet:281090",
+            "SCTID:717041008"
+          ]
+        }
+      ]
+    }
+  ]
+}

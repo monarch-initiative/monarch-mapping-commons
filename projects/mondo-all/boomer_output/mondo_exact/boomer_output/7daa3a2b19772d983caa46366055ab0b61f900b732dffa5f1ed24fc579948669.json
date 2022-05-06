@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7daa3a2b19772d983caa46366055ab0b61f900b732dffa5f1ed24fc579948669",
+      "nodes" : [
+        {
+          "id" : "SCTID:83351003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0043219",
+          "type" : "CLASS",
+          "lbl" : "migraine with brainstem aura"
+        },
+        {
+          "id" : "NCIT:C117013",
+          "type" : "CLASS",
+          "lbl" : "Basilar-Type Migraine"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0043219",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C117013",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:83351003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043219",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0043219",
+            "NCIT:C117013",
+            "SCTID:83351003"
+          ]
+        }
+      ]
+    }
+  ]
+}

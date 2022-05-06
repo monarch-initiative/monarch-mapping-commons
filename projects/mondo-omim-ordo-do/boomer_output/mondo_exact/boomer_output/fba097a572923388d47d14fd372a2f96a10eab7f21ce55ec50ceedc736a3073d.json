@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fba097a572923388d47d14fd372a2f96a10eab7f21ce55ec50ceedc736a3073d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN847583",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080294",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0036484",
+          "type" : "CLASS",
+          "lbl" : "Charcot-Marie-Tooth disease, dominant intermediate G"
+        },
+        {
+          "id" : "OMIM:617882",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080294",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0036484",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN847583",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0036484",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0036484",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617882",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0036484",
+            "DOID:0080294",
+            "UMLS:CN847583",
+            "OMIM:617882"
+          ]
+        }
+      ]
+    }
+  ]
+}

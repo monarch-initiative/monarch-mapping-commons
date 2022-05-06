@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:57c846580b3f452e2a8decbdb16e378c3a775e7660f6713a1f50a700dc117141",
+      "nodes" : [
+        {
+          "id" : "Orphanet:244283",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016577",
+          "type" : "CLASS",
+          "lbl" : "biliary atresia with splenic malformation syndrome"
+        },
+        {
+          "id" : "UMLS:C4274029",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:717156002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN201730",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:717156002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016577",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016577",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4274029",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201730",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016577",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016577",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:244283",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:717156002",
+            "MONDO:0016577",
+            "UMLS:CN201730",
+            "Orphanet:244283"
+          ]
+        }
+      ]
+    }
+  ]
+}

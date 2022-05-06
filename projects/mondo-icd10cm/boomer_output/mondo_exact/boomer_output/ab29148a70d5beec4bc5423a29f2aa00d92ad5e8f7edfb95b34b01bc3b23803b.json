@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ab29148a70d5beec4bc5423a29f2aa00d92ad5e8f7edfb95b34b01bc3b23803b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3550875",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010469",
+          "type" : "CLASS",
+          "lbl" : "epsilon-trimethyllysine hydroxylase deficiency"
+        },
+        {
+          "id" : "OMIM:300872",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3550875",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010469",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010469",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300872",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3550875",
+            "MONDO:0010469",
+            "OMIM:300872"
+          ]
+        }
+      ]
+    }
+  ]
+}

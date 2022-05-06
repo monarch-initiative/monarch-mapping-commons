@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5caf2a03af80a75046c3602b7dec50e533aeb1bf7bcf7cd5f5a44d35abc7a191",
+      "nodes" : [
+        {
+          "id" : "NCIT:C9335",
+          "type" : "CLASS",
+          "lbl" : "Malignant Breast Neoplasm"
+        },
+        {
+          "id" : "DOID:1612",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007254",
+          "type" : "CLASS",
+          "lbl" : "breast cancer"
+        },
+        {
+          "id" : "SCTID:254837009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C50",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007254",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9335",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1612",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007254",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:254837009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007254",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C50",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007254",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C50",
+            "SCTID:254837009",
+            "DOID:1612",
+            "NCIT:C9335",
+            "MONDO:0007254"
+          ]
+        }
+      ]
+    }
+  ]
+}

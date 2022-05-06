@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dac3b7f25ebf590bf09db9b1156bdd85aeffdf21ecf8e3b7facd9e42db9f17bd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2677065",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060715",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012847",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive congenital ichthyosis 6"
+        },
+        {
+          "id" : "OMIM:612281",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012847",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:612281",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2677065",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012847",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060715",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012847",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012847",
+            "OMIM:612281",
+            "DOID:0060715",
+            "UMLS:C2677065"
+          ]
+        }
+      ]
+    }
+  ]
+}

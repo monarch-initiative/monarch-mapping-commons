@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5e71c17f3abc3a1ee9ed8e1d5369ce91bc2fd1a0f9b965b8bec92d51dde25009",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334749",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5821",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:86904",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN206264",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019483",
+          "type" : "CLASS",
+          "lbl" : "methotrexate-associated lymphoproliferative disorders"
+        },
+        {
+          "id" : "NCIT:C7184",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019483",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:86904",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5821",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019483",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN206264",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019483",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019483",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1334749",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019483",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7184",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN206264",
+            "Orphanet:86904",
+            "MONDO:0019483",
+            "NCIT:C7184",
+            "DOID:5821"
+          ]
+        }
+      ]
+    }
+  ]
+}

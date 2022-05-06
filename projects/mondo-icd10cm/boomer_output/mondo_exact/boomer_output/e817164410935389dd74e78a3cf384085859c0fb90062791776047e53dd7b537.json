@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e817164410935389dd74e78a3cf384085859c0fb90062791776047e53dd7b537",
+      "nodes" : [
+        {
+          "id" : "MESH:D014380",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0041307",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0025136",
+          "type" : "CLASS",
+          "lbl" : "tuberculosis, bovine"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0041307",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025136",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D014380",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025136",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0041307",
+            "MONDO:0025136",
+            "MESH:D014380"
+          ]
+        }
+      ]
+    }
+  ]
+}

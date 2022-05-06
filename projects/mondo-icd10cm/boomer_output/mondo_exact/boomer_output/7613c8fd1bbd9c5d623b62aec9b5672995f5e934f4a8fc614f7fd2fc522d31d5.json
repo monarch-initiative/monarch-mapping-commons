@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7613c8fd1bbd9c5d623b62aec9b5672995f5e934f4a8fc614f7fd2fc522d31d5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3151421",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013511",
+          "type" : "CLASS",
+          "lbl" : "cyanosis, transient neonatal"
+        },
+        {
+          "id" : "OMIM:613977",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3151421",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013511",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013511",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613977",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3151421",
+            "MONDO:0013511",
+            "OMIM:613977"
+          ]
+        }
+      ]
+    }
+  ]
+}

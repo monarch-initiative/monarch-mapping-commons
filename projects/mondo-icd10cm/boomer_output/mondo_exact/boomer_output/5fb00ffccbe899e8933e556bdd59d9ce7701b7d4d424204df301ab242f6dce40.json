@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5fb00ffccbe899e8933e556bdd59d9ce7701b7d4d424204df301ab242f6dce40",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335351",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7611",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004305",
+          "type" : "CLASS",
+          "lbl" : "parathyroid oncocytic adenoma"
+        },
+        {
+          "id" : "NCIT:C27393",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004305",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27393",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335351",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004305",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7611",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004305",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004305",
+            "NCIT:C27393",
+            "UMLS:C1335351",
+            "DOID:7611"
+          ]
+        }
+      ]
+    }
+  ]
+}

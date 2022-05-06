@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6a4c9e01b71934cc208c715a4b3ae961d43feda44786b8c508e23aad4acf1588",
+      "nodes" : [
+        {
+          "id" : "MESH:C563591",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1835028",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007973",
+          "type" : "CLASS",
+          "lbl" : "mental and growth retardation with amblyopia"
+        },
+        {
+          "id" : "OMIM:156190",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007973",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:156190",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563591",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007973",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1835028",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007973",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007973",
+            "OMIM:156190",
+            "MESH:C563591",
+            "UMLS:C1835028"
+          ]
+        }
+      ]
+    }
+  ]
+}

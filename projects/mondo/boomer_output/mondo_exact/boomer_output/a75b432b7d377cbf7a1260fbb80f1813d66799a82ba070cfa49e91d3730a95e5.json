@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a75b432b7d377cbf7a1260fbb80f1813d66799a82ba070cfa49e91d3730a95e5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203766",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017803",
+          "type" : "CLASS",
+          "lbl" : "primary progressive apraxia of speech"
+        },
+        {
+          "id" : "Orphanet:314566",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017803",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:314566",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203766",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017803",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:314566",
+            "MONDO:0017803",
+            "UMLS:CN203766"
+          ]
+        }
+      ]
+    }
+  ]
+}

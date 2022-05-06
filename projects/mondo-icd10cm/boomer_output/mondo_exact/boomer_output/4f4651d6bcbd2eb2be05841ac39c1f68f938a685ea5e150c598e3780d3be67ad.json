@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4f4651d6bcbd2eb2be05841ac39c1f68f938a685ea5e150c598e3780d3be67ad",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518949",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4277",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002935",
+          "type" : "CLASS",
+          "lbl" : "penis basal cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C39961",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002935",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39961",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4277",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002935",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518949",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002935",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002935",
+            "NCIT:C39961",
+            "DOID:4277",
+            "UMLS:C1518949"
+          ]
+        }
+      ]
+    }
+  ]
+}

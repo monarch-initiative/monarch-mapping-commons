@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:12e41207a9ad9b9efec343e329eaaf010621d799a22b4bc0e360656c447dffd5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4539857",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060532",
+          "type" : "CLASS",
+          "lbl" : "congenital heart defects and skeletal malformations syndrome"
+        },
+        {
+          "id" : "OMIM:617602",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4539857",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060532",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060532",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4539857",
+            "MONDO:0060532",
+            "OMIM:617602"
+          ]
+        }
+      ]
+    }
+  ]
+}

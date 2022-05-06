@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:68476a7ba3cd2383808fb3ac9d794eddc3e1355c238d3ba2c627de42a9705906",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1833162",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010957",
+          "type" : "CLASS",
+          "lbl" : "agonadism, 46,XY, with intellectual disability, short stature, retarded bone age, and multiple extragenital malformations"
+        },
+        {
+          "id" : "OMIM:600908",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1833162",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010957",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010957",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600908",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010957",
+            "UMLS:C1833162",
+            "OMIM:600908"
+          ]
+        }
+      ]
+    }
+  ]
+}

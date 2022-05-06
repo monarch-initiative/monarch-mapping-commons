@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5eae35621eeb7a72614ec8d4c288896a860f90d6c6fdf13330857099ffcc866c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332904",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4787",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003141",
+          "type" : "CLASS",
+          "lbl" : "cerebellopontine angle embryonal tumor"
+        },
+        {
+          "id" : "NCIT:C5436",
+          "type" : "CLASS",
+          "lbl" : "Cerebellopontine Angle Embryonal Tumor, Not Otherwise Specified"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332904",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003141",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003141",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5436",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4787",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003141",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332904",
+            "MONDO:0003141",
+            "NCIT:C5436",
+            "DOID:4787"
+          ]
+        }
+      ]
+    }
+  ]
+}

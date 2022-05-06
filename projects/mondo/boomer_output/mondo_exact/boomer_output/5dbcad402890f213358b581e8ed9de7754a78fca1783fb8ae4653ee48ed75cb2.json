@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5dbcad402890f213358b581e8ed9de7754a78fca1783fb8ae4653ee48ed75cb2",
+      "nodes" : [
+        {
+          "id" : "NCIT:C3918",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN204711",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0262963",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:363579",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018201",
+          "type" : "CLASS",
+          "lbl" : "extragonadal germ cell tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0262963",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018201",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018201",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN204711",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018201",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3918",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018201",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:363579",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018201",
+            "UMLS:C0262963",
+            "NCIT:C3918",
+            "Orphanet:363579"
+          ]
+        }
+      ]
+    }
+  ]
+}

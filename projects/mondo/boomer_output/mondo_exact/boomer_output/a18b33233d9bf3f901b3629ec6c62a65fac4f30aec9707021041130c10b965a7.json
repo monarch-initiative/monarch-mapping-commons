@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a18b33233d9bf3f901b3629ec6c62a65fac4f30aec9707021041130c10b965a7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334828",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5155",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003307",
+          "type" : "CLASS",
+          "lbl" : "multiple mucosal neuroma"
+        },
+        {
+          "id" : "NCIT:C6559",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003307",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6559",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334828",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003307",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5155",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003307",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6559",
+            "MONDO:0003307",
+            "UMLS:C1334828",
+            "DOID:5155"
+          ]
+        }
+      ]
+    }
+  ]
+}

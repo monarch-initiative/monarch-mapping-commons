@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0f403c44fb022e7e5b15ad734317b7cfbe79b0f6f8e613f91e6a2e975adbdafe",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1511189",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8097",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004459",
+          "type" : "CLASS",
+          "lbl" : "bladder hepatoid adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C39838",
+          "type" : "CLASS",
+          "lbl" : "Bladder Hepatoid Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004459",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39838",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1511189",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004459",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8097",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004459",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004459",
+            "NCIT:C39838",
+            "UMLS:C1511189",
+            "DOID:8097"
+          ]
+        }
+      ]
+    }
+  ]
+}

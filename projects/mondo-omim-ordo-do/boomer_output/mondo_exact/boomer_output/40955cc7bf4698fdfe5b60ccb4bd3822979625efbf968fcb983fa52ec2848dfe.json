@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:40955cc7bf4698fdfe5b60ccb4bd3822979625efbf968fcb983fa52ec2848dfe",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335515",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2992",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002477",
+          "type" : "CLASS",
+          "lbl" : "prostate neuroendocrine neoplasm"
+        },
+        {
+          "id" : "NCIT:C5545",
+          "type" : "CLASS",
+          "lbl" : "Prostate Neuroendocrine Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:2992",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002477",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002477",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5545",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335515",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002477",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002477",
+            "DOID:2992",
+            "NCIT:C5545",
+            "UMLS:C1335515"
+          ]
+        }
+      ]
+    }
+  ]
+}

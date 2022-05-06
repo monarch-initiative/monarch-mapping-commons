@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8bd981db1063afcbc160ae2e4c4731b5b1ea1efd7a7b9a0aef6957637d01c12b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0040247",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005982",
+          "type" : "CLASS",
+          "lbl" : "tinea infection"
+        },
+        {
+          "id" : "NCIT:C112181",
+          "type" : "CLASS",
+          "lbl" : "Tinea Infection"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0040247",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005982",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005982",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C112181",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0040247",
+            "MONDO:0005982",
+            "NCIT:C112181"
+          ]
+        }
+      ]
+    }
+  ]
+}

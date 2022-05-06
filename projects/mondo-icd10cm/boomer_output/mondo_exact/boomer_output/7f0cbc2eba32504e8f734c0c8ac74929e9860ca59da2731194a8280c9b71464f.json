@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7f0cbc2eba32504e8f734c0c8ac74929e9860ca59da2731194a8280c9b71464f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1514199",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6774",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003989",
+          "type" : "CLASS",
+          "lbl" : "polyembryoma of the ovary"
+        },
+        {
+          "id" : "NCIT:C39990",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6774",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003989",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39990",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1514199",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6774",
+            "MONDO:0003989",
+            "NCIT:C39990",
+            "UMLS:C1514199"
+          ]
+        }
+      ]
+    }
+  ]
+}

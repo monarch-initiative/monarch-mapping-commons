@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f4ee114b0559bbda4b10ad760a8042164c118eecc842bfb45b7f3e0a0d36aea6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3805727",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007961",
+          "type" : "CLASS",
+          "lbl" : "megalencephaly, autosomal dominant"
+        },
+        {
+          "id" : "OMIM:155350",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3805727",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007961",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007961",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:155350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3805727",
+            "MONDO:0007961",
+            "OMIM:155350"
+          ]
+        }
+      ]
+    }
+  ]
+}

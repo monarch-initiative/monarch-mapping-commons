@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:30ca5a44864d4a92f5a268806f461248c6407e2829cdd75cda0f28ce8141bb1e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226077",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018344",
+          "type" : "CLASS",
+          "lbl" : "periodic paralysis with transient compartment-like syndrome"
+        },
+        {
+          "id" : "Orphanet:397755",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN226077",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018344",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018344",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:397755",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018344",
+            "UMLS:CN226077",
+            "Orphanet:397755"
+          ]
+        }
+      ]
+    }
+  ]
+}

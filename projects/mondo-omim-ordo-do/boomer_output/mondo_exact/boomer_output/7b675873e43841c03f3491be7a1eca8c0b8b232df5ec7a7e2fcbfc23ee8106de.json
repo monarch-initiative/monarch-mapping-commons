@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7b675873e43841c03f3491be7a1eca8c0b8b232df5ec7a7e2fcbfc23ee8106de",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225193",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014787",
+          "type" : "CLASS",
+          "lbl" : "severe intellectual disability-corpus callosum agenesis-facial dysmorphism-cerebellar ataxia syndrome"
+        },
+        {
+          "id" : "Orphanet:466688",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616819",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014787",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:466688",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014787",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616819",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225193",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014787",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014787",
+            "Orphanet:466688",
+            "OMIM:616819",
+            "UMLS:C4225193"
+          ]
+        }
+      ]
+    }
+  ]
+}

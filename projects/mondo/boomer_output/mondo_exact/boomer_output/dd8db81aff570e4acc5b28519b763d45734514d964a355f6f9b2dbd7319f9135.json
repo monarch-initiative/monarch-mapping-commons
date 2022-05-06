@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dd8db81aff570e4acc5b28519b763d45734514d964a355f6f9b2dbd7319f9135",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333481",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021123",
+          "type" : "CLASS",
+          "lbl" : "Ewing sarcoma/peripheral primitive neuroectodermal tumor of bone"
+        },
+        {
+          "id" : "NCIT:C35871",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333481",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021123",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021123",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35871",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333481",
+            "MONDO:0021123",
+            "NCIT:C35871"
+          ]
+        }
+      ]
+    }
+  ]
+}

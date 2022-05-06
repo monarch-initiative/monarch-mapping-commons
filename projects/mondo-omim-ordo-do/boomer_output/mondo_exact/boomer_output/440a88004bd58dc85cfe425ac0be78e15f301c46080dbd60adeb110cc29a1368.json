@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:440a88004bd58dc85cfe425ac0be78e15f301c46080dbd60adeb110cc29a1368",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3887501",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0100476",
+          "type" : "CLASS",
+          "lbl" : "lipodystrophy, partial, acquired, susceptibility to"
+        },
+        {
+          "id" : "OMIM:608709",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3887501",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0100476",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0100476",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608709",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0100476",
+            "UMLS:C3887501",
+            "OMIM:608709"
+          ]
+        }
+      ]
+    }
+  ]
+}

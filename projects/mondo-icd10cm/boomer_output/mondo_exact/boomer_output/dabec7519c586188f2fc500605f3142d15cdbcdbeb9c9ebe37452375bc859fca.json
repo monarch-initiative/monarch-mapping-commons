@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dabec7519c586188f2fc500605f3142d15cdbcdbeb9c9ebe37452375bc859fca",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3805373",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110242",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007289",
+          "type" : "CLASS",
+          "lbl" : "cataract 13 with adult I phenotype"
+        },
+        {
+          "id" : "OMIM:116700",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007289",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:116700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3805373",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007289",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110242",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007289",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007289",
+            "OMIM:116700",
+            "UMLS:C3805373",
+            "DOID:0110242"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:59bec5d02f39fdf95f52d5784e63c25232d70b9ab7b0c399f515a037326430da",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN035860",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016967",
+          "type" : "CLASS",
+          "lbl" : "partial duplication of the long arm of chromosome 17"
+        },
+        {
+          "id" : "Orphanet:262968",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN035860",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016967",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016967",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:262968",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN035860",
+            "MONDO:0016967",
+            "Orphanet:262968"
+          ]
+        }
+      ]
+    }
+  ]
+}

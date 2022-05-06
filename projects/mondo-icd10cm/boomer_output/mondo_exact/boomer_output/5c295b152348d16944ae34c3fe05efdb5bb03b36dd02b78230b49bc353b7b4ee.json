@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5c295b152348d16944ae34c3fe05efdb5bb03b36dd02b78230b49bc353b7b4ee",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1266087",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7729",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004343",
+          "type" : "CLASS",
+          "lbl" : "pancreatic acinar cell cystadenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C5727",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004343",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5727",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1266087",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004343",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7729",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004343",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C5727",
+            "MONDO:0004343",
+            "UMLS:C1266087",
+            "DOID:7729"
+          ]
+        }
+      ]
+    }
+  ]
+}

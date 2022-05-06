@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:12d1bb1cb899f6656f192a3fbd0cca9227d8d646caf4fdbe628c01c2001284d9",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237743",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018678",
+          "type" : "CLASS",
+          "lbl" : "polyclonal hyperviscosity syndrome"
+        },
+        {
+          "id" : "Orphanet:450322",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018678",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:450322",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237743",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018678",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018678",
+            "Orphanet:450322",
+            "UMLS:CN237743"
+          ]
+        }
+      ]
+    }
+  ]
+}

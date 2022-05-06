@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f8afa4a87214537e6b09abdfadb7c01b61120f733dfd1b881768f142f61c2cc0",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279611",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5179",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003318",
+          "type" : "CLASS",
+          "lbl" : "mixed cell type kidney Wilms' tumor"
+        },
+        {
+          "id" : "NCIT:C9149",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0279611",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003318",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003318",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9149",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5179",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003318",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0279611",
+            "MONDO:0003318",
+            "NCIT:C9149",
+            "DOID:5179"
+          ]
+        }
+      ]
+    }
+  ]
+}

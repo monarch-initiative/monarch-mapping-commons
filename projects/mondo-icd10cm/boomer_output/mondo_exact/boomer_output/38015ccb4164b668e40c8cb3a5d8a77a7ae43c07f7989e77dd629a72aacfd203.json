@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:38015ccb4164b668e40c8cb3a5d8a77a7ae43c07f7989e77dd629a72aacfd203",
+      "nodes" : [
+        {
+          "id" : "MESH:C566223",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1862275",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007199",
+          "type" : "CLASS",
+          "lbl" : "blepharochalasis, superior"
+        },
+        {
+          "id" : "OMIM:110000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C566223",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007199",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007199",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:110000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1862275",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007199",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007199",
+            "MESH:C566223",
+            "OMIM:110000",
+            "UMLS:C1862275"
+          ]
+        }
+      ]
+    }
+  ]
+}

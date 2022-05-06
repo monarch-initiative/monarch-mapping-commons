@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:53fc8b45a0d505377ac9e43c35c4bb6334d567f4a896aeefe656dd40f8a9b7c3",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN229269",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020096",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive isolated diffuse palmoplantar keratoderma"
+        },
+        {
+          "id" : "Orphanet:98356",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020096",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98356",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN229269",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020096",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:98356",
+            "MONDO:0020096",
+            "UMLS:CN229269"
+          ]
+        }
+      ]
+    }
+  ]
+}

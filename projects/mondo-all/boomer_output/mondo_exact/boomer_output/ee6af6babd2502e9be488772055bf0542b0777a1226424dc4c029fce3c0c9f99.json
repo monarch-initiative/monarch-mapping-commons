@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ee6af6babd2502e9be488772055bf0542b0777a1226424dc4c029fce3c0c9f99",
+      "nodes" : [
+        {
+          "id" : "SCTID:92058007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0684831",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021529",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of chest wall"
+        },
+        {
+          "id" : "NCIT:C8529",
+          "type" : "CLASS",
+          "lbl" : "Benign Chest Wall Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0684831",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021529",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92058007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021529",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021529",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8529",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021529",
+            "NCIT:C8529",
+            "SCTID:92058007",
+            "UMLS:C0684831"
+          ]
+        }
+      ]
+    }
+  ]
+}

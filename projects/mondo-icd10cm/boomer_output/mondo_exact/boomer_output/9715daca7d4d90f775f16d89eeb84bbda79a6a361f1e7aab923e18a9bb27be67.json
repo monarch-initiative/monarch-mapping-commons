@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9715daca7d4d90f775f16d89eeb84bbda79a6a361f1e7aab923e18a9bb27be67",
+      "nodes" : [
+        {
+          "id" : "SCTID:717191005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4274017",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019401",
+          "type" : "CLASS",
+          "lbl" : "sporadic idiopathic steroid-resistant nephrotic syndrome"
+        },
+        {
+          "id" : "Orphanet:84271",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019401",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:84271",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4274017",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019401",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:717191005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019401",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019401",
+            "Orphanet:84271",
+            "UMLS:C4274017",
+            "SCTID:717191005"
+          ]
+        }
+      ]
+    }
+  ]
+}

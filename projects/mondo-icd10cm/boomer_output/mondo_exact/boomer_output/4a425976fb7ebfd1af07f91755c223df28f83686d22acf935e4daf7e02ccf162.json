@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4a425976fb7ebfd1af07f91755c223df28f83686d22acf935e4daf7e02ccf162",
+      "nodes" : [
+        {
+          "id" : "MESH:C564183",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1840551",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007730",
+          "type" : "CLASS",
+          "lbl" : "histiocytic dermatoarthritis"
+        },
+        {
+          "id" : "OMIM:142730",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007730",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:142730",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1840551",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007730",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564183",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007730",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007730",
+            "OMIM:142730",
+            "UMLS:C1840551",
+            "MESH:C564183"
+          ]
+        }
+      ]
+    }
+  ]
+}

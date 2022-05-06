@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f32d15cefea5669c42c9fba09c1a28ba5afdbbde770b5cd3cffad7c3299d646f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150596",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013237",
+          "type" : "CLASS",
+          "lbl" : "susceptibility to mononeuropathy of the median nerve, mild"
+        },
+        {
+          "id" : "OMIM:613353",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013237",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613353",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3150596",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013237",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013237",
+            "OMIM:613353",
+            "UMLS:C3150596"
+          ]
+        }
+      ]
+    }
+  ]
+}

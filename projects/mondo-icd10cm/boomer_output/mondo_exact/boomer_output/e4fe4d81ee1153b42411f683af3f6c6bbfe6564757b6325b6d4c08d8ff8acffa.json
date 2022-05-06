@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e4fe4d81ee1153b42411f683af3f6c6bbfe6564757b6325b6d4c08d8ff8acffa",
+      "nodes" : [
+        {
+          "id" : "MESH:C536177",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1832874",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010980",
+          "type" : "CLASS",
+          "lbl" : "midline malformations, multiple, with limb abnormalities and hypopituitarism"
+        },
+        {
+          "id" : "OMIM:601016",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010980",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601016",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536177",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010980",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1832874",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010980",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010980",
+            "OMIM:601016",
+            "MESH:C536177",
+            "UMLS:C1832874"
+          ]
+        }
+      ]
+    }
+  ]
+}

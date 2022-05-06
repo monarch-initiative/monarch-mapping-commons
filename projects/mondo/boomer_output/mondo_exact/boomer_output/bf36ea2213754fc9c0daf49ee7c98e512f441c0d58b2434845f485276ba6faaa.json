@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bf36ea2213754fc9c0daf49ee7c98e512f441c0d58b2434845f485276ba6faaa",
+      "nodes" : [
+        {
+          "id" : "MESH:C563896",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1837730",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012076",
+          "type" : "CLASS",
+          "lbl" : "midface hypoplasia, obesity, developmental delay, and neonatal hypotonia"
+        },
+        {
+          "id" : "OMIM:608624",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C563896",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012076",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012076",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608624",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1837730",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012076",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012076",
+            "MESH:C563896",
+            "OMIM:608624",
+            "UMLS:C1837730"
+          ]
+        }
+      ]
+    }
+  ]
+}

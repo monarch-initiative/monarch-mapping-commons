@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:911a7b9c3dc703c43653e06e1d4b84b1ed648d560db363778f7141aa1c088ec3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280556",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013711",
+          "type" : "CLASS",
+          "lbl" : "peripheral neuropathy-myopathy-hoarseness-hearing loss syndrome"
+        },
+        {
+          "id" : "Orphanet:397744",
+          "type" : "CLASS",
+          "lbl" : "Peripheral neuropathy-myopathy-hoarseness-hearing loss syndrome"
+        },
+        {
+          "id" : "OMIM:614369",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013711",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:397744",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3280556",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013711",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013711",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614369",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:397744",
+            "MONDO:0013711",
+            "UMLS:C3280556",
+            "OMIM:614369"
+          ]
+        }
+      ]
+    }
+  ]
+}

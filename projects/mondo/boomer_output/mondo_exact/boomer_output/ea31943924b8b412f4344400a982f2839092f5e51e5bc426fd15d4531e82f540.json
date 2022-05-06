@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ea31943924b8b412f4344400a982f2839092f5e51e5bc426fd15d4531e82f540",
+      "nodes" : [
+        {
+          "id" : "SCTID:231719009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0267073",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020418",
+          "type" : "CLASS",
+          "lbl" : "dysphagia lusoria"
+        },
+        {
+          "id" : "Orphanet:99082",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020418",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99082",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:231719009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020418",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0267073",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020418",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020418",
+            "Orphanet:99082",
+            "SCTID:231719009",
+            "UMLS:C0267073"
+          ]
+        }
+      ]
+    }
+  ]
+}

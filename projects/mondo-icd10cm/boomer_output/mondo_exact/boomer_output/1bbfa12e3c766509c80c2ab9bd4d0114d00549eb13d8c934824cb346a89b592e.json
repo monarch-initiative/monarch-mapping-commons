@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1bbfa12e3c766509c80c2ab9bd4d0114d00549eb13d8c934824cb346a89b592e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336521",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006435",
+          "type" : "CLASS",
+          "lbl" : "submandibular gland adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C5940",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006435",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5940",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336521",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006435",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006435",
+            "NCIT:C5940",
+            "UMLS:C1336521"
+          ]
+        }
+      ]
+    }
+  ]
+}

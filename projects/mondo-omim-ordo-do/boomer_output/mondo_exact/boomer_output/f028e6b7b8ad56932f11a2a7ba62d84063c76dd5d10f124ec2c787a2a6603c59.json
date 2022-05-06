@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f028e6b7b8ad56932f11a2a7ba62d84063c76dd5d10f124ec2c787a2a6603c59",
+      "nodes" : [
+        {
+          "id" : "MESH:C565109",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1852160",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007444",
+          "type" : "CLASS",
+          "lbl" : "dermal Ridges, patternless"
+        },
+        {
+          "id" : "OMIM:125540",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1852160",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007444",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007444",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:125540",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565109",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007444",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1852160",
+            "MONDO:0007444",
+            "OMIM:125540",
+            "MESH:C565109"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2941f2b7b5cf652f614a66a70f3b4c5ad9a31809630a3a7eb05a3bf6a3a283c8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225282",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060587",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014691",
+          "type" : "CLASS",
+          "lbl" : "Noonan syndrome 9"
+        },
+        {
+          "id" : "OMIM:616559",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4225282",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014691",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014691",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616559",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060587",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014691",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014691",
+            "UMLS:C4225282",
+            "OMIM:616559",
+            "DOID:0060587"
+          ]
+        }
+      ]
+    }
+  ]
+}

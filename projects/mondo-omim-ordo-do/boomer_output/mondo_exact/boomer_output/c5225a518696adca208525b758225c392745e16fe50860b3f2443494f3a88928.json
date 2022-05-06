@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c5225a518696adca208525b758225c392745e16fe50860b3f2443494f3a88928",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202534",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017134",
+          "type" : "CLASS",
+          "lbl" : "odonto-onycho dysplasia-alopecia syndrome"
+        },
+        {
+          "id" : "Orphanet:2722",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017134",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2722",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202534",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017134",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017134",
+            "Orphanet:2722",
+            "UMLS:CN202534"
+          ]
+        }
+      ]
+    }
+  ]
+}

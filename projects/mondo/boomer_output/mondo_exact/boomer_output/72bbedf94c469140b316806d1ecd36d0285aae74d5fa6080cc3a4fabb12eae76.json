@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:72bbedf94c469140b316806d1ecd36d0285aae74d5fa6080cc3a4fabb12eae76",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333283",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7103",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004108",
+          "type" : "CLASS",
+          "lbl" : "diaphragma sellae meningioma"
+        },
+        {
+          "id" : "NCIT:C5283",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7103",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004108",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333283",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004108",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004108",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5283",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333283",
+            "MONDO:0004108",
+            "DOID:7103",
+            "NCIT:C5283"
+          ]
+        }
+      ]
+    }
+  ]
+}

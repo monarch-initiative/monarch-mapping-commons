@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5e39f509e2e5478fb526a9b53c436a9bb7981062cb3cd4e79ece470a1522eb8c",
+      "nodes" : [
+        {
+          "id" : "MESH:C535714",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1834206",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008084",
+          "type" : "CLASS",
+          "lbl" : "neuropathy, congenital, with arthrogryposis multiplex"
+        },
+        {
+          "id" : "OMIM:162370",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C535714",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008084",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008084",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:162370",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1834206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008084",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C535714",
+            "MONDO:0008084",
+            "OMIM:162370",
+            "UMLS:C1834206"
+          ]
+        }
+      ]
+    }
+  ]
+}

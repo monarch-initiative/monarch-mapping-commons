@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4d925ca841e40cd263667ec50033c659476e177e9b9e78dbad54bb786d07816a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553645",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110676",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013883",
+          "type" : "CLASS",
+          "lbl" : "congenital myasthenic syndrome 13"
+        },
+        {
+          "id" : "OMIM:614750",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110676",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013883",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013883",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614750",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3553645",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013883",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0110676",
+            "MONDO:0013883",
+            "OMIM:614750",
+            "UMLS:C3553645"
+          ]
+        }
+      ]
+    }
+  ]
+}

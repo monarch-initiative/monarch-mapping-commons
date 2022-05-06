@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1ff4b20879bdd00ab1798acfb7227ff3bc23dab0f0c8f5b9f49b29a57ea5f37b",
+      "nodes" : [
+        {
+          "id" : "MESH:C565933",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859646",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008836",
+          "type" : "CLASS",
+          "lbl" : "ataxia with myoclonic epilepsy and presenile dementia"
+        },
+        {
+          "id" : "OMIM:208700",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565933",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008836",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008836",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:208700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1859646",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008836",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C565933",
+            "MONDO:0008836",
+            "OMIM:208700",
+            "UMLS:C1859646"
+          ]
+        }
+      ]
+    }
+  ]
+}

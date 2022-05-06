@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5e0293eb9772b305f3dd9c3be4f4c434420f940967b27c9af0fa76ef1dbbd15a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336892",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7333",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004190",
+          "type" : "CLASS",
+          "lbl" : "nephrogenic adenoma of urinary bladder"
+        },
+        {
+          "id" : "NCIT:C7415",
+          "type" : "CLASS",
+          "lbl" : "Bladder Nephrogenic Adenoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7333",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004190",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336892",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004190",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004190",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7415",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1336892",
+            "MONDO:0004190",
+            "DOID:7333",
+            "NCIT:C7415"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:910d51914935ffc96b61101e8990c6f21c97f076d84575de6c97da33fa5c6c1a",
+      "nodes" : [
+        {
+          "id" : "DOID:2312",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:A43",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:31204",
+          "type" : "CLASS",
+          "lbl" : "Nocardiosis"
+        },
+        {
+          "id" : "SCTID:29227009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D009617",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017776",
+          "type" : "CLASS",
+          "lbl" : "nocardiosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017776",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:31204",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D009617",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017776",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2312",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017776",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:A43",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017776",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:29227009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017776",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:29227009",
+            "ICD10CM:A43",
+            "MESH:D009617",
+            "Orphanet:31204",
+            "MONDO:0017776",
+            "DOID:2312"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d9ee146e66a3d59a4bdabd2602e57efca4ca73064b1f7a2d4bd12db78f1cbdda",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN248527",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060724",
+          "type" : "CLASS",
+          "lbl" : "glycosylphosphatidylinositol biosynthesis defect 17"
+        },
+        {
+          "id" : "OMIM:618010",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0060724",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:618010",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN248527",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060724",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:618010",
+            "MONDO:0060724",
+            "UMLS:CN248527"
+          ]
+        }
+      ]
+    }
+  ]
+}

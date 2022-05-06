@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:42590a228d7ce8b1e6f13dcb601d18056f2b1af252557111da52cd32202586f4",
+      "nodes" : [
+        {
+          "id" : "DOID:0080267",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0033258",
+          "type" : "CLASS",
+          "lbl" : "hearing loss, autosomal dominant 71"
+        },
+        {
+          "id" : "OMIM:617605",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0033258",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617605",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080267",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0033258",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0033258",
+            "OMIM:617605",
+            "DOID:0080267"
+          ]
+        }
+      ]
+    }
+  ]
+}

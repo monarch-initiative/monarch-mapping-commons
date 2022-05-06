@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b876625f270769cfc757f47a0ee2e9c3cf11d6dc6d653fe4d023ab41c5613694",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334638",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8012",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004432",
+          "type" : "CLASS",
+          "lbl" : "mature pericardial teratoma"
+        },
+        {
+          "id" : "NCIT:C6744",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004432",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6744",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334638",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004432",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8012",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004432",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004432",
+            "NCIT:C6744",
+            "UMLS:C1334638",
+            "DOID:8012"
+          ]
+        }
+      ]
+    }
+  ]
+}

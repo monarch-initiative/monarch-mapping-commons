@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b4a3186ef669decf35da06010553e21ada7da95e8822748f7b8824d5e4fa33b9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335174",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4555",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003049",
+          "type" : "CLASS",
+          "lbl" : "ovarian large-cell neuroendocrine carcinoma"
+        },
+        {
+          "id" : "NCIT:C5238",
+          "type" : "CLASS",
+          "lbl" : "Ovarian Large Cell Neuroendocrine Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4555",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003049",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003049",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5238",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335174",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003049",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003049",
+            "DOID:4555",
+            "NCIT:C5238",
+            "UMLS:C1335174"
+          ]
+        }
+      ]
+    }
+  ]
+}

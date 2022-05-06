@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6603ffb3ad4c31b0565f3884606e39ef30ccee78d20847e53031d15df375d5e0",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225233",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014747",
+          "type" : "CLASS",
+          "lbl" : "familial progressive retinal dystrophy-iris coloboma-congenital cataract syndrome"
+        },
+        {
+          "id" : "Orphanet:488197",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616722",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014747",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616722",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014747",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:488197",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225233",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014747",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:616722",
+            "MONDO:0014747",
+            "Orphanet:488197",
+            "UMLS:C4225233"
+          ]
+        }
+      ]
+    }
+  ]
+}

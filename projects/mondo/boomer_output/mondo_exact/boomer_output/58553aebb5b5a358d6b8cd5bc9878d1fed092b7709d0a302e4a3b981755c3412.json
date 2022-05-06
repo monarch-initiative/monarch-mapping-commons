@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:58553aebb5b5a358d6b8cd5bc9878d1fed092b7709d0a302e4a3b981755c3412",
+      "nodes" : [
+        {
+          "id" : "MESH:C566587",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1865915",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011181",
+          "type" : "CLASS",
+          "lbl" : "fibrosis of extraocular muscles, congenital, 2"
+        },
+        {
+          "id" : "OMIM:602078",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011181",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:602078",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1865915",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011181",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566587",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011181",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:602078",
+            "MONDO:0011181",
+            "UMLS:C1865915",
+            "MESH:C566587"
+          ]
+        }
+      ]
+    }
+  ]
+}

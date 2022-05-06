@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:544b29eacc10104284a8e2ed013a0c55f7d44e179f6b7a8a0a3e601fc3a6d1f0",
+      "nodes" : [
+        {
+          "id" : "Orphanet:280302",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017227",
+          "type" : "CLASS",
+          "lbl" : "autoimmune pancreatitis type 1"
+        },
+        {
+          "id" : "SCTID:722872000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN202712",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4302243",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017227",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4302243",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202712",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017227",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017227",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:280302",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:722872000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017227",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017227",
+            "UMLS:CN202712",
+            "Orphanet:280302",
+            "SCTID:722872000"
+          ]
+        }
+      ]
+    }
+  ]
+}

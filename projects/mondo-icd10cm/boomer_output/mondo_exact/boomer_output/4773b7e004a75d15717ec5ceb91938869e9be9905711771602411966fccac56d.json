@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4773b7e004a75d15717ec5ceb91938869e9be9905711771602411966fccac56d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332923",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4707",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003108",
+          "type" : "CLASS",
+          "lbl" : "cervicomedullary junction neoplasm"
+        },
+        {
+          "id" : "NCIT:C5423",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4707",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003108",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003108",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5423",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332923",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003108",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:4707",
+            "MONDO:0003108",
+            "NCIT:C5423",
+            "UMLS:C1332923"
+          ]
+        }
+      ]
+    }
+  ]
+}

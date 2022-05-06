@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fcc7e078902188c20ffb2bb2952cc6ec55500117c43238291cb2bfb9d5d9a2a9",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018333",
+          "type" : "CLASS",
+          "lbl" : "multiple acyl-CoA dehydrogenase deficiency, mild type"
+        },
+        {
+          "id" : "Orphanet:394532",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018333",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:394532",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018333",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018333",
+            "Orphanet:394532",
+            "UMLS:CN205005"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ac6939de63bb8d1b23860ed983fee767a35fd7e2ce9fd4a1bb80bbca02e56290",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205920",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019268",
+          "type" : "CLASS",
+          "lbl" : "epidermal disease"
+        },
+        {
+          "id" : "Orphanet:79353",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN205920",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019268",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019268",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79353",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN205920",
+            "MONDO:0019268",
+            "Orphanet:79353"
+          ]
+        }
+      ]
+    }
+  ]
+}

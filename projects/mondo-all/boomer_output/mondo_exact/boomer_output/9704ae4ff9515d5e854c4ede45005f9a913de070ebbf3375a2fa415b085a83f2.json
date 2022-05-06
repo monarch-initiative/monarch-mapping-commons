@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9704ae4ff9515d5e854c4ede45005f9a913de070ebbf3375a2fa415b085a83f2",
+      "nodes" : [
+        {
+          "id" : "OMIM:178330",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:2999",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C566736",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008341",
+          "type" : "CLASS",
+          "lbl" : "ptosis-strabismus-ectopic pupils syndrome"
+        },
+        {
+          "id" : "UMLS:C1867437",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008341",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2999",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1867437",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008341",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566736",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008341",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008341",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:178330",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C566736",
+            "Orphanet:2999",
+            "MONDO:0008341",
+            "UMLS:C1867437",
+            "OMIM:178330"
+          ]
+        }
+      ]
+    }
+  ]
+}

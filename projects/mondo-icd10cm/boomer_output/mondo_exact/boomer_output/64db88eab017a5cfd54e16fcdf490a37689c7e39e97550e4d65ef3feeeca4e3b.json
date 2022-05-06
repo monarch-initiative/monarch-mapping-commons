@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:64db88eab017a5cfd54e16fcdf490a37689c7e39e97550e4d65ef3feeeca4e3b",
+      "nodes" : [
+        {
+          "id" : "MESH:C537784",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1851504",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007568",
+          "type" : "CLASS",
+          "lbl" : "aortic aneurysm, familial thoracic 4"
+        },
+        {
+          "id" : "OMIM:132900",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1851504",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007568",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007568",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:132900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537784",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007568",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007568",
+            "UMLS:C1851504",
+            "OMIM:132900",
+            "MESH:C537784"
+          ]
+        }
+      ]
+    }
+  ]
+}

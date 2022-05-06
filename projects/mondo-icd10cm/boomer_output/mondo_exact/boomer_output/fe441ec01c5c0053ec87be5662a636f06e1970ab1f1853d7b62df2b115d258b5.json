@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fe441ec01c5c0053ec87be5662a636f06e1970ab1f1853d7b62df2b115d258b5",
+      "nodes" : [
+        {
+          "id" : "NCIT:C116816",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:1482",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:231858009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:A54.31",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015455",
+          "type" : "CLASS",
+          "lbl" : "gonococcal conjunctivitis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:231858009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015455",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015455",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C116816",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:A54.31",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015455",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015455",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1482",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:A54.31",
+            "NCIT:C116816",
+            "MONDO:0015455",
+            "Orphanet:1482",
+            "SCTID:231858009"
+          ]
+        }
+      ]
+    }
+  ]
+}

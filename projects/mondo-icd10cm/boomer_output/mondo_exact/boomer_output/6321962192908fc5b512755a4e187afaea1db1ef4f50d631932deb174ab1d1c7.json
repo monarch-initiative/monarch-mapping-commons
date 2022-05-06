@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6321962192908fc5b512755a4e187afaea1db1ef4f50d631932deb174ab1d1c7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280309",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013660",
+          "type" : "CLASS",
+          "lbl" : "arthrogryposis, Perthes disease, and upward gaze palsy"
+        },
+        {
+          "id" : "OMIM:614262",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3280309",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013660",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013660",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614262",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3280309",
+            "MONDO:0013660",
+            "OMIM:614262"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:40ad58d02ff953e6a549a195cf30c2386b803159a0534872f986b60cb5ca48dd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1511319",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002483",
+          "type" : "CLASS",
+          "lbl" : "breast myoepithelial tumor"
+        },
+        {
+          "id" : "NCIT:C40389",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002483",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1511319",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002483",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002483",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40389",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3004",
+            "MONDO:0002483",
+            "NCIT:C40389",
+            "UMLS:C1511319"
+          ]
+        }
+      ]
+    }
+  ]
+}

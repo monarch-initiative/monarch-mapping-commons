@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e80746f8c38052452f6fef4cfa31ef81b4e2c07311dfca67ea71e83034b7a345",
+      "nodes" : [
+        {
+          "id" : "SCTID:715822007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015039",
+          "type" : "CLASS",
+          "lbl" : "lissencephaly with cerebellar hypoplasia type F"
+        },
+        {
+          "id" : "UMLS:CN228905",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:100016",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4274989",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN228905",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015039",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015039",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100016",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:715822007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015039",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015039",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4274989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015039",
+            "UMLS:CN228905",
+            "Orphanet:100016",
+            "SCTID:715822007"
+          ]
+        }
+      ]
+    }
+  ]
+}

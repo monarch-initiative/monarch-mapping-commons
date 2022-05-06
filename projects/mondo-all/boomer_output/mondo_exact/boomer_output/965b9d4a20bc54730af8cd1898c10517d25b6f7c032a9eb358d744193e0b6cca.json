@@ -1,0 +1,87 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:965b9d4a20bc54730af8cd1898c10517d25b6f7c032a9eb358d744193e0b6cca",
+      "nodes" : [
+        {
+          "id" : "MESH:D002280",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020804",
+          "type" : "CLASS",
+          "lbl" : "basal cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C156767",
+          "type" : "CLASS",
+          "lbl" : "Basal Cell Carcinoma"
+        },
+        {
+          "id" : "NCIT:C7586",
+          "type" : "CLASS",
+          "lbl" : "Malignant Basal Cell Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020804",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7586",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "NCIT:C156767",
+          "pred" : "is_a",
+          "obj" : "MONDO:0020804",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.025000000000000022
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D002280",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020804",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "NCIT:C156767",
+          "pred" : "asserted_is_a",
+          "obj" : "NCIT:C7586",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020804",
+            "NCIT:C7586",
+            "MESH:D002280"
+          ]
+        }
+      ]
+    }
+  ]
+}

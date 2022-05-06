@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b0d3277796b64f9cf993a1a3c8960169c4cf80abbbc80c889f7ceb309e2e52b3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0795812",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016955",
+          "type" : "CLASS",
+          "lbl" : "partial duplication of the long arm of chromosome 4"
+        },
+        {
+          "id" : "MESH:C537644",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:262860",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111159",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016955",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:262860",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111159",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016955",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0795812",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016955",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537644",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016955",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:262860",
+            "MONDO:0016955",
+            "DOID:0111159",
+            "UMLS:C0795812",
+            "MESH:C537644"
+          ]
+        }
+      ]
+    }
+  ]
+}

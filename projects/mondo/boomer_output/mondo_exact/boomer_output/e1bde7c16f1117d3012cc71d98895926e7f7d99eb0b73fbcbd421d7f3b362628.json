@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e1bde7c16f1117d3012cc71d98895926e7f7d99eb0b73fbcbd421d7f3b362628",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3275459",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060206",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010459",
+          "type" : "CLASS",
+          "lbl" : "amyotrophic lateral sclerosis type 15"
+        },
+        {
+          "id" : "OMIM:300857",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3275459",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010459",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010459",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300857",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010459",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010459",
+            "UMLS:C3275459",
+            "OMIM:300857",
+            "DOID:0060206"
+          ]
+        }
+      ]
+    }
+  ]
+}

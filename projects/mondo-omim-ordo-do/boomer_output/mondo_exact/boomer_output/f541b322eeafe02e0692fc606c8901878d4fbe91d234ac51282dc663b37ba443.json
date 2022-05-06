@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f541b322eeafe02e0692fc606c8901878d4fbe91d234ac51282dc663b37ba443",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0431391",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:253170008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020492",
+          "type" : "CLASS",
+          "lbl" : "hemimegalencephaly"
+        },
+        {
+          "id" : "Orphanet:99802",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D065705",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:253170008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020492",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0431391",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020492",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020492",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99802",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D065705",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020492",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020492",
+            "MESH:D065705",
+            "Orphanet:99802",
+            "UMLS:C0431391",
+            "SCTID:253170008"
+          ]
+        }
+      ]
+    }
+  ]
+}

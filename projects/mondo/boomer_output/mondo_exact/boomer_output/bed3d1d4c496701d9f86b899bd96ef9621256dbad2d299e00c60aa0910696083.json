@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bed3d1d4c496701d9f86b899bd96ef9621256dbad2d299e00c60aa0910696083",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310727",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080553",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014904",
+          "type" : "CLASS",
+          "lbl" : "congenital disorder of glycosylation, type IAA"
+        },
+        {
+          "id" : "OMIM:617082",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080553",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014904",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014904",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617082",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310727",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014904",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0080553",
+            "MONDO:0014904",
+            "OMIM:617082",
+            "UMLS:C4310727"
+          ]
+        }
+      ]
+    }
+  ]
+}

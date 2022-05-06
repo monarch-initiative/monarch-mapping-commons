@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b70cf4abc7b370a9fde780e1c067809a198408958eadbd740d81fd2d3168f800",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206652",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019739",
+          "type" : "CLASS",
+          "lbl" : "atypical hemolytic-uremic syndrome with anti-factor H antibodies"
+        },
+        {
+          "id" : "Orphanet:93581",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019739",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93581",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN206652",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019739",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:93581",
+            "MONDO:0019739",
+            "UMLS:CN206652"
+          ]
+        }
+      ]
+    }
+  ]
+}

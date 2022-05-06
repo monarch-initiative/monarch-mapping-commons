@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fe73dcba23a9ffe3b25f98fe0fa04808403513b6c89825e72ccfa6497dbe8933",
+      "nodes" : [
+        {
+          "id" : "MESH:C562740",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:234820",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009330",
+          "type" : "CLASS",
+          "lbl" : "hemangiopericytoma, malignant"
+        },
+        {
+          "id" : "NCIT:C4301",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0334542",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009330",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:234820",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334542",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009330",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C562740",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009330",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009330",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4301",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009330",
+            "NCIT:C4301",
+            "UMLS:C0334542",
+            "MESH:C562740",
+            "OMIM:234820"
+          ]
+        }
+      ]
+    }
+  ]
+}

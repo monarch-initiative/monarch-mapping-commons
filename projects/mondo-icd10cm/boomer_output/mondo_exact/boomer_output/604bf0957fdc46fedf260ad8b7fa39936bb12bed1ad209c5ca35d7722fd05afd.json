@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:604bf0957fdc46fedf260ad8b7fa39936bb12bed1ad209c5ca35d7722fd05afd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3554665",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014080",
+          "type" : "CLASS",
+          "lbl" : "osteosclerotic metaphyseal dysplasia"
+        },
+        {
+          "id" : "Orphanet:500548",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:615198",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014080",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615198",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3554665",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014080",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014080",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:500548",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014080",
+            "OMIM:615198",
+            "UMLS:C3554665",
+            "Orphanet:500548"
+          ]
+        }
+      ]
+    }
+  ]
+}

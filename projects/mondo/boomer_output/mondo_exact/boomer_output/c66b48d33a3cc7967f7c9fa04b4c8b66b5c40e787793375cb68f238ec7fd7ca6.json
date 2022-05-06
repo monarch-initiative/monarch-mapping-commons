@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c66b48d33a3cc7967f7c9fa04b4c8b66b5c40e787793375cb68f238ec7fd7ca6",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200437",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4274761",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015826",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant spondylocostal dysostosis"
+        },
+        {
+          "id" : "SCTID:716232002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:1797",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015826",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1797",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN200437",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015826",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015826",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4274761",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:716232002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015826",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:1797",
+            "MONDO:0015826",
+            "UMLS:CN200437",
+            "SCTID:716232002"
+          ]
+        }
+      ]
+    }
+  ]
+}

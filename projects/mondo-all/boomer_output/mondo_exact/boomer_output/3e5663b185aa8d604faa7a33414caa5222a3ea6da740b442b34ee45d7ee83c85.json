@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3e5663b185aa8d604faa7a33414caa5222a3ea6da740b442b34ee45d7ee83c85",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310664",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014973",
+          "type" : "CLASS",
+          "lbl" : "sudden cardiac failure, infantile"
+        },
+        {
+          "id" : "OMIM:617222",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014973",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617222",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310664",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014973",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:617222",
+            "MONDO:0014973",
+            "UMLS:C4310664"
+          ]
+        }
+      ]
+    }
+  ]
+}

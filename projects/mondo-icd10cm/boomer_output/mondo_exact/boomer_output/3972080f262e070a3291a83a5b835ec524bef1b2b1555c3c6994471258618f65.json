@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3972080f262e070a3291a83a5b835ec524bef1b2b1555c3c6994471258618f65",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3899673",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0022642",
+          "type" : "CLASS",
+          "lbl" : "childhood carcinoid tumor"
+        },
+        {
+          "id" : "NCIT:C118810",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0022642",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C118810",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3899673",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022642",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0022642",
+            "NCIT:C118810",
+            "UMLS:C3899673"
+          ]
+        }
+      ]
+    }
+  ]
+}

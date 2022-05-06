@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eecb1dd581a1a0cba987b20707ab9d617b4fbdc0ee178c96749b7d05c004623d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227187",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017740",
+          "type" : "CLASS",
+          "lbl" : "disorder of protein N-glycosylation"
+        },
+        {
+          "id" : "Orphanet:309347",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017740",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309347",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227187",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017740",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017740",
+            "Orphanet:309347",
+            "UMLS:CN227187"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0f1d114590a797332df6404182195ccae6979fe96319bb54a53413a697358124",
+      "nodes" : [
+        {
+          "id" : "MESH:C565208",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1853228",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012457",
+          "type" : "CLASS",
+          "lbl" : "pyloric stenosis, infantile hypertrophic, 2"
+        },
+        {
+          "id" : "OMIM:610260",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1853228",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012457",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610260",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565208",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1853228",
+            "MONDO:0012457",
+            "OMIM:610260",
+            "MESH:C565208"
+          ]
+        }
+      ]
+    }
+  ]
+}

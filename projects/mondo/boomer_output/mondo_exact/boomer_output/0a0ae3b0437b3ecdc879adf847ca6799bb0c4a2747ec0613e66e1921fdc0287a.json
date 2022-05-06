@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0a0ae3b0437b3ecdc879adf847ca6799bb0c4a2747ec0613e66e1921fdc0287a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1708771",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0037105",
+          "type" : "CLASS",
+          "lbl" : "lung germ cell tumor"
+        },
+        {
+          "id" : "NCIT:C45636",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1708771",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0037105",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0037105",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C45636",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1708771",
+            "MONDO:0037105",
+            "NCIT:C45636"
+          ]
+        }
+      ]
+    }
+  ]
+}

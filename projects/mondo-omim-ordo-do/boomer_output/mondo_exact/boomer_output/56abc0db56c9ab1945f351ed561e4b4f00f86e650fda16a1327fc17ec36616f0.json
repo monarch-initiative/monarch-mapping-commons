@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:56abc0db56c9ab1945f351ed561e4b4f00f86e650fda16a1327fc17ec36616f0",
+      "nodes" : [
+        {
+          "id" : "SCTID:92039003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0345566",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021524",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of buccal mucosa"
+        },
+        {
+          "id" : "NCIT:C4406",
+          "type" : "CLASS",
+          "lbl" : "Benign Buccal Mucosa Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0345566",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021524",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021524",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4406",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92039003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021524",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4406",
+            "MONDO:0021524",
+            "UMLS:C0345566",
+            "SCTID:92039003"
+          ]
+        }
+      ]
+    }
+  ]
+}

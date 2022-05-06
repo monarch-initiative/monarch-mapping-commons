@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:18972206188b7e6e9482ed28c94e287ad2ba7446654035145aaac6c9d1beafd0",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205797",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019206",
+          "type" : "CLASS",
+          "lbl" : "sparse hair-short stature-skin anomalies syndrome"
+        },
+        {
+          "id" : "Orphanet:79132",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN205797",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019206",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79132",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019206",
+            "UMLS:CN205797",
+            "Orphanet:79132"
+          ]
+        }
+      ]
+    }
+  ]
+}

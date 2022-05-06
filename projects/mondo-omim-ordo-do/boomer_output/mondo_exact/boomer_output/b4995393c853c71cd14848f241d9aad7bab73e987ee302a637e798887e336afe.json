@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b4995393c853c71cd14848f241d9aad7bab73e987ee302a637e798887e336afe",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333592",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5831",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003666",
+          "type" : "CLASS",
+          "lbl" : "fallopian tube endometrioid adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C6279",
+          "type" : "CLASS",
+          "lbl" : "Fallopian Tube Endometrioid Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003666",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6279",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5831",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003666",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333592",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003666",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6279",
+            "MONDO:0003666",
+            "DOID:5831",
+            "UMLS:C1333592"
+          ]
+        }
+      ]
+    }
+  ]
+}

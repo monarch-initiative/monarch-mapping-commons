@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ff97e7a804d134f5489854f59dab384a840a869426584dad7680f3d2ba8c5250",
+      "nodes" : [
+        {
+          "id" : "MESH:C566280",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1862867",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007121",
+          "type" : "CLASS",
+          "lbl" : "aniridia, microcornea, and spontaneously Reabsorbed cataract"
+        },
+        {
+          "id" : "OMIM:106230",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007121",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:106230",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566280",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007121",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1862867",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007121",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007121",
+            "OMIM:106230",
+            "MESH:C566280",
+            "UMLS:C1862867"
+          ]
+        }
+      ]
+    }
+  ]
+}

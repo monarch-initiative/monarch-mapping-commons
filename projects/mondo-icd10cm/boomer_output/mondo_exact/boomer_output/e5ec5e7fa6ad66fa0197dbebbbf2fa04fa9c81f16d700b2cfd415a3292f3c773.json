@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e5ec5e7fa6ad66fa0197dbebbbf2fa04fa9c81f16d700b2cfd415a3292f3c773",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334953",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006316",
+          "type" : "CLASS",
+          "lbl" : "neuroblastic tumor"
+        },
+        {
+          "id" : "NCIT:C6963",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334953",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006316",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006316",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6963",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1334953",
+            "MONDO:0006316",
+            "NCIT:C6963"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d50487f2fbd5d589a951bd83df13e3a7d12e26967912b318a8570dbe8dea6c15",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334633",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050747",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000432",
+          "type" : "CLASS",
+          "lbl" : "lymphoplasmacytic lymphoma"
+        },
+        {
+          "id" : "NCIT:C3212",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000432",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3212",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050747",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000432",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334633",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000432",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C3212",
+            "MONDO:0000432",
+            "DOID:0050747",
+            "UMLS:C0334633"
+          ]
+        }
+      ]
+    }
+  ]
+}

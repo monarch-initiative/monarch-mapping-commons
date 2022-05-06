@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0e2bd2c9d3288820453886980f14508b37c8f258b2f1b863b814b1e512cbc951",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200646",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016000",
+          "type" : "CLASS",
+          "lbl" : "familial isolated hypoparathyroidism due to impaired PTH secretion"
+        },
+        {
+          "id" : "Orphanet:189466",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN200646",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:189466",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN200646",
+            "MONDO:0016000",
+            "Orphanet:189466"
+          ]
+        }
+      ]
+    }
+  ]
+}

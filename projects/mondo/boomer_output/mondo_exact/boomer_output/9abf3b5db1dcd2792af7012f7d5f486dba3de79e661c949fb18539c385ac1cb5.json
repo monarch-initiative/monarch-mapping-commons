@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9abf3b5db1dcd2792af7012f7d5f486dba3de79e661c949fb18539c385ac1cb5",
+      "nodes" : [
+        {
+          "id" : "MESH:C563613",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1835320",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007914",
+          "type" : "CLASS",
+          "lbl" : "lumbar stenosis, familial"
+        },
+        {
+          "id" : "OMIM:152550",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C563613",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007914",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007914",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:152550",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1835320",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007914",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:152550",
+            "MONDO:0007914",
+            "MESH:C563613",
+            "UMLS:C1835320"
+          ]
+        }
+      ]
+    }
+  ]
+}

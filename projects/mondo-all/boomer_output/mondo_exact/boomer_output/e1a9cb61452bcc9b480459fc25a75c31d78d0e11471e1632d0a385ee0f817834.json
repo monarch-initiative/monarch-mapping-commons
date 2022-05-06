@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e1a9cb61452bcc9b480459fc25a75c31d78d0e11471e1632d0a385ee0f817834",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226094",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018354",
+          "type" : "CLASS",
+          "lbl" : "Prader-Willi-like syndrome"
+        },
+        {
+          "id" : "Orphanet:398073",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018354",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:398073",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226094",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018354",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018354",
+            "Orphanet:398073",
+            "UMLS:CN226094"
+          ]
+        }
+      ]
+    }
+  ]
+}

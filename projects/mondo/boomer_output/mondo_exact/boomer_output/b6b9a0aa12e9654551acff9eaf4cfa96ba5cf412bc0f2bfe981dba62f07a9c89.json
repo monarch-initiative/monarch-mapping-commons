@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b6b9a0aa12e9654551acff9eaf4cfa96ba5cf412bc0f2bfe981dba62f07a9c89",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334657",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6867",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004020",
+          "type" : "CLASS",
+          "lbl" : "mediastinal gray zone lymphoma"
+        },
+        {
+          "id" : "NCIT:C37870",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6867",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004020",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334657",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004020",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004020",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C37870",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6867",
+            "MONDO:0004020",
+            "UMLS:C1334657",
+            "NCIT:C37870"
+          ]
+        }
+      ]
+    }
+  ]
+}

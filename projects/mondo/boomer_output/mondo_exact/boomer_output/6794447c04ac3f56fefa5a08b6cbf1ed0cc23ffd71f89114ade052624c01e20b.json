@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6794447c04ac3f56fefa5a08b6cbf1ed0cc23ffd71f89114ade052624c01e20b",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203261",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017530",
+          "type" : "CLASS",
+          "lbl" : "polysyndactyly, bilateral"
+        },
+        {
+          "id" : "Orphanet:295161",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203261",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017530",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017530",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:295161",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017530",
+            "UMLS:CN203261",
+            "Orphanet:295161"
+          ]
+        }
+      ]
+    }
+  ]
+}

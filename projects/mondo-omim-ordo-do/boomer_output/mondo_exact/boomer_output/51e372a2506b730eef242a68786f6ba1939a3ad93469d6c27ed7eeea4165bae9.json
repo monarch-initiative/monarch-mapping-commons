@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:51e372a2506b730eef242a68786f6ba1939a3ad93469d6c27ed7eeea4165bae9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809845",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014236",
+          "type" : "CLASS",
+          "lbl" : "Ehlers-Danlos syndrome, musculocontractural type 2"
+        },
+        {
+          "id" : "OMIM:615539",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3809845",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014236",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014236",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615539",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014236",
+            "UMLS:C3809845",
+            "OMIM:615539"
+          ]
+        }
+      ]
+    }
+  ]
+}

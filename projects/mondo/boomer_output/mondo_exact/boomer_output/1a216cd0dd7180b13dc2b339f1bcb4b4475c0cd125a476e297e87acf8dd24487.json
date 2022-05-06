@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1a216cd0dd7180b13dc2b339f1bcb4b4475c0cd125a476e297e87acf8dd24487",
+      "nodes" : [
+        {
+          "id" : "SCTID:39659002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:L74.4",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:11156",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006527",
+          "type" : "CLASS",
+          "lbl" : "anhidrosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:L74.4",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006527",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:11156",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006527",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:39659002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006527",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006527",
+            "ICD10CM:L74.4",
+            "DOID:11156",
+            "SCTID:39659002"
+          ]
+        }
+      ]
+    }
+  ]
+}

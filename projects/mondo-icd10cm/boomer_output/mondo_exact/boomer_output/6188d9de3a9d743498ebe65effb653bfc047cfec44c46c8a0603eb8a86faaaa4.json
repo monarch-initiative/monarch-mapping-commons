@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6188d9de3a9d743498ebe65effb653bfc047cfec44c46c8a0603eb8a86faaaa4",
+      "nodes" : [
+        {
+          "id" : "MESH:C565248",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1853507",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011651",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability, short stature, facial anomalies, and joint dislocations"
+        },
+        {
+          "id" : "OMIM:606220",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011651",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:606220",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1853507",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011651",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565248",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011651",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011651",
+            "OMIM:606220",
+            "UMLS:C1853507",
+            "MESH:C565248"
+          ]
+        }
+      ]
+    }
+  ]
+}

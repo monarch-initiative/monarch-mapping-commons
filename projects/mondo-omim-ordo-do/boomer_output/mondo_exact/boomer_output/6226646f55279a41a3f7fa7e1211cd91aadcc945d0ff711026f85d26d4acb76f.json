@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6226646f55279a41a3f7fa7e1211cd91aadcc945d0ff711026f85d26d4acb76f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1377605",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7231",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004153",
+          "type" : "CLASS",
+          "lbl" : "childhood central nervous system embryonal carcinoma"
+        },
+        {
+          "id" : "NCIT:C6208",
+          "type" : "CLASS",
+          "lbl" : "Childhood Central Nervous System Embryonal Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004153",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6208",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7231",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004153",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1377605",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004153",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004153",
+            "NCIT:C6208",
+            "DOID:7231",
+            "UMLS:C1377605"
+          ]
+        }
+      ]
+    }
+  ]
+}

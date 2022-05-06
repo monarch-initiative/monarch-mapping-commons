@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5d01e3b774bb36e2f59f3872b99ada05df594db5eb021e0484d6cd2562f0ef95",
+      "nodes" : [
+        {
+          "id" : "MESH:C565017",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1851184",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007605",
+          "type" : "CLASS",
+          "lbl" : "fibrinolytic defect"
+        },
+        {
+          "id" : "OMIM:134900",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007605",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:134900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565017",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007605",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1851184",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007605",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007605",
+            "OMIM:134900",
+            "MESH:C565017",
+            "UMLS:C1851184"
+          ]
+        }
+      ]
+    }
+  ]
+}

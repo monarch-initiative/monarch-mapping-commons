@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cb970c3a0d32d261b688b636f963a56b86cccefb8d314d07008023f0f95021d1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336877",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:11888",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001400",
+          "type" : "CLASS",
+          "lbl" : "schwannoma of ureter"
+        },
+        {
+          "id" : "NCIT:C6162",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:11888",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336877",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001400",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6162",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:11888",
+            "MONDO:0001400",
+            "UMLS:C1336877",
+            "NCIT:C6162"
+          ]
+        }
+      ]
+    }
+  ]
+}

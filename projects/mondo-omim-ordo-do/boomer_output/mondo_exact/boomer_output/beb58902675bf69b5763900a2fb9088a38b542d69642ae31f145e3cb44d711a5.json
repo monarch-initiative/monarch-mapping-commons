@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:beb58902675bf69b5763900a2fb9088a38b542d69642ae31f145e3cb44d711a5",
+      "nodes" : [
+        {
+          "id" : "MESH:D015173",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1659",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002071",
+          "type" : "CLASS",
+          "lbl" : "supratentorial cancer"
+        },
+        {
+          "id" : "NCIT:C4964",
+          "type" : "CLASS",
+          "lbl" : "Malignant Supratentorial Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002071",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4964",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D015173",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002071",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1659",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002071",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002071",
+            "NCIT:C4964",
+            "MESH:D015173",
+            "DOID:1659"
+          ]
+        }
+      ]
+    }
+  ]
+}

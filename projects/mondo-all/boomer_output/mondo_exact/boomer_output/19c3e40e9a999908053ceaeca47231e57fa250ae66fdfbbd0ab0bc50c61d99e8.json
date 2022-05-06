@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:19c3e40e9a999908053ceaeca47231e57fa250ae66fdfbbd0ab0bc50c61d99e8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334323",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5385",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003421",
+          "type" : "CLASS",
+          "lbl" : "mixed cell adenoma"
+        },
+        {
+          "id" : "NCIT:C4157",
+          "type" : "CLASS",
+          "lbl" : "Mixed Cell Adenoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003421",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4157",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5385",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003421",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334323",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003421",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4157",
+            "MONDO:0003421",
+            "DOID:5385",
+            "UMLS:C0334323"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a4e8912aebbe153671b12ac6d079e8049ce681195bcde6daa2af75fa18565a92",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202053",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016797",
+          "type" : "CLASS",
+          "lbl" : "multiple mitochondrial DNA deletion syndrome"
+        },
+        {
+          "id" : "Orphanet:254807",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016797",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:254807",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202053",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016797",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016797",
+            "Orphanet:254807",
+            "UMLS:CN202053"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1b3674fecf9627432a99e6392da9f15d5d37ade58757fb253635d2280a95be4a",
+      "nodes" : [
+        {
+          "id" : "MESH:C563971",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1838333",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013699",
+          "type" : "CLASS",
+          "lbl" : "colorectal cancer, hereditary nonpolyposis, type 4"
+        },
+        {
+          "id" : "OMIM:614337",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070275",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1838333",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013699",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563971",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013699",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070275",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013699",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013699",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1838333",
+            "DOID:0070275",
+            "MONDO:0013699",
+            "OMIM:614337",
+            "MESH:C563971"
+          ]
+        }
+      ]
+    }
+  ]
+}

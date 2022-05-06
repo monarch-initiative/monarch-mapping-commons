@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1ffdfa251b5dfabf3c0be9734cb7c0eb8a3c713f9e4077de9de678b8a851c718",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN242084",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018733",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability syndrome due to a DYRK1A point mutation"
+        },
+        {
+          "id" : "Orphanet:464311",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018733",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:464311",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN242084",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018733",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018733",
+            "Orphanet:464311",
+            "UMLS:CN242084"
+          ]
+        }
+      ]
+    }
+  ]
+}

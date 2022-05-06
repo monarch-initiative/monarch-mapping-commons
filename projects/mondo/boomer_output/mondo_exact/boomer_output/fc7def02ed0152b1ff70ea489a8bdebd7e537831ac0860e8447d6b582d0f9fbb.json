@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fc7def02ed0152b1ff70ea489a8bdebd7e537831ac0860e8447d6b582d0f9fbb",
+      "nodes" : [
+        {
+          "id" : "MESH:D002056",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C34441",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:T20-T25",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:125666000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0043519",
+          "type" : "CLASS",
+          "lbl" : "burn"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:125666000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043519",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:T20-T25",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043519",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0043519",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C34441",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D002056",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043519",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0043519",
+            "MESH:D002056",
+            "SCTID:125666000",
+            "NCIT:C34441",
+            "ICD10CM:T20-T25"
+          ]
+        }
+      ]
+    }
+  ]
+}

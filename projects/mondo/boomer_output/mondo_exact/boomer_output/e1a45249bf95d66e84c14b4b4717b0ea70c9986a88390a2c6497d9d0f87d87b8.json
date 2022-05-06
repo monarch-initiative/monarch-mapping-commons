@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e1a45249bf95d66e84c14b4b4717b0ea70c9986a88390a2c6497d9d0f87d87b8",
+      "nodes" : [
+        {
+          "id" : "MESH:C536869",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1866854",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008439",
+          "type" : "CLASS",
+          "lbl" : "spastic paraplegia-epilepsy-intellectual disability syndrome"
+        },
+        {
+          "id" : "OMIM:182610",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1866854",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008439",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008439",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:182610",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536869",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008439",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008439",
+            "UMLS:C1866854",
+            "OMIM:182610",
+            "MESH:C536869"
+          ]
+        }
+      ]
+    }
+  ]
+}

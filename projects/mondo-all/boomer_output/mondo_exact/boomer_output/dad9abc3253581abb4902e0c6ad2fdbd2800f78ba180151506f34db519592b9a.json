@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dad9abc3253581abb4902e0c6ad2fdbd2800f78ba180151506f34db519592b9a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4015156",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070284",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014484",
+          "type" : "CLASS",
+          "lbl" : "microcephaly 12, primary, autosomal recessive"
+        },
+        {
+          "id" : "OMIM:616080",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014484",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616080",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4015156",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014484",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070284",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014484",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014484",
+            "OMIM:616080",
+            "UMLS:C4015156",
+            "DOID:0070284"
+          ]
+        }
+      ]
+    }
+  ]
+}

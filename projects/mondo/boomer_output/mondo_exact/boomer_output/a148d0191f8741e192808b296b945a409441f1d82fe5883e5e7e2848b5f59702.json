@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a148d0191f8741e192808b296b945a409441f1d82fe5883e5e7e2848b5f59702",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0346974",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0041447",
+          "type" : "CLASS",
+          "lbl" : "metastatic malignant neoplasm in the colon"
+        },
+        {
+          "id" : "NCIT:C8411",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0346974",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0041447",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0041447",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8411",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0346974",
+            "MONDO:0041447",
+            "NCIT:C8411"
+          ]
+        }
+      ]
+    }
+  ]
+}

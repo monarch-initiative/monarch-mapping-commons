@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a0a9f0d886f6b5f2c85a356ef1c1cf5cc04b71bf0d5b9dc77d3ee11d235404d4",
+      "nodes" : [
+        {
+          "id" : "MESH:C538018",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1833169",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010955",
+          "type" : "CLASS",
+          "lbl" : "ectodermal dysplasia with intellectual disability and syndactyly"
+        },
+        {
+          "id" : "OMIM:600906",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C538018",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010955",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010955",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600906",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1833169",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010955",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C538018",
+            "MONDO:0010955",
+            "OMIM:600906",
+            "UMLS:C1833169"
+          ]
+        }
+      ]
+    }
+  ]
+}

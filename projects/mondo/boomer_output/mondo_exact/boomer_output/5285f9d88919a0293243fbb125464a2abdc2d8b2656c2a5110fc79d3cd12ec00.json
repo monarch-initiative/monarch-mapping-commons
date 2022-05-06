@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5285f9d88919a0293243fbb125464a2abdc2d8b2656c2a5110fc79d3cd12ec00",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333025",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6525",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003913",
+          "type" : "CLASS",
+          "lbl" : "choroid mixed cell melanoma"
+        },
+        {
+          "id" : "NCIT:C35782",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333025",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003913",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003913",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35782",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6525",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003913",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333025",
+            "MONDO:0003913",
+            "NCIT:C35782",
+            "DOID:6525"
+          ]
+        }
+      ]
+    }
+  ]
+}

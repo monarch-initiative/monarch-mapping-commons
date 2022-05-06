@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:093ed55cebd1b7c010b778e3dec6d1154c3508bf34f1be6c34d2327576d3ca62",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203511",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017624",
+          "type" : "CLASS",
+          "lbl" : "familial primary hypomagnesemia with hypercalciuria and nephrocalcinosis"
+        },
+        {
+          "id" : "Orphanet:306516",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203511",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017624",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017624",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:306516",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017624",
+            "UMLS:CN203511",
+            "Orphanet:306516"
+          ]
+        }
+      ]
+    }
+  ]
+}

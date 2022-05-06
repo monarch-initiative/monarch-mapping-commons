@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5e3b02f56daa66dcd7091baa3a7ff991b422585bcc6c0f20fb5e022f072f176a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3554247",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013998",
+          "type" : "CLASS",
+          "lbl" : "MEGF8-related Carpenter syndrome"
+        },
+        {
+          "id" : "OMIM:614976",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3554247",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013998",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013998",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614976",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013998",
+            "OMIM:614976",
+            "UMLS:C3554247"
+          ]
+        }
+      ]
+    }
+  ]
+}

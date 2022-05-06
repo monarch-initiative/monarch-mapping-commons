@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ce05626a7cf0a4346e6811a53c614d14f02aade03766b2793e8524d9d93e2b6b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0016034",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C3039",
+          "type" : "CLASS",
+          "lbl" : "Breast Fibrocystic Change"
+        },
+        {
+          "id" : "MONDO:0005219",
+          "type" : "CLASS",
+          "lbl" : "breast fibrocystic disease"
+        },
+        {
+          "id" : "DOID:10354",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D005348",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:10354",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005219",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005219",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3039",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D005348",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005219",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0016034",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005219",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C3039",
+            "MESH:D005348",
+            "MONDO:0005219",
+            "DOID:10354",
+            "UMLS:C0016034"
+          ]
+        }
+      ]
+    }
+  ]
+}

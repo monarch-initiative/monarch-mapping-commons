@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4fa532501bc8cd3b7c3446f28b2721e1814390285a69bbad8ad6ec47aff5f0fd",
+      "nodes" : [
+        {
+          "id" : "SCTID:254866007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0003810",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0036595",
+          "type" : "CLASS",
+          "lbl" : "ovarian Sertoli-Leydig cell tumor"
+        },
+        {
+          "id" : "NCIT:C2880",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0003810",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0036595",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:254866007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0036595",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0036595",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C2880",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0003810",
+            "MONDO:0036595",
+            "SCTID:254866007",
+            "NCIT:C2880"
+          ]
+        }
+      ]
+    }
+  ]
+}

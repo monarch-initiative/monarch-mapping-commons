@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:11bbd3b701d301dfbb0f5a4772a3ae332bf1b7e3be19a3ee58300a6357e2cd91",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335923",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7958",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004410",
+          "type" : "CLASS",
+          "lbl" : "sarcomatoid penile squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C6984",
+          "type" : "CLASS",
+          "lbl" : "Sarcomatoid Carcinoma of the Penis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004410",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6984",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7958",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004410",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335923",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004410",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004410",
+            "NCIT:C6984",
+            "DOID:7958",
+            "UMLS:C1335923"
+          ]
+        }
+      ]
+    }
+  ]
+}

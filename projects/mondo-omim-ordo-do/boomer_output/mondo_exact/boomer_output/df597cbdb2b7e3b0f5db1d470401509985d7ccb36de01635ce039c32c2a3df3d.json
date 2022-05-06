@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:df597cbdb2b7e3b0f5db1d470401509985d7ccb36de01635ce039c32c2a3df3d",
+      "nodes" : [
+        {
+          "id" : "MESH:C564449",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060456",
+          "type" : "CLASS",
+          "lbl" : "cerebral sclerosis, diffuse, scholz type"
+        },
+        {
+          "id" : "OMIM:302700",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564449",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060456",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:302700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C564449",
+            "MONDO:0060456",
+            "OMIM:302700"
+          ]
+        }
+      ]
+    }
+  ]
+}

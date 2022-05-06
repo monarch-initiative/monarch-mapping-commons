@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f88f49e2eb57a0ea560329b1968811176b011d292ec4d57388bfa55d67488b29",
+      "nodes" : [
+        {
+          "id" : "SCTID:315345002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C155766",
+          "type" : "CLASS",
+          "lbl" : "Acute Lung Injury"
+        },
+        {
+          "id" : "MONDO:0015796",
+          "type" : "CLASS",
+          "lbl" : "acute lung injury"
+        },
+        {
+          "id" : "Orphanet:178320",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D055371",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015796",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C155766",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D055371",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015796",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015796",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:178320",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:315345002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015796",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D055371",
+            "Orphanet:178320",
+            "NCIT:C155766",
+            "SCTID:315345002",
+            "MONDO:0015796"
+          ]
+        }
+      ]
+    }
+  ]
+}

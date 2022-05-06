@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a291c81c01878a772755e523255622fd3f11f992f2c41297d28701a739fc92bb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335679",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006392",
+          "type" : "CLASS",
+          "lbl" : "rectal hyperplastic polyp"
+        },
+        {
+          "id" : "NCIT:C5619",
+          "type" : "CLASS",
+          "lbl" : "Rectal Hyperplastic Polyp"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006392",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5619",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335679",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006392",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C5619",
+            "MONDO:0006392",
+            "UMLS:C1335679"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4088c44cb90e9c3694672736bae94559d939d3164bdb3446246e49fd637388e5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN037005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018784",
+          "type" : "CLASS",
+          "lbl" : "pediatric multiple sclerosis"
+        },
+        {
+          "id" : "Orphanet:477738",
+          "type" : "CLASS",
+          "lbl" : "Pediatric multiple sclerosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN037005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018784",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018784",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:477738",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN037005",
+            "MONDO:0018784",
+            "Orphanet:477738"
+          ]
+        }
+      ]
+    }
+  ]
+}

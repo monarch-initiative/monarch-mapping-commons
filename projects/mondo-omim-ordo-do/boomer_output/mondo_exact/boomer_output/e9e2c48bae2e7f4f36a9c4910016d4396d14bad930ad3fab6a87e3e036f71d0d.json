@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e9e2c48bae2e7f4f36a9c4910016d4396d14bad930ad3fab6a87e3e036f71d0d",
+      "nodes" : [
+        {
+          "id" : "MESH:C564806",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1849108",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010055",
+          "type" : "CLASS",
+          "lbl" : "spinal muscular atrophy with microcephaly and mental subnormality"
+        },
+        {
+          "id" : "OMIM:271110",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010055",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:271110",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564806",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010055",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1849108",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010055",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:271110",
+            "MONDO:0010055",
+            "MESH:C564806",
+            "UMLS:C1849108"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ba0f5f942c5a39a2cbba14dc62c7f901f80ebff6ce6933abb7a0184aff9be9a0",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN199609",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015470",
+          "type" : "CLASS",
+          "lbl" : "familial isolated dilated cardiomyopathy"
+        },
+        {
+          "id" : "Orphanet:154",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015470",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:154",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN199609",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015470",
+            "Orphanet:154",
+            "UMLS:CN199609"
+          ]
+        }
+      ]
+    }
+  ]
+}

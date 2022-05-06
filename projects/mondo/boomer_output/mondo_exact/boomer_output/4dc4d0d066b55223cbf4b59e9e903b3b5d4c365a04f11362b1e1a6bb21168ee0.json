@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4dc4d0d066b55223cbf4b59e9e903b3b5d4c365a04f11362b1e1a6bb21168ee0",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336983",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3740",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002758",
+          "type" : "CLASS",
+          "lbl" : "vulva verrucous carcinoma"
+        },
+        {
+          "id" : "NCIT:C6383",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002758",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6383",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336983",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002758",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3740",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002758",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002758",
+            "NCIT:C6383",
+            "UMLS:C1336983",
+            "DOID:3740"
+          ]
+        }
+      ]
+    }
+  ]
+}

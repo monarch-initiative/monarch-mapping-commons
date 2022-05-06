@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:923f4ee13aee3c21824819139fa410e8f782b2d7f545e5ff060667ae38d7f272",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:M94.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2557",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0085700",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002342",
+          "type" : "CLASS",
+          "lbl" : "chondromalacia"
+        },
+        {
+          "id" : "SCTID:63198006",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0085700",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002342",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2557",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002342",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:63198006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002342",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:M94.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002342",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:63198006",
+            "DOID:2557",
+            "ICD10CM:M94.2",
+            "UMLS:C0085700",
+            "MONDO:0002342"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fd80c83d225ae2040abb6a847a41597f17ee25876091a88d8bff69c244c912f9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1865040",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012310",
+          "type" : "CLASS",
+          "lbl" : "fibrosis of extraocular muscles, congenital, with synergistic divergence"
+        },
+        {
+          "id" : "OMIM:609612",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1865040",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012310",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012310",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609612",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1865040",
+            "MONDO:0012310",
+            "OMIM:609612"
+          ]
+        }
+      ]
+    }
+  ]
+}

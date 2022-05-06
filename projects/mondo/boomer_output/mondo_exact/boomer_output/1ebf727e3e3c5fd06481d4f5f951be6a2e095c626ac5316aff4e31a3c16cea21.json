@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1ebf727e3e3c5fd06481d4f5f951be6a2e095c626ac5316aff4e31a3c16cea21",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332166",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4944",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003219",
+          "type" : "CLASS",
+          "lbl" : "gastroesophageal junction adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C9296",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332166",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003219",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003219",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9296",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4944",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003219",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332166",
+            "MONDO:0003219",
+            "NCIT:C9296",
+            "DOID:4944"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4dcfb576a360cf146e2228d7f0b5f4f3b566c960409a96180a5aeff27ad92c2c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332530",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0056805",
+          "type" : "CLASS",
+          "lbl" : "benign peripheral nerve granular cell tumor"
+        },
+        {
+          "id" : "NCIT:C5502",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0056805",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5502",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332530",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0056805",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C5502",
+            "MONDO:0056805",
+            "UMLS:C1332530"
+          ]
+        }
+      ]
+    }
+  ]
+}

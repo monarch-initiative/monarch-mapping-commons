@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b9e933175f7fbc59fd645a86af25f5a49d1bcb05de788870dac8d7227352e9bc",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1843761",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C564384",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080086",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011852",
+          "type" : "CLASS",
+          "lbl" : "nonsyndromic congenital nail disorder 8"
+        },
+        {
+          "id" : "OMIM:607523",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080086",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011852",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011852",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607523",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1843761",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011852",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564384",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011852",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011852",
+            "UMLS:C1843761",
+            "DOID:0080086",
+            "MESH:C564384",
+            "OMIM:607523"
+          ]
+        }
+      ]
+    }
+  ]
+}

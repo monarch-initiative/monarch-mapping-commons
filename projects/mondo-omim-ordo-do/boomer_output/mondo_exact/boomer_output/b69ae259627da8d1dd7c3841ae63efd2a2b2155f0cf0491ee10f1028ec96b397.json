@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b69ae259627da8d1dd7c3841ae63efd2a2b2155f0cf0491ee10f1028ec96b397",
+      "nodes" : [
+        {
+          "id" : "MESH:C564890",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1849821",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009864",
+          "type" : "CLASS",
+          "lbl" : "phosphoenolpyruvate carboxykinase deficiency, mitochondrial"
+        },
+        {
+          "id" : "OMIM:261650",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564890",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009864",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009864",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:261650",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1849821",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009864",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009864",
+            "MESH:C564890",
+            "OMIM:261650",
+            "UMLS:C1849821"
+          ]
+        }
+      ]
+    }
+  ]
+}

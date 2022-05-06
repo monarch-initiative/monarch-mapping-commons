@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:96252c9c6e65a88f5ba2e052037298c1d4ce789b6e0766623d534757a465cee6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553943",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013934",
+          "type" : "CLASS",
+          "lbl" : "combined immunodeficiency due to STK4 deficiency"
+        },
+        {
+          "id" : "Orphanet:314689",
+          "type" : "CLASS",
+          "lbl" : "Combined immunodeficiency due to STK4 deficiency"
+        },
+        {
+          "id" : "OMIM:614868",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013934",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:314689",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013934",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614868",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3553943",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013934",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013934",
+            "Orphanet:314689",
+            "OMIM:614868",
+            "UMLS:C3553943"
+          ]
+        }
+      ]
+    }
+  ]
+}

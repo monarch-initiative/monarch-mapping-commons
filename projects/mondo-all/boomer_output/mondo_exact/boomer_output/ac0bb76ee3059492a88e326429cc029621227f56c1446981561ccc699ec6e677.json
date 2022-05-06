@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ac0bb76ee3059492a88e326429cc029621227f56c1446981561ccc699ec6e677",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0555198",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3070",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0100342",
+          "type" : "CLASS",
+          "lbl" : "malignant glioma"
+        },
+        {
+          "id" : "NCIT:C4822",
+          "type" : "CLASS",
+          "lbl" : "Malignant Glioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0100342",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4822",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3070",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0100342",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0555198",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0100342",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0100342",
+            "NCIT:C4822",
+            "DOID:3070",
+            "UMLS:C0555198"
+          ]
+        }
+      ]
+    }
+  ]
+}

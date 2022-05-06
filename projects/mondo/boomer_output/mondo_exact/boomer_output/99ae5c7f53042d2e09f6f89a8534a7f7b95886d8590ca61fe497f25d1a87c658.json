@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:99ae5c7f53042d2e09f6f89a8534a7f7b95886d8590ca61fe497f25d1a87c658",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335176",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4059",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002858",
+          "type" : "CLASS",
+          "lbl" : "ovary rhabdomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C5236",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335176",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002858",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002858",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5236",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4059",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002858",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1335176",
+            "MONDO:0002858",
+            "NCIT:C5236",
+            "DOID:4059"
+          ]
+        }
+      ]
+    }
+  ]
+}

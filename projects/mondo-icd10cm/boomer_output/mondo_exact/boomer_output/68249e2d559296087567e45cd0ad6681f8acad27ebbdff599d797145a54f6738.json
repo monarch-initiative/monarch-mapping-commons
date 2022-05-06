@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:68249e2d559296087567e45cd0ad6681f8acad27ebbdff599d797145a54f6738",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0154874",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10176",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000958",
+          "type" : "CLASS",
+          "lbl" : "neuroretinitis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:10176",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000958",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0154874",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000958",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:10176",
+            "MONDO:0000958",
+            "UMLS:C0154874"
+          ]
+        }
+      ]
+    }
+  ]
+}

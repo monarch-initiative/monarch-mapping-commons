@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9fa31ed8b47ef8f2e2c2fc0223ed345d3886a9d3f789d8b78791924445574ddc",
+      "nodes" : [
+        {
+          "id" : "DOID:13454",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001720",
+          "type" : "CLASS",
+          "lbl" : "gonococcal synovitis"
+        },
+        {
+          "id" : "UMLS:C0343714",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0275662",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:266138002",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:266138002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001720",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001720",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0275662",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0343714",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001720",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:13454",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001720",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:266138002",
+            "MONDO:0001720",
+            "UMLS:C0343714",
+            "DOID:13454"
+          ]
+        }
+      ]
+    }
+  ]
+}

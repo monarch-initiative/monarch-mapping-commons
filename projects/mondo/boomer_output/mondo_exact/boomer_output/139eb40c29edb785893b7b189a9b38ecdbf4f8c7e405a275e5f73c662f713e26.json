@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:139eb40c29edb785893b7b189a9b38ecdbf4f8c7e405a275e5f73c662f713e26",
+      "nodes" : [
+        {
+          "id" : "MESH:C564678",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1847650",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011703",
+          "type" : "CLASS",
+          "lbl" : "spongiform encephalopathy with neuropsychiatric features"
+        },
+        {
+          "id" : "OMIM:606688",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564678",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011703",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011703",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:606688",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1847650",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011703",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C564678",
+            "MONDO:0011703",
+            "OMIM:606688",
+            "UMLS:C1847650"
+          ]
+        }
+      ]
+    }
+  ]
+}

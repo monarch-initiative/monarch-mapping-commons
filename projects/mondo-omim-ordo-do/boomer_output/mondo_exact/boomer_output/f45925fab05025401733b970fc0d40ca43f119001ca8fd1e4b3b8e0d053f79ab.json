@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f45925fab05025401733b970fc0d40ca43f119001ca8fd1e4b3b8e0d053f79ab",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206639",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019732",
+          "type" : "CLASS",
+          "lbl" : "ALys amyloidosis"
+        },
+        {
+          "id" : "Orphanet:93561",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206639",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019732",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019732",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93561",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN206639",
+            "MONDO:0019732",
+            "Orphanet:93561"
+          ]
+        }
+      ]
+    }
+  ]
+}

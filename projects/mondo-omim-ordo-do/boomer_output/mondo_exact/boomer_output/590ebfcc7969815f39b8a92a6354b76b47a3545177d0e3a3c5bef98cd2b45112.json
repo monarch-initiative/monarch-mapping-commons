@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:590ebfcc7969815f39b8a92a6354b76b47a3545177d0e3a3c5bef98cd2b45112",
+      "nodes" : [
+        {
+          "id" : "SCTID:717044000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4274082",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017189",
+          "type" : "CLASS",
+          "lbl" : "adult-onset non-insulinoma persistent hyperinsulinemic hypoglycemia"
+        },
+        {
+          "id" : "Orphanet:276608",
+          "type" : "CLASS",
+          "lbl" : "Non-insulinoma pancreatogenous hypoglycemia syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017189",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:276608",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:717044000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017189",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4274082",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017189",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017189",
+            "Orphanet:276608",
+            "SCTID:717044000",
+            "UMLS:C4274082"
+          ]
+        }
+      ]
+    }
+  ]
+}

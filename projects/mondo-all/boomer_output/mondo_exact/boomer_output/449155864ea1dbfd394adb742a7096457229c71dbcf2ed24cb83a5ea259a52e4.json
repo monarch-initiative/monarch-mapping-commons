@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:449155864ea1dbfd394adb742a7096457229c71dbcf2ed24cb83a5ea259a52e4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333519",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6903",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004034",
+          "type" : "CLASS",
+          "lbl" : "eye lymphoma"
+        },
+        {
+          "id" : "NCIT:C35690",
+          "type" : "CLASS",
+          "lbl" : "Eye Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6903",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004034",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333519",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004034",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004034",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35690",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6903",
+            "MONDO:0004034",
+            "UMLS:C1333519",
+            "NCIT:C35690"
+          ]
+        }
+      ]
+    }
+  ]
+}

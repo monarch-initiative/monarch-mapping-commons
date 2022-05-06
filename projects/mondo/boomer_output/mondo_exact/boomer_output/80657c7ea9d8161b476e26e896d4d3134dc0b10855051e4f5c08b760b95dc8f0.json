@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:80657c7ea9d8161b476e26e896d4d3134dc0b10855051e4f5c08b760b95dc8f0",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200369",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015787",
+          "type" : "CLASS",
+          "lbl" : "symptomatic form of hemophilia A in female carriers"
+        },
+        {
+          "id" : "Orphanet:177926",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN200369",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015787",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015787",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:177926",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015787",
+            "UMLS:CN200369",
+            "Orphanet:177926"
+          ]
+        }
+      ]
+    }
+  ]
+}

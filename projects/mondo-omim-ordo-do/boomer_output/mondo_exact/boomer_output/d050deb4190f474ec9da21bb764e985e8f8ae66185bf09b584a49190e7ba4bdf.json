@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d050deb4190f474ec9da21bb764e985e8f8ae66185bf09b584a49190e7ba4bdf",
+      "nodes" : [
+        {
+          "id" : "SCTID:126799003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0345538",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021383",
+          "type" : "CLASS",
+          "lbl" : "neoplasm of floor of mouth"
+        },
+        {
+          "id" : "NCIT:C4401",
+          "type" : "CLASS",
+          "lbl" : "Floor of the Mouth Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0345538",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021383",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:126799003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021383",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021383",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4401",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0345538",
+            "MONDO:0021383",
+            "SCTID:126799003",
+            "NCIT:C4401"
+          ]
+        }
+      ]
+    }
+  ]
+}

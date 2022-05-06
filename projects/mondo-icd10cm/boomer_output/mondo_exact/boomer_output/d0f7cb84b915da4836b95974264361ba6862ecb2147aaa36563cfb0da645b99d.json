@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d0f7cb84b915da4836b95974264361ba6862ecb2147aaa36563cfb0da645b99d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204545",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018147",
+          "type" : "CLASS",
+          "lbl" : "idiopathic macular telangiectasia type 3"
+        },
+        {
+          "id" : "Orphanet:353351",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN204545",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018147",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018147",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:353351",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018147",
+            "UMLS:CN204545",
+            "Orphanet:353351"
+          ]
+        }
+      ]
+    }
+  ]
+}

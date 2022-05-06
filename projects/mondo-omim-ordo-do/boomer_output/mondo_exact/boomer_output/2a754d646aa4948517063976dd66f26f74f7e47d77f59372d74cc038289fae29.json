@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2a754d646aa4948517063976dd66f26f74f7e47d77f59372d74cc038289fae29",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3888385",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080482",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013938",
+          "type" : "CLASS",
+          "lbl" : "peroxisome biogenesis disorder 7A (Zellweger)"
+        },
+        {
+          "id" : "OMIM:614872",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013938",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614872",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080482",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013938",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3888385",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013938",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013938",
+            "OMIM:614872",
+            "DOID:0080482",
+            "UMLS:C3888385"
+          ]
+        }
+      ]
+    }
+  ]
+}

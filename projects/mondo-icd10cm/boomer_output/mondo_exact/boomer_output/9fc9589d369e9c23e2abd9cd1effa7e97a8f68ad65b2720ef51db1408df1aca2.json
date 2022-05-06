@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9fc9589d369e9c23e2abd9cd1effa7e97a8f68ad65b2720ef51db1408df1aca2",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201515",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016506",
+          "type" : "CLASS",
+          "lbl" : "ectopic aldosterone-producing tumor"
+        },
+        {
+          "id" : "Orphanet:231632",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201515",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016506",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016506",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:231632",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN201515",
+            "MONDO:0016506",
+            "Orphanet:231632"
+          ]
+        }
+      ]
+    }
+  ]
+}

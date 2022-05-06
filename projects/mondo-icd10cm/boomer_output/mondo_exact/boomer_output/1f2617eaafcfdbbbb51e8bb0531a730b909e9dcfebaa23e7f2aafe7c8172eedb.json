@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1f2617eaafcfdbbbb51e8bb0531a730b909e9dcfebaa23e7f2aafe7c8172eedb",
+      "nodes" : [
+        {
+          "id" : "MESH:C548086",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2751864",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013055",
+          "type" : "CLASS",
+          "lbl" : "Stargardt macular degeneration, absent or hypoplastic corpus callosum, intellectual disability, and dysmorphic features"
+        },
+        {
+          "id" : "OMIM:612948",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2751864",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013055",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013055",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:612948",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C548086",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013055",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2751864",
+            "MONDO:0013055",
+            "OMIM:612948",
+            "MESH:C548086"
+          ]
+        }
+      ]
+    }
+  ]
+}

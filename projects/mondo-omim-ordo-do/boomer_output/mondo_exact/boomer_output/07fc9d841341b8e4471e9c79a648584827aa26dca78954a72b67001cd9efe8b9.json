@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:07fc9d841341b8e4471e9c79a648584827aa26dca78954a72b67001cd9efe8b9",
+      "nodes" : [
+        {
+          "id" : "DOID:0060243",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000723",
+          "type" : "CLASS",
+          "lbl" : "stutter disorder"
+        },
+        {
+          "id" : "NCIT:C35043",
+          "type" : "CLASS",
+          "lbl" : "Stutter"
+        },
+        {
+          "id" : "OMIMPS:184450",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000723",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35043",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060243",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000723",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000723",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:184450",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C35043",
+            "MONDO:0000723",
+            "DOID:0060243",
+            "OMIMPS:184450"
+          ]
+        }
+      ]
+    }
+  ]
+}

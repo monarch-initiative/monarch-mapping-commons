@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0c120946888ecfbef80580bd35085cfb20e860f5067693032c1c0be3ca31ec8a",
+      "nodes" : [
+        {
+          "id" : "MESH:C564762",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1848746",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010151",
+          "type" : "CLASS",
+          "lbl" : "tricarboxylic acid cycle, defect of"
+        },
+        {
+          "id" : "OMIM:275370",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564762",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010151",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010151",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:275370",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1848746",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010151",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C564762",
+            "MONDO:0010151",
+            "OMIM:275370",
+            "UMLS:C1848746"
+          ]
+        }
+      ]
+    }
+  ]
+}

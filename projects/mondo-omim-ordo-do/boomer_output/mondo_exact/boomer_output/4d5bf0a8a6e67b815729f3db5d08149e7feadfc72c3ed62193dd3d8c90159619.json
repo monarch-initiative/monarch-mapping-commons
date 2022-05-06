@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4d5bf0a8a6e67b815729f3db5d08149e7feadfc72c3ed62193dd3d8c90159619",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4085595",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014648",
+          "type" : "CLASS",
+          "lbl" : "Al-Raqad syndrome"
+        },
+        {
+          "id" : "OMIM:616459",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014648",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616459",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4085595",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014648",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:616459",
+            "MONDO:0014648",
+            "UMLS:C4085595"
+          ]
+        }
+      ]
+    }
+  ]
+}

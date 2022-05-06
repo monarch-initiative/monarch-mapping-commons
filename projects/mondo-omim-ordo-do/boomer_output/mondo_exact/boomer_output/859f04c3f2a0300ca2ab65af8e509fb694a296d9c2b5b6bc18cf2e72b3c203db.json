@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:859f04c3f2a0300ca2ab65af8e509fb694a296d9c2b5b6bc18cf2e72b3c203db",
+      "nodes" : [
+        {
+          "id" : "MESH:C566774",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1868000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008285",
+          "type" : "CLASS",
+          "lbl" : "polyps, multiple and recurrent inflammatory fibroid, gastrointestinal"
+        },
+        {
+          "id" : "OMIM:175510",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1868000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008285",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566774",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008285",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008285",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:175510",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008285",
+            "UMLS:C1868000",
+            "MESH:C566774",
+            "OMIM:175510"
+          ]
+        }
+      ]
+    }
+  ]
+}

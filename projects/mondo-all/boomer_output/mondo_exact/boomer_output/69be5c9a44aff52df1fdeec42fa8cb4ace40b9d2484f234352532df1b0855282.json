@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:69be5c9a44aff52df1fdeec42fa8cb4ace40b9d2484f234352532df1b0855282",
+      "nodes" : [
+        {
+          "id" : "DOID:0050771",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008233",
+          "type" : "CLASS",
+          "lbl" : "pheochromocytoma"
+        },
+        {
+          "id" : "OMIM:171300",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008233",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:171300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050771",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008233",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008233",
+            "OMIM:171300",
+            "DOID:0050771"
+          ]
+        }
+      ]
+    }
+  ]
+}

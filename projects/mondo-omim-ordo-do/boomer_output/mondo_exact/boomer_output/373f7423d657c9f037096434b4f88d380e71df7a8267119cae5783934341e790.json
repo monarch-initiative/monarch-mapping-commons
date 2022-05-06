@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:373f7423d657c9f037096434b4f88d380e71df7a8267119cae5783934341e790",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0685053",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004660",
+          "type" : "CLASS",
+          "lbl" : "lung carcinoma in situ"
+        },
+        {
+          "id" : "DOID:8800",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C27467",
+          "type" : "CLASS",
+          "lbl" : "Stage 0 Lung Cancer AJCC v6 and v7"
+        },
+        {
+          "id" : "SCTID:92649001",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:8800",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004660",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0685053",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004660",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004660",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27467",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92649001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004660",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0685053",
+            "MONDO:0004660",
+            "SCTID:92649001",
+            "NCIT:C27467",
+            "DOID:8800"
+          ]
+        }
+      ]
+    }
+  ]
+}

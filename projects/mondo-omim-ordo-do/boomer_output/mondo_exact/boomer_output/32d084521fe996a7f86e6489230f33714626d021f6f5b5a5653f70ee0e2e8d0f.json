@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:32d084521fe996a7f86e6489230f33714626d021f6f5b5a5653f70ee0e2e8d0f",
+      "nodes" : [
+        {
+          "id" : "MESH:D018193",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021043",
+          "type" : "CLASS",
+          "lbl" : "mixed neoplasm"
+        },
+        {
+          "id" : "NCIT:C6930",
+          "type" : "CLASS",
+          "lbl" : "Mixed Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D018193",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021043",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021043",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6930",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D018193",
+            "MONDO:0021043",
+            "NCIT:C6930"
+          ]
+        }
+      ]
+    }
+  ]
+}

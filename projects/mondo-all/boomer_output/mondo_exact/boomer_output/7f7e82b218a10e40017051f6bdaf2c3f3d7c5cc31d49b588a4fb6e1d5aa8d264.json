@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7f7e82b218a10e40017051f6bdaf2c3f3d7c5cc31d49b588a4fb6e1d5aa8d264",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1880102",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006149",
+          "type" : "CLASS",
+          "lbl" : "clear cell papillary cystadenoma"
+        },
+        {
+          "id" : "NCIT:C65203",
+          "type" : "CLASS",
+          "lbl" : "Clear Cell Papillary Cystadenoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1880102",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006149",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006149",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C65203",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006149",
+            "UMLS:C1880102",
+            "NCIT:C65203"
+          ]
+        }
+      ]
+    }
+  ]
+}

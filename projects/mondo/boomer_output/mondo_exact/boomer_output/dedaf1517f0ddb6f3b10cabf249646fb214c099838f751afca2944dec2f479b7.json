@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dedaf1517f0ddb6f3b10cabf249646fb214c099838f751afca2944dec2f479b7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310708",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014925",
+          "type" : "CLASS",
+          "lbl" : "epilepsy, familial focal, with variable foci 3"
+        },
+        {
+          "id" : "OMIM:617118",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014925",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617118",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310708",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014925",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014925",
+            "OMIM:617118",
+            "UMLS:C4310708"
+          ]
+        }
+      ]
+    }
+  ]
+}

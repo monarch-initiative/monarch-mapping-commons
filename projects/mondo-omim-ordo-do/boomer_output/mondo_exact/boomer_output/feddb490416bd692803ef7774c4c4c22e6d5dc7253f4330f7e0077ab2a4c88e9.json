@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:feddb490416bd692803ef7774c4c4c22e6d5dc7253f4330f7e0077ab2a4c88e9",
+      "nodes" : [
+        {
+          "id" : "SCTID:235760009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:K62.7",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019084",
+          "type" : "CLASS",
+          "lbl" : "radiation proctitis"
+        },
+        {
+          "id" : "Orphanet:70475",
+          "type" : "CLASS",
+          "lbl" : "Radiation proctitis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019084",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:70475",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:235760009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019084",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:K62.7",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019084",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:70475",
+            "MONDO:0019084",
+            "SCTID:235760009",
+            "ICD10CM:K62.7"
+          ]
+        }
+      ]
+    }
+  ]
+}

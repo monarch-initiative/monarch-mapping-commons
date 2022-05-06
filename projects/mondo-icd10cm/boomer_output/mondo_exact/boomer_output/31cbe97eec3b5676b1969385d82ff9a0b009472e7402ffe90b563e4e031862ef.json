@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:31cbe97eec3b5676b1969385d82ff9a0b009472e7402ffe90b563e4e031862ef",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:G47.4",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016158",
+          "type" : "CLASS",
+          "lbl" : "narcolepsy-cataplexy syndrome"
+        },
+        {
+          "id" : "Orphanet:2073",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016158",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2073",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:G47.4",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016158",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016158",
+            "Orphanet:2073",
+            "ICD10CM:G47.4"
+          ]
+        }
+      ]
+    }
+  ]
+}

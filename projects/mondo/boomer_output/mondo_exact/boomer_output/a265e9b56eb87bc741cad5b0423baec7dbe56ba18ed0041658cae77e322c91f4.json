@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a265e9b56eb87bc741cad5b0423baec7dbe56ba18ed0041658cae77e322c91f4",
+      "nodes" : [
+        {
+          "id" : "MESH:C563940",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1838141",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010885",
+          "type" : "CLASS",
+          "lbl" : "angiokeratoma corporis diffusum with arteriovenous fistulas"
+        },
+        {
+          "id" : "OMIM:600419",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C563940",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010885",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010885",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600419",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1838141",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010885",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C563940",
+            "MONDO:0010885",
+            "OMIM:600419",
+            "UMLS:C1838141"
+          ]
+        }
+      ]
+    }
+  ]
+}

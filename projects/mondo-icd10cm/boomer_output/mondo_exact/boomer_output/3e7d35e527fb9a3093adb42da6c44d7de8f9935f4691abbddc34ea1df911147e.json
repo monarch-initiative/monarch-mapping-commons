@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3e7d35e527fb9a3093adb42da6c44d7de8f9935f4691abbddc34ea1df911147e",
+      "nodes" : [
+        {
+          "id" : "MESH:C566484",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1864901",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012397",
+          "type" : "CLASS",
+          "lbl" : "brachydactyly, coloboma, and anterior segment dysgenesis"
+        },
+        {
+          "id" : "OMIM:610023",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1864901",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012397",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566484",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012397",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012397",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610023",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012397",
+            "UMLS:C1864901",
+            "MESH:C566484",
+            "OMIM:610023"
+          ]
+        }
+      ]
+    }
+  ]
+}

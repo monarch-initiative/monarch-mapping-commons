@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:365c0b6af7f888453f0d3b552a063e52cfdff4e64303ef0471eb1a1a02b1e5f1",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202423",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017064",
+          "type" : "CLASS",
+          "lbl" : "thoracolumbosacral spina bifida aperta"
+        },
+        {
+          "id" : "Orphanet:268384",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017064",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:268384",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202423",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017064",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017064",
+            "Orphanet:268384",
+            "UMLS:CN202423"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b18e1ecfcead0e051056012f35588a55bd7b14e213b5a520321057367107fff5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237592",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018575",
+          "type" : "CLASS",
+          "lbl" : "microcephalic primordial dwarfism-insulin resistance syndrome"
+        },
+        {
+          "id" : "Orphanet:436182",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018575",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:436182",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237592",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018575",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018575",
+            "Orphanet:436182",
+            "UMLS:CN237592"
+          ]
+        }
+      ]
+    }
+  ]
+}

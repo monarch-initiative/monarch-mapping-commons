@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d6dfb07af1acba1d10a2736511224863df09a872d3a0bd6c2276f63bba0adc2a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205181",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018860",
+          "type" : "CLASS",
+          "lbl" : "microlissencephaly-micromelia syndrome"
+        },
+        {
+          "id" : "Orphanet:50810",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018860",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:50810",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205181",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018860",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018860",
+            "Orphanet:50810",
+            "UMLS:CN205181"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:002f1bb474078b299614e98109260ac51f85ad9fde1154741c701c33fbd34f35",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227605",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019246",
+          "type" : "CLASS",
+          "lbl" : "inborn disorder of lysosomal amino acid transport"
+        },
+        {
+          "id" : "Orphanet:79207",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019246",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79207",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227605",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019246",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019246",
+            "Orphanet:79207",
+            "UMLS:CN227605"
+          ]
+        }
+      ]
+    }
+  ]
+}

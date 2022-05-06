@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:83a7a8d7ef0f099554b447966cea09a5b44269113df3888bbbbf7fd1659dc174",
+      "nodes" : [
+        {
+          "id" : "SCTID:92584005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0347103",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021287",
+          "type" : "CLASS",
+          "lbl" : "carcinoma in situ of epiglottis"
+        },
+        {
+          "id" : "NCIT:C4592",
+          "type" : "CLASS",
+          "lbl" : "Stage 0 Epiglottic Carcinoma AJCC v6, v7, and v8"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:92584005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021287",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021287",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4592",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0347103",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021287",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021287",
+            "NCIT:C4592",
+            "SCTID:92584005",
+            "UMLS:C0347103"
+          ]
+        }
+      ]
+    }
+  ]
+}

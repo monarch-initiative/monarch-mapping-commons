@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cffb4a7828bf597d46ea1b3cc1badcb9616274683c917850ca6fdf8cb30e85be",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336076",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8029",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004438",
+          "type" : "CLASS",
+          "lbl" : "sporadic breast cancer"
+        },
+        {
+          "id" : "NCIT:C7566",
+          "type" : "CLASS",
+          "lbl" : "Sporadic Breast Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1336076",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004438",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8029",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004438",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004438",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7566",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004438",
+            "UMLS:C1336076",
+            "DOID:8029",
+            "NCIT:C7566"
+          ]
+        }
+      ]
+    }
+  ]
+}

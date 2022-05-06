@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d3f85bb578af6a991ce76be57cab57028c4fff7884c1ee846a5440c25024050a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3554306",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060686",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014002",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant nocturnal frontal lobe epilepsy 5"
+        },
+        {
+          "id" : "OMIM:615005",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0060686",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014002",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615005",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3554306",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014002",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0060686",
+            "MONDO:0014002",
+            "OMIM:615005",
+            "UMLS:C3554306"
+          ]
+        }
+      ]
+    }
+  ]
+}

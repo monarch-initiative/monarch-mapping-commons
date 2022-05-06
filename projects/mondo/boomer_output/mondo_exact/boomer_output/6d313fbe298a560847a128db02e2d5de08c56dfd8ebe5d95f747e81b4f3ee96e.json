@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6d313fbe298a560847a128db02e2d5de08c56dfd8ebe5d95f747e81b4f3ee96e",
+      "nodes" : [
+        {
+          "id" : "SCTID:8051000119105",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1956395",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018164",
+          "type" : "CLASS",
+          "lbl" : "arterial thoracic outlet syndrome"
+        },
+        {
+          "id" : "Orphanet:357107",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1956395",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018164",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018164",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:357107",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:8051000119105",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018164",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1956395",
+            "MONDO:0018164",
+            "Orphanet:357107",
+            "SCTID:8051000119105"
+          ]
+        }
+      ]
+    }
+  ]
+}

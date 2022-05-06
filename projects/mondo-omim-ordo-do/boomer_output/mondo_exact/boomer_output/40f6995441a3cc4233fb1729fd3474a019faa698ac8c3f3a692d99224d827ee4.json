@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:40f6995441a3cc4233fb1729fd3474a019faa698ac8c3f3a692d99224d827ee4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0877152",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4037",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002845",
+          "type" : "CLASS",
+          "lbl" : "necrotizing gastritis"
+        },
+        {
+          "id" : "NCIT:C27329",
+          "type" : "CLASS",
+          "lbl" : "Necrotizing Gastritis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4037",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002845",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002845",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27329",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0877152",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002845",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:4037",
+            "MONDO:0002845",
+            "NCIT:C27329",
+            "UMLS:C0877152"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e20de5d61bf6a8fc33706c3358acb781f7a6a4c861e6f212e8e6b6f8eb584592",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202399",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017049",
+          "type" : "CLASS",
+          "lbl" : "hypomyelination neuropathy-arthrogryposis syndrome"
+        },
+        {
+          "id" : "Orphanet:2680",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202399",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017049",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017049",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2680",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN202399",
+            "MONDO:0017049",
+            "Orphanet:2680"
+          ]
+        }
+      ]
+    }
+  ]
+}

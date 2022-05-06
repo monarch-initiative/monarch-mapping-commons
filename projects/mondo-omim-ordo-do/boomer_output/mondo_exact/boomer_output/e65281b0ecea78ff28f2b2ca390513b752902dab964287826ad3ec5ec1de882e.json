@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e65281b0ecea78ff28f2b2ca390513b752902dab964287826ad3ec5ec1de882e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225326",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110068",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014640",
+          "type" : "CLASS",
+          "lbl" : "frontotemporal dementia and/or amyotrophic lateral sclerosis 3"
+        },
+        {
+          "id" : "OMIM:616437",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014640",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616437",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225326",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014640",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110068",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014640",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:616437",
+            "MONDO:0014640",
+            "UMLS:C4225326",
+            "DOID:0110068"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c06f6a2dec3375cf36fbae0c048157d1ce8d8dbd71b410fc4707796d2e18c83f",
+      "nodes" : [
+        {
+          "id" : "DOID:0111756",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1833830",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C563496",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008132",
+          "type" : "CLASS",
+          "lbl" : "optic atrophy with demyelinating disease of CNS"
+        },
+        {
+          "id" : "OMIM:165200",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1833830",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008132",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008132",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:165200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111756",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008132",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563496",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008132",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C563496",
+            "OMIM:165200",
+            "UMLS:C1833830",
+            "MONDO:0008132",
+            "DOID:0111756"
+          ]
+        }
+      ]
+    }
+  ]
+}

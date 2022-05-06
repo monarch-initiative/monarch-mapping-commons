@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:781ba94d65b62b296e5964399ef4f3eff801d12ac48bfb5b92172352b0986168",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4014501",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111025",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014372",
+          "type" : "CLASS",
+          "lbl" : "cone-rod dystrophy 19"
+        },
+        {
+          "id" : "OMIM:615860",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4014501",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014372",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014372",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615860",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111025",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014372",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:615860",
+            "MONDO:0014372",
+            "UMLS:C4014501",
+            "DOID:0111025"
+          ]
+        }
+      ]
+    }
+  ]
+}

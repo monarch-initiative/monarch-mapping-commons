@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fffaa863f38e1800d535000fd5313d6b4a7a6648b3c90b33346677b8cf4d96b7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN244943",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060711",
+          "type" : "CLASS",
+          "lbl" : "Jaberi-Elahi syndrome"
+        },
+        {
+          "id" : "OMIM:617988",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN244943",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060711",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060711",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617988",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0060711",
+            "UMLS:CN244943",
+            "OMIM:617988"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:db5f3ee9607d7d1fdea789323892ece4ec1d95254addbf48ca9b6c1911783b78",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4011949",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008856",
+          "type" : "CLASS",
+          "lbl" : "immunodeficiency 27A"
+        },
+        {
+          "id" : "OMIM:209950",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008856",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:209950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4011949",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008856",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008856",
+            "OMIM:209950",
+            "UMLS:C4011949"
+          ]
+        }
+      ]
+    }
+  ]
+}

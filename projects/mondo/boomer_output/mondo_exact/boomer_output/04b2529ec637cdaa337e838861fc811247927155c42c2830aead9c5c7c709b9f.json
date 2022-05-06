@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:04b2529ec637cdaa337e838861fc811247927155c42c2830aead9c5c7c709b9f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336089",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6571",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003930",
+          "type" : "CLASS",
+          "lbl" : "non-invasive bladder urothelial carcinoma"
+        },
+        {
+          "id" : "NCIT:C6188",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003930",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6188",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336089",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003930",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6571",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003930",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6188",
+            "MONDO:0003930",
+            "UMLS:C1336089",
+            "DOID:6571"
+          ]
+        }
+      ]
+    }
+  ]
+}

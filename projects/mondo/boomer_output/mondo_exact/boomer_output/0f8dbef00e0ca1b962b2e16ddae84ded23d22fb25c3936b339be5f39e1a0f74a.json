@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0f8dbef00e0ca1b962b2e16ddae84ded23d22fb25c3936b339be5f39e1a0f74a",
+      "nodes" : [
+        {
+          "id" : "MONDO:0016710",
+          "type" : "CLASS",
+          "lbl" : "medulloblastoma with extensive nodularity"
+        },
+        {
+          "id" : "UMLS:C1334970",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN201957",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C5407",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:251858",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334970",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016710",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016710",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:251858",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016710",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN201957",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016710",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5407",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016710",
+            "UMLS:C1334970",
+            "Orphanet:251858",
+            "NCIT:C5407"
+          ]
+        }
+      ]
+    }
+  ]
+}

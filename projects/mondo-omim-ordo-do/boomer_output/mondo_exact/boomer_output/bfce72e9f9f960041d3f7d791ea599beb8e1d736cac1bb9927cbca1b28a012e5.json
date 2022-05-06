@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bfce72e9f9f960041d3f7d791ea599beb8e1d736cac1bb9927cbca1b28a012e5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN244942",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111631",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0054802",
+          "type" : "CLASS",
+          "lbl" : "erythrocytosis, familial, 7"
+        },
+        {
+          "id" : "OMIM:617981",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0111631",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0054802",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN244942",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0054802",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0054802",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617981",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0111631",
+            "MONDO:0054802",
+            "OMIM:617981",
+            "UMLS:CN244942"
+          ]
+        }
+      ]
+    }
+  ]
+}

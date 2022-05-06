@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c223fcc7398c12dadf22347a567f46d41f9823b91a81091262761f0dd70a81a2",
+      "nodes" : [
+        {
+          "id" : "OMIM:615980",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4014869",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014431",
+          "type" : "CLASS",
+          "lbl" : "LIPE-related familial partial lipodystrophy"
+        },
+        {
+          "id" : "Orphanet:435660",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070206",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4014869",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014431",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014431",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615980",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014431",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014431",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:435660",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014431",
+            "OMIM:615980",
+            "UMLS:C4014869",
+            "Orphanet:435660",
+            "DOID:0070206"
+          ]
+        }
+      ]
+    }
+  ]
+}

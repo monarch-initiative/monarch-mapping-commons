@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0b90f4810e362d74cc7bed9d1f29f0ca9ac29a700b2e6531302d62a274aca80a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2985174",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016735",
+          "type" : "CLASS",
+          "lbl" : "papillary glioneuronal tumor"
+        },
+        {
+          "id" : "NCIT:C92554",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:251962",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016735",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C92554",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016735",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:251962",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2985174",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016735",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016735",
+            "NCIT:C92554",
+            "Orphanet:251962",
+            "UMLS:C2985174"
+          ]
+        }
+      ]
+    }
+  ]
+}

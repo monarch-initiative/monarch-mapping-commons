@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7786184333cf8282ce68f1ad9d533257929a1468aed19b30819c52eb73f2fb82",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0259786",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5058",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003262",
+          "type" : "CLASS",
+          "lbl" : "rhabdoid meningioma"
+        },
+        {
+          "id" : "NCIT:C6909",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5058",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003262",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003262",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6909",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0259786",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003262",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5058",
+            "MONDO:0003262",
+            "NCIT:C6909",
+            "UMLS:C0259786"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6c20d0f6d2b0da64851e8957559d6efcd6e308b7a13d608e3d25dc0561745ba5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335299",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5637",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005614",
+          "type" : "CLASS",
+          "lbl" : "pancreatic adenosquamous carcinoma"
+        },
+        {
+          "id" : "NCIT:C5721",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335299",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005614",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5637",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005614",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005614",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5721",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005614",
+            "UMLS:C1335299",
+            "DOID:5637",
+            "NCIT:C5721"
+          ]
+        }
+      ]
+    }
+  ]
+}

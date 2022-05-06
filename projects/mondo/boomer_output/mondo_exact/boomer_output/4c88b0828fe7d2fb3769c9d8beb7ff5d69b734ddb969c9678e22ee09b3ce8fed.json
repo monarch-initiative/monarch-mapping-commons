@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4c88b0828fe7d2fb3769c9d8beb7ff5d69b734ddb969c9678e22ee09b3ce8fed",
+      "nodes" : [
+        {
+          "id" : "MESH:C535681",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1835910",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012473",
+          "type" : "CLASS",
+          "lbl" : "right pulmonary artery, anomalous origin of, familial"
+        },
+        {
+          "id" : "OMIM:610338",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012473",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610338",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1835910",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012473",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535681",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012473",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:610338",
+            "MONDO:0012473",
+            "UMLS:C1835910",
+            "MESH:C535681"
+          ]
+        }
+      ]
+    }
+  ]
+}

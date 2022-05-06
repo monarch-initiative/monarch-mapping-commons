@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7741d0772a98bf08c507db46cf1a8d8a3cee1fe1abffb54428ec2948d20aff24",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332976",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6089",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003764",
+          "type" : "CLASS",
+          "lbl" : "pediatric leptomeningeal melanoma"
+        },
+        {
+          "id" : "NCIT:C5318",
+          "type" : "CLASS",
+          "lbl" : "Childhood Meningeal Melanoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332976",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003764",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6089",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003764",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003764",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5318",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332976",
+            "MONDO:0003764",
+            "DOID:6089",
+            "NCIT:C5318"
+          ]
+        }
+      ]
+    }
+  ]
+}

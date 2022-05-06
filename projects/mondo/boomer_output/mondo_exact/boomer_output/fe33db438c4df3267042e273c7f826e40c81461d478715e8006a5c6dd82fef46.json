@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fe33db438c4df3267042e273c7f826e40c81461d478715e8006a5c6dd82fef46",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1709574",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006378",
+          "type" : "CLASS",
+          "lbl" : "pleural epithelioid mesothelioma"
+        },
+        {
+          "id" : "NCIT:C45662",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1709574",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006378",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006378",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C45662",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1709574",
+            "MONDO:0006378",
+            "NCIT:C45662"
+          ]
+        }
+      ]
+    }
+  ]
+}

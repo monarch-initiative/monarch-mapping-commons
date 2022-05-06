@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4bc1e760fcf22f073470ee5f71962cffbfb7dec35c5b3e6a3cfa1b3c0c191135",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0272137",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:300622",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080520",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010381",
+          "type" : "CLASS",
+          "lbl" : "Tn polyagglutination syndrome"
+        },
+        {
+          "id" : "MESH:C562719",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010381",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300622",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0272137",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010381",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080520",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010381",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C562719",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010381",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010381",
+            "OMIM:300622",
+            "DOID:0080520",
+            "MESH:C562719",
+            "UMLS:C0272137"
+          ]
+        }
+      ]
+    }
+  ]
+}

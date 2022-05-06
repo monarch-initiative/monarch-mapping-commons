@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:417b8dd1ad97eb504d00ed3783c3def545cd9cc46f0d89d915d00b1e604f880e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201506",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016501",
+          "type" : "CLASS",
+          "lbl" : "Hermansky-Pudlak syndrome with pulmonary fibrosis"
+        },
+        {
+          "id" : "Orphanet:231500",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016501",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:231500",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201506",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016501",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:231500",
+            "MONDO:0016501",
+            "UMLS:CN201506"
+          ]
+        }
+      ]
+    }
+  ]
+}

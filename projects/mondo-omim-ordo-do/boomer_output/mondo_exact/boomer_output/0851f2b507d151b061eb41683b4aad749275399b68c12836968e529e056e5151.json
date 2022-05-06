@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0851f2b507d151b061eb41683b4aad749275399b68c12836968e529e056e5151",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1515306",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8195",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004494",
+          "type" : "CLASS",
+          "lbl" : "testicular yolk sac tumor, hepatoid pattern"
+        },
+        {
+          "id" : "NCIT:C39931",
+          "type" : "CLASS",
+          "lbl" : "Testicular Yolk Sac Tumor, Hepatoid Pattern"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1515306",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004494",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004494",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39931",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8195",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004494",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004494",
+            "UMLS:C1515306",
+            "NCIT:C39931",
+            "DOID:8195"
+          ]
+        }
+      ]
+    }
+  ]
+}

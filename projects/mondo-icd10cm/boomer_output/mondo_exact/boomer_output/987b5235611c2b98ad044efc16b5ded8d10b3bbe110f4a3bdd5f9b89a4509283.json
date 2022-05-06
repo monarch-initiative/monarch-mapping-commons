@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:987b5235611c2b98ad044efc16b5ded8d10b3bbe110f4a3bdd5f9b89a4509283",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279592",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5602",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003539",
+          "type" : "CLASS",
+          "lbl" : "T-cell adult acute lymphocytic leukemia"
+        },
+        {
+          "id" : "NCIT:C9142",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0279592",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003539",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003539",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9142",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5602",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003539",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0279592",
+            "MONDO:0003539",
+            "NCIT:C9142",
+            "DOID:5602"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2e0d14d5c6deadf1ef451f8f951bfc149209e68015ee02578ce0449f09776750",
+      "nodes" : [
+        {
+          "id" : "DOID:3540",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002681",
+          "type" : "CLASS",
+          "lbl" : "choroid plexus cancer"
+        },
+        {
+          "id" : "NCIT:C4533",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002681",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4533",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3540",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002681",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4533",
+            "MONDO:0002681",
+            "DOID:3540"
+          ]
+        }
+      ]
+    }
+  ]
+}

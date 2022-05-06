@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:854a221cc84b8026302098a31a38236631e2b2db6e7231db2769e4967436f9a8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279987",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7732",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004345",
+          "type" : "CLASS",
+          "lbl" : "childhood malignant schwannoma"
+        },
+        {
+          "id" : "NCIT:C8094",
+          "type" : "CLASS",
+          "lbl" : "Childhood Malignant Peripheral Nerve Sheath Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004345",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8094",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0279987",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004345",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7732",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004345",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004345",
+            "NCIT:C8094",
+            "UMLS:C0279987",
+            "DOID:7732"
+          ]
+        }
+      ]
+    }
+  ]
+}

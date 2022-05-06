@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3e3e2c937b92ce56dfc3f3cdc20e51bda79003ea029f5c3bf83be60b5663ad51",
+      "nodes" : [
+        {
+          "id" : "MESH:C565308",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1854064",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011580",
+          "type" : "CLASS",
+          "lbl" : "cerebellar ataxia and hypergonadotropic hypogonadism"
+        },
+        {
+          "id" : "OMIM:605672",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011580",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:605672",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565308",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011580",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1854064",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011580",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:605672",
+            "MONDO:0011580",
+            "MESH:C565308",
+            "UMLS:C1854064"
+          ]
+        }
+      ]
+    }
+  ]
+}

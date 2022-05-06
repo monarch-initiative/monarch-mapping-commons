@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5a6d5fe63e7b40e579d0a890b192f361091d2b3450e064acddb1de3389638eaa",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334921",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10813",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001130",
+          "type" : "CLASS",
+          "lbl" : "nasal cavity lymphoma"
+        },
+        {
+          "id" : "NCIT:C6074",
+          "type" : "CLASS",
+          "lbl" : "Nasal Cavity Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0001130",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6074",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10813",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001130",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334921",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001130",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001130",
+            "NCIT:C6074",
+            "DOID:10813",
+            "UMLS:C1334921"
+          ]
+        }
+      ]
+    }
+  ]
+}

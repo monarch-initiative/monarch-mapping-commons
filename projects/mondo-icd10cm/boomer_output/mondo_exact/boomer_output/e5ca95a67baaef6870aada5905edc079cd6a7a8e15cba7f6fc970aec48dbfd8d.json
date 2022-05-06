@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e5ca95a67baaef6870aada5905edc079cd6a7a8e15cba7f6fc970aec48dbfd8d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN074258",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009361",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive hydrocephalus due to congenital stenosis of aqueduct of Sylvius"
+        },
+        {
+          "id" : "OMIM:236635",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009361",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:236635",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN074258",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009361",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009361",
+            "OMIM:236635",
+            "UMLS:CN074258"
+          ]
+        }
+      ]
+    }
+  ]
+}

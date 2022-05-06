@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6d19d5ba181d29038720d641d8e8437e051032db5f195f9a7f11bc18d93f366f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237444",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018464",
+          "type" : "CLASS",
+          "lbl" : "severe phosphoribosylpyrophosphate synthetase superactivity"
+        },
+        {
+          "id" : "Orphanet:411543",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237444",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018464",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018464",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:411543",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018464",
+            "UMLS:CN237444",
+            "Orphanet:411543"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1fc97f078bec4197a3de033be74cce12bc64421471c77ac75f2dba0543e98eb2",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205653",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010663",
+          "type" : "CLASS",
+          "lbl" : "X-linked intellectual disability-hypotonic face syndrome"
+        },
+        {
+          "id" : "Orphanet:73220",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:309580",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010663",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:309580",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205653",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010663",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010663",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:73220",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010663",
+            "OMIM:309580",
+            "UMLS:CN205653",
+            "Orphanet:73220"
+          ]
+        }
+      ]
+    }
+  ]
+}

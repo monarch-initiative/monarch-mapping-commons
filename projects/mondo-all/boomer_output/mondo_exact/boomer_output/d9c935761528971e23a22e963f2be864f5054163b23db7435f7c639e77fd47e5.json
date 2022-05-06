@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d9c935761528971e23a22e963f2be864f5054163b23db7435f7c639e77fd47e5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1112746",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:901",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004695",
+          "type" : "CLASS",
+          "lbl" : "liver lymphoma"
+        },
+        {
+          "id" : "NCIT:C4949",
+          "type" : "CLASS",
+          "lbl" : "Liver Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:901",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004695",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1112746",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004695",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004695",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4949",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:901",
+            "MONDO:0004695",
+            "UMLS:C1112746",
+            "NCIT:C4949"
+          ]
+        }
+      ]
+    }
+  ]
+}

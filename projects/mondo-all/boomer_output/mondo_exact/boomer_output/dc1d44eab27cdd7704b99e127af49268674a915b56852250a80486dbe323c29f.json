@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dc1d44eab27cdd7704b99e127af49268674a915b56852250a80486dbe323c29f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336754",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006464",
+          "type" : "CLASS",
+          "lbl" : "thyroid gland mucosa-associated lymphoid tissue lymphoma"
+        },
+        {
+          "id" : "NCIT:C7601",
+          "type" : "CLASS",
+          "lbl" : "Thyroid Gland Mucosa-Associated Lymphoid Tissue Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006464",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7601",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336754",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006464",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006464",
+            "NCIT:C7601",
+            "UMLS:C1336754"
+          ]
+        }
+      ]
+    }
+  ]
+}

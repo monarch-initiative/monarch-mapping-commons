@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c35d11727041ed36cf133ac82f1bc7899245fa665c5c4d1f4be258596dd3f1a0",
+      "nodes" : [
+        {
+          "id" : "MESH:C566342",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1863594",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011363",
+          "type" : "CLASS",
+          "lbl" : "diabetes mellitus, noninsulin-dependent, 3"
+        },
+        {
+          "id" : "OMIM:603694",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011363",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603694",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566342",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011363",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1863594",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011363",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011363",
+            "OMIM:603694",
+            "MESH:C566342",
+            "UMLS:C1863594"
+          ]
+        }
+      ]
+    }
+  ]
+}

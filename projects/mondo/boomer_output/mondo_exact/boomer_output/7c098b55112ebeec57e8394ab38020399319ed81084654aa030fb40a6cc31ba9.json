@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7c098b55112ebeec57e8394ab38020399319ed81084654aa030fb40a6cc31ba9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0152063",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:52138004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN207435",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020533",
+          "type" : "CLASS",
+          "lbl" : "streptobacillary rat-bite fever"
+        },
+        {
+          "id" : "DOID:13238",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:99905",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020533",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0152063",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:52138004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020533",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:13238",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020533",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020533",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99905",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN207435",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020533",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020533",
+            "Orphanet:99905",
+            "SCTID:52138004",
+            "DOID:13238",
+            "UMLS:CN207435"
+          ]
+        }
+      ]
+    }
+  ]
+}

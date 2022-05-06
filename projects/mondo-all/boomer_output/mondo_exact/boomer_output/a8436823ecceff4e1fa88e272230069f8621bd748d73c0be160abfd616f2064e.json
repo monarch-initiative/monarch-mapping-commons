@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a8436823ecceff4e1fa88e272230069f8621bd748d73c0be160abfd616f2064e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3281044",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013785",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability, autosomal recessive 34"
+        },
+        {
+          "id" : "NCIT:C153179",
+          "type" : "CLASS",
+          "lbl" : "Mental Retardation, Autosomal Recessive 34"
+        },
+        {
+          "id" : "OMIM:614499",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013785",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C153179",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013785",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614499",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3281044",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013785",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C153179",
+            "MONDO:0013785",
+            "OMIM:614499",
+            "UMLS:C3281044"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:41775ab477a8ba3915d2dcee4a7b7b06ebc528229a643de164129066ca73d44d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3151080",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060302",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013421",
+          "type" : "CLASS",
+          "lbl" : "type II complement component 8 deficiency"
+        },
+        {
+          "id" : "OMIM:613789",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013421",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613789",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060302",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013421",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3151080",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013421",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:613789",
+            "MONDO:0013421",
+            "DOID:0060302",
+            "UMLS:C3151080"
+          ]
+        }
+      ]
+    }
+  ]
+}

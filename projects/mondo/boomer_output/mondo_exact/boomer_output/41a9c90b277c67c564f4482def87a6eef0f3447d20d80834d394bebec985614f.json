@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:41a9c90b277c67c564f4482def87a6eef0f3447d20d80834d394bebec985614f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336744",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1975",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002163",
+          "type" : "CLASS",
+          "lbl" : "thymus lipoma"
+        },
+        {
+          "id" : "NCIT:C6452",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002163",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6452",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336744",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002163",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1975",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002163",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002163",
+            "NCIT:C6452",
+            "UMLS:C1336744",
+            "DOID:1975"
+          ]
+        }
+      ]
+    }
+  ]
+}

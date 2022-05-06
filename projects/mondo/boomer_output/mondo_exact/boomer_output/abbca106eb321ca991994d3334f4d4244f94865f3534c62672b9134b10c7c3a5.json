@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:abbca106eb321ca991994d3334f4d4244f94865f3534c62672b9134b10c7c3a5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200573",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015976",
+          "type" : "CLASS",
+          "lbl" : "hyper-IgM syndrome without susceptibility to opportunistic infections"
+        },
+        {
+          "id" : "Orphanet:183666",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN200573",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015976",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015976",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:183666",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN200573",
+            "MONDO:0015976",
+            "Orphanet:183666"
+          ]
+        }
+      ]
+    }
+  ]
+}

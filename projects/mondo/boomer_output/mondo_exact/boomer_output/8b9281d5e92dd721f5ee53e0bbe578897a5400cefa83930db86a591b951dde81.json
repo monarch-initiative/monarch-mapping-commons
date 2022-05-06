@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8b9281d5e92dd721f5ee53e0bbe578897a5400cefa83930db86a591b951dde81",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334581",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4717",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003113",
+          "type" : "CLASS",
+          "lbl" : "extragonadal germ cell cancer"
+        },
+        {
+          "id" : "NCIT:C8881",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003113",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8881",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334581",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003113",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4717",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003113",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C8881",
+            "MONDO:0003113",
+            "UMLS:C1334581",
+            "DOID:4717"
+          ]
+        }
+      ]
+    }
+  ]
+}

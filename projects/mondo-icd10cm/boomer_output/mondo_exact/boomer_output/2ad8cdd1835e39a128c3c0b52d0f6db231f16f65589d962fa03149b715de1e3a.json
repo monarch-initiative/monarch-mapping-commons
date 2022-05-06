@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2ad8cdd1835e39a128c3c0b52d0f6db231f16f65589d962fa03149b715de1e3a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3279800",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013572",
+          "type" : "CLASS",
+          "lbl" : "Keppen-Lubinsky syndrome"
+        },
+        {
+          "id" : "Orphanet:435628",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:614098",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013572",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614098",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013572",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:435628",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3279800",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013572",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013572",
+            "OMIM:614098",
+            "Orphanet:435628",
+            "UMLS:C3279800"
+          ]
+        }
+      ]
+    }
+  ]
+}

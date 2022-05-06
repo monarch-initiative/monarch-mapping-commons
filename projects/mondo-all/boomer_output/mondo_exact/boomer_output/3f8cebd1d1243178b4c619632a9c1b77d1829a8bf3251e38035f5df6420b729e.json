@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3f8cebd1d1243178b4c619632a9c1b77d1829a8bf3251e38035f5df6420b729e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202977",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017332",
+          "type" : "CLASS",
+          "lbl" : "pyoderma gangrenosum-acne-suppurative hidradenitis syndrome"
+        },
+        {
+          "id" : "Orphanet:289478",
+          "type" : "CLASS",
+          "lbl" : "Pyoderma gangrenosum-acne-suppurative hidradenitis syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017332",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:289478",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202977",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017332",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017332",
+            "Orphanet:289478",
+            "UMLS:CN202977"
+          ]
+        }
+      ]
+    }
+  ]
+}

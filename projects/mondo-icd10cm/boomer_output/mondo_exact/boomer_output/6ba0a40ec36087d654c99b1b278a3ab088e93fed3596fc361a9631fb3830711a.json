@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6ba0a40ec36087d654c99b1b278a3ab088e93fed3596fc361a9631fb3830711a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335390",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8225",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004506",
+          "type" : "CLASS",
+          "lbl" : "microscopic breast papilloma"
+        },
+        {
+          "id" : "NCIT:C36088",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004506",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C36088",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8225",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004506",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335390",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004506",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004506",
+            "NCIT:C36088",
+            "DOID:8225",
+            "UMLS:C1335390"
+          ]
+        }
+      ]
+    }
+  ]
+}

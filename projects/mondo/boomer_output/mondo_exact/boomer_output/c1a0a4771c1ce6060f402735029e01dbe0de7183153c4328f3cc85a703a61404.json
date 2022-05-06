@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c1a0a4771c1ce6060f402735029e01dbe0de7183153c4328f3cc85a703a61404",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3489724",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012429",
+          "type" : "CLASS",
+          "lbl" : "Aicardi-Goutieres syndrome 2"
+        },
+        {
+          "id" : "OMIM:610181",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012429",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610181",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3489724",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012429",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012429",
+            "OMIM:610181",
+            "UMLS:C3489724"
+          ]
+        }
+      ]
+    }
+  ]
+}

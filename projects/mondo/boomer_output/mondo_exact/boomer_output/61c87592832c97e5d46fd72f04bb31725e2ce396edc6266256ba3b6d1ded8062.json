@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:61c87592832c97e5d46fd72f04bb31725e2ce396edc6266256ba3b6d1ded8062",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1710112",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006421",
+          "type" : "CLASS",
+          "lbl" : "small intestinal tubular adenoma"
+        },
+        {
+          "id" : "NCIT:C43552",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006421",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C43552",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1710112",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006421",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C43552",
+            "MONDO:0006421",
+            "UMLS:C1710112"
+          ]
+        }
+      ]
+    }
+  ]
+}

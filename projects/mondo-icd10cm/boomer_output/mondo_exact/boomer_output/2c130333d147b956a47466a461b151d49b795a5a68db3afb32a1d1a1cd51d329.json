@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2c130333d147b956a47466a461b151d49b795a5a68db3afb32a1d1a1cd51d329",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280856",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013760",
+          "type" : "CLASS",
+          "lbl" : "congenital ichthyosis-intellectual disability-spastic quadriplegia syndrome"
+        },
+        {
+          "id" : "Orphanet:352333",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:614457",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013760",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:352333",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013760",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3280856",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013760",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013760",
+            "Orphanet:352333",
+            "OMIM:614457",
+            "UMLS:C3280856"
+          ]
+        }
+      ]
+    }
+  ]
+}

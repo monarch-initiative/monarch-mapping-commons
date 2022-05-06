@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4bd3bc636637374733a8bde4499eacf07a98477d6877b9e05b0358354dddf5f1",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202584",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017162",
+          "type" : "CLASS",
+          "lbl" : "imperforate oropharynx-costo vetebral anomalies syndrome"
+        },
+        {
+          "id" : "Orphanet:2759",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202584",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017162",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017162",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2759",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN202584",
+            "MONDO:0017162",
+            "Orphanet:2759"
+          ]
+        }
+      ]
+    }
+  ]
+}

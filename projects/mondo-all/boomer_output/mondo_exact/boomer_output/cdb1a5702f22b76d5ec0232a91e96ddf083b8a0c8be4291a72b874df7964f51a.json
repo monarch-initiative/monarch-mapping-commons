@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cdb1a5702f22b76d5ec0232a91e96ddf083b8a0c8be4291a72b874df7964f51a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1569637",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005026",
+          "type" : "CLASS",
+          "lbl" : "endometrioid adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C3769",
+          "type" : "CLASS",
+          "lbl" : "Endometrioid Adenocarcinoma"
+        },
+        {
+          "id" : "UMLS:C0206687",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005026",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3769",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005026",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0206687",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1569637",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005026",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005026",
+            "NCIT:C3769",
+            "UMLS:C1569637"
+          ]
+        }
+      ]
+    }
+  ]
+}

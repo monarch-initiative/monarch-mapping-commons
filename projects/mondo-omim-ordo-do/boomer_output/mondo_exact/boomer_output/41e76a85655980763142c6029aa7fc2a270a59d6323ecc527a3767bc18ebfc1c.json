@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:41e76a85655980763142c6029aa7fc2a270a59d6323ecc527a3767bc18ebfc1c",
+      "nodes" : [
+        {
+          "id" : "SCTID:2040007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0751549",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015061",
+          "type" : "CLASS",
+          "lbl" : "neurogenic thoracic outlet syndrome"
+        },
+        {
+          "id" : "Orphanet:100073",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015061",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100073",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0751549",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015061",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:2040007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015061",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015061",
+            "Orphanet:100073",
+            "UMLS:C0751549",
+            "SCTID:2040007"
+          ]
+        }
+      ]
+    }
+  ]
+}

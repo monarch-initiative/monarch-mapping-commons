@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0cdf287883341b566a6536018ad72f3e0b1de8390a4cb13fc5be29856c4ca9f8",
+      "nodes" : [
+        {
+          "id" : "DOID:1587",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002048",
+          "type" : "CLASS",
+          "lbl" : "thrombocytopenia due to immune destruction"
+        },
+        {
+          "id" : "NCIT:C3991",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002048",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3991",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1587",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002048",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002048",
+            "NCIT:C3991",
+            "DOID:1587"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b23c395e27b57a24e39b4b556058df48043896e9a536b142420179f81dd8bb21",
+      "nodes" : [
+        {
+          "id" : "DOID:4110",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0013578",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002875",
+          "type" : "CLASS",
+          "lbl" : "parasitic ectoparasitic infectious disease"
+        },
+        {
+          "id" : "ICD10CM:B85-B89",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D004478",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D004478",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002875",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0013578",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002875",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:B85-B89",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002875",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4110",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002875",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D004478",
+            "ICD10CM:B85-B89",
+            "DOID:4110",
+            "MONDO:0002875",
+            "UMLS:C0013578"
+          ]
+        }
+      ]
+    }
+  ]
+}

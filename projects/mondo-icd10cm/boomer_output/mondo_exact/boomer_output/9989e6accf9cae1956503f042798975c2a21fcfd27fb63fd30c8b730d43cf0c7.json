@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9989e6accf9cae1956503f042798975c2a21fcfd27fb63fd30c8b730d43cf0c7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227264",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018117",
+          "type" : "CLASS",
+          "lbl" : "disorder of phospholipids, sphingolipids and fatty acids biosynthesis"
+        },
+        {
+          "id" : "Orphanet:352301",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018117",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:352301",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227264",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018117",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018117",
+            "Orphanet:352301",
+            "UMLS:CN227264"
+          ]
+        }
+      ]
+    }
+  ]
+}

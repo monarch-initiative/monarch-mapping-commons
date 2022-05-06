@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fa56c19e655dd6539f5fe7f43273dcd0c8d20d21ded884fc662fff4cd50dc0c5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1513369",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004430",
+          "type" : "CLASS",
+          "lbl" : "penis mixed squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C39959",
+          "type" : "CLASS",
+          "lbl" : "Mixed Squamous Cell Carcinoma of the Penis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:8009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004430",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1513369",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004430",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004430",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39959",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:8009",
+            "MONDO:0004430",
+            "UMLS:C1513369",
+            "NCIT:C39959"
+          ]
+        }
+      ]
+    }
+  ]
+}

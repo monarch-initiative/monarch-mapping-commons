@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f08246dcf2e9e02b69a04bbc899534f19ce616b8e3c60031ac1b055172718ea2",
+      "nodes" : [
+        {
+          "id" : "MESH:D012790",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0037018",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3825",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002783",
+          "type" : "CLASS",
+          "lbl" : "Shwartzman phenomenon"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0037018",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002783",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D012790",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002783",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3825",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002783",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002783",
+            "UMLS:C0037018",
+            "MESH:D012790",
+            "DOID:3825"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ad4d34a46143a92a45c559d4dcee8bac7bb3875c3a3328ae65f3f51e648bb4e1",
+      "nodes" : [
+        {
+          "id" : "MESH:C563559",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1834689",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008027",
+          "type" : "CLASS",
+          "lbl" : "muscular atrophy, malignant neurogenic"
+        },
+        {
+          "id" : "OMIM:158650",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008027",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:158650",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1834689",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008027",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563559",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008027",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008027",
+            "OMIM:158650",
+            "UMLS:C1834689",
+            "MESH:C563559"
+          ]
+        }
+      ]
+    }
+  ]
+}

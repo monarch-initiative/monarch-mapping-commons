@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8bd9cd4855ee6c6b85a6f255df1b183bcddb420f51fb2a80e73a16b3788d8190",
+      "nodes" : [
+        {
+          "id" : "MESH:C565905",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859519",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008859",
+          "type" : "CLASS",
+          "lbl" : "berry aneurysm, cirrhosis, pulmonary emphysema, and cerebral calcification"
+        },
+        {
+          "id" : "OMIM:210050",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565905",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008859",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008859",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:210050",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1859519",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008859",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C565905",
+            "MONDO:0008859",
+            "OMIM:210050",
+            "UMLS:C1859519"
+          ]
+        }
+      ]
+    }
+  ]
+}

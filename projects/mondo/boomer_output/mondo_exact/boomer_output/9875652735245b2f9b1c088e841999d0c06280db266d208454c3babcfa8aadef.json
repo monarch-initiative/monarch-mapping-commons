@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9875652735245b2f9b1c088e841999d0c06280db266d208454c3babcfa8aadef",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336962",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6777",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003991",
+          "type" : "CLASS",
+          "lbl" : "villoglandular endometrial endometrioid adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C27846",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6777",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003991",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336962",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003991",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003991",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27846",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003991",
+            "DOID:6777",
+            "UMLS:C1336962",
+            "NCIT:C27846"
+          ]
+        }
+      ]
+    }
+  ]
+}

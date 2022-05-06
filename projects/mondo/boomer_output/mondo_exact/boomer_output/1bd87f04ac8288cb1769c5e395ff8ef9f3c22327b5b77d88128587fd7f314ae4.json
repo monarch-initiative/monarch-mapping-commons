@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1bd87f04ac8288cb1769c5e395ff8ef9f3c22327b5b77d88128587fd7f314ae4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4012050",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009337",
+          "type" : "CLASS",
+          "lbl" : "Hennekam lymphangiectasia-lymphedema syndrome 1"
+        },
+        {
+          "id" : "OMIM:235510",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009337",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:235510",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4012050",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009337",
+            "OMIM:235510",
+            "UMLS:C4012050"
+          ]
+        }
+      ]
+    }
+  ]
+}

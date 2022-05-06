@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:01ce3ec34b9e7d3e2d12a993bb996e4d2c675cab1516e96775e927209a5e87d5",
+      "nodes" : [
+        {
+          "id" : "MESH:C567462",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2677879",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010423",
+          "type" : "CLASS",
+          "lbl" : "hypospadias 2, X-linked"
+        },
+        {
+          "id" : "OMIM:300758",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2677879",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010423",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567462",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010423",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010423",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300758",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2677879",
+            "MONDO:0010423",
+            "MESH:C567462",
+            "OMIM:300758"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:19721ada34d6a91784d82738047746a943b361fc2a3716e028ccedf6289af7e5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334259",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3639",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002717",
+          "type" : "CLASS",
+          "lbl" : "spinal cord intramedullary teratoma"
+        },
+        {
+          "id" : "NCIT:C5428",
+          "type" : "CLASS",
+          "lbl" : "Intramedullary Spinal Cord Teratoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3639",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002717",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334259",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002717",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002717",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5428",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3639",
+            "MONDO:0002717",
+            "UMLS:C1334259",
+            "NCIT:C5428"
+          ]
+        }
+      ]
+    }
+  ]
+}

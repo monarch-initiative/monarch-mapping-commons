@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0b445b17de1f1e34d3c70f39b6696c176b9411f75a19a9f1947bfc4f14324f73",
+      "nodes" : [
+        {
+          "id" : "MESH:C536309",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1868569",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018973",
+          "type" : "CLASS",
+          "lbl" : "patterned dystrophy of the retinal pigment epithelium"
+        },
+        {
+          "id" : "Orphanet:63454",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1868569",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018973",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018973",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:63454",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536309",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018973",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1868569",
+            "MONDO:0018973",
+            "Orphanet:63454",
+            "MESH:C536309"
+          ]
+        }
+      ]
+    }
+  ]
+}

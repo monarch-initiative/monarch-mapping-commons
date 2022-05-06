@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:140e7123665ebfb1621d1f0c0c25e5bb386d4364f66ac8dab29af6cc4275c759",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518768",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6865",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004019",
+          "type" : "CLASS",
+          "lbl" : "oxyphilic endometrial endometrioid adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C27849",
+          "type" : "CLASS",
+          "lbl" : "Oxyphilic Endometrial Endometrioid Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6865",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004019",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004019",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27849",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518768",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004019",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004019",
+            "DOID:6865",
+            "NCIT:C27849",
+            "UMLS:C1518768"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:12532f4e4ec57a7a74118fceaa502d46b95dc2c0fa71b9faa9ef70ff5c2e2c37",
+      "nodes" : [
+        {
+          "id" : "MESH:D061686",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C94349",
+          "type" : "CLASS",
+          "lbl" : "Premature Ejaculation"
+        },
+        {
+          "id" : "MONDO:0001780",
+          "type" : "CLASS",
+          "lbl" : "premature ejaculation"
+        },
+        {
+          "id" : "ICD10CM:F52.4",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:13709",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:13709",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001780",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001780",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C94349",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:F52.4",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001780",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D061686",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001780",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001780",
+            "DOID:13709",
+            "ICD10CM:F52.4",
+            "NCIT:C94349",
+            "MESH:D061686"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f432e82a863dd39afdb188c5630d3ab9994a05758caa8f732d0f7491166123c6",
+      "nodes" : [
+        {
+          "id" : "NCIT:C6371",
+          "type" : "CLASS",
+          "lbl" : "Giant Condyloma Acuminatum"
+        },
+        {
+          "id" : "MONDO:0027026",
+          "type" : "CLASS",
+          "lbl" : "Buschke Lowenstein tumor"
+        },
+        {
+          "id" : "UMLS:C0276264",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D062688",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:402910001",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:402910001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0027026",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D062688",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0027026",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0276264",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0027026",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0027026",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6371",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6371",
+            "SCTID:402910001",
+            "MONDO:0027026",
+            "UMLS:C0276264",
+            "MESH:D062688"
+          ]
+        }
+      ]
+    }
+  ]
+}

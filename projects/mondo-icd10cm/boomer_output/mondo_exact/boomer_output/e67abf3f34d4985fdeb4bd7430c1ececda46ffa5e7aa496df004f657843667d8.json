@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e67abf3f34d4985fdeb4bd7430c1ececda46ffa5e7aa496df004f657843667d8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4330531",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016709",
+          "type" : "CLASS",
+          "lbl" : "anaplastic/large cell medulloblastoma"
+        },
+        {
+          "id" : "NCIT:C129436",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:251855",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016709",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:251855",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4330531",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016709",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016709",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C129436",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:251855",
+            "MONDO:0016709",
+            "UMLS:C4330531",
+            "NCIT:C129436"
+          ]
+        }
+      ]
+    }
+  ]
+}

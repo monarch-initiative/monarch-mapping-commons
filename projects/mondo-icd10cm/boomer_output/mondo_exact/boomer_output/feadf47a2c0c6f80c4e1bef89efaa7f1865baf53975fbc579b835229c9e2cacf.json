@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:feadf47a2c0c6f80c4e1bef89efaa7f1865baf53975fbc579b835229c9e2cacf",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1443972",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:11133",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001202",
+          "type" : "CLASS",
+          "lbl" : "prostatic cyst"
+        },
+        {
+          "id" : "ICD10CM:N42.83",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:409658007",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:N42.83",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001202",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:11133",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001202",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:409658007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001202",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1443972",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001202",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:11133",
+            "ICD10CM:N42.83",
+            "MONDO:0001202",
+            "SCTID:409658007",
+            "UMLS:C1443972"
+          ]
+        }
+      ]
+    }
+  ]
+}

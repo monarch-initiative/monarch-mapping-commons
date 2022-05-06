@@ -1,0 +1,113 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:68713077ccd2be8f281a462781558d2fa350e6e0e469ad91c5dce273cd2745ac",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:J00-J99",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1579",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D012140",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:50043002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005087",
+          "type" : "CLASS",
+          "lbl" : "respiratory system disorder"
+        },
+        {
+          "id" : "NCIT:C26871",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D012140",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005087",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:J00-J99",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005087",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1579",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005087",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:50043002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005087",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005087",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C26871",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005087",
+            "MESH:D012140",
+            "SCTID:50043002",
+            "ICD10CM:J00-J99",
+            "NCIT:C26871",
+            "DOID:1579"
+          ]
+        }
+      ]
+    }
+  ]
+}

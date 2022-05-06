@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d52ab74fcd40402a83db8722b58ed7a0055db96b01074b467b3a242c8fb89b6a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334039",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7334",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004191",
+          "type" : "CLASS",
+          "lbl" : "nephrogenic adenoma"
+        },
+        {
+          "id" : "NCIT:C7413",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7334",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004191",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004191",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7413",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334039",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004191",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:7334",
+            "MONDO:0004191",
+            "NCIT:C7413",
+            "UMLS:C0334039"
+          ]
+        }
+      ]
+    }
+  ]
+}

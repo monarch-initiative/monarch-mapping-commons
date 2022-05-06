@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:23decaac064323bb0c7c92702cd38cc834e2321fff802010faec93aa3ea1292e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333460",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1108",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001192",
+          "type" : "CLASS",
+          "lbl" : "esophageal melanoma"
+        },
+        {
+          "id" : "NCIT:C5707",
+          "type" : "CLASS",
+          "lbl" : "Esophageal Melanoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0001192",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5707",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333460",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001192",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1108",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001192",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001192",
+            "NCIT:C5707",
+            "UMLS:C1333460",
+            "DOID:1108"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bad6544fabcedc811335e5948f2ea88d13f55b37c6b856be795bf97140dfc779",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1859972",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008734",
+          "type" : "CLASS",
+          "lbl" : "adrenocortical carcinoma, hereditary"
+        },
+        {
+          "id" : "OMIM:202300",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1859972",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008734",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008734",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:202300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1859972",
+            "MONDO:0008734",
+            "OMIM:202300"
+          ]
+        }
+      ]
+    }
+  ]
+}

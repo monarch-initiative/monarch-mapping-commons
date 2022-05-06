@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dd9e8dce6d6083eadcd040e0cdda4dfa7fc1223dcb51ce58427097dce6125e17",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203155",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009416",
+          "type" : "CLASS",
+          "lbl" : "hypoinsulinemic hypoglycemia and body hemihypertrophy"
+        },
+        {
+          "id" : "Orphanet:293964",
+          "type" : "CLASS",
+          "lbl" : "Hypoinsulinemic hypoglycemia and body hemihypertrophy"
+        },
+        {
+          "id" : "OMIM:240900",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009416",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:293964",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009416",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:240900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203155",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009416",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:293964",
+            "MONDO:0009416",
+            "OMIM:240900",
+            "UMLS:CN203155"
+          ]
+        }
+      ]
+    }
+  ]
+}

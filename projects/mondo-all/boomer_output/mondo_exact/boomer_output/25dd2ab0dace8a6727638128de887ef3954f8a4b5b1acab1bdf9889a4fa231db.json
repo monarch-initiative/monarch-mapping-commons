@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:25dd2ab0dace8a6727638128de887ef3954f8a4b5b1acab1bdf9889a4fa231db",
+      "nodes" : [
+        {
+          "id" : "OMIM:608716",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070280",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012106",
+          "type" : "CLASS",
+          "lbl" : "microcephaly 5, primary, autosomal recessive"
+        },
+        {
+          "id" : "UMLS:C1837501",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C563871",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C563871",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012106",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070280",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012106",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012106",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608716",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1837501",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012106",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012106",
+            "OMIM:608716",
+            "UMLS:C1837501",
+            "MESH:C563871",
+            "DOID:0070280"
+          ]
+        }
+      ]
+    }
+  ]
+}

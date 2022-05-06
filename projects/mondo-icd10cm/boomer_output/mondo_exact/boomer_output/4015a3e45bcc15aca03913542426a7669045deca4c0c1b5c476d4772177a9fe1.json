@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4015a3e45bcc15aca03913542426a7669045deca4c0c1b5c476d4772177a9fe1",
+      "nodes" : [
+        {
+          "id" : "MESH:C564917",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1850142",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009811",
+          "type" : "CLASS",
+          "lbl" : "osteoma of middle ear"
+        },
+        {
+          "id" : "OMIM:259650",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1850142",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009811",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564917",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009811",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009811",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:259650",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009811",
+            "UMLS:C1850142",
+            "MESH:C564917",
+            "OMIM:259650"
+          ]
+        }
+      ]
+    }
+  ]
+}

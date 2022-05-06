@@ -1,0 +1,76 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:28a1aa8aa1ed4933c0e4f1b711c303338e018101841fc13a14693ad6aa1efba3",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN776928",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009526",
+          "type" : "CLASS",
+          "lbl" : "fibular aplasia, tibial campomelia, and oligosyndactyly syndrome"
+        },
+        {
+          "id" : "OMIM:246570",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1855499",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN776928",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009526",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009526",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:246570",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009526",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1855499",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN776928",
+            "MONDO:0009526",
+            "OMIM:246570"
+          ]
+        }
+      ]
+    }
+  ]
+}

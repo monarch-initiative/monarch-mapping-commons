@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bbb86142b2845d4a820ae4da4fdd52c740922d27589f8bb9c14e037518d23ddb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809288",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014152",
+          "type" : "CLASS",
+          "lbl" : "left ventricular noncompaction 8"
+        },
+        {
+          "id" : "OMIM:615373",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3809288",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014152",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014152",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615373",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3809288",
+            "MONDO:0014152",
+            "OMIM:615373"
+          ]
+        }
+      ]
+    }
+  ]
+}

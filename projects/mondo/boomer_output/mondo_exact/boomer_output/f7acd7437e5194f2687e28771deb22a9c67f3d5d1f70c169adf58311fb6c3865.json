@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f7acd7437e5194f2687e28771deb22a9c67f3d5d1f70c169adf58311fb6c3865",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332329",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006092",
+          "type" : "CLASS",
+          "lbl" : "appendix villous adenoma"
+        },
+        {
+          "id" : "NCIT:C5512",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332329",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006092",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006092",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5512",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006092",
+            "UMLS:C1332329",
+            "NCIT:C5512"
+          ]
+        }
+      ]
+    }
+  ]
+}

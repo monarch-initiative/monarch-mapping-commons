@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:40f8399162f8defeaa4afcf32d85e403718f7a56e95744838b6d461f3353d28c",
+      "nodes" : [
+        {
+          "id" : "SCTID:201161009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0018508",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020980",
+          "type" : "CLASS",
+          "lbl" : "hair nevus"
+        },
+        {
+          "id" : "NCIT:C3074",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0018508",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020980",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020980",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3074",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:201161009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020980",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020980",
+            "UMLS:C0018508",
+            "NCIT:C3074",
+            "SCTID:201161009"
+          ]
+        }
+      ]
+    }
+  ]
+}

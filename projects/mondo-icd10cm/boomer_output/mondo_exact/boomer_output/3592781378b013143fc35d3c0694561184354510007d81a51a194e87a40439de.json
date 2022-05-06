@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3592781378b013143fc35d3c0694561184354510007d81a51a194e87a40439de",
+      "nodes" : [
+        {
+          "id" : "MESH:C537159",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1970936",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010262",
+          "type" : "CLASS",
+          "lbl" : "hypotonia, congenital nystagmus, ataxia, and abnormal auditory brainstem responses"
+        },
+        {
+          "id" : "OMIM:300184",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1970936",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010262",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010262",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300184",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537159",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010262",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1970936",
+            "MONDO:0010262",
+            "OMIM:300184",
+            "MESH:C537159"
+          ]
+        }
+      ]
+    }
+  ]
+}

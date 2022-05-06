@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ce64bceae90a31f25c4e4eeade00c64a189cefd988923bc7cdc53085c6819844",
+      "nodes" : [
+        {
+          "id" : "MESH:D018321",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0206730",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006317",
+          "type" : "CLASS",
+          "lbl" : "neurothekeoma"
+        },
+        {
+          "id" : "NCIT:C7018",
+          "type" : "CLASS",
+          "lbl" : "Nerve Sheath Myxoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D018321",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006317",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006317",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7018",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0206730",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006317",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D018321",
+            "MONDO:0006317",
+            "NCIT:C7018",
+            "UMLS:C0206730"
+          ]
+        }
+      ]
+    }
+  ]
+}

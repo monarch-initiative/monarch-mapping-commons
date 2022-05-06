@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5ac87ffe0030944d4b1fe66ab61bd63a337da7d61ce16655d63e7a3da8184dfe",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN842244",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0054750",
+          "type" : "CLASS",
+          "lbl" : "amyotrophic lateral sclerosis, susceptibility to, 24"
+        },
+        {
+          "id" : "OMIM:617892",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN842244",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0054750",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0054750",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617892",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN842244",
+            "MONDO:0054750",
+            "OMIM:617892"
+          ]
+        }
+      ]
+    }
+  ]
+}

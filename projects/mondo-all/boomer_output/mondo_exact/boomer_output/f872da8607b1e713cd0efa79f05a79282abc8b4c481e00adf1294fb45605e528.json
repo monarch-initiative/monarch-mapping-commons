@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f872da8607b1e713cd0efa79f05a79282abc8b4c481e00adf1294fb45605e528",
+      "nodes" : [
+        {
+          "id" : "SCTID:38023001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:12697",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016567",
+          "type" : "CLASS",
+          "lbl" : "locked-in syndrome"
+        },
+        {
+          "id" : "Orphanet:2406",
+          "type" : "CLASS",
+          "lbl" : "Locked-in syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016567",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2406",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:38023001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016567",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:12697",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016567",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016567",
+            "Orphanet:2406",
+            "SCTID:38023001",
+            "DOID:12697"
+          ]
+        }
+      ]
+    }
+  ]
+}

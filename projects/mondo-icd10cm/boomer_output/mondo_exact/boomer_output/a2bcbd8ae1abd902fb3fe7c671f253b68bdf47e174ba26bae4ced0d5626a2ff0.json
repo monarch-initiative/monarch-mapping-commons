@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a2bcbd8ae1abd902fb3fe7c671f253b68bdf47e174ba26bae4ced0d5626a2ff0",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1266111",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5233",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003340",
+          "type" : "CLASS",
+          "lbl" : "malignant glomus tumor"
+        },
+        {
+          "id" : "NCIT:C4221",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1266111",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003340",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003340",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4221",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5233",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003340",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1266111",
+            "MONDO:0003340",
+            "NCIT:C4221",
+            "DOID:5233"
+          ]
+        }
+      ]
+    }
+  ]
+}

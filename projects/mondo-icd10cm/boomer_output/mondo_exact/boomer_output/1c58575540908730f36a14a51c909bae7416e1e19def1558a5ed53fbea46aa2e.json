@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1c58575540908730f36a14a51c909bae7416e1e19def1558a5ed53fbea46aa2e",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:E88.81",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004955",
+          "type" : "CLASS",
+          "lbl" : "metabolic syndrome"
+        },
+        {
+          "id" : "NCIT:C84442",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:411969",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004955",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:411969",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:E88.81",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004955",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004955",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C84442",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:411969",
+            "MONDO:0004955",
+            "ICD10CM:E88.81",
+            "NCIT:C84442"
+          ]
+        }
+      ]
+    }
+  ]
+}

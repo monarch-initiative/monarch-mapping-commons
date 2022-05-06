@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dafb7e1f97dbc7e25092ab2aceabb93f1d736fd25397362950e8dd1a1ca53749",
+      "nodes" : [
+        {
+          "id" : "MESH:C563939",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3151237",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013473",
+          "type" : "CLASS",
+          "lbl" : "Hirschsprung disease, cardiac defects, and autonomic dysfunction"
+        },
+        {
+          "id" : "OMIM:613870",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013473",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613870",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563939",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013473",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3151237",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013473",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C563939",
+            "MONDO:0013473",
+            "OMIM:613870",
+            "UMLS:C3151237"
+          ]
+        }
+      ]
+    }
+  ]
+}

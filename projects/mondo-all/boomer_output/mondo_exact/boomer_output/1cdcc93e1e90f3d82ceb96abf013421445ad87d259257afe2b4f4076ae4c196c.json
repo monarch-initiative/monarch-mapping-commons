@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1cdcc93e1e90f3d82ceb96abf013421445ad87d259257afe2b4f4076ae4c196c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3551716",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0090141",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:604931",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C131849",
+          "type" : "CLASS",
+          "lbl" : "Hexose-6-phosphate Dehydrogenase Deficiency"
+        },
+        {
+          "id" : "MONDO:0011503",
+          "type" : "CLASS",
+          "lbl" : "cortisone reductase deficiency 1"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0090141",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011503",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011503",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:604931",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011503",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C131849",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3551716",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011503",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3551716",
+            "OMIM:604931",
+            "NCIT:C131849",
+            "DOID:0090141",
+            "MONDO:0011503"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0fb2ecb084cbb971240a8909f56301f61ca44e029887938486a801c60014b519",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3151069",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060402",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013415",
+          "type" : "CLASS",
+          "lbl" : "chromosome 17p13.1 deletion syndrome"
+        },
+        {
+          "id" : "OMIM:613776",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013415",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613776",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3151069",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013415",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060402",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013415",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013415",
+            "OMIM:613776",
+            "UMLS:C3151069",
+            "DOID:0060402"
+          ]
+        }
+      ]
+    }
+  ]
+}

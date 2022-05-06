@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cd3b3956037013e63bd6dddaa7fee407b8c5c15c143ebc827a343ed364cbdde7",
+      "nodes" : [
+        {
+          "id" : "SCTID:92170008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0347272",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021444",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of large intestine"
+        },
+        {
+          "id" : "NCIT:C4610",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0347272",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021444",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92170008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021444",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021444",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4610",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021444",
+            "UMLS:C0347272",
+            "SCTID:92170008",
+            "NCIT:C4610"
+          ]
+        }
+      ]
+    }
+  ]
+}

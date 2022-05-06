@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bc1653d371b6a689bbae83ca6a26a2d0107d6d4fe279304ca0c90db110e115a5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227192",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017745",
+          "type" : "CLASS",
+          "lbl" : "disorder of O-mannosylglycan synthesis"
+        },
+        {
+          "id" : "Orphanet:309469",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017745",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309469",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227192",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017745",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017745",
+            "Orphanet:309469",
+            "UMLS:CN227192"
+          ]
+        }
+      ]
+    }
+  ]
+}

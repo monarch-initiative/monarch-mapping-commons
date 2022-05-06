@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d9bbd689487c7d5c34f86f97ee7fc4f00b70ec0d742c41351b88dab5d5a2ce7b",
+      "nodes" : [
+        {
+          "id" : "MESH:C565678",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1857575",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009013",
+          "type" : "CLASS",
+          "lbl" : "convulsive disorder, familial, with prenatal or early onset"
+        },
+        {
+          "id" : "OMIM:217200",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009013",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:217200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1857575",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009013",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565678",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009013",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009013",
+            "OMIM:217200",
+            "UMLS:C1857575",
+            "MESH:C565678"
+          ]
+        }
+      ]
+    }
+  ]
+}

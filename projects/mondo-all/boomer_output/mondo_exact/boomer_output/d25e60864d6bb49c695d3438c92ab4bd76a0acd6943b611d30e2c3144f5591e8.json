@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d25e60864d6bb49c695d3438c92ab4bd76a0acd6943b611d30e2c3144f5591e8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310766",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014863",
+          "type" : "CLASS",
+          "lbl" : "macrocephaly, dysmorphic facies, and psychomotor retardation"
+        },
+        {
+          "id" : "OMIM:617011",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4310766",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014863",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014863",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617011",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4310766",
+            "MONDO:0014863",
+            "OMIM:617011"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:439ff7b8eaae982091883bc766a9fd964626fc3d8636f9e761a2fe24d843051e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518879",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6257",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003829",
+          "type" : "CLASS",
+          "lbl" : "chromophil adenoma of the kidney"
+        },
+        {
+          "id" : "NCIT:C3687",
+          "type" : "CLASS",
+          "lbl" : "Renal Papillary Adenoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003829",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3687",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518879",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003829",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6257",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003829",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003829",
+            "NCIT:C3687",
+            "UMLS:C1518879",
+            "DOID:6257"
+          ]
+        }
+      ]
+    }
+  ]
+}

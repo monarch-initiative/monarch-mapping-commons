@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2ae44f8a37fd198cade48f94a9d69f5d5b08e963df4e26fd943b51e05871b2a0",
+      "nodes" : [
+        {
+          "id" : "DOID:0111283",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011084",
+          "type" : "CLASS",
+          "lbl" : "psoriasis 3, susceptibility to"
+        },
+        {
+          "id" : "OMIM:601454",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0111283",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011084",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011084",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601454",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0111283",
+            "MONDO:0011084",
+            "OMIM:601454"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b59d68d4727f74fb4aa427ff35fe6e924733e26cac35b492bd9d402a701f738c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1854577",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011520",
+          "type" : "CLASS",
+          "lbl" : "systemic lupus erythematosus, susceptibility to, 2"
+        },
+        {
+          "id" : "OMIM:605218",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011520",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:605218",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1854577",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011520",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011520",
+            "OMIM:605218",
+            "UMLS:C1854577"
+          ]
+        }
+      ]
+    }
+  ]
+}

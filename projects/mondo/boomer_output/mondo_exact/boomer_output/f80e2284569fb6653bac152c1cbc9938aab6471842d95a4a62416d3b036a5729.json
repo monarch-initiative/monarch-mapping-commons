@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f80e2284569fb6653bac152c1cbc9938aab6471842d95a4a62416d3b036a5729",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1846148",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010275",
+          "type" : "CLASS",
+          "lbl" : "spondyloepimetaphyseal dysplasia, Bieganski type"
+        },
+        {
+          "id" : "OMIM:300232",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:168448",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C567065",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C536671",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010275",
+          "pred" : "siblingOf",
+          "obj" : "MESH:C536671",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1846148",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010275",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567065",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010275",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010275",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300232",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010275",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:168448",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C567065",
+            "UMLS:C1846148",
+            "MONDO:0010275",
+            "Orphanet:168448",
+            "OMIM:300232"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:00d3b5cd872c88d1af3fd11d5d83a682dff2ec3cef6c92a82256f8dbc128e55a",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:D01.5",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004715",
+          "type" : "CLASS",
+          "lbl" : "liver carcinoma in situ"
+        },
+        {
+          "id" : "UMLS:C0345908",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:92644006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:9132",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:92644006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D01.5",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0345908",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:9132",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:D01.5",
+            "SCTID:92644006",
+            "UMLS:C0345908",
+            "MONDO:0004715",
+            "DOID:9132"
+          ]
+        }
+      ]
+    }
+  ]
+}

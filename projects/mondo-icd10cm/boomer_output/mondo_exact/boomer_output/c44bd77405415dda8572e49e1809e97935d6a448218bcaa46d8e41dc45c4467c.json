@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c44bd77405415dda8572e49e1809e97935d6a448218bcaa46d8e41dc45c4467c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202205",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016861",
+          "type" : "CLASS",
+          "lbl" : "Alagille syndrome due to 20p12 microdeletion"
+        },
+        {
+          "id" : "Orphanet:261600",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016861",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:261600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202205",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016861",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016861",
+            "Orphanet:261600",
+            "UMLS:CN202205"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2760124d03b7716cbde00d34dd7ef0971a03be669e14331d53ec4c37e21ef171",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203941",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017891",
+          "type" : "CLASS",
+          "lbl" : "inherited renal cancer-predisposing syndrome"
+        },
+        {
+          "id" : "Orphanet:319328",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203941",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017891",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017891",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:319328",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017891",
+            "UMLS:CN203941",
+            "Orphanet:319328"
+          ]
+        }
+      ]
+    }
+  ]
+}

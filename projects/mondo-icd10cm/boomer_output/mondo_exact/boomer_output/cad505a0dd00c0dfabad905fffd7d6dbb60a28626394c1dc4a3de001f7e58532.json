@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cad505a0dd00c0dfabad905fffd7d6dbb60a28626394c1dc4a3de001f7e58532",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1512740",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7971",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004418",
+          "type" : "CLASS",
+          "lbl" : "microcystic variant infiltrating bladder urothelial carcinoma"
+        },
+        {
+          "id" : "NCIT:C39820",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7971",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004418",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004418",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39820",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1512740",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004418",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004418",
+            "DOID:7971",
+            "NCIT:C39820",
+            "UMLS:C1512740"
+          ]
+        }
+      ]
+    }
+  ]
+}

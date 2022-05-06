@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5d258635492a10e389789e0af3abd4cee2a728a17a105d208e260f91701664a2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332875",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4504",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003021",
+          "type" : "CLASS",
+          "lbl" : "central nervous system angiosarcoma"
+        },
+        {
+          "id" : "NCIT:C5450",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4504",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003021",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332875",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003021",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003021",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5450",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003021",
+            "DOID:4504",
+            "UMLS:C1332875",
+            "NCIT:C5450"
+          ]
+        }
+      ]
+    }
+  ]
+}

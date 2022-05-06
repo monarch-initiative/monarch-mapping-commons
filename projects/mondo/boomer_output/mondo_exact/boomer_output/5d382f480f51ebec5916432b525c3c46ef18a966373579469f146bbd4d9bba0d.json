@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5d382f480f51ebec5916432b525c3c46ef18a966373579469f146bbd4d9bba0d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227823",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020215",
+          "type" : "CLASS",
+          "lbl" : "syndromic corneal dystrophy"
+        },
+        {
+          "id" : "Orphanet:98628",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020215",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98628",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227823",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020215",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:98628",
+            "MONDO:0020215",
+            "UMLS:CN227823"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2592c763e195296dc2a2e60792d9ebe54e12b16b2c09daf81523f375115083d7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150990",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013391",
+          "type" : "CLASS",
+          "lbl" : "sterol carrier protein 2 deficiency"
+        },
+        {
+          "id" : "Orphanet:163684",
+          "type" : "CLASS",
+          "lbl" : "Leukoencephalopathy-dystonia-motor neuropathy syndrome"
+        },
+        {
+          "id" : "OMIM:613724",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013391",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613724",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3150990",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013391",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013391",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:163684",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:613724",
+            "MONDO:0013391",
+            "UMLS:C3150990",
+            "Orphanet:163684"
+          ]
+        }
+      ]
+    }
+  ]
+}

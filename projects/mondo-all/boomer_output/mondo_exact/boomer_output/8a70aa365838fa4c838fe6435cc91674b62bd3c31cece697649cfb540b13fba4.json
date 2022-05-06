@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8a70aa365838fa4c838fe6435cc91674b62bd3c31cece697649cfb540b13fba4",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207497",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020571",
+          "type" : "CLASS",
+          "lbl" : "relapsing epidemic typhus"
+        },
+        {
+          "id" : "Orphanet:99991",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN207497",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020571",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020571",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99991",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN207497",
+            "MONDO:0020571",
+            "Orphanet:99991"
+          ]
+        }
+      ]
+    }
+  ]
+}

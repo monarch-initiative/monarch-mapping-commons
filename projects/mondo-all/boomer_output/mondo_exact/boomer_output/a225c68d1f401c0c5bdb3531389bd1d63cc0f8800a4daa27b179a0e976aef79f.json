@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a225c68d1f401c0c5bdb3531389bd1d63cc0f8800a4daa27b179a0e976aef79f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1302530",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000993",
+          "type" : "CLASS",
+          "lbl" : "prostate squamous cell carcinoma"
+        },
+        {
+          "id" : "SCTID:399590005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10287",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C5536",
+          "type" : "CLASS",
+          "lbl" : "Prostate Squamous Cell Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:399590005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000993",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10287",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000993",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1302530",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000993",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000993",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5536",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:10287",
+            "UMLS:C1302530",
+            "SCTID:399590005",
+            "NCIT:C5536",
+            "MONDO:0000993"
+          ]
+        }
+      ]
+    }
+  ]
+}

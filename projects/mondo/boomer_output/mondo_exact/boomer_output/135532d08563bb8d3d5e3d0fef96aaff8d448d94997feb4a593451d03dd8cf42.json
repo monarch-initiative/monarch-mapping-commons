@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:135532d08563bb8d3d5e3d0fef96aaff8d448d94997feb4a593451d03dd8cf42",
+      "nodes" : [
+        {
+          "id" : "SCTID:363351006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1993",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006519",
+          "type" : "CLASS",
+          "lbl" : "rectal cancer"
+        },
+        {
+          "id" : "NCIT:C7418",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:1993",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006519",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:363351006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006519",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006519",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7418",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006519",
+            "DOID:1993",
+            "SCTID:363351006",
+            "NCIT:C7418"
+          ]
+        }
+      ]
+    }
+  ]
+}

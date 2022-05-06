@@ -1,0 +1,76 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2867629c66cd35503f48c7d9b1e1bda2878c2edf2de6e12d7a4d2c4cdd1dd10a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN230130",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016796",
+          "type" : "CLASS",
+          "lbl" : "mitochondrial DNA depletion syndrome, encephalomyopathic form"
+        },
+        {
+          "id" : "Orphanet:254803",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN202052",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016796",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:254803",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN230130",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016796",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016796",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN202052",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016796",
+            "Orphanet:254803",
+            "UMLS:CN230130"
+          ]
+        }
+      ]
+    }
+  ]
+}

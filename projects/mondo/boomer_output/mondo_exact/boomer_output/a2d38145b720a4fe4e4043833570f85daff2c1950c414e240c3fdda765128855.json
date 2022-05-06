@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a2d38145b720a4fe4e4043833570f85daff2c1950c414e240c3fdda765128855",
+      "nodes" : [
+        {
+          "id" : "OMIM:616355",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070065",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:457279",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014602",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability-macrocephaly-hypotonia-behavioral abnormalities syndrome"
+        },
+        {
+          "id" : "UMLS:C4225354",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014602",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:457279",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070065",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014602",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616355",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225354",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0070065",
+            "OMIM:616355",
+            "MONDO:0014602",
+            "UMLS:C4225354",
+            "Orphanet:457279"
+          ]
+        }
+      ]
+    }
+  ]
+}

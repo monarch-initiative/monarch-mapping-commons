@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5047a2cea73eb98248479d7e1dafd7a39b08cc390b8554fda2cbd385465cba0c",
+      "nodes" : [
+        {
+          "id" : "SCTID:9092004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0271844",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006354",
+          "type" : "CLASS",
+          "lbl" : "parathyroid hyperplasia"
+        },
+        {
+          "id" : "NCIT:C3989",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006354",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0271844",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006354",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:9092004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006354",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006354",
+            "NCIT:C3989",
+            "UMLS:C0271844",
+            "SCTID:9092004"
+          ]
+        }
+      ]
+    }
+  ]
+}

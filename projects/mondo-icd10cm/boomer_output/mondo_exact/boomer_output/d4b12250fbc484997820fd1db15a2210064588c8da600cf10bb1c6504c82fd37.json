@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d4b12250fbc484997820fd1db15a2210064588c8da600cf10bb1c6504c82fd37",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205258",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018890",
+          "type" : "CLASS",
+          "lbl" : "Lyell syndrome"
+        },
+        {
+          "id" : "Orphanet:537",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN205258",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018890",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018890",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:537",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018890",
+            "UMLS:CN205258",
+            "Orphanet:537"
+          ]
+        }
+      ]
+    }
+  ]
+}

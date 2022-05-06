@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b67742a3f43bf9d6eed05f1729eaf9c0b04a8b31bd01cfc69454c8346348ad07",
+      "nodes" : [
+        {
+          "id" : "MESH:C563640",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1835591",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007873",
+          "type" : "CLASS",
+          "lbl" : "lactic acidosis, chronic adult form"
+        },
+        {
+          "id" : "OMIM:150170",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C563640",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007873",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007873",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:150170",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1835591",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007873",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C563640",
+            "MONDO:0007873",
+            "OMIM:150170",
+            "UMLS:C1835591"
+          ]
+        }
+      ]
+    }
+  ]
+}

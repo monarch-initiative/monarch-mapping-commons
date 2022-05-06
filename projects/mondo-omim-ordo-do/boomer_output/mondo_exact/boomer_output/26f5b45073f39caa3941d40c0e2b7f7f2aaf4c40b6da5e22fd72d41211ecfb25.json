@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:26f5b45073f39caa3941d40c0e2b7f7f2aaf4c40b6da5e22fd72d41211ecfb25",
+      "nodes" : [
+        {
+          "id" : "SCTID:720632004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4303949",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016572",
+          "type" : "CLASS",
+          "lbl" : "central bilateral macrogyria"
+        },
+        {
+          "id" : "Orphanet:2431",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4303949",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016572",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016572",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2431",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:720632004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016572",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4303949",
+            "MONDO:0016572",
+            "Orphanet:2431",
+            "SCTID:720632004"
+          ]
+        }
+      ]
+    }
+  ]
+}

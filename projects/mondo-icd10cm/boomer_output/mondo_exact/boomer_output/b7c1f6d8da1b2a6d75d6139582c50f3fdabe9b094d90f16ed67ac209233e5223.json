@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b7c1f6d8da1b2a6d75d6139582c50f3fdabe9b094d90f16ed67ac209233e5223",
+      "nodes" : [
+        {
+          "id" : "SCTID:116020001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0342712",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019242",
+          "type" : "CLASS",
+          "lbl" : "inborn disorder of branched-chain amino acid metabolism"
+        },
+        {
+          "id" : "Orphanet:79197",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0342712",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019242",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:116020001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019242",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019242",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79197",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0342712",
+            "MONDO:0019242",
+            "SCTID:116020001",
+            "Orphanet:79197"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e305fc1be9de86a83e978a1f35934af7516ab0d775b69e8e4034f02ee1562f00",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334269",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4630",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003064",
+          "type" : "CLASS",
+          "lbl" : "inverted transitional cell papilloma"
+        },
+        {
+          "id" : "NCIT:C4118",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4630",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003064",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334269",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003064",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003064",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4118",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:4630",
+            "MONDO:0003064",
+            "UMLS:C0334269",
+            "NCIT:C4118"
+          ]
+        }
+      ]
+    }
+  ]
+}

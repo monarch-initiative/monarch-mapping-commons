@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d7853b58d7b09f02bce9d416cc52cccc5bb83d4eca2d850a64b368ceb1d44a16",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2674695",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008172",
+          "type" : "CLASS",
+          "lbl" : "hypertrophic osteoarthropathy, primary, autosomal dominant"
+        },
+        {
+          "id" : "OMIM:167100",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2674695",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008172",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008172",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:167100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2674695",
+            "MONDO:0008172",
+            "OMIM:167100"
+          ]
+        }
+      ]
+    }
+  ]
+}

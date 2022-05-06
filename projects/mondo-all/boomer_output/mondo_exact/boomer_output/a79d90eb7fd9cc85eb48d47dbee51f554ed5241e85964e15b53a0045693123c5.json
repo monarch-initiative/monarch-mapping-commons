@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a79d90eb7fd9cc85eb48d47dbee51f554ed5241e85964e15b53a0045693123c5",
+      "nodes" : [
+        {
+          "id" : "MESH:D001994",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016523",
+          "type" : "CLASS",
+          "lbl" : "bronchogenic cyst"
+        },
+        {
+          "id" : "Orphanet:2357",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D001994",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016523",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016523",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2357",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016523",
+            "MESH:D001994",
+            "Orphanet:2357"
+          ]
+        }
+      ]
+    }
+  ]
+}

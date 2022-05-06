@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6ac994ed8e67d8c1ad19f99b2774b97f5599507433c4ac8b10a2f9c2a803e738",
+      "nodes" : [
+        {
+          "id" : "SCTID:763632004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN200058",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015648",
+          "type" : "CLASS",
+          "lbl" : "startle epilepsy"
+        },
+        {
+          "id" : "Orphanet:166427",
+          "type" : "CLASS",
+          "lbl" : "Startle epilepsy"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN200058",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015648",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015648",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:166427",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:763632004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015648",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015648",
+            "UMLS:CN200058",
+            "Orphanet:166427",
+            "SCTID:763632004"
+          ]
+        }
+      ]
+    }
+  ]
+}

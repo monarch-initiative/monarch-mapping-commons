@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d3b4dffdde67615b94caf9ae676ac46a3351814b3b2ecc6e9be94306c600cdb8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1707442",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006165",
+          "type" : "CLASS",
+          "lbl" : "colorectal squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C43588",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1707442",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006165",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006165",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C43588",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006165",
+            "UMLS:C1707442",
+            "NCIT:C43588"
+          ]
+        }
+      ]
+    }
+  ]
+}

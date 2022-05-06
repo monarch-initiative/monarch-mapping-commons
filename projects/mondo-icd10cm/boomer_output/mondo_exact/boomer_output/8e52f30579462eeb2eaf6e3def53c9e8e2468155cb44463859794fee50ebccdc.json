@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8e52f30579462eeb2eaf6e3def53c9e8e2468155cb44463859794fee50ebccdc",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN679647",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080242",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0030909",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability, X-linked, syndromic, Houge type"
+        },
+        {
+          "id" : "OMIM:301008",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080242",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0030909",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN679647",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0030909",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0030909",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:301008",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0030909",
+            "DOID:0080242",
+            "UMLS:CN679647",
+            "OMIM:301008"
+          ]
+        }
+      ]
+    }
+  ]
+}

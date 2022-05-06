@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2a610934a8545061ddc35ef19ed7a1dbeabef1be9c634df4b3e85ba1c96ce2ef",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3714534",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024534",
+          "type" : "CLASS",
+          "lbl" : "Dowling-Degos disease 1"
+        },
+        {
+          "id" : "OMIM:179850",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024534",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:179850",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3714534",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024534",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024534",
+            "OMIM:179850",
+            "UMLS:C3714534"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0d955d2a994955ba1958b14cca942720301c0c6fa4a98a396f3cf029a10e48dd",
+      "nodes" : [
+        {
+          "id" : "MESH:C538107",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2931734",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0043164",
+          "type" : "CLASS",
+          "lbl" : "palmer pagon syndrome"
+        },
+        {
+          "id" : "Orphanet:2184",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0043164",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2184",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538107",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043164",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2931734",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043164",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:2184",
+            "MONDO:0043164",
+            "MESH:C538107",
+            "UMLS:C2931734"
+          ]
+        }
+      ]
+    }
+  ]
+}

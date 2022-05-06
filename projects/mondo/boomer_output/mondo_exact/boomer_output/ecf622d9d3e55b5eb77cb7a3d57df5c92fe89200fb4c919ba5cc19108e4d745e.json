@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ecf622d9d3e55b5eb77cb7a3d57df5c92fe89200fb4c919ba5cc19108e4d745e",
+      "nodes" : [
+        {
+          "id" : "DOID:2388",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C101254",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0268790",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:16934004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002286",
+          "type" : "CLASS",
+          "lbl" : "renal artery disease"
+        },
+        {
+          "id" : "UMLS:C3640053",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:16934004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002286",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002286",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C3640053",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0268790",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002286",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2388",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002286",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002286",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C101254",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0268790",
+            "DOID:2388",
+            "MONDO:0002286",
+            "SCTID:16934004",
+            "NCIT:C101254"
+          ]
+        }
+      ]
+    }
+  ]
+}

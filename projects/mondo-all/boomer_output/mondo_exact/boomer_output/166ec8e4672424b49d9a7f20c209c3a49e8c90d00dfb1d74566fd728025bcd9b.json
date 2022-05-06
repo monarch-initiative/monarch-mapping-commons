@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:166ec8e4672424b49d9a7f20c209c3a49e8c90d00dfb1d74566fd728025bcd9b",
+      "nodes" : [
+        {
+          "id" : "MESH:C536359",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1845026",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010525",
+          "type" : "CLASS",
+          "lbl" : "neural tube defects, X-linked"
+        },
+        {
+          "id" : "OMIM:301410",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1845026",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010525",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010525",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:301410",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536359",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010525",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010525",
+            "UMLS:C1845026",
+            "OMIM:301410",
+            "MESH:C536359"
+          ]
+        }
+      ]
+    }
+  ]
+}

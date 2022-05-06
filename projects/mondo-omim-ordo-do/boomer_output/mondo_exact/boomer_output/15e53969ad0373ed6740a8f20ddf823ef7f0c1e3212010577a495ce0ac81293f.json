@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:15e53969ad0373ed6740a8f20ddf823ef7f0c1e3212010577a495ce0ac81293f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225324",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014642",
+          "type" : "CLASS",
+          "lbl" : "candidiasis, familial, 9"
+        },
+        {
+          "id" : "OMIM:616445",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4225324",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014642",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014642",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616445",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4225324",
+            "MONDO:0014642",
+            "OMIM:616445"
+          ]
+        }
+      ]
+    }
+  ]
+}

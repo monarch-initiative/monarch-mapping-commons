@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bc5c8c1a66945a48d1226e4f6d5d082a4299ed5f5f3ed53651750e7c9ebd7abe",
+      "nodes" : [
+        {
+          "id" : "MONDO:0005805",
+          "type" : "CLASS",
+          "lbl" : "hypodermyiasis"
+        },
+        {
+          "id" : "UMLS:C0020607",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D007000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:12926",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:430",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005805",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:430",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D007000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005805",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:12926",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005805",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0020607",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005805",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D007000",
+            "MONDO:0005805",
+            "UMLS:C0020607",
+            "Orphanet:430",
+            "DOID:12926"
+          ]
+        }
+      ]
+    }
+  ]
+}

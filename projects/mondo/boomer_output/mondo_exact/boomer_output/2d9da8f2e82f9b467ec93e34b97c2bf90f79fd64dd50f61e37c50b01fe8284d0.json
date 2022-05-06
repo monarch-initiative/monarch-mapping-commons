@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2d9da8f2e82f9b467ec93e34b97c2bf90f79fd64dd50f61e37c50b01fe8284d0",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205768",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019190",
+          "type" : "CLASS",
+          "lbl" : "juvenile polyposis of infancy"
+        },
+        {
+          "id" : "Orphanet:79076",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN205768",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019190",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019190",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79076",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019190",
+            "UMLS:CN205768",
+            "Orphanet:79076"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:12a7258f264a17028b5f9d31b1e1c3d5440a8f3a60f1f06a28ce978ce0a13b5a",
+      "nodes" : [
+        {
+          "id" : "MESH:C537096",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1862084",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007228",
+          "type" : "CLASS",
+          "lbl" : "brachymesomelia-renal syndrome"
+        },
+        {
+          "id" : "OMIM:113470",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007228",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:113470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1862084",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007228",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537096",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007228",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:113470",
+            "MONDO:0007228",
+            "UMLS:C1862084",
+            "MESH:C537096"
+          ]
+        }
+      ]
+    }
+  ]
+}

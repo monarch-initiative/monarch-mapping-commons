@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7ed7adf3313057b63c0de07d2e24127a464d975b7e33f5ccf0a4a88022442d4c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279639",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3029",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005007",
+          "type" : "CLASS",
+          "lbl" : "colon mucinous adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C7966",
+          "type" : "CLASS",
+          "lbl" : "Colon Mucinous Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0279639",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005007",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7966",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3029",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005007",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0279639",
+            "MONDO:0005007",
+            "NCIT:C7966",
+            "DOID:3029"
+          ]
+        }
+      ]
+    }
+  ]
+}

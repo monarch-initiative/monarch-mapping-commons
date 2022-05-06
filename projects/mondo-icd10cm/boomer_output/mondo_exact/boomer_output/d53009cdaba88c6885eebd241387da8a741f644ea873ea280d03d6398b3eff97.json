@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d53009cdaba88c6885eebd241387da8a741f644ea873ea280d03d6398b3eff97",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334364",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4553",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003047",
+          "type" : "CLASS",
+          "lbl" : "thymic large cell neuroendocrine carcinoma"
+        },
+        {
+          "id" : "NCIT:C6461",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003047",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6461",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4553",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003047",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334364",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003047",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6461",
+            "MONDO:0003047",
+            "DOID:4553",
+            "UMLS:C1334364"
+          ]
+        }
+      ]
+    }
+  ]
+}

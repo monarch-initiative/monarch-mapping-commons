@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:45c2bb832145afcd6ee1420a6c19e7d6bdd111a030daef76c8d2137b5e0f8224",
+      "nodes" : [
+        {
+          "id" : "SCTID:722292000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4302669",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:314652",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017810",
+          "type" : "CLASS",
+          "lbl" : "variant ABeta2M amyloidosis"
+        },
+        {
+          "id" : "UMLS:CN203779",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017810",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:314652",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203779",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017810",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:722292000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017810",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017810",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4302669",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017810",
+            "Orphanet:314652",
+            "UMLS:CN203779",
+            "SCTID:722292000"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:800666cce4e01b000d4a1db8f401de5618ada0e4971c3bb520da08bdf0e3aebf",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201422",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:228399",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016458",
+          "type" : "CLASS",
+          "lbl" : "8q12 microduplication syndrome"
+        },
+        {
+          "id" : "SCTID:719684000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4304504",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016458",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:228399",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:719684000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016458",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201422",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016458",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016458",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4304504",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016458",
+            "Orphanet:228399",
+            "SCTID:719684000",
+            "UMLS:CN201422"
+          ]
+        }
+      ]
+    }
+  ]
+}

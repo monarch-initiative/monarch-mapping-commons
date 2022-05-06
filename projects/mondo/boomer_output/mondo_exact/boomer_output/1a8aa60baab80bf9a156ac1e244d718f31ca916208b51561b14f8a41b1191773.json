@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1a8aa60baab80bf9a156ac1e244d718f31ca916208b51561b14f8a41b1191773",
+      "nodes" : [
+        {
+          "id" : "DOID:0111709",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013073",
+          "type" : "CLASS",
+          "lbl" : "palmoplantar keratoderma, nonepidermolytic, focal 1"
+        },
+        {
+          "id" : "OMIM:613000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013073",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111709",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013073",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:613000",
+            "MONDO:0013073",
+            "DOID:0111709"
+          ]
+        }
+      ]
+    }
+  ]
+}

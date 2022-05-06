@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:343684e5bbdfd1f0fd50d71444078231c6e3ccc2708eed2bc62ed072d256821c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333785",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5593",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006228",
+          "type" : "CLASS",
+          "lbl" : "gastric papillary adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C5472",
+          "type" : "CLASS",
+          "lbl" : "Gastric Papillary Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5593",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006228",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333785",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006228",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006228",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5472",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5593",
+            "MONDO:0006228",
+            "UMLS:C1333785",
+            "NCIT:C5472"
+          ]
+        }
+      ]
+    }
+  ]
+}

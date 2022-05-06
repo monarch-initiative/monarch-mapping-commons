@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:05da253d8a2e26ebeea77988c83cade9de0f0e0f93d7078c30bcb380212ba2a7",
+      "nodes" : [
+        {
+          "id" : "MESH:C536504",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2931220",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010112",
+          "type" : "CLASS",
+          "lbl" : "thalamic degeneration, symmetric infantile"
+        },
+        {
+          "id" : "OMIM:273490",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2931220",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010112",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010112",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:273490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536504",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010112",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010112",
+            "UMLS:C2931220",
+            "OMIM:273490",
+            "MESH:C536504"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:86eec7e13935ee29b48901767c55442e699cc8ee2f9c39249e5046488c3c603e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3810405",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014333",
+          "type" : "CLASS",
+          "lbl" : "polymicrogyria, bilateral perisylvian, autosomal recessive"
+        },
+        {
+          "id" : "OMIM:615752",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3810405",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014333",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014333",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615752",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3810405",
+            "MONDO:0014333",
+            "OMIM:615752"
+          ]
+        }
+      ]
+    }
+  ]
+}

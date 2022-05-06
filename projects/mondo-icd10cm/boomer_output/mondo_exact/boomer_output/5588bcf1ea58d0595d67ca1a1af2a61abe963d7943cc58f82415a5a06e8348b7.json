@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5588bcf1ea58d0595d67ca1a1af2a61abe963d7943cc58f82415a5a06e8348b7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226716",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015637",
+          "type" : "CLASS",
+          "lbl" : "benign non-familial infantile seizures"
+        },
+        {
+          "id" : "Orphanet:166295",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015637",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:166295",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226716",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015637",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:166295",
+            "MONDO:0015637",
+            "UMLS:CN226716"
+          ]
+        }
+      ]
+    }
+  ]
+}

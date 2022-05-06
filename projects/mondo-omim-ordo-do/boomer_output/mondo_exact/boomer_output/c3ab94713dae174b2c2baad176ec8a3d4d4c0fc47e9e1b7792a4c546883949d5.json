@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c3ab94713dae174b2c2baad176ec8a3d4d4c0fc47e9e1b7792a4c546883949d5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479613",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080312",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0056797",
+          "type" : "CLASS",
+          "lbl" : "neurodevelopmental disorder with midbrain and hindbrain malformations"
+        },
+        {
+          "id" : "OMIM:617523",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4479613",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0056797",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0056797",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617523",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080312",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0056797",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4479613",
+            "MONDO:0056797",
+            "OMIM:617523",
+            "DOID:0080312"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eb6eb91839f7ef644aa58a05c6159db2a2d232c5693cf6872e3590b58d1eeb07",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0854915",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4651",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003076",
+          "type" : "CLASS",
+          "lbl" : "unilateral retinoblastoma"
+        },
+        {
+          "id" : "NCIT:C8714",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003076",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8714",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4651",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003076",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0854915",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003076",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C8714",
+            "MONDO:0003076",
+            "DOID:4651",
+            "UMLS:C0854915"
+          ]
+        }
+      ]
+    }
+  ]
+}

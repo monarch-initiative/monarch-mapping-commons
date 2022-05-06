@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:afa9920af4088077b8cc369364b1806ca43308d2d91bb8367099ddcb082f9574",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3151347",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013488",
+          "type" : "CLASS",
+          "lbl" : "lipodystrophy, partial, acquired, with low complement component c3, with or without glomerulonephritis"
+        },
+        {
+          "id" : "OMIM:613913",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3151347",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013488",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013488",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613913",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3151347",
+            "MONDO:0013488",
+            "OMIM:613913"
+          ]
+        }
+      ]
+    }
+  ]
+}

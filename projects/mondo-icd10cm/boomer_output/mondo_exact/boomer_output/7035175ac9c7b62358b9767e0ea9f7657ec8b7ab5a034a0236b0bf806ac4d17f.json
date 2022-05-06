@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7035175ac9c7b62358b9767e0ea9f7657ec8b7ab5a034a0236b0bf806ac4d17f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0853715",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:476",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003126",
+          "type" : "CLASS",
+          "lbl" : "breast hemangioma"
+        },
+        {
+          "id" : "NCIT:C5353",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:476",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003126",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0853715",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003126",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003126",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5353",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003126",
+            "DOID:476",
+            "UMLS:C0853715",
+            "NCIT:C5353"
+          ]
+        }
+      ]
+    }
+  ]
+}

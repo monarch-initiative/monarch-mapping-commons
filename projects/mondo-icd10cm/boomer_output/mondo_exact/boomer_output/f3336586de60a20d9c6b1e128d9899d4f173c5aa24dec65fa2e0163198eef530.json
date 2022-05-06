@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f3336586de60a20d9c6b1e128d9899d4f173c5aa24dec65fa2e0163198eef530",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332528",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080370",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024387",
+          "type" : "CLASS",
+          "lbl" : "benign ovarian sex cord-stromal tumor"
+        },
+        {
+          "id" : "NCIT:C6803",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080370",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024387",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332528",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024387",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0024387",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6803",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024387",
+            "DOID:0080370",
+            "UMLS:C1332528",
+            "NCIT:C6803"
+          ]
+        }
+      ]
+    }
+  ]
+}

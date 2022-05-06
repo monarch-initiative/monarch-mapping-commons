@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:43a815efe9ae9de39c3011ab3af69562627a5fd77fdf65642b239959aff40a6b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1865882",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:602086",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C566584",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011188",
+          "type" : "CLASS",
+          "lbl" : "arrhythmogenic right ventricular dysplasia 3"
+        },
+        {
+          "id" : "DOID:0110072",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110072",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011188",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1865882",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011188",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566584",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011188",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011188",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:602086",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011188",
+            "UMLS:C1865882",
+            "DOID:0110072",
+            "OMIM:602086",
+            "MESH:C566584"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:63411390967e6e559611ce45facb26f8dde22f5d3655b4c50c16902047587f22",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0347493",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:65576009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060325",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C2939",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0007855",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000751",
+          "type" : "CLASS",
+          "lbl" : "cervical polyp"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:65576009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000751",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060325",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000751",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000751",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C2939",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000751",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0347493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0007855",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000751",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0007855",
+            "MONDO:0000751",
+            "SCTID:65576009",
+            "NCIT:C2939",
+            "DOID:0060325"
+          ]
+        }
+      ]
+    }
+  ]
+}

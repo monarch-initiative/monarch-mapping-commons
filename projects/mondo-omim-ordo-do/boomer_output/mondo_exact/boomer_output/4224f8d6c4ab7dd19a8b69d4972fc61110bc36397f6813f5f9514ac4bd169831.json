@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4224f8d6c4ab7dd19a8b69d4972fc61110bc36397f6813f5f9514ac4bd169831",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310648",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014990",
+          "type" : "CLASS",
+          "lbl" : "uncombable hair syndrome 3"
+        },
+        {
+          "id" : "OMIM:617252",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014990",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617252",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310648",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014990",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014990",
+            "OMIM:617252",
+            "UMLS:C4310648"
+          ]
+        }
+      ]
+    }
+  ]
+}

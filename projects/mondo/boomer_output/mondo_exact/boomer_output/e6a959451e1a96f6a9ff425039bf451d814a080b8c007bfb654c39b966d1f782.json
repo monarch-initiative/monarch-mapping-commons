@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e6a959451e1a96f6a9ff425039bf451d814a080b8c007bfb654c39b966d1f782",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3827253",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050803",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000457",
+          "type" : "CLASS",
+          "lbl" : "classical glioblastoma"
+        },
+        {
+          "id" : "NCIT:C111694",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000457",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C111694",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050803",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3827253",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000457",
+            "NCIT:C111694",
+            "UMLS:C3827253",
+            "DOID:0050803"
+          ]
+        }
+      ]
+    }
+  ]
+}

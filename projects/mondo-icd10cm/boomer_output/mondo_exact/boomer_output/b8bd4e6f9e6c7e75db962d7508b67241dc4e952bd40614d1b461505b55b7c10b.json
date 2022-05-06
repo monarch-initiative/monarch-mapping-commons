@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b8bd4e6f9e6c7e75db962d7508b67241dc4e952bd40614d1b461505b55b7c10b",
+      "nodes" : [
+        {
+          "id" : "SCTID:75316000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0271865",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018242",
+          "type" : "CLASS",
+          "lbl" : "autoimmune hypoparathyroidism"
+        },
+        {
+          "id" : "Orphanet:36913",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018242",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:36913",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0271865",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018242",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:75316000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018242",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:36913",
+            "MONDO:0018242",
+            "UMLS:C0271865",
+            "SCTID:75316000"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f379a5a13a6c98881698dbfe75004d940d688c78a142f4a38a515d9678944dc9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1314678",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006079",
+          "type" : "CLASS",
+          "lbl" : "ameloblastic carcinoma"
+        },
+        {
+          "id" : "NCIT:C7492",
+          "type" : "CLASS",
+          "lbl" : "Ameloblastic Carcinoma"
+        },
+        {
+          "id" : "Orphanet:314422",
+          "type" : "CLASS",
+          "lbl" : "Ameloblastic carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006079",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:314422",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1314678",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006079",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006079",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7492",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006079",
+            "Orphanet:314422",
+            "UMLS:C1314678",
+            "NCIT:C7492"
+          ]
+        }
+      ]
+    }
+  ]
+}

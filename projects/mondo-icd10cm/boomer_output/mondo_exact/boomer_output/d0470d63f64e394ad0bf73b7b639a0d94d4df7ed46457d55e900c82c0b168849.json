@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d0470d63f64e394ad0bf73b7b639a0d94d4df7ed46457d55e900c82c0b168849",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332318",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5876",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003686",
+          "type" : "CLASS",
+          "lbl" : "apocrine sweat gland neoplasm"
+        },
+        {
+          "id" : "NCIT:C6798",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003686",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6798",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5876",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003686",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332318",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003686",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003686",
+            "NCIT:C6798",
+            "DOID:5876",
+            "UMLS:C1332318"
+          ]
+        }
+      ]
+    }
+  ]
+}

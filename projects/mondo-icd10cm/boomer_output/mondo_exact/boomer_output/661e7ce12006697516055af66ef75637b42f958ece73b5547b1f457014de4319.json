@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:661e7ce12006697516055af66ef75637b42f958ece73b5547b1f457014de4319",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202791",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017270",
+          "type" : "CLASS",
+          "lbl" : "autosomal ichthyosis syndrome"
+        },
+        {
+          "id" : "Orphanet:281217",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017270",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:281217",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202791",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017270",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017270",
+            "Orphanet:281217",
+            "UMLS:CN202791"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f9bcdc53af2c4bf8a7b2ddbb322a1181ed0eca8cb81158e27f2e93d57f4e2eb6",
+      "nodes" : [
+        {
+          "id" : "MESH:C536360",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1837894",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012053",
+          "type" : "CLASS",
+          "lbl" : "aneurysm, intracranial berry, 2"
+        },
+        {
+          "id" : "OMIM:608542",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012053",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608542",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536360",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012053",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1837894",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012053",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:608542",
+            "MONDO:0012053",
+            "MESH:C536360",
+            "UMLS:C1837894"
+          ]
+        }
+      ]
+    }
+  ]
+}

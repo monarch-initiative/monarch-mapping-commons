@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c098d63ca33109cbae5d735ed6a97de81e6ca79f192d609a8b9e8b2cb174df81",
+      "nodes" : [
+        {
+          "id" : "DOID:2135",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C71.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002218",
+          "type" : "CLASS",
+          "lbl" : "temporal lobe cancer"
+        },
+        {
+          "id" : "UMLS:C0153636",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:363468009",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:363468009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002218",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0153636",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002218",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2135",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002218",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C71.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002218",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C71.2",
+            "SCTID:363468009",
+            "MONDO:0002218",
+            "DOID:2135",
+            "UMLS:C0153636"
+          ]
+        }
+      ]
+    }
+  ]
+}

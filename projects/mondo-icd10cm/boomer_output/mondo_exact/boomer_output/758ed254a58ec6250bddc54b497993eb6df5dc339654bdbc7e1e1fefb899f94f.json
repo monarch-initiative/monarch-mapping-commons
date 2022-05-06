@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:758ed254a58ec6250bddc54b497993eb6df5dc339654bdbc7e1e1fefb899f94f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006420",
+          "type" : "CLASS",
+          "lbl" : "small intestinal mucosa-associated lymphoid tissue lymphoma"
+        },
+        {
+          "id" : "NCIT:C5635",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1336004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006420",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006420",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5635",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006420",
+            "UMLS:C1336004",
+            "NCIT:C5635"
+          ]
+        }
+      ]
+    }
+  ]
+}

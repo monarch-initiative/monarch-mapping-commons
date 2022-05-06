@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d5fd094fb6e1e08c484c97a3882214d4139bc432bd97e7cac88e1aa0c81bdfdc",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1266018",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5026",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003246",
+          "type" : "CLASS",
+          "lbl" : "sclerosing hepatic carcinoma"
+        },
+        {
+          "id" : "NCIT:C27388",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5026",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003246",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1266018",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003246",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003246",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27388",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5026",
+            "MONDO:0003246",
+            "UMLS:C1266018",
+            "NCIT:C27388"
+          ]
+        }
+      ]
+    }
+  ]
+}

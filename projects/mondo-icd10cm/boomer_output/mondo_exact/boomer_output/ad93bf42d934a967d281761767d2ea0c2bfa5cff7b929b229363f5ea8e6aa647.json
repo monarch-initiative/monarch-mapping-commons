@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ad93bf42d934a967d281761767d2ea0c2bfa5cff7b929b229363f5ea8e6aa647",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2748918",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111782",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018233",
+          "type" : "CLASS",
+          "lbl" : "otopalatodigital syndrome spectrum disorder"
+        },
+        {
+          "id" : "Orphanet:364541",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018233",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:364541",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111782",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018233",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2748918",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018233",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018233",
+            "Orphanet:364541",
+            "DOID:0111782",
+            "UMLS:C2748918"
+          ]
+        }
+      ]
+    }
+  ]
+}

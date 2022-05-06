@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8998da036a6afb5a064d0b127f6d936a1ab49c7894126b8605d50b547c5719c1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3810138",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110084",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000908",
+          "type" : "CLASS",
+          "lbl" : "arrhythmogenic right ventricular dysplasia 13"
+        },
+        {
+          "id" : "OMIM:615616",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000908",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615616",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110084",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000908",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3810138",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000908",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000908",
+            "OMIM:615616",
+            "DOID:0110084",
+            "UMLS:C3810138"
+          ]
+        }
+      ]
+    }
+  ]
+}

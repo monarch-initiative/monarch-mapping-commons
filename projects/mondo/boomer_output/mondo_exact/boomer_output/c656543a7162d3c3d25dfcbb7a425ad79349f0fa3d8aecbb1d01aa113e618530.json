@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c656543a7162d3c3d25dfcbb7a425ad79349f0fa3d8aecbb1d01aa113e618530",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0155199",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:H02.21",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:13038",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001623",
+          "type" : "CLASS",
+          "lbl" : "cicatricial lagophthalmos"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:13038",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001623",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0155199",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001623",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:H02.21",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001623",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:13038",
+            "MONDO:0001623",
+            "UMLS:C0155199",
+            "ICD10CM:H02.21"
+          ]
+        }
+      ]
+    }
+  ]
+}

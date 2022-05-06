@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fbe1ddeceb728a015aa419909580bddc538aa9e2f6c15048b250045a52e63679",
+      "nodes" : [
+        {
+          "id" : "MONDO:0001251",
+          "type" : "CLASS",
+          "lbl" : "chronic apical periodontitis"
+        },
+        {
+          "id" : "UMLS:C0392492",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:K04.5",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:718052004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:11269",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0392492",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001251",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:K04.5",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001251",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:11269",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001251",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:718052004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001251",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001251",
+            "ICD10CM:K04.5",
+            "SCTID:718052004",
+            "DOID:11269",
+            "UMLS:C0392492"
+          ]
+        }
+      ]
+    }
+  ]
+}

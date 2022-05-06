@@ -1,0 +1,131 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8a1884527656c2e442d7cf13e97c39b44314dc4f63d86f225fadfe1251ff3b70",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1328252",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:B55.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3495436",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:9155",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D007897",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C34769",
+          "type" : "CLASS",
+          "lbl" : "American Cutaneous Leishmaniasis"
+        },
+        {
+          "id" : "MONDO:0005859",
+          "type" : "CLASS",
+          "lbl" : "mucocutaneous leishmaniasis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005859",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C3495436",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1328252",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005859",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005859",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C34769",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D007897",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005859",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:B55.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005859",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:9155",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005859",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D007897",
+            "DOID:9155",
+            "NCIT:C34769",
+            "MONDO:0005859",
+            "UMLS:C1328252",
+            "ICD10CM:B55.2"
+          ]
+        }
+      ]
+    }
+  ]
+}

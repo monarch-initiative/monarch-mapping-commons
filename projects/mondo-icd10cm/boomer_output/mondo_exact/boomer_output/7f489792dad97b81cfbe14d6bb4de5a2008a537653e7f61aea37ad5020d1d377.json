@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7f489792dad97b81cfbe14d6bb4de5a2008a537653e7f61aea37ad5020d1d377",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227611",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019282",
+          "type" : "CLASS",
+          "lbl" : "syndromic hair shaft abnormality"
+        },
+        {
+          "id" : "Orphanet:79367",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227611",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019282",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019282",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79367",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019282",
+            "UMLS:CN227611",
+            "Orphanet:79367"
+          ]
+        }
+      ]
+    }
+  ]
+}

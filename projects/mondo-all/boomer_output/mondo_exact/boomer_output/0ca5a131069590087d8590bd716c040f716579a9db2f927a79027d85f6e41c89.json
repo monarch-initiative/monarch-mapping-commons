@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0ca5a131069590087d8590bd716c040f716579a9db2f927a79027d85f6e41c89",
+      "nodes" : [
+        {
+          "id" : "MESH:D013553",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0039006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024990",
+          "type" : "CLASS",
+          "lbl" : "swine disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D013553",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024990",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0039006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024990",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D013553",
+            "MONDO:0024990",
+            "UMLS:C0039006"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3946b208e10e4fc23e5f7c6511df040775079fdb2bf963127c1d0525416a9f8c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237555",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018554",
+          "type" : "CLASS",
+          "lbl" : "pulmonary veno-occlusive disease and/or pulmonary capillary haemangiomatosis"
+        },
+        {
+          "id" : "Orphanet:431353",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237555",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018554",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018554",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:431353",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN237555",
+            "MONDO:0018554",
+            "Orphanet:431353"
+          ]
+        }
+      ]
+    }
+  ]
+}

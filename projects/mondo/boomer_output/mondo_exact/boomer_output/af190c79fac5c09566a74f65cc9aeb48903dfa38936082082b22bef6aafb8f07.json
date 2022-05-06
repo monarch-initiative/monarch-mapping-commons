@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:af190c79fac5c09566a74f65cc9aeb48903dfa38936082082b22bef6aafb8f07",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0221273",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006258",
+          "type" : "CLASS",
+          "lbl" : "juvenile polyp"
+        },
+        {
+          "id" : "NCIT:C3826",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006258",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3826",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0221273",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006258",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006258",
+            "NCIT:C3826",
+            "UMLS:C0221273"
+          ]
+        }
+      ]
+    }
+  ]
+}

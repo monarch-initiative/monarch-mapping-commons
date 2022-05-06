@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:200370cd2eb2b71d8bda40abe47a410b6178d94fbc3ff5672db932e3baa8f0c9",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201299",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016393",
+          "type" : "CLASS",
+          "lbl" : "hyposmia-nasal and ocular hypoplasia-hypogonadotropic hypogonadism syndrome"
+        },
+        {
+          "id" : "Orphanet:2250",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201299",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016393",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016393",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2250",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN201299",
+            "MONDO:0016393",
+            "Orphanet:2250"
+          ]
+        }
+      ]
+    }
+  ]
+}

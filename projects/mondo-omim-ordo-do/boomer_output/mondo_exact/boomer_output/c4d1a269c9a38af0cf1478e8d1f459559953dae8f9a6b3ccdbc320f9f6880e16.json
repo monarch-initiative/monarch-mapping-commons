@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c4d1a269c9a38af0cf1478e8d1f459559953dae8f9a6b3ccdbc320f9f6880e16",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2678477",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110221",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:611876",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C567508",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012743",
+          "type" : "CLASS",
+          "lbl" : "Brugada syndrome 4"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C567508",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012743",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012743",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:611876",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110221",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012743",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2678477",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012743",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2678477",
+            "OMIM:611876",
+            "DOID:0110221",
+            "MESH:C567508",
+            "MONDO:0012743"
+          ]
+        }
+      ]
+    }
+  ]
+}

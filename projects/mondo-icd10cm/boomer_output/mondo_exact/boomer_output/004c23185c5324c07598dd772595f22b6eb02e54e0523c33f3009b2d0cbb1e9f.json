@@ -1,0 +1,93 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:004c23185c5324c07598dd772595f22b6eb02e54e0523c33f3009b2d0cbb1e9f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0752329",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D020943",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0752331",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0752330",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005695",
+          "type" : "CLASS",
+          "lbl" : "central nervous system AIDS arteritis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005695",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0752330",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005695",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0752329",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D020943",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005695",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0752331",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005695",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005695",
+            "MESH:D020943",
+            "UMLS:C0752331"
+          ]
+        }
+      ]
+    }
+  ]
+}

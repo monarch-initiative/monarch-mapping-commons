@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f9c5f2d3e09dff29ad5f050612ae91bf8f168ee78ee97e30ca5e0da5a4ec5881",
+      "nodes" : [
+        {
+          "id" : "SCTID:312591002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0035440",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021777",
+          "type" : "CLASS",
+          "lbl" : "acute rheumatic heart disease"
+        },
+        {
+          "id" : "NCIT:C34985",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021777",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C34985",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:312591002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021777",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0035440",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021777",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C34985",
+            "MONDO:0021777",
+            "SCTID:312591002",
+            "UMLS:C0035440"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:599728cc1aefb7af0779c7b660e969820dc4597157bd2ea7c79575298c772f90",
+      "nodes" : [
+        {
+          "id" : "SCTID:204431007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:Q25.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:14037",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001863",
+          "type" : "CLASS",
+          "lbl" : "aorta atresia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:Q25.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001863",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:14037",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001863",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:204431007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001863",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:Q25.2",
+            "MONDO:0001863",
+            "DOID:14037",
+            "SCTID:204431007"
+          ]
+        }
+      ]
+    }
+  ]
+}

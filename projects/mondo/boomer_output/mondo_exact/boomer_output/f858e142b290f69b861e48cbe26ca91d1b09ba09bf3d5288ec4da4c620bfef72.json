@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f858e142b290f69b861e48cbe26ca91d1b09ba09bf3d5288ec4da4c620bfef72",
+      "nodes" : [
+        {
+          "id" : "DOID:0080654",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008629",
+          "type" : "CLASS",
+          "lbl" : "urolithiasis, uric acid, autosomal dominant"
+        },
+        {
+          "id" : "OMIM:191700",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080654",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008629",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008629",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:191700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008629",
+            "DOID:0080654",
+            "OMIM:191700"
+          ]
+        }
+      ]
+    }
+  ]
+}

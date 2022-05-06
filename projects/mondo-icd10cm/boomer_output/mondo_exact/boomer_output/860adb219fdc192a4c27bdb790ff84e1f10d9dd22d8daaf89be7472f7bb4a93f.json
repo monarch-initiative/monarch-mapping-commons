@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:860adb219fdc192a4c27bdb790ff84e1f10d9dd22d8daaf89be7472f7bb4a93f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332278",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7175",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004131",
+          "type" : "CLASS",
+          "lbl" : "anal verrucous carcinoma"
+        },
+        {
+          "id" : "NCIT:C7470",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004131",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332278",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004131",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7175",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004131",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004131",
+            "NCIT:C7470",
+            "UMLS:C1332278",
+            "DOID:7175"
+          ]
+        }
+      ]
+    }
+  ]
+}

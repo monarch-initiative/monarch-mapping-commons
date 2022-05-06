@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:96cb136ca263d3ee2c50dae2b2b878d20ece694ccb71786c1c56a17b06d48f66",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201907",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016667",
+          "type" : "CLASS",
+          "lbl" : "sickle cell disease associated with an other hemoglobin anomaly"
+        },
+        {
+          "id" : "Orphanet:251355",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201907",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016667",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016667",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:251355",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016667",
+            "UMLS:CN201907",
+            "Orphanet:251355"
+          ]
+        }
+      ]
+    }
+  ]
+}

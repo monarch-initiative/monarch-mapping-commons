@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c00b1da7e9538b9ac4d31dd31d0bfee93bde64c9b2a9da26b48eab140c23cd67",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1513799",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7521",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004262",
+          "type" : "CLASS",
+          "lbl" : "breast myoepitheliosis"
+        },
+        {
+          "id" : "NCIT:C40385",
+          "type" : "CLASS",
+          "lbl" : "Breast Myoepitheliosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004262",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40385",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7521",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004262",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1513799",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004262",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C40385",
+            "MONDO:0004262",
+            "DOID:7521",
+            "UMLS:C1513799"
+          ]
+        }
+      ]
+    }
+  ]
+}

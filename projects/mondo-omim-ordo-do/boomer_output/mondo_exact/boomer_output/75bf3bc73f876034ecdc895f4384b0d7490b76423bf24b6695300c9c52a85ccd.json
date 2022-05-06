@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:75bf3bc73f876034ecdc895f4384b0d7490b76423bf24b6695300c9c52a85ccd",
+      "nodes" : [
+        {
+          "id" : "MESH:C566753",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1867485",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008324",
+          "type" : "CLASS",
+          "lbl" : "pseudoarthrogryposis"
+        },
+        {
+          "id" : "OMIM:177300",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1867485",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008324",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566753",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008324",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008324",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:177300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008324",
+            "UMLS:C1867485",
+            "MESH:C566753",
+            "OMIM:177300"
+          ]
+        }
+      ]
+    }
+  ]
+}

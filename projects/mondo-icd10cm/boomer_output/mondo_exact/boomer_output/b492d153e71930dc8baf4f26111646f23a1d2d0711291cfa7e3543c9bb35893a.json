@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b492d153e71930dc8baf4f26111646f23a1d2d0711291cfa7e3543c9bb35893a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0345746",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000933",
+          "type" : "CLASS",
+          "lbl" : "subglottis neoplasm"
+        },
+        {
+          "id" : "NCIT:C4426",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:126696001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10069",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:126696001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000933",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000933",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4426",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0345746",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000933",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10069",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000933",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4426",
+            "DOID:10069",
+            "MONDO:0000933",
+            "SCTID:126696001",
+            "UMLS:C0345746"
+          ]
+        }
+      ]
+    }
+  ]
+}

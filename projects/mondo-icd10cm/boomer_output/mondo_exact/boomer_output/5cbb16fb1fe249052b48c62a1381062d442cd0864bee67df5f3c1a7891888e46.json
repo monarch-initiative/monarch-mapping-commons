@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5cbb16fb1fe249052b48c62a1381062d442cd0864bee67df5f3c1a7891888e46",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1520081",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7565",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004281",
+          "type" : "CLASS",
+          "lbl" : "vulvar eccrine porocarcinoma"
+        },
+        {
+          "id" : "NCIT:C40306",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004281",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40306",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1520081",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004281",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7565",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004281",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004281",
+            "NCIT:C40306",
+            "UMLS:C1520081",
+            "DOID:7565"
+          ]
+        }
+      ]
+    }
+  ]
+}

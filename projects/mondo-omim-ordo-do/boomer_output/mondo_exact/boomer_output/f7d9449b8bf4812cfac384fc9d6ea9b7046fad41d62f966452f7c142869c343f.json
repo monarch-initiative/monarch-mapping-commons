@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f7d9449b8bf4812cfac384fc9d6ea9b7046fad41d62f966452f7c142869c343f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4284595",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014878",
+          "type" : "CLASS",
+          "lbl" : "patent ductus arteriosus 2"
+        },
+        {
+          "id" : "OMIM:617035",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4284595",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014878",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014878",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617035",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014878",
+            "UMLS:C4284595",
+            "OMIM:617035"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:01a52dbb13b7789ea64e8a3c4c022c5453f0d2aaae3b3a15fc433cad40dc1478",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310799",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0090010",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014828",
+          "type" : "CLASS",
+          "lbl" : "immunodeficiency-centromeric instability-facial anomalies syndrome 3"
+        },
+        {
+          "id" : "OMIM:616910",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0090010",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014828",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014828",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616910",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310799",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014828",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0090010",
+            "MONDO:0014828",
+            "OMIM:616910",
+            "UMLS:C4310799"
+          ]
+        }
+      ]
+    }
+  ]
+}

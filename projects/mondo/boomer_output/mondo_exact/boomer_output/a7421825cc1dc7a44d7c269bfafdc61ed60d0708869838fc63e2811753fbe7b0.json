@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a7421825cc1dc7a44d7c269bfafdc61ed60d0708869838fc63e2811753fbe7b0",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0854859",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7936",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004404",
+          "type" : "CLASS",
+          "lbl" : "refractory precursor T-lymphoblastic lymphoma/leukemia"
+        },
+        {
+          "id" : "NCIT:C8696",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7936",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004404",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0854859",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004404",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004404",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8696",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004404",
+            "DOID:7936",
+            "UMLS:C0854859",
+            "NCIT:C8696"
+          ]
+        }
+      ]
+    }
+  ]
+}

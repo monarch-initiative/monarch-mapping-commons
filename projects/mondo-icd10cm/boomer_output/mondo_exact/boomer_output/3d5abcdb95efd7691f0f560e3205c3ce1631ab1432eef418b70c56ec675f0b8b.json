@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3d5abcdb95efd7691f0f560e3205c3ce1631ab1432eef418b70c56ec675f0b8b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1516424",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6101",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003768",
+          "type" : "CLASS",
+          "lbl" : "signet ring cell variant cervical mucinous adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C40205",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003768",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40205",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1516424",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003768",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6101",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003768",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003768",
+            "NCIT:C40205",
+            "UMLS:C1516424",
+            "DOID:6101"
+          ]
+        }
+      ]
+    }
+  ]
+}

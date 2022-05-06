@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6fa7f7763d3d376e7bb172ec3ba30d5f88d57f6de3769a8ca97f1e65f8ee1bb2",
+      "nodes" : [
+        {
+          "id" : "MESH:D020022",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:Z15",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020573",
+          "type" : "CLASS",
+          "lbl" : "inherited disease susceptibility"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D020022",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020573",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Z15",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020573",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020573",
+            "MESH:D020022",
+            "ICD10CM:Z15"
+          ]
+        }
+      ]
+    }
+  ]
+}

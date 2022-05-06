@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:560a4df617f861913a3953b0b518c136faaf3ac63c6c133301d7dc208d16929b",
+      "nodes" : [
+        {
+          "id" : "NCIT:C3229",
+          "type" : "CLASS",
+          "lbl" : "Meningeal Neoplasm"
+        },
+        {
+          "id" : "UMLS:C0025284",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016743",
+          "type" : "CLASS",
+          "lbl" : "tumor of meninges"
+        },
+        {
+          "id" : "Orphanet:252025",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:126965008",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016743",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:252025",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:126965008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016743",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0025284",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016743",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016743",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3229",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:126965008",
+            "Orphanet:252025",
+            "NCIT:C3229",
+            "MONDO:0016743",
+            "UMLS:C0025284"
+          ]
+        }
+      ]
+    }
+  ]
+}

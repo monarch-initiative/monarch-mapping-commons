@@ -1,0 +1,114 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7ce5b0a795f194f09065b5749f605ede713b22c34e0415d35cbd107ddefa4a8a",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:L65.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:39479004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0263518",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C112200",
+          "type" : "CLASS",
+          "lbl" : "Telogen Effluvium"
+        },
+        {
+          "id" : "DOID:1943",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002153",
+          "type" : "CLASS",
+          "lbl" : "telogen effluvium"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:L65.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002153",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:39479004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002153",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002153",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C112200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1943",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002153",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0263518",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002153",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C112200",
+            "SCTID:39479004",
+            "MONDO:0002153",
+            "DOID:1943",
+            "ICD10CM:L65.0",
+            "UMLS:C0263518"
+          ]
+        }
+      ]
+    }
+  ]
+}

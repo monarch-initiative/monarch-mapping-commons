@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4b04bb58c180acd9999f26a6005c270e835914546a06693c210626add681039f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332993",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6083",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003759",
+          "type" : "CLASS",
+          "lbl" : "childhood ovarian yolk sac tumor"
+        },
+        {
+          "id" : "NCIT:C6551",
+          "type" : "CLASS",
+          "lbl" : "Childhood Ovarian Yolk Sac Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332993",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003759",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003759",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6551",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6083",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003759",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332993",
+            "MONDO:0003759",
+            "NCIT:C6551",
+            "DOID:6083"
+          ]
+        }
+      ]
+    }
+  ]
+}

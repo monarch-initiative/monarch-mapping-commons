@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1b45e8441641eb6ae04d02ba93e61f0eb3e2daa17627155be170bf73c6fdd322",
+      "nodes" : [
+        {
+          "id" : "MESH:C536506",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1848865",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010114",
+          "type" : "CLASS",
+          "lbl" : "thanatophoric dysplasia, Glasgow variant"
+        },
+        {
+          "id" : "OMIM:273680",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1848865",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010114",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010114",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:273680",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536506",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010114",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1848865",
+            "MONDO:0010114",
+            "OMIM:273680",
+            "MESH:C536506"
+          ]
+        }
+      ]
+    }
+  ]
+}

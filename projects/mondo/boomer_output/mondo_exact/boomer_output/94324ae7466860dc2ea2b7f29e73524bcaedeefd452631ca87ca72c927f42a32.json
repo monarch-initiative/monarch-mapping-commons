@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:94324ae7466860dc2ea2b7f29e73524bcaedeefd452631ca87ca72c927f42a32",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3890591",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111125",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014374",
+          "type" : "CLASS",
+          "lbl" : "nephronophthisis 18"
+        },
+        {
+          "id" : "OMIM:615862",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014374",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615862",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3890591",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014374",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111125",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014374",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014374",
+            "OMIM:615862",
+            "UMLS:C3890591",
+            "DOID:0111125"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9b08f7db664b62bec8fe58691a50fb7e38a6e8400df18c226ca6fec4dbb47050",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207034",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020173",
+          "type" : "CLASS",
+          "lbl" : "benign tumor of palpebral epidermis"
+        },
+        {
+          "id" : "Orphanet:98582",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN207034",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020173",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020173",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98582",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN207034",
+            "MONDO:0020173",
+            "Orphanet:98582"
+          ]
+        }
+      ]
+    }
+  ]
+}

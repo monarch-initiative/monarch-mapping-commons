@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:86cd9fb721d910014879a839588d054d860c435aac432383e5bf766f89a9b328",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN239267",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000090",
+          "type" : "CLASS",
+          "lbl" : "progressive external ophthalmoplegia with mitochondrial DNA deletions"
+        },
+        {
+          "id" : "OMIMPS:157640",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN239267",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000090",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000090",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:157640",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000090",
+            "UMLS:CN239267",
+            "OMIMPS:157640"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f35d7279180876640afb6c843f99b5a2fa16f7fd7dbda474155b4d06ae7ddd13",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0281332",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6648",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003957",
+          "type" : "CLASS",
+          "lbl" : "adult pineoblastoma"
+        },
+        {
+          "id" : "NCIT:C8292",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6648",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003957",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003957",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8292",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0281332",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003957",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003957",
+            "DOID:6648",
+            "NCIT:C8292",
+            "UMLS:C0281332"
+          ]
+        }
+      ]
+    }
+  ]
+}

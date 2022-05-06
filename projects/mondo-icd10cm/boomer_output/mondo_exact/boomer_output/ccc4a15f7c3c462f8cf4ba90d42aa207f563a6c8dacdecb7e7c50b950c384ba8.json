@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ccc4a15f7c3c462f8cf4ba90d42aa207f563a6c8dacdecb7e7c50b950c384ba8",
+      "nodes" : [
+        {
+          "id" : "MESH:C563923",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1837974",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012044",
+          "type" : "CLASS",
+          "lbl" : "corneal dystrophy, lattice type 3A"
+        },
+        {
+          "id" : "OMIM:608471",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C563923",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012044",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012044",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608471",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1837974",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012044",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012044",
+            "MESH:C563923",
+            "OMIM:608471",
+            "UMLS:C1837974"
+          ]
+        }
+      ]
+    }
+  ]
+}

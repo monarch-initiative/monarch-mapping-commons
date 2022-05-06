@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0bbfd777db89e962bdcb2ca04833f7fd02282af4b67535475a6e1a9066bcd895",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:J80",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006502",
+          "type" : "CLASS",
+          "lbl" : "acute respiratory distress syndrome"
+        },
+        {
+          "id" : "NCIT:C3353",
+          "type" : "CLASS",
+          "lbl" : "Acute Respiratory Distress Syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006502",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3353",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:J80",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006502",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C3353",
+            "MONDO:0006502",
+            "ICD10CM:J80"
+          ]
+        }
+      ]
+    }
+  ]
+}

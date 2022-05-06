@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d93ef3785aefc4ff4042dc554b4c9cfd65c36fbd73240dd8415148bee6716602",
+      "nodes" : [
+        {
+          "id" : "MESH:C567473",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2678038",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010410",
+          "type" : "CLASS",
+          "lbl" : "alopecia, androgenetic, 2"
+        },
+        {
+          "id" : "OMIM:300710",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2678038",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010410",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567473",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010410",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010410",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300710",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010410",
+            "UMLS:C2678038",
+            "MESH:C567473",
+            "OMIM:300710"
+          ]
+        }
+      ]
+    }
+  ]
+}

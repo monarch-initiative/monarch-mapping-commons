@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:04d2954e8c436e4781abad0ded35f4210336e569cb60b3cc49ee36fc328e359f",
+      "nodes" : [
+        {
+          "id" : "MESH:C563570",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1834753",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008012",
+          "type" : "CLASS",
+          "lbl" : "Monophalangy of great toe"
+        },
+        {
+          "id" : "OMIM:158100",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008012",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:158100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563570",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008012",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1834753",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008012",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008012",
+            "OMIM:158100",
+            "MESH:C563570",
+            "UMLS:C1834753"
+          ]
+        }
+      ]
+    }
+  ]
+}

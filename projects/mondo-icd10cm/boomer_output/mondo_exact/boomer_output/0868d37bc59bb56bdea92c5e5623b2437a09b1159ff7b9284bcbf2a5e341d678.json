@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0868d37bc59bb56bdea92c5e5623b2437a09b1159ff7b9284bcbf2a5e341d678",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1321904",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2095",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002206",
+          "type" : "CLASS",
+          "lbl" : "sweat gland cancer"
+        },
+        {
+          "id" : "NCIT:C4810",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1321904",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002206",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4810",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2095",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002206",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1321904",
+            "MONDO:0002206",
+            "NCIT:C4810",
+            "DOID:2095"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d7f05616436527c899635838b15c1986355a8538b655d957981cc75971486a51",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227607",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019256",
+          "type" : "CLASS",
+          "lbl" : "sterol metabolism disorder"
+        },
+        {
+          "id" : "Orphanet:79226",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227607",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019256",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019256",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79226",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019256",
+            "UMLS:CN227607",
+            "Orphanet:79226"
+          ]
+        }
+      ]
+    }
+  ]
+}

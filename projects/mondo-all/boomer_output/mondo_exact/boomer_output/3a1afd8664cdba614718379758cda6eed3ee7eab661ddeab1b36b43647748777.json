@@ -1,0 +1,97 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3a1afd8664cdba614718379758cda6eed3ee7eab661ddeab1b36b43647748777",
+      "nodes" : [
+        {
+          "id" : "MONDO:0021638",
+          "type" : "CLASS",
+          "lbl" : "low grade astrocytic tumor"
+        },
+        {
+          "id" : "Orphanet:251592",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016685",
+          "type" : "CLASS",
+          "lbl" : "low-grade astrocytoma"
+        },
+        {
+          "id" : "UMLS:C3898569",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C116342",
+          "type" : "CLASS",
+          "lbl" : "Low Grade Astrocytoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016685",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:251592",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016685",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0021638",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021638",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C116342",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3898569",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021638",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016685",
+            "Orphanet:251592"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "NCIT:C116342",
+            "MONDO:0021638",
+            "UMLS:C3898569"
+          ]
+        }
+      ]
+    }
+  ]
+}

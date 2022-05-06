@@ -1,0 +1,114 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b7cfe5a1a928e2514219de6c424ff2c8aec7e10ff6578a4e055bb3c922d14caa",
+      "nodes" : [
+        {
+          "id" : "SCTID:186172004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:A15.6",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:106",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D014396",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005922",
+          "type" : "CLASS",
+          "lbl" : "pleural tuberculosis"
+        },
+        {
+          "id" : "NCIT:C26898",
+          "type" : "CLASS",
+          "lbl" : "Tuberculous Pleuritis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:A15.6",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005922",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:106",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005922",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D014396",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005922",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005922",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C26898",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:186172004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005922",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:186172004",
+            "MESH:D014396",
+            "ICD10CM:A15.6",
+            "DOID:106",
+            "NCIT:C26898",
+            "MONDO:0005922"
+          ]
+        }
+      ]
+    }
+  ]
+}

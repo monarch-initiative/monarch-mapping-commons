@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:af2f44336e6398642d9ac84c7cd5f98f3a1770ffa7d2f36dddb63615c766114b",
+      "nodes" : [
+        {
+          "id" : "MESH:D007724",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0022783",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006491",
+          "type" : "CLASS",
+          "lbl" : "vulvar lichen sclerosus"
+        },
+        {
+          "id" : "NCIT:C27723",
+          "type" : "CLASS",
+          "lbl" : "Vulvar Lichen Sclerosus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0022783",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006491",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006491",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27723",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D007724",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006491",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0022783",
+            "MONDO:0006491",
+            "MESH:D007724",
+            "NCIT:C27723"
+          ]
+        }
+      ]
+    }
+  ]
+}

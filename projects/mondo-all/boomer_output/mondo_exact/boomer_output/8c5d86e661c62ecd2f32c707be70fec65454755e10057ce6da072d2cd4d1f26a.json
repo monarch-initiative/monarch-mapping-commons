@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8c5d86e661c62ecd2f32c707be70fec65454755e10057ce6da072d2cd4d1f26a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0022079",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021224",
+          "type" : "CLASS",
+          "lbl" : "iris neoplasm"
+        },
+        {
+          "id" : "NCIT:C3142",
+          "type" : "CLASS",
+          "lbl" : "Iris Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021224",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3142",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0022079",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021224",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C3142",
+            "MONDO:0021224",
+            "UMLS:C0022079"
+          ]
+        }
+      ]
+    }
+  ]
+}

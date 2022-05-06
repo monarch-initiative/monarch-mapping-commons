@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3b0128724980d4e23eab7cc3cb62c2ab104285403a260e2cd438a68b15a75e2e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1851586",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007545",
+          "type" : "CLASS",
+          "lbl" : "Eosinophilopenia"
+        },
+        {
+          "id" : "OMIM:131430",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007545",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:131430",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1851586",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007545",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007545",
+            "OMIM:131430",
+            "UMLS:C1851586"
+          ]
+        }
+      ]
+    }
+  ]
+}

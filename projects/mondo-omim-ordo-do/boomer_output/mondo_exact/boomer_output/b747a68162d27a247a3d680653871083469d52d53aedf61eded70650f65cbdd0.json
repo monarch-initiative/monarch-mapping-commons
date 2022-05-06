@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b747a68162d27a247a3d680653871083469d52d53aedf61eded70650f65cbdd0",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:H74.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0155478",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001234",
+          "type" : "CLASS",
+          "lbl" : "adhesive otitis media"
+        },
+        {
+          "id" : "SCTID:7699004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:11235",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0155478",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001234",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:7699004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001234",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:11235",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001234",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:H74.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001234",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001234",
+            "SCTID:7699004",
+            "ICD10CM:H74.1",
+            "UMLS:C0155478",
+            "DOID:11235"
+          ]
+        }
+      ]
+    }
+  ]
+}

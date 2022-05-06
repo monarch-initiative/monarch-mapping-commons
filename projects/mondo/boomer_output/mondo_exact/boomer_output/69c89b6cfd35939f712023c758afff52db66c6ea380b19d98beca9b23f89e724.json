@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:69c89b6cfd35939f712023c758afff52db66c6ea380b19d98beca9b23f89e724",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1707437",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006157",
+          "type" : "CLASS",
+          "lbl" : "colorectal adenosquamous carcinoma"
+        },
+        {
+          "id" : "NCIT:C43589",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1707437",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006157",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006157",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C43589",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1707437",
+            "MONDO:0006157",
+            "NCIT:C43589"
+          ]
+        }
+      ]
+    }
+  ]
+}

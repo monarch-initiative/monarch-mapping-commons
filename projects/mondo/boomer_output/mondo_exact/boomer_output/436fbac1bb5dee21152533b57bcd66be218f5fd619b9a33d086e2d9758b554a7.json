@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:436fbac1bb5dee21152533b57bcd66be218f5fd619b9a33d086e2d9758b554a7",
+      "nodes" : [
+        {
+          "id" : "MESH:C565728",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1857933",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011513",
+          "type" : "CLASS",
+          "lbl" : "Alzheimer disease, familial early-onset, with coexisting amyloid and prion pathology"
+        },
+        {
+          "id" : "OMIM:605055",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1857933",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011513",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011513",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:605055",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565728",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011513",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011513",
+            "UMLS:C1857933",
+            "OMIM:605055",
+            "MESH:C565728"
+          ]
+        }
+      ]
+    }
+  ]
+}

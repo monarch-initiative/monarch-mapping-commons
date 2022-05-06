@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8d6090c2e7c216baa4a61d172be42d35617e2dfcc09edc3d6ff2667be00bc8bd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2609071",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0100296",
+          "type" : "CLASS",
+          "lbl" : "Olmsted syndrome 1"
+        },
+        {
+          "id" : "Orphanet:659",
+          "type" : "CLASS",
+          "lbl" : "Mutilating palmoplantar keratoderma with periorificial keratotic plaques"
+        },
+        {
+          "id" : "OMIM:614594",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0100296",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614594",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0100296",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:659",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2609071",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0100296",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0100296",
+            "OMIM:614594",
+            "Orphanet:659",
+            "UMLS:C2609071"
+          ]
+        }
+      ]
+    }
+  ]
+}

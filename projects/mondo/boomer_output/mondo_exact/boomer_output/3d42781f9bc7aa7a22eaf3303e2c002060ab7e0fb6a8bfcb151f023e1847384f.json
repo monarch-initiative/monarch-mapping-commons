@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3d42781f9bc7aa7a22eaf3303e2c002060ab7e0fb6a8bfcb151f023e1847384f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203621",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017725",
+          "type" : "CLASS",
+          "lbl" : "Tay-Sachs disease, b variant, juvenile form"
+        },
+        {
+          "id" : "Orphanet:309185",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017725",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309185",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203621",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017725",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017725",
+            "Orphanet:309185",
+            "UMLS:CN203621"
+          ]
+        }
+      ]
+    }
+  ]
+}

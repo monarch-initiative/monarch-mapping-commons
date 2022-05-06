@@ -1,0 +1,114 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4ea1b0cc54e34110b51a31acaac7fefe4db04a5dfbc2ff35e1e63e6fc821fc18",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:I45.81",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2843",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C34786",
+          "type" : "CLASS",
+          "lbl" : "Long QT Syndrome"
+        },
+        {
+          "id" : "MONDO:0002442",
+          "type" : "CLASS",
+          "lbl" : "long QT syndrome"
+        },
+        {
+          "id" : "MESH:D008133",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0023976",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:2843",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002442",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002442",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C34786",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0023976",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002442",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:I45.81",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002442",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D008133",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002442",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0023976",
+            "ICD10CM:I45.81",
+            "DOID:2843",
+            "MESH:D008133",
+            "NCIT:C34786",
+            "MONDO:0002442"
+          ]
+        }
+      ]
+    }
+  ]
+}

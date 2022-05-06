@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8d043adb330c9c4d7acdf719aaae6ac200edb645d8555701e5a945103c3259e8",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237421",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015248",
+          "type" : "CLASS",
+          "lbl" : "ataxia-photosensitivity-short stature syndrome"
+        },
+        {
+          "id" : "Orphanet:1184",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237421",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015248",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015248",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1184",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015248",
+            "UMLS:CN237421",
+            "Orphanet:1184"
+          ]
+        }
+      ]
+    }
+  ]
+}

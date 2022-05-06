@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1fc74c742fcfbc118b6408bcd9d0297606ac1258395214991497fe67a2379711",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310619",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015020",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability, autosomal recessive 59"
+        },
+        {
+          "id" : "OMIM:617323",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015020",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617323",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310619",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015020",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015020",
+            "OMIM:617323",
+            "UMLS:C4310619"
+          ]
+        }
+      ]
+    }
+  ]
+}

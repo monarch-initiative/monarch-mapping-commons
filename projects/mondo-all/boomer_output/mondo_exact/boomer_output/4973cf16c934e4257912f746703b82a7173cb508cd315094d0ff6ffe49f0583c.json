@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4973cf16c934e4257912f746703b82a7173cb508cd315094d0ff6ffe49f0583c",
+      "nodes" : [
+        {
+          "id" : "MESH:D000068116",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:93461009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001153",
+          "type" : "CLASS",
+          "lbl" : "gender dysphoria"
+        },
+        {
+          "id" : "Orphanet:459690",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:93461009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001153",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001153",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:459690",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D000068116",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001153",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:93461009",
+            "MONDO:0001153",
+            "Orphanet:459690",
+            "MESH:D000068116"
+          ]
+        }
+      ]
+    }
+  ]
+}

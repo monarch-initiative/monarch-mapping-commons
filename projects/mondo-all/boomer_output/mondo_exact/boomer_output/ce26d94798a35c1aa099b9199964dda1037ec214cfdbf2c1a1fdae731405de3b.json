@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ce26d94798a35c1aa099b9199964dda1037ec214cfdbf2c1a1fdae731405de3b",
+      "nodes" : [
+        {
+          "id" : "SCTID:110980006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0347404",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015532",
+          "type" : "CLASS",
+          "lbl" : "generalized eruptive histiocytosis"
+        },
+        {
+          "id" : "Orphanet:157991",
+          "type" : "CLASS",
+          "lbl" : "Generalized eruptive histiocytosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015532",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:157991",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0347404",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015532",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:110980006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015532",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015532",
+            "Orphanet:157991",
+            "SCTID:110980006",
+            "UMLS:C0347404"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9e03fe6273aec2383efd4169719661366693ebb69ff40025acc15734b42034d5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0854995",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050619",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000380",
+          "type" : "CLASS",
+          "lbl" : "paranasal sinus carcinoma"
+        },
+        {
+          "id" : "NCIT:C6014",
+          "type" : "CLASS",
+          "lbl" : "Paranasal Sinus Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0050619",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000380",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000380",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6014",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0854995",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000380",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0050619",
+            "MONDO:0000380",
+            "NCIT:C6014",
+            "UMLS:C0854995"
+          ]
+        }
+      ]
+    }
+  ]
+}

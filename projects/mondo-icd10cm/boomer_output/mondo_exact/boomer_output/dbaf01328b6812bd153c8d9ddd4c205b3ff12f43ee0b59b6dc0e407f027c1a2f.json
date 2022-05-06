@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dbaf01328b6812bd153c8d9ddd4c205b3ff12f43ee0b59b6dc0e407f027c1a2f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1520097",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2072",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002195",
+          "type" : "CLASS",
+          "lbl" : "vulvar squamous neoplasm"
+        },
+        {
+          "id" : "NCIT:C40283",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:2072",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002195",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1520097",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002195",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002195",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40283",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:2072",
+            "MONDO:0002195",
+            "UMLS:C1520097",
+            "NCIT:C40283"
+          ]
+        }
+      ]
+    }
+  ]
+}

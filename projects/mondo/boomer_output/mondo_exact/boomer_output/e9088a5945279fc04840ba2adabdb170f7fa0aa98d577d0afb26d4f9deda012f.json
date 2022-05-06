@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e9088a5945279fc04840ba2adabdb170f7fa0aa98d577d0afb26d4f9deda012f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206343",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:700112007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:89938",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3838860",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019524",
+          "type" : "CLASS",
+          "lbl" : "infantile Bartter syndrome with sensorineural deafness"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206343",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019524",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019524",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:89938",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:700112007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019524",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019524",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C3838860",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019524",
+            "UMLS:CN206343",
+            "Orphanet:89938",
+            "SCTID:700112007"
+          ]
+        }
+      ]
+    }
+  ]
+}

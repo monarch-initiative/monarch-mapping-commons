@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8017b77a00d898e2722214cba7584785053407c670ce629e39578e6fb656e879",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310677",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014958",
+          "type" : "CLASS",
+          "lbl" : "Harel-Yoon syndrome"
+        },
+        {
+          "id" : "OMIM:617183",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014958",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617183",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310677",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014958",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014958",
+            "OMIM:617183",
+            "UMLS:C4310677"
+          ]
+        }
+      ]
+    }
+  ]
+}

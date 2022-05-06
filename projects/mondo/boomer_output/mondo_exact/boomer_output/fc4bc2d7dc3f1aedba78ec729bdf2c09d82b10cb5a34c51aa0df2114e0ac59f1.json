@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fc4bc2d7dc3f1aedba78ec729bdf2c09d82b10cb5a34c51aa0df2114e0ac59f1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1707407",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024386",
+          "type" : "CLASS",
+          "lbl" : "large cell lung carcinoma, clear cell variant"
+        },
+        {
+          "id" : "NCIT:C4451",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1707407",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024386",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0024386",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4451",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1707407",
+            "MONDO:0024386",
+            "NCIT:C4451"
+          ]
+        }
+      ]
+    }
+  ]
+}

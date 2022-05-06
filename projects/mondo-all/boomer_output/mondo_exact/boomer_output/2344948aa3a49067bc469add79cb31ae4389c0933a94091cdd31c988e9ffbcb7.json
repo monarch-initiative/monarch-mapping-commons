@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2344948aa3a49067bc469add79cb31ae4389c0933a94091cdd31c988e9ffbcb7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333125",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5421",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003438",
+          "type" : "CLASS",
+          "lbl" : "combined small cell lung carcinoma"
+        },
+        {
+          "id" : "NCIT:C9137",
+          "type" : "CLASS",
+          "lbl" : "Combined Lung Small Cell Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003438",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9137",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5421",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003438",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333125",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003438",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003438",
+            "NCIT:C9137",
+            "UMLS:C1333125",
+            "DOID:5421"
+          ]
+        }
+      ]
+    }
+  ]
+}

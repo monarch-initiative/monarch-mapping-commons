@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:446848640987cff06e63d9adbf19377a3ae6420bfe43942e0568127c789e33ed",
+      "nodes" : [
+        {
+          "id" : "MESH:C564170",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1840425",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007760",
+          "type" : "CLASS",
+          "lbl" : "hyperlipoproteinemia, type II, and deafness"
+        },
+        {
+          "id" : "OMIM:144300",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564170",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007760",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007760",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:144300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1840425",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007760",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007760",
+            "MESH:C564170",
+            "OMIM:144300",
+            "UMLS:C1840425"
+          ]
+        }
+      ]
+    }
+  ]
+}

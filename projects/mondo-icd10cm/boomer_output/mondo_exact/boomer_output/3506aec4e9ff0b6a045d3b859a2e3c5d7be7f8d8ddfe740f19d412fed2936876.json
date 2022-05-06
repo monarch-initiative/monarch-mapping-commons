@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3506aec4e9ff0b6a045d3b859a2e3c5d7be7f8d8ddfe740f19d412fed2936876",
+      "nodes" : [
+        {
+          "id" : "SCTID:717333002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4273914",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019857",
+          "type" : "CLASS",
+          "lbl" : "congenital hypothyroidism due to transplacental passage of maternal TSH-binding inhibitory antibodies"
+        },
+        {
+          "id" : "Orphanet:95715",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4273914",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019857",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019857",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:95715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:717333002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019857",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4273914",
+            "MONDO:0019857",
+            "Orphanet:95715",
+            "SCTID:717333002"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:737f3984878d4e0ef397468e26eea5796796e6b5e17dd8572e09788a81812bcb",
+      "nodes" : [
+        {
+          "id" : "DOID:8805",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D000789",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:I20.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0002965",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006805",
+          "type" : "CLASS",
+          "lbl" : "intermediate coronary syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:I20.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006805",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D000789",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006805",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8805",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006805",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0002965",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006805",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006805",
+            "DOID:8805",
+            "MESH:D000789",
+            "UMLS:C0002965",
+            "ICD10CM:I20.0"
+          ]
+        }
+      ]
+    }
+  ]
+}

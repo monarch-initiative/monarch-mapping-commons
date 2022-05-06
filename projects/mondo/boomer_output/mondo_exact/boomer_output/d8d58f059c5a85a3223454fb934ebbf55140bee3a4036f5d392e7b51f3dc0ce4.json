@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d8d58f059c5a85a3223454fb934ebbf55140bee3a4036f5d392e7b51f3dc0ce4",
+      "nodes" : [
+        {
+          "id" : "MESH:D012555",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:750009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044345",
+          "type" : "CLASS",
+          "lbl" : "Schistosoma mansoni infectious disease"
+        },
+        {
+          "id" : "NCIT:C35002",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:750009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044345",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D012555",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044345",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044345",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35002",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0044345",
+            "SCTID:750009",
+            "MESH:D012555",
+            "NCIT:C35002"
+          ]
+        }
+      ]
+    }
+  ]
+}

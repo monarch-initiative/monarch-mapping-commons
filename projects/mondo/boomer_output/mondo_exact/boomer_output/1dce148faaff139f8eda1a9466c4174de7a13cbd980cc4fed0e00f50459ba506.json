@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1dce148faaff139f8eda1a9466c4174de7a13cbd980cc4fed0e00f50459ba506",
+      "nodes" : [
+        {
+          "id" : "SCTID:92404006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0345678",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021477",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of sphenoidal sinus"
+        },
+        {
+          "id" : "NCIT:C4422",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021477",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4422",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0345678",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021477",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92404006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021477",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021477",
+            "NCIT:C4422",
+            "UMLS:C0345678",
+            "SCTID:92404006"
+          ]
+        }
+      ]
+    }
+  ]
+}

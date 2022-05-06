@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3cd7c616a7d2016977f25291bc0ebc4c2280364c8e4a3cf01af6a2bb7106d3a8",
+      "nodes" : [
+        {
+          "id" : "SCTID:448709005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1333784",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0042493",
+          "type" : "CLASS",
+          "lbl" : "gastric non-hodgkin lymphoma"
+        },
+        {
+          "id" : "NCIT:C27235",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:448709005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0042493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0042493",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27235",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333784",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0042493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:448709005",
+            "MONDO:0042493",
+            "NCIT:C27235",
+            "UMLS:C1333784"
+          ]
+        }
+      ]
+    }
+  ]
+}

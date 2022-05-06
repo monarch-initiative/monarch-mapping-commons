@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:63c1ac3b9d911b53c8f7e344be5daea620a253b3f5fe2072ee25a80e838db93a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332302",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6381",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003868",
+          "type" : "CLASS",
+          "lbl" : "anterior foramen magnum meningioma"
+        },
+        {
+          "id" : "NCIT:C5281",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6381",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003868",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332302",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003868",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003868",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5281",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6381",
+            "MONDO:0003868",
+            "UMLS:C1332302",
+            "NCIT:C5281"
+          ]
+        }
+      ]
+    }
+  ]
+}

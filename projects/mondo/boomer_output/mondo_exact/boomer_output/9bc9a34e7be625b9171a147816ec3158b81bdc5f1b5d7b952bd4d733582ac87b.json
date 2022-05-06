@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9bc9a34e7be625b9171a147816ec3158b81bdc5f1b5d7b952bd4d733582ac87b",
+      "nodes" : [
+        {
+          "id" : "MONDO:0016317",
+          "type" : "CLASS",
+          "lbl" : "limbic encephalitis with NMDA receptor antibodies"
+        },
+        {
+          "id" : "UMLS:C4274344",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:217253",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN201135",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:716684004",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016317",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:217253",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:716684004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016317",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4274344",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016317",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016317",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN201135",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:217253",
+            "MONDO:0016317",
+            "UMLS:C4274344",
+            "SCTID:716684004"
+          ]
+        }
+      ]
+    }
+  ]
+}

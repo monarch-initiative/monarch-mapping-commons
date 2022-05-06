@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a3422b81594884d852079ad2164b218ad72aeccf848b141b9c5a6b1224b643ed",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202209",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016864",
+          "type" : "CLASS",
+          "lbl" : "Okihiro syndrome due to a point mutation"
+        },
+        {
+          "id" : "Orphanet:261647",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016864",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:261647",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202209",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016864",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016864",
+            "Orphanet:261647",
+            "UMLS:CN202209"
+          ]
+        }
+      ]
+    }
+  ]
+}

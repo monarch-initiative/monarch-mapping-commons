@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:93a4e4713667fa000159bd0cb20d271b370ad34ef73cd6af625c6ed761f8e36b",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN242075",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018738",
+          "type" : "CLASS",
+          "lbl" : "benign metanephric tumour"
+        },
+        {
+          "id" : "Orphanet:464359",
+          "type" : "CLASS",
+          "lbl" : "Benign metanephric tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN242075",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018738",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018738",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:464359",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN242075",
+            "MONDO:0018738",
+            "Orphanet:464359"
+          ]
+        }
+      ]
+    }
+  ]
+}

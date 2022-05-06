@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f4e2a4dd080334099355311294728a9fec9a41da2d542e37b70cd82689a633e7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1516405",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8177",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004486",
+          "type" : "CLASS",
+          "lbl" : "endocervical type cervical adenomyoma"
+        },
+        {
+          "id" : "NCIT:C40232",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004486",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40232",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8177",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004486",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1516405",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004486",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C40232",
+            "MONDO:0004486",
+            "DOID:8177",
+            "UMLS:C1516405"
+          ]
+        }
+      ]
+    }
+  ]
+}

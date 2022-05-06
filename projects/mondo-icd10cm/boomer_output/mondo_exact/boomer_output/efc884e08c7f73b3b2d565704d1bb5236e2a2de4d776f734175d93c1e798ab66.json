@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:efc884e08c7f73b3b2d565704d1bb5236e2a2de4d776f734175d93c1e798ab66",
+      "nodes" : [
+        {
+          "id" : "MESH:D009383",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:175",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002095",
+          "type" : "CLASS",
+          "lbl" : "vascular cancer"
+        },
+        {
+          "id" : "NCIT:C8538",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:175",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002095",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D009383",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002095",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002095",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8538",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002095",
+            "DOID:175",
+            "MESH:D009383",
+            "NCIT:C8538"
+          ]
+        }
+      ]
+    }
+  ]
+}

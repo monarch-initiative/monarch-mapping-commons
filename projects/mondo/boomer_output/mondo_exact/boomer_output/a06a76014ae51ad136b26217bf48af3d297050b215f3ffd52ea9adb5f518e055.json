@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a06a76014ae51ad136b26217bf48af3d297050b215f3ffd52ea9adb5f518e055",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0349626",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016747",
+          "type" : "CLASS",
+          "lbl" : "primary melanoma of the central nervous system"
+        },
+        {
+          "id" : "Orphanet:252050",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN201994",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C5505",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016747",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN201994",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016747",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5505",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0349626",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016747",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016747",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:252050",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C5505",
+            "MONDO:0016747",
+            "UMLS:C0349626",
+            "Orphanet:252050"
+          ]
+        }
+      ]
+    }
+  ]
+}

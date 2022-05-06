@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3a972dc6440b6f3ce025608e55af2e7e18a7c1cac633ab333c0b07d95c02df68",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310618",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015021",
+          "type" : "CLASS",
+          "lbl" : "hypotonia, ataxia, and delayed development syndrome"
+        },
+        {
+          "id" : "OMIM:617330",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4310618",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015021",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015021",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617330",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4310618",
+            "MONDO:0015021",
+            "OMIM:617330"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3626878c96ab2c292dcc984a3cdbd6fa5269f1db2b3ec82b784cccfbc08fe7a2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0795836",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016892",
+          "type" : "CLASS",
+          "lbl" : "partial deletion of the short arm of chromosome 10"
+        },
+        {
+          "id" : "Orphanet:261938",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016892",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:261938",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0795836",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016892",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016892",
+            "Orphanet:261938",
+            "UMLS:C0795836"
+          ]
+        }
+      ]
+    }
+  ]
+}

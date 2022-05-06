@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9af5f78d39fd75af97f46c3fca150781bbef160348eeabc7c26c0c4df9e36fea",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1859101",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4153",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002894",
+          "type" : "CLASS",
+          "lbl" : "spinal chordoma"
+        },
+        {
+          "id" : "NCIT:C5156",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002894",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5156",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1859101",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002894",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4153",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002894",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C5156",
+            "MONDO:0002894",
+            "UMLS:C1859101",
+            "DOID:4153"
+          ]
+        }
+      ]
+    }
+  ]
+}

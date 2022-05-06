@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5a30f843d8eb38d45662831eef0c2044184650e295b6cf101476027f5233fd3c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0240164",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10071",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000935",
+          "type" : "CLASS",
+          "lbl" : "larynx squamous papilloma"
+        },
+        {
+          "id" : "NCIT:C7742",
+          "type" : "CLASS",
+          "lbl" : "Laryngeal Squamous Cell Papilloma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000935",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7742",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0240164",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000935",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10071",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000935",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C7742",
+            "MONDO:0000935",
+            "UMLS:C0240164",
+            "DOID:10071"
+          ]
+        }
+      ]
+    }
+  ]
+}

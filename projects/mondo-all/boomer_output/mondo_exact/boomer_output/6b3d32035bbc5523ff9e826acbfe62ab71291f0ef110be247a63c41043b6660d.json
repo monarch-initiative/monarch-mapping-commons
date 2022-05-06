@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6b3d32035bbc5523ff9e826acbfe62ab71291f0ef110be247a63c41043b6660d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334372",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5696",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003588",
+          "type" : "CLASS",
+          "lbl" : "larynx liposarcoma"
+        },
+        {
+          "id" : "NCIT:C6021",
+          "type" : "CLASS",
+          "lbl" : "Laryngeal Liposarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334372",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003588",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003588",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6021",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5696",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003588",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003588",
+            "UMLS:C1334372",
+            "NCIT:C6021",
+            "DOID:5696"
+          ]
+        }
+      ]
+    }
+  ]
+}

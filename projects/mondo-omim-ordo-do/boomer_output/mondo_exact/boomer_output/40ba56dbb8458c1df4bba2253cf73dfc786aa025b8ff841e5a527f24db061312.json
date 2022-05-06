@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:40ba56dbb8458c1df4bba2253cf73dfc786aa025b8ff841e5a527f24db061312",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479491",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0054573",
+          "type" : "CLASS",
+          "lbl" : "Lopes-Maciel-Rodan syndrome"
+        },
+        {
+          "id" : "OMIM:617435",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0054573",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617435",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4479491",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0054573",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:617435",
+            "MONDO:0054573",
+            "UMLS:C4479491"
+          ]
+        }
+      ]
+    }
+  ]
+}

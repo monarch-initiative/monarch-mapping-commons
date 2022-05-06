@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9564f5da47fcf120a411682b8cd0023ef79fd9272041148bbd7f4be5af98fef9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1842446",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011980",
+          "type" : "CLASS",
+          "lbl" : "autoimmune thyroid disease, susceptibility to, 1"
+        },
+        {
+          "id" : "OMIM:608173",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011980",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608173",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1842446",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011980",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011980",
+            "OMIM:608173",
+            "UMLS:C1842446"
+          ]
+        }
+      ]
+    }
+  ]
+}

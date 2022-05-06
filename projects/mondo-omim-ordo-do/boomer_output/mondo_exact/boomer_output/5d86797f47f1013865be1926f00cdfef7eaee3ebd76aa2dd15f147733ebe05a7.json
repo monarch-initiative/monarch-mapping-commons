@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5d86797f47f1013865be1926f00cdfef7eaee3ebd76aa2dd15f147733ebe05a7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150706",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013271",
+          "type" : "CLASS",
+          "lbl" : "frontonasal dysplasia - severe microphthalmia - severe facial clefting syndrome"
+        },
+        {
+          "id" : "Orphanet:306542",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:613456",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013271",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013271",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:306542",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3150706",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013271",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:613456",
+            "MONDO:0013271",
+            "Orphanet:306542",
+            "UMLS:C3150706"
+          ]
+        }
+      ]
+    }
+  ]
+}

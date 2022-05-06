@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d0556a0ef8eceb1cb06b39112dbf246dbececb45c3921f4da499af9799af5d74",
+      "nodes" : [
+        {
+          "id" : "SCTID:128139000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1290884",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021166",
+          "type" : "CLASS",
+          "lbl" : "inflammatory disease"
+        },
+        {
+          "id" : "NCIT:C93210",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1290884",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021166",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021166",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C93210",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:128139000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021166",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021166",
+            "UMLS:C1290884",
+            "NCIT:C93210",
+            "SCTID:128139000"
+          ]
+        }
+      ]
+    }
+  ]
+}

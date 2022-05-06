@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7da9dd3f9e9299b2d7adf210d46c5f778c2c8728e50cf2208609f1fa0665d30b",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203393",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017587",
+          "type" : "CLASS",
+          "lbl" : "onychomatricoma"
+        },
+        {
+          "id" : "Orphanet:300512",
+          "type" : "CLASS",
+          "lbl" : "Onychomatricoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017587",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:300512",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203393",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017587",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017587",
+            "Orphanet:300512",
+            "UMLS:CN203393"
+          ]
+        }
+      ]
+    }
+  ]
+}

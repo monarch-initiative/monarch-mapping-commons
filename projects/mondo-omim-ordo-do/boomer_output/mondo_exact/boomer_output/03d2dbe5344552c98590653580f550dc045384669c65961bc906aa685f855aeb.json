@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:03d2dbe5344552c98590653580f550dc045384669c65961bc906aa685f855aeb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333069",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8137",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004475",
+          "type" : "CLASS",
+          "lbl" : "thymus clear cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C6462",
+          "type" : "CLASS",
+          "lbl" : "Thymic Clear Cell Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004475",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6462",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333069",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004475",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8137",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004475",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6462",
+            "MONDO:0004475",
+            "UMLS:C1333069",
+            "DOID:8137"
+          ]
+        }
+      ]
+    }
+  ]
+}

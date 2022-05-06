@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3821a14bf3a38bddaaa755960a3769e8ff01488cf49d46e6ea493f30ddd3d19d",
+      "nodes" : [
+        {
+          "id" : "MESH:C564863",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1849566",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009932",
+          "type" : "CLASS",
+          "lbl" : "pulmonary bullae causing pneumothorax"
+        },
+        {
+          "id" : "OMIM:265200",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009932",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:265200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564863",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009932",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1849566",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009932",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:265200",
+            "MONDO:0009932",
+            "MESH:C564863",
+            "UMLS:C1849566"
+          ]
+        }
+      ]
+    }
+  ]
+}

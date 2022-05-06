@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6ffe35779bbb8b56c70da1084f9a94176b70ed32dc5673188e1e7f8c4054841e",
+      "nodes" : [
+        {
+          "id" : "SCTID:58557008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN202421",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017062",
+          "type" : "CLASS",
+          "lbl" : "spina bifida aperta"
+        },
+        {
+          "id" : "Orphanet:268369",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202421",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017062",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:58557008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017062",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017062",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:268369",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017062",
+            "UMLS:CN202421",
+            "SCTID:58557008",
+            "Orphanet:268369"
+          ]
+        }
+      ]
+    }
+  ]
+}

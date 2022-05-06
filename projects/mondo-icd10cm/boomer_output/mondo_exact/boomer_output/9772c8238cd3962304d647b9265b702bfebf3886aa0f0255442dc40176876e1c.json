@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9772c8238cd3962304d647b9265b702bfebf3886aa0f0255442dc40176876e1c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN232319",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060774",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000824",
+          "type" : "CLASS",
+          "lbl" : "congenital diarrhea"
+        },
+        {
+          "id" : "OMIMPS:214700",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000824",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:214700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060774",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000824",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN232319",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000824",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIMPS:214700",
+            "MONDO:0000824",
+            "DOID:0060774",
+            "UMLS:CN232319"
+          ]
+        }
+      ]
+    }
+  ]
+}

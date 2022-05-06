@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a6546caab35e93a51b027d3044e18d601af632ff55a96049f888fd6a5f8f5ab4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225359",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014596",
+          "type" : "CLASS",
+          "lbl" : "lissencephaly 7 with cerebellar hypoplasia"
+        },
+        {
+          "id" : "OMIM:616342",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4225359",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014596",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014596",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616342",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4225359",
+            "MONDO:0014596",
+            "OMIM:616342"
+          ]
+        }
+      ]
+    }
+  ]
+}

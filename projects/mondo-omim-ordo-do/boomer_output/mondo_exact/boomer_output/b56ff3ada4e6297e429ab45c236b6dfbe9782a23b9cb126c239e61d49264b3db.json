@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b56ff3ada4e6297e429ab45c236b6dfbe9782a23b9cb126c239e61d49264b3db",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479410",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080197",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024607",
+          "type" : "CLASS",
+          "lbl" : "congenital muscular dystrophy with cataracts and intellectual disability"
+        },
+        {
+          "id" : "OMIM:617404",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080197",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024607",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0024607",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617404",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4479410",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024607",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0080197",
+            "MONDO:0024607",
+            "OMIM:617404",
+            "UMLS:C4479410"
+          ]
+        }
+      ]
+    }
+  ]
+}

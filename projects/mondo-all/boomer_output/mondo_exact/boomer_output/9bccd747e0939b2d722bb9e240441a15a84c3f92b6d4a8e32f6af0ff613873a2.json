@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9bccd747e0939b2d722bb9e240441a15a84c3f92b6d4a8e32f6af0ff613873a2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310684",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014951",
+          "type" : "CLASS",
+          "lbl" : "Sotos syndrome 3"
+        },
+        {
+          "id" : "OMIM:617169",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014951",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617169",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310684",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014951",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014951",
+            "OMIM:617169",
+            "UMLS:C4310684"
+          ]
+        }
+      ]
+    }
+  ]
+}

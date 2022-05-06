@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b983e71c3a1ad564f4b25961f11741fa27f67e8ac16c5cabb56a637daf85b824",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334254",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5660",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003572",
+          "type" : "CLASS",
+          "lbl" : "nasopharyngeal type undifferentiated carcinoma"
+        },
+        {
+          "id" : "NCIT:C4107",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0334254",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003572",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5660",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003572",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003572",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4107",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003572",
+            "UMLS:C0334254",
+            "DOID:5660",
+            "NCIT:C4107"
+          ]
+        }
+      ]
+    }
+  ]
+}

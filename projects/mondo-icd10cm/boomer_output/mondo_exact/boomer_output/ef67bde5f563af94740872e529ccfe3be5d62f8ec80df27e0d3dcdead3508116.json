@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ef67bde5f563af94740872e529ccfe3be5d62f8ec80df27e0d3dcdead3508116",
+      "nodes" : [
+        {
+          "id" : "MESH:D015490",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0020097",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005801",
+          "type" : "CLASS",
+          "lbl" : "human T-lymphotropic virus 1 infectious disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0020097",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005801",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D015490",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005801",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005801",
+            "UMLS:C0020097",
+            "MESH:D015490"
+          ]
+        }
+      ]
+    }
+  ]
+}

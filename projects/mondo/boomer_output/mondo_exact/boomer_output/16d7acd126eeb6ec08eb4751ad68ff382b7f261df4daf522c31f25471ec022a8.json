@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:16d7acd126eeb6ec08eb4751ad68ff382b7f261df4daf522c31f25471ec022a8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0677936",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0036501",
+          "type" : "CLASS",
+          "lbl" : "refractory malignant neoplasm"
+        },
+        {
+          "id" : "NCIT:C120186",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0677936",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0036501",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0036501",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C120186",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0677936",
+            "MONDO:0036501",
+            "NCIT:C120186"
+          ]
+        }
+      ]
+    }
+  ]
+}

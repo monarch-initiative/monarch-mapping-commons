@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:80035f86cb9f6a0363b9387c78b5340bfdd9ce070803b883e2e06b2c08cd4df8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334768",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006304",
+          "type" : "CLASS",
+          "lbl" : "minor salivary gland adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C5948",
+          "type" : "CLASS",
+          "lbl" : "Minor Salivary Gland Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006304",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5948",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334768",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006304",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006304",
+            "NCIT:C5948",
+            "UMLS:C1334768"
+          ]
+        }
+      ]
+    }
+  ]
+}

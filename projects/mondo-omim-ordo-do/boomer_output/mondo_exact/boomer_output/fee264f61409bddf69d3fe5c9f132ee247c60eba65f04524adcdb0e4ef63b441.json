@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fee264f61409bddf69d3fe5c9f132ee247c60eba65f04524adcdb0e4ef63b441",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4540192",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060578",
+          "type" : "CLASS",
+          "lbl" : "neurodevelopmental disorder, mitochondrial, with abnormal movements and lactic acidosis, with or without seizures"
+        },
+        {
+          "id" : "Orphanet:572798",
+          "type" : "CLASS",
+          "lbl" : "WARS2-related combined oxidative phosphorylation defect"
+        },
+        {
+          "id" : "OMIM:617710",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0060578",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617710",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060578",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:572798",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4540192",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060578",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:617710",
+            "MONDO:0060578",
+            "Orphanet:572798",
+            "UMLS:C4540192"
+          ]
+        }
+      ]
+    }
+  ]
+}

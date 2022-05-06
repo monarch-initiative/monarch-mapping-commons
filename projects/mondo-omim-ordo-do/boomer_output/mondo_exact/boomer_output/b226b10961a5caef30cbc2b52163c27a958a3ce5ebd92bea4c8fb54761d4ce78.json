@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b226b10961a5caef30cbc2b52163c27a958a3ce5ebd92bea4c8fb54761d4ce78",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3896969",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5631",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003556",
+          "type" : "CLASS",
+          "lbl" : "endometrial adenosquamous carcinoma"
+        },
+        {
+          "id" : "NCIT:C114656",
+          "type" : "CLASS",
+          "lbl" : "Endometrial Adenosquamous Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5631",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003556",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003556",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C114656",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3896969",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003556",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5631",
+            "MONDO:0003556",
+            "NCIT:C114656",
+            "UMLS:C3896969"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e50525819a0fb9295b178fb7e3e420c76d53e5f5cd2236334ddad54a6cbbd91a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3151443",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070016",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013521",
+          "type" : "CLASS",
+          "lbl" : "dyskeratosis congenita, autosomal dominant 2"
+        },
+        {
+          "id" : "OMIM:613989",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0070016",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013521",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3151443",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013521",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013521",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0070016",
+            "MONDO:0013521",
+            "UMLS:C3151443",
+            "OMIM:613989"
+          ]
+        }
+      ]
+    }
+  ]
+}

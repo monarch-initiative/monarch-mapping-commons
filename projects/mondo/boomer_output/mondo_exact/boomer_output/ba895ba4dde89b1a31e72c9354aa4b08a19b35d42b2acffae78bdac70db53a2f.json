@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ba895ba4dde89b1a31e72c9354aa4b08a19b35d42b2acffae78bdac70db53a2f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333123",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006167",
+          "type" : "CLASS",
+          "lbl" : "combined lung carcinoma"
+        },
+        {
+          "id" : "NCIT:C7591",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006167",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7591",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333123",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006167",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006167",
+            "NCIT:C7591",
+            "UMLS:C1333123"
+          ]
+        }
+      ]
+    }
+  ]
+}

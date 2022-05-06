@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3a51bc01e7cbd048812edd8ff0a534125a5a288e84e2ff0e122e4e9e04d2f789",
+      "nodes" : [
+        {
+          "id" : "SCTID:718192000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4273674",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019990",
+          "type" : "CLASS",
+          "lbl" : "non-amyloid fibrillary glomerulopathy"
+        },
+        {
+          "id" : "Orphanet:97566",
+          "type" : "CLASS",
+          "lbl" : "Non-amyloid fibrillary glomerulopathy"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4273674",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019990",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019990",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:97566",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:718192000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019990",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019990",
+            "UMLS:C4273674",
+            "Orphanet:97566",
+            "SCTID:718192000"
+          ]
+        }
+      ]
+    }
+  ]
+}

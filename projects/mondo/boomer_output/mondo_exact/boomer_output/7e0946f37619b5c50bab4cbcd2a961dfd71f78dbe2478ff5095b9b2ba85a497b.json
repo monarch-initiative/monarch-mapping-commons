@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7e0946f37619b5c50bab4cbcd2a961dfd71f78dbe2478ff5095b9b2ba85a497b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1321547",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017597",
+          "type" : "CLASS",
+          "lbl" : "T-cell/histiocyte rich large B cell lymphoma"
+        },
+        {
+          "id" : "NCIT:C9496",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:300857",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1321547",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017597",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017597",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:300857",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017597",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9496",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017597",
+            "UMLS:C1321547",
+            "Orphanet:300857",
+            "NCIT:C9496"
+          ]
+        }
+      ]
+    }
+  ]
+}

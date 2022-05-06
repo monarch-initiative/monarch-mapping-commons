@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a2ad3267c2c3ce5e51b5564c63c0659f7835e06f1f9c3a6736cc21a132140228",
+      "nodes" : [
+        {
+          "id" : "MESH:C565629",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009103",
+          "type" : "CLASS",
+          "lbl" : "diaphragmatic hernia 2"
+        },
+        {
+          "id" : "OMIM:222400",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565629",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009103",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009103",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:222400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C565629",
+            "MONDO:0009103",
+            "OMIM:222400"
+          ]
+        }
+      ]
+    }
+  ]
+}

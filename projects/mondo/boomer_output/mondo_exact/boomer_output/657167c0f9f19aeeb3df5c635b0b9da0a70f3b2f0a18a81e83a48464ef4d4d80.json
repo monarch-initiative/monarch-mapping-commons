@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:657167c0f9f19aeeb3df5c635b0b9da0a70f3b2f0a18a81e83a48464ef4d4d80",
+      "nodes" : [
+        {
+          "id" : "MESH:D008630",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:85180002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018020",
+          "type" : "CLASS",
+          "lbl" : "mercury poisoning"
+        },
+        {
+          "id" : "Orphanet:330021",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:85180002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018020",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D008630",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018020",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018020",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:330021",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018020",
+            "SCTID:85180002",
+            "MESH:D008630",
+            "Orphanet:330021"
+          ]
+        }
+      ]
+    }
+  ]
+}

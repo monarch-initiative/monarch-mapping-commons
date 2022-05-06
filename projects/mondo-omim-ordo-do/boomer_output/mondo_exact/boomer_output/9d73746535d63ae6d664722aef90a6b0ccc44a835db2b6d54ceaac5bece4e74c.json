@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9d73746535d63ae6d664722aef90a6b0ccc44a835db2b6d54ceaac5bece4e74c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1511063",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7046",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004088",
+          "type" : "CLASS",
+          "lbl" : "cervical basaloid carcinoma"
+        },
+        {
+          "id" : "NCIT:C40189",
+          "type" : "CLASS",
+          "lbl" : "Cervical Basaloid Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004088",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40189",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1511063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004088",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7046",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004088",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C40189",
+            "MONDO:0004088",
+            "UMLS:C1511063",
+            "DOID:7046"
+          ]
+        }
+      ]
+    }
+  ]
+}

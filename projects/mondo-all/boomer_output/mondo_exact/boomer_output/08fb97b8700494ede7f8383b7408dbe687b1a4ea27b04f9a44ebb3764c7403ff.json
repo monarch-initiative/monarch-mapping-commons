@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:08fb97b8700494ede7f8383b7408dbe687b1a4ea27b04f9a44ebb3764c7403ff",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333417",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3809",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002778",
+          "type" : "CLASS",
+          "lbl" : "epidural spinal canal meningioma"
+        },
+        {
+          "id" : "NCIT:C5310",
+          "type" : "CLASS",
+          "lbl" : "Epidural Spinal Canal Meningioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333417",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002778",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002778",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5310",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3809",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002778",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002778",
+            "UMLS:C1333417",
+            "NCIT:C5310",
+            "DOID:3809"
+          ]
+        }
+      ]
+    }
+  ]
+}

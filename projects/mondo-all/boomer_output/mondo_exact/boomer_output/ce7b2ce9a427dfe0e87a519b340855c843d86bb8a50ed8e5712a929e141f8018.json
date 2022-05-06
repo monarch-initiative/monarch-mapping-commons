@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ce7b2ce9a427dfe0e87a519b340855c843d86bb8a50ed8e5712a929e141f8018",
+      "nodes" : [
+        {
+          "id" : "MESH:C566392",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1864028",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011306",
+          "type" : "CLASS",
+          "lbl" : "muscular dystrophy, congenital, with cerebellar atrophy"
+        },
+        {
+          "id" : "OMIM:603323",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C566392",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011306",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011306",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603323",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1864028",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011306",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C566392",
+            "MONDO:0011306",
+            "OMIM:603323",
+            "UMLS:C1864028"
+          ]
+        }
+      ]
+    }
+  ]
+}

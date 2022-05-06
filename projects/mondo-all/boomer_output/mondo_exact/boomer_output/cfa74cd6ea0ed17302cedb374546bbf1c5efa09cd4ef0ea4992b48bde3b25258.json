@@ -1,0 +1,114 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cfa74cd6ea0ed17302cedb374546bbf1c5efa09cd4ef0ea4992b48bde3b25258",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0030759",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:13760",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:B85.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C35777",
+          "type" : "CLASS",
+          "lbl" : "Pediculosis Pubis"
+        },
+        {
+          "id" : "SCTID:71011005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001794",
+          "type" : "CLASS",
+          "lbl" : "Pthirus pubis infestation"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:B85.3",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001794",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:13760",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001794",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001794",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35777",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0030759",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001794",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:71011005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001794",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:13760",
+            "UMLS:C0030759",
+            "MONDO:0001794",
+            "ICD10CM:B85.3",
+            "SCTID:71011005",
+            "NCIT:C35777"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5c19b959c8314efda3bac9c5f60260e6ab541981a0d09945cb208a0534c77c47",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280346",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013670",
+          "type" : "CLASS",
+          "lbl" : "myopia, high, with cataract and vitreoretinal degeneration"
+        },
+        {
+          "id" : "OMIM:614292",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3280346",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013670",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013670",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614292",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3280346",
+            "MONDO:0013670",
+            "OMIM:614292"
+          ]
+        }
+      ]
+    }
+  ]
+}

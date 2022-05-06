@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:71653970ff000586935456935a8f44e67a259480ae8fa0d86238f87745465bcd",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206718",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019777",
+          "type" : "CLASS",
+          "lbl" : "Carpenter-Waziri syndrome"
+        },
+        {
+          "id" : "Orphanet:93973",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019777",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93973",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN206718",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019777",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019777",
+            "Orphanet:93973",
+            "UMLS:CN206718"
+          ]
+        }
+      ]
+    }
+  ]
+}

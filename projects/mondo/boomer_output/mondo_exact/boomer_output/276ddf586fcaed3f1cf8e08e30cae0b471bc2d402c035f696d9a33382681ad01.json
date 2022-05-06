@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:276ddf586fcaed3f1cf8e08e30cae0b471bc2d402c035f696d9a33382681ad01",
+      "nodes" : [
+        {
+          "id" : "MESH:C536513",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2931224",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0043143",
+          "type" : "CLASS",
+          "lbl" : "microphthalmia microtia fetal akinesia"
+        },
+        {
+          "id" : "Orphanet:2547",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0043143",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2547",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536513",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043143",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2931224",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043143",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0043143",
+            "Orphanet:2547",
+            "MESH:C536513",
+            "UMLS:C2931224"
+          ]
+        }
+      ]
+    }
+  ]
+}

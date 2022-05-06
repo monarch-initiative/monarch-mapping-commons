@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1d9c5035ddc781f3a2563db57d6a40d19f234dcf39ff8273645716008c85055d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227805",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020165",
+          "type" : "CLASS",
+          "lbl" : "syndromic epicanthus"
+        },
+        {
+          "id" : "Orphanet:98574",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020165",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98574",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227805",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020165",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020165",
+            "UMLS:CN227805",
+            "Orphanet:98574"
+          ]
+        }
+      ]
+    }
+  ]
+}

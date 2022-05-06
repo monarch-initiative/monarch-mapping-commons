@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f0aaab314f5e4043970d216f2e423510f91fc061a27dc7cb2eb1db585efcad29",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202572",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017146",
+          "type" : "CLASS",
+          "lbl" : "sickle cell disease and related diseases"
+        },
+        {
+          "id" : "Orphanet:275752",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202572",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017146",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017146",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:275752",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017146",
+            "UMLS:CN202572",
+            "Orphanet:275752"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:844a11004556d1e5bce67fd3e0c2d712b1e453ee9c7be766dc6c6f6575a3c987",
+      "nodes" : [
+        {
+          "id" : "MESH:C564947",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1850385",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009750",
+          "type" : "CLASS",
+          "lbl" : "neuropathy, hereditary motor and sensory, with excessive myelin folding complex, autosomal recessive"
+        },
+        {
+          "id" : "OMIM:256855",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009750",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:256855",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564947",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009750",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1850385",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009750",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009750",
+            "OMIM:256855",
+            "MESH:C564947",
+            "UMLS:C1850385"
+          ]
+        }
+      ]
+    }
+  ]
+}

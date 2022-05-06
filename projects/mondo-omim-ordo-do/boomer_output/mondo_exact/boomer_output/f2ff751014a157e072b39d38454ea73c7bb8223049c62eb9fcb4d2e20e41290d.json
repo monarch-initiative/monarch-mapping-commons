@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f2ff751014a157e072b39d38454ea73c7bb8223049c62eb9fcb4d2e20e41290d",
+      "nodes" : [
+        {
+          "id" : "SCTID:92115005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0345674",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021483",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of frontal sinus"
+        },
+        {
+          "id" : "NCIT:C4420",
+          "type" : "CLASS",
+          "lbl" : "Benign Frontal Sinus Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0345674",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021483",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021483",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4420",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92115005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021483",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021483",
+            "UMLS:C0345674",
+            "NCIT:C4420",
+            "SCTID:92115005"
+          ]
+        }
+      ]
+    }
+  ]
+}

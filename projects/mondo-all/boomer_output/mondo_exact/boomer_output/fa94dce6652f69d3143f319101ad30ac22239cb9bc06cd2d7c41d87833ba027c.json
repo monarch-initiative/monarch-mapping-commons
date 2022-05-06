@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fa94dce6652f69d3143f319101ad30ac22239cb9bc06cd2d7c41d87833ba027c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518720",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2150",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002227",
+          "type" : "CLASS",
+          "lbl" : "ovarian lymphoma"
+        },
+        {
+          "id" : "NCIT:C40021",
+          "type" : "CLASS",
+          "lbl" : "Ovarian Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1518720",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002227",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002227",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40021",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2150",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002227",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1518720",
+            "MONDO:0002227",
+            "NCIT:C40021",
+            "DOID:2150"
+          ]
+        }
+      ]
+    }
+  ]
+}

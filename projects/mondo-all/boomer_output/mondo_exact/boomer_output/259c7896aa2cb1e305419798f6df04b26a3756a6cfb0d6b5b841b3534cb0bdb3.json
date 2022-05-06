@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:259c7896aa2cb1e305419798f6df04b26a3756a6cfb0d6b5b841b3534cb0bdb3",
+      "nodes" : [
+        {
+          "id" : "MONDO:0003266",
+          "type" : "CLASS",
+          "lbl" : "ependymal tumor"
+        },
+        {
+          "id" : "NCIT:C6770",
+          "type" : "CLASS",
+          "lbl" : "Ependymal Tumor"
+        },
+        {
+          "id" : "UMLS:C1333407",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:301",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN203416",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333407",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003266",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003266",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:301",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003266",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN203416",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003266",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6770",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333407",
+            "MONDO:0003266",
+            "Orphanet:301",
+            "NCIT:C6770"
+          ]
+        }
+      ]
+    }
+  ]
+}

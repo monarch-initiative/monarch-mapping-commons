@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5b186308e53f3b17c99dc2dd65a371ad2a1e44b48a2abc038d4c83ac8c1e0ceb",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN197361",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015068",
+          "type" : "CLASS",
+          "lbl" : "neuroendocrine tumor of rectum, well differentiated, low or intermediate grade"
+        },
+        {
+          "id" : "NCIT:C135213",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN197361",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015068",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015068",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C135213",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN197361",
+            "MONDO:0015068",
+            "NCIT:C135213"
+          ]
+        }
+      ]
+    }
+  ]
+}

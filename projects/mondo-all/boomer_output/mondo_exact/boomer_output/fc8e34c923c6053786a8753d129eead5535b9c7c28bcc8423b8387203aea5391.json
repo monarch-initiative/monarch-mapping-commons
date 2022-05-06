@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fc8e34c923c6053786a8753d129eead5535b9c7c28bcc8423b8387203aea5391",
+      "nodes" : [
+        {
+          "id" : "MESH:C565955",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859805",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008782",
+          "type" : "CLASS",
+          "lbl" : "amyotrophic lateral sclerosis with polyglucosan bodies"
+        },
+        {
+          "id" : "OMIM:205250",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008782",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:205250",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565955",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008782",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1859805",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008782",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008782",
+            "OMIM:205250",
+            "MESH:C565955",
+            "UMLS:C1859805"
+          ]
+        }
+      ]
+    }
+  ]
+}

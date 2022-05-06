@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dd436520c11aea5575132f633c02f4e6850f7a1cedd81f530c17756aa816a3e5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3715051",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014128",
+          "type" : "CLASS",
+          "lbl" : "TCF12-related craniosynostosis"
+        },
+        {
+          "id" : "OMIM:615314",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014128",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615314",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3715051",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014128",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:615314",
+            "MONDO:0014128",
+            "UMLS:C3715051"
+          ]
+        }
+      ]
+    }
+  ]
+}

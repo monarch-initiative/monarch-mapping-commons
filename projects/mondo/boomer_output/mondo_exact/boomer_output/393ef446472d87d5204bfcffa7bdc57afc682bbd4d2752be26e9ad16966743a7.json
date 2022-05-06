@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:393ef446472d87d5204bfcffa7bdc57afc682bbd4d2752be26e9ad16966743a7",
+      "nodes" : [
+        {
+          "id" : "MESH:C567351",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2676742",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012861",
+          "type" : "CLASS",
+          "lbl" : "premature ovarian failure 6"
+        },
+        {
+          "id" : "OMIM:612310",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C567351",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012861",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012861",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:612310",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2676742",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012861",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C567351",
+            "MONDO:0012861",
+            "OMIM:612310",
+            "UMLS:C2676742"
+          ]
+        }
+      ]
+    }
+  ]
+}

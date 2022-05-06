@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c8c6705efb2fbb2cc7cfcfbae087e476e053c957ce72bad986b428c1e39ec37b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0855011",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5862",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003682",
+          "type" : "CLASS",
+          "lbl" : "localized chondrosarcoma"
+        },
+        {
+          "id" : "NCIT:C8778",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0855011",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003682",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003682",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8778",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5862",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003682",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003682",
+            "UMLS:C0855011",
+            "NCIT:C8778",
+            "DOID:5862"
+          ]
+        }
+      ]
+    }
+  ]
+}

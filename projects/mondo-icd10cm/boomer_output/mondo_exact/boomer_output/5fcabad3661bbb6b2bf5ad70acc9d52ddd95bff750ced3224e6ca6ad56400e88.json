@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5fcabad3661bbb6b2bf5ad70acc9d52ddd95bff750ced3224e6ca6ad56400e88",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334371",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5288",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003374",
+          "type" : "CLASS",
+          "lbl" : "laryngeal leiomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C6022",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003374",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6022",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5288",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003374",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334371",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003374",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003374",
+            "NCIT:C6022",
+            "DOID:5288",
+            "UMLS:C1334371"
+          ]
+        }
+      ]
+    }
+  ]
+}

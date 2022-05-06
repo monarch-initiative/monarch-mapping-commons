@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3230992ad88208cbee8cdd784828052dd22046b78a3e897df066d8cc17cabe65",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310811",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010515",
+          "type" : "CLASS",
+          "lbl" : "Meester-Loeys syndrome"
+        },
+        {
+          "id" : "OMIM:300989",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010515",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310811",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010515",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:300989",
+            "MONDO:0010515",
+            "UMLS:C4310811"
+          ]
+        }
+      ]
+    }
+  ]
+}

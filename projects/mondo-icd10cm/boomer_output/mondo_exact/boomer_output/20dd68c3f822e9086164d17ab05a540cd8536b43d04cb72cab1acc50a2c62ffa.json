@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:20dd68c3f822e9086164d17ab05a540cd8536b43d04cb72cab1acc50a2c62ffa",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0877611",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4413",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002988",
+          "type" : "CLASS",
+          "lbl" : "cervix melanoma"
+        },
+        {
+          "id" : "NCIT:C40239",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4413",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002988",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002988",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40239",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0877611",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002988",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:4413",
+            "MONDO:0002988",
+            "NCIT:C40239",
+            "UMLS:C0877611"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:94f469c7cf3301cfc6b23e9fecae3cf78793f4654e28c16dc01fb6ed26b1428e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479588",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044721",
+          "type" : "CLASS",
+          "lbl" : "severe combined immunodeficiency due to LAT deficiency"
+        },
+        {
+          "id" : "Orphanet:504523",
+          "type" : "CLASS",
+          "lbl" : "Severe combined immunodeficiency due to LAT deficiency"
+        },
+        {
+          "id" : "OMIM:617514",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0044721",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:504523",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4479588",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044721",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044721",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617514",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:504523",
+            "MONDO:0044721",
+            "UMLS:C4479588",
+            "OMIM:617514"
+          ]
+        }
+      ]
+    }
+  ]
+}

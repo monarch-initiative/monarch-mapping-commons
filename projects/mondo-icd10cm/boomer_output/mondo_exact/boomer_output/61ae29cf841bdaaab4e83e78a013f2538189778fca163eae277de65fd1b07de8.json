@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:61ae29cf841bdaaab4e83e78a013f2538189778fca163eae277de65fd1b07de8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518361",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6065",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003755",
+          "type" : "CLASS",
+          "lbl" : "urinary tract non-invasive transitional cell neoplasm"
+        },
+        {
+          "id" : "NCIT:C39854",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003755",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39854",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6065",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003755",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518361",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003755",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003755",
+            "NCIT:C39854",
+            "DOID:6065",
+            "UMLS:C1518361"
+          ]
+        }
+      ]
+    }
+  ]
+}

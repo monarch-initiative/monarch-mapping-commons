@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e8d4adb0ea4112e4e34fad41c7b2a9968a167f9885ebd3d7444bf7c3c85c5e93",
+      "nodes" : [
+        {
+          "id" : "SCTID:722004001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020048",
+          "type" : "CLASS",
+          "lbl" : "internal carotid agenesis"
+        },
+        {
+          "id" : "Orphanet:981",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020048",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:981",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:722004001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020048",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020048",
+            "Orphanet:981",
+            "SCTID:722004001"
+          ]
+        }
+      ]
+    }
+  ]
+}

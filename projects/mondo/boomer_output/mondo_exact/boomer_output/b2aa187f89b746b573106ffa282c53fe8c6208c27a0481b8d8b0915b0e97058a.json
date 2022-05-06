@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b2aa187f89b746b573106ffa282c53fe8c6208c27a0481b8d8b0915b0e97058a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1839028",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:2596",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C564026",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010773",
+          "type" : "CLASS",
+          "lbl" : "myopathy and diabetes mellitus"
+        },
+        {
+          "id" : "OMIM:500002",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564026",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010773",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1839028",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010773",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010773",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2596",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010773",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:500002",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:500002",
+            "MESH:C564026",
+            "Orphanet:2596",
+            "UMLS:C1839028",
+            "MONDO:0010773"
+          ]
+        }
+      ]
+    }
+  ]
+}

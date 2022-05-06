@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:47e62e7ac43220431833a6399d4649276c7951c2183acfd894d80f72e778ab1c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553622",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013879",
+          "type" : "CLASS",
+          "lbl" : "pulmonary fibrosis and/or bone marrow failure, Telomere-related, 2"
+        },
+        {
+          "id" : "OMIM:614743",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3553622",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013879",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013879",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614743",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3553622",
+            "MONDO:0013879",
+            "OMIM:614743"
+          ]
+        }
+      ]
+    }
+  ]
+}

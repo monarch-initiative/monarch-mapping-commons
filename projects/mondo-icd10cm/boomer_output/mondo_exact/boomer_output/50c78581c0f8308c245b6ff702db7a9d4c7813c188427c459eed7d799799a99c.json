@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:50c78581c0f8308c245b6ff702db7a9d4c7813c188427c459eed7d799799a99c",
+      "nodes" : [
+        {
+          "id" : "MESH:C537963",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010541",
+          "type" : "CLASS",
+          "lbl" : "X-linked calvarial hyperostosis"
+        },
+        {
+          "id" : "Orphanet:391327",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:302030",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010541",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:391327",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537963",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010541",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010541",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:302030",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010541",
+            "Orphanet:391327",
+            "MESH:C537963",
+            "OMIM:302030"
+          ]
+        }
+      ]
+    }
+  ]
+}

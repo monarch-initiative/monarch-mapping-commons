@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cc8f65b0894e24acd18b5bea1547a97d83cef75cbcbbbdc96da4545c83d8d661",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334477",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5139",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003296",
+          "type" : "CLASS",
+          "lbl" : "cellular leiomyoma"
+        },
+        {
+          "id" : "NCIT:C4256",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5139",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003296",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334477",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003296",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003296",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4256",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5139",
+            "MONDO:0003296",
+            "UMLS:C0334477",
+            "NCIT:C4256"
+          ]
+        }
+      ]
+    }
+  ]
+}

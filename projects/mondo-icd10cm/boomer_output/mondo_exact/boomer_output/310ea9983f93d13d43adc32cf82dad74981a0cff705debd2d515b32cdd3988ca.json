@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:310ea9983f93d13d43adc32cf82dad74981a0cff705debd2d515b32cdd3988ca",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1511316",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6657",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003959",
+          "type" : "CLASS",
+          "lbl" : "breast large cell neuroendocrine carcinoma"
+        },
+        {
+          "id" : "NCIT:C40356",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003959",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40356",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1511316",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003959",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6657",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003959",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003959",
+            "NCIT:C40356",
+            "UMLS:C1511316",
+            "DOID:6657"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1062d0a189466cdca3dd5e989d0b51efc3eae95082ee1d52732d2723e223e982",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1838703",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0700039",
+          "type" : "CLASS",
+          "lbl" : "bladder exstrophy-epispadias-cloacal extrophy complex"
+        },
+        {
+          "id" : "OMIM:600057",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0700039",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600057",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1838703",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0700039",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0700039",
+            "OMIM:600057",
+            "UMLS:C1838703"
+          ]
+        }
+      ]
+    }
+  ]
+}

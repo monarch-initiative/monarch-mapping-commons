@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:73ba713b9c7b0fcba618d5845b353b339c9e990203cfca162f74ff65fa2946d9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0238137",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050893",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006216",
+          "type" : "CLASS",
+          "lbl" : "gallbladder adenoma"
+        },
+        {
+          "id" : "NCIT:C7720",
+          "type" : "CLASS",
+          "lbl" : "Gallbladder Adenoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006216",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7720",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0238137",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006216",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050893",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006216",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C7720",
+            "MONDO:0006216",
+            "UMLS:C0238137",
+            "DOID:0050893"
+          ]
+        }
+      ]
+    }
+  ]
+}

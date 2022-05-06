@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f1a0f33e79e1611b3d02611fa1cac8143ca2a6f9e87aa42192e58b6f0899f0da",
+      "nodes" : [
+        {
+          "id" : "MESH:C566516",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1865139",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011260",
+          "type" : "CLASS",
+          "lbl" : "pancreatic lymphoma, familial"
+        },
+        {
+          "id" : "OMIM:602596",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011260",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:602596",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566516",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011260",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1865139",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011260",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011260",
+            "OMIM:602596",
+            "MESH:C566516",
+            "UMLS:C1865139"
+          ]
+        }
+      ]
+    }
+  ]
+}

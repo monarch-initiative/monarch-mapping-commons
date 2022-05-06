@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:feecba327b46a60c17a95358c07d9e7b3c31fcdf8b736123daf8072ef3ed4403",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0238449",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5551",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003508",
+          "type" : "CLASS",
+          "lbl" : "choriocarcinoma of testis"
+        },
+        {
+          "id" : "NCIT:C7733",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003508",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7733",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5551",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003508",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0238449",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003508",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003508",
+            "NCIT:C7733",
+            "DOID:5551",
+            "UMLS:C0238449"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e2764000080c37fdce8961af7042e77b672d0bbf89b834c2397486c7675a0719",
+      "nodes" : [
+        {
+          "id" : "MESH:C537549",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1855550",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009508",
+          "type" : "CLASS",
+          "lbl" : "Lambotte syndrome"
+        },
+        {
+          "id" : "OMIM:245552",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C537549",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009508",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009508",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:245552",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1855550",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009508",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C537549",
+            "MONDO:0009508",
+            "OMIM:245552",
+            "UMLS:C1855550"
+          ]
+        }
+      ]
+    }
+  ]
+}

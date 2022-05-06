@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:250362e609ae03c0df92e47efa66436d72d75e3cf4e52d9e466820a72468fde2",
+      "nodes" : [
+        {
+          "id" : "Orphanet:1479",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:108900",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007173",
+          "type" : "CLASS",
+          "lbl" : "atrial septal defect 7"
+        },
+        {
+          "id" : "DOID:0110112",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3502353",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110112",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007173",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007173",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1479",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3502353",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007173",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007173",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:108900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0110112",
+            "MONDO:0007173",
+            "OMIM:108900",
+            "UMLS:C3502353",
+            "Orphanet:1479"
+          ]
+        }
+      ]
+    }
+  ]
+}

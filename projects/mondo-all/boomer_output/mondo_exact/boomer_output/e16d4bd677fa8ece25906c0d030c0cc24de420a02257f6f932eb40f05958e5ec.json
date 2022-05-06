@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e16d4bd677fa8ece25906c0d030c0cc24de420a02257f6f932eb40f05958e5ec",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204205",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017997",
+          "type" : "CLASS",
+          "lbl" : "telecanthus-hypertelorism-strabismus-pes cavus syndrome"
+        },
+        {
+          "id" : "Orphanet:3293",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017997",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3293",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204205",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017997",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017997",
+            "Orphanet:3293",
+            "UMLS:CN204205"
+          ]
+        }
+      ]
+    }
+  ]
+}

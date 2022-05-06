@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fa0097801be143b1c07da2602d163f3ecc1756f14ef91fada43ac8ce1e82d350",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332986",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3361",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002623",
+          "type" : "CLASS",
+          "lbl" : "pediatric osteosarcoma"
+        },
+        {
+          "id" : "NCIT:C6585",
+          "type" : "CLASS",
+          "lbl" : "Childhood Osteosarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002623",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6585",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3361",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002623",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332986",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002623",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002623",
+            "NCIT:C6585",
+            "DOID:3361",
+            "UMLS:C1332986"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3dd536dfa4057c3920ff716fb6ec4d574d4040124f14d25920697f85ee597daa",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0496874",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060117",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000650",
+          "type" : "CLASS",
+          "lbl" : "peritoneal benign neoplasm"
+        },
+        {
+          "id" : "NCIT:C8612",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0496874",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000650",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000650",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8612",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060117",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000650",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0496874",
+            "MONDO:0000650",
+            "NCIT:C8612",
+            "DOID:0060117"
+          ]
+        }
+      ]
+    }
+  ]
+}

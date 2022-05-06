@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2afa9d9fd29a70cd1d13e44ddc5dba395d0095e4034995dbee2d11587738e820",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519859",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3707",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002747",
+          "type" : "CLASS",
+          "lbl" : "endometrial mucinous adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C40144",
+          "type" : "CLASS",
+          "lbl" : "Endometrial Mucinous Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002747",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40144",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3707",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002747",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1519859",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002747",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C40144",
+            "MONDO:0002747",
+            "DOID:3707",
+            "UMLS:C1519859"
+          ]
+        }
+      ]
+    }
+  ]
+}

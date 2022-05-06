@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:19836267d34a21d75b030ac9dac222e437a4e70277a4b9784c0dad81c87d9723",
+      "nodes" : [
+        {
+          "id" : "MESH:C565894",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859393",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008883",
+          "type" : "CLASS",
+          "lbl" : "brachydactyly, type A2, with microcephaly"
+        },
+        {
+          "id" : "OMIM:211369",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008883",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:211369",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565894",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008883",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1859393",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008883",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:211369",
+            "MONDO:0008883",
+            "MESH:C565894",
+            "UMLS:C1859393"
+          ]
+        }
+      ]
+    }
+  ]
+}

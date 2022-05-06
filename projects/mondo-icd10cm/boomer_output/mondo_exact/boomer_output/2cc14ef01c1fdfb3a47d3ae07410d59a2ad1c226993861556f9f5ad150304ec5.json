@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2cc14ef01c1fdfb3a47d3ae07410d59a2ad1c226993861556f9f5ad150304ec5",
+      "nodes" : [
+        {
+          "id" : "MONDO:0010001",
+          "type" : "CLASS",
+          "lbl" : "ectodermal dysplasia-blindness syndrome"
+        },
+        {
+          "id" : "MESH:C535865",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:1806",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1849332",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:268320",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1849332",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010001",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:268320",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535865",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010001",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1806",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1849332",
+            "MONDO:0010001",
+            "Orphanet:1806",
+            "MESH:C535865",
+            "OMIM:268320"
+          ]
+        }
+      ]
+    }
+  ]
+}

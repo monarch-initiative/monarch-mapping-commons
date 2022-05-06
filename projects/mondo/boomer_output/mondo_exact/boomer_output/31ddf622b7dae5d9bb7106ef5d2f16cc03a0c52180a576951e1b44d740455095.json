@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:31ddf622b7dae5d9bb7106ef5d2f16cc03a0c52180a576951e1b44d740455095",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1849696",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009915",
+          "type" : "CLASS",
+          "lbl" : "46,XX disorder of sex development-skeletal anomalies syndrome"
+        },
+        {
+          "id" : "Orphanet:2975",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:264270",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C564869",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564869",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009915",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009915",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:264270",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1849696",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009915",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009915",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2975",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C564869",
+            "Orphanet:2975",
+            "OMIM:264270",
+            "UMLS:C1849696",
+            "MONDO:0009915"
+          ]
+        }
+      ]
+    }
+  ]
+}

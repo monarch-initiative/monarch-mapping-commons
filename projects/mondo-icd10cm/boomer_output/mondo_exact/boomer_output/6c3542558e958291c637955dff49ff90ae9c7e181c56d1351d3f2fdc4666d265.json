@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6c3542558e958291c637955dff49ff90ae9c7e181c56d1351d3f2fdc4666d265",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4540127",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080346",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0040503",
+          "type" : "CLASS",
+          "lbl" : "blepharocheilodontic syndrome 2"
+        },
+        {
+          "id" : "OMIM:617681",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080346",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0040503",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0040503",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617681",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4540127",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0040503",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0080346",
+            "MONDO:0040503",
+            "OMIM:617681",
+            "UMLS:C4540127"
+          ]
+        }
+      ]
+    }
+  ]
+}

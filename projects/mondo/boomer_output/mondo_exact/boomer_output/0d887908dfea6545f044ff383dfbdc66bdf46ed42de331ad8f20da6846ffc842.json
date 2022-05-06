@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0d887908dfea6545f044ff383dfbdc66bdf46ed42de331ad8f20da6846ffc842",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:Q23",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019817",
+          "type" : "CLASS",
+          "lbl" : "congenital mitral valve insufficiency and/or stenosis"
+        },
+        {
+          "id" : "Orphanet:95464",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019817",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:95464",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q23",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019817",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:95464",
+            "MONDO:0019817",
+            "ICD10CM:Q23"
+          ]
+        }
+      ]
+    }
+  ]
+}

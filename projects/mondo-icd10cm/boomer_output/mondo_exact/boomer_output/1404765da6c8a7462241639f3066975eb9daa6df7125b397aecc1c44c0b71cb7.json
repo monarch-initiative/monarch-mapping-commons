@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1404765da6c8a7462241639f3066975eb9daa6df7125b397aecc1c44c0b71cb7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334507",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5492",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003468",
+          "type" : "CLASS",
+          "lbl" : "biphasic synovial sarcoma"
+        },
+        {
+          "id" : "NCIT:C4279",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5492",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003468",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003468",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4279",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334507",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003468",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5492",
+            "MONDO:0003468",
+            "NCIT:C4279",
+            "UMLS:C0334507"
+          ]
+        }
+      ]
+    }
+  ]
+}

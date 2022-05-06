@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:46f2dc39ff7da8f41e2d11ac8c303abe01b0946768c57706c1d30c5774570ea7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN199399",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:716278005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4274731",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:139431",
+          "type" : "CLASS",
+          "lbl" : "Jeavons syndrome"
+        },
+        {
+          "id" : "MONDO:0015346",
+          "type" : "CLASS",
+          "lbl" : "Jeavons syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015346",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:139431",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN199399",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015346",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015346",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4274731",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:716278005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015346",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015346",
+            "Orphanet:139431",
+            "UMLS:CN199399",
+            "SCTID:716278005"
+          ]
+        }
+      ]
+    }
+  ]
+}

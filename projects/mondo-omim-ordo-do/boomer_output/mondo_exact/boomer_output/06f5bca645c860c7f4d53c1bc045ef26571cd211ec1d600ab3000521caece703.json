@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:06f5bca645c860c7f4d53c1bc045ef26571cd211ec1d600ab3000521caece703",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2266788",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1864801",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012328",
+          "type" : "CLASS",
+          "lbl" : "trichilemmal cyst"
+        },
+        {
+          "id" : "OMIM:609649",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:254677004",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1864801",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012328",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:254677004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012328",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012328",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609649",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012328",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C2266788",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012328",
+            "UMLS:C1864801",
+            "SCTID:254677004",
+            "OMIM:609649"
+          ]
+        }
+      ]
+    }
+  ]
+}

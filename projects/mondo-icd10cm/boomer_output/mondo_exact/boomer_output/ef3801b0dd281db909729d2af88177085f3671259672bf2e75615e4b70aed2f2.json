@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ef3801b0dd281db909729d2af88177085f3671259672bf2e75615e4b70aed2f2",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN238505",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014769",
+          "type" : "CLASS",
+          "lbl" : "inherited oocyte maturation defect"
+        },
+        {
+          "id" : "OMIMPS:615774",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014769",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:615774",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN238505",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014769",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIMPS:615774",
+            "MONDO:0014769",
+            "UMLS:CN238505"
+          ]
+        }
+      ]
+    }
+  ]
+}

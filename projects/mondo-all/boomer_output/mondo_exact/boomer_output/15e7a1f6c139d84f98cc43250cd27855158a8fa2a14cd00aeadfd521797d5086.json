@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:15e7a1f6c139d84f98cc43250cd27855158a8fa2a14cd00aeadfd521797d5086",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1302569",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5207",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003331",
+          "type" : "CLASS",
+          "lbl" : "ovarian monodermal teratoma"
+        },
+        {
+          "id" : "NCIT:C7286",
+          "type" : "CLASS",
+          "lbl" : "Ovarian Monodermal Teratoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5207",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003331",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1302569",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003331",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003331",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7286",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003331",
+            "UMLS:C1302569",
+            "DOID:5207",
+            "NCIT:C7286"
+          ]
+        }
+      ]
+    }
+  ]
+}

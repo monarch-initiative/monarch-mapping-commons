@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:db35d3c110387fa20fc980d1c8f12f2f5d671cea15183e58f4ba7dcfceb3aab1",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN228599",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013311",
+          "type" : "CLASS",
+          "lbl" : "ectodermal dysplasia-syndactyly syndrome"
+        },
+        {
+          "id" : "Orphanet:247820",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIMPS:613573",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013311",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:613573",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013311",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:247820",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN228599",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013311",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIMPS:613573",
+            "MONDO:0013311",
+            "Orphanet:247820",
+            "UMLS:CN228599"
+          ]
+        }
+      ]
+    }
+  ]
+}

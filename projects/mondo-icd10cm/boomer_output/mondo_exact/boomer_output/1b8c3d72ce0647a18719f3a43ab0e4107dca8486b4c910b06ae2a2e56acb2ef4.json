@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1b8c3d72ce0647a18719f3a43ab0e4107dca8486b4c910b06ae2a2e56acb2ef4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1520099",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2064",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002190",
+          "type" : "CLASS",
+          "lbl" : "vulvar syringoma"
+        },
+        {
+          "id" : "NCIT:C40311",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002190",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40311",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1520099",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002190",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2064",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002190",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002190",
+            "NCIT:C40311",
+            "UMLS:C1520099",
+            "DOID:2064"
+          ]
+        }
+      ]
+    }
+  ]
+}

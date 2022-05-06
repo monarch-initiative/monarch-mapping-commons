@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7cfc5c0d08a2be317e13c7d8410551080337418e39c669b2330bcf574d048213",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225399",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014551",
+          "type" : "CLASS",
+          "lbl" : "short stature with nonspecific skeletal abnormalities"
+        },
+        {
+          "id" : "OMIM:616255",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4225399",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014551",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014551",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616255",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014551",
+            "UMLS:C4225399",
+            "OMIM:616255"
+          ]
+        }
+      ]
+    }
+  ]
+}

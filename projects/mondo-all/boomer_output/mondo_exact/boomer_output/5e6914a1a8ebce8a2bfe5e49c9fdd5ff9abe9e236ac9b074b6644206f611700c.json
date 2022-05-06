@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5e6914a1a8ebce8a2bfe5e49c9fdd5ff9abe9e236ac9b074b6644206f611700c",
+      "nodes" : [
+        {
+          "id" : "MESH:D012218",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1304215",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:402427003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:180350",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008384",
+          "type" : "CLASS",
+          "lbl" : "rheumatoid nodulosis"
+        },
+        {
+          "id" : "SCTID:402426007",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008384",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:180350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008384",
+          "pred" : "siblingOf",
+          "obj" : "SCTID:402426007",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1304215",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008384",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D012218",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008384",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:402427003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008384",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1304215",
+            "OMIM:180350",
+            "SCTID:402427003",
+            "MONDO:0008384",
+            "MESH:D012218"
+          ]
+        }
+      ]
+    }
+  ]
+}

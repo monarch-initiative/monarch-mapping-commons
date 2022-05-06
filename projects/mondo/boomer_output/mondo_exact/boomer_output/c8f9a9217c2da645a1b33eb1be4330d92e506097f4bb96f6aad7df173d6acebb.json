@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c8f9a9217c2da645a1b33eb1be4330d92e506097f4bb96f6aad7df173d6acebb",
+      "nodes" : [
+        {
+          "id" : "SCTID:187724003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0496775",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021324",
+          "type" : "CLASS",
+          "lbl" : "malignant neoplasm of abdominal esophagus"
+        },
+        {
+          "id" : "NCIT:C4764",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021324",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4764",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0496775",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021324",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:187724003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021324",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021324",
+            "NCIT:C4764",
+            "UMLS:C0496775",
+            "SCTID:187724003"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b5b6cdcc3f2f64107ab6e0c9d426f67f06b48c78bc457d2b1cf600b61e7f3770",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3151619",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010040",
+          "type" : "CLASS",
+          "lbl" : "ataxia, spastic, childhood-onset, autosomal recessive, with optic atrophy and intellectual disability"
+        },
+        {
+          "id" : "OMIM:270500",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010040",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:270500",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3151619",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010040",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010040",
+            "OMIM:270500",
+            "UMLS:C3151619"
+          ]
+        }
+      ]
+    }
+  ]
+}

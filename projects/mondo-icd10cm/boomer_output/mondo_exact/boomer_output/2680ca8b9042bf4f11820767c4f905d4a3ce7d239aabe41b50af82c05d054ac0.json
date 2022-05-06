@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2680ca8b9042bf4f11820767c4f905d4a3ce7d239aabe41b50af82c05d054ac0",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3151056",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110803",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013401",
+          "type" : "CLASS",
+          "lbl" : "hereditary spastic paraplegia 51"
+        },
+        {
+          "id" : "OMIM:613744",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3151056",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013401",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013401",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613744",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110803",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013401",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013401",
+            "UMLS:C3151056",
+            "DOID:0110803",
+            "OMIM:613744"
+          ]
+        }
+      ]
+    }
+  ]
+}

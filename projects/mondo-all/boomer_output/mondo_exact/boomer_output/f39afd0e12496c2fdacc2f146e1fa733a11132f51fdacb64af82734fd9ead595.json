@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f39afd0e12496c2fdacc2f146e1fa733a11132f51fdacb64af82734fd9ead595",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203276",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017544",
+          "type" : "CLASS",
+          "lbl" : "zygodactyly type 3"
+        },
+        {
+          "id" : "Orphanet:295191",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017544",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:295191",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203276",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017544",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:295191",
+            "MONDO:0017544",
+            "UMLS:CN203276"
+          ]
+        }
+      ]
+    }
+  ]
+}

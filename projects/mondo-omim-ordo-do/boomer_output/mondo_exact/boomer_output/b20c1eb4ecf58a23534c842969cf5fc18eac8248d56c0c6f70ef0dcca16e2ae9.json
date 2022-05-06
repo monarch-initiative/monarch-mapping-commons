@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b20c1eb4ecf58a23534c842969cf5fc18eac8248d56c0c6f70ef0dcca16e2ae9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1457897",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:14177",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001902",
+          "type" : "CLASS",
+          "lbl" : "congenital agammaglobulinemia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:14177",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001902",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1457897",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001902",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:14177",
+            "MONDO:0001902",
+            "UMLS:C1457897"
+          ]
+        }
+      ]
+    }
+  ]
+}

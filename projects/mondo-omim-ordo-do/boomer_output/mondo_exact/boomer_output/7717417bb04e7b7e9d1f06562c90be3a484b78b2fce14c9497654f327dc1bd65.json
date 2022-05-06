@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7717417bb04e7b7e9d1f06562c90be3a484b78b2fce14c9497654f327dc1bd65",
+      "nodes" : [
+        {
+          "id" : "SCTID:42872003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0041233",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021941",
+          "type" : "CLASS",
+          "lbl" : "infection by Trypanosoma rhodesiense"
+        },
+        {
+          "id" : "NCIT:C35085",
+          "type" : "CLASS",
+          "lbl" : "Rhodesian Trypanosomiasis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021941",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35085",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:42872003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021941",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0041233",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021941",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021941",
+            "NCIT:C35085",
+            "SCTID:42872003",
+            "UMLS:C0041233"
+          ]
+        }
+      ]
+    }
+  ]
+}

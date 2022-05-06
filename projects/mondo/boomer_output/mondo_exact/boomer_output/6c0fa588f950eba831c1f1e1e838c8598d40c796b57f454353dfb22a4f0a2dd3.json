@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6c0fa588f950eba831c1f1e1e838c8598d40c796b57f454353dfb22a4f0a2dd3",
+      "nodes" : [
+        {
+          "id" : "MONDO:0020542",
+          "type" : "CLASS",
+          "lbl" : "malignant Sertoli-Leydig cell tumor of ovary"
+        },
+        {
+          "id" : "UMLS:C0342515",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:237795006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN207443",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:99916",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020542",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99916",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:237795006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020542",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0342515",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020542",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020542",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN207443",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020542",
+            "Orphanet:99916",
+            "SCTID:237795006",
+            "UMLS:C0342515"
+          ]
+        }
+      ]
+    }
+  ]
+}

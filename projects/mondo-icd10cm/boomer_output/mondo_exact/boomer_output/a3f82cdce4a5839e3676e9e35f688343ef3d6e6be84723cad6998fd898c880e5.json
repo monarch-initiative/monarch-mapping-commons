@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a3f82cdce4a5839e3676e9e35f688343ef3d6e6be84723cad6998fd898c880e5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2931833",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070218",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011153",
+          "type" : "CLASS",
+          "lbl" : "hyperinsulinemic hypoglycemia, familial, 2"
+        },
+        {
+          "id" : "OMIM:601820",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2931833",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011153",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070218",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011153",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011153",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601820",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011153",
+            "UMLS:C2931833",
+            "DOID:0070218",
+            "OMIM:601820"
+          ]
+        }
+      ]
+    }
+  ]
+}

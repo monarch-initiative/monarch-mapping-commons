@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4c7d1fbfdd5847aefa593ea9e3ec2940b816718a13369089c8b647cf59871ae1",
+      "nodes" : [
+        {
+          "id" : "MESH:D013203",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:56038003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024313",
+          "type" : "CLASS",
+          "lbl" : "staphylococcal infection"
+        },
+        {
+          "id" : "NCIT:C35038",
+          "type" : "CLASS",
+          "lbl" : "Staphylococcal Infection"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D013203",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024313",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0024313",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35038",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:56038003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024313",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024313",
+            "MESH:D013203",
+            "NCIT:C35038",
+            "SCTID:56038003"
+          ]
+        }
+      ]
+    }
+  ]
+}

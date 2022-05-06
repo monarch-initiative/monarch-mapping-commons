@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6ecaaa1c6f957e5eef4aabffac05181881fdb9e86482f7108ffa7c6f9536efcb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1096349",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:9300",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004752",
+          "type" : "CLASS",
+          "lbl" : "neurofibroma of the heart"
+        },
+        {
+          "id" : "NCIT:C5359",
+          "type" : "CLASS",
+          "lbl" : "Cardiac Neurofibroma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004752",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5359",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1096349",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004752",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:9300",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004752",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004752",
+            "NCIT:C5359",
+            "UMLS:C1096349",
+            "DOID:9300"
+          ]
+        }
+      ]
+    }
+  ]
+}

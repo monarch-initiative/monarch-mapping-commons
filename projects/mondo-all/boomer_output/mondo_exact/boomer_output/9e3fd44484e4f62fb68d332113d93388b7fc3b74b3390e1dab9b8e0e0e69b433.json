@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9e3fd44484e4f62fb68d332113d93388b7fc3b74b3390e1dab9b8e0e0e69b433",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310814",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010512",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability, X-linked, syndromic, Bain type"
+        },
+        {
+          "id" : "OMIM:300986",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4310814",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010512",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010512",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300986",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4310814",
+            "MONDO:0010512",
+            "OMIM:300986"
+          ]
+        }
+      ]
+    }
+  ]
+}

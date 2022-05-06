@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9cca08282e480ba4acaadf020e37d2636e510c2a70a123514c62ea2ea7dae3da",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3806670",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010438",
+          "type" : "CLASS",
+          "lbl" : "paroxysmal nocturnal hemoglobinuria 1"
+        },
+        {
+          "id" : "OMIM:300818",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3806670",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010438",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010438",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300818",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3806670",
+            "MONDO:0010438",
+            "OMIM:300818"
+          ]
+        }
+      ]
+    }
+  ]
+}

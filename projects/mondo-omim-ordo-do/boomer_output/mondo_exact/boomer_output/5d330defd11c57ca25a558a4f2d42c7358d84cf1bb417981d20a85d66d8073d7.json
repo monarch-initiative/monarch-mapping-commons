@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5d330defd11c57ca25a558a4f2d42c7358d84cf1bb417981d20a85d66d8073d7",
+      "nodes" : [
+        {
+          "id" : "SCTID:22558005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0271826",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0043103",
+          "type" : "CLASS",
+          "lbl" : "hypothyroidism due to iodide transport defect"
+        },
+        {
+          "id" : "NCIT:C121747",
+          "type" : "CLASS",
+          "lbl" : "Iodide Transport Defect"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:22558005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043103",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0043103",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C121747",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0271826",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043103",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:22558005",
+            "MONDO:0043103",
+            "NCIT:C121747",
+            "UMLS:C0271826"
+          ]
+        }
+      ]
+    }
+  ]
+}

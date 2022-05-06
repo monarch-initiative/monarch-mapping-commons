@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:83e42567d24f41f4a326867aac333c18c20e2e7c6ebbe29d47db53cd8a018d87",
+      "nodes" : [
+        {
+          "id" : "NCIT:C92562",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:F80.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:229733002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001276",
+          "type" : "CLASS",
+          "lbl" : "expressive language disorder"
+        },
+        {
+          "id" : "DOID:11385",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:F80.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001276",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:11385",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001276",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001276",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C92562",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:229733002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001276",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C92562",
+            "DOID:11385",
+            "SCTID:229733002",
+            "ICD10CM:F80.1",
+            "MONDO:0001276"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:76eec3b96f0cea45b4f60b43d0af1e8e08b54ba78ee45f1b4b5697e694307383",
+      "nodes" : [
+        {
+          "id" : "MONDO:0018481",
+          "type" : "CLASS",
+          "lbl" : "undifferentiated carcinoma of esophagus"
+        },
+        {
+          "id" : "UMLS:CN237469",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2188058",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:418951",
+          "type" : "CLASS",
+          "lbl" : "Undifferentiated carcinoma of esophagus"
+        },
+        {
+          "id" : "NCIT:C27422",
+          "type" : "CLASS",
+          "lbl" : "Esophageal Undifferentiated Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018481",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27422",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018481",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C2188058",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237469",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018481",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018481",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:418951",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C27422",
+            "MONDO:0018481",
+            "UMLS:CN237469",
+            "Orphanet:418951"
+          ]
+        }
+      ]
+    }
+  ]
+}

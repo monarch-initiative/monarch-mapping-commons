@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bed404991f79f731fca31713d8594b67bc54363253fff28ca402bf52b944fd25",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336903",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4994",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003237",
+          "type" : "CLASS",
+          "lbl" : "adenomyoma of uterine corpus"
+        },
+        {
+          "id" : "NCIT:C6338",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003237",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6338",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336903",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003237",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4994",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003237",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6338",
+            "MONDO:0003237",
+            "UMLS:C1336903",
+            "DOID:4994"
+          ]
+        }
+      ]
+    }
+  ]
+}

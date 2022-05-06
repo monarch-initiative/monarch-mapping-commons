@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:96bfe82b8addef23d804840096ce7fc1fb861ed89a01596ed297157e2a4d7d7a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206985",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020083",
+          "type" : "CLASS",
+          "lbl" : "immunodeficiency-associated lymphoproliferative disease"
+        },
+        {
+          "id" : "Orphanet:98290",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020083",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98290",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN206985",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020083",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020083",
+            "Orphanet:98290",
+            "UMLS:CN206985"
+          ]
+        }
+      ]
+    }
+  ]
+}

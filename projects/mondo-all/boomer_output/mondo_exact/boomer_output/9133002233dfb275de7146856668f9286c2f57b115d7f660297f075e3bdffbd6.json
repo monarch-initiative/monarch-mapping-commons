@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9133002233dfb275de7146856668f9286c2f57b115d7f660297f075e3bdffbd6",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN776879",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018110",
+          "type" : "CLASS",
+          "lbl" : "lethal idiopathic viral infection"
+        },
+        {
+          "id" : "Orphanet:35064",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN776879",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018110",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018110",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:35064",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018110",
+            "UMLS:CN776879",
+            "Orphanet:35064"
+          ]
+        }
+      ]
+    }
+  ]
+}

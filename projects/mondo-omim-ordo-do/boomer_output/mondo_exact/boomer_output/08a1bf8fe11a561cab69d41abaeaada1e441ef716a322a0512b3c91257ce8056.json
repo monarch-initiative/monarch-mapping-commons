@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:08a1bf8fe11a561cab69d41abaeaada1e441ef716a322a0512b3c91257ce8056",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334674",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:12064",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001426",
+          "type" : "CLASS",
+          "lbl" : "mediastinum neurofibroma"
+        },
+        {
+          "id" : "NCIT:C6631",
+          "type" : "CLASS",
+          "lbl" : "Mediastinal Neurofibroma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:12064",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001426",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334674",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001426",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001426",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6631",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001426",
+            "DOID:12064",
+            "UMLS:C1334674",
+            "NCIT:C6631"
+          ]
+        }
+      ]
+    }
+  ]
+}

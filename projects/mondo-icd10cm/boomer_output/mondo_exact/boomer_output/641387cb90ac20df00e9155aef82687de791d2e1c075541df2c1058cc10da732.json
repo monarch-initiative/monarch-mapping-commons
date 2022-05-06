@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:641387cb90ac20df00e9155aef82687de791d2e1c075541df2c1058cc10da732",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332220",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7875",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004385",
+          "type" : "CLASS",
+          "lbl" : "adult xanthogranuloma"
+        },
+        {
+          "id" : "NCIT:C27514",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7875",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004385",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332220",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004385",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004385",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27514",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:7875",
+            "MONDO:0004385",
+            "UMLS:C1332220",
+            "NCIT:C27514"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:769086fbb7801ce278c57b7919407cec9adb613fbd1f919e2630a221facad2c2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150752",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013289",
+          "type" : "CLASS",
+          "lbl" : "agammaglobulinemia 4, autosomal recessive"
+        },
+        {
+          "id" : "OMIM:613502",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013289",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613502",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3150752",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013289",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013289",
+            "OMIM:613502",
+            "UMLS:C3150752"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3e801594568e3eadcab19329de16721dd1d8456b6de1e45633d4303a1f8e4ec1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1513718",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7024",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004078",
+          "type" : "CLASS",
+          "lbl" : "mucinous intrahepatic cholangiocarcinoma"
+        },
+        {
+          "id" : "NCIT:C41618",
+          "type" : "CLASS",
+          "lbl" : "Mucin-Producing Intrahepatic Cholangiocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7024",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004078",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1513718",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004078",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004078",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C41618",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:7024",
+            "MONDO:0004078",
+            "UMLS:C1513718",
+            "NCIT:C41618"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7c4d203dde489bd4f47fcff6ba67685fe73bd1ce38bd415edefaa5d59a811b50",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1969639",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C566954",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:611407",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012667",
+          "type" : "CLASS",
+          "lbl" : "dilated cardiomyopathy 1W"
+        },
+        {
+          "id" : "DOID:0110446",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1969639",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012667",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012667",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:611407",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110446",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012667",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566954",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012667",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0110446",
+            "OMIM:611407",
+            "UMLS:C1969639",
+            "MESH:C566954",
+            "MONDO:0012667"
+          ]
+        }
+      ]
+    }
+  ]
+}

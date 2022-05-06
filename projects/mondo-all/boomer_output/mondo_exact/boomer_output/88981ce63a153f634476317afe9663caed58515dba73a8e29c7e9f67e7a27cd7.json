@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:88981ce63a153f634476317afe9663caed58515dba73a8e29c7e9f67e7a27cd7",
+      "nodes" : [
+        {
+          "id" : "MESH:C538036",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015728",
+          "type" : "CLASS",
+          "lbl" : "distal trisomy 15q"
+        },
+        {
+          "id" : "Orphanet:1707",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015728",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1707",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538036",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015728",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015728",
+            "Orphanet:1707",
+            "MESH:C538036"
+          ]
+        }
+      ]
+    }
+  ]
+}

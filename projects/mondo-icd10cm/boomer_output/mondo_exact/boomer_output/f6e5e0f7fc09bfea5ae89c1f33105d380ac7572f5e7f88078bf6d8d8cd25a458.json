@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f6e5e0f7fc09bfea5ae89c1f33105d380ac7572f5e7f88078bf6d8d8cd25a458",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4540014",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060555",
+          "type" : "CLASS",
+          "lbl" : "vertebral, cardiac, renal, and limb defects syndrome 2"
+        },
+        {
+          "id" : "OMIM:617661",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4540014",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060555",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060555",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617661",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4540014",
+            "MONDO:0060555",
+            "OMIM:617661"
+          ]
+        }
+      ]
+    }
+  ]
+}

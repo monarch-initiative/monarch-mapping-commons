@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ad5903e6e219dd1313966034f6860885d456ade6eeb27ad5732e93239aadaae6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333371",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:173",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002090",
+          "type" : "CLASS",
+          "lbl" : "eccrine sweat gland neoplasm"
+        },
+        {
+          "id" : "NCIT:C6796",
+          "type" : "CLASS",
+          "lbl" : "Eccrine Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:173",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002090",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333371",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002090",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002090",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6796",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002090",
+            "DOID:173",
+            "UMLS:C1333371",
+            "NCIT:C6796"
+          ]
+        }
+      ]
+    }
+  ]
+}

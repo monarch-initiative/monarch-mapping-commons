@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d0f5a3b30490d5652d0050fffd8a4b5a170125287d436f48fcc5fd04b7dc701d",
+      "nodes" : [
+        {
+          "id" : "SCTID:26899006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:N97.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:13589",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001753",
+          "type" : "CLASS",
+          "lbl" : "female infertility of uterine origin"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:N97.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001753",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:26899006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001753",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:13589",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001753",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:N97.2",
+            "MONDO:0001753",
+            "SCTID:26899006",
+            "DOID:13589"
+          ]
+        }
+      ]
+    }
+  ]
+}

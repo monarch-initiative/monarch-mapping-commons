@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b7a7d0d7a502fdaaa5b9d205ba5fcbe5ae1a3beb1aa7068eb1bccf2a1d30b3a3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0027868",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D009468",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:440",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019056",
+          "type" : "CLASS",
+          "lbl" : "neuromuscular disease"
+        },
+        {
+          "id" : "Orphanet:68381",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:440",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019056",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D009468",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019056",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019056",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:68381",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0027868",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019056",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:440",
+            "MESH:D009468",
+            "Orphanet:68381",
+            "UMLS:C0027868",
+            "MONDO:0019056"
+          ]
+        }
+      ]
+    }
+  ]
+}

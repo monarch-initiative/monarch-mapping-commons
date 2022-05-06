@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:48f327829c94499588dbdae2a268c97b5db85f9b3b78b15dd59230295c5b8298",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334242",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5714",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003602",
+          "type" : "CLASS",
+          "lbl" : "intracranial liposarcoma"
+        },
+        {
+          "id" : "NCIT:C6973",
+          "type" : "CLASS",
+          "lbl" : "Intracranial Liposarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003602",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6973",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5714",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334242",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003602",
+            "NCIT:C6973",
+            "DOID:5714",
+            "UMLS:C1334242"
+          ]
+        }
+      ]
+    }
+  ]
+}

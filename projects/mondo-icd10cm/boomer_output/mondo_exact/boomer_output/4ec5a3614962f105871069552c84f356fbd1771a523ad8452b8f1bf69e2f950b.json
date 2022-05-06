@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4ec5a3614962f105871069552c84f356fbd1771a523ad8452b8f1bf69e2f950b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333092",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10656",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001092",
+          "type" : "CLASS",
+          "lbl" : "colon leiomyoma"
+        },
+        {
+          "id" : "NCIT:C5492",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0001092",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5492",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10656",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001092",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333092",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001092",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001092",
+            "NCIT:C5492",
+            "DOID:10656",
+            "UMLS:C1333092"
+          ]
+        }
+      ]
+    }
+  ]
+}

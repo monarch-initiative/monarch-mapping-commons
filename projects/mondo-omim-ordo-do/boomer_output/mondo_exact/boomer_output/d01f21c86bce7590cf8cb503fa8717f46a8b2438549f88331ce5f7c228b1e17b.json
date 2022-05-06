@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d01f21c86bce7590cf8cb503fa8717f46a8b2438549f88331ce5f7c228b1e17b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0018931",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:66259004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:12332",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001495",
+          "type" : "CLASS",
+          "lbl" : "hematocele of tunica vaginalis testis"
+        },
+        {
+          "id" : "MESH:D006398",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1456400",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0001495",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1456400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D006398",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001495",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:66259004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001495",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:12332",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001495",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0018931",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001495",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001495",
+            "MESH:D006398",
+            "DOID:12332",
+            "UMLS:C0018931",
+            "SCTID:66259004"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:92846440070eaa524486080e9b0f0e9c9e62a05626eb676b2484a357a49d087a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333778",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5700",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003592",
+          "type" : "CLASS",
+          "lbl" : "gastric liposarcoma"
+        },
+        {
+          "id" : "NCIT:C5488",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333778",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003592",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003592",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5488",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5700",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003592",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333778",
+            "MONDO:0003592",
+            "NCIT:C5488",
+            "DOID:5700"
+          ]
+        }
+      ]
+    }
+  ]
+}

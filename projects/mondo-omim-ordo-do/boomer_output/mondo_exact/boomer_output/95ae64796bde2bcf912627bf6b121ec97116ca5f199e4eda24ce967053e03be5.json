@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:95ae64796bde2bcf912627bf6b121ec97116ca5f199e4eda24ce967053e03be5",
+      "nodes" : [
+        {
+          "id" : "MESH:C564871",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1849699",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009909",
+          "type" : "CLASS",
+          "lbl" : "progesterone resistance"
+        },
+        {
+          "id" : "OMIM:264080",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009909",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:264080",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1849699",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009909",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564871",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009909",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009909",
+            "OMIM:264080",
+            "UMLS:C1849699",
+            "MESH:C564871"
+          ]
+        }
+      ]
+    }
+  ]
+}

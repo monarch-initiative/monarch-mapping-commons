@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7c7b2f8b747496cc63a31782cce505f3b5a4e92f525f8c6fdcc909addfa1abaf",
+      "nodes" : [
+        {
+          "id" : "MESH:C538181",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1863556",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011367",
+          "type" : "CLASS",
+          "lbl" : "Acrodysplasia with ossification abnormalities, short stature, and fibular hypoplasia"
+        },
+        {
+          "id" : "OMIM:603740",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1863556",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011367",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011367",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603740",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538181",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011367",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1863556",
+            "MONDO:0011367",
+            "OMIM:603740",
+            "MESH:C538181"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f56b612b9ca151a2033ff44cecb092c0dc4862003a53456c58007f30382b4432",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1511100",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0036915",
+          "type" : "CLASS",
+          "lbl" : "benign ovarian mucinous tumor"
+        },
+        {
+          "id" : "NCIT:C40039",
+          "type" : "CLASS",
+          "lbl" : "Benign Ovarian Mucinous Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0036915",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40039",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1511100",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0036915",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0036915",
+            "NCIT:C40039",
+            "UMLS:C1511100"
+          ]
+        }
+      ]
+    }
+  ]
+}

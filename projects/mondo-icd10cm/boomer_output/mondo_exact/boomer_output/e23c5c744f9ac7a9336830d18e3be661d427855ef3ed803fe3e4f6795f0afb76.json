@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e23c5c744f9ac7a9336830d18e3be661d427855ef3ed803fe3e4f6795f0afb76",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202523",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017126",
+          "type" : "CLASS",
+          "lbl" : "oculo-skeletal-renal syndrome"
+        },
+        {
+          "id" : "Orphanet:2716",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202523",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017126",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017126",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2716",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN202523",
+            "MONDO:0017126",
+            "Orphanet:2716"
+          ]
+        }
+      ]
+    }
+  ]
+}

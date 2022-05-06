@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9a848d6b934c8b18ab1273b3a03b00b6d882645f0e4e8cffaeaae3cf9f70b4b7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1517113",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021576",
+          "type" : "CLASS",
+          "lbl" : "fallopian tube endometrioid tumor"
+        },
+        {
+          "id" : "NCIT:C40111",
+          "type" : "CLASS",
+          "lbl" : "Fallopian Tube Endometrioid Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021576",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40111",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1517113",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021576",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021576",
+            "NCIT:C40111",
+            "UMLS:C1517113"
+          ]
+        }
+      ]
+    }
+  ]
+}

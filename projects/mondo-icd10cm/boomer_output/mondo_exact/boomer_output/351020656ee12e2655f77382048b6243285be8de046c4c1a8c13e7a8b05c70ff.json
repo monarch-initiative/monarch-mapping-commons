@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:351020656ee12e2655f77382048b6243285be8de046c4c1a8c13e7a8b05c70ff",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0343206",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN204757",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018227",
+          "type" : "CLASS",
+          "lbl" : "hypocomplementemic urticarial vasculitis"
+        },
+        {
+          "id" : "Orphanet:36412",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:239945009",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:239945009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018227",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018227",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN204757",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0343206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018227",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018227",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:36412",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018227",
+            "SCTID:239945009",
+            "UMLS:C0343206",
+            "Orphanet:36412"
+          ]
+        }
+      ]
+    }
+  ]
+}

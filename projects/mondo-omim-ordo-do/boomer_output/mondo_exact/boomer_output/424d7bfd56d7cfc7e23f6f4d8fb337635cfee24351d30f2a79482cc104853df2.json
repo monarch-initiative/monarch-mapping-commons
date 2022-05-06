@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:424d7bfd56d7cfc7e23f6f4d8fb337635cfee24351d30f2a79482cc104853df2",
+      "nodes" : [
+        {
+          "id" : "MESH:C567055",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1970485",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012572",
+          "type" : "CLASS",
+          "lbl" : "Sakoda complex"
+        },
+        {
+          "id" : "OMIM:610871",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1970485",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012572",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012572",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610871",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567055",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012572",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012572",
+            "UMLS:C1970485",
+            "OMIM:610871",
+            "MESH:C567055"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f4fb1504e3c191ce3568ee88a4cfc7211bee97549b011abe1bc79e50e86b475c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4014258",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014338",
+          "type" : "CLASS",
+          "lbl" : "IL21-related infantile inflammatory bowel disease"
+        },
+        {
+          "id" : "Orphanet:477661",
+          "type" : "CLASS",
+          "lbl" : "IL21-related infantile inflammatory bowel disease"
+        },
+        {
+          "id" : "OMIM:615767",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014338",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:477661",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014338",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615767",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4014258",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014338",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014338",
+            "Orphanet:477661",
+            "OMIM:615767",
+            "UMLS:C4014258"
+          ]
+        }
+      ]
+    }
+  ]
+}

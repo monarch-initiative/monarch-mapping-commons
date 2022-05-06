@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5fddc82398516d5a7c43bdd487179639b96f7b1148c80b4e321314df6566a826",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2314896",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C8498",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:618",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018961",
+          "type" : "CLASS",
+          "lbl" : "familial melanoma"
+        },
+        {
+          "id" : "DOID:6846",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018961",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:618",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018961",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8498",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2314896",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018961",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6846",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018961",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2314896",
+            "MONDO:0018961",
+            "DOID:6846",
+            "NCIT:C8498",
+            "Orphanet:618"
+          ]
+        }
+      ]
+    }
+  ]
+}

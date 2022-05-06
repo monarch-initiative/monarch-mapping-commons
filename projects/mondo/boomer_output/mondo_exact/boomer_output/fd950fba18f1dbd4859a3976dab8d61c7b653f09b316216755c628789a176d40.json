@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fd950fba18f1dbd4859a3976dab8d61c7b653f09b316216755c628789a176d40",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332607",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2132",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002216",
+          "type" : "CLASS",
+          "lbl" : "brain sarcoma"
+        },
+        {
+          "id" : "NCIT:C5154",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332607",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002216",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002216",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5154",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2132",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002216",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002216",
+            "UMLS:C1332607",
+            "NCIT:C5154",
+            "DOID:2132"
+          ]
+        }
+      ]
+    }
+  ]
+}

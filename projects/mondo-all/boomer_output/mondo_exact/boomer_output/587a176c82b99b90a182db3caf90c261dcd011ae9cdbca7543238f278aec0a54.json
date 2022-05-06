@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:587a176c82b99b90a182db3caf90c261dcd011ae9cdbca7543238f278aec0a54",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225421",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010494",
+          "type" : "CLASS",
+          "lbl" : "linear skin defects with multiple congenital anomalies 3"
+        },
+        {
+          "id" : "OMIM:300952",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010494",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300952",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225421",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010494",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010494",
+            "OMIM:300952",
+            "UMLS:C4225421"
+          ]
+        }
+      ]
+    }
+  ]
+}

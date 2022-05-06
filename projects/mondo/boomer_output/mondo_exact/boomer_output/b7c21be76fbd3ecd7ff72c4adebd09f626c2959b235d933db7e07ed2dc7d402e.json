@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b7c21be76fbd3ecd7ff72c4adebd09f626c2959b235d933db7e07ed2dc7d402e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809199",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014137",
+          "type" : "CLASS",
+          "lbl" : "precocious puberty, central, 2"
+        },
+        {
+          "id" : "OMIM:615346",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014137",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615346",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3809199",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014137",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014137",
+            "OMIM:615346",
+            "UMLS:C3809199"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e8390c420efaac47ce9ef3f93e56433982693909cbe721403f5f9fc800c6a117",
+      "nodes" : [
+        {
+          "id" : "MESH:C567715",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2750798",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013172",
+          "type" : "CLASS",
+          "lbl" : "polymicrogyria with optic nerve hypoplasia"
+        },
+        {
+          "id" : "Orphanet:250972",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013172",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:250972",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567715",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013172",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2750798",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013172",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013172",
+            "Orphanet:250972",
+            "MESH:C567715",
+            "UMLS:C2750798"
+          ]
+        }
+      ]
+    }
+  ]
+}

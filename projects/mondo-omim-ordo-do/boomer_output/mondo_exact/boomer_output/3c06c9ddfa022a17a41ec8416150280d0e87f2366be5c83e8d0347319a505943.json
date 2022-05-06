@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3c06c9ddfa022a17a41ec8416150280d0e87f2366be5c83e8d0347319a505943",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333962",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3317",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002605",
+          "type" : "CLASS",
+          "lbl" : "hepatic angiomyolipoma"
+        },
+        {
+          "id" : "NCIT:C27485",
+          "type" : "CLASS",
+          "lbl" : "Liver Angiomyolipoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333962",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002605",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3317",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002605",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002605",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27485",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333962",
+            "MONDO:0002605",
+            "DOID:3317",
+            "NCIT:C27485"
+          ]
+        }
+      ]
+    }
+  ]
+}

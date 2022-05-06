@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2ce042b09353ce45aed417df66d211e95a9893ca94a035b3da099d5185172965",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227188",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017741",
+          "type" : "CLASS",
+          "lbl" : "disorder of protein O-glycosylation"
+        },
+        {
+          "id" : "Orphanet:309447",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017741",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309447",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227188",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017741",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017741",
+            "Orphanet:309447",
+            "UMLS:CN227188"
+          ]
+        }
+      ]
+    }
+  ]
+}

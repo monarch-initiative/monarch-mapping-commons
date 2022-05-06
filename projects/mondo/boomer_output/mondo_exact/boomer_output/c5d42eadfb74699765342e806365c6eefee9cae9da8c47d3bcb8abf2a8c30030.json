@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c5d42eadfb74699765342e806365c6eefee9cae9da8c47d3bcb8abf2a8c30030",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4522164",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060564",
+          "type" : "CLASS",
+          "lbl" : "HELIX syndrome"
+        },
+        {
+          "id" : "Orphanet:528105",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:617671",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0060564",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:528105",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060564",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617671",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4522164",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060564",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0060564",
+            "Orphanet:528105",
+            "OMIM:617671",
+            "UMLS:C4522164"
+          ]
+        }
+      ]
+    }
+  ]
+}

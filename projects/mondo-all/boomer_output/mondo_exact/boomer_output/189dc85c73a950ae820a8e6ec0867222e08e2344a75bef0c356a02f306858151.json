@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:189dc85c73a950ae820a8e6ec0867222e08e2344a75bef0c356a02f306858151",
+      "nodes" : [
+        {
+          "id" : "SCTID:200999007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0406365",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016770",
+          "type" : "CLASS",
+          "lbl" : "actinic lichen planus"
+        },
+        {
+          "id" : "Orphanet:254395",
+          "type" : "CLASS",
+          "lbl" : "Actinic lichen planus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0406365",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016770",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016770",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:254395",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:200999007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016770",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0406365",
+            "MONDO:0016770",
+            "Orphanet:254395",
+            "SCTID:200999007"
+          ]
+        }
+      ]
+    }
+  ]
+}

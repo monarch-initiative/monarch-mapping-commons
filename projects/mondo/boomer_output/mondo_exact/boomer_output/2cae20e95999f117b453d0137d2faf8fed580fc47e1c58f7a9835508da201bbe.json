@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2cae20e95999f117b453d0137d2faf8fed580fc47e1c58f7a9835508da201bbe",
+      "nodes" : [
+        {
+          "id" : "MONDO:0003945",
+          "type" : "CLASS",
+          "lbl" : "bone epithelioid hemangioma"
+        },
+        {
+          "id" : "NCIT:C5396",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1332575",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6610",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1332578",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332575",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003945",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003945",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5396",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003945",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1332578",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6610",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003945",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332575",
+            "MONDO:0003945",
+            "NCIT:C5396",
+            "DOID:6610"
+          ]
+        }
+      ]
+    }
+  ]
+}

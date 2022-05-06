@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cb388254d8c1470aa56ae63adfaca5a1ef47edfa663b2b3887366303463d8ef8",
+      "nodes" : [
+        {
+          "id" : "MESH:D004342",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060500",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000775",
+          "type" : "CLASS",
+          "lbl" : "drug allergy"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D004342",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000775",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060500",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000775",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000775",
+            "MESH:D004342",
+            "DOID:0060500"
+          ]
+        }
+      ]
+    }
+  ]
+}

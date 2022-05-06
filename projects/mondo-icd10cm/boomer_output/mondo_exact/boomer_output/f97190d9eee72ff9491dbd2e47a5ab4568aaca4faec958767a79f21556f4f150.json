@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f97190d9eee72ff9491dbd2e47a5ab4568aaca4faec958767a79f21556f4f150",
+      "nodes" : [
+        {
+          "id" : "MESH:C538328",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1853187",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012535",
+          "type" : "CLASS",
+          "lbl" : "holoprosencephaly, recurrent infections, and monocytosis"
+        },
+        {
+          "id" : "OMIM:610680",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1853187",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012535",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012535",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610680",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538328",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012535",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012535",
+            "UMLS:C1853187",
+            "OMIM:610680",
+            "MESH:C538328"
+          ]
+        }
+      ]
+    }
+  ]
+}

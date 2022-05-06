@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:85d6fb919988e0953dcc379e93ee2fc115cf26458c1ca2975e835c1f0cd3f8da",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332896",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8224",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004505",
+          "type" : "CLASS",
+          "lbl" : "central breast papilloma"
+        },
+        {
+          "id" : "NCIT:C36087",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004505",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C36087",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8224",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004505",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332896",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004505",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C36087",
+            "MONDO:0004505",
+            "DOID:8224",
+            "UMLS:C1332896"
+          ]
+        }
+      ]
+    }
+  ]
+}

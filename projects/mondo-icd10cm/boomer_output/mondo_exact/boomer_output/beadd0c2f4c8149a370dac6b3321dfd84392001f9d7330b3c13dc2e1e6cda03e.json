@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:beadd0c2f4c8149a370dac6b3321dfd84392001f9d7330b3c13dc2e1e6cda03e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207213",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020362",
+          "type" : "CLASS",
+          "lbl" : "inverse Marcus-Gunn phenomenon"
+        },
+        {
+          "id" : "Orphanet:98951",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020362",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98951",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN207213",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020362",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020362",
+            "Orphanet:98951",
+            "UMLS:CN207213"
+          ]
+        }
+      ]
+    }
+  ]
+}

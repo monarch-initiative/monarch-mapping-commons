@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4a269f3a261a202711b26f4cdc82c83d2e9f7ee921d17e8ebb5d9a9c83eceedf",
+      "nodes" : [
+        {
+          "id" : "SCTID:111321007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020417",
+          "type" : "CLASS",
+          "lbl" : "right aortic arch"
+        },
+        {
+          "id" : "NCIT:C103917",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:99081",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020417",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99081",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:111321007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020417",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020417",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C103917",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:99081",
+            "MONDO:0020417",
+            "SCTID:111321007",
+            "NCIT:C103917"
+          ]
+        }
+      ]
+    }
+  ]
+}

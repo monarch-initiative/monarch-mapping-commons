@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b8626edc48612658306f657ea55d075ae15269c1addc2806cca54dc86363caa6",
+      "nodes" : [
+        {
+          "id" : "MESH:C564989",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1850902",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007647",
+          "type" : "CLASS",
+          "lbl" : "gastric volvulus, intrathoracic"
+        },
+        {
+          "id" : "OMIM:137210",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1850902",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007647",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564989",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007647",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007647",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:137210",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007647",
+            "UMLS:C1850902",
+            "MESH:C564989",
+            "OMIM:137210"
+          ]
+        }
+      ]
+    }
+  ]
+}

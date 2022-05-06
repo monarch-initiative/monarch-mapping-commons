@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0641321cb3312082c9d5cc0641715409aba7550fb7dd240c0bba90fd29a435fe",
+      "nodes" : [
+        {
+          "id" : "SCTID:33449004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1510",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002028",
+          "type" : "CLASS",
+          "lbl" : "personality disorder"
+        },
+        {
+          "id" : "NCIT:C34922",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:1510",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002028",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002028",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C34922",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:33449004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002028",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002028",
+            "DOID:1510",
+            "NCIT:C34922",
+            "SCTID:33449004"
+          ]
+        }
+      ]
+    }
+  ]
+}

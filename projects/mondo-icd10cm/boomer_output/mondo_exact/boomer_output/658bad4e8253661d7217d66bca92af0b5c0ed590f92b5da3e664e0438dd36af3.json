@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:658bad4e8253661d7217d66bca92af0b5c0ed590f92b5da3e664e0438dd36af3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336888",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2142",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002222",
+          "type" : "CLASS",
+          "lbl" : "urethra leiomyoma"
+        },
+        {
+          "id" : "NCIT:C6171",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002222",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6171",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2142",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002222",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336888",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002222",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6171",
+            "MONDO:0002222",
+            "DOID:2142",
+            "UMLS:C1336888"
+          ]
+        }
+      ]
+    }
+  ]
+}

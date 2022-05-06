@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:423b2575f0e286963da2ab892601832360904deb264a2e3ef536128ce3400717",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336879",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5539",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003502",
+          "type" : "CLASS",
+          "lbl" : "ureter squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C6154",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003502",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6154",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5539",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003502",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336879",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003502",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6154",
+            "MONDO:0003502",
+            "DOID:5539",
+            "UMLS:C1336879"
+          ]
+        }
+      ]
+    }
+  ]
+}

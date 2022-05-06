@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:492bf137a4626a8eb2958d762a7728aa36cab3cca73a4d872cb24461af1e1e65",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2607932",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4699",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003104",
+          "type" : "CLASS",
+          "lbl" : "epicardium cancer"
+        },
+        {
+          "id" : "NCIT:C4568",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2607932",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003104",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003104",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4568",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4699",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003104",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003104",
+            "UMLS:C2607932",
+            "NCIT:C4568",
+            "DOID:4699"
+          ]
+        }
+      ]
+    }
+  ]
+}

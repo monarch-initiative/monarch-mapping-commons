@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:82ece030324532f7a166ef635979c6defe095aca803b1eee2cd691128e6cd71f",
+      "nodes" : [
+        {
+          "id" : "MESH:C565049",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1851570",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007553",
+          "type" : "CLASS",
+          "lbl" : "epidermolysis bullosa with deficiency of galactosylhydroxylysyl glucosyltransferase"
+        },
+        {
+          "id" : "OMIM:131880",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1851570",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007553",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007553",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:131880",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565049",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007553",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1851570",
+            "MONDO:0007553",
+            "OMIM:131880",
+            "MESH:C565049"
+          ]
+        }
+      ]
+    }
+  ]
+}

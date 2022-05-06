@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e0a0d6211a77a7ad6565e87c40f3a1145db002c47868d2ade62a1e90efc94527",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN562785",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021575",
+          "type" : "CLASS",
+          "lbl" : "oocyte maturation defect 4"
+        },
+        {
+          "id" : "OMIM:617743",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN562785",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021575",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021575",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617743",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN562785",
+            "MONDO:0021575",
+            "OMIM:617743"
+          ]
+        }
+      ]
+    }
+  ]
+}

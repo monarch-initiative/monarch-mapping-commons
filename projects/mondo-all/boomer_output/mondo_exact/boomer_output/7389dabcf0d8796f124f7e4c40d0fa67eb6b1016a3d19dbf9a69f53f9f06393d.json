@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7389dabcf0d8796f124f7e4c40d0fa67eb6b1016a3d19dbf9a69f53f9f06393d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334554",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5638",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003561",
+          "type" : "CLASS",
+          "lbl" : "malignant giant cell tumor of soft parts"
+        },
+        {
+          "id" : "NCIT:C8380",
+          "type" : "CLASS",
+          "lbl" : "Undifferentiated Pleomorphic Sarcoma with Osteoclast-Like Giant Cells"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003561",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8380",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5638",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003561",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334554",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003561",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003561",
+            "NCIT:C8380",
+            "DOID:5638",
+            "UMLS:C0334554"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:23cf73ed164b8cb1688da4297b6bc30163beabb51a9591f5f4a01cd54eae48c9",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN029274",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024530",
+          "type" : "CLASS",
+          "lbl" : "Bethlem myopathy 1"
+        },
+        {
+          "id" : "OMIM:158810",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024530",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:158810",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN029274",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024530",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024530",
+            "OMIM:158810",
+            "UMLS:CN029274"
+          ]
+        }
+      ]
+    }
+  ]
+}

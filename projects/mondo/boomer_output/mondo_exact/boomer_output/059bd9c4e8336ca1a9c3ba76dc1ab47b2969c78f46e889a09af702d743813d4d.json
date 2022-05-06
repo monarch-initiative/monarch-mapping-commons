@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:059bd9c4e8336ca1a9c3ba76dc1ab47b2969c78f46e889a09af702d743813d4d",
+      "nodes" : [
+        {
+          "id" : "MESH:D011021",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0032306",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0025453",
+          "type" : "CLASS",
+          "lbl" : "pneumonia, progressive interstitial, of sheep"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0032306",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025453",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D011021",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025453",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0032306",
+            "MONDO:0025453",
+            "MESH:D011021"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f435fb89ef9bae8522280be072b955e366c5b6dd2dddde9625fc5d78cd83798c",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:L21.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8941",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006609",
+          "type" : "CLASS",
+          "lbl" : "seborrheic infantile dermatitis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:8941",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006609",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:L21.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006609",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:8941",
+            "MONDO:0006609",
+            "ICD10CM:L21.0"
+          ]
+        }
+      ]
+    }
+  ]
+}

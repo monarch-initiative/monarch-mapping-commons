@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4a108b18b7e2689917f098101c3e7e6fd4caeff77993a502d9c27da5c213e517",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553961",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013944",
+          "type" : "CLASS",
+          "lbl" : "autoinflammation-PLCG2-associated antibody deficiency-immune dysregulation"
+        },
+        {
+          "id" : "Orphanet:324530",
+          "type" : "CLASS",
+          "lbl" : "Autoinflammation-PLCG2-associated antibody deficiency-immune dysregulation"
+        },
+        {
+          "id" : "OMIM:614878",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013944",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614878",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013944",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:324530",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3553961",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013944",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:614878",
+            "MONDO:0013944",
+            "Orphanet:324530",
+            "UMLS:C3553961"
+          ]
+        }
+      ]
+    }
+  ]
+}

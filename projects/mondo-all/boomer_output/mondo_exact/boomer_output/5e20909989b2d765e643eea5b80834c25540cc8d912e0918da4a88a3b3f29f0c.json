@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5e20909989b2d765e643eea5b80834c25540cc8d912e0918da4a88a3b3f29f0c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0431118",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4584",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003053",
+          "type" : "CLASS",
+          "lbl" : "choroid plexus meningioma"
+        },
+        {
+          "id" : "NCIT:C4719",
+          "type" : "CLASS",
+          "lbl" : "Choroid Plexus Meningioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0431118",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003053",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003053",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4719",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4584",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003053",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0431118",
+            "MONDO:0003053",
+            "NCIT:C4719",
+            "DOID:4584"
+          ]
+        }
+      ]
+    }
+  ]
+}

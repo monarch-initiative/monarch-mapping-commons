@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1aab09100efe6681dc74c28fead8b52cb068a6d2df4e73e381bf910e25518ac2",
+      "nodes" : [
+        {
+          "id" : "MESH:C567769",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:613076",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2751320",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013116",
+          "type" : "CLASS",
+          "lbl" : "congenital cataract-progressive muscular hypotonia-hearing loss-developmental delay syndrome"
+        },
+        {
+          "id" : "Orphanet:330054",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013116",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613076",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2751320",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013116",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013116",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:330054",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567769",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013116",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2751320",
+            "MONDO:0013116",
+            "Orphanet:330054",
+            "MESH:C567769",
+            "OMIM:613076"
+          ]
+        }
+      ]
+    }
+  ]
+}

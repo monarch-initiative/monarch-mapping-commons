@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e7b835761f2490dd17083a4a71ce1728e87a1027aabedb6e3291a6a02ebd9cb2",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN199165",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015259",
+          "type" : "CLASS",
+          "lbl" : "brachydactyly-mesomelia-intellectual disability-heart defects syndrome"
+        },
+        {
+          "id" : "Orphanet:1277",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015259",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1277",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN199165",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015259",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015259",
+            "Orphanet:1277",
+            "UMLS:CN199165"
+          ]
+        }
+      ]
+    }
+  ]
+}

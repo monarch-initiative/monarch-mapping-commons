@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:30f9cd30d52b5c0f04f80716af2a1c497fc480e5c746b72da7c4d73074d18e69",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335776",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5874",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003685",
+          "type" : "CLASS",
+          "lbl" : "retroperitoneal germ cell neoplasm"
+        },
+        {
+          "id" : "NCIT:C6447",
+          "type" : "CLASS",
+          "lbl" : "Retroperitoneal Germ Cell Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335776",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003685",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003685",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6447",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5874",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003685",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1335776",
+            "MONDO:0003685",
+            "NCIT:C6447",
+            "DOID:5874"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:309ca320299b8c8e22389983729c7a90e0b0d1eca2371fe2dbdfb777057273ce",
+      "nodes" : [
+        {
+          "id" : "MESH:C563921",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1837970",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012046",
+          "type" : "CLASS",
+          "lbl" : "congenital corneal opacities, cornea guttata, and corectopia"
+        },
+        {
+          "id" : "OMIM:608484",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1837970",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012046",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012046",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608484",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563921",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012046",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1837970",
+            "MONDO:0012046",
+            "MESH:C563921",
+            "OMIM:608484"
+          ]
+        }
+      ]
+    }
+  ]
+}

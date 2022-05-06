@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:99dd8b0618439283530f0982c6a21fb8beeaa3035efd304c7c2905d6d6fba7a6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225178",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014803",
+          "type" : "CLASS",
+          "lbl" : "spasticity-ataxia-gait anomalies syndrome"
+        },
+        {
+          "id" : "Orphanet:401866",
+          "type" : "CLASS",
+          "lbl" : "Childhood-onset spasticity with hyperglycinemia"
+        },
+        {
+          "id" : "OMIM:616859",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014803",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616859",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014803",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:401866",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225178",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014803",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:616859",
+            "MONDO:0014803",
+            "Orphanet:401866",
+            "UMLS:C4225178"
+          ]
+        }
+      ]
+    }
+  ]
+}

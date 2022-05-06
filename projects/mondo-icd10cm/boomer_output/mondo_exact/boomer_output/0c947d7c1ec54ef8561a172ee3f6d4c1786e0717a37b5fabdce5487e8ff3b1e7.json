@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0c947d7c1ec54ef8561a172ee3f6d4c1786e0717a37b5fabdce5487e8ff3b1e7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202203",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016860",
+          "type" : "CLASS",
+          "lbl" : "familial adenomatous polyposis due to 5q22.2 microdeletion"
+        },
+        {
+          "id" : "Orphanet:261584",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202203",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016860",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016860",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:261584",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016860",
+            "UMLS:CN202203",
+            "Orphanet:261584"
+          ]
+        }
+      ]
+    }
+  ]
+}

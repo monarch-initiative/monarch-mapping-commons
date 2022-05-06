@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4e2cc52b5640a446f4cd27bb37dac55226bacd4c857a94b8174425f1d96dc164",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333593",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8186",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004489",
+          "type" : "CLASS",
+          "lbl" : "fallopian tube gestational choriocarcinoma"
+        },
+        {
+          "id" : "NCIT:C6278",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004489",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6278",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8186",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004489",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333593",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004489",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6278",
+            "MONDO:0004489",
+            "DOID:8186",
+            "UMLS:C1333593"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:79f8b34bd979dccbf1bcdf69d8d7a83242aeb77f35158f5e7696119cdd5bcb2d",
+      "nodes" : [
+        {
+          "id" : "SCTID:92384009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0004998",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021440",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of skin"
+        },
+        {
+          "id" : "NCIT:C2896",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021440",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C2896",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0004998",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021440",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92384009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021440",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021440",
+            "NCIT:C2896",
+            "UMLS:C0004998",
+            "SCTID:92384009"
+          ]
+        }
+      ]
+    }
+  ]
+}

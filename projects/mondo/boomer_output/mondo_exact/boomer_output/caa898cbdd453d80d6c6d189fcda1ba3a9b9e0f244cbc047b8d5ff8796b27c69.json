@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:caa898cbdd453d80d6c6d189fcda1ba3a9b9e0f244cbc047b8d5ff8796b27c69",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150914",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080123",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013350",
+          "type" : "CLASS",
+          "lbl" : "mitochondrial DNA depletion syndrome 4b"
+        },
+        {
+          "id" : "OMIM:613662",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3150914",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013350",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613662",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080123",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013350",
+            "OMIM:613662",
+            "UMLS:C3150914",
+            "DOID:0080123"
+          ]
+        }
+      ]
+    }
+  ]
+}

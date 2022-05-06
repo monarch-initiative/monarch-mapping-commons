@@ -1,0 +1,76 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:803bb8a4dda2a50703cb4125c96eb36b5a1540844dda749715ba47a5f0d6404d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2827407",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024330",
+          "type" : "CLASS",
+          "lbl" : "infectious otitis media"
+        },
+        {
+          "id" : "NCIT:C84354",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0271429",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024330",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C84354",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0024330",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0271429",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2827407",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024330",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C84354",
+            "MONDO:0024330",
+            "UMLS:C2827407"
+          ]
+        }
+      ]
+    }
+  ]
+}

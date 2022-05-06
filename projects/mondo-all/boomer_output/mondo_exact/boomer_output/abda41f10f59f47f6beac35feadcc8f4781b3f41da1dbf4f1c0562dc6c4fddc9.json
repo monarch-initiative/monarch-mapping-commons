@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:abda41f10f59f47f6beac35feadcc8f4781b3f41da1dbf4f1c0562dc6c4fddc9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225240",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110589",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014740",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant nonsyndromic hearing loss 68"
+        },
+        {
+          "id" : "OMIM:616707",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110589",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014740",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014740",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616707",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225240",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014740",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0110589",
+            "MONDO:0014740",
+            "OMIM:616707",
+            "UMLS:C4225240"
+          ]
+        }
+      ]
+    }
+  ]
+}

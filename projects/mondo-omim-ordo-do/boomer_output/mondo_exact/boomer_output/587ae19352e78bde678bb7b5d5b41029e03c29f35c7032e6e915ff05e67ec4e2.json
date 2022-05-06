@@ -1,0 +1,131 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:587ae19352e78bde678bb7b5d5b41029e03c29f35c7032e6e915ff05e67ec4e2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1509148",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5766",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006280",
+          "type" : "CLASS",
+          "lbl" : "lung sclerosing hemangioma"
+        },
+        {
+          "id" : "MESH:D047868",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:707365008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C5656",
+          "type" : "CLASS",
+          "lbl" : "Sclerosing Pneumocytoma"
+        },
+        {
+          "id" : "DOID:495",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:707365008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006280",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:495",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006280",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006280",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5656",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006280",
+          "pred" : "siblingOf",
+          "obj" : "DOID:5766",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D047868",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006280",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1509148",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006280",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006280",
+            "SCTID:707365008",
+            "DOID:495",
+            "NCIT:C5656",
+            "UMLS:C1509148",
+            "MESH:D047868"
+          ]
+        }
+      ]
+    }
+  ]
+}

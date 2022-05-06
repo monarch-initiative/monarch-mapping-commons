@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8dd50fe3659601e13ea6fb99430872ab67f308691d3971901b6be0924593e87d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203134",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017393",
+          "type" : "CLASS",
+          "lbl" : "blepharophimosis - intellectual disability syndrome"
+        },
+        {
+          "id" : "Orphanet:293642",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017393",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:293642",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203134",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017393",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:293642",
+            "MONDO:0017393",
+            "UMLS:CN203134"
+          ]
+        }
+      ]
+    }
+  ]
+}

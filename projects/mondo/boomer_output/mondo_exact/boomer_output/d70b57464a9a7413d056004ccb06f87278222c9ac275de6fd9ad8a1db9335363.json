@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d70b57464a9a7413d056004ccb06f87278222c9ac275de6fd9ad8a1db9335363",
+      "nodes" : [
+        {
+          "id" : "SCTID:42376006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:Q01.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017080",
+          "type" : "CLASS",
+          "lbl" : "occipital encephalocele"
+        },
+        {
+          "id" : "Orphanet:268823",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017080",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:268823",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q01.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017080",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:42376006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017080",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017080",
+            "Orphanet:268823",
+            "ICD10CM:Q01.2",
+            "SCTID:42376006"
+          ]
+        }
+      ]
+    }
+  ]
+}

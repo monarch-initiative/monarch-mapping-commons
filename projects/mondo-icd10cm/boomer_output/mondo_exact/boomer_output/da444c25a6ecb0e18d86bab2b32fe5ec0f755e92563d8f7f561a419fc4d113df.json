@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:da444c25a6ecb0e18d86bab2b32fe5ec0f755e92563d8f7f561a419fc4d113df",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:A21.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:14239",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001916",
+          "type" : "CLASS",
+          "lbl" : "gastrointestinal tularemia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:A21.3",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001916",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:14239",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001916",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001916",
+            "ICD10CM:A21.3",
+            "DOID:14239"
+          ]
+        }
+      ]
+    }
+  ]
+}

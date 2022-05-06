@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:12cab8aae6256a6d23762e9a607fba0d60f4bde599c71f2122daa94489783fd5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3279839",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:614104",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070037",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013578",
+          "type" : "CLASS",
+          "lbl" : "DYRK1A-related intellectual disability syndrome"
+        },
+        {
+          "id" : "Orphanet:464306",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0070037",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013578",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013578",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614104",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3279839",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013578",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013578",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:464306",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:614104",
+            "Orphanet:464306",
+            "UMLS:C3279839",
+            "DOID:0070037",
+            "MONDO:0013578"
+          ]
+        }
+      ]
+    }
+  ]
+}

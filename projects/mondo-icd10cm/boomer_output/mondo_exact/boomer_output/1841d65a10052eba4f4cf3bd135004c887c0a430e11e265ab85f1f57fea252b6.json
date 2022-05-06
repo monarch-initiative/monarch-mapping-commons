@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1841d65a10052eba4f4cf3bd135004c887c0a430e11e265ab85f1f57fea252b6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3554168",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111477",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013986",
+          "type" : "CLASS",
+          "lbl" : "combined oxidative phosphorylation defect type 14"
+        },
+        {
+          "id" : "OMIM:614946",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:319519",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013986",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:319519",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3554168",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013986",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111477",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013986",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013986",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614946",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0111477",
+            "OMIM:614946",
+            "MONDO:0013986",
+            "UMLS:C3554168",
+            "Orphanet:319519"
+          ]
+        }
+      ]
+    }
+  ]
+}

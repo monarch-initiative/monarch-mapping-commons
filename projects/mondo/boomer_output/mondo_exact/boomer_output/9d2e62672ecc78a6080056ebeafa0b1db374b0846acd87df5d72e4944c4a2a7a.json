@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9d2e62672ecc78a6080056ebeafa0b1db374b0846acd87df5d72e4944c4a2a7a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335184",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006343",
+          "type" : "CLASS",
+          "lbl" : "ovarian transitional cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C5240",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335184",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006343",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006343",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5240",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006343",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006343",
+            "UMLS:C1335184",
+            "NCIT:C5240",
+            "DOID:4000"
+          ]
+        }
+      ]
+    }
+  ]
+}

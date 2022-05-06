@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d37551181b0f59fa85ef7ff3456caa9ed20fe20a385464e027ff961fb2ccdfd5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN244546",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0054770",
+          "type" : "CLASS",
+          "lbl" : "orofaciodigital syndrome 18"
+        },
+        {
+          "id" : "OMIM:617927",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0054770",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617927",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN244546",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0054770",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0054770",
+            "OMIM:617927",
+            "UMLS:CN244546"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:92ef857b516ba17186a6cb7e9ec4a6f164788b3ba52e7270ed64f130a09a770b",
+      "nodes" : [
+        {
+          "id" : "MESH:D000820",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0003047",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005583",
+          "type" : "CLASS",
+          "lbl" : "non-human animal disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D000820",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005583",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0003047",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005583",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005583",
+            "MESH:D000820",
+            "UMLS:C0003047"
+          ]
+        }
+      ]
+    }
+  ]
+}

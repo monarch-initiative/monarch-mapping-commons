@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b4d5e8630deef0119c53213d7604e0c380614f16904ebbf55b53b71dc3c7e879",
+      "nodes" : [
+        {
+          "id" : "MESH:C535521",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1863534",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011370",
+          "type" : "CLASS",
+          "lbl" : "Stargardt disease 4"
+        },
+        {
+          "id" : "OMIM:603786",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011370",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603786",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1863534",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011370",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535521",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011370",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011370",
+            "OMIM:603786",
+            "UMLS:C1863534",
+            "MESH:C535521"
+          ]
+        }
+      ]
+    }
+  ]
+}

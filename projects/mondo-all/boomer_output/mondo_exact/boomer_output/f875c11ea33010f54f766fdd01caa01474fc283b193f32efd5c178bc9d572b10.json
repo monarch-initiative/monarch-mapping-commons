@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f875c11ea33010f54f766fdd01caa01474fc283b193f32efd5c178bc9d572b10",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1321870",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7747",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004350",
+          "type" : "CLASS",
+          "lbl" : "pediatric extraocular retinoblastoma"
+        },
+        {
+          "id" : "NCIT:C9048",
+          "type" : "CLASS",
+          "lbl" : "Childhood Extraocular Retinoblastoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1321870",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004350",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9048",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7747",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C9048",
+            "MONDO:0004350",
+            "UMLS:C1321870",
+            "DOID:7747"
+          ]
+        }
+      ]
+    }
+  ]
+}

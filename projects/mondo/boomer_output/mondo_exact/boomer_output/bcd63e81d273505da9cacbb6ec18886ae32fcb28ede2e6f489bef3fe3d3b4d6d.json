@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bcd63e81d273505da9cacbb6ec18886ae32fcb28ede2e6f489bef3fe3d3b4d6d",
+      "nodes" : [
+        {
+          "id" : "MESH:C563348",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1832464",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011040",
+          "type" : "CLASS",
+          "lbl" : "spinal dysplasia, Anhalt type"
+        },
+        {
+          "id" : "OMIM:601344",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011040",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601344",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1832464",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011040",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563348",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011040",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011040",
+            "OMIM:601344",
+            "UMLS:C1832464",
+            "MESH:C563348"
+          ]
+        }
+      ]
+    }
+  ]
+}

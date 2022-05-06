@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c4c7ca7927ed720b10c8c10a2d1a69f68a0dbca8f6b78a47d553ac593cfbc76e",
+      "nodes" : [
+        {
+          "id" : "SCTID:451030007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN237553",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018552",
+          "type" : "CLASS",
+          "lbl" : "urachal sinus"
+        },
+        {
+          "id" : "Orphanet:431344",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237553",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018552",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018552",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:431344",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:451030007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018552",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018552",
+            "UMLS:CN237553",
+            "Orphanet:431344",
+            "SCTID:451030007"
+          ]
+        }
+      ]
+    }
+  ]
+}

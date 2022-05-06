@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:07b81077882eb78a1f4d3c87f869e836c71022387da5a1305dac36721f8326ad",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1331534",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5438",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003445",
+          "type" : "CLASS",
+          "lbl" : "extrahepatic bile duct adenoma"
+        },
+        {
+          "id" : "NCIT:C5857",
+          "type" : "CLASS",
+          "lbl" : "Extrahepatic Bile Duct Adenoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5438",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003445",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1331534",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003445",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003445",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5857",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1331534",
+            "MONDO:0003445",
+            "DOID:5438",
+            "NCIT:C5857"
+          ]
+        }
+      ]
+    }
+  ]
+}

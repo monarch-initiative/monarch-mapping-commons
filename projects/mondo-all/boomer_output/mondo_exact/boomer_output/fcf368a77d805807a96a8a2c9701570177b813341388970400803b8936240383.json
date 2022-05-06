@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fcf368a77d805807a96a8a2c9701570177b813341388970400803b8936240383",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0600113",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080369",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021657",
+          "type" : "CLASS",
+          "lbl" : "ovarian sex cord-stromal tumor"
+        },
+        {
+          "id" : "NCIT:C4862",
+          "type" : "CLASS",
+          "lbl" : "Ovarian Sex Cord-Stromal Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080369",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021657",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021657",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4862",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0600113",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021657",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0080369",
+            "MONDO:0021657",
+            "NCIT:C4862",
+            "UMLS:C0600113"
+          ]
+        }
+      ]
+    }
+  ]
+}

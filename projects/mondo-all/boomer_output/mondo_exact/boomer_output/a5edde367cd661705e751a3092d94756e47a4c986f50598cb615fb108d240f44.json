@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a5edde367cd661705e751a3092d94756e47a4c986f50598cb615fb108d240f44",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334629",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3479",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002659",
+          "type" : "CLASS",
+          "lbl" : "uveal cancer"
+        },
+        {
+          "id" : "NCIT:C6105",
+          "type" : "CLASS",
+          "lbl" : "Malignant Uveal Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334629",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002659",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3479",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002659",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002659",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6105",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1334629",
+            "MONDO:0002659",
+            "DOID:3479",
+            "NCIT:C6105"
+          ]
+        }
+      ]
+    }
+  ]
+}

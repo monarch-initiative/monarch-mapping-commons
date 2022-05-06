@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e0af60d6dca056d9f2812cc8b49051d156cbba5dd7e4f20e767f3122280f1964",
+      "nodes" : [
+        {
+          "id" : "DOID:0111643",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0032762",
+          "type" : "CLASS",
+          "lbl" : "hearing loss, autosomal recessive 115"
+        },
+        {
+          "id" : "OMIM:618457",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0032762",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:618457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111643",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0032762",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0032762",
+            "OMIM:618457",
+            "DOID:0111643"
+          ]
+        }
+      ]
+    }
+  ]
+}

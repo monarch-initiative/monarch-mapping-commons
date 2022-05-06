@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8160617ddbc21e9c7fa8b093d87cc3757979f127c981a6bdcfb2088a0da927e4",
+      "nodes" : [
+        {
+          "id" : "MESH:C567339",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2676508",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012874",
+          "type" : "CLASS",
+          "lbl" : "porokeratosis 6, disseminated superficial actinic type"
+        },
+        {
+          "id" : "OMIM:612353",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2676508",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012874",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567339",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012874",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012874",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:612353",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2676508",
+            "MONDO:0012874",
+            "MESH:C567339",
+            "OMIM:612353"
+          ]
+        }
+      ]
+    }
+  ]
+}

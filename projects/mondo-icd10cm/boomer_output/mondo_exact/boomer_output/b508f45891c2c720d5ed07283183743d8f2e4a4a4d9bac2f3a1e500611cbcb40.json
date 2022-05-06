@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b508f45891c2c720d5ed07283183743d8f2e4a4a4d9bac2f3a1e500611cbcb40",
+      "nodes" : [
+        {
+          "id" : "MESH:D007246",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5223",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005047",
+          "type" : "CLASS",
+          "lbl" : "infertility disorder"
+        },
+        {
+          "id" : "NCIT:C3836",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5223",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005047",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005047",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3836",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D007246",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005047",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5223",
+            "MONDO:0005047",
+            "NCIT:C3836",
+            "MESH:D007246"
+          ]
+        }
+      ]
+    }
+  ]
+}

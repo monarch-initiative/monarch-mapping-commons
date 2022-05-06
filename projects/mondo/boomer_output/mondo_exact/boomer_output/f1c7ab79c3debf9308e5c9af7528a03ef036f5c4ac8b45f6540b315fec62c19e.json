@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f1c7ab79c3debf9308e5c9af7528a03ef036f5c4ac8b45f6540b315fec62c19e",
+      "nodes" : [
+        {
+          "id" : "Orphanet:2369",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:716106000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4274839",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN201594",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016528",
+          "type" : "CLASS",
+          "lbl" : "limb body wall complex"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016528",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2369",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:716106000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016528",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4274839",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016528",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016528",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN201594",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016528",
+            "Orphanet:2369",
+            "SCTID:716106000",
+            "UMLS:C4274839"
+          ]
+        }
+      ]
+    }
+  ]
+}

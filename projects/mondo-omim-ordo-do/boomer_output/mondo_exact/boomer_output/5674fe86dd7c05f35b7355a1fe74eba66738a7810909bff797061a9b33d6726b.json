@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5674fe86dd7c05f35b7355a1fe74eba66738a7810909bff797061a9b33d6726b",
+      "nodes" : [
+        {
+          "id" : "MONDO:0001543",
+          "type" : "CLASS",
+          "lbl" : "lesion of sciatic nerve"
+        },
+        {
+          "id" : "SCTID:367137004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:G57.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:12528",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0154748",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:367137004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001543",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0154748",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001543",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:12528",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001543",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:G57.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001543",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0154748",
+            "MONDO:0001543",
+            "SCTID:367137004",
+            "DOID:12528",
+            "ICD10CM:G57.0"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e07ee261e903b7cf6caafa6516d6bd3a2fc086366b1e6df86f2d609415c386d8",
+      "nodes" : [
+        {
+          "id" : "MESH:C566666",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1866744",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008461",
+          "type" : "CLASS",
+          "lbl" : "splenomegaly syndrome with splenic Germinal center hypoplasia and reduced circulating T helper cells"
+        },
+        {
+          "id" : "OMIM:183350",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1866744",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008461",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566666",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008461",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008461",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:183350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008461",
+            "UMLS:C1866744",
+            "MESH:C566666",
+            "OMIM:183350"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9652b39dfd6b1082a858eaac0c5d0d71cc14511c8a75be54d531f5598df8d980",
+      "nodes" : [
+        {
+          "id" : "MESH:D002288",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0007130",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004957",
+          "type" : "CLASS",
+          "lbl" : "mucinous adenocarcinoma"
+        },
+        {
+          "id" : "UMLS:C0334368",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C26712",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3030",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0007130",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004957",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004957",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0334368",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D002288",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004957",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004957",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C26712",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3030",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004957",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C26712",
+            "MONDO:0004957",
+            "DOID:3030",
+            "UMLS:C0007130",
+            "MESH:D002288"
+          ]
+        }
+      ]
+    }
+  ]
+}

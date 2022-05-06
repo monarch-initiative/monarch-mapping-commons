@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a91eeea11e9daefce0d6b417b5320be5ff43223a5b3433c6fbface0f7d01f8fd",
+      "nodes" : [
+        {
+          "id" : "MESH:C563523",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1834235",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008078",
+          "type" : "CLASS",
+          "lbl" : "neurofibromatosis, familial spinal"
+        },
+        {
+          "id" : "OMIM:162210",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1834235",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008078",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563523",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008078",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008078",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:162210",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1834235",
+            "MONDO:0008078",
+            "MESH:C563523",
+            "OMIM:162210"
+          ]
+        }
+      ]
+    }
+  ]
+}

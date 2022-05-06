@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ba0a7ccd40d9902fe78f7f23b441bca9a729f464826f5b114d4a90e14d58838d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809198",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014136",
+          "type" : "CLASS",
+          "lbl" : "pulmonary hypertension, primary, 4"
+        },
+        {
+          "id" : "OMIM:615344",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014136",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615344",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3809198",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014136",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014136",
+            "OMIM:615344",
+            "UMLS:C3809198"
+          ]
+        }
+      ]
+    }
+  ]
+}

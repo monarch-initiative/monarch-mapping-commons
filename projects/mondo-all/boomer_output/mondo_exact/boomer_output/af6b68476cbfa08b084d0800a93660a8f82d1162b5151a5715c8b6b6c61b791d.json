@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:af6b68476cbfa08b084d0800a93660a8f82d1162b5151a5715c8b6b6c61b791d",
+      "nodes" : [
+        {
+          "id" : "DOID:0060759",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011971",
+          "type" : "CLASS",
+          "lbl" : "hyper-IgM syndrome type 5"
+        },
+        {
+          "id" : "Orphanet:101092",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:608106",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011971",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608106",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011971",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:101092",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060759",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011971",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011971",
+            "OMIM:608106",
+            "Orphanet:101092",
+            "DOID:0060759"
+          ]
+        }
+      ]
+    }
+  ]
+}

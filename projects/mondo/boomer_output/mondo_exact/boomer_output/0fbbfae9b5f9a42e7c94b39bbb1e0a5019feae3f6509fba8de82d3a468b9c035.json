@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0fbbfae9b5f9a42e7c94b39bbb1e0a5019feae3f6509fba8de82d3a468b9c035",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201288",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016387",
+          "type" : "CLASS",
+          "lbl" : "mitochondrial oxidative phosphorylation disorder"
+        },
+        {
+          "id" : "Orphanet:223713",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016387",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:223713",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201288",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016387",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016387",
+            "Orphanet:223713",
+            "UMLS:CN201288"
+          ]
+        }
+      ]
+    }
+  ]
+}

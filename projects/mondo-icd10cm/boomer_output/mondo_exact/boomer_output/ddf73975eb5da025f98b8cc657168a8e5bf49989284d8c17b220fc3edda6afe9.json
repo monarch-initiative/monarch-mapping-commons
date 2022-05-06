@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ddf73975eb5da025f98b8cc657168a8e5bf49989284d8c17b220fc3edda6afe9",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226127",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018420",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive spastic paraplegia type 68"
+        },
+        {
+          "id" : "Orphanet:401825",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018420",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:401825",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226127",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018420",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018420",
+            "Orphanet:401825",
+            "UMLS:CN226127"
+          ]
+        }
+      ]
+    }
+  ]
+}

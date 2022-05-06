@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d2657debecb12fba181ad7ca4c1b598d2fca5671aabffd3c1c3b6ed3b676d3ce",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332984",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6494",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003898",
+          "type" : "CLASS",
+          "lbl" : "pediatric myxoid chondrosarcoma"
+        },
+        {
+          "id" : "NCIT:C27377",
+          "type" : "CLASS",
+          "lbl" : "Childhood Extraskeletal Myxoid Chondrosarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332984",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003898",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003898",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27377",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6494",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003898",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003898",
+            "UMLS:C1332984",
+            "NCIT:C27377",
+            "DOID:6494"
+          ]
+        }
+      ]
+    }
+  ]
+}

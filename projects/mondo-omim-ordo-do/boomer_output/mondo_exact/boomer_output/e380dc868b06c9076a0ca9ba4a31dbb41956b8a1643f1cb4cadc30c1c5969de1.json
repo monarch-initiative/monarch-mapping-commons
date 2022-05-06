@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e380dc868b06c9076a0ca9ba4a31dbb41956b8a1643f1cb4cadc30c1c5969de1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479520",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044319",
+          "type" : "CLASS",
+          "lbl" : "intellectual developmental disorder with dysmorphic facies, seizures, and distal limb anomalies"
+        },
+        {
+          "id" : "Orphanet:505237",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:617452",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0044319",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617452",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044319",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:505237",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4479520",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044319",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0044319",
+            "OMIM:617452",
+            "Orphanet:505237",
+            "UMLS:C4479520"
+          ]
+        }
+      ]
+    }
+  ]
+}

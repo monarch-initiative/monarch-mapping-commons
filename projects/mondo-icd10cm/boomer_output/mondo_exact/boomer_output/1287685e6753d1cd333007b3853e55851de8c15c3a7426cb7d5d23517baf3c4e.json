@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1287685e6753d1cd333007b3853e55851de8c15c3a7426cb7d5d23517baf3c4e",
+      "nodes" : [
+        {
+          "id" : "MESH:C563296",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1832214",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011100",
+          "type" : "CLASS",
+          "lbl" : "microcephaly, retinitis pigmentosa, and sutural cataract"
+        },
+        {
+          "id" : "OMIM:601537",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011100",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601537",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563296",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1832214",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011100",
+            "OMIM:601537",
+            "MESH:C563296",
+            "UMLS:C1832214"
+          ]
+        }
+      ]
+    }
+  ]
+}

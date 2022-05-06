@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0e0692c391706686e5451f0eec3b2e94d7371d89f1168041efe697c5c3aac18a",
+      "nodes" : [
+        {
+          "id" : "MESH:C564159",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1840388",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007773",
+          "type" : "CLASS",
+          "lbl" : "hyperproglucagonemia"
+        },
+        {
+          "id" : "OMIM:145270",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007773",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:145270",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1840388",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007773",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564159",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007773",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007773",
+            "OMIM:145270",
+            "UMLS:C1840388",
+            "MESH:C564159"
+          ]
+        }
+      ]
+    }
+  ]
+}

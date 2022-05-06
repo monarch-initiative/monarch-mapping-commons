@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ef150333634bdc1a690b497f62aaa583f55cbcdb796e3e560da28ff3bce008bb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332573",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5996",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003723",
+          "type" : "CLASS",
+          "lbl" : "blunt duct adenosis of breast"
+        },
+        {
+          "id" : "NCIT:C6941",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5996",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003723",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332573",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003723",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003723",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6941",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003723",
+            "DOID:5996",
+            "UMLS:C1332573",
+            "NCIT:C6941"
+          ]
+        }
+      ]
+    }
+  ]
+}

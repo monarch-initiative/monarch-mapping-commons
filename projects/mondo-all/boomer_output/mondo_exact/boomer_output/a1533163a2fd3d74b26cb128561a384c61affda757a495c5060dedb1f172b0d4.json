@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a1533163a2fd3d74b26cb128561a384c61affda757a495c5060dedb1f172b0d4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0476203",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:315",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002528",
+          "type" : "CLASS",
+          "lbl" : "synovium neoplasm"
+        },
+        {
+          "id" : "NCIT:C8964",
+          "type" : "CLASS",
+          "lbl" : "Synovial Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0476203",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002528",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002528",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8964",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:315",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002528",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002528",
+            "UMLS:C0476203",
+            "NCIT:C8964",
+            "DOID:315"
+          ]
+        }
+      ]
+    }
+  ]
+}

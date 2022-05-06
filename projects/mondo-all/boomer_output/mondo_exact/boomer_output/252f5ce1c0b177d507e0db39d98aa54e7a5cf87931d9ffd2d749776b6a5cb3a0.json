@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:252f5ce1c0b177d507e0db39d98aa54e7a5cf87931d9ffd2d749776b6a5cb3a0",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336535",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7634",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004312",
+          "type" : "CLASS",
+          "lbl" : "suprasellar meningioma"
+        },
+        {
+          "id" : "NCIT:C6776",
+          "type" : "CLASS",
+          "lbl" : "Suprasellar Meningioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7634",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004312",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336535",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004312",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004312",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6776",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004312",
+            "DOID:7634",
+            "UMLS:C1336535",
+            "NCIT:C6776"
+          ]
+        }
+      ]
+    }
+  ]
+}

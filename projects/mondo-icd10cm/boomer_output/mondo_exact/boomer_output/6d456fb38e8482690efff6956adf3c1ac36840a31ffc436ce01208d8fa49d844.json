@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6d456fb38e8482690efff6956adf3c1ac36840a31ffc436ce01208d8fa49d844",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333463",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:961",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004837",
+          "type" : "CLASS",
+          "lbl" : "neurofibroma of the esophagus"
+        },
+        {
+          "id" : "NCIT:C5704",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004837",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5704",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333463",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004837",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:961",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004837",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004837",
+            "NCIT:C5704",
+            "UMLS:C1333463",
+            "DOID:961"
+          ]
+        }
+      ]
+    }
+  ]
+}

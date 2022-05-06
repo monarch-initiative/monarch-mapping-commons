@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:55d40aff97cc55081403810b3d968c2fa6b4f4ce6570f84b1928cea6d57cfd94",
+      "nodes" : [
+        {
+          "id" : "MESH:C564821",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1849235",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010025",
+          "type" : "CLASS",
+          "lbl" : "short stature-obesity syndrome"
+        },
+        {
+          "id" : "OMIM:269870",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564821",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010025",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010025",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:269870",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1849235",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010025",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010025",
+            "MESH:C564821",
+            "OMIM:269870",
+            "UMLS:C1849235"
+          ]
+        }
+      ]
+    }
+  ]
+}

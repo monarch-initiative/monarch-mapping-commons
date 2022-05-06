@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0b45137881a14166986fb6e774902bb02c22a67f36d65b553f9c2decd9ec339b",
+      "nodes" : [
+        {
+          "id" : "SCTID:111310003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0265444",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019906",
+          "type" : "CLASS",
+          "lbl" : "ring chromosome 11"
+        },
+        {
+          "id" : "Orphanet:96175",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019906",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:96175",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0265444",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019906",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:111310003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019906",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019906",
+            "Orphanet:96175",
+            "UMLS:C0265444",
+            "SCTID:111310003"
+          ]
+        }
+      ]
+    }
+  ]
+}

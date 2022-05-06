@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9f81efd332f6f7c94bdc24a26c860c6ea19bb7660c9eada72398619944d4d59d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0278869",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006326",
+          "type" : "CLASS",
+          "lbl" : "ocular melanoma with extraocular extension"
+        },
+        {
+          "id" : "NCIT:C7913",
+          "type" : "CLASS",
+          "lbl" : "Ocular Melanoma with Extraocular Extension"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006326",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7913",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0278869",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006326",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C7913",
+            "MONDO:0006326",
+            "UMLS:C0278869"
+          ]
+        }
+      ]
+    }
+  ]
+}

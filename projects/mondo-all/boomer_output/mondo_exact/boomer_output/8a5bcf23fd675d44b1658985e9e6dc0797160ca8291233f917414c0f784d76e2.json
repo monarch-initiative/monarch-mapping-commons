@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8a5bcf23fd675d44b1658985e9e6dc0797160ca8291233f917414c0f784d76e2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310672",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014963",
+          "type" : "CLASS",
+          "lbl" : "Shashi-Pena syndrome"
+        },
+        {
+          "id" : "OMIM:617190",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014963",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617190",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310672",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014963",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014963",
+            "OMIM:617190",
+            "UMLS:C4310672"
+          ]
+        }
+      ]
+    }
+  ]
+}

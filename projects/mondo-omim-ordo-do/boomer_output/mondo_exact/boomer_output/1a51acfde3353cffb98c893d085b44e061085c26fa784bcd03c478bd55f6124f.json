@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1a51acfde3353cffb98c893d085b44e061085c26fa784bcd03c478bd55f6124f",
+      "nodes" : [
+        {
+          "id" : "DOID:0080493",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024463",
+          "type" : "CLASS",
+          "lbl" : "ovarian dysgenesis 1"
+        },
+        {
+          "id" : "OMIM:233300",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024463",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:233300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080493",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024463",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024463",
+            "DOID:0080493",
+            "OMIM:233300"
+          ]
+        }
+      ]
+    }
+  ]
+}

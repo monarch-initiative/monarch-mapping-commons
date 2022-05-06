@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dc6a5712d3ebbb982d0a8ccebb1553c5cc522b20ce9a4638f0ba3287a35e2114",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237666",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018625",
+          "type" : "CLASS",
+          "lbl" : "classic stiff person syndrome"
+        },
+        {
+          "id" : "Orphanet:443192",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237666",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018625",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018625",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:443192",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN237666",
+            "MONDO:0018625",
+            "Orphanet:443192"
+          ]
+        }
+      ]
+    }
+  ]
+}

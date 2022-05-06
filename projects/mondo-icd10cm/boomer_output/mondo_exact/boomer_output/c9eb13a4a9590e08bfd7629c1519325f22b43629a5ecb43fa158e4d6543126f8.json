@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c9eb13a4a9590e08bfd7629c1519325f22b43629a5ecb43fa158e4d6543126f8",
+      "nodes" : [
+        {
+          "id" : "MONDO:0010857",
+          "type" : "CLASS",
+          "lbl" : "semantic dementia"
+        },
+        {
+          "id" : "Orphanet:100069",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:600274",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010857",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600274",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010857",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100069",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010857",
+            "OMIM:600274",
+            "Orphanet:100069"
+          ]
+        }
+      ]
+    }
+  ]
+}

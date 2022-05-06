@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6ed6854549658f4f0551df4c771daca8addd49df01bb8dd39655c2ddb188d192",
+      "nodes" : [
+        {
+          "id" : "MESH:D009808",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0028880",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021192",
+          "type" : "CLASS",
+          "lbl" : "odontogenic neoplasm"
+        },
+        {
+          "id" : "NCIT:C3286",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021192",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3286",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0028880",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021192",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D009808",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021192",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021192",
+            "NCIT:C3286",
+            "UMLS:C0028880",
+            "MESH:D009808"
+          ]
+        }
+      ]
+    }
+  ]
+}

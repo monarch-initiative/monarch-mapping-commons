@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6b97655191adf3ac6189535bae320d9e6a1eae501cc9df0f2af6a78d85dda128",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:I75.81",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1460",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002004",
+          "type" : "CLASS",
+          "lbl" : "atheroembolism of kidney"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:I75.81",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002004",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1460",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002004",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002004",
+            "ICD10CM:I75.81",
+            "DOID:1460"
+          ]
+        }
+      ]
+    }
+  ]
+}

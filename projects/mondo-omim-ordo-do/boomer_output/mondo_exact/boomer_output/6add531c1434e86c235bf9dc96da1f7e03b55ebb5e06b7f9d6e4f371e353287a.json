@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6add531c1434e86c235bf9dc96da1f7e03b55ebb5e06b7f9d6e4f371e353287a",
+      "nodes" : [
+        {
+          "id" : "MESH:C564977",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1850779",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009695",
+          "type" : "CLASS",
+          "lbl" : "myeloproliferative disease, autosomal recessive"
+        },
+        {
+          "id" : "OMIM:254700",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1850779",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009695",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009695",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:254700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564977",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009695",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009695",
+            "UMLS:C1850779",
+            "OMIM:254700",
+            "MESH:C564977"
+          ]
+        }
+      ]
+    }
+  ]
+}

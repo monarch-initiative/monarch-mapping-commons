@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e0793743bd5db7a77a0bbb5d4e0c17237564af3e743c910044d17890736d3ea6",
+      "nodes" : [
+        {
+          "id" : "SCTID:92211008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0345666",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021484",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of maxillary sinus"
+        },
+        {
+          "id" : "NCIT:C4414",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021484",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4414",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0345666",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021484",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92211008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021484",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021484",
+            "NCIT:C4414",
+            "UMLS:C0345666",
+            "SCTID:92211008"
+          ]
+        }
+      ]
+    }
+  ]
+}

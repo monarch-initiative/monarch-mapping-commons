@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:13de669a158a1a9f02f4cc1a3faacfd43c2931b353a071ac36eef467cce91425",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809893",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111730",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014246",
+          "type" : "CLASS",
+          "lbl" : "episodic pain syndrome, familial, 2"
+        },
+        {
+          "id" : "OMIM:615551",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014246",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615551",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3809893",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014246",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111730",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014246",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014246",
+            "OMIM:615551",
+            "UMLS:C3809893",
+            "DOID:0111730"
+          ]
+        }
+      ]
+    }
+  ]
+}

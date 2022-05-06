@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d838aabb6564633308e0a13626c0d83fc23b1b25e2fa9d29ac32e6566f216519",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310742",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080331",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014890",
+          "type" : "CLASS",
+          "lbl" : "PERCHING syndrome"
+        },
+        {
+          "id" : "OMIM:617055",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080331",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014890",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310742",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014890",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014890",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617055",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0080331",
+            "MONDO:0014890",
+            "UMLS:C4310742",
+            "OMIM:617055"
+          ]
+        }
+      ]
+    }
+  ]
+}

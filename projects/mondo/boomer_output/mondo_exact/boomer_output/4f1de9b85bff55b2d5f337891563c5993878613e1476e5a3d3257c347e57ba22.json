@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4f1de9b85bff55b2d5f337891563c5993878613e1476e5a3d3257c347e57ba22",
+      "nodes" : [
+        {
+          "id" : "MESH:C567566",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2748586",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013004",
+          "type" : "CLASS",
+          "lbl" : "hypotonia, seizures, and precocious puberty"
+        },
+        {
+          "id" : "OMIM:612777",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C567566",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013004",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:612777",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2748586",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013004",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C567566",
+            "MONDO:0013004",
+            "OMIM:612777",
+            "UMLS:C2748586"
+          ]
+        }
+      ]
+    }
+  ]
+}

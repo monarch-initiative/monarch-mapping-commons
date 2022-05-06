@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:16f56100be586c45c62534a632da6785893df58c6a8123620f7e3ae336127225",
+      "nodes" : [
+        {
+          "id" : "MESH:D006474",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2213",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002243",
+          "type" : "CLASS",
+          "lbl" : "hemorrhagic disease"
+        },
+        {
+          "id" : "NCIT:C115221",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:2213",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002243",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D006474",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002243",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002243",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C115221",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:2213",
+            "MONDO:0002243",
+            "MESH:D006474",
+            "NCIT:C115221"
+          ]
+        }
+      ]
+    }
+  ]
+}

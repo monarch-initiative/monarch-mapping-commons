@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:32b49faf7f7ee15eadbbf8b97db97cfd016fa1140dbec4a4b51b637eb47c6244",
+      "nodes" : [
+        {
+          "id" : "SCTID:716653001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020516",
+          "type" : "CLASS",
+          "lbl" : "thymic neuroendocrine carcinoma"
+        },
+        {
+          "id" : "UMLS:CN207412",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:99869",
+          "type" : "CLASS",
+          "lbl" : "Thymic neuroendocrine carcinoma"
+        },
+        {
+          "id" : "UMLS:C2210965",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020516",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99869",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020516",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN207412",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2210965",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020516",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:716653001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020516",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:99869",
+            "MONDO:0020516",
+            "UMLS:C2210965",
+            "SCTID:716653001"
+          ]
+        }
+      ]
+    }
+  ]
+}

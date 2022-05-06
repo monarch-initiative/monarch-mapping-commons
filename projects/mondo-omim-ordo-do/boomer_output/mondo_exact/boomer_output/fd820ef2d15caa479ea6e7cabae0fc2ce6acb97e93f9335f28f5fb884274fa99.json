@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fd820ef2d15caa479ea6e7cabae0fc2ce6acb97e93f9335f28f5fb884274fa99",
+      "nodes" : [
+        {
+          "id" : "MESH:C566102",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1861437",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008502",
+          "type" : "CLASS",
+          "lbl" : "sulfhemoglobinemia, congenital"
+        },
+        {
+          "id" : "OMIM:185460",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1861437",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008502",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566102",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008502",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008502",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:185460",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008502",
+            "UMLS:C1861437",
+            "MESH:C566102",
+            "OMIM:185460"
+          ]
+        }
+      ]
+    }
+  ]
+}

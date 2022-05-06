@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0e06d0a1131dd4f0703f4a2a07da3540b028a2fa8f35e6262180ecc87a13c677",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334261",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4141",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002888",
+          "type" : "CLASS",
+          "lbl" : "intraorbital meningioma"
+        },
+        {
+          "id" : "NCIT:C6778",
+          "type" : "CLASS",
+          "lbl" : "Intraorbital Meningioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4141",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002888",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334261",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002888",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002888",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6778",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:4141",
+            "MONDO:0002888",
+            "UMLS:C1334261",
+            "NCIT:C6778"
+          ]
+        }
+      ]
+    }
+  ]
+}

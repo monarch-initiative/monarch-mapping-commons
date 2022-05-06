@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b0b9cc65b06bced14c850365c378c074ab370d4e985aee2cf6e2b0ed9bd86592",
+      "nodes" : [
+        {
+          "id" : "SCTID:765197008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN200864",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016097",
+          "type" : "CLASS",
+          "lbl" : "symptomatic form of muscular dystrophy of Duchenne and Becker in female carriers"
+        },
+        {
+          "id" : "Orphanet:206546",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN200864",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016097",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:765197008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016097",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016097",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:206546",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016097",
+            "UMLS:CN200864",
+            "SCTID:765197008",
+            "Orphanet:206546"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:370ea7b4669356f53eca24fd1a18269860cadaa20a56f7b689231f415b3e8bc3",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN404275",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080281",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0033312",
+          "type" : "CLASS",
+          "lbl" : "schizophrenia 19"
+        },
+        {
+          "id" : "OMIM:617629",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080281",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0033312",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0033312",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617629",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN404275",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0033312",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0080281",
+            "MONDO:0033312",
+            "OMIM:617629",
+            "UMLS:CN404275"
+          ]
+        }
+      ]
+    }
+  ]
+}

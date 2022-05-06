@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1a3b1282e883c8af258e3c5041c44e2344a43cb35b4d26fd074561a4111d6efd",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204706",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018197",
+          "type" : "CLASS",
+          "lbl" : "mitochondrial DNA depletion syndrome, hepatocerebrorenal form"
+        },
+        {
+          "id" : "Orphanet:363534",
+          "type" : "CLASS",
+          "lbl" : "Mitochondrial DNA depletion syndrome, hepatocerebrorenal form"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018197",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:363534",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204706",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018197",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018197",
+            "Orphanet:363534",
+            "UMLS:CN204706"
+          ]
+        }
+      ]
+    }
+  ]
+}

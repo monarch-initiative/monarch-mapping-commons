@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c85f00e179fc535c5e04f0563b03d686b4001a511f27a224406248d6246ff416",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201113",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016307",
+          "type" : "CLASS",
+          "lbl" : "Niemann-Pick disease type C, severe early infantile neurologic onset"
+        },
+        {
+          "id" : "Orphanet:216975",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201113",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016307",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016307",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:216975",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016307",
+            "UMLS:CN201113",
+            "Orphanet:216975"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2797de8971c58cc63e0ead001455550e8e0567e9e7cb67d51427af1af2d885ad",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1837471",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C563866",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012111",
+          "type" : "CLASS",
+          "lbl" : "hypertrophic cardiomyopathy 8"
+        },
+        {
+          "id" : "DOID:0110314",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:608751",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110314",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012111",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012111",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608751",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563866",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012111",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1837471",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012111",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0110314",
+            "MONDO:0012111",
+            "UMLS:C1837471",
+            "OMIM:608751",
+            "MESH:C563866"
+          ]
+        }
+      ]
+    }
+  ]
+}

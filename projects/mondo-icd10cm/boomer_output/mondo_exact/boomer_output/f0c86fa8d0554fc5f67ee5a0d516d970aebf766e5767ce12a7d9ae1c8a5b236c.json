@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f0c86fa8d0554fc5f67ee5a0d516d970aebf766e5767ce12a7d9ae1c8a5b236c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207010",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020118",
+          "type" : "CLASS",
+          "lbl" : "dense granule disease"
+        },
+        {
+          "id" : "Orphanet:98456",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020118",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN207010",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020118",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020118",
+            "UMLS:CN207010",
+            "Orphanet:98456"
+          ]
+        }
+      ]
+    }
+  ]
+}

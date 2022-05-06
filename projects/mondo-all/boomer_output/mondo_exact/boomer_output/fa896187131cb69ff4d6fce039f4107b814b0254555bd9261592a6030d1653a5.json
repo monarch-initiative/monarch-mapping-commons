@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fa896187131cb69ff4d6fce039f4107b814b0254555bd9261592a6030d1653a5",
+      "nodes" : [
+        {
+          "id" : "MESH:C564974",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1850745",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009701",
+          "type" : "CLASS",
+          "lbl" : "myopathy, granulovacuolar lobular, with electrical myotonia"
+        },
+        {
+          "id" : "OMIM:254950",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1850745",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009701",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564974",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009701",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009701",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:254950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1850745",
+            "MONDO:0009701",
+            "MESH:C564974",
+            "OMIM:254950"
+          ]
+        }
+      ]
+    }
+  ]
+}

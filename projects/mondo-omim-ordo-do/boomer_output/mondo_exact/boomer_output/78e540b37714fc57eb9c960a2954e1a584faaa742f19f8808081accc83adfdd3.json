@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:78e540b37714fc57eb9c960a2954e1a584faaa742f19f8808081accc83adfdd3",
+      "nodes" : [
+        {
+          "id" : "SCTID:40272001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020435",
+          "type" : "CLASS",
+          "lbl" : "atrial septal defect, coronary sinus type"
+        },
+        {
+          "id" : "Orphanet:99104",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020435",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99104",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:40272001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020435",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:99104",
+            "MONDO:0020435",
+            "SCTID:40272001"
+          ]
+        }
+      ]
+    }
+  ]
+}

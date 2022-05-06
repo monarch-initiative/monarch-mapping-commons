@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b51e9e4b2c35bb811b4451c6ce20ac6f5e1f29f300a3e90b4a9099cca10ee082",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3810225",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014289",
+          "type" : "CLASS",
+          "lbl" : "macrocephaly-developmental delay syndrome"
+        },
+        {
+          "id" : "Orphanet:397612",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:615637",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014289",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615637",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3810225",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014289",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014289",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:397612",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:615637",
+            "MONDO:0014289",
+            "UMLS:C3810225",
+            "Orphanet:397612"
+          ]
+        }
+      ]
+    }
+  ]
+}

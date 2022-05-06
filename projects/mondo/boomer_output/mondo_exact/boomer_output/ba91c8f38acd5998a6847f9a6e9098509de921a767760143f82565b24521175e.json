@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ba91c8f38acd5998a6847f9a6e9098509de921a767760143f82565b24521175e",
+      "nodes" : [
+        {
+          "id" : "MESH:D006327",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:50799005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008848",
+          "type" : "CLASS",
+          "lbl" : "atrioventricular dissociation"
+        },
+        {
+          "id" : "OMIM:209600",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:50799005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008848",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008848",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:209600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D006327",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008848",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:50799005",
+            "MONDO:0008848",
+            "OMIM:209600",
+            "MESH:D006327"
+          ]
+        }
+      ]
+    }
+  ]
+}

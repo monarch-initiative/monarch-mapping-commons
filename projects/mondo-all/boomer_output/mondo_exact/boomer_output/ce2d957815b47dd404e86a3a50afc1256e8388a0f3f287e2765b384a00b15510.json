@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ce2d957815b47dd404e86a3a50afc1256e8388a0f3f287e2765b384a00b15510",
+      "nodes" : [
+        {
+          "id" : "MESH:D002371",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0007350",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024912",
+          "type" : "CLASS",
+          "lbl" : "cat disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0007350",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024912",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D002371",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024912",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D002371",
+            "MONDO:0024912",
+            "UMLS:C0007350"
+          ]
+        }
+      ]
+    }
+  ]
+}

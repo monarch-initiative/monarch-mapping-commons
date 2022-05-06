@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e59e50eae256bceb6de342ecf43e85f850353345adb118c7e5d69fdd0eed2076",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1859648",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111579",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008834",
+          "type" : "CLASS",
+          "lbl" : "asthma, nasal polyps, and aspirin intolerance"
+        },
+        {
+          "id" : "OMIM:208550",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008834",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:208550",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111579",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008834",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1859648",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008834",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008834",
+            "OMIM:208550",
+            "DOID:0111579",
+            "UMLS:C1859648"
+          ]
+        }
+      ]
+    }
+  ]
+}

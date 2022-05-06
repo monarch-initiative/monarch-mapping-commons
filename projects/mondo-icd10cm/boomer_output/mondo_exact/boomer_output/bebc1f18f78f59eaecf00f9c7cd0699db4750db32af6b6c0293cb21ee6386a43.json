@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bebc1f18f78f59eaecf00f9c7cd0699db4750db32af6b6c0293cb21ee6386a43",
+      "nodes" : [
+        {
+          "id" : "MESH:C564164",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1840393",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007770",
+          "type" : "CLASS",
+          "lbl" : "hyperpigmentation of Fuldauer and Kuijpers"
+        },
+        {
+          "id" : "OMIM:145200",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564164",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007770",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1840393",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007770",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007770",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:145200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C564164",
+            "MONDO:0007770",
+            "UMLS:C1840393",
+            "OMIM:145200"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5a3e368ee1e0b2859f2d6c38b431cfa58b6d5475ab422b9bc523e22edd9fa571",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207278",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020406",
+          "type" : "CLASS",
+          "lbl" : "complete atrioventricular canal-left heart obstruction syndrome"
+        },
+        {
+          "id" : "Orphanet:99066",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020406",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99066",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN207278",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020406",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN207278",
+            "MONDO:0020406",
+            "Orphanet:99066"
+          ]
+        }
+      ]
+    }
+  ]
+}

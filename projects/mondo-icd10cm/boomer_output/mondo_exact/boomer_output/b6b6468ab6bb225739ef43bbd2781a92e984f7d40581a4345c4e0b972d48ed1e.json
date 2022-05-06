@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b6b6468ab6bb225739ef43bbd2781a92e984f7d40581a4345c4e0b972d48ed1e",
+      "nodes" : [
+        {
+          "id" : "DOID:0080144",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000870",
+          "type" : "CLASS",
+          "lbl" : "childhood acute lymphoblastic leukemia"
+        },
+        {
+          "id" : "NCIT:C3168",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080144",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000870",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000870",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3168",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000870",
+            "DOID:0080144",
+            "NCIT:C3168"
+          ]
+        }
+      ]
+    }
+  ]
+}

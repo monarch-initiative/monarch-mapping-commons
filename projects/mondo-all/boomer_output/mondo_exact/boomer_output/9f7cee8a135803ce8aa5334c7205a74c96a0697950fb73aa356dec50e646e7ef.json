@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9f7cee8a135803ce8aa5334c7205a74c96a0697950fb73aa356dec50e646e7ef",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225200",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111501",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014781",
+          "type" : "CLASS",
+          "lbl" : "combined oxidative phosphorylation deficiency 29"
+        },
+        {
+          "id" : "OMIM:616811",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0111501",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014781",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014781",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616811",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225200",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014781",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0111501",
+            "MONDO:0014781",
+            "OMIM:616811",
+            "UMLS:C4225200"
+          ]
+        }
+      ]
+    }
+  ]
+}

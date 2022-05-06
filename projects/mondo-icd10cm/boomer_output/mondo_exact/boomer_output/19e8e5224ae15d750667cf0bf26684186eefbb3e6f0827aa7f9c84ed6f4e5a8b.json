@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:19e8e5224ae15d750667cf0bf26684186eefbb3e6f0827aa7f9c84ed6f4e5a8b",
+      "nodes" : [
+        {
+          "id" : "MESH:D001882",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0006008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005675",
+          "type" : "CLASS",
+          "lbl" : "border disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D001882",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005675",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0006008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005675",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D001882",
+            "MONDO:0005675",
+            "UMLS:C0006008"
+          ]
+        }
+      ]
+    }
+  ]
+}

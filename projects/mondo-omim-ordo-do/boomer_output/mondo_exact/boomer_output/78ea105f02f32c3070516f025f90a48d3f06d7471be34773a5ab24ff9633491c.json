@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:78ea105f02f32c3070516f025f90a48d3f06d7471be34773a5ab24ff9633491c",
+      "nodes" : [
+        {
+          "id" : "MESH:C566124",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1861558",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007328",
+          "type" : "CLASS",
+          "lbl" : "choroidal osteoma, bilateral"
+        },
+        {
+          "id" : "OMIM:118865",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007328",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:118865",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1861558",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007328",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566124",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007328",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:118865",
+            "MONDO:0007328",
+            "UMLS:C1861558",
+            "MESH:C566124"
+          ]
+        }
+      ]
+    }
+  ]
+}

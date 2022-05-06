@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e5a19ec2cbbcefeef07ef5ebd56717604a4ad75cb9f4393ab133151933f8f5a7",
+      "nodes" : [
+        {
+          "id" : "SCTID:70211005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0155627",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10651",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001090",
+          "type" : "CLASS",
+          "lbl" : "acute anterolateral myocardial infarction"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:10651",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001090",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0155627",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001090",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:70211005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001090",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001090",
+            "DOID:10651",
+            "UMLS:C0155627",
+            "SCTID:70211005"
+          ]
+        }
+      ]
+    }
+  ]
+}

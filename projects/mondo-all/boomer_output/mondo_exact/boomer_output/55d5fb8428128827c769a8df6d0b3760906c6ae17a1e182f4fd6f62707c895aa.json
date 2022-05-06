@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:55d5fb8428128827c769a8df6d0b3760906c6ae17a1e182f4fd6f62707c895aa",
+      "nodes" : [
+        {
+          "id" : "MESH:D007241",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0021334",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0025089",
+          "type" : "CLASS",
+          "lbl" : "infectious bovine rhinotracheitis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0021334",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025089",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D007241",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025089",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0021334",
+            "MONDO:0025089",
+            "MESH:D007241"
+          ]
+        }
+      ]
+    }
+  ]
+}

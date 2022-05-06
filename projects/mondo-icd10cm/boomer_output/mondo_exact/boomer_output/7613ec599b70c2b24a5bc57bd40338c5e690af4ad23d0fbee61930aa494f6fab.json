@@ -1,0 +1,130 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7613ec599b70c2b24a5bc57bd40338c5e690af4ad23d0fbee61930aa494f6fab",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:B80",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0086227",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7457",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0030100",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005746",
+          "type" : "CLASS",
+          "lbl" : "enterobiasis"
+        },
+        {
+          "id" : "SCTID:266162007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C128396",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005746",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0030100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7457",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005746",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:266162007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005746",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005746",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C128396",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:B80",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005746",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0086227",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005746",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C128396",
+            "ICD10CM:B80",
+            "MONDO:0005746",
+            "SCTID:266162007",
+            "DOID:7457",
+            "UMLS:C0086227"
+          ]
+        }
+      ]
+    }
+  ]
+}

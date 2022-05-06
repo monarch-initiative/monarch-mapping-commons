@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ce1326861ab5676821c9bcd289bef5297149bc0fc3068816182b21294519f50a",
+      "nodes" : [
+        {
+          "id" : "MESH:C565535",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1856263",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009305",
+          "type" : "CLASS",
+          "lbl" : "granulocytopenia with immunoglobulin abnormality"
+        },
+        {
+          "id" : "OMIM:233600",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1856263",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009305",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565535",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009305",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009305",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:233600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1856263",
+            "MONDO:0009305",
+            "MESH:C565535",
+            "OMIM:233600"
+          ]
+        }
+      ]
+    }
+  ]
+}

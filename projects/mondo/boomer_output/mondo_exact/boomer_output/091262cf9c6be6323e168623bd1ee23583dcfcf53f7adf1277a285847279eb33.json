@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:091262cf9c6be6323e168623bd1ee23583dcfcf53f7adf1277a285847279eb33",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226718",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015639",
+          "type" : "CLASS",
+          "lbl" : "benign partial epilepsy with secondarily generalized seizures in infancy"
+        },
+        {
+          "id" : "Orphanet:166302",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015639",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:166302",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226718",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015639",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015639",
+            "Orphanet:166302",
+            "UMLS:CN226718"
+          ]
+        }
+      ]
+    }
+  ]
+}

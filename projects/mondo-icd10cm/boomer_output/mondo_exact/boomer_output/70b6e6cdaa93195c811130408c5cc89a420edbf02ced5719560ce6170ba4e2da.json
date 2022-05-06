@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:70b6e6cdaa93195c811130408c5cc89a420edbf02ced5719560ce6170ba4e2da",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0877192",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020089",
+          "type" : "CLASS",
+          "lbl" : "acquired lipodystrophy"
+        },
+        {
+          "id" : "Orphanet:98307",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020089",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98307",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0877192",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020089",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020089",
+            "Orphanet:98307",
+            "UMLS:C0877192"
+          ]
+        }
+      ]
+    }
+  ]
+}

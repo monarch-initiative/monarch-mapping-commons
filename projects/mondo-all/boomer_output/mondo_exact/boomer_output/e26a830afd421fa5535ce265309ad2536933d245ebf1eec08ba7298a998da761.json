@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e26a830afd421fa5535ce265309ad2536933d245ebf1eec08ba7298a998da761",
+      "nodes" : [
+        {
+          "id" : "MESH:D006338",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:117",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001340",
+          "type" : "CLASS",
+          "lbl" : "heart cancer"
+        },
+        {
+          "id" : "NCIT:C3548",
+          "type" : "CLASS",
+          "lbl" : "Malignant Cardiac Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D006338",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001340",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:117",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001340",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001340",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3548",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D006338",
+            "MONDO:0001340",
+            "DOID:117",
+            "NCIT:C3548"
+          ]
+        }
+      ]
+    }
+  ]
+}

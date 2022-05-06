@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:54c4b4c1eac5cf0e2fabfb2e75ff7688f71cc5f31141fa19b900526454fabe01",
+      "nodes" : [
+        {
+          "id" : "MESH:C563810",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1836915",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012178",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability with optic atrophy, facial dysmorphism, microcephaly, and short stature"
+        },
+        {
+          "id" : "OMIM:609037",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012178",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609037",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1836915",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012178",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563810",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012178",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:609037",
+            "MONDO:0012178",
+            "UMLS:C1836915",
+            "MESH:C563810"
+          ]
+        }
+      ]
+    }
+  ]
+}

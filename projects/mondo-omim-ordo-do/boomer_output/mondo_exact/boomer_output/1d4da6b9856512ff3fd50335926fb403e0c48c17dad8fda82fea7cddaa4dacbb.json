@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1d4da6b9856512ff3fd50335926fb403e0c48c17dad8fda82fea7cddaa4dacbb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225180",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014801",
+          "type" : "CLASS",
+          "lbl" : "even-plus syndrome"
+        },
+        {
+          "id" : "Orphanet:496751",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616854",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014801",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:496751",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225180",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014801",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014801",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616854",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:496751",
+            "MONDO:0014801",
+            "UMLS:C4225180",
+            "OMIM:616854"
+          ]
+        }
+      ]
+    }
+  ]
+}

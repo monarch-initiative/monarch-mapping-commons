@@ -1,0 +1,114 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cde0c738d5c168b630b7b850355c7988e3fe9e65c7e672efe616c3f125c79da8",
+      "nodes" : [
+        {
+          "id" : "NCIT:C7190",
+          "type" : "CLASS",
+          "lbl" : "Malignant Hypopharyngeal Neoplasm"
+        },
+        {
+          "id" : "DOID:8533",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C13",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D007012",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005806",
+          "type" : "CLASS",
+          "lbl" : "hypopharynx cancer"
+        },
+        {
+          "id" : "SCTID:303012000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D007012",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005806",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C13",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005806",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:303012000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005806",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005806",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7190",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8533",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005806",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:8533",
+            "NCIT:C7190",
+            "ICD10CM:C13",
+            "MONDO:0005806",
+            "SCTID:303012000",
+            "MESH:D007012"
+          ]
+        }
+      ]
+    }
+  ]
+}

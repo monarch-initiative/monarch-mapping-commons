@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0d98d076ca77daf2a9f9047e614b037aaa506ffc2ff6400e737e9b76ad8cad2b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1865871",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011191",
+          "type" : "CLASS",
+          "lbl" : "capillary infantile hemangioma"
+        },
+        {
+          "id" : "MESH:C535860",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:464293",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:602089",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C535860",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011191",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011191",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:602089",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011191",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:464293",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1865871",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011191",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C535860",
+            "UMLS:C1865871",
+            "Orphanet:464293",
+            "OMIM:602089",
+            "MONDO:0011191"
+          ]
+        }
+      ]
+    }
+  ]
+}

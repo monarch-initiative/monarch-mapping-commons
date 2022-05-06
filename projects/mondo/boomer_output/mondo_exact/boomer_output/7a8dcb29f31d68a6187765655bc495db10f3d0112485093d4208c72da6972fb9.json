@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7a8dcb29f31d68a6187765655bc495db10f3d0112485093d4208c72da6972fb9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335163",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5263",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003355",
+          "type" : "CLASS",
+          "lbl" : "ovary leiomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C5234",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003355",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5234",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335163",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003355",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5263",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003355",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C5234",
+            "MONDO:0003355",
+            "UMLS:C1335163",
+            "DOID:5263"
+          ]
+        }
+      ]
+    }
+  ]
+}

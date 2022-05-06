@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2df18bbf95d7217f8f51ebe11fe2335df05067bcd9af6ad7fb2da2d9118a64a8",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203252",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017519",
+          "type" : "CLASS",
+          "lbl" : "symbrachydactyly of hand and foot, unilateral"
+        },
+        {
+          "id" : "Orphanet:295136",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017519",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:295136",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203252",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017519",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017519",
+            "Orphanet:295136",
+            "UMLS:CN203252"
+          ]
+        }
+      ]
+    }
+  ]
+}

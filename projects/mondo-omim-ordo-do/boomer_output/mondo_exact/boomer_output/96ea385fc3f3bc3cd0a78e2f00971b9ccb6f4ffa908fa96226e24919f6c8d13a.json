@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:96ea385fc3f3bc3cd0a78e2f00971b9ccb6f4ffa908fa96226e24919f6c8d13a",
+      "nodes" : [
+        {
+          "id" : "SCTID:765135003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN204615",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018167",
+          "type" : "CLASS",
+          "lbl" : "primary essential cutis verticis gyrata"
+        },
+        {
+          "id" : "Orphanet:357220",
+          "type" : "CLASS",
+          "lbl" : "Primary essential cutis verticis gyrata"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN204615",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018167",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:765135003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018167",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018167",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:357220",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018167",
+            "UMLS:CN204615",
+            "SCTID:765135003",
+            "Orphanet:357220"
+          ]
+        }
+      ]
+    }
+  ]
+}

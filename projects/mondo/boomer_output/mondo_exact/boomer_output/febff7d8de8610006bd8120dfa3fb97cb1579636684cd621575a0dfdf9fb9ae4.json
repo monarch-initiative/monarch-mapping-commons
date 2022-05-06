@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:febff7d8de8610006bd8120dfa3fb97cb1579636684cd621575a0dfdf9fb9ae4",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202713",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017228",
+          "type" : "CLASS",
+          "lbl" : "autoimmune pancreatitis type 2"
+        },
+        {
+          "id" : "Orphanet:280315",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202713",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017228",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017228",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:280315",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017228",
+            "UMLS:CN202713",
+            "Orphanet:280315"
+          ]
+        }
+      ]
+    }
+  ]
+}

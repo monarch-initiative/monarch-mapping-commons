@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4707531eb4cc8f7cf6b14bbc82e1c5a6d7e222654d92bc4add89116f26799315",
+      "nodes" : [
+        {
+          "id" : "MESH:C566687",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1866939",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008430",
+          "type" : "CLASS",
+          "lbl" : "skeletal dysplasia with delayed epiphyseal and carpal bone ossification"
+        },
+        {
+          "id" : "OMIM:182255",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C566687",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008430",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008430",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:182255",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1866939",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008430",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008430",
+            "MESH:C566687",
+            "OMIM:182255",
+            "UMLS:C1866939"
+          ]
+        }
+      ]
+    }
+  ]
+}

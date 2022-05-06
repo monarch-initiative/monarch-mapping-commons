@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b3415fc342678a5ae59f49ec63783c7f3d40149e5545184c024ec385cca70e3e",
+      "nodes" : [
+        {
+          "id" : "DOID:7922",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1334679",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C6643",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6175",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004398",
+          "type" : "CLASS",
+          "lbl" : "mediastinal schwannoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004398",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6643",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334679",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004398",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7922",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004398",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004398",
+          "pred" : "siblingOf",
+          "obj" : "DOID:6175",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6643",
+            "MONDO:0004398",
+            "UMLS:C1334679",
+            "DOID:7922"
+          ]
+        }
+      ]
+    }
+  ]
+}

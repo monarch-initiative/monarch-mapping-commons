@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2b5db485232112190989f15de32265ac51ae8ce2072c6fc7f4ca6f3ce53ae7a7",
+      "nodes" : [
+        {
+          "id" : "MESH:D046110",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:48194001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024664",
+          "type" : "CLASS",
+          "lbl" : "hypertension, pregnancy-induced"
+        },
+        {
+          "id" : "NCIT:C9243",
+          "type" : "CLASS",
+          "lbl" : "Hypertension-Associated Pregnancy Disorder"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024664",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9243",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:48194001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024664",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D046110",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024664",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C9243",
+            "MONDO:0024664",
+            "SCTID:48194001",
+            "MESH:D046110"
+          ]
+        }
+      ]
+    }
+  ]
+}

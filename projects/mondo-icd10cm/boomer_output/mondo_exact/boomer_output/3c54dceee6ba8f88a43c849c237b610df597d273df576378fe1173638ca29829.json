@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3c54dceee6ba8f88a43c849c237b610df597d273df576378fe1173638ca29829",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333749",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8167",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004484",
+          "type" : "CLASS",
+          "lbl" : "gallbladder melanoma"
+        },
+        {
+          "id" : "NCIT:C5735",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004484",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5735",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8167",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004484",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333749",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004484",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004484",
+            "NCIT:C5735",
+            "DOID:8167",
+            "UMLS:C1333749"
+          ]
+        }
+      ]
+    }
+  ]
+}

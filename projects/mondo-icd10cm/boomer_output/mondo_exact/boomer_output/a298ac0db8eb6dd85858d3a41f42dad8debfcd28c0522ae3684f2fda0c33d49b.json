@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a298ac0db8eb6dd85858d3a41f42dad8debfcd28c0522ae3684f2fda0c33d49b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333027",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6041",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003745",
+          "type" : "CLASS",
+          "lbl" : "choroid spindle cell melanoma"
+        },
+        {
+          "id" : "NCIT:C6099",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6041",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003745",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003745",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6099",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333027",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003745",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6041",
+            "MONDO:0003745",
+            "NCIT:C6099",
+            "UMLS:C1333027"
+          ]
+        }
+      ]
+    }
+  ]
+}

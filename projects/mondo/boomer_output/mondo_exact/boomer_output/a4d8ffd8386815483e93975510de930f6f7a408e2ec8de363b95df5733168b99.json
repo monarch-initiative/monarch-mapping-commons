@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a4d8ffd8386815483e93975510de930f6f7a408e2ec8de363b95df5733168b99",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0431121",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4210",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002918",
+          "type" : "CLASS",
+          "lbl" : "clear cell meningioma"
+        },
+        {
+          "id" : "NCIT:C4722",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0431121",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002918",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002918",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4722",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4210",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002918",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002918",
+            "UMLS:C0431121",
+            "NCIT:C4722",
+            "DOID:4210"
+          ]
+        }
+      ]
+    }
+  ]
+}

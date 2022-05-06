@@ -1,0 +1,76 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:aea5efdf5b39bc34fcaeb49869b77f07c6a5ccbf4e053c492561af726c2ddc9b",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN036464",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010247",
+          "type" : "CLASS",
+          "lbl" : "X-linked cerebral adrenoleukodystrophy"
+        },
+        {
+          "id" : "Orphanet:139396",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN199389",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN036464",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010247",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010247",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:139396",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010247",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN199389",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN036464",
+            "MONDO:0010247",
+            "Orphanet:139396"
+          ]
+        }
+      ]
+    }
+  ]
+}

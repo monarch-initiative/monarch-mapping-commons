@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:377525525725da9df043efc56d6acd9baa49545bb4ece5d2c36fb81d4383b7d0",
+      "nodes" : [
+        {
+          "id" : "SCTID:92040001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021464",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of cecum"
+        },
+        {
+          "id" : "NCIT:C4772",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:D12.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0496859",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0496859",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021464",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021464",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4772",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92040001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021464",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D12.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021464",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4772",
+            "ICD10CM:D12.0",
+            "MONDO:0021464",
+            "UMLS:C0496859",
+            "SCTID:92040001"
+          ]
+        }
+      ]
+    }
+  ]
+}

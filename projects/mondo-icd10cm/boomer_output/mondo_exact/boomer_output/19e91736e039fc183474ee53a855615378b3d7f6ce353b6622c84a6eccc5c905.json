@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:19e91736e039fc183474ee53a855615378b3d7f6ce353b6622c84a6eccc5c905",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0012714",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:79886009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:309839",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017762",
+          "type" : "CLASS",
+          "lbl" : "disorder of copper metabolism"
+        },
+        {
+          "id" : "UMLS:CN043585",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017762",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309839",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017762",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN043585",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0012714",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017762",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:79886009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017762",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017762",
+            "Orphanet:309839",
+            "UMLS:C0012714",
+            "SCTID:79886009"
+          ]
+        }
+      ]
+    }
+  ]
+}

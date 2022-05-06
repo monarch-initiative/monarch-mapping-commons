@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9a91af9d2cf128ee919dbcd27552b256997c53b0283924f4e2d74a314e39949c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225343",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070068",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014617",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability, autosomal dominant 38"
+        },
+        {
+          "id" : "OMIM:616393",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0070068",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014617",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225343",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014617",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014617",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616393",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0070068",
+            "MONDO:0014617",
+            "UMLS:C4225343",
+            "OMIM:616393"
+          ]
+        }
+      ]
+    }
+  ]
+}

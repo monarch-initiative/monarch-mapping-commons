@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:25b9d948e12656314672f2f997ef4222bd30be2c481ce7df01cb7d382bde928a",
+      "nodes" : [
+        {
+          "id" : "MESH:C565659",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1857438",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009059",
+          "type" : "CLASS",
+          "lbl" : "cysteine Peptiduria"
+        },
+        {
+          "id" : "OMIM:219550",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009059",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:219550",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1857438",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009059",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565659",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009059",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:219550",
+            "MONDO:0009059",
+            "UMLS:C1857438",
+            "MESH:C565659"
+          ]
+        }
+      ]
+    }
+  ]
+}

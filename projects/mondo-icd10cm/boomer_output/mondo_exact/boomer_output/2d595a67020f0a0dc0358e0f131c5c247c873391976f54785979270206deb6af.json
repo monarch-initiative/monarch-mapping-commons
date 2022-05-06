@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2d595a67020f0a0dc0358e0f131c5c247c873391976f54785979270206deb6af",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0280326",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7585",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004291",
+          "type" : "CLASS",
+          "lbl" : "subglottis squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C8187",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004291",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8187",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7585",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004291",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0280326",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004291",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C8187",
+            "MONDO:0004291",
+            "DOID:7585",
+            "UMLS:C0280326"
+          ]
+        }
+      ]
+    }
+  ]
+}

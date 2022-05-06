@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e7c4e54e07fe89ad02500ddee037f3f9a256034077ea94e91b3d52e2d029b214",
+      "nodes" : [
+        {
+          "id" : "SCTID:92151003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0347269",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003062",
+          "type" : "CLASS",
+          "lbl" : "intestinal benign neoplasm"
+        },
+        {
+          "id" : "NCIT:C4609",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0347269",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003062",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92151003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003062",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003062",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4609",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003062",
+            "UMLS:C0347269",
+            "SCTID:92151003",
+            "NCIT:C4609"
+          ]
+        }
+      ]
+    }
+  ]
+}

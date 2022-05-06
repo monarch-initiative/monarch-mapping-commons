@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:49a6efbd6852efaa59987574dbaf11f67c586c59c337e19ebc393dd7aacdec29",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1866738",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080604",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008468",
+          "type" : "CLASS",
+          "lbl" : "spondyloarthropathy, susceptibility to, 2"
+        },
+        {
+          "id" : "OMIM:183840",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1866738",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008468",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008468",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:183840",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080604",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008468",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008468",
+            "UMLS:C1866738",
+            "OMIM:183840",
+            "DOID:0080604"
+          ]
+        }
+      ]
+    }
+  ]
+}

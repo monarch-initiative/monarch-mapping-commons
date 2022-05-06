@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:936edc6e95fdfdf995ff31ee16572dc716beffdfed47f83079ce6389c6806cb3",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226956",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016554",
+          "type" : "CLASS",
+          "lbl" : "neonatal iodine exposure"
+        },
+        {
+          "id" : "Orphanet:238688",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016554",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:238688",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226956",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016554",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:238688",
+            "MONDO:0016554",
+            "UMLS:CN226956"
+          ]
+        }
+      ]
+    }
+  ]
+}

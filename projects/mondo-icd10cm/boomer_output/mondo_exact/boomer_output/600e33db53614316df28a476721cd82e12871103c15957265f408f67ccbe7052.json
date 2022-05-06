@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:600e33db53614316df28a476721cd82e12871103c15957265f408f67ccbe7052",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0234497",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060132",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000662",
+          "type" : "CLASS",
+          "lbl" : "amusia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0060132",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000662",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0234497",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000662",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0060132",
+            "MONDO:0000662",
+            "UMLS:C0234497"
+          ]
+        }
+      ]
+    }
+  ]
+}

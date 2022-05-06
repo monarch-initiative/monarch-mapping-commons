@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0d5556e5238d58bda932591624de1f20530bdfef10531a6b9680e60f3443ea4b",
+      "nodes" : [
+        {
+          "id" : "SCTID:715430001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4275138",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016005",
+          "type" : "CLASS",
+          "lbl" : "indomethacin embryofetopathy"
+        },
+        {
+          "id" : "UMLS:CN200656",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:1909",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:715430001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016005",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016005",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN200656",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1909",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4275138",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016005",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:715430001",
+            "MONDO:0016005",
+            "Orphanet:1909",
+            "UMLS:C4275138"
+          ]
+        }
+      ]
+    }
+  ]
+}

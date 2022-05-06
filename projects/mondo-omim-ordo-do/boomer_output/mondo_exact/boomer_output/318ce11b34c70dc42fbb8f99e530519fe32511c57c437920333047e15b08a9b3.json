@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:318ce11b34c70dc42fbb8f99e530519fe32511c57c437920333047e15b08a9b3",
+      "nodes" : [
+        {
+          "id" : "SCTID:109558001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:K31.82",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0341217",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001427",
+          "type" : "CLASS",
+          "lbl" : "Dieulafoy lesion"
+        },
+        {
+          "id" : "DOID:12070",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0341217",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001427",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:12070",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001427",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:109558001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001427",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:K31.82",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001427",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:K31.82",
+            "SCTID:109558001",
+            "MONDO:0001427",
+            "DOID:12070",
+            "UMLS:C0341217"
+          ]
+        }
+      ]
+    }
+  ]
+}

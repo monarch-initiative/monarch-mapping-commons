@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a4eba9a20d2e8f3df8caf37ef4444f88b00d0d2c335ff2b257a723f3d1739743",
+      "nodes" : [
+        {
+          "id" : "MESH:C538119",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2751683",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013082",
+          "type" : "CLASS",
+          "lbl" : "Hirschsprung disease-ganglioneuroblastoma syndrome"
+        },
+        {
+          "id" : "Orphanet:2151",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C538119",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013082",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013082",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2151",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2751683",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013082",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013082",
+            "MESH:C538119",
+            "Orphanet:2151",
+            "UMLS:C2751683"
+          ]
+        }
+      ]
+    }
+  ]
+}

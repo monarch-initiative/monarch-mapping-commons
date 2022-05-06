@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:508f7f396d01d198fd8939b416afde75cbd135256a76c7b61e983ed85190943f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN031062",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009433",
+          "type" : "CLASS",
+          "lbl" : "hypoplastic left heart syndrome 1"
+        },
+        {
+          "id" : "OMIM:241550",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN031062",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009433",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009433",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:241550",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN031062",
+            "MONDO:0009433",
+            "OMIM:241550"
+          ]
+        }
+      ]
+    }
+  ]
+}

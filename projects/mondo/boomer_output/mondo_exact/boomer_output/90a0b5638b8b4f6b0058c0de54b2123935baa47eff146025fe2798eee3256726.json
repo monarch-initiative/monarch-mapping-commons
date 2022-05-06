@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:90a0b5638b8b4f6b0058c0de54b2123935baa47eff146025fe2798eee3256726",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334274",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0040677",
+          "type" : "CLASS",
+          "lbl" : "invasive carcinoma"
+        },
+        {
+          "id" : "NCIT:C9480",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334274",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0040677",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0040677",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9480",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1334274",
+            "MONDO:0040677",
+            "NCIT:C9480"
+          ]
+        }
+      ]
+    }
+  ]
+}

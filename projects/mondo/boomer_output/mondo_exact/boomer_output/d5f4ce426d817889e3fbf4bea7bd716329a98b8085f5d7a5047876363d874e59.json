@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d5f4ce426d817889e3fbf4bea7bd716329a98b8085f5d7a5047876363d874e59",
+      "nodes" : [
+        {
+          "id" : "DOID:2768",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:56573006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002419",
+          "type" : "CLASS",
+          "lbl" : "transient tic disorder"
+        },
+        {
+          "id" : "ICD10CM:F95.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C116767",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:56573006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002419",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002419",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C116767",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2768",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002419",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:F95.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002419",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:56573006",
+            "MONDO:0002419",
+            "ICD10CM:F95.0",
+            "DOID:2768",
+            "NCIT:C116767"
+          ]
+        }
+      ]
+    }
+  ]
+}

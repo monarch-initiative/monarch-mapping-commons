@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d81da6f252064f1dc5adfe7691fac1ba3381e00fdc509ceacf5dcd1faf06edaf",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203774",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017808",
+          "type" : "CLASS",
+          "lbl" : "duplication of the pituitary gland"
+        },
+        {
+          "id" : "Orphanet:314621",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203774",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017808",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017808",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:314621",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN203774",
+            "MONDO:0017808",
+            "Orphanet:314621"
+          ]
+        }
+      ]
+    }
+  ]
+}

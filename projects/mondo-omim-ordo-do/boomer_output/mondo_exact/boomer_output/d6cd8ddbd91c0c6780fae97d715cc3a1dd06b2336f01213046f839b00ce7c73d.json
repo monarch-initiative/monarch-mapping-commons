@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d6cd8ddbd91c0c6780fae97d715cc3a1dd06b2336f01213046f839b00ce7c73d",
+      "nodes" : [
+        {
+          "id" : "SCTID:240450004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020545",
+          "type" : "CLASS",
+          "lbl" : "staphylococcal toxic-shock syndrome"
+        },
+        {
+          "id" : "Orphanet:99919",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020545",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99919",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:240450004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020545",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:99919",
+            "MONDO:0020545",
+            "SCTID:240450004"
+          ]
+        }
+      ]
+    }
+  ]
+}

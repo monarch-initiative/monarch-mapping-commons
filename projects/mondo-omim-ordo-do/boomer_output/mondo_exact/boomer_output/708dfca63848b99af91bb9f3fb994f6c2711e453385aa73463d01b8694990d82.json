@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:708dfca63848b99af91bb9f3fb994f6c2711e453385aa73463d01b8694990d82",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519207",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5760",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003635",
+          "type" : "CLASS",
+          "lbl" : "sebaceous breast carcinoma"
+        },
+        {
+          "id" : "NCIT:C40369",
+          "type" : "CLASS",
+          "lbl" : "Breast Sebaceous Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003635",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40369",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1519207",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003635",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5760",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003635",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C40369",
+            "MONDO:0003635",
+            "UMLS:C1519207",
+            "DOID:5760"
+          ]
+        }
+      ]
+    }
+  ]
+}

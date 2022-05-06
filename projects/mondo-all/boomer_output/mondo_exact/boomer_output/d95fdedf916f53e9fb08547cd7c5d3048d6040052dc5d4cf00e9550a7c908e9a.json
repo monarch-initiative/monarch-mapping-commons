@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d95fdedf916f53e9fb08547cd7c5d3048d6040052dc5d4cf00e9550a7c908e9a",
+      "nodes" : [
+        {
+          "id" : "MESH:C536701",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2931292",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017918",
+          "type" : "CLASS",
+          "lbl" : "white matter hypoplasia-corpus callosum agenesis-intellectual disability syndrome"
+        },
+        {
+          "id" : "Orphanet:3207",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017918",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3207",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536701",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017918",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2931292",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017918",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017918",
+            "Orphanet:3207",
+            "MESH:C536701",
+            "UMLS:C2931292"
+          ]
+        }
+      ]
+    }
+  ]
+}

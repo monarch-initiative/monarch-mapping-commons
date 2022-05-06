@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c8adaeb381f794492bda6e2adf39a71048526c65a8cf88997862c2129b9f78a2",
+      "nodes" : [
+        {
+          "id" : "DOID:0070308",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010868",
+          "type" : "CLASS",
+          "lbl" : "rippling muscle disease 1"
+        },
+        {
+          "id" : "OMIM:600332",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010868",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600332",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070308",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010868",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010868",
+            "OMIM:600332",
+            "DOID:0070308"
+          ]
+        }
+      ]
+    }
+  ]
+}

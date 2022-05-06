@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:402b1f29182b64d44a895c883a2e75c18f9bc86e9fee9688b25e5c01418b605c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3661483",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050666",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000393",
+          "type" : "CLASS",
+          "lbl" : "partial fetal alcohol syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0050666",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000393",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3661483",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000393",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000393",
+            "DOID:0050666",
+            "UMLS:C3661483"
+          ]
+        }
+      ]
+    }
+  ]
+}

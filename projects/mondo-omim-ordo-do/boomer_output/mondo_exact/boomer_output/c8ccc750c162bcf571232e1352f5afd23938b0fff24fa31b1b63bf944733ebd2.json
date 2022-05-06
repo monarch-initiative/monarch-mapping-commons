@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c8ccc750c162bcf571232e1352f5afd23938b0fff24fa31b1b63bf944733ebd2",
+      "nodes" : [
+        {
+          "id" : "SCTID:66948001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:Q35-Q37",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016044",
+          "type" : "CLASS",
+          "lbl" : "cleft lip/palate"
+        },
+        {
+          "id" : "Orphanet:199306",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:66948001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016044",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016044",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:199306",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q35-Q37",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016044",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:66948001",
+            "MONDO:0016044",
+            "Orphanet:199306",
+            "ICD10CM:Q35-Q37"
+          ]
+        }
+      ]
+    }
+  ]
+}

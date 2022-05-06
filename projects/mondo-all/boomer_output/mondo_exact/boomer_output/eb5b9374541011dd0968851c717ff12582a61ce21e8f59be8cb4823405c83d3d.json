@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eb5b9374541011dd0968851c717ff12582a61ce21e8f59be8cb4823405c83d3d",
+      "nodes" : [
+        {
+          "id" : "SCTID:69322001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2468",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005485",
+          "type" : "CLASS",
+          "lbl" : "psychotic disorder"
+        },
+        {
+          "id" : "NCIT:C78576",
+          "type" : "CLASS",
+          "lbl" : "Psychosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:69322001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005485",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005485",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C78576",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2468",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005485",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005485",
+            "SCTID:69322001",
+            "NCIT:C78576",
+            "DOID:2468"
+          ]
+        }
+      ]
+    }
+  ]
+}

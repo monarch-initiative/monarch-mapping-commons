@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:582f4d9ad1a02f7a15fe662630c568ff22feba04aafd8d5051266b53e0b2a52f",
+      "nodes" : [
+        {
+          "id" : "MESH:C531791",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1867771",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008308",
+          "type" : "CLASS",
+          "lbl" : "priapism, familial idiopathic"
+        },
+        {
+          "id" : "OMIM:176620",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008308",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:176620",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1867771",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008308",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C531791",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008308",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008308",
+            "OMIM:176620",
+            "UMLS:C1867771",
+            "MESH:C531791"
+          ]
+        }
+      ]
+    }
+  ]
+}

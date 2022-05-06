@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2f5d180e5520ec89976250a6a45807b8135752bcddc470180e5139248a7f3773",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332903",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3860",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002792",
+          "type" : "CLASS",
+          "lbl" : "cerebellar vermis medulloblastoma"
+        },
+        {
+          "id" : "NCIT:C5401",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3860",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002792",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332903",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002792",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002792",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5401",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002792",
+            "DOID:3860",
+            "UMLS:C1332903",
+            "NCIT:C5401"
+          ]
+        }
+      ]
+    }
+  ]
+}

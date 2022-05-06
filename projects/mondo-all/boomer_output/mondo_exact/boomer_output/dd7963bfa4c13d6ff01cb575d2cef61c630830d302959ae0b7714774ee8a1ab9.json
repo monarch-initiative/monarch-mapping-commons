@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dd7963bfa4c13d6ff01cb575d2cef61c630830d302959ae0b7714774ee8a1ab9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280073",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013615",
+          "type" : "CLASS",
+          "lbl" : "craniosynostosis and dental anomalies"
+        },
+        {
+          "id" : "Orphanet:284149",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:614188",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013615",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614188",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013615",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:284149",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3280073",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013615",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013615",
+            "OMIM:614188",
+            "Orphanet:284149",
+            "UMLS:C3280073"
+          ]
+        }
+      ]
+    }
+  ]
+}

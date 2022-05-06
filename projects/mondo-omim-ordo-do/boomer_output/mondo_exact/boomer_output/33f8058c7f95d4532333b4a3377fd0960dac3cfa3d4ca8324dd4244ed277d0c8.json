@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:33f8058c7f95d4532333b4a3377fd0960dac3cfa3d4ca8324dd4244ed277d0c8",
+      "nodes" : [
+        {
+          "id" : "MESH:C567028",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012598",
+          "type" : "CLASS",
+          "lbl" : "fibromatosis, gingival, 4"
+        },
+        {
+          "id" : "OMIM:611010",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012598",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:611010",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567028",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012598",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012598",
+            "OMIM:611010",
+            "MESH:C567028"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6466ed3b49aeda7ce552bcc7c6e62ee8e86ad03a5a1128dfaec721ec6dfcb87d",
+      "nodes" : [
+        {
+          "id" : "Orphanet:183654",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0852077",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN226819",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021181",
+          "type" : "CLASS",
+          "lbl" : "inherited blood coagulation disorder"
+        },
+        {
+          "id" : "MESH:D025861",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN226819",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021181",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021181",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:183654",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D025861",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021181",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021181",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0852077",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN226819",
+            "MONDO:0021181",
+            "Orphanet:183654",
+            "MESH:D025861"
+          ]
+        }
+      ]
+    }
+  ]
+}

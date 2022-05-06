@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4332af11fa2687145f19b7bca559e2ca965eb9316af52fa8246c862d32496de7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334285",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5384",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003420",
+          "type" : "CLASS",
+          "lbl" : "bile duct cystadenoma"
+        },
+        {
+          "id" : "NCIT:C4129",
+          "type" : "CLASS",
+          "lbl" : "Bile Duct Mucinous Cystic Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003420",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4129",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5384",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003420",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334285",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003420",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4129",
+            "MONDO:0003420",
+            "DOID:5384",
+            "UMLS:C0334285"
+          ]
+        }
+      ]
+    }
+  ]
+}

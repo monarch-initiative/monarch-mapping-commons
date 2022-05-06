@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:52a307b2857326c81bb02ffee3e3bfbbf0f55479d78f23406206fb8f62af3ba3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334149",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005188",
+          "type" : "CLASS",
+          "lbl" : "iatrogenic Kaposi's sarcoma"
+        },
+        {
+          "id" : "NCIT:C35873",
+          "type" : "CLASS",
+          "lbl" : "Iatrogenic Kaposi Sarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334149",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005188",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005188",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35873",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005188",
+            "UMLS:C1334149",
+            "NCIT:C35873"
+          ]
+        }
+      ]
+    }
+  ]
+}

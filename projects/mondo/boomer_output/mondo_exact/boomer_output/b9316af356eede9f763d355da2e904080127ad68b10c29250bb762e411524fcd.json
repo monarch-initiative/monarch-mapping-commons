@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b9316af356eede9f763d355da2e904080127ad68b10c29250bb762e411524fcd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1708749",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006273",
+          "type" : "CLASS",
+          "lbl" : "low grade fibromyxoid sarcoma with giant collagen rosettes"
+        },
+        {
+          "id" : "NCIT:C45203",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1708749",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006273",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006273",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C45203",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006273",
+            "UMLS:C1708749",
+            "NCIT:C45203"
+          ]
+        }
+      ]
+    }
+  ]
+}

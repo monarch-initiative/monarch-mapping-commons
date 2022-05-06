@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:04144ab85657993dfe3d908577e489ef26017917d47bb69d146ce352cb39e76f",
+      "nodes" : [
+        {
+          "id" : "MESH:C538120",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C565517",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:235750",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009343",
+          "type" : "CLASS",
+          "lbl" : "Hirschsprung disease with ulnar polydactyly, polysyndactyly of big toes, and ventricular septal defect"
+        },
+        {
+          "id" : "UMLS:C1856111",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009343",
+          "pred" : "siblingOf",
+          "obj" : "MESH:C538120",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1856111",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009343",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565517",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009343",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009343",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:235750",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C565517",
+            "MONDO:0009343",
+            "UMLS:C1856111",
+            "OMIM:235750"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7d18cdaa1a1218d2b4a853355b3650ce39e0d0c1422e29303815e85d6249dc5e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518874",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7237",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004159",
+          "type" : "CLASS",
+          "lbl" : "pancreatic non-invasive mucinous cystadenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C41245",
+          "type" : "CLASS",
+          "lbl" : "Pancreatic Non-Invasive Mucinous Cystadenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7237",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004159",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518874",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004159",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004159",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C41245",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:7237",
+            "MONDO:0004159",
+            "UMLS:C1518874",
+            "NCIT:C41245"
+          ]
+        }
+      ]
+    }
+  ]
+}

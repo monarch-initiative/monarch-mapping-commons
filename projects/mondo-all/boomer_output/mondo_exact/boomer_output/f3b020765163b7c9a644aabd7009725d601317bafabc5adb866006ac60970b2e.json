@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f3b020765163b7c9a644aabd7009725d601317bafabc5adb866006ac60970b2e",
+      "nodes" : [
+        {
+          "id" : "DOID:0110113",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013750",
+          "type" : "CLASS",
+          "lbl" : "atrial septal defect 8"
+        },
+        {
+          "id" : "OMIM:614433",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013750",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614433",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110113",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013750",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013750",
+            "OMIM:614433",
+            "DOID:0110113"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ac8eeff9ed207b91393386fa60ac9b11b48c80967c70af22aa2469cdfeb97735",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4014269",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014340",
+          "type" : "CLASS",
+          "lbl" : "atrial fibrillation, familial, 15"
+        },
+        {
+          "id" : "OMIM:615770",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4014269",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014340",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014340",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615770",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4014269",
+            "MONDO:0014340",
+            "OMIM:615770"
+          ]
+        }
+      ]
+    }
+  ]
+}

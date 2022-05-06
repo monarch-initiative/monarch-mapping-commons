@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0f71a800963ac4a141dec13d2833688255db3a6df522ef1001516fd8067277d1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1516423",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6627",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006140",
+          "type" : "CLASS",
+          "lbl" : "cervical mucinous adenocarcinoma, minimal deviation variant"
+        },
+        {
+          "id" : "NCIT:C40206",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6627",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006140",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1516423",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006140",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006140",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40206",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006140",
+            "DOID:6627",
+            "UMLS:C1516423",
+            "NCIT:C40206"
+          ]
+        }
+      ]
+    }
+  ]
+}

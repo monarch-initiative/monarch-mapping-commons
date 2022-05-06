@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d01a0e5196cd4257e4fb2541f5bd9f9e33d72a1e74ee9296b8de32b5203c5af1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0238330",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3444",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002649",
+          "type" : "CLASS",
+          "lbl" : "scrotum Paget disease"
+        },
+        {
+          "id" : "NCIT:C7728",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3444",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002649",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0238330",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002649",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002649",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7728",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3444",
+            "MONDO:0002649",
+            "UMLS:C0238330",
+            "NCIT:C7728"
+          ]
+        }
+      ]
+    }
+  ]
+}

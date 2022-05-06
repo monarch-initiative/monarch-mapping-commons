@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b6e1b786c1627d6830f2585562c55c2440c8157feb03ee8ce97732f4d2b70674",
+      "nodes" : [
+        {
+          "id" : "SCTID:707436001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3873357",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017018",
+          "type" : "CLASS",
+          "lbl" : "isolated pulmonary capillaritis"
+        },
+        {
+          "id" : "Orphanet:264691",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3873357",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017018",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017018",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:264691",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:707436001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017018",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3873357",
+            "MONDO:0017018",
+            "Orphanet:264691",
+            "SCTID:707436001"
+          ]
+        }
+      ]
+    }
+  ]
+}

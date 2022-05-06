@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:41ee6dd7295e3fe21269327671f65642a93e13b21bb1c6fcf37653d41b5fac92",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN244558",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011846",
+          "type" : "CLASS",
+          "lbl" : "bulimia nervosa, susceptibility to, 1"
+        },
+        {
+          "id" : "OMIM:607499",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011846",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607499",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN244558",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011846",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011846",
+            "OMIM:607499",
+            "UMLS:CN244558"
+          ]
+        }
+      ]
+    }
+  ]
+}

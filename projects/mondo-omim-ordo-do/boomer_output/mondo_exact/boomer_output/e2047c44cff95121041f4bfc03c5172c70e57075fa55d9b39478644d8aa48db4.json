@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e2047c44cff95121041f4bfc03c5172c70e57075fa55d9b39478644d8aa48db4",
+      "nodes" : [
+        {
+          "id" : "SCTID:123799005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:I15.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1591",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0020545",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006947",
+          "type" : "CLASS",
+          "lbl" : "renovascular hypertension"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:I15.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006947",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:123799005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006947",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1591",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006947",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0020545",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006947",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0020545",
+            "MONDO:0006947",
+            "DOID:1591",
+            "SCTID:123799005",
+            "ICD10CM:I15.0"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:78c9d26330983c642519300c8c820011fb1a016f82e39788bda57b9364ed46fc",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0019077",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:16632002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006783",
+          "type" : "CLASS",
+          "lbl" : "hemopneumothorax"
+        },
+        {
+          "id" : "DOID:2718",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D006468",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:16632002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006783",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0019077",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006783",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2718",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006783",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D006468",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006783",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006783",
+            "MESH:D006468",
+            "DOID:2718",
+            "SCTID:16632002",
+            "UMLS:C0019077"
+          ]
+        }
+      ]
+    }
+  ]
+}

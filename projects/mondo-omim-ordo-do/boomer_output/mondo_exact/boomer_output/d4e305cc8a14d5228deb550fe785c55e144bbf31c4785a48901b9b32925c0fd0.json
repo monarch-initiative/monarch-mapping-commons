@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d4e305cc8a14d5228deb550fe785c55e144bbf31c4785a48901b9b32925c0fd0",
+      "nodes" : [
+        {
+          "id" : "MESH:C564557",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1846147",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010276",
+          "type" : "CLASS",
+          "lbl" : "radioulnar synostosis, radial ray abnormalities, and severe malformations in the male"
+        },
+        {
+          "id" : "OMIM:300233",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010276",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300233",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1846147",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010276",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564557",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010276",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:300233",
+            "MONDO:0010276",
+            "UMLS:C1846147",
+            "MESH:C564557"
+          ]
+        }
+      ]
+    }
+  ]
+}

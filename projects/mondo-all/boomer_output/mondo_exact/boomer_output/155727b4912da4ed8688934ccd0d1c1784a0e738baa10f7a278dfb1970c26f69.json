@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:155727b4912da4ed8688934ccd0d1c1784a0e738baa10f7a278dfb1970c26f69",
+      "nodes" : [
+        {
+          "id" : "MESH:C563087",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0796057",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009587",
+          "type" : "CLASS",
+          "lbl" : "mesoaxial hexadactyly and cardiac malformation"
+        },
+        {
+          "id" : "OMIM:249670",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0796057",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009587",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009587",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:249670",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563087",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009587",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0796057",
+            "MONDO:0009587",
+            "OMIM:249670",
+            "MESH:C563087"
+          ]
+        }
+      ]
+    }
+  ]
+}

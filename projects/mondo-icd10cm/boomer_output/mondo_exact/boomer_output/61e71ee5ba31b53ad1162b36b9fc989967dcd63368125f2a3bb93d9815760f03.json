@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:61e71ee5ba31b53ad1162b36b9fc989967dcd63368125f2a3bb93d9815760f03",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237747",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018681",
+          "type" : "CLASS",
+          "lbl" : "neurodevelopmental disorder-craniofacial dysmorphism-cardiac defect-hip dysplasia syndrome"
+        },
+        {
+          "id" : "Orphanet:453499",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237747",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018681",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018681",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:453499",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018681",
+            "UMLS:CN237747",
+            "Orphanet:453499"
+          ]
+        }
+      ]
+    }
+  ]
+}

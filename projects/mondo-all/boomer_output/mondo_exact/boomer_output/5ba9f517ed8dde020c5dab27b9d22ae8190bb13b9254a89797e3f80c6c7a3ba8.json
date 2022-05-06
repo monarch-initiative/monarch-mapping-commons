@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5ba9f517ed8dde020c5dab27b9d22ae8190bb13b9254a89797e3f80c6c7a3ba8",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207036",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020176",
+          "type" : "CLASS",
+          "lbl" : "palpebral sebaceous gland tumor"
+        },
+        {
+          "id" : "Orphanet:98585",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN207036",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020176",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020176",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98585",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020176",
+            "UMLS:CN207036",
+            "Orphanet:98585"
+          ]
+        }
+      ]
+    }
+  ]
+}

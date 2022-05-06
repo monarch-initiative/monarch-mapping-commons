@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:12634cb75d3bcf50e230934ee79573dc3faffb1deaa109e77d0190052b593b16",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1520086",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7408",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004212",
+          "type" : "CLASS",
+          "lbl" : "vulvar keratoacanthoma-like carcinoma"
+        },
+        {
+          "id" : "NCIT:C40288",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7408",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004212",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1520086",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004212",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004212",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40288",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004212",
+            "DOID:7408",
+            "UMLS:C1520086",
+            "NCIT:C40288"
+          ]
+        }
+      ]
+    }
+  ]
+}

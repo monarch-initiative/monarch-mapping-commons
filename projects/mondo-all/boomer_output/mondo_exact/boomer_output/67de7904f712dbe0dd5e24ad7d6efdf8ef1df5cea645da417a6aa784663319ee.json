@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:67de7904f712dbe0dd5e24ad7d6efdf8ef1df5cea645da417a6aa784663319ee",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1839650",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010681",
+          "type" : "CLASS",
+          "lbl" : "myelolymphatic insufficiency"
+        },
+        {
+          "id" : "OMIM:310350",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1839650",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010681",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010681",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:310350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010681",
+            "UMLS:C1839650",
+            "OMIM:310350"
+          ]
+        }
+      ]
+    }
+  ]
+}

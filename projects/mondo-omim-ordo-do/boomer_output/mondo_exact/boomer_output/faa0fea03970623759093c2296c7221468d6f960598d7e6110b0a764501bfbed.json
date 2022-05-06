@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:faa0fea03970623759093c2296c7221468d6f960598d7e6110b0a764501bfbed",
+      "nodes" : [
+        {
+          "id" : "MESH:C565934",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859647",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008835",
+          "type" : "CLASS",
+          "lbl" : "asthma, short stature, and elevated IgA"
+        },
+        {
+          "id" : "OMIM:208600",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565934",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008835",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008835",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:208600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1859647",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008835",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008835",
+            "MESH:C565934",
+            "OMIM:208600",
+            "UMLS:C1859647"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8a1a52f64fb9bcb67653fbd262e3e0c4581f2613846658681ec18fcf617923fe",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1862289",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007192",
+          "type" : "CLASS",
+          "lbl" : "beta-amino acids, renal transport of"
+        },
+        {
+          "id" : "OMIM:109660",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1862289",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007192",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007192",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:109660",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1862289",
+            "MONDO:0007192",
+            "OMIM:109660"
+          ]
+        }
+      ]
+    }
+  ]
+}

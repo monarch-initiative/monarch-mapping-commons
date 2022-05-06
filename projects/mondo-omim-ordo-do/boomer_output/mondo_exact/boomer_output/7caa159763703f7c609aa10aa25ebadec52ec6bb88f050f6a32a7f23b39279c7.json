@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7caa159763703f7c609aa10aa25ebadec52ec6bb88f050f6a32a7f23b39279c7",
+      "nodes" : [
+        {
+          "id" : "MESH:C565326",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1854244",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011557",
+          "type" : "CLASS",
+          "lbl" : "radiation sensitivity/chromosome instability syndrome, autosomal dominant"
+        },
+        {
+          "id" : "OMIM:605463",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1854244",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011557",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011557",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:605463",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565326",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011557",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1854244",
+            "MONDO:0011557",
+            "OMIM:605463",
+            "MESH:C565326"
+          ]
+        }
+      ]
+    }
+  ]
+}

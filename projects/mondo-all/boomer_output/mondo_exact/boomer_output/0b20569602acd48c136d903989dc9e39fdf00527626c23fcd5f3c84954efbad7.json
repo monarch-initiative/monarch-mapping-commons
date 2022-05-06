@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0b20569602acd48c136d903989dc9e39fdf00527626c23fcd5f3c84954efbad7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333405",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6606",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003942",
+          "type" : "CLASS",
+          "lbl" : "eosinophilic variant of chromophobe renal cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C27889",
+          "type" : "CLASS",
+          "lbl" : "Eosinophilic Variant of Chromophobe Renal Cell Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003942",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27889",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6606",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003942",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333405",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003942",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003942",
+            "NCIT:C27889",
+            "DOID:6606",
+            "UMLS:C1333405"
+          ]
+        }
+      ]
+    }
+  ]
+}

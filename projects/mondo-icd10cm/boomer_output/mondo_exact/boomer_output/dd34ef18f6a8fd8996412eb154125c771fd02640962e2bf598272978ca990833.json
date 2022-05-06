@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dd34ef18f6a8fd8996412eb154125c771fd02640962e2bf598272978ca990833",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553077",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013734",
+          "type" : "CLASS",
+          "lbl" : "microphthalmia, syndromic 11"
+        },
+        {
+          "id" : "OMIM:614402",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013734",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614402",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3553077",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013734",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:614402",
+            "MONDO:0013734",
+            "UMLS:C3553077"
+          ]
+        }
+      ]
+    }
+  ]
+}

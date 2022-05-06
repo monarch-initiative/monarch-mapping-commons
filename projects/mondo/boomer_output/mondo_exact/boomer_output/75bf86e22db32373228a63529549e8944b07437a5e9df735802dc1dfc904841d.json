@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:75bf86e22db32373228a63529549e8944b07437a5e9df735802dc1dfc904841d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2698359",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006104",
+          "type" : "CLASS",
+          "lbl" : "benign carotid body paraganglioma"
+        },
+        {
+          "id" : "NCIT:C79950",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006104",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C79950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2698359",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006104",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006104",
+            "NCIT:C79950",
+            "UMLS:C2698359"
+          ]
+        }
+      ]
+    }
+  ]
+}

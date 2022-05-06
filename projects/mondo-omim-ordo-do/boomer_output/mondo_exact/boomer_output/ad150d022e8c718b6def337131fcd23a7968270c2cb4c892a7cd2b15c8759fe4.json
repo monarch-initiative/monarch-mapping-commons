@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ad150d022e8c718b6def337131fcd23a7968270c2cb4c892a7cd2b15c8759fe4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4085238",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014633",
+          "type" : "CLASS",
+          "lbl" : "myoclonic-atonic epilepsy"
+        },
+        {
+          "id" : "OMIM:616421",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4085238",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014633",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014633",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616421",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4085238",
+            "MONDO:0014633",
+            "OMIM:616421"
+          ]
+        }
+      ]
+    }
+  ]
+}

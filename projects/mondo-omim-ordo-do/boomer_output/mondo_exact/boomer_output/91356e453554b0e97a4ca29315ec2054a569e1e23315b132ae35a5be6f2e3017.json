@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:91356e453554b0e97a4ca29315ec2054a569e1e23315b132ae35a5be6f2e3017",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227320",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018318",
+          "type" : "CLASS",
+          "lbl" : "disorder of asparagine metabolism"
+        },
+        {
+          "id" : "Orphanet:391381",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227320",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018318",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018318",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:391381",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018318",
+            "UMLS:CN227320",
+            "Orphanet:391381"
+          ]
+        }
+      ]
+    }
+  ]
+}

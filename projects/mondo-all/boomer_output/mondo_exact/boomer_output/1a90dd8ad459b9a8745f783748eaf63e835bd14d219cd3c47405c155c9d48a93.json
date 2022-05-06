@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1a90dd8ad459b9a8745f783748eaf63e835bd14d219cd3c47405c155c9d48a93",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0391970",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C72074",
+          "type" : "CLASS",
+          "lbl" : "Atypical Carcinoid Tumor"
+        },
+        {
+          "id" : "SCTID:445238008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006095",
+          "type" : "CLASS",
+          "lbl" : "atypical carcinoid tumor"
+        },
+        {
+          "id" : "UMLS:C1266032",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006095",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C72074",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1266032",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006095",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:445238008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006095",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006095",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0391970",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C72074",
+            "MONDO:0006095",
+            "UMLS:C1266032",
+            "SCTID:445238008"
+          ]
+        }
+      ]
+    }
+  ]
+}

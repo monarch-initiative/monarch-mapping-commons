@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d507af90eb5b2b2161e3fcd8508ce45e91d0a7a5e370cc9792da60547bcf957a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207037",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020177",
+          "type" : "CLASS",
+          "lbl" : "pigmented palpebral tumor"
+        },
+        {
+          "id" : "Orphanet:98586",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN207037",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020177",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020177",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98586",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN207037",
+            "MONDO:0020177",
+            "Orphanet:98586"
+          ]
+        }
+      ]
+    }
+  ]
+}

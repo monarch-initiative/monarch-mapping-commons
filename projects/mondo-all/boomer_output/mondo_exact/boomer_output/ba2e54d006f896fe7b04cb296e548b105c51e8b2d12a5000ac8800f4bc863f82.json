@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ba2e54d006f896fe7b04cb296e548b105c51e8b2d12a5000ac8800f4bc863f82",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4540493",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060621",
+          "type" : "CLASS",
+          "lbl" : "neurodevelopmental disorder with microcephaly, seizures, and cortical atrophy"
+        },
+        {
+          "id" : "OMIM:617802",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4540493",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060621",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060621",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617802",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4540493",
+            "MONDO:0060621",
+            "OMIM:617802"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:22bab619a6d7f5fa4e82b6d5389cd151e45a090aae8dc536c3036548714e8cd3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333456",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5694",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003586",
+          "type" : "CLASS",
+          "lbl" : "esophagus liposarcoma"
+        },
+        {
+          "id" : "NCIT:C5705",
+          "type" : "CLASS",
+          "lbl" : "Esophageal Liposarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333456",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003586",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003586",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5705",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5694",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003586",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333456",
+            "MONDO:0003586",
+            "NCIT:C5705",
+            "DOID:5694"
+          ]
+        }
+      ]
+    }
+  ]
+}

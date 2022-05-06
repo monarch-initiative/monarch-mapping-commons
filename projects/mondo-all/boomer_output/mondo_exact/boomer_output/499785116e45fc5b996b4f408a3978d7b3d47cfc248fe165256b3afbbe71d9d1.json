@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:499785116e45fc5b996b4f408a3978d7b3d47cfc248fe165256b3afbbe71d9d1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0278863",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5396",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003430",
+          "type" : "CLASS",
+          "lbl" : "prolactin producing pituitary tumor"
+        },
+        {
+          "id" : "NCIT:C7910",
+          "type" : "CLASS",
+          "lbl" : "Prolactin-Producing Pituitary Gland Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003430",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7910",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0278863",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003430",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5396",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003430",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003430",
+            "UMLS:C0278863",
+            "NCIT:C7910",
+            "DOID:5396"
+          ]
+        }
+      ]
+    }
+  ]
+}

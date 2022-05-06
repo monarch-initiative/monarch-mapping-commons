@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:31722c9740ec6c7274fc9005998b77e0744ab1bc03fbb3dedb0239d13e27ad41",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0153437",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1521",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002033",
+          "type" : "CLASS",
+          "lbl" : "cecum cancer"
+        },
+        {
+          "id" : "NCIT:C9329",
+          "type" : "CLASS",
+          "lbl" : "Malignant Cecum Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:1521",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002033",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002033",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9329",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0153437",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002033",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002033",
+            "DOID:1521",
+            "UMLS:C0153437",
+            "NCIT:C9329"
+          ]
+        }
+      ]
+    }
+  ]
+}

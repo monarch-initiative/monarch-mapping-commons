@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a7b339b6a51125fba79254c2a779b7bb9094e34970a36d4d9df2b6c7d6dceffa",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN321863",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080264",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0033123",
+          "type" : "CLASS",
+          "lbl" : "exudative vitreoretinopathy 7"
+        },
+        {
+          "id" : "OMIM:617572",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0033123",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617572",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN321863",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0033123",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080264",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0033123",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0033123",
+            "OMIM:617572",
+            "UMLS:CN321863",
+            "DOID:0080264"
+          ]
+        }
+      ]
+    }
+  ]
+}

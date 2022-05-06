@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7bfc51b35bab3ea4b009f9fe5e4b93aa49eab8141e747615df32736320b494db",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279930",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8272",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004518",
+          "type" : "CLASS",
+          "lbl" : "anterior urethra cancer"
+        },
+        {
+          "id" : "NCIT:C7641",
+          "type" : "CLASS",
+          "lbl" : "Anterior Urethral Malignant Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:8272",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004518",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0279930",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004518",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004518",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7641",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:8272",
+            "MONDO:0004518",
+            "UMLS:C0279930",
+            "NCIT:C7641"
+          ]
+        }
+      ]
+    }
+  ]
+}

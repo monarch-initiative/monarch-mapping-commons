@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:afe48a24edec980188337c2e80a1f8d0b4f508d5240d2a98ba5f1929584af27c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334576",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3843",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002786",
+          "type" : "CLASS",
+          "lbl" : "diencephalic cancer"
+        },
+        {
+          "id" : "NCIT:C5126",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3843",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002786",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334576",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002786",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002786",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5126",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3843",
+            "MONDO:0002786",
+            "UMLS:C1334576",
+            "NCIT:C5126"
+          ]
+        }
+      ]
+    }
+  ]
+}

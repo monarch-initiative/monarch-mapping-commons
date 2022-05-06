@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c1f97b0175ff64987c42a1ce4da03eab8a39fe71ecdb7154c604b08a24669924",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336853",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006475",
+          "type" : "CLASS",
+          "lbl" : "obsolete unclassified renal cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C27892",
+          "type" : "CLASS",
+          "lbl" : "Unclassified Renal Cell Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1336853",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006475",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006475",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27892",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1336853",
+            "MONDO:0006475",
+            "NCIT:C27892"
+          ]
+        }
+      ]
+    }
+  ]
+}

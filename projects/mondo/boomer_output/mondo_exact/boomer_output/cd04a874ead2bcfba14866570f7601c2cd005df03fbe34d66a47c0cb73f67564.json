@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cd04a874ead2bcfba14866570f7601c2cd005df03fbe34d66a47c0cb73f67564",
+      "nodes" : [
+        {
+          "id" : "SCTID:2177002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0032768",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0041052",
+          "type" : "CLASS",
+          "lbl" : "postherpetic neuralgia"
+        },
+        {
+          "id" : "Orphanet:466673",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0041052",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:466673",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:2177002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0041052",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0032768",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0041052",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0041052",
+            "Orphanet:466673",
+            "SCTID:2177002",
+            "UMLS:C0032768"
+          ]
+        }
+      ]
+    }
+  ]
+}

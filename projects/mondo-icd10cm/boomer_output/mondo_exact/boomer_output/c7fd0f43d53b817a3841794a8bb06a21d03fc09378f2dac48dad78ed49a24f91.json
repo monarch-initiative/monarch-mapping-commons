@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c7fd0f43d53b817a3841794a8bb06a21d03fc09378f2dac48dad78ed49a24f91",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227193",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017747",
+          "type" : "CLASS",
+          "lbl" : "disorder of fucoglycosan synthesis"
+        },
+        {
+          "id" : "Orphanet:309505",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017747",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309505",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227193",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017747",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017747",
+            "Orphanet:309505",
+            "UMLS:CN227193"
+          ]
+        }
+      ]
+    }
+  ]
+}

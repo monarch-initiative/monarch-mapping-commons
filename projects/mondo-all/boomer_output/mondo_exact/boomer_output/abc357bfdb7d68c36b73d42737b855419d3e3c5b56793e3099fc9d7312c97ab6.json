@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:abc357bfdb7d68c36b73d42737b855419d3e3c5b56793e3099fc9d7312c97ab6",
+      "nodes" : [
+        {
+          "id" : "SCTID:302829009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0334378",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021301",
+          "type" : "CLASS",
+          "lbl" : "adenoma of nipple"
+        },
+        {
+          "id" : "NCIT:C4192",
+          "type" : "CLASS",
+          "lbl" : "Nipple Adenoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:302829009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021301",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021301",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4192",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334378",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021301",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:302829009",
+            "MONDO:0021301",
+            "NCIT:C4192",
+            "UMLS:C0334378"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:81c485b44e8205762c274089b5b7ec8e97500f7a4134ddbae9b5e1db2d5e1fe7",
+      "nodes" : [
+        {
+          "id" : "MESH:C536898",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2931364",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018046",
+          "type" : "CLASS",
+          "lbl" : "thrombocytopenia-robin sequence syndrome"
+        },
+        {
+          "id" : "Orphanet:3323",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2931364",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018046",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018046",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3323",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536898",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018046",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018046",
+            "UMLS:C2931364",
+            "Orphanet:3323",
+            "MESH:C536898"
+          ]
+        }
+      ]
+    }
+  ]
+}

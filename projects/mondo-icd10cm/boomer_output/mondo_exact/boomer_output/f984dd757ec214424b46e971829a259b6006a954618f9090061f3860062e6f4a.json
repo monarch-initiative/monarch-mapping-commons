@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f984dd757ec214424b46e971829a259b6006a954618f9090061f3860062e6f4a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205122",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018749",
+          "type" : "CLASS",
+          "lbl" : "hereditary persistence of fetal hemoglobin-beta-thalassemia syndrome"
+        },
+        {
+          "id" : "Orphanet:46532",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018749",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:46532",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205122",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018749",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:46532",
+            "MONDO:0018749",
+            "UMLS:CN205122"
+          ]
+        }
+      ]
+    }
+  ]
+}

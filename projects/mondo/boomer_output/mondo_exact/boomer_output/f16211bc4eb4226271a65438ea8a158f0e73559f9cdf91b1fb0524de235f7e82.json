@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f16211bc4eb4226271a65438ea8a158f0e73559f9cdf91b1fb0524de235f7e82",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310787",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014839",
+          "type" : "CLASS",
+          "lbl" : "chorea, childhood-onset, with psychomotor retardation"
+        },
+        {
+          "id" : "OMIM:616939",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4310787",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014839",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014839",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616939",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4310787",
+            "MONDO:0014839",
+            "OMIM:616939"
+          ]
+        }
+      ]
+    }
+  ]
+}

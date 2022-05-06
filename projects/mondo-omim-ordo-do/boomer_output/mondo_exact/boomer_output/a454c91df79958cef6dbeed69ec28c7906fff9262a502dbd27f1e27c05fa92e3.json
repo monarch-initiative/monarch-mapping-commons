@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a454c91df79958cef6dbeed69ec28c7906fff9262a502dbd27f1e27c05fa92e3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225340",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110226",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014621",
+          "type" : "CLASS",
+          "lbl" : "Brugada syndrome 9"
+        },
+        {
+          "id" : "OMIM:616399",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110226",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014621",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014621",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616399",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225340",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014621",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014621",
+            "DOID:0110226",
+            "OMIM:616399",
+            "UMLS:C4225340"
+          ]
+        }
+      ]
+    }
+  ]
+}

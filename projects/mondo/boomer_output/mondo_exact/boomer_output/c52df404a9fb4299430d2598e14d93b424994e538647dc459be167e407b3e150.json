@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c52df404a9fb4299430d2598e14d93b424994e538647dc459be167e407b3e150",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN034812",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008535",
+          "type" : "CLASS",
+          "lbl" : "telangiectasia, hereditary hemorrhagic, type 1"
+        },
+        {
+          "id" : "OMIM:187300",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008535",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:187300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN034812",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008535",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008535",
+            "OMIM:187300",
+            "UMLS:CN034812"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9add19ef86c911758a5faea233d046fd0be45f24a8effe4456d158e45725a5e7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201837",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016630",
+          "type" : "CLASS",
+          "lbl" : "isolated delta-storage pool disease"
+        },
+        {
+          "id" : "Orphanet:248340",
+          "type" : "CLASS",
+          "lbl" : "Isolated delta-storage pool disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016630",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:248340",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201837",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016630",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016630",
+            "Orphanet:248340",
+            "UMLS:CN201837"
+          ]
+        }
+      ]
+    }
+  ]
+}

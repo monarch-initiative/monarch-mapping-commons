@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f3b5bc5e23c2860a66bd8c7f539f5a1d8cd23ca154f3cf03c0b381625271a261",
+      "nodes" : [
+        {
+          "id" : "MEDDRA:10054662",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:19442009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:D56.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044210",
+          "type" : "CLASS",
+          "lbl" : "thalassemia minor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:D56.3",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044210",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:19442009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044210",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MEDDRA:10054662",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044210",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:D56.3",
+            "MONDO:0044210",
+            "SCTID:19442009",
+            "MEDDRA:10054662"
+          ]
+        }
+      ]
+    }
+  ]
+}

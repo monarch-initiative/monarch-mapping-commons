@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:755a1b9515b6ea83631127312103e609ec9e0d5cca8573edd02be2e7bbf62dbc",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206687",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1302790",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019755",
+          "type" : "CLASS",
+          "lbl" : "developmental defect during embryogenesis"
+        },
+        {
+          "id" : "SCTID:400038003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:93890",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C99267",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019755",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93890",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:400038003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019755",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019755",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1302790",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019755",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C99267",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN206687",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019755",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C99267",
+            "UMLS:CN206687",
+            "SCTID:400038003",
+            "MONDO:0019755",
+            "Orphanet:93890"
+          ]
+        }
+      ]
+    }
+  ]
+}

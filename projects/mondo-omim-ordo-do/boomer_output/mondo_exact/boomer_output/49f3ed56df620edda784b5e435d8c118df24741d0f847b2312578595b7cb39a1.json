@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:49f3ed56df620edda784b5e435d8c118df24741d0f847b2312578595b7cb39a1",
+      "nodes" : [
+        {
+          "id" : "MESH:C563687",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1835925",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012365",
+          "type" : "CLASS",
+          "lbl" : "gallbladder disease 2"
+        },
+        {
+          "id" : "OMIM:609918",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C563687",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012365",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012365",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609918",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1835925",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012365",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C563687",
+            "MONDO:0012365",
+            "OMIM:609918",
+            "UMLS:C1835925"
+          ]
+        }
+      ]
+    }
+  ]
+}

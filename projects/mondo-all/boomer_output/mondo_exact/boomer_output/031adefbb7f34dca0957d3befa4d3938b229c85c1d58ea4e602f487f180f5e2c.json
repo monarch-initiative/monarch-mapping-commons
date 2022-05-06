@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:031adefbb7f34dca0957d3befa4d3938b229c85c1d58ea4e602f487f180f5e2c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150653",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111096",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013248",
+          "type" : "CLASS",
+          "lbl" : "Fanconi anemia complementation group O"
+        },
+        {
+          "id" : "OMIM:613390",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3150653",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013248",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111096",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013248",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013248",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613390",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013248",
+            "UMLS:C3150653",
+            "DOID:0111096",
+            "OMIM:613390"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b8d8def3ba60bf2e7b95ec63e01c908307943496ca0c00ad94dd9bc2208699c7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227617",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019294",
+          "type" : "CLASS",
+          "lbl" : "mixed dermis disorder"
+        },
+        {
+          "id" : "Orphanet:79380",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227617",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019294",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019294",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79380",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN227617",
+            "MONDO:0019294",
+            "Orphanet:79380"
+          ]
+        }
+      ]
+    }
+  ]
+}

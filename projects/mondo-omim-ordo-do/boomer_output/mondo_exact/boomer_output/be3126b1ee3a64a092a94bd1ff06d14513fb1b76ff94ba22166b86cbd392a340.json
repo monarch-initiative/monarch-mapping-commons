@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:be3126b1ee3a64a092a94bd1ff06d14513fb1b76ff94ba22166b86cbd392a340",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0025293",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D008584",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006836",
+          "type" : "CLASS",
+          "lbl" : "Listeria meningitis"
+        },
+        {
+          "id" : "SCTID:31568009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:11572",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D008584",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006836",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:11572",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006836",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:31568009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006836",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0025293",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006836",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0025293",
+            "SCTID:31568009",
+            "DOID:11572",
+            "MONDO:0006836",
+            "MESH:D008584"
+          ]
+        }
+      ]
+    }
+  ]
+}

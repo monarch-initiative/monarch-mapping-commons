@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6280b67edbf78772bd00e1277f3f7530dda8fdcbabd234ab1a4d668e7b489d68",
+      "nodes" : [
+        {
+          "id" : "SCTID:73397007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0272285",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018048",
+          "type" : "CLASS",
+          "lbl" : "heparin-induced thrombocytopenia"
+        },
+        {
+          "id" : "Orphanet:3325",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:73397007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018048",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018048",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3325",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0272285",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018048",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:73397007",
+            "MONDO:0018048",
+            "Orphanet:3325",
+            "UMLS:C0272285"
+          ]
+        }
+      ]
+    }
+  ]
+}

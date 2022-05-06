@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:11186666b76a34f4ad703b5ea2c1c7ff61c8ff26a63e89b272ac038de3a97f63",
+      "nodes" : [
+        {
+          "id" : "SCTID:49982000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0221158",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017988",
+          "type" : "CLASS",
+          "lbl" : "multifocal atrial tachycardia"
+        },
+        {
+          "id" : "Orphanet:3282",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0221158",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017988",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017988",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3282",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:49982000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017988",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0221158",
+            "MONDO:0017988",
+            "Orphanet:3282",
+            "SCTID:49982000"
+          ]
+        }
+      ]
+    }
+  ]
+}

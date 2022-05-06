@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6c0f2bb14cda5d71b4eb26feacd0c613e49ceedfa8a07ea1c0798b2073fd7a45",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226138",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018425",
+          "type" : "CLASS",
+          "lbl" : "Huntington disease-like syndrome due to C9ORF72 expansions"
+        },
+        {
+          "id" : "Orphanet:401901",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN226138",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018425",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018425",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:401901",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018425",
+            "Orphanet:401901",
+            "UMLS:CN226138"
+          ]
+        }
+      ]
+    }
+  ]
+}

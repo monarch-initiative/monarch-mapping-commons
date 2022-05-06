@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5a00717ba7ed1b1ccbda49b60bd162992c84f96ec0d50b10f5847ced0ba49721",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1960398",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060079",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:427685000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006244",
+          "type" : "CLASS",
+          "lbl" : "HER2 positive breast carcinoma"
+        },
+        {
+          "id" : "NCIT:C53556",
+          "type" : "CLASS",
+          "lbl" : "HER2-Positive Breast Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0060079",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006244",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006244",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C53556",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1960398",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006244",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:427685000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006244",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:427685000",
+            "UMLS:C1960398",
+            "DOID:0060079",
+            "MONDO:0006244",
+            "NCIT:C53556"
+          ]
+        }
+      ]
+    }
+  ]
+}

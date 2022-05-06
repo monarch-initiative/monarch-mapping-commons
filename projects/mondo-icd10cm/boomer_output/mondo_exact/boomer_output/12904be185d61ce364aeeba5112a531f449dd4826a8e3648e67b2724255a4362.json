@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:12904be185d61ce364aeeba5112a531f449dd4826a8e3648e67b2724255a4362",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201912",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016672",
+          "type" : "CLASS",
+          "lbl" : "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome"
+        },
+        {
+          "id" : "Orphanet:251380",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201912",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016672",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016672",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:251380",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN201912",
+            "MONDO:0016672",
+            "Orphanet:251380"
+          ]
+        }
+      ]
+    }
+  ]
+}

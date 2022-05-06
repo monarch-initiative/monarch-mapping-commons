@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:838656e529f598fa509833c3907687d2116604d53b4f76a86b751ded138bd66a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227683",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019721",
+          "type" : "CLASS",
+          "lbl" : "syndromic renal or urinary tract malformation"
+        },
+        {
+          "id" : "Orphanet:93547",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019721",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93547",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227683",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019721",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019721",
+            "Orphanet:93547",
+            "UMLS:CN227683"
+          ]
+        }
+      ]
+    }
+  ]
+}

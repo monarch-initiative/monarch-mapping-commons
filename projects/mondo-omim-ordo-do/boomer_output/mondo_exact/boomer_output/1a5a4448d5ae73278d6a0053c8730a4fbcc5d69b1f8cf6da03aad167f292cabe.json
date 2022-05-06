@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1a5a4448d5ae73278d6a0053c8730a4fbcc5d69b1f8cf6da03aad167f292cabe",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0268837",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:72815004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C39860",
+          "type" : "CLASS",
+          "lbl" : "Cystitis Glandularis"
+        },
+        {
+          "id" : "DOID:2392",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002287",
+          "type" : "CLASS",
+          "lbl" : "glandular cystitis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:72815004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002287",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2392",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002287",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0268837",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002287",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002287",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39860",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0268837",
+            "DOID:2392",
+            "NCIT:C39860",
+            "MONDO:0002287",
+            "SCTID:72815004"
+          ]
+        }
+      ]
+    }
+  ]
+}

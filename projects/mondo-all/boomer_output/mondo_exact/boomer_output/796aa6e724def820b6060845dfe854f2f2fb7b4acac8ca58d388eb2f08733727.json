@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:796aa6e724def820b6060845dfe854f2f2fb7b4acac8ca58d388eb2f08733727",
+      "nodes" : [
+        {
+          "id" : "MESH:C565569",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1856788",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009225",
+          "type" : "CLASS",
+          "lbl" : "fever, familial lifelong persistent"
+        },
+        {
+          "id" : "OMIM:228400",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565569",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009225",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009225",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:228400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1856788",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009225",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C565569",
+            "MONDO:0009225",
+            "OMIM:228400",
+            "UMLS:C1856788"
+          ]
+        }
+      ]
+    }
+  ]
+}

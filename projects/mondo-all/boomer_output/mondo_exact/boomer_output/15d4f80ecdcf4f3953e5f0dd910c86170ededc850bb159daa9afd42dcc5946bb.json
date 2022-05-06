@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:15d4f80ecdcf4f3953e5f0dd910c86170ededc850bb159daa9afd42dcc5946bb",
+      "nodes" : [
+        {
+          "id" : "MESH:C564018",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010791",
+          "type" : "CLASS",
+          "lbl" : "myoglobinuria, recurrent"
+        },
+        {
+          "id" : "OMIM:550500",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564018",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010791",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010791",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:550500",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010791",
+            "MESH:C564018",
+            "OMIM:550500"
+          ]
+        }
+      ]
+    }
+  ]
+}

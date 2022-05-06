@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f43f747384a0715830ba818ab9153bdf9967c13cd4b0b8cd6c7a8cf3970a500c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1834369",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008066",
+          "type" : "CLASS",
+          "lbl" : "nasal hyperpigmentation, familial transverse"
+        },
+        {
+          "id" : "OMIM:161530",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1834369",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008066",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008066",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:161530",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1834369",
+            "MONDO:0008066",
+            "OMIM:161530"
+          ]
+        }
+      ]
+    }
+  ]
+}

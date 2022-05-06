@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f82e7fdb0194a1d6efd00fe6f9d86428de8445ca24936bbb2f6fb090d2ef23f3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519844",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7878",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004386",
+          "type" : "CLASS",
+          "lbl" : "uterine corpus atypical polypoid adenomyoma"
+        },
+        {
+          "id" : "NCIT:C40235",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004386",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40235",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1519844",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004386",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7878",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004386",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004386",
+            "NCIT:C40235",
+            "UMLS:C1519844",
+            "DOID:7878"
+          ]
+        }
+      ]
+    }
+  ]
+}

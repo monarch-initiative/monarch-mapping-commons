@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:48a76c25e8c3041789a706457b20072248ecf3e55f1c9f74162fe367ca629bb4",
+      "nodes" : [
+        {
+          "id" : "Orphanet:319487",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3896673",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017895",
+          "type" : "CLASS",
+          "lbl" : "familial papillary or follicular thyroid carcinoma"
+        },
+        {
+          "id" : "NCIT:C118829",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN227215",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017895",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C118829",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017895",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN227215",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017895",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:319487",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3896673",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017895",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017895",
+            "NCIT:C118829",
+            "Orphanet:319487",
+            "UMLS:C3896673"
+          ]
+        }
+      ]
+    }
+  ]
+}

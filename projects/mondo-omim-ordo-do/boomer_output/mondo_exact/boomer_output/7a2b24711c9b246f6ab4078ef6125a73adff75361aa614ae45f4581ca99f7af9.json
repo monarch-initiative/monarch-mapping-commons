@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7a2b24711c9b246f6ab4078ef6125a73adff75361aa614ae45f4581ca99f7af9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334180",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6192",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006480",
+          "type" : "CLASS",
+          "lbl" : "undifferentiated pleomorphic sarcoma, inflammatory variant"
+        },
+        {
+          "id" : "NCIT:C6497",
+          "type" : "CLASS",
+          "lbl" : "Undifferentiated Pleomorphic Sarcoma, Inflammatory Variant"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6192",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006480",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334180",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006480",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006480",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6497",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006480",
+            "DOID:6192",
+            "UMLS:C1334180",
+            "NCIT:C6497"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:39612df2c3c1fa28d18ae0bc0ec4b6ae7a656e35276480413d6fd7163fd4652d",
+      "nodes" : [
+        {
+          "id" : "MESH:C538114",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2931737",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016016",
+          "type" : "CLASS",
+          "lbl" : "toluene embryopathy"
+        },
+        {
+          "id" : "Orphanet:1920",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2931737",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016016",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016016",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1920",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538114",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016016",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2931737",
+            "MONDO:0016016",
+            "Orphanet:1920",
+            "MESH:C538114"
+          ]
+        }
+      ]
+    }
+  ]
+}

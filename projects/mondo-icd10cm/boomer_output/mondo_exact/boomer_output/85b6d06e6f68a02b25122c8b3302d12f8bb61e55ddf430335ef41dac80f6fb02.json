@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:85b6d06e6f68a02b25122c8b3302d12f8bb61e55ddf430335ef41dac80f6fb02",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1861848",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007273",
+          "type" : "CLASS",
+          "lbl" : "paragangliomas 4"
+        },
+        {
+          "id" : "OMIM:115310",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007273",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:115310",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1861848",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007273",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:115310",
+            "MONDO:0007273",
+            "UMLS:C1861848"
+          ]
+        }
+      ]
+    }
+  ]
+}

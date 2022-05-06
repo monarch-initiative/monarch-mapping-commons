@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ef473ed3ed24b543d8fcd7da22fb64bba2d523a11891526d4c45682d39413a60",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280721",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013739",
+          "type" : "CLASS",
+          "lbl" : "chilblain lupus 2"
+        },
+        {
+          "id" : "OMIM:614415",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3280721",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013739",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013739",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614415",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013739",
+            "UMLS:C3280721",
+            "OMIM:614415"
+          ]
+        }
+      ]
+    }
+  ]
+}

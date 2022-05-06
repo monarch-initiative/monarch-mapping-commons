@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b27e67a36b1998d84a9f3cd4869b6d530cedc9bc9192ccca8a7bb53032c1e46e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN197505",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015165",
+          "type" : "CLASS",
+          "lbl" : "acute myeloid leukemia and myelodysplastic syndromes related to topoisomerase type 2 inhibitor"
+        },
+        {
+          "id" : "Orphanet:102381",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN197505",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015165",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015165",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:102381",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN197505",
+            "MONDO:0015165",
+            "Orphanet:102381"
+          ]
+        }
+      ]
+    }
+  ]
+}

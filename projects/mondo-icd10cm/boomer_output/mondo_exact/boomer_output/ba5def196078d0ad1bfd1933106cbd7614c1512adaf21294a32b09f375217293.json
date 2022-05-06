@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ba5def196078d0ad1bfd1933106cbd7614c1512adaf21294a32b09f375217293",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553785",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013899",
+          "type" : "CLASS",
+          "lbl" : "Weill-Marchesani syndrome 3"
+        },
+        {
+          "id" : "OMIM:614819",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013899",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614819",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3553785",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013899",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013899",
+            "OMIM:614819",
+            "UMLS:C3553785"
+          ]
+        }
+      ]
+    }
+  ]
+}

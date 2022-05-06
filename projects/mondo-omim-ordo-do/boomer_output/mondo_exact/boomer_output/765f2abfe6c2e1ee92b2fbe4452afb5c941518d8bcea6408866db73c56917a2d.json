@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:765f2abfe6c2e1ee92b2fbe4452afb5c941518d8bcea6408866db73c56917a2d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333459",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1106",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001188",
+          "type" : "CLASS",
+          "lbl" : "esophagus lymphoma"
+        },
+        {
+          "id" : "NCIT:C5687",
+          "type" : "CLASS",
+          "lbl" : "Esophageal Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0001188",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5687",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1106",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001188",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333459",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001188",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001188",
+            "NCIT:C5687",
+            "DOID:1106",
+            "UMLS:C1333459"
+          ]
+        }
+      ]
+    }
+  ]
+}

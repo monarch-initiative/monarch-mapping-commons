@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:de97aa819a97156bf5f603f5c33d9a3255b261a4325f8437ea6dbaaa498bd339",
+      "nodes" : [
+        {
+          "id" : "MESH:D011855",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:49084001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0043771",
+          "type" : "CLASS",
+          "lbl" : "radiodermatitis"
+        },
+        {
+          "id" : "NCIT:C3349",
+          "type" : "CLASS",
+          "lbl" : "Radiation-Induced Dermatitis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:49084001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043771",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D011855",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043771",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0043771",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3349",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:49084001",
+            "MONDO:0043771",
+            "MESH:D011855",
+            "NCIT:C3349"
+          ]
+        }
+      ]
+    }
+  ]
+}

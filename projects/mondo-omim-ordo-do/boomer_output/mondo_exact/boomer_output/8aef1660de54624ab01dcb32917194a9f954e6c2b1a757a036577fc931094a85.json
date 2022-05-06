@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8aef1660de54624ab01dcb32917194a9f954e6c2b1a757a036577fc931094a85",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206655",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019741",
+          "type" : "CLASS",
+          "lbl" : "familial cystic renal disease"
+        },
+        {
+          "id" : "Orphanet:93587",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019741",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93587",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN206655",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019741",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019741",
+            "Orphanet:93587",
+            "UMLS:CN206655"
+          ]
+        }
+      ]
+    }
+  ]
+}

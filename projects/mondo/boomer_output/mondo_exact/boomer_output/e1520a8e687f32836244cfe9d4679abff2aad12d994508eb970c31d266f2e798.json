@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e1520a8e687f32836244cfe9d4679abff2aad12d994508eb970c31d266f2e798",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336773",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:12001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001417",
+          "type" : "CLASS",
+          "lbl" : "tracheal lymphoma"
+        },
+        {
+          "id" : "NCIT:C6248",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:12001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001417",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001417",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6248",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336773",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001417",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001417",
+            "DOID:12001",
+            "NCIT:C6248",
+            "UMLS:C1336773"
+          ]
+        }
+      ]
+    }
+  ]
+}

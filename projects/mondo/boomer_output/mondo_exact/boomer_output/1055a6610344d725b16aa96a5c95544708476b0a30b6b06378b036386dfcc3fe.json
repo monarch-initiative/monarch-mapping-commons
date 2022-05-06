@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1055a6610344d725b16aa96a5c95544708476b0a30b6b06378b036386dfcc3fe",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335148",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7542",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004275",
+          "type" : "CLASS",
+          "lbl" : "osteosarcoma arising in bone Paget disease"
+        },
+        {
+          "id" : "NCIT:C6469",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004275",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6469",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7542",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004275",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335148",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004275",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6469",
+            "MONDO:0004275",
+            "DOID:7542",
+            "UMLS:C1335148"
+          ]
+        }
+      ]
+    }
+  ]
+}

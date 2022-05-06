@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e6a0900e12f4685af9cf3ed10070c3d3f6276ef0318d520cc38f2d5358abb60a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553288",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060698",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013827",
+          "type" : "CLASS",
+          "lbl" : "hyperekplexia 3"
+        },
+        {
+          "id" : "OMIM:614618",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3553288",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013827",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013827",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614618",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060698",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013827",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3553288",
+            "MONDO:0013827",
+            "OMIM:614618",
+            "DOID:0060698"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:93d69b39775fd528a275b90dd8a3429670a08a7074fbe8a086f5640d57c6c0f7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0280329",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7583",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004289",
+          "type" : "CLASS",
+          "lbl" : "glottis verrucous carcinoma"
+        },
+        {
+          "id" : "NCIT:C8189",
+          "type" : "CLASS",
+          "lbl" : "Glottis Verrucous Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7583",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004289",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0280329",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004289",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004289",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8189",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004289",
+            "DOID:7583",
+            "UMLS:C0280329",
+            "NCIT:C8189"
+          ]
+        }
+      ]
+    }
+  ]
+}

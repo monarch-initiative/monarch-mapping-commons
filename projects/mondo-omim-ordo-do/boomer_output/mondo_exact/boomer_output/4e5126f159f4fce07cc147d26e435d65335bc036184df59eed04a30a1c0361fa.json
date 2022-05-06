@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4e5126f159f4fce07cc147d26e435d65335bc036184df59eed04a30a1c0361fa",
+      "nodes" : [
+        {
+          "id" : "MESH:C564832",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1849386",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009992",
+          "type" : "CLASS",
+          "lbl" : "myoglobinuria, acute recurrent, autosomal recessive"
+        },
+        {
+          "id" : "OMIM:268200",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009992",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:268200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1849386",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009992",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564832",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009992",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009992",
+            "OMIM:268200",
+            "UMLS:C1849386",
+            "MESH:C564832"
+          ]
+        }
+      ]
+    }
+  ]
+}

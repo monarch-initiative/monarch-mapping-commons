@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b6b2b3f4fc7ea102a0946ed52c941c7216d41f34658a1a67b64c70753c70375f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809844",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060437",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014235",
+          "type" : "CLASS",
+          "lbl" : "chromosome 22q13 duplication syndrome"
+        },
+        {
+          "id" : "OMIM:615538",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0060437",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014235",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3809844",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014235",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014235",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615538",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014235",
+            "DOID:0060437",
+            "UMLS:C3809844",
+            "OMIM:615538"
+          ]
+        }
+      ]
+    }
+  ]
+}

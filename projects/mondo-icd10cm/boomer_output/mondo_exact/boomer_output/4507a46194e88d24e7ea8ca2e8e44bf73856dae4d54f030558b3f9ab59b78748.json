@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4507a46194e88d24e7ea8ca2e8e44bf73856dae4d54f030558b3f9ab59b78748",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1412036",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5525",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006082",
+          "type" : "CLASS",
+          "lbl" : "anal squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C9161",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006082",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9161",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5525",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006082",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1412036",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006082",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006082",
+            "NCIT:C9161",
+            "UMLS:C1412036",
+            "DOID:5525"
+          ]
+        }
+      ]
+    }
+  ]
+}

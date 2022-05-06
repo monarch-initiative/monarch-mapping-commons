@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:281cec9b5b920b1cba7f1e1f8353cab68d8410447ee32671da2fcf8e550765eb",
+      "nodes" : [
+        {
+          "id" : "MESH:C538101",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1412041",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010707",
+          "type" : "CLASS",
+          "lbl" : "Paine syndrome"
+        },
+        {
+          "id" : "OMIM:311400",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010707",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:311400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1412041",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010707",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538101",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010707",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010707",
+            "OMIM:311400",
+            "UMLS:C1412041",
+            "MESH:C538101"
+          ]
+        }
+      ]
+    }
+  ]
+}

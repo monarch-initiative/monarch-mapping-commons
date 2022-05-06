@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:250b3cfceda1ab3d643b3fc138bb5d1d028a249ac524e8c3624d1477412af77a",
+      "nodes" : [
+        {
+          "id" : "MESH:C563599",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1835088",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007952",
+          "type" : "CLASS",
+          "lbl" : "maxillofacial dysostosis"
+        },
+        {
+          "id" : "OMIM:155000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1835088",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007952",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007952",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:155000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563599",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007952",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007952",
+            "UMLS:C1835088",
+            "OMIM:155000",
+            "MESH:C563599"
+          ]
+        }
+      ]
+    }
+  ]
+}

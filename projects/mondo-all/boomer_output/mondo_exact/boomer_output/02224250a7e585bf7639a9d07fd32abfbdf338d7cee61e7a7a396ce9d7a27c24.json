@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:02224250a7e585bf7639a9d07fd32abfbdf338d7cee61e7a7a396ce9d7a27c24",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200180",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015682",
+          "type" : "CLASS",
+          "lbl" : "primary peritoneal tumor"
+        },
+        {
+          "id" : "Orphanet:168803",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN200180",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015682",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015682",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:168803",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN200180",
+            "MONDO:0015682",
+            "Orphanet:168803"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8b3a334ed7e5ca0a686a99a44e5095d75ea416f87927f4f185b5dfa4520b0a80",
+      "nodes" : [
+        {
+          "id" : "MESH:C567635",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2750061",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013234",
+          "type" : "CLASS",
+          "lbl" : "hypokalemic periodic paralysis, type 2"
+        },
+        {
+          "id" : "OMIM:613345",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C567635",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013234",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013234",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613345",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2750061",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013234",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C567635",
+            "MONDO:0013234",
+            "OMIM:613345",
+            "UMLS:C2750061"
+          ]
+        }
+      ]
+    }
+  ]
+}

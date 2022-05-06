@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ea4f0399bc0e5eccc1816a5d6f84bc89422cc71f6103bd2a5b3d2124ab36583e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335418",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8031",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004440",
+          "type" : "CLASS",
+          "lbl" : "pineal region meningioma"
+        },
+        {
+          "id" : "NCIT:C6756",
+          "type" : "CLASS",
+          "lbl" : "Pineal Region Meningioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004440",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6756",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335418",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004440",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8031",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004440",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004440",
+            "NCIT:C6756",
+            "UMLS:C1335418",
+            "DOID:8031"
+          ]
+        }
+      ]
+    }
+  ]
+}

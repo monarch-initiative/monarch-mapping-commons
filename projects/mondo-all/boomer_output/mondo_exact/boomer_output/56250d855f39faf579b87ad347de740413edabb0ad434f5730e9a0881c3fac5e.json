@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:56250d855f39faf579b87ad347de740413edabb0ad434f5730e9a0881c3fac5e",
+      "nodes" : [
+        {
+          "id" : "NCIT:C141424",
+          "type" : "CLASS",
+          "lbl" : "Mental Retardation, Autosomal Dominant 1"
+        },
+        {
+          "id" : "MONDO:0007974",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability, autosomal dominant 1"
+        },
+        {
+          "id" : "OMIM:156200",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070031",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C566947",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0070031",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007974",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007974",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C141424",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566947",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007974",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007974",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:156200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C566947",
+            "OMIM:156200",
+            "NCIT:C141424",
+            "DOID:0070031",
+            "MONDO:0007974"
+          ]
+        }
+      ]
+    }
+  ]
+}

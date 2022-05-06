@@ -1,0 +1,114 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ec837ace9e5ca6a3b0ef91cd60cecb88dc814341bc52085977aa8252f3c9f9ec",
+      "nodes" : [
+        {
+          "id" : "OMIM:601152",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0393807",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:90120",
+          "type" : "CLASS",
+          "lbl" : "Hereditary motor and sensory neuropathy type 6"
+        },
+        {
+          "id" : "MONDO:0019551",
+          "type" : "CLASS",
+          "lbl" : "hereditary motor and sensory neuropathy type 6"
+        },
+        {
+          "id" : "DOID:0080068",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011002",
+          "type" : "CLASS",
+          "lbl" : "neuropathy, hereditary motor and sensory, type 6A"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019551",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:90120",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080068",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019551",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011002",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0019551",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0393807",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019551",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601152",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0080068",
+            "MONDO:0019551",
+            "UMLS:C0393807"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "OMIM:601152",
+            "MONDO:0011002"
+          ]
+        }
+      ]
+    }
+  ]
+}

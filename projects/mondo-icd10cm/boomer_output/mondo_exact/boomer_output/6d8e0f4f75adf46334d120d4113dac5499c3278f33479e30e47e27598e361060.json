@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6d8e0f4f75adf46334d120d4113dac5499c3278f33479e30e47e27598e361060",
+      "nodes" : [
+        {
+          "id" : "OMIM:608930",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1837122",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110662",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012156",
+          "type" : "CLASS",
+          "lbl" : "myasthenic syndrome, congenital, 1B, fast-channel"
+        },
+        {
+          "id" : "UMLS:C4225405",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1837122",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012156",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012156",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608930",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012156",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4225405",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110662",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012156",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1837122",
+            "MONDO:0012156",
+            "OMIM:608930",
+            "DOID:0110662"
+          ]
+        }
+      ]
+    }
+  ]
+}

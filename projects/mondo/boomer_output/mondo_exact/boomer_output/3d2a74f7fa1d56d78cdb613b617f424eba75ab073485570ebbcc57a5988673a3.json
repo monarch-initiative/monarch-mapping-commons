@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3d2a74f7fa1d56d78cdb613b617f424eba75ab073485570ebbcc57a5988673a3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336029",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C5728",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:424065",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6827",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018525",
+          "type" : "CLASS",
+          "lbl" : "solid pseudopapillary carcinoma of pancreas"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018525",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:424065",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6827",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018525",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018525",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5728",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336029",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018525",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1336029",
+            "Orphanet:424065",
+            "NCIT:C5728",
+            "MONDO:0018525",
+            "DOID:6827"
+          ]
+        }
+      ]
+    }
+  ]
+}

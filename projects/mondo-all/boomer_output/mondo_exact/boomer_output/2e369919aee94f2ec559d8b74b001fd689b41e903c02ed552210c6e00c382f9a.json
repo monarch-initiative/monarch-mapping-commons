@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2e369919aee94f2ec559d8b74b001fd689b41e903c02ed552210c6e00c382f9a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1516419",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5368",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003410",
+          "type" : "CLASS",
+          "lbl" : "Wolffian duct adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C40254",
+          "type" : "CLASS",
+          "lbl" : "Cervical Mesonephric Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003410",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40254",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1516419",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003410",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5368",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003410",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C40254",
+            "MONDO:0003410",
+            "UMLS:C1516419",
+            "DOID:5368"
+          ]
+        }
+      ]
+    }
+  ]
+}

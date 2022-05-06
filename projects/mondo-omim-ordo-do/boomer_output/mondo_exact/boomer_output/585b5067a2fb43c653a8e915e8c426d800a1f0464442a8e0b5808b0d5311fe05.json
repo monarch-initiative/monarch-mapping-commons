@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:585b5067a2fb43c653a8e915e8c426d800a1f0464442a8e0b5808b0d5311fe05",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310810",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010516",
+          "type" : "CLASS",
+          "lbl" : "midface hypoplasia, hearing impairment, elliptocytosis, and nephrocalcinosis"
+        },
+        {
+          "id" : "OMIM:300990",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010516",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300990",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310810",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010516",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010516",
+            "OMIM:300990",
+            "UMLS:C4310810"
+          ]
+        }
+      ]
+    }
+  ]
+}

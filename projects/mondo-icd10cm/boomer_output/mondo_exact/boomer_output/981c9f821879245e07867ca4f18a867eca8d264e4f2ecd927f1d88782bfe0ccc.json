@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:981c9f821879245e07867ca4f18a867eca8d264e4f2ecd927f1d88782bfe0ccc",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809691",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110094",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014214",
+          "type" : "CLASS",
+          "lbl" : "short-rib thoracic dysplasia 8 with or without polydactyly"
+        },
+        {
+          "id" : "OMIM:615503",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3809691",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014214",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014214",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615503",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110094",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014214",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3809691",
+            "MONDO:0014214",
+            "OMIM:615503",
+            "DOID:0110094"
+          ]
+        }
+      ]
+    }
+  ]
+}

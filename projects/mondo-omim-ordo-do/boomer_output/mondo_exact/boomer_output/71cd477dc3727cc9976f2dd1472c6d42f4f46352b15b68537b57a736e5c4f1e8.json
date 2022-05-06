@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:71cd477dc3727cc9976f2dd1472c6d42f4f46352b15b68537b57a736e5c4f1e8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310674",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070184",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014961",
+          "type" : "CLASS",
+          "lbl" : "spermatogenic failure 16"
+        },
+        {
+          "id" : "OMIM:617187",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014961",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617187",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310674",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014961",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070184",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014961",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014961",
+            "OMIM:617187",
+            "UMLS:C4310674",
+            "DOID:0070184"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cd553b0b6f8d6c434f2c4ada4f9bca19990ff6f007b9efe1a77ea96f5d5b82ef",
+      "nodes" : [
+        {
+          "id" : "MESH:C566179",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1861915",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007253",
+          "type" : "CLASS",
+          "lbl" : "cancer, familial, with in vitro Radioresistance"
+        },
+        {
+          "id" : "OMIM:114450",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C566179",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007253",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007253",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:114450",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1861915",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007253",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C566179",
+            "MONDO:0007253",
+            "OMIM:114450",
+            "UMLS:C1861915"
+          ]
+        }
+      ]
+    }
+  ]
+}

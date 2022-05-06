@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0faec415a8aceddea44dffb9879c6a698cd806a78f6d5379ef3596c1b216bab8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333756",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4057",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002856",
+          "type" : "CLASS",
+          "lbl" : "gallbladder rhabdomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C5839",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333756",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002856",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002856",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5839",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4057",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002856",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333756",
+            "MONDO:0002856",
+            "NCIT:C5839",
+            "DOID:4057"
+          ]
+        }
+      ]
+    }
+  ]
+}

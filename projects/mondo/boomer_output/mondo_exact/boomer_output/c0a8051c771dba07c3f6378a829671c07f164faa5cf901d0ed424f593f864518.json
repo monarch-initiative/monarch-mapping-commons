@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c0a8051c771dba07c3f6378a829671c07f164faa5cf901d0ed424f593f864518",
+      "nodes" : [
+        {
+          "id" : "MESH:C567426",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2677549",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012793",
+          "type" : "CLASS",
+          "lbl" : "hypouricemia, renal, 2"
+        },
+        {
+          "id" : "OMIM:612076",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012793",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:612076",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2677549",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012793",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567426",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012793",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012793",
+            "OMIM:612076",
+            "MESH:C567426",
+            "UMLS:C2677549"
+          ]
+        }
+      ]
+    }
+  ]
+}

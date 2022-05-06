@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ba4acfca5644c88c0f63358a78ca3306a509455996108c984bc8118e406ddd67",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4015729",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014555",
+          "type" : "CLASS",
+          "lbl" : "peeling skin syndrome type A"
+        },
+        {
+          "id" : "Orphanet:263548",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616265",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014555",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:263548",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4015729",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014555",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014555",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616265",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014555",
+            "Orphanet:263548",
+            "UMLS:C4015729",
+            "OMIM:616265"
+          ]
+        }
+      ]
+    }
+  ]
+}

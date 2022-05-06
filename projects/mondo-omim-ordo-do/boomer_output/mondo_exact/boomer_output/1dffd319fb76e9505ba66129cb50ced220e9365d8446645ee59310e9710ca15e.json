@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1dffd319fb76e9505ba66129cb50ced220e9365d8446645ee59310e9710ca15e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227613",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019285",
+          "type" : "CLASS",
+          "lbl" : "syndromic nail anomaly"
+        },
+        {
+          "id" : "Orphanet:79370",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019285",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79370",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227613",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019285",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019285",
+            "Orphanet:79370",
+            "UMLS:CN227613"
+          ]
+        }
+      ]
+    }
+  ]
+}

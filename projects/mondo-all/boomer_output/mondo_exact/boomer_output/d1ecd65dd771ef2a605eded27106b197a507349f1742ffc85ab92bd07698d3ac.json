@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d1ecd65dd771ef2a605eded27106b197a507349f1742ffc85ab92bd07698d3ac",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1515868",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5743",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003624",
+          "type" : "CLASS",
+          "lbl" : "acinic cell breast carcinoma"
+        },
+        {
+          "id" : "NCIT:C40367",
+          "type" : "CLASS",
+          "lbl" : "Breast Acinic Cell Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5743",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003624",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1515868",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003624",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003624",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40367",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003624",
+            "DOID:5743",
+            "UMLS:C1515868",
+            "NCIT:C40367"
+          ]
+        }
+      ]
+    }
+  ]
+}

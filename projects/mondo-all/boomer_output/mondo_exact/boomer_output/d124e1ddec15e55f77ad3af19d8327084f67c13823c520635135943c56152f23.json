@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d124e1ddec15e55f77ad3af19d8327084f67c13823c520635135943c56152f23",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202954",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017322",
+          "type" : "CLASS",
+          "lbl" : "disorders of vitamin D metabolism"
+        },
+        {
+          "id" : "Orphanet:289098",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202954",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017322",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017322",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:289098",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017322",
+            "Orphanet:289098",
+            "UMLS:CN202954"
+          ]
+        }
+      ]
+    }
+  ]
+}

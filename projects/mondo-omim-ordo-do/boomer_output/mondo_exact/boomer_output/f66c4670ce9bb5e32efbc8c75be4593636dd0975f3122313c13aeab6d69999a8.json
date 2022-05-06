@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f66c4670ce9bb5e32efbc8c75be4593636dd0975f3122313c13aeab6d69999a8",
+      "nodes" : [
+        {
+          "id" : "SCTID:717789008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN206679",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:300009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010225",
+          "type" : "CLASS",
+          "lbl" : "Dent disease type 1"
+        },
+        {
+          "id" : "Orphanet:93622",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206679",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010225",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010225",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300009",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:717789008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010225",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010225",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93622",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010225",
+            "OMIM:300009",
+            "UMLS:CN206679",
+            "SCTID:717789008",
+            "Orphanet:93622"
+          ]
+        }
+      ]
+    }
+  ]
+}

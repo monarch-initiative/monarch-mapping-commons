@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:84d3dbf3e7a2af62c1d90011b649c7ce3887b4b466eb67607fe766eba5b0ddf6",
+      "nodes" : [
+        {
+          "id" : "SCTID:10573002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0002631",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020710",
+          "type" : "CLASS",
+          "lbl" : "amnionitis"
+        },
+        {
+          "id" : "NCIT:C50459",
+          "type" : "CLASS",
+          "lbl" : "Amnionitis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020710",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C50459",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0002631",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020710",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:10573002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020710",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020710",
+            "NCIT:C50459",
+            "UMLS:C0002631",
+            "SCTID:10573002"
+          ]
+        }
+      ]
+    }
+  ]
+}

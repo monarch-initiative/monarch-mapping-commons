@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ce00f2f666b0b0f31272cd00dcdc247fe649c908169b65bcfc9fe17b7a9e7077",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1833245",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C563437",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010945",
+          "type" : "CLASS",
+          "lbl" : "retinitis pigmentosa 17"
+        },
+        {
+          "id" : "DOID:0110404",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:600852",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110404",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010945",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563437",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010945",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1833245",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010945",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010945",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600852",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1833245",
+            "OMIM:600852",
+            "MONDO:0010945",
+            "DOID:0110404",
+            "MESH:C563437"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:91d0223138988f4cdc3d93c9bcffd7040a5007ff376c52476dda5e4962f5032e",
+      "nodes" : [
+        {
+          "id" : "Orphanet:370348",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C9341",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0684337",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3489398",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018271",
+          "type" : "CLASS",
+          "lbl" : "peripheral primitive neuroectodermal tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0684337",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018271",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018271",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:370348",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018271",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C3489398",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018271",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9341",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0684337",
+            "MONDO:0018271",
+            "Orphanet:370348",
+            "NCIT:C9341"
+          ]
+        }
+      ]
+    }
+  ]
+}

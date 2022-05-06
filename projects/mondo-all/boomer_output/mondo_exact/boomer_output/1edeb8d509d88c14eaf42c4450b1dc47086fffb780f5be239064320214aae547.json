@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1edeb8d509d88c14eaf42c4450b1dc47086fffb780f5be239064320214aae547",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279984",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5695",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003587",
+          "type" : "CLASS",
+          "lbl" : "pediatric liposarcoma"
+        },
+        {
+          "id" : "NCIT:C8091",
+          "type" : "CLASS",
+          "lbl" : "Childhood Liposarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0279984",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003587",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5695",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003587",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003587",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8091",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003587",
+            "UMLS:C0279984",
+            "DOID:5695",
+            "NCIT:C8091"
+          ]
+        }
+      ]
+    }
+  ]
+}

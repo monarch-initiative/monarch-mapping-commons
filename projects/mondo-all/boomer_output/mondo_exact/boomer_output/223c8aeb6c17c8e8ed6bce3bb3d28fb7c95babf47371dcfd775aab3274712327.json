@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:223c8aeb6c17c8e8ed6bce3bb3d28fb7c95babf47371dcfd775aab3274712327",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1514430",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4011",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002834",
+          "type" : "CLASS",
+          "lbl" : "primary prostate urothelial carcinoma"
+        },
+        {
+          "id" : "NCIT:C39898",
+          "type" : "CLASS",
+          "lbl" : "Primary Prostate Urothelial Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4011",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002834",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002834",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39898",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1514430",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002834",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:4011",
+            "MONDO:0002834",
+            "NCIT:C39898",
+            "UMLS:C1514430"
+          ]
+        }
+      ]
+    }
+  ]
+}

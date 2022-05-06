@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c03984e68e08a7cd8e489583562a8f45d56cede3d45b5008729beda9129acb9f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0546123",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015739",
+          "type" : "CLASS",
+          "lbl" : "adult-onset nemaline myopathy"
+        },
+        {
+          "id" : "Orphanet:171442",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015739",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:171442",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0546123",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015739",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015739",
+            "Orphanet:171442",
+            "UMLS:C0546123"
+          ]
+        }
+      ]
+    }
+  ]
+}

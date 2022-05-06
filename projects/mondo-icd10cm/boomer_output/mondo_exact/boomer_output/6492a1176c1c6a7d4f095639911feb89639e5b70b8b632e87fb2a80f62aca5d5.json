@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6492a1176c1c6a7d4f095639911feb89639e5b70b8b632e87fb2a80f62aca5d5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553442",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110311",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013852",
+          "type" : "CLASS",
+          "lbl" : "hypertrophic cardiomyopathy 21"
+        },
+        {
+          "id" : "OMIM:614676",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3553442",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013852",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013852",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614676",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110311",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013852",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3553442",
+            "MONDO:0013852",
+            "DOID:0110311",
+            "OMIM:614676"
+          ]
+        }
+      ]
+    }
+  ]
+}

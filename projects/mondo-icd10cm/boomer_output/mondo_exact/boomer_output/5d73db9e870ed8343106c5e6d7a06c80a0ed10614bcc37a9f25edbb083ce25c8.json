@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5d73db9e870ed8343106c5e6d7a06c80a0ed10614bcc37a9f25edbb083ce25c8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553381",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013841",
+          "type" : "CLASS",
+          "lbl" : "stuttering, familial persistent, 3"
+        },
+        {
+          "id" : "OMIM:614655",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3553381",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013841",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013841",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614655",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013841",
+            "UMLS:C3553381",
+            "OMIM:614655"
+          ]
+        }
+      ]
+    }
+  ]
+}

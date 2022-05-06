@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:77ed9738e94106c82f252ccee7d1059660b15240150495e24b1a2ded5fa9d534",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3274140",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7402",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004211",
+          "type" : "CLASS",
+          "lbl" : "L-cell glucagon-like peptide-producing neuroendocrine tumor"
+        },
+        {
+          "id" : "NCIT:C27448",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7402",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004211",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3274140",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004211",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004211",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27448",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3274140",
+            "MONDO:0004211",
+            "DOID:7402",
+            "NCIT:C27448"
+          ]
+        }
+      ]
+    }
+  ]
+}

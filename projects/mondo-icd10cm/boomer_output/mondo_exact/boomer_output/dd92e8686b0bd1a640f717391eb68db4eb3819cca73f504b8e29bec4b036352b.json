@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dd92e8686b0bd1a640f717391eb68db4eb3819cca73f504b8e29bec4b036352b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334350",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003450",
+          "type" : "CLASS",
+          "lbl" : "eccrine papillary adenoma"
+        },
+        {
+          "id" : "SCTID:253021007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5446",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C4173",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:253021007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003450",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003450",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4173",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5446",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003450",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334350",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003450",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:253021007",
+            "UMLS:C0334350",
+            "DOID:5446",
+            "MONDO:0003450",
+            "NCIT:C4173"
+          ]
+        }
+      ]
+    }
+  ]
+}

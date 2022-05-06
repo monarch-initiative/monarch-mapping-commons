@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ba20a85f7c5e81d0dc55219fd615c278bd7f76b9ed73bda7e37c9a7d64567511",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336504",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6762",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003988",
+          "type" : "CLASS",
+          "lbl" : "sternum lymphoma"
+        },
+        {
+          "id" : "NCIT:C6716",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1336504",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003988",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6762",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003988",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003988",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6716",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003988",
+            "UMLS:C1336504",
+            "DOID:6762",
+            "NCIT:C6716"
+          ]
+        }
+      ]
+    }
+  ]
+}

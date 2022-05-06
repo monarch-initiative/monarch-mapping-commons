@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ca28f1cdb995b8b095fe5570d2b21f6bda60cfe1e610ce4cfc022cacd8b90485",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203094",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017379",
+          "type" : "CLASS",
+          "lbl" : "polyneuropathy-intellectual disability-acromicria-premature menopause syndrome"
+        },
+        {
+          "id" : "Orphanet:2928",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203094",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017379",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017379",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2928",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN203094",
+            "MONDO:0017379",
+            "Orphanet:2928"
+          ]
+        }
+      ]
+    }
+  ]
+}

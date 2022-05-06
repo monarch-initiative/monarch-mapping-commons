@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:de21b9fcbcb7c76b8df20a68c1ac7e6b587f9784d0608e7b7008d045cca0b309",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN036719",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019994",
+          "type" : "CLASS",
+          "lbl" : "maternal uniparental disomy of chromosome 13"
+        },
+        {
+          "id" : "Orphanet:97678",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN036719",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019994",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019994",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:97678",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN036719",
+            "MONDO:0019994",
+            "Orphanet:97678"
+          ]
+        }
+      ]
+    }
+  ]
+}

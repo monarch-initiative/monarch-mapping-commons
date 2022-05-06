@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:56b67170f8ca35a159caf4ccf5645529c417d0f8b96e69d4cb66bbda54a76ea5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202592",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017168",
+          "type" : "CLASS",
+          "lbl" : "benign epithelial tumor of salivary glands"
+        },
+        {
+          "id" : "Orphanet:276148",
+          "type" : "CLASS",
+          "lbl" : "Benign epithelial tumor of salivary glands"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017168",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:276148",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202592",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017168",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:276148",
+            "MONDO:0017168",
+            "UMLS:CN202592"
+          ]
+        }
+      ]
+    }
+  ]
+}

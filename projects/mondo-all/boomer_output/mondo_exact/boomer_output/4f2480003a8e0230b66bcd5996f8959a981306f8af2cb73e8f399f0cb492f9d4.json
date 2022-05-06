@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4f2480003a8e0230b66bcd5996f8959a981306f8af2cb73e8f399f0cb492f9d4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4014283",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0090136",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014341",
+          "type" : "CLASS",
+          "lbl" : "complex cortical dysplasia with other brain malformations 6"
+        },
+        {
+          "id" : "OMIM:615771",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014341",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615771",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4014283",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014341",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0090136",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014341",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014341",
+            "OMIM:615771",
+            "UMLS:C4014283",
+            "DOID:0090136"
+          ]
+        }
+      ]
+    }
+  ]
+}

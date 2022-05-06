@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:10c8f90e73ceabdfc9ea524bd7130029b6ee492874063ec21247c1142950b7b6",
+      "nodes" : [
+        {
+          "id" : "SCTID:92782006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0346267",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021284",
+          "type" : "CLASS",
+          "lbl" : "carcinoma in situ of ureter"
+        },
+        {
+          "id" : "NCIT:C4529",
+          "type" : "CLASS",
+          "lbl" : "Stage 0is Ureter Cancer AJCC v7"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:92782006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021284",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021284",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4529",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0346267",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021284",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:92782006",
+            "MONDO:0021284",
+            "NCIT:C4529",
+            "UMLS:C0346267"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:08635141c5e4ed6f4bbf31e591f89bb3a7fc2f34aa546f13b5fc6c04d73ead73",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332246",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5308",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003388",
+          "type" : "CLASS",
+          "lbl" : "ampulla of vater clear cell adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C27414",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5308",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003388",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003388",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27414",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332246",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003388",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5308",
+            "MONDO:0003388",
+            "UMLS:C1332246",
+            "NCIT:C27414"
+          ]
+        }
+      ]
+    }
+  ]
+}

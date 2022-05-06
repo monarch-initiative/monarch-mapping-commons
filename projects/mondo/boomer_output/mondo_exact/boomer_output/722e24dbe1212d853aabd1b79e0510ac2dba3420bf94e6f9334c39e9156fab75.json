@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:722e24dbe1212d853aabd1b79e0510ac2dba3420bf94e6f9334c39e9156fab75",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0854971",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050870",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000503",
+          "type" : "CLASS",
+          "lbl" : "lung adenocarcinoma in situ"
+        },
+        {
+          "id" : "NCIT:C136486",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0050870",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000503",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0854971",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000503",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000503",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C136486",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0050870",
+            "MONDO:0000503",
+            "UMLS:C0854971",
+            "NCIT:C136486"
+          ]
+        }
+      ]
+    }
+  ]
+}

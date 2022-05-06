@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:179b8aa439e4106fd9a37091f5eb9d584ca2f39eec215ccfe83a973ff8d8edd8",
+      "nodes" : [
+        {
+          "id" : "SCTID:18546004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017735",
+          "type" : "CLASS",
+          "lbl" : "congenital aortic valve stenosis"
+        },
+        {
+          "id" : "Orphanet:3093",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017735",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3093",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:18546004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017735",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:3093",
+            "MONDO:0017735",
+            "SCTID:18546004"
+          ]
+        }
+      ]
+    }
+  ]
+}

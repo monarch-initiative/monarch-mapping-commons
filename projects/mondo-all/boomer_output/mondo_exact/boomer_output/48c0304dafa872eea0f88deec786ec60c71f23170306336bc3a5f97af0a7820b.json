@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:48c0304dafa872eea0f88deec786ec60c71f23170306336bc3a5f97af0a7820b",
+      "nodes" : [
+        {
+          "id" : "MESH:C000598640",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1867235",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008382",
+          "type" : "CLASS",
+          "lbl" : "retinoschisis, autosomal dominant"
+        },
+        {
+          "id" : "OMIM:180270",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1867235",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008382",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008382",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:180270",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C000598640",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008382",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1867235",
+            "MONDO:0008382",
+            "OMIM:180270",
+            "MESH:C000598640"
+          ]
+        }
+      ]
+    }
+  ]
+}

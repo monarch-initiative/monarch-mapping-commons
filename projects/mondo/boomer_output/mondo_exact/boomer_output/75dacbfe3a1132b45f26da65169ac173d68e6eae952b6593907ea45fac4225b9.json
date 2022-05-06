@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:75dacbfe3a1132b45f26da65169ac173d68e6eae952b6593907ea45fac4225b9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518366",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7961",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004413",
+          "type" : "CLASS",
+          "lbl" : "cervical non-keratinizing squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C40188",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004413",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40188",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518366",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004413",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7961",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004413",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C40188",
+            "MONDO:0004413",
+            "UMLS:C1518366",
+            "DOID:7961"
+          ]
+        }
+      ]
+    }
+  ]
+}

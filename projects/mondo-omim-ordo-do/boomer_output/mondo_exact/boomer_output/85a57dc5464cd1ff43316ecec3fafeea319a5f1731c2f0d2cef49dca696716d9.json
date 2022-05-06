@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:85a57dc5464cd1ff43316ecec3fafeea319a5f1731c2f0d2cef49dca696716d9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332171",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5626",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003551",
+          "type" : "CLASS",
+          "lbl" : "thymic adenosquamous carcinoma"
+        },
+        {
+          "id" : "NCIT:C6458",
+          "type" : "CLASS",
+          "lbl" : "Thymic Adenosquamous Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5626",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003551",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332171",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003551",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003551",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6458",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003551",
+            "DOID:5626",
+            "UMLS:C1332171",
+            "NCIT:C6458"
+          ]
+        }
+      ]
+    }
+  ]
+}

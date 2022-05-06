@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b14f9b4bcd998236bff50151e263a1a55b865ee494243e2303714104626a1fef",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332850",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6547",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003917",
+          "type" : "CLASS",
+          "lbl" : "heart lymphoma"
+        },
+        {
+          "id" : "NCIT:C5368",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332850",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003917",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003917",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5368",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6547",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003917",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332850",
+            "MONDO:0003917",
+            "NCIT:C5368",
+            "DOID:6547"
+          ]
+        }
+      ]
+    }
+  ]
+}

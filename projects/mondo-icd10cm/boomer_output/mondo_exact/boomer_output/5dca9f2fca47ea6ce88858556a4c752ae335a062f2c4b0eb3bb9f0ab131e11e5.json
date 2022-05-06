@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5dca9f2fca47ea6ce88858556a4c752ae335a062f2c4b0eb3bb9f0ab131e11e5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0015696",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D005235",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021104",
+          "type" : "CLASS",
+          "lbl" : "alcoholic fatty liver disease"
+        },
+        {
+          "id" : "SCTID:50325005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2718067",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:50325005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021104",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D005235",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021104",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021104",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C2718067",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0015696",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021104",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:50325005",
+            "MONDO:0021104",
+            "MESH:D005235",
+            "UMLS:C0015696"
+          ]
+        }
+      ]
+    }
+  ]
+}

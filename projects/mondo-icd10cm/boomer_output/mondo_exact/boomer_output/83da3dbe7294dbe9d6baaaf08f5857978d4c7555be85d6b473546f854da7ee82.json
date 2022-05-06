@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:83da3dbe7294dbe9d6baaaf08f5857978d4c7555be85d6b473546f854da7ee82",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336876",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:14489",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001977",
+          "type" : "CLASS",
+          "lbl" : "ureteral lymphoma"
+        },
+        {
+          "id" : "NCIT:C6175",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:14489",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001977",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336876",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001977",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001977",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6175",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:14489",
+            "MONDO:0001977",
+            "UMLS:C1336876",
+            "NCIT:C6175"
+          ]
+        }
+      ]
+    }
+  ]
+}

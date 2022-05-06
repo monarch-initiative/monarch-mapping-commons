@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e0270754d23b610d0f2ac241349b81078c135692abf402d4af6ed16e6d8f00ec",
+      "nodes" : [
+        {
+          "id" : "SCTID:111405003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0041959",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021960",
+          "type" : "CLASS",
+          "lbl" : "ureteritis"
+        },
+        {
+          "id" : "NCIT:C78666",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0041959",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021960",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021960",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C78666",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:111405003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021960",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0041959",
+            "MONDO:0021960",
+            "NCIT:C78666",
+            "SCTID:111405003"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:12deff8254d74d835215f01ccc3575487ff6c550ca01b18de66851521cef1a62",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226194",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018449",
+          "type" : "CLASS",
+          "lbl" : "acquired cystic disease-associated renal cell carcinoma"
+        },
+        {
+          "id" : "Orphanet:404514",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018449",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:404514",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226194",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018449",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:404514",
+            "MONDO:0018449",
+            "UMLS:CN226194"
+          ]
+        }
+      ]
+    }
+  ]
+}

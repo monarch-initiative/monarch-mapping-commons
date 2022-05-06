@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:432ce9b0596510ecc36af83febf01dd15126bcc0d36a4c46af7b8acf378e2343",
+      "nodes" : [
+        {
+          "id" : "SCTID:423425006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN207035",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020175",
+          "type" : "CLASS",
+          "lbl" : "malignant tumor of palpebral epidermis"
+        },
+        {
+          "id" : "Orphanet:98584",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN207035",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020175",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020175",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98584",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:423425006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020175",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN207035",
+            "MONDO:0020175",
+            "Orphanet:98584",
+            "SCTID:423425006"
+          ]
+        }
+      ]
+    }
+  ]
+}

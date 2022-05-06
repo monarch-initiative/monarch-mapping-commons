@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6a8992f137f238e8dee058ca8ed9a3b734a1e17ebddb6d0ee749a4ffedbbb021",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1862892",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015054",
+          "type" : "CLASS",
+          "lbl" : "hereditary angioedema type 2"
+        },
+        {
+          "id" : "Orphanet:100051",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015054",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100051",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1862892",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015054",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015054",
+            "Orphanet:100051",
+            "UMLS:C1862892"
+          ]
+        }
+      ]
+    }
+  ]
+}

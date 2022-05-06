@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a32a6a8694b4541c840fb4145158c824c54cd831f8d4144f76d65d3bc1ca1ccc",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332995",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6812",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004000",
+          "type" : "CLASS",
+          "lbl" : "childhood pilocytic astrocytoma"
+        },
+        {
+          "id" : "NCIT:C4048",
+          "type" : "CLASS",
+          "lbl" : "Childhood Pilocytic Astrocytoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4048",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332995",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6812",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4048",
+            "MONDO:0004000",
+            "UMLS:C1332995",
+            "DOID:6812"
+          ]
+        }
+      ]
+    }
+  ]
+}

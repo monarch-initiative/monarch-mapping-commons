@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f816ae5f8cbcf7720d594321ac2d458dd761e8dadc788526468e84625a91baf1",
+      "nodes" : [
+        {
+          "id" : "MESH:D016720",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0851886",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005923",
+          "type" : "CLASS",
+          "lbl" : "Pneumocystis infectious disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0851886",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005923",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D016720",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005923",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005923",
+            "UMLS:C0851886",
+            "MESH:D016720"
+          ]
+        }
+      ]
+    }
+  ]
+}

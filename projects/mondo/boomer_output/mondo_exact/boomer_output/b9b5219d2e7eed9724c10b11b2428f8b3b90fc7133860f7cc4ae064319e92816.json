@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b9b5219d2e7eed9724c10b11b2428f8b3b90fc7133860f7cc4ae064319e92816",
+      "nodes" : [
+        {
+          "id" : "SCTID:197458008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0267937",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018989",
+          "type" : "CLASS",
+          "lbl" : "recurrent acute pancreatitis"
+        },
+        {
+          "id" : "Orphanet:64740",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018989",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:64740",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0267937",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:197458008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018989",
+            "Orphanet:64740",
+            "SCTID:197458008",
+            "UMLS:C0267937"
+          ]
+        }
+      ]
+    }
+  ]
+}

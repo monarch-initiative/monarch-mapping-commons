@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bc0373f05e197c814c1a6e3855d600455d7c23ebdf23c842ee03cc9e00fc50f0",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206528",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019655",
+          "type" : "CLASS",
+          "lbl" : "sporadic idiopathic steroid-resistant nephrotic syndrome with focal segmental hyalinosis"
+        },
+        {
+          "id" : "Orphanet:93218",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206528",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019655",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019655",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93218",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN206528",
+            "MONDO:0019655",
+            "Orphanet:93218"
+          ]
+        }
+      ]
+    }
+  ]
+}

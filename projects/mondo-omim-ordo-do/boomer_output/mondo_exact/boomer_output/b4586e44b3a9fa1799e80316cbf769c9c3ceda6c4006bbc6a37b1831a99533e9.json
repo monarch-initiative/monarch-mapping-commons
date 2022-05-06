@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b4586e44b3a9fa1799e80316cbf769c9c3ceda6c4006bbc6a37b1831a99533e9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336884",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8108",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006550",
+          "type" : "CLASS",
+          "lbl" : "fibroepithelial polyp of urethra"
+        },
+        {
+          "id" : "NCIT:C6170",
+          "type" : "CLASS",
+          "lbl" : "Urethra Fibroepithelial Polyp"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1336884",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006550",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006550",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6170",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8108",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006550",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1336884",
+            "MONDO:0006550",
+            "NCIT:C6170",
+            "DOID:8108"
+          ]
+        }
+      ]
+    }
+  ]
+}

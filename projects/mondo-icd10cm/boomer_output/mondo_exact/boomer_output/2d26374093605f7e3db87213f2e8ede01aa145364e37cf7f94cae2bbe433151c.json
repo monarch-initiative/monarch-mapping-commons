@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2d26374093605f7e3db87213f2e8ede01aa145364e37cf7f94cae2bbe433151c",
+      "nodes" : [
+        {
+          "id" : "NCIT:C4747",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN201977",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:251934",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016729",
+          "type" : "CLASS",
+          "lbl" : "mixed neuronal-glial tumor"
+        },
+        {
+          "id" : "UMLS:C0474844",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016729",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4747",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201977",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016729",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016729",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:251934",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016729",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0474844",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016729",
+            "NCIT:C4747",
+            "UMLS:CN201977",
+            "Orphanet:251934"
+          ]
+        }
+      ]
+    }
+  ]
+}

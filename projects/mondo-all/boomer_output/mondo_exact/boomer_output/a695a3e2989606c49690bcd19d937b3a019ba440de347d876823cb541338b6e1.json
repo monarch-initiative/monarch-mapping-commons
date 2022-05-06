@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a695a3e2989606c49690bcd19d937b3a019ba440de347d876823cb541338b6e1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4014578",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110063",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014385",
+          "type" : "CLASS",
+          "lbl" : "amelogenesis imperfecta hypomaturation type 2A5"
+        },
+        {
+          "id" : "OMIM:615887",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014385",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615887",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014385",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4014578",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014385",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014385",
+            "OMIM:615887",
+            "DOID:0110063",
+            "UMLS:C4014578"
+          ]
+        }
+      ]
+    }
+  ]
+}

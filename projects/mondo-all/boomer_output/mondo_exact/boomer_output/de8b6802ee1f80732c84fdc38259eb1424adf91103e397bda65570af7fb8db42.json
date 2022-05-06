@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:de8b6802ee1f80732c84fdc38259eb1424adf91103e397bda65570af7fb8db42",
+      "nodes" : [
+        {
+          "id" : "NCIT:C4587",
+          "type" : "CLASS",
+          "lbl" : "Stage 0 Oral Cavity Cancer AJCC v6 and v7"
+        },
+        {
+          "id" : "SCTID:92660005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050610",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0347073",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000371",
+          "type" : "CLASS",
+          "lbl" : "oral cavity carcinoma in situ"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:92660005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000371",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0347073",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000371",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000371",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4587",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050610",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000371",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000371",
+            "DOID:0050610",
+            "UMLS:C0347073",
+            "NCIT:C4587",
+            "SCTID:92660005"
+          ]
+        }
+      ]
+    }
+  ]
+}

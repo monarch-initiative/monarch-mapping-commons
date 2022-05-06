@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:375d63df3c78dd2e2cd24fc01ef31123e93242fe332166002b8b5e927696d45f",
+      "nodes" : [
+        {
+          "id" : "DOID:3213",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0011303",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C34527",
+          "type" : "CLASS",
+          "lbl" : "Demyelinating Disorder"
+        },
+        {
+          "id" : "MESH:D003711",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002562",
+          "type" : "CLASS",
+          "lbl" : "demyelinating disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0011303",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002562",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002562",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C34527",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D003711",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002562",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3213",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002562",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0011303",
+            "MONDO:0002562",
+            "DOID:3213",
+            "MESH:D003711",
+            "NCIT:C34527"
+          ]
+        }
+      ]
+    }
+  ]
+}

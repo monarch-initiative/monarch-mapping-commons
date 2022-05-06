@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4e07d84db33abce2dc83e24de58cf4e627d5553607fd6ab63d9d267308e8793b",
+      "nodes" : [
+        {
+          "id" : "MESH:C565930",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859615",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008841",
+          "type" : "CLASS",
+          "lbl" : "ataxia-telangiectasia with generalized skin pigmentation and early death"
+        },
+        {
+          "id" : "OMIM:208910",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1859615",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008841",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565930",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008841",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008841",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:208910",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1859615",
+            "MONDO:0008841",
+            "MESH:C565930",
+            "OMIM:208910"
+          ]
+        }
+      ]
+    }
+  ]
+}

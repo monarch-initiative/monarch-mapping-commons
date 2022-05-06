@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ff6bc4636ca008631934a429b80dee16ed82091bc88d5cb16768718e5266306b",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN229268",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020093",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant isolated diffuse palmoplantar keratoderma"
+        },
+        {
+          "id" : "Orphanet:98349",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020093",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98349",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN229268",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020093",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:98349",
+            "MONDO:0020093",
+            "UMLS:CN229268"
+          ]
+        }
+      ]
+    }
+  ]
+}

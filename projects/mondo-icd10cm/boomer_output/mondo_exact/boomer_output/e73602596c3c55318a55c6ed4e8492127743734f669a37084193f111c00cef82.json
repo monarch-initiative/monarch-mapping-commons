@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e73602596c3c55318a55c6ed4e8492127743734f669a37084193f111c00cef82",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336044",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:14150",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001892",
+          "type" : "CLASS",
+          "lbl" : "spinal cord lymphoma"
+        },
+        {
+          "id" : "NCIT:C5157",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1336044",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001892",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001892",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5157",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:14150",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001892",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1336044",
+            "MONDO:0001892",
+            "NCIT:C5157",
+            "DOID:14150"
+          ]
+        }
+      ]
+    }
+  ]
+}

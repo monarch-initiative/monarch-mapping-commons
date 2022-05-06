@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cd0ead6375ab85d399994036152733ce3196241167d838f7a5575e5ecb0d4857",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518748",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6512",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003906",
+          "type" : "CLASS",
+          "lbl" : "ovarian yolk sac tumor, hepatoid pattern"
+        },
+        {
+          "id" : "NCIT:C39989",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6512",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003906",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003906",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518748",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003906",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003906",
+            "DOID:6512",
+            "NCIT:C39989",
+            "UMLS:C1518748"
+          ]
+        }
+      ]
+    }
+  ]
+}

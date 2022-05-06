@@ -1,0 +1,130 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c4198d264ae04d828a86703544b9f6c11148f8cbec44e93cd9b0547c35cd253f",
+      "nodes" : [
+        {
+          "id" : "MONDO:0000745",
+          "type" : "CLASS",
+          "lbl" : "cardiac arrest"
+        },
+        {
+          "id" : "ICD10CM:I46",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060319",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D006323",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0444720",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:410429000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0018790",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0060319",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000745",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:410429000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000745",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000745",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0018790",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D006323",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000745",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:I46",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000745",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0444720",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000745",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0444720",
+            "SCTID:410429000",
+            "ICD10CM:I46",
+            "DOID:0060319",
+            "MESH:D006323",
+            "MONDO:0000745"
+          ]
+        }
+      ]
+    }
+  ]
+}

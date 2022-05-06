@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:21d666a33258b56db1f93b5c0a70c02c5eae9c20a74edb2a2819ae9b9c19d8dc",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336046",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6871",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004024",
+          "type" : "CLASS",
+          "lbl" : "spinal cord neuroblastoma"
+        },
+        {
+          "id" : "NCIT:C5155",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6871",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004024",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004024",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5155",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336046",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004024",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6871",
+            "MONDO:0004024",
+            "NCIT:C5155",
+            "UMLS:C1336046"
+          ]
+        }
+      ]
+    }
+  ]
+}

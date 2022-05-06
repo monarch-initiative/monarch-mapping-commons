@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:765eb781859afc56255e712173558cba6fa50f9a5c23cb78cbfb46b46e450835",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1857618",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009003",
+          "type" : "CLASS",
+          "lbl" : "achromatopsia 2"
+        },
+        {
+          "id" : "OMIM:216900",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:216900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1857618",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009003",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009003",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:216900",
+            "MONDO:0009003",
+            "UMLS:C1857618",
+            "DOID:0110007"
+          ]
+        }
+      ]
+    }
+  ]
+}

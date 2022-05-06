@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e568fab93889b60a7095ee633022b93b63986ffda144aede267ff4b65cace1c5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1835039",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111373",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007771",
+          "type" : "CLASS",
+          "lbl" : "hyperpigmentation with or without hypopigmentation, familial progressive"
+        },
+        {
+          "id" : "OMIM:145250",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0111373",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007771",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007771",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:145250",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1835039",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007771",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007771",
+            "DOID:0111373",
+            "OMIM:145250",
+            "UMLS:C1835039"
+          ]
+        }
+      ]
+    }
+  ]
+}

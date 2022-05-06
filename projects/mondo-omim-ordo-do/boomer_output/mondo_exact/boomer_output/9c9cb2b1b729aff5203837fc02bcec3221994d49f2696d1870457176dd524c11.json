@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9c9cb2b1b729aff5203837fc02bcec3221994d49f2696d1870457176dd524c11",
+      "nodes" : [
+        {
+          "id" : "DOID:11685",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001337",
+          "type" : "CLASS",
+          "lbl" : "inflamed seborrheic keratosis"
+        },
+        {
+          "id" : "ICD10CM:L82.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0376117",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:442348004",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0376117",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:442348004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:11685",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:L82.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:L82.0",
+            "SCTID:442348004",
+            "MONDO:0001337",
+            "DOID:11685",
+            "UMLS:C0376117"
+          ]
+        }
+      ]
+    }
+  ]
+}

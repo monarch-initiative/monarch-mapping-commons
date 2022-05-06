@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:aad6c8d6d19e3ab7a0958c085f1359be240704869827b4cea86135b48be23bcd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1257877",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050936",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000550",
+          "type" : "CLASS",
+          "lbl" : "extra-adrenal sympathetic paraganglioma"
+        },
+        {
+          "id" : "NCIT:C48576",
+          "type" : "CLASS",
+          "lbl" : "Extra-Adrenal Sympathetic Paraganglioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000550",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C48576",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050936",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000550",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1257877",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000550",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C48576",
+            "MONDO:0000550",
+            "DOID:0050936",
+            "UMLS:C1257877"
+          ]
+        }
+      ]
+    }
+  ]
+}

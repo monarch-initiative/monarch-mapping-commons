@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e0c92b05c6e4398eb1ede2cd222d9df41cdfea2a72c258e06f061596192f2129",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332893",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:502",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003244",
+          "type" : "CLASS",
+          "lbl" : "central nervous system mesenchymal non-meningothelial tumor"
+        },
+        {
+          "id" : "NCIT:C5449",
+          "type" : "CLASS",
+          "lbl" : "Central Nervous System Mesenchymal, Non-Meningothelial Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332893",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003244",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003244",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5449",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:502",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003244",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332893",
+            "MONDO:0003244",
+            "NCIT:C5449",
+            "DOID:502"
+          ]
+        }
+      ]
+    }
+  ]
+}

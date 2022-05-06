@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ed14aca0cf5ea83f27d137a0888c257ff1cd997b79d00ef7763839503cf65ab6",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN032031",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008164",
+          "type" : "CLASS",
+          "lbl" : "otosclerosis 1"
+        },
+        {
+          "id" : "OMIM:166800",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN032031",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008164",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008164",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:166800",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN032031",
+            "MONDO:0008164",
+            "OMIM:166800"
+          ]
+        }
+      ]
+    }
+  ]
+}

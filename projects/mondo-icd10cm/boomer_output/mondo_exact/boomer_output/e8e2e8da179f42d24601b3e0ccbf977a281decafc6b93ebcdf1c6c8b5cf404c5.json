@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e8e2e8da179f42d24601b3e0ccbf977a281decafc6b93ebcdf1c6c8b5cf404c5",
+      "nodes" : [
+        {
+          "id" : "MESH:C563875",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1837529",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012100",
+          "type" : "CLASS",
+          "lbl" : "major depressive disorder 2"
+        },
+        {
+          "id" : "OMIM:608691",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1837529",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012100",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608691",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563875",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1837529",
+            "MONDO:0012100",
+            "OMIM:608691",
+            "MESH:C563875"
+          ]
+        }
+      ]
+    }
+  ]
+}

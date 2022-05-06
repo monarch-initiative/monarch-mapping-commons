@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:86b6265a5440d6a8d4a5be1a43b1513d093cc616f567f730e853bd17b0278516",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3151752",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010435",
+          "type" : "CLASS",
+          "lbl" : "nystagmus 6, congenital, X-linked"
+        },
+        {
+          "id" : "OMIM:300814",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010435",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300814",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3151752",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010435",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010435",
+            "OMIM:300814",
+            "UMLS:C3151752"
+          ]
+        }
+      ]
+    }
+  ]
+}

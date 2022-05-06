@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:795bd8b99f958771f8e2ad1ab435b9d82dab21bbd0905a339ae8db9e9cfa0b27",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203759",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017800",
+          "type" : "CLASS",
+          "lbl" : "pseudo-Meigs syndrome"
+        },
+        {
+          "id" : "Orphanet:314459",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017800",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:314459",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203759",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017800",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017800",
+            "Orphanet:314459",
+            "UMLS:CN203759"
+          ]
+        }
+      ]
+    }
+  ]
+}

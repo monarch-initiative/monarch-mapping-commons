@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b0792fc95ed7437cd8acd3d2e695f39ff7e2c3f4c0eb9326eeb6b4f359e6ed40",
+      "nodes" : [
+        {
+          "id" : "SCTID:254887002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3702",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005153",
+          "type" : "CLASS",
+          "lbl" : "cervical adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C4029",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3702",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005153",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005153",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4029",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:254887002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005153",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3702",
+            "MONDO:0005153",
+            "NCIT:C4029",
+            "SCTID:254887002"
+          ]
+        }
+      ]
+    }
+  ]
+}

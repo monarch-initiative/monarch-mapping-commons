@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:44680c5d6431a5e7ccac95dd287641abbe0c2ecda8244cd1a56fb9e5eadeded0",
+      "nodes" : [
+        {
+          "id" : "OMIM:607641",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111202",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C564362",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011879",
+          "type" : "CLASS",
+          "lbl" : "neuronopathy, distal hereditary motor, type 7B"
+        },
+        {
+          "id" : "UMLS:C1843315",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1843315",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011879",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011879",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607641",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111202",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011879",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564362",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011879",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1843315",
+            "MONDO:0011879",
+            "MESH:C564362",
+            "DOID:0111202",
+            "OMIM:607641"
+          ]
+        }
+      ]
+    }
+  ]
+}

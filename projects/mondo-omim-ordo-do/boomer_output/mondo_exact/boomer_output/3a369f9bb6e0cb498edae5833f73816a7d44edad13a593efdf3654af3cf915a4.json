@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3a369f9bb6e0cb498edae5833f73816a7d44edad13a593efdf3654af3cf915a4",
+      "nodes" : [
+        {
+          "id" : "MESH:C567606",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2749509",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009713",
+          "type" : "CLASS",
+          "lbl" : "myopia 18, autosomal recessive"
+        },
+        {
+          "id" : "OMIM:255500",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C567606",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009713",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009713",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:255500",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2749509",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009713",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C567606",
+            "MONDO:0009713",
+            "OMIM:255500",
+            "UMLS:C2749509"
+          ]
+        }
+      ]
+    }
+  ]
+}

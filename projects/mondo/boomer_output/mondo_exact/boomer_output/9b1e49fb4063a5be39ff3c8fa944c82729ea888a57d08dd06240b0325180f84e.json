@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9b1e49fb4063a5be39ff3c8fa944c82729ea888a57d08dd06240b0325180f84e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204512",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018131",
+          "type" : "CLASS",
+          "lbl" : "neurodevelopmental disorder-craniofacial dysmorphism-cardiac defect-hip dysplasia syndrome due to 9q21 microdeletion"
+        },
+        {
+          "id" : "Orphanet:352665",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN204512",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018131",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018131",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:352665",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018131",
+            "UMLS:CN204512",
+            "Orphanet:352665"
+          ]
+        }
+      ]
+    }
+  ]
+}

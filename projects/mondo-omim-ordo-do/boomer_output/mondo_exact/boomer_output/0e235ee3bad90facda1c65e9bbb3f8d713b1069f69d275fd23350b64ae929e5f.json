@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0e235ee3bad90facda1c65e9bbb3f8d713b1069f69d275fd23350b64ae929e5f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333098",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5260",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003352",
+          "type" : "CLASS",
+          "lbl" : "colon sarcoma"
+        },
+        {
+          "id" : "NCIT:C5495",
+          "type" : "CLASS",
+          "lbl" : "Colon Sarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003352",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5495",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333098",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003352",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5260",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003352",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003352",
+            "NCIT:C5495",
+            "UMLS:C1333098",
+            "DOID:5260"
+          ]
+        }
+      ]
+    }
+  ]
+}

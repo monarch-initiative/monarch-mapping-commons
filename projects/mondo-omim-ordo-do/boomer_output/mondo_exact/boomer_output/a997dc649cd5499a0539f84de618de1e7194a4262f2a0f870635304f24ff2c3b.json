@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a997dc649cd5499a0539f84de618de1e7194a4262f2a0f870635304f24ff2c3b",
+      "nodes" : [
+        {
+          "id" : "MESH:C535534",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1836074",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012288",
+          "type" : "CLASS",
+          "lbl" : "iridogoniodysgenesis and skeletal anomalies"
+        },
+        {
+          "id" : "OMIM:609515",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1836074",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012288",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012288",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609515",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535534",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012288",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012288",
+            "OMIM:609515",
+            "UMLS:C1836074",
+            "MESH:C535534"
+          ]
+        }
+      ]
+    }
+  ]
+}

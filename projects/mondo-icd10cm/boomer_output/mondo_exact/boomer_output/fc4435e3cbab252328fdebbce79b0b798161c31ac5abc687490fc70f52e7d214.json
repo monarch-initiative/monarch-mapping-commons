@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fc4435e3cbab252328fdebbce79b0b798161c31ac5abc687490fc70f52e7d214",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310800",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110821",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014827",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive spastic paraplegia type 76"
+        },
+        {
+          "id" : "Orphanet:488594",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616907",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110821",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014827",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310800",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014827",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014827",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616907",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014827",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:488594",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:616907",
+            "Orphanet:488594",
+            "UMLS:C4310800",
+            "MONDO:0014827",
+            "DOID:0110821"
+          ]
+        }
+      ]
+    }
+  ]
+}

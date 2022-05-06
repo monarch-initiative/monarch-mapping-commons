@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8916185726ab052b08c16825fc58d321854da936360f2de69d60511f6a11e2eb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1512974",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0037746",
+          "type" : "CLASS",
+          "lbl" : "malignant vaginal mixed epithelial and mesenchymal neoplasm"
+        },
+        {
+          "id" : "NCIT:C40276",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0037746",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40276",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1512974",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0037746",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0037746",
+            "NCIT:C40276",
+            "UMLS:C1512974"
+          ]
+        }
+      ]
+    }
+  ]
+}

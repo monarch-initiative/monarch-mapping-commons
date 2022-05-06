@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:693236463a9b9e3a06870fcd67986cb74c4df0beee680ff5c5b7ff6f0b8fd90a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2675861",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:612526",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012923",
+          "type" : "CLASS",
+          "lbl" : "congenital generalized lipodystrophy type 3"
+        },
+        {
+          "id" : "DOID:0111137",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C567282",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012923",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:612526",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111137",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012923",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2675861",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012923",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567282",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012923",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012923",
+            "UMLS:C2675861",
+            "MESH:C567282",
+            "OMIM:612526",
+            "DOID:0111137"
+          ]
+        }
+      ]
+    }
+  ]
+}

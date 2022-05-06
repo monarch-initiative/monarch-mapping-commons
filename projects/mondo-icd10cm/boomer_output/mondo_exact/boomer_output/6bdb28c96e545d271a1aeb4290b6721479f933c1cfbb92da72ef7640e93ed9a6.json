@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6bdb28c96e545d271a1aeb4290b6721479f933c1cfbb92da72ef7640e93ed9a6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332167",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4877",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003185",
+          "type" : "CLASS",
+          "lbl" : "adenoid cystic breast carcinoma"
+        },
+        {
+          "id" : "NCIT:C5130",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332167",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003185",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003185",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5130",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4877",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003185",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332167",
+            "MONDO:0003185",
+            "NCIT:C5130",
+            "DOID:4877"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:67beccc96be9d910d3f18b3e28dc3ad7512eb70736d21f3f05336fc54370bf66",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332990",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7037",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004082",
+          "type" : "CLASS",
+          "lbl" : "childhood immature teratoma of ovary"
+        },
+        {
+          "id" : "NCIT:C6547",
+          "type" : "CLASS",
+          "lbl" : "Childhood Ovarian Immature Teratoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004082",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6547",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7037",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004082",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332990",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004082",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6547",
+            "MONDO:0004082",
+            "DOID:7037",
+            "UMLS:C1332990"
+          ]
+        }
+      ]
+    }
+  ]
+}

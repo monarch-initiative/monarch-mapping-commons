@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c54bef462397d67f457f51ea7adcd2a35ce0d722f2ad1f595939d207b6b8cf27",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3554691",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014085",
+          "type" : "CLASS",
+          "lbl" : "hydrocephalus, nonsyndromic, autosomal recessive 2"
+        },
+        {
+          "id" : "OMIM:615219",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3554691",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014085",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014085",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615219",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014085",
+            "UMLS:C3554691",
+            "OMIM:615219"
+          ]
+        }
+      ]
+    }
+  ]
+}

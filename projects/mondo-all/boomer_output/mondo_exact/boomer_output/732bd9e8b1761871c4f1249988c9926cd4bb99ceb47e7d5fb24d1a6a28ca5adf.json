@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:732bd9e8b1761871c4f1249988c9926cd4bb99ceb47e7d5fb24d1a6a28ca5adf",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:F95.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10600",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001074",
+          "type" : "CLASS",
+          "lbl" : "chronic tic disorder"
+        },
+        {
+          "id" : "NCIT:C116768",
+          "type" : "CLASS",
+          "lbl" : "Chronic Tic Disorder"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0001074",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C116768",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10600",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001074",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:F95.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001074",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C116768",
+            "MONDO:0001074",
+            "DOID:10600",
+            "ICD10CM:F95.1"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:99b120f1b41f1964366ee3d63e74461c452205c50107cef14fe6c6307ca1a4be",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1266005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5522",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003486",
+          "type" : "CLASS",
+          "lbl" : "basaloid squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C54244",
+          "type" : "CLASS",
+          "lbl" : "Basaloid Squamous Cell Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5522",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003486",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003486",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C54244",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1266005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003486",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003486",
+            "NCIT:C54244",
+            "DOID:5522",
+            "UMLS:C1266005"
+          ]
+        }
+      ]
+    }
+  ]
+}

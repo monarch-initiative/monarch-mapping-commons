@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:16b23a4723197adbd77f8d18a2eae27654218c74a3be22d3adccedfb80304721",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0474809",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002480",
+          "type" : "CLASS",
+          "lbl" : "endometrioid tumor"
+        },
+        {
+          "id" : "NCIT:C7113",
+          "type" : "CLASS",
+          "lbl" : "Endometrioid Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002480",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0474809",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002480",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002480",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7113",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002480",
+            "DOID:3001",
+            "UMLS:C0474809",
+            "NCIT:C7113"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e33252a91677d74a0bb56c07d78487c88043b5373e996c1592c51e6692be72ed",
+      "nodes" : [
+        {
+          "id" : "MESH:D001206",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:76169001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:E54",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006661",
+          "type" : "CLASS",
+          "lbl" : "ascorbic acid deficiency"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:76169001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006661",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:E54",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006661",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D001206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006661",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006661",
+            "ICD10CM:E54",
+            "SCTID:76169001",
+            "MESH:D001206"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fbeafeac46adda5cbc6d4c8cef80e126db02e74eccb5a04a5f32a68af8c86bf5",
+      "nodes" : [
+        {
+          "id" : "MESH:C566457",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1864791",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012329",
+          "type" : "CLASS",
+          "lbl" : "short stature and Facioauriculothoracic malformations"
+        },
+        {
+          "id" : "OMIM:609654",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1864791",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012329",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012329",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609654",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566457",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012329",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1864791",
+            "MONDO:0012329",
+            "OMIM:609654",
+            "MESH:C566457"
+          ]
+        }
+      ]
+    }
+  ]
+}

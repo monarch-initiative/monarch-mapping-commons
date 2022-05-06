@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8dcf5430c024a37db50f209309ef52c0584fce07bc4bc316f8196a95ecd9e189",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332946",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6789",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003995",
+          "type" : "CLASS",
+          "lbl" : "vulvar childhood botryoid-type embryonal rhabdomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C36098",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332946",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003995",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6789",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003995",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003995",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C36098",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003995",
+            "UMLS:C1332946",
+            "DOID:6789",
+            "NCIT:C36098"
+          ]
+        }
+      ]
+    }
+  ]
+}

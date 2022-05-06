@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b6010fe8f962d53c99c0567c798616da90cc09cb308bea546a3f9d86576ed903",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226617",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015174",
+          "type" : "CLASS",
+          "lbl" : "autoimmune enteropathy type 3"
+        },
+        {
+          "id" : "Orphanet:103917",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN226617",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015174",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015174",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:103917",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015174",
+            "UMLS:CN226617",
+            "Orphanet:103917"
+          ]
+        }
+      ]
+    }
+  ]
+}

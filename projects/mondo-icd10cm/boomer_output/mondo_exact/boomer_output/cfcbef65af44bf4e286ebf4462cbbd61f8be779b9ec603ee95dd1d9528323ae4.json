@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cfcbef65af44bf4e286ebf4462cbbd61f8be779b9ec603ee95dd1d9528323ae4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0278717",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4653",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003077",
+          "type" : "CLASS",
+          "lbl" : "intraocular retinoblastoma"
+        },
+        {
+          "id" : "NCIT:C7846",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003077",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7846",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0278717",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003077",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4653",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003077",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003077",
+            "NCIT:C7846",
+            "UMLS:C0278717",
+            "DOID:4653"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d82d2920a8adbc3c542356542c87747b3fda2b9554316fd3d5ccd02dfb526c4e",
+      "nodes" : [
+        {
+          "id" : "MESH:C564847",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1849416",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009976",
+          "type" : "CLASS",
+          "lbl" : "retinal degeneration and epilepsy"
+        },
+        {
+          "id" : "OMIM:267740",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1849416",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009976",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009976",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:267740",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564847",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009976",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1849416",
+            "MONDO:0009976",
+            "OMIM:267740",
+            "MESH:C564847"
+          ]
+        }
+      ]
+    }
+  ]
+}

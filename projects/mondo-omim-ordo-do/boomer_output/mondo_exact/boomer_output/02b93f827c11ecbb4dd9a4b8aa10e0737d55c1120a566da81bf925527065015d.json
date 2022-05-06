@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:02b93f827c11ecbb4dd9a4b8aa10e0737d55c1120a566da81bf925527065015d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201112",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016306",
+          "type" : "CLASS",
+          "lbl" : "Niemann-Pick disease type C, severe perinatal form"
+        },
+        {
+          "id" : "Orphanet:216972",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201112",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016306",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016306",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:216972",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN201112",
+            "MONDO:0016306",
+            "Orphanet:216972"
+          ]
+        }
+      ]
+    }
+  ]
+}

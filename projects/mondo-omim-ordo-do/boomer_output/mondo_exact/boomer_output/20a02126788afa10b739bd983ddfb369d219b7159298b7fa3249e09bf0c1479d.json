@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:20a02126788afa10b739bd983ddfb369d219b7159298b7fa3249e09bf0c1479d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4274118",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:716998009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016364",
+          "type" : "CLASS",
+          "lbl" : "Joubert syndrome with ocular defect"
+        },
+        {
+          "id" : "UMLS:CN201217",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:220493",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016364",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:220493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016364",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN201217",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4274118",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016364",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:716998009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016364",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:220493",
+            "MONDO:0016364",
+            "UMLS:C4274118",
+            "SCTID:716998009"
+          ]
+        }
+      ]
+    }
+  ]
+}

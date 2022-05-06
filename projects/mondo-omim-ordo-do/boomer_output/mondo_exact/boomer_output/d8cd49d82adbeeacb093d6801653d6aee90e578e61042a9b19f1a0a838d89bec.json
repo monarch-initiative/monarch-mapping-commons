@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d8cd49d82adbeeacb093d6801653d6aee90e578e61042a9b19f1a0a838d89bec",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225333",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014631",
+          "type" : "CLASS",
+          "lbl" : "hypomagnesemia, seizures, and intellectual disability"
+        },
+        {
+          "id" : "OMIMPS:616418",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014631",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:616418",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225333",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014631",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014631",
+            "OMIMPS:616418",
+            "UMLS:C4225333"
+          ]
+        }
+      ]
+    }
+  ]
+}

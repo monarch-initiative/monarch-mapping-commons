@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9bb56f01752a0f35748d5daadfebcc10cd874b8aea82d6faf3a595cad16d70cd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334359",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4685",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003092",
+          "type" : "CLASS",
+          "lbl" : "lacrimal gland mucoepidermoid carcinoma"
+        },
+        {
+          "id" : "NCIT:C6091",
+          "type" : "CLASS",
+          "lbl" : "Lacrimal Gland Mucoepidermoid Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4685",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003092",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334359",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003092",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003092",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6091",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003092",
+            "DOID:4685",
+            "UMLS:C1334359",
+            "NCIT:C6091"
+          ]
+        }
+      ]
+    }
+  ]
+}

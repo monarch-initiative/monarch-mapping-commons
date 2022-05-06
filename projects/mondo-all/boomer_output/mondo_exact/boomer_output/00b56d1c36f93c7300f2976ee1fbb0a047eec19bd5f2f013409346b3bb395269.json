@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:00b56d1c36f93c7300f2976ee1fbb0a047eec19bd5f2f013409346b3bb395269",
+      "nodes" : [
+        {
+          "id" : "OMIM:601375",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1832411",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C536180",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011063",
+          "type" : "CLASS",
+          "lbl" : "hidrotic ectodermal dysplasia, Christianson-Fourie type"
+        },
+        {
+          "id" : "Orphanet:1808",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C536180",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011063",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601375",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1832411",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011063",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1808",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011063",
+            "OMIM:601375",
+            "MESH:C536180",
+            "Orphanet:1808",
+            "UMLS:C1832411"
+          ]
+        }
+      ]
+    }
+  ]
+}

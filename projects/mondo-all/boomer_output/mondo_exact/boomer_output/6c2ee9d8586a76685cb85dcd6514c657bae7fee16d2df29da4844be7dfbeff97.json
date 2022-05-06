@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6c2ee9d8586a76685cb85dcd6514c657bae7fee16d2df29da4844be7dfbeff97",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237452",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018469",
+          "type" : "CLASS",
+          "lbl" : "pulmonary non-tuberculous mycobacterial infection"
+        },
+        {
+          "id" : "Orphanet:411703",
+          "type" : "CLASS",
+          "lbl" : "Pulmonary non-tuberculous mycobacterial infection"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018469",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:411703",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237452",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018469",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018469",
+            "Orphanet:411703",
+            "UMLS:CN237452"
+          ]
+        }
+      ]
+    }
+  ]
+}

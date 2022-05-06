@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a67ae934014dc9442beb3d2851f22195e382c0a4bdf08eea832720057fa75de2",
+      "nodes" : [
+        {
+          "id" : "SCTID:92087008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0685115",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021508",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of epicardium"
+        },
+        {
+          "id" : "NCIT:C8535",
+          "type" : "CLASS",
+          "lbl" : "Benign Epicardial Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0685115",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021508",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92087008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021508",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021508",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8535",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021508",
+            "UMLS:C0685115",
+            "SCTID:92087008",
+            "NCIT:C8535"
+          ]
+        }
+      ]
+    }
+  ]
+}

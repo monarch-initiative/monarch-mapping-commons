@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:643c9e11fdc607b8ada5d1fe86914b9fb73252b19e6fbd01f921f5c3bbc56408",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN197487",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015141",
+          "type" : "CLASS",
+          "lbl" : "disorder of medulla oblongata"
+        },
+        {
+          "id" : "Orphanet:102000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN197487",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015141",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015141",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:102000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015141",
+            "UMLS:CN197487",
+            "Orphanet:102000"
+          ]
+        }
+      ]
+    }
+  ]
+}

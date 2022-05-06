@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:789fe9dcbdc249e43b5686eeaffab61213fe4c39bb21e973c93a14cdfdaa7f24",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335165",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5697",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003589",
+          "type" : "CLASS",
+          "lbl" : "liposarcoma of the ovary"
+        },
+        {
+          "id" : "NCIT:C6419",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003589",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6419",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335165",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003589",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5697",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003589",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6419",
+            "MONDO:0003589",
+            "UMLS:C1335165",
+            "DOID:5697"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2026b9019a99648e86ceab5268f66befb567322d853fadd7e75c81cce8605e2d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0684249",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3905",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005138",
+          "type" : "CLASS",
+          "lbl" : "lung carcinoma"
+        },
+        {
+          "id" : "NCIT:C4878",
+          "type" : "CLASS",
+          "lbl" : "Lung Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0684249",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005138",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3905",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005138",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005138",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4878",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3905",
+            "MONDO:0005138",
+            "UMLS:C0684249",
+            "NCIT:C4878"
+          ]
+        }
+      ]
+    }
+  ]
+}

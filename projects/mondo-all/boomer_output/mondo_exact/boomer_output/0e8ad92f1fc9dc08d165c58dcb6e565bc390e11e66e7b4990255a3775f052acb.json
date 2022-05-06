@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0e8ad92f1fc9dc08d165c58dcb6e565bc390e11e66e7b4990255a3775f052acb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0278985",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7827",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004374",
+          "type" : "CLASS",
+          "lbl" : "adult extraskeletal osteosarcoma"
+        },
+        {
+          "id" : "NCIT:C7925",
+          "type" : "CLASS",
+          "lbl" : "Adult Extraskeletal Osteosarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004374",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7925",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0278985",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004374",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7827",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004374",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004374",
+            "NCIT:C7925",
+            "UMLS:C0278985",
+            "DOID:7827"
+          ]
+        }
+      ]
+    }
+  ]
+}

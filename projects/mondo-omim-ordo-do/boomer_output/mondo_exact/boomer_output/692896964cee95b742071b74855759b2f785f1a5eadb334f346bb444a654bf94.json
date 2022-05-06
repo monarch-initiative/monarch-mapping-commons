@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:692896964cee95b742071b74855759b2f785f1a5eadb334f346bb444a654bf94",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0238409",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5534",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003497",
+          "type" : "CLASS",
+          "lbl" : "renal pelvis squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C7732",
+          "type" : "CLASS",
+          "lbl" : "Renal Pelvis Squamous Cell Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003497",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7732",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5534",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003497",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0238409",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003497",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003497",
+            "NCIT:C7732",
+            "DOID:5534",
+            "UMLS:C0238409"
+          ]
+        }
+      ]
+    }
+  ]
+}

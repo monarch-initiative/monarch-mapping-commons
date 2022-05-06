@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6e274bd5dadde4fa662739d890cdf556d593e37bc35795f7a541fe849d964e77",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335469",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003538",
+          "type" : "CLASS",
+          "lbl" : "precursor lymphoblastic lymphoma/leukemia"
+        },
+        {
+          "id" : "NCIT:C7055",
+          "type" : "CLASS",
+          "lbl" : "Precursor Lymphoid Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335469",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003538",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003538",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7055",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1335469",
+            "MONDO:0003538",
+            "NCIT:C7055"
+          ]
+        }
+      ]
+    }
+  ]
+}

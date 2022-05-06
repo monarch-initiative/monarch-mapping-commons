@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5ccf0bf4f3c443743de064cb29281dd2ad71424224f332e849c5321b9b899b22",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1739111",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018262",
+          "type" : "CLASS",
+          "lbl" : "fetal anticonvulsant syndrome"
+        },
+        {
+          "id" : "Orphanet:370068",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1739111",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018262",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018262",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:370068",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1739111",
+            "MONDO:0018262",
+            "Orphanet:370068"
+          ]
+        }
+      ]
+    }
+  ]
+}

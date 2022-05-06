@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:100b8004803d15e649d5692f2169b5e0546af17593bb004437865a277410ff05",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201186",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016348",
+          "type" : "CLASS",
+          "lbl" : "non-genetic cardiac rhythm disease"
+        },
+        {
+          "id" : "Orphanet:218439",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016348",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:218439",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201186",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016348",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016348",
+            "Orphanet:218439",
+            "UMLS:CN201186"
+          ]
+        }
+      ]
+    }
+  ]
+}

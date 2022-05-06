@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c36ae3e43aa0c506cf31dfab0721f6e7cb125e2f371597030b50f59e08eabbd9",
+      "nodes" : [
+        {
+          "id" : "SCTID:123596001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0854140",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050825",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000470",
+          "type" : "CLASS",
+          "lbl" : "endocardium disorder"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0050825",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0854140",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:123596001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000470",
+            "DOID:0050825",
+            "UMLS:C0854140",
+            "SCTID:123596001"
+          ]
+        }
+      ]
+    }
+  ]
+}

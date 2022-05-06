@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2a800c746f75922c38d78aac6a8e072c30e42890adf9c4e587ed190b9d37e620",
+      "nodes" : [
+        {
+          "id" : "OMIM:614233",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN205811",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:715630006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013648",
+          "type" : "CLASS",
+          "lbl" : "familial progressive hyperpigmentation"
+        },
+        {
+          "id" : "Orphanet:79146",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1840392",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013648",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1840392",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:715630006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013648",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013648",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614233",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205811",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013648",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013648",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79146",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:79146",
+            "OMIM:614233",
+            "UMLS:CN205811",
+            "SCTID:715630006",
+            "MONDO:0013648"
+          ]
+        }
+      ]
+    }
+  ]
+}

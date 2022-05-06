@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e4826db5ab84fef545fbff9a989a87cfc7fbd734df64f983e8cb744cc1003a19",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0751304",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6869",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004022",
+          "type" : "CLASS",
+          "lbl" : "parasagittal meningioma"
+        },
+        {
+          "id" : "NCIT:C4960",
+          "type" : "CLASS",
+          "lbl" : "Parasagittal Meningioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004022",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4960",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6869",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004022",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0751304",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004022",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004022",
+            "NCIT:C4960",
+            "DOID:6869",
+            "UMLS:C0751304"
+          ]
+        }
+      ]
+    }
+  ]
+}

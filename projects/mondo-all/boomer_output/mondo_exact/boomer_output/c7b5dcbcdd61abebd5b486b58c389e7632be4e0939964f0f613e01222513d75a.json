@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c7b5dcbcdd61abebd5b486b58c389e7632be4e0939964f0f613e01222513d75a",
+      "nodes" : [
+        {
+          "id" : "MESH:C562934",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111220",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009709",
+          "type" : "CLASS",
+          "lbl" : "myopathy, centronuclear, 2"
+        },
+        {
+          "id" : "OMIM:255200",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C562934",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009709",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009709",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:255200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111220",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009709",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C562934",
+            "MONDO:0009709",
+            "OMIM:255200",
+            "DOID:0111220"
+          ]
+        }
+      ]
+    }
+  ]
+}

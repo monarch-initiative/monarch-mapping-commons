@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d64042ba35a98645e714b994685bbd0d988df20350bf46a955425caeaeb03f70",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3279564",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110350",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:613982",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013515",
+          "type" : "CLASS",
+          "lbl" : "osteogenesis imperfecta type 6"
+        },
+        {
+          "id" : "MESH:C536047",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C536047",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013515",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110350",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013515",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013515",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613982",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3279564",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013515",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0110350",
+            "MONDO:0013515",
+            "UMLS:C3279564",
+            "MESH:C536047",
+            "OMIM:613982"
+          ]
+        }
+      ]
+    }
+  ]
+}

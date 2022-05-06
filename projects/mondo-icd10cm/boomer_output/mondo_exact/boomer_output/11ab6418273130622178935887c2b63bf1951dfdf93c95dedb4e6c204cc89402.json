@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:11ab6418273130622178935887c2b63bf1951dfdf93c95dedb4e6c204cc89402",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335322",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8013",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004433",
+          "type" : "CLASS",
+          "lbl" : "papillary carcinoma of the penis"
+        },
+        {
+          "id" : "NCIT:C6983",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335322",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004433",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004433",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6983",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8013",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004433",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004433",
+            "UMLS:C1335322",
+            "NCIT:C6983",
+            "DOID:8013"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6bce096bc12fe69286383d6c02bea109081ebe001f1196bcab23487bb58765b8",
+      "nodes" : [
+        {
+          "id" : "MESH:C565498",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1855926",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009391",
+          "type" : "CLASS",
+          "lbl" : "hypermetabolism due to defect in mitochondria"
+        },
+        {
+          "id" : "OMIM:238800",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1855926",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009391",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565498",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009391",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009391",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:238800",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009391",
+            "UMLS:C1855926",
+            "MESH:C565498",
+            "OMIM:238800"
+          ]
+        }
+      ]
+    }
+  ]
+}

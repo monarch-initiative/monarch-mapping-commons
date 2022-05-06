@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b3d3064e0262e8d4ce56b3be6dd60668c52294f23fb47fb7741b6f536857590e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226633",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015216",
+          "type" : "CLASS",
+          "lbl" : "syndromic diaphragmatic or abdominal wall malformation"
+        },
+        {
+          "id" : "Orphanet:108979",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015216",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:108979",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226633",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015216",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:108979",
+            "MONDO:0015216",
+            "UMLS:CN226633"
+          ]
+        }
+      ]
+    }
+  ]
+}

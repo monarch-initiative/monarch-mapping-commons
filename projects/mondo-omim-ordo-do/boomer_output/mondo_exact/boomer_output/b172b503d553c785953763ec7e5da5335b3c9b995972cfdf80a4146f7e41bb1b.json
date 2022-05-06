@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b172b503d553c785953763ec7e5da5335b3c9b995972cfdf80a4146f7e41bb1b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1855553",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009503",
+          "type" : "CLASS",
+          "lbl" : "pyruvate dehydrogenase E3-binding protein deficiency"
+        },
+        {
+          "id" : "Orphanet:255182",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:245349",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009503",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:245349",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009503",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:255182",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1855553",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009503",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:245349",
+            "MONDO:0009503",
+            "Orphanet:255182",
+            "UMLS:C1855553"
+          ]
+        }
+      ]
+    }
+  ]
+}

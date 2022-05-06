@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c2e1fed0453d931be96c66229289a9f2a99a9d1aa770f2dec184deea2afdc229",
+      "nodes" : [
+        {
+          "id" : "MESH:C538308",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0809935",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016968",
+          "type" : "CLASS",
+          "lbl" : "partial trisomy of the long arm of chromosome 18"
+        },
+        {
+          "id" : "Orphanet:262977",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0809935",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016968",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016968",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:262977",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538308",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016968",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0809935",
+            "MONDO:0016968",
+            "Orphanet:262977",
+            "MESH:C538308"
+          ]
+        }
+      ]
+    }
+  ]
+}

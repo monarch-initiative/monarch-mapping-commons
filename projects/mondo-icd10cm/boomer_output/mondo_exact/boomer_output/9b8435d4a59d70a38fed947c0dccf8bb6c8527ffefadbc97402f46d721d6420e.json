@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9b8435d4a59d70a38fed947c0dccf8bb6c8527ffefadbc97402f46d721d6420e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335991",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006416",
+          "type" : "CLASS",
+          "lbl" : "small intestinal Burkitt lymphoma"
+        },
+        {
+          "id" : "NCIT:C27409",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335991",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006416",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006416",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27409",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1335991",
+            "MONDO:0006416",
+            "NCIT:C27409"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:79630790a2e0b7f115b1c2bb16ef5df094ffbcdc86d31705cf4e83bd9efd54f3",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204237",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018021",
+          "type" : "CLASS",
+          "lbl" : "hypotrichosis-deafness syndrome"
+        },
+        {
+          "id" : "Orphanet:330029",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018021",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:330029",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204237",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018021",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018021",
+            "Orphanet:330029",
+            "UMLS:CN204237"
+          ]
+        }
+      ]
+    }
+  ]
+}

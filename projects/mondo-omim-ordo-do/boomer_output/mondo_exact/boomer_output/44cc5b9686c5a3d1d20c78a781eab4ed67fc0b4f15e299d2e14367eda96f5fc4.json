@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:44cc5b9686c5a3d1d20c78a781eab4ed67fc0b4f15e299d2e14367eda96f5fc4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150859",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013321",
+          "type" : "CLASS",
+          "lbl" : "forsythe-wakeling syndrome"
+        },
+        {
+          "id" : "OMIM:613606",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3150859",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013321",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013321",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613606",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013321",
+            "UMLS:C3150859",
+            "OMIM:613606"
+          ]
+        }
+      ]
+    }
+  ]
+}

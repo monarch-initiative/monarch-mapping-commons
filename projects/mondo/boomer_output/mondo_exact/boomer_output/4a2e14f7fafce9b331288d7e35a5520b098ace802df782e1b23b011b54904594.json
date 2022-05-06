@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4a2e14f7fafce9b331288d7e35a5520b098ace802df782e1b23b011b54904594",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0235833",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C98893",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3827",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:2140",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005711",
+          "type" : "CLASS",
+          "lbl" : "congenital diaphragmatic hernia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005711",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2140",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3827",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005711",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0235833",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005711",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005711",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C98893",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3827",
+            "Orphanet:2140",
+            "UMLS:C0235833",
+            "NCIT:C98893",
+            "MONDO:0005711"
+          ]
+        }
+      ]
+    }
+  ]
+}

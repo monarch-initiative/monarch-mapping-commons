@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7517130b6659e2b2fa64f1a9165ecaac9ee55b4da7c388e1b7603064de0a1aba",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279708",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5344",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003402",
+          "type" : "CLASS",
+          "lbl" : "testicular yolk sac tumor"
+        },
+        {
+          "id" : "NCIT:C8000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0279708",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003402",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003402",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5344",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003402",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0279708",
+            "MONDO:0003402",
+            "NCIT:C8000",
+            "DOID:5344"
+          ]
+        }
+      ]
+    }
+  ]
+}

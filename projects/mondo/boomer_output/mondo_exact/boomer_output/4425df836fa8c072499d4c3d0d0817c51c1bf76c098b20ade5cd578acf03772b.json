@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4425df836fa8c072499d4c3d0d0817c51c1bf76c098b20ade5cd578acf03772b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479353",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070269",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:617395",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:435934",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0054559",
+          "type" : "CLASS",
+          "lbl" : "congenital disorder of glycosylation, type IIq"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0054559",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:435934",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0054559",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617395",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070269",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0054559",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4479353",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0054559",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0054559",
+            "Orphanet:435934",
+            "UMLS:C4479353",
+            "DOID:0070269",
+            "OMIM:617395"
+          ]
+        }
+      ]
+    }
+  ]
+}

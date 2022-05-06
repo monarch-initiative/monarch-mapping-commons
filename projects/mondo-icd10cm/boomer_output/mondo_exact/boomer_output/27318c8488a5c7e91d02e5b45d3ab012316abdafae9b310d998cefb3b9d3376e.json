@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:27318c8488a5c7e91d02e5b45d3ab012316abdafae9b310d998cefb3b9d3376e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204540",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018143",
+          "type" : "CLASS",
+          "lbl" : "pyruvate carboxylase deficiency, benign type"
+        },
+        {
+          "id" : "Orphanet:353320",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018143",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:353320",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204540",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018143",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:353320",
+            "MONDO:0018143",
+            "UMLS:CN204540"
+          ]
+        }
+      ]
+    }
+  ]
+}

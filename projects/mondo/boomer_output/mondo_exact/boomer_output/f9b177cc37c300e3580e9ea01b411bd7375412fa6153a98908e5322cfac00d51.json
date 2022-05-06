@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f9b177cc37c300e3580e9ea01b411bd7375412fa6153a98908e5322cfac00d51",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335329",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5433",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003443",
+          "type" : "CLASS",
+          "lbl" : "papillary urothelial neoplasm"
+        },
+        {
+          "id" : "NCIT:C27883",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5433",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003443",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335329",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003443",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003443",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27883",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1335329",
+            "MONDO:0003443",
+            "DOID:5433",
+            "NCIT:C27883"
+          ]
+        }
+      ]
+    }
+  ]
+}

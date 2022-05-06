@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7404aa7779a30936b2328f9dbbba6073c930ac42db5cd83b43910867038287a4",
+      "nodes" : [
+        {
+          "id" : "MESH:D009401",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0027720",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2527",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002331",
+          "type" : "CLASS",
+          "lbl" : "nephrosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0027720",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002331",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D009401",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002331",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2527",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002331",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0027720",
+            "MONDO:0002331",
+            "MESH:D009401",
+            "DOID:2527"
+          ]
+        }
+      ]
+    }
+  ]
+}

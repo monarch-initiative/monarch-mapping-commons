@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9efd3fb5070e4437113d1ef11dc2292d4eddff6d3da7a47e63b4319ada2e8588",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2064434",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3254",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002577",
+          "type" : "CLASS",
+          "lbl" : "extrahepatic bile duct rhabdomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C5860",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3254",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002577",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002577",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5860",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2064434",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002577",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3254",
+            "MONDO:0002577",
+            "NCIT:C5860",
+            "UMLS:C2064434"
+          ]
+        }
+      ]
+    }
+  ]
+}

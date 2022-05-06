@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8ff08b45e7e6b88a43f00e3c4e4de35e974c8bd1132e1a68be37a71ae2096dc6",
+      "nodes" : [
+        {
+          "id" : "SCTID:190953007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0268417",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013543",
+          "type" : "CLASS",
+          "lbl" : "trypsinogen deficiency"
+        },
+        {
+          "id" : "OMIM:614044",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:190953007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013543",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013543",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614044",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0268417",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013543",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013543",
+            "SCTID:190953007",
+            "OMIM:614044",
+            "UMLS:C0268417"
+          ]
+        }
+      ]
+    }
+  ]
+}

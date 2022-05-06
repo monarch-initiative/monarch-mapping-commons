@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e2abb36a04fc32eedb4d147e69b644da460195571d74cf57a0b9a89cea2cd660",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1851413",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007586",
+          "type" : "CLASS",
+          "lbl" : "exostoses, multiple, type 2"
+        },
+        {
+          "id" : "NCIT:C18252",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:133701",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007586",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C18252",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007586",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:133701",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1851413",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007586",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007586",
+            "NCIT:C18252",
+            "OMIM:133701",
+            "UMLS:C1851413"
+          ]
+        }
+      ]
+    }
+  ]
+}

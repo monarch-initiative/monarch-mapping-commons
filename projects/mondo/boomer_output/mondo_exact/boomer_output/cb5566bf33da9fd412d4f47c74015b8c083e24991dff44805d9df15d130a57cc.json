@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cb5566bf33da9fd412d4f47c74015b8c083e24991dff44805d9df15d130a57cc",
+      "nodes" : [
+        {
+          "id" : "MESH:C566832",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0263385",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008188",
+          "type" : "CLASS",
+          "lbl" : "papillomatosis, confluent and reticulated"
+        },
+        {
+          "id" : "OMIM:167900",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008188",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:167900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0263385",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008188",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566832",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008188",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008188",
+            "OMIM:167900",
+            "UMLS:C0263385",
+            "MESH:C566832"
+          ]
+        }
+      ]
+    }
+  ]
+}

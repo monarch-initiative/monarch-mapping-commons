@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0bef59bf07355e53f16db55b00daec0a667eb7d40c7a6a128304723c7ef0c50e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1853124",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080382",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012546",
+          "type" : "CLASS",
+          "lbl" : "nephrotic syndrome, type 3"
+        },
+        {
+          "id" : "OMIM:610725",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012546",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610725",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1853124",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012546",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080382",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012546",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012546",
+            "OMIM:610725",
+            "UMLS:C1853124",
+            "DOID:0080382"
+          ]
+        }
+      ]
+    }
+  ]
+}

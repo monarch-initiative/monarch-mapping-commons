@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b4a8f5d60ed4cfe6dc0eda3d4398ef0816f3fa0f51b23a44fb891e488abb72f4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0497538",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050624",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000385",
+          "type" : "CLASS",
+          "lbl" : "benign digestive system neoplasm"
+        },
+        {
+          "id" : "NCIT:C4787",
+          "type" : "CLASS",
+          "lbl" : "Benign Digestive System Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0497538",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000385",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000385",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4787",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050624",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000385",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0497538",
+            "MONDO:0000385",
+            "NCIT:C4787",
+            "DOID:0050624"
+          ]
+        }
+      ]
+    }
+  ]
+}

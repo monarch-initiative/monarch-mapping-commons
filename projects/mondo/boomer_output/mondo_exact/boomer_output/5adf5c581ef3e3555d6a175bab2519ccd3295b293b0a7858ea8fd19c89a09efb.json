@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5adf5c581ef3e3555d6a175bab2519ccd3295b293b0a7858ea8fd19c89a09efb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332992",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6230",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003819",
+          "type" : "CLASS",
+          "lbl" : "childhood teratoma of the ovary"
+        },
+        {
+          "id" : "NCIT:C6554",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6230",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003819",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332992",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003819",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003819",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6554",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003819",
+            "DOID:6230",
+            "UMLS:C1332992",
+            "NCIT:C6554"
+          ]
+        }
+      ]
+    }
+  ]
+}

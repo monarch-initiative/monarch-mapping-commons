@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:efc0177f5d24a3b5023557312a25bd806596fae99a088d0ccc05027b02d5bf8b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334325",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5398",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003431",
+          "type" : "CLASS",
+          "lbl" : "lipoadenoma"
+        },
+        {
+          "id" : "NCIT:C4159",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0334325",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003431",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003431",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4159",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5398",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003431",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0334325",
+            "MONDO:0003431",
+            "NCIT:C4159",
+            "DOID:5398"
+          ]
+        }
+      ]
+    }
+  ]
+}

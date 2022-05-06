@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1bf582bb293018a8da025617d986a38702c661e12c171e6ae250ae6304b19464",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN120488",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020147",
+          "type" : "CLASS",
+          "lbl" : "anophthalmia-microphthalmia syndrome"
+        },
+        {
+          "id" : "Orphanet:98555",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020147",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98555",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN120488",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020147",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020147",
+            "Orphanet:98555",
+            "UMLS:CN120488"
+          ]
+        }
+      ]
+    }
+  ]
+}

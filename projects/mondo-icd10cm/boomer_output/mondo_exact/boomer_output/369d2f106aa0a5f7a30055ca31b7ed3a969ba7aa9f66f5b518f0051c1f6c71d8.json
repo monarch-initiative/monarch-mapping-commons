@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:369d2f106aa0a5f7a30055ca31b7ed3a969ba7aa9f66f5b518f0051c1f6c71d8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333322",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050927",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006187",
+          "type" : "CLASS",
+          "lbl" : "duodenal villous adenoma"
+        },
+        {
+          "id" : "NCIT:C5338",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006187",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5338",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050927",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006187",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333322",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006187",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006187",
+            "NCIT:C5338",
+            "DOID:0050927",
+            "UMLS:C1333322"
+          ]
+        }
+      ]
+    }
+  ]
+}

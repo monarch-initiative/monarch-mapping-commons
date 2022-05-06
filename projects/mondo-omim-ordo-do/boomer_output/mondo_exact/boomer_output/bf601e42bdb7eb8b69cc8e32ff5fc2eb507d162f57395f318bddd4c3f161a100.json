@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bf601e42bdb7eb8b69cc8e32ff5fc2eb507d162f57395f318bddd4c3f161a100",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200975",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016214",
+          "type" : "CLASS",
+          "lbl" : "pulmonary fibrosis-hepatic hyperplasia-bone marrow hypoplasia syndrome"
+        },
+        {
+          "id" : "Orphanet:210136",
+          "type" : "CLASS",
+          "lbl" : "Pulmonary fibrosis-hepatic hyperplasia-bone marrow hypoplasia syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN200975",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016214",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016214",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:210136",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016214",
+            "UMLS:CN200975",
+            "Orphanet:210136"
+          ]
+        }
+      ]
+    }
+  ]
+}

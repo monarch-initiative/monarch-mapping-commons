@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:75d29f1692fe11874d41360c343d04acb26becdcdaed416ba46d77e348c59587",
+      "nodes" : [
+        {
+          "id" : "MESH:D006374",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0018891",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0025082",
+          "type" : "CLASS",
+          "lbl" : "helminthiasis, animal"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0018891",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025082",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D006374",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025082",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0018891",
+            "MONDO:0025082",
+            "MESH:D006374"
+          ]
+        }
+      ]
+    }
+  ]
+}

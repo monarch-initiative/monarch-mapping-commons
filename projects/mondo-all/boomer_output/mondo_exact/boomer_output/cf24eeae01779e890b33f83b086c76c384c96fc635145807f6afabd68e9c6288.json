@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cf24eeae01779e890b33f83b086c76c384c96fc635145807f6afabd68e9c6288",
+      "nodes" : [
+        {
+          "id" : "MESH:C562464",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:87252009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008277",
+          "type" : "CLASS",
+          "lbl" : "stomach polyp"
+        },
+        {
+          "id" : "NCIT:C3954",
+          "type" : "CLASS",
+          "lbl" : "Gastric Polyp"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:87252009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008277",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C562464",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008277",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008277",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3954",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:87252009",
+            "MONDO:0008277",
+            "MESH:C562464",
+            "NCIT:C3954"
+          ]
+        }
+      ]
+    }
+  ]
+}

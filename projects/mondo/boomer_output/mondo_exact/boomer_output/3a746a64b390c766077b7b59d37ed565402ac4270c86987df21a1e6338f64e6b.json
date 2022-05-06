@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3a746a64b390c766077b7b59d37ed565402ac4270c86987df21a1e6338f64e6b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1520100",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2080",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002201",
+          "type" : "CLASS",
+          "lbl" : "vulvar trichoepithelioma"
+        },
+        {
+          "id" : "NCIT:C40314",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002201",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40314",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2080",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002201",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1520100",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002201",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C40314",
+            "MONDO:0002201",
+            "DOID:2080",
+            "UMLS:C1520100"
+          ]
+        }
+      ]
+    }
+  ]
+}
