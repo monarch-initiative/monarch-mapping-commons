@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1b2ef50b48f4cca52b9058069896fd743230d855ecb3f8fa662454de7a5058b5",
+      "nodes" : [
+        {
+          "id" : "MESH:C565496",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1855924",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009396",
+          "type" : "CLASS",
+          "lbl" : "hyperparathyroidism, neonatal self-limited primary, with hypercalciuria"
+        },
+        {
+          "id" : "OMIM:239199",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565496",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009396",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009396",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:239199",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1855924",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009396",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C565496",
+            "MONDO:0009396",
+            "OMIM:239199",
+            "UMLS:C1855924"
+          ]
+        }
+      ]
+    }
+  ]
+}

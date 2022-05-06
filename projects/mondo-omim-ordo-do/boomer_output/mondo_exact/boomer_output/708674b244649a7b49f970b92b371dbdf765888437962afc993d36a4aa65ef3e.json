@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:708674b244649a7b49f970b92b371dbdf765888437962afc993d36a4aa65ef3e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202570",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017144",
+          "type" : "CLASS",
+          "lbl" : "alpha-thalassemia and related diseases"
+        },
+        {
+          "id" : "Orphanet:275745",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017144",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:275745",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202570",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017144",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:275745",
+            "MONDO:0017144",
+            "UMLS:CN202570"
+          ]
+        }
+      ]
+    }
+  ]
+}

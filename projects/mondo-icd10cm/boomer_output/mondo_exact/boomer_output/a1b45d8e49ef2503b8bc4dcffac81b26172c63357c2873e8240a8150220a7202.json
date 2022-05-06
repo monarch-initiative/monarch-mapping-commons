@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a1b45d8e49ef2503b8bc4dcffac81b26172c63357c2873e8240a8150220a7202",
+      "nodes" : [
+        {
+          "id" : "SCTID:189151003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0346374",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021485",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of iris"
+        },
+        {
+          "id" : "NCIT:C4555",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0346374",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021485",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:189151003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021485",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021485",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4555",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021485",
+            "UMLS:C0346374",
+            "SCTID:189151003",
+            "NCIT:C4555"
+          ]
+        }
+      ]
+    }
+  ]
+}

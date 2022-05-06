@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:706b7dc3fb8ba8957eedae0d5f506f724f75497be4d964e0527617c3f26c3ad5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016756",
+          "type" : "CLASS",
+          "lbl" : "inherited nervous system cancer-predisposing syndrome"
+        },
+        {
+          "id" : "Orphanet:252190",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016756",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016756",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:252190",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:252190",
+            "MONDO:0016756",
+            "UMLS:CN202004"
+          ]
+        }
+      ]
+    }
+  ]
+}

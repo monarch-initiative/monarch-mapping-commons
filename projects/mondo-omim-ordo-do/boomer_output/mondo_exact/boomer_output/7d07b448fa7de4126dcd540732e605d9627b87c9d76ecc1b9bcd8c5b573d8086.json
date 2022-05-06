@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7d07b448fa7de4126dcd540732e605d9627b87c9d76ecc1b9bcd8c5b573d8086",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332981",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4690",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003097",
+          "type" : "CLASS",
+          "lbl" : "childhood mediastinal neurogenic neoplasm"
+        },
+        {
+          "id" : "NCIT:C5429",
+          "type" : "CLASS",
+          "lbl" : "Childhood Mediastinal Neurogenic Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4690",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003097",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332981",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003097",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003097",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5429",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332981",
+            "MONDO:0003097",
+            "DOID:4690",
+            "NCIT:C5429"
+          ]
+        }
+      ]
+    }
+  ]
+}

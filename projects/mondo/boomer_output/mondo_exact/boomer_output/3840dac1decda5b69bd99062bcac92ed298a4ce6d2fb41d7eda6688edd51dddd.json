@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3840dac1decda5b69bd99062bcac92ed298a4ce6d2fb41d7eda6688edd51dddd",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN221574",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080199",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024331",
+          "type" : "CLASS",
+          "lbl" : "colorectal carcinoma"
+        },
+        {
+          "id" : "NCIT:C2955",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080199",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024331",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0024331",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C2955",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN221574",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024331",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024331",
+            "DOID:0080199",
+            "NCIT:C2955",
+            "UMLS:CN221574"
+          ]
+        }
+      ]
+    }
+  ]
+}

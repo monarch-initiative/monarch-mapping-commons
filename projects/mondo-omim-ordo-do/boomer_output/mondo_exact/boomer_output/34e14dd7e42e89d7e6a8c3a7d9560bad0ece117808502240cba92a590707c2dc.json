@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:34e14dd7e42e89d7e6a8c3a7d9560bad0ece117808502240cba92a590707c2dc",
+      "nodes" : [
+        {
+          "id" : "SCTID:254831005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0206631",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021354",
+          "type" : "CLASS",
+          "lbl" : "tumor of adipose tissue"
+        },
+        {
+          "id" : "NCIT:C4248",
+          "type" : "CLASS",
+          "lbl" : "Lipomatous Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0206631",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021354",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021354",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4248",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:254831005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021354",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0206631",
+            "MONDO:0021354",
+            "NCIT:C4248",
+            "SCTID:254831005"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f663a5298c7c2d501a5b1e2a001b3bd542b686abf53deddbb7234da5ccaa21f9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336900",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:9445",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004788",
+          "type" : "CLASS",
+          "lbl" : "cervix squamous papilloma"
+        },
+        {
+          "id" : "NCIT:C6342",
+          "type" : "CLASS",
+          "lbl" : "Cervical Squamous Cell Papilloma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004788",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6342",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:9445",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004788",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336900",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004788",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004788",
+            "NCIT:C6342",
+            "DOID:9445",
+            "UMLS:C1336900"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:09821f21c4bd9b35963c80dc398b7ed35a08076c125f0cde9bc3ab65dd2a1cd3",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227232",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017969",
+          "type" : "CLASS",
+          "lbl" : "46,XY disorder of sex development of endocrine origin"
+        },
+        {
+          "id" : "Orphanet:325351",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017969",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:325351",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227232",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017969",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017969",
+            "Orphanet:325351",
+            "UMLS:CN227232"
+          ]
+        }
+      ]
+    }
+  ]
+}

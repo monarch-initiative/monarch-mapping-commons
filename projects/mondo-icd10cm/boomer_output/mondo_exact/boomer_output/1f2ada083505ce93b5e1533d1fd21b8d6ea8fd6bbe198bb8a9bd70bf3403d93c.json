@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1f2ada083505ce93b5e1533d1fd21b8d6ea8fd6bbe198bb8a9bd70bf3403d93c",
+      "nodes" : [
+        {
+          "id" : "MESH:C567843",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:612954",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:199340",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080097",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013061",
+          "type" : "CLASS",
+          "lbl" : "myofibrillar myopathy 6"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013061",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:199340",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567843",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013061",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013061",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:612954",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080097",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013061",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0080097",
+            "MONDO:0013061",
+            "MESH:C567843",
+            "OMIM:612954",
+            "Orphanet:199340"
+          ]
+        }
+      ]
+    }
+  ]
+}

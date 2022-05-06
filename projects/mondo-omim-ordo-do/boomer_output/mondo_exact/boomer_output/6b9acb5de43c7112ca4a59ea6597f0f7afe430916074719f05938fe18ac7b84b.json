@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6b9acb5de43c7112ca4a59ea6597f0f7afe430916074719f05938fe18ac7b84b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0153993",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:D25.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001664",
+          "type" : "CLASS",
+          "lbl" : "submucous uterine fibroid"
+        },
+        {
+          "id" : "DOID:13222",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:95279007",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:D25.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001664",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0153993",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001664",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:13222",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001664",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:95279007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001664",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:13222",
+            "SCTID:95279007",
+            "MONDO:0001664",
+            "UMLS:C0153993",
+            "ICD10CM:D25.0"
+          ]
+        }
+      ]
+    }
+  ]
+}

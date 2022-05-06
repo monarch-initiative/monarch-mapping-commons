@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0aee5abaabe61efc22a0953f4b51abfafc3d5e92d32027002dbd1bbeac13c70f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN199356",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015326",
+          "type" : "CLASS",
+          "lbl" : "night blindness-skeletal anomalies-dysmorphism syndrome"
+        },
+        {
+          "id" : "Orphanet:1390",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015326",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1390",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN199356",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015326",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:1390",
+            "MONDO:0015326",
+            "UMLS:CN199356"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dce04e0154df746b7d1030836658f90c8296c879a716e66013c4df1420eea586",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332867",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1522",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002034",
+          "type" : "CLASS",
+          "lbl" : "cecum lymphoma"
+        },
+        {
+          "id" : "NCIT:C5515",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332867",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002034",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002034",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5515",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1522",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002034",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332867",
+            "MONDO:0002034",
+            "NCIT:C5515",
+            "DOID:1522"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3001573b107b4e3221977948b45ac875f7b928f58df8243779afb49978171b35",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334556",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6276",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006069",
+          "type" : "CLASS",
+          "lbl" : "ACTH-producing pituitary gland carcinoma"
+        },
+        {
+          "id" : "NCIT:C5964",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006069",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5964",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6276",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006069",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334556",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006069",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C5964",
+            "MONDO:0006069",
+            "DOID:6276",
+            "UMLS:C1334556"
+          ]
+        }
+      ]
+    }
+  ]
+}

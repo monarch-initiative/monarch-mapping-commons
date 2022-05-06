@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e33bd8b6763b125eb116f9a7e449e9f142fc4dcfd1c321a06862cf5dc35367ab",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN244557",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011727",
+          "type" : "CLASS",
+          "lbl" : "anorexia nervosa, susceptibility to, 1"
+        },
+        {
+          "id" : "OMIM:606788",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011727",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:606788",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN244557",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011727",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011727",
+            "OMIM:606788",
+            "UMLS:CN244557"
+          ]
+        }
+      ]
+    }
+  ]
+}

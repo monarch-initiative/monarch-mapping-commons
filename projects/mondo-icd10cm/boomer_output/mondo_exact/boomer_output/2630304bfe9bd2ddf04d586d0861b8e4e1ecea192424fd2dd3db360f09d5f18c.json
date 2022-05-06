@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2630304bfe9bd2ddf04d586d0861b8e4e1ecea192424fd2dd3db360f09d5f18c",
+      "nodes" : [
+        {
+          "id" : "SCTID:19620000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0271055",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005464",
+          "type" : "CLASS",
+          "lbl" : "rhegmatogenous retinal detachment"
+        },
+        {
+          "id" : "NCIT:C118755",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005464",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C118755",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0271055",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005464",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:19620000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005464",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005464",
+            "NCIT:C118755",
+            "UMLS:C0271055",
+            "SCTID:19620000"
+          ]
+        }
+      ]
+    }
+  ]
+}

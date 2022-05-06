@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:28dc27f3a4572d9475c222e9cfe108a504e6566fe0c89d80fbc2620e39821799",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334683",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0023726",
+          "type" : "CLASS",
+          "lbl" : "mediastinal yolk sac tumor"
+        },
+        {
+          "id" : "NCIT:C6443",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0023726",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6443",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334683",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0023726",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6443",
+            "MONDO:0023726",
+            "UMLS:C1334683"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:74494cdb2cafea946ffe41f6626842d3b3c0b8128dc02d5fb3c5d5fe75dbe12c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1838103",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111185",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024553",
+          "type" : "CLASS",
+          "lbl" : "myopathy, lactic acidosis, and sideroblastic anemia 1"
+        },
+        {
+          "id" : "OMIM:600462",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0111185",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024553",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1838103",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024553",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0024553",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600462",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0111185",
+            "MONDO:0024553",
+            "UMLS:C1838103",
+            "OMIM:600462"
+          ]
+        }
+      ]
+    }
+  ]
+}

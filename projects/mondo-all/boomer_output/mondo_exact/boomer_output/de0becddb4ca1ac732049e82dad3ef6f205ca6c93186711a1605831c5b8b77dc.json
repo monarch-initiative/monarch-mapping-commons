@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:de0becddb4ca1ac732049e82dad3ef6f205ca6c93186711a1605831c5b8b77dc",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333278",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7071",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004096",
+          "type" : "CLASS",
+          "lbl" : "spinal cord dermoid cyst"
+        },
+        {
+          "id" : "NCIT:C6808",
+          "type" : "CLASS",
+          "lbl" : "Dermoid Cyst of the Spinal Cord"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004096",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6808",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333278",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004096",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7071",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004096",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6808",
+            "MONDO:0004096",
+            "UMLS:C1333278",
+            "DOID:7071"
+          ]
+        }
+      ]
+    }
+  ]
+}

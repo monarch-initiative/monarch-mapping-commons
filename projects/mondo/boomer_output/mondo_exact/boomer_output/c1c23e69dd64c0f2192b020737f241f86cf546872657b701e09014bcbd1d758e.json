@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c1c23e69dd64c0f2192b020737f241f86cf546872657b701e09014bcbd1d758e",
+      "nodes" : [
+        {
+          "id" : "DOID:7735",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:424053",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018523",
+          "type" : "CLASS",
+          "lbl" : "pancreatic mucinous cystadenoma"
+        },
+        {
+          "id" : "NCIT:C5718",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7235",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018523",
+          "pred" : "siblingOf",
+          "obj" : "DOID:7735",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7235",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018523",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018523",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5718",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018523",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:424053",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018523",
+            "DOID:7235",
+            "NCIT:C5718",
+            "Orphanet:424053"
+          ]
+        }
+      ]
+    }
+  ]
+}

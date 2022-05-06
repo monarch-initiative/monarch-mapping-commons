@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:309cbffc328338bf63b61c481c05289074f3c25afd40ae080997c4b854fca042",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335976",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4437",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002998",
+          "type" : "CLASS",
+          "lbl" : "skull base meningioma"
+        },
+        {
+          "id" : "NCIT:C5272",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002998",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5272",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335976",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002998",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4437",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002998",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002998",
+            "NCIT:C5272",
+            "UMLS:C1335976",
+            "DOID:4437"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e27fadd1ad4c55bfe81f61e03c338cd509f213323b3b92274863cd25c70c6991",
+      "nodes" : [
+        {
+          "id" : "SCTID:271432005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:Q27.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019993",
+          "type" : "CLASS",
+          "lbl" : "congenital renal artery stenosis"
+        },
+        {
+          "id" : "Orphanet:97598",
+          "type" : "CLASS",
+          "lbl" : "Congenital renal artery stenosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:271432005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019993",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q27.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019993",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019993",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:97598",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019993",
+            "SCTID:271432005",
+            "ICD10CM:Q27.1",
+            "Orphanet:97598"
+          ]
+        }
+      ]
+    }
+  ]
+}

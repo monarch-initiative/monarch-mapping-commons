@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4d859bcbb99266566d723b55ea62e76a2abae83fc0c9e807813dfc6522c503d4",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:G61.82",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0393847",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018979",
+          "type" : "CLASS",
+          "lbl" : "multifocal motor neuropathy"
+        },
+        {
+          "id" : "SCTID:230591002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:641",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018979",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:641",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:230591002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018979",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0393847",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018979",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:G61.82",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018979",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:230591002",
+            "MONDO:0018979",
+            "Orphanet:641",
+            "ICD10CM:G61.82",
+            "UMLS:C0393847"
+          ]
+        }
+      ]
+    }
+  ]
+}

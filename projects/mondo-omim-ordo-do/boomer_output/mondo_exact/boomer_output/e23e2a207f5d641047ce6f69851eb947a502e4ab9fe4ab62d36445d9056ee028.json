@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e23e2a207f5d641047ce6f69851eb947a502e4ab9fe4ab62d36445d9056ee028",
+      "nodes" : [
+        {
+          "id" : "MESH:C567764",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:613087",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2751315",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110111",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013123",
+          "type" : "CLASS",
+          "lbl" : "atrial septal defect 6"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013123",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613087",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110111",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013123",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2751315",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013123",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567764",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013123",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013123",
+            "UMLS:C2751315",
+            "OMIM:613087",
+            "MESH:C567764",
+            "DOID:0110111"
+          ]
+        }
+      ]
+    }
+  ]
+}

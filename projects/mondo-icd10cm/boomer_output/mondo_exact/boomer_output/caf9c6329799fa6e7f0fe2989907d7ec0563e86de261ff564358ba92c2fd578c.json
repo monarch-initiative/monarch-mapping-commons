@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:caf9c6329799fa6e7f0fe2989907d7ec0563e86de261ff564358ba92c2fd578c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1517154",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:738",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004203",
+          "type" : "CLASS",
+          "lbl" : "female urethral cancer"
+        },
+        {
+          "id" : "NCIT:C39866",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004203",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39866",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1517154",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004203",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:738",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004203",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004203",
+            "NCIT:C39866",
+            "UMLS:C1517154",
+            "DOID:738"
+          ]
+        }
+      ]
+    }
+  ]
+}

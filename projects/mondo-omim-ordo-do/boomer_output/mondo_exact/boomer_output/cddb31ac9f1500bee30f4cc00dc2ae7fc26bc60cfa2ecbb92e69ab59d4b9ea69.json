@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cddb31ac9f1500bee30f4cc00dc2ae7fc26bc60cfa2ecbb92e69ab59d4b9ea69",
+      "nodes" : [
+        {
+          "id" : "OMIM:600461",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010891",
+          "type" : "CLASS",
+          "lbl" : "lethal hemolytic anemia-genital anomalies syndrome"
+        },
+        {
+          "id" : "UMLS:C1838120",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:1046",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C563935",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C563935",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010891",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010891",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1046",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010891",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600461",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1838120",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010891",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:1046",
+            "MESH:C563935",
+            "MONDO:0010891",
+            "OMIM:600461",
+            "UMLS:C1838120"
+          ]
+        }
+      ]
+    }
+  ]
+}

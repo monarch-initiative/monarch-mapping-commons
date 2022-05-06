@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8707febf1cd39faee6eeb56bceea5a523ace78d41b8bbb8f944742c3178386c8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336745",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10146",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000951",
+          "type" : "CLASS",
+          "lbl" : "thymus lymphoma"
+        },
+        {
+          "id" : "NCIT:C6451",
+          "type" : "CLASS",
+          "lbl" : "Thymic Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:10146",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000951",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336745",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000951",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000951",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6451",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000951",
+            "DOID:10146",
+            "UMLS:C1336745",
+            "NCIT:C6451"
+          ]
+        }
+      ]
+    }
+  ]
+}

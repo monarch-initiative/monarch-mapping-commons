@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:280ee28394cc313560740eee66ba6b0b631bc19013b7d16f26ac93ee64404969",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237675",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044640",
+          "type" : "CLASS",
+          "lbl" : "charcot-marie-tooth disease type 2T"
+        },
+        {
+          "id" : "Orphanet:495274",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0044640",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:495274",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237675",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044640",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:495274",
+            "MONDO:0044640",
+            "UMLS:CN237675"
+          ]
+        }
+      ]
+    }
+  ]
+}

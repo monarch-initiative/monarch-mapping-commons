@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f4fbd35949d7ad3b997a63868709bf24a9f86e732fe69805e9ff1b5d25905fca",
+      "nodes" : [
+        {
+          "id" : "MESH:C565869",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859304",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008936",
+          "type" : "CLASS",
+          "lbl" : "cerebellar ataxia and neurosensory deafness"
+        },
+        {
+          "id" : "OMIM:212850",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1859304",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008936",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008936",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:212850",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565869",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008936",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1859304",
+            "MONDO:0008936",
+            "OMIM:212850",
+            "MESH:C565869"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1ec05b13b14bc87c1932f08396506abd1bd42a88c99ac2af60ad5b99161bd161",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1511206",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5957",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003714",
+          "type" : "CLASS",
+          "lbl" : "bladder urachal squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C39845",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003714",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39845",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5957",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003714",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1511206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003714",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C39845",
+            "MONDO:0003714",
+            "DOID:5957",
+            "UMLS:C1511206"
+          ]
+        }
+      ]
+    }
+  ]
+}

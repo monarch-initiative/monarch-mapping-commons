@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:799074fe1c592a0ab0863a6d2d05da7463b5516dbe0ed7189331c3f0b2aa065f",
+      "nodes" : [
+        {
+          "id" : "MESH:C567137",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2673817",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008985",
+          "type" : "CLASS",
+          "lbl" : "ciliary dyskinesia with transposition of ciliary microtubules"
+        },
+        {
+          "id" : "OMIM:215520",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2673817",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008985",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567137",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008985",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008985",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:215520",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008985",
+            "UMLS:C2673817",
+            "MESH:C567137",
+            "OMIM:215520"
+          ]
+        }
+      ]
+    }
+  ]
+}

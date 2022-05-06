@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:362310d9967267ac8500b36177383dbcb9f7ab596ca83a570274d093ec2cfdb8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333763",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6270",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003834",
+          "type" : "CLASS",
+          "lbl" : "gastric cardia carcinoma"
+        },
+        {
+          "id" : "NCIT:C6794",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6270",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003834",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333763",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003834",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003834",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6794",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003834",
+            "DOID:6270",
+            "UMLS:C1333763",
+            "NCIT:C6794"
+          ]
+        }
+      ]
+    }
+  ]
+}

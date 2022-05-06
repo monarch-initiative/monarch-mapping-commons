@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2f7a198c7c154b3e6988dd5e7bcf1ec961239bbd3fbc241b416e4196262923e6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332863",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5776",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003645",
+          "type" : "CLASS",
+          "lbl" : "cavernous hemangioma of face"
+        },
+        {
+          "id" : "NCIT:C7053",
+          "type" : "CLASS",
+          "lbl" : "Cavernous Hemangioma of the Face"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5776",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003645",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003645",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7053",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332863",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003645",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003645",
+            "DOID:5776",
+            "NCIT:C7053",
+            "UMLS:C1332863"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c1d31dbf21924ecf39f5fbf20b1746a9d0a9cbc4bbc965596a4eb44184db795e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN199659",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015520",
+          "type" : "CLASS",
+          "lbl" : "late infantile CACH syndrome"
+        },
+        {
+          "id" : "Orphanet:157716",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015520",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:157716",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN199659",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015520",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015520",
+            "Orphanet:157716",
+            "UMLS:CN199659"
+          ]
+        }
+      ]
+    }
+  ]
+}

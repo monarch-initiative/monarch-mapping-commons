@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1e2067e6c9ddd1458a801c081c77d8b588e5bddfc3cda92692251c3073e5a0d3",
+      "nodes" : [
+        {
+          "id" : "MESH:C566914",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1969046",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012696",
+          "type" : "CLASS",
+          "lbl" : "otosclerosis 4"
+        },
+        {
+          "id" : "OMIM:611571",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C566914",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012696",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012696",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:611571",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1969046",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012696",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C566914",
+            "MONDO:0012696",
+            "OMIM:611571",
+            "UMLS:C1969046"
+          ]
+        }
+      ]
+    }
+  ]
+}

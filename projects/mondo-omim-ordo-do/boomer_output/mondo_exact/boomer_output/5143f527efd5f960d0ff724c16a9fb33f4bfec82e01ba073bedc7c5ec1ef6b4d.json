@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5143f527efd5f960d0ff724c16a9fb33f4bfec82e01ba073bedc7c5ec1ef6b4d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN865669",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0054754",
+          "type" : "CLASS",
+          "lbl" : "encephalopathy, acute, infection-induced (herpes-specific), susceptibility to, 8"
+        },
+        {
+          "id" : "OMIM:617900",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN865669",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0054754",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0054754",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0054754",
+            "OMIM:617900",
+            "UMLS:CN865669"
+          ]
+        }
+      ]
+    }
+  ]
+}

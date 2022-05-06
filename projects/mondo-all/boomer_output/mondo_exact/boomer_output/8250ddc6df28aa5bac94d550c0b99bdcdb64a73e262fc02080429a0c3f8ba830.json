@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8250ddc6df28aa5bac94d550c0b99bdcdb64a73e262fc02080429a0c3f8ba830",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3810359",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014319",
+          "type" : "CLASS",
+          "lbl" : "renal hypodysplasia/aplasia 2"
+        },
+        {
+          "id" : "OMIM:615721",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014319",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615721",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3810359",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014319",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:615721",
+            "MONDO:0014319",
+            "UMLS:C3810359"
+          ]
+        }
+      ]
+    }
+  ]
+}

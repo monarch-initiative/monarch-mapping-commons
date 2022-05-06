@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:01ae7615e65ad0370d691d31245ae2397fc0ad13515b5c8f7ff2e93e58a6cc6c",
+      "nodes" : [
+        {
+          "id" : "SCTID:715666007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008960",
+          "type" : "CLASS",
+          "lbl" : "Charcot-Marie-Tooth disease-hearing loss-intellectual disability syndrome"
+        },
+        {
+          "id" : "Orphanet:90103",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:214370",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008960",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:90103",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:715666007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008960",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008960",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:214370",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:90103",
+            "MONDO:0008960",
+            "SCTID:715666007",
+            "OMIM:214370"
+          ]
+        }
+      ]
+    }
+  ]
+}

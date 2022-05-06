@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0cf0e1ef2acb5cdce744daf9c0821fd46d4e3d4fef5801cbabcdc03094807d26",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332998",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080148",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000874",
+          "type" : "CLASS",
+          "lbl" : "T-cell childhood lymphoblastic lymphoma"
+        },
+        {
+          "id" : "NCIT:C7210",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080148",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000874",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000874",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7210",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332998",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000874",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000874",
+            "DOID:0080148",
+            "NCIT:C7210",
+            "UMLS:C1332998"
+          ]
+        }
+      ]
+    }
+  ]
+}

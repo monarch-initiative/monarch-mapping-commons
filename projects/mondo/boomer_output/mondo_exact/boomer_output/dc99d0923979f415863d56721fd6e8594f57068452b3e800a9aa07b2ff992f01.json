@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dc99d0923979f415863d56721fd6e8594f57068452b3e800a9aa07b2ff992f01",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334607",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7210",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004143",
+          "type" : "CLASS",
+          "lbl" : "psammomatous meningioma"
+        },
+        {
+          "id" : "NCIT:C4331",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7210",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004143",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334607",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004143",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004143",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4331",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:7210",
+            "MONDO:0004143",
+            "UMLS:C0334607",
+            "NCIT:C4331"
+          ]
+        }
+      ]
+    }
+  ]
+}

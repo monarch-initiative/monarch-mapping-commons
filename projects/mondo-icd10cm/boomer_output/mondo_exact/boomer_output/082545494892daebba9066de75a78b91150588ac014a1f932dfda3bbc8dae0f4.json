@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:082545494892daebba9066de75a78b91150588ac014a1f932dfda3bbc8dae0f4",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN248510",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060712",
+          "type" : "CLASS",
+          "lbl" : "developmental delay, intellectual disability, obesity, and dysmorphic features"
+        },
+        {
+          "id" : "OMIM:617991",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN248510",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060712",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060712",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617991",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN248510",
+            "MONDO:0060712",
+            "OMIM:617991"
+          ]
+        }
+      ]
+    }
+  ]
+}

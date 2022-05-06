@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:96b22767a87e57de32f573298440d835eb24addee00c3ae78b014eab9e6eac42",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4015019",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080075",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014466",
+          "type" : "CLASS",
+          "lbl" : "Neu-Laxova syndrome 2"
+        },
+        {
+          "id" : "OMIM:616038",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014466",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616038",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080075",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014466",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4015019",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014466",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014466",
+            "OMIM:616038",
+            "DOID:0080075",
+            "UMLS:C4015019"
+          ]
+        }
+      ]
+    }
+  ]
+}

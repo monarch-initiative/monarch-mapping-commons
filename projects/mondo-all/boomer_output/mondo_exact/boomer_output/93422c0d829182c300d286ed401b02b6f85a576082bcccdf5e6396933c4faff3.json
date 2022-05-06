@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:93422c0d829182c300d286ed401b02b6f85a576082bcccdf5e6396933c4faff3",
+      "nodes" : [
+        {
+          "id" : "SCTID:719045009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:52994",
+          "type" : "CLASS",
+          "lbl" : "Orbital leiomyoma"
+        },
+        {
+          "id" : "MONDO:0018885",
+          "type" : "CLASS",
+          "lbl" : "orbital leiomyoma"
+        },
+        {
+          "id" : "UMLS:C4305000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN205236",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:719045009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018885",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018885",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:52994",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205236",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018885",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018885",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4305000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:719045009",
+            "MONDO:0018885",
+            "Orphanet:52994",
+            "UMLS:CN205236"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:02099356499ea37dcf0fd50613ced96a16389a78851f6398421480aae568ac0b",
+      "nodes" : [
+        {
+          "id" : "NCIT:C9183",
+          "type" : "CLASS",
+          "lbl" : "Adult Intracranial Solitary Fibrous Tumor/Hemangiopericytoma, Grade 3"
+        },
+        {
+          "id" : "MONDO:0003857",
+          "type" : "CLASS",
+          "lbl" : "adult intracranial malignant hemangiopericytoma"
+        },
+        {
+          "id" : "UMLS:C4331858",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1334558",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6333",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003857",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9183",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003857",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4331858",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334558",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003857",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6333",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003857",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C9183",
+            "MONDO:0003857",
+            "UMLS:C1334558",
+            "DOID:6333"
+          ]
+        }
+      ]
+    }
+  ]
+}

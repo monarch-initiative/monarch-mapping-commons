@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f7342bc76c08285d5f3bd46529d37c8b43cc3b5bdda22b8b51ea1501f00d86c8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2212024",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5480",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003463",
+          "type" : "CLASS",
+          "lbl" : "ovarian endometrioid adenofibroma"
+        },
+        {
+          "id" : "NCIT:C27287",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2212024",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003463",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003463",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27287",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5480",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003463",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003463",
+            "UMLS:C2212024",
+            "NCIT:C27287",
+            "DOID:5480"
+          ]
+        }
+      ]
+    }
+  ]
+}

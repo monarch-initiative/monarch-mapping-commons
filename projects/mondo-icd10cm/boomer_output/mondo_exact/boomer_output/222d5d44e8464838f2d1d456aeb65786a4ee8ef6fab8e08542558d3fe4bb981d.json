@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:222d5d44e8464838f2d1d456aeb65786a4ee8ef6fab8e08542558d3fe4bb981d",
+      "nodes" : [
+        {
+          "id" : "MESH:C566011",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1860551",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008634",
+          "type" : "CLASS",
+          "lbl" : "urticaria, familial localized heat"
+        },
+        {
+          "id" : "OMIM:191950",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1860551",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008634",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008634",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:191950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566011",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008634",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1860551",
+            "MONDO:0008634",
+            "OMIM:191950",
+            "MESH:C566011"
+          ]
+        }
+      ]
+    }
+  ]
+}

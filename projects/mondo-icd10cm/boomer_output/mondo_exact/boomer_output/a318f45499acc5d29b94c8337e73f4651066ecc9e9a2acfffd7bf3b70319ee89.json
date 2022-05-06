@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a318f45499acc5d29b94c8337e73f4651066ecc9e9a2acfffd7bf3b70319ee89",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3541518",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111150",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007514",
+          "type" : "CLASS",
+          "lbl" : "ectopia lentis 1, isolated, autosomal dominant"
+        },
+        {
+          "id" : "OMIM:129600",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3541518",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007514",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111150",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007514",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007514",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:129600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3541518",
+            "MONDO:0007514",
+            "OMIM:129600",
+            "DOID:0111150"
+          ]
+        }
+      ]
+    }
+  ]
+}

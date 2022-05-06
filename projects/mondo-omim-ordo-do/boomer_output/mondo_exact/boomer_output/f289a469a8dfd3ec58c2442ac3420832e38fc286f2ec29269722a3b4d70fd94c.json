@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f289a469a8dfd3ec58c2442ac3420832e38fc286f2ec29269722a3b4d70fd94c",
+      "nodes" : [
+        {
+          "id" : "SCTID:425887005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0854215",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0041825",
+          "type" : "CLASS",
+          "lbl" : "bacterial meningitis caused by gram-negative bacteria"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0854215",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0041825",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:425887005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0041825",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0041825",
+            "UMLS:C0854215",
+            "SCTID:425887005"
+          ]
+        }
+      ]
+    }
+  ]
+}

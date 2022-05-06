@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:72de949bb1863840c872ef8ce05697da032bce25705b672fd7fe3a889fa4c876",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237422",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015252",
+          "type" : "CLASS",
+          "lbl" : "severe microbrachycephaly-intellectual disability-athetoid cerebral palsy syndrome"
+        },
+        {
+          "id" : "Orphanet:1236",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015252",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1236",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237422",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015252",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015252",
+            "Orphanet:1236",
+            "UMLS:CN237422"
+          ]
+        }
+      ]
+    }
+  ]
+}

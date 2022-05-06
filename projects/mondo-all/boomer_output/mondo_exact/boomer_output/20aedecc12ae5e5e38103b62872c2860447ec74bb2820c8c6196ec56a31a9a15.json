@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:20aedecc12ae5e5e38103b62872c2860447ec74bb2820c8c6196ec56a31a9a15",
+      "nodes" : [
+        {
+          "id" : "MESH:D013345",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:21454007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0038525",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005099",
+          "type" : "CLASS",
+          "lbl" : "subarachnoid hemorrhage"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0038525",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005099",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:21454007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005099",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D013345",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005099",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005099",
+            "UMLS:C0038525",
+            "SCTID:21454007",
+            "MESH:D013345"
+          ]
+        }
+      ]
+    }
+  ]
+}

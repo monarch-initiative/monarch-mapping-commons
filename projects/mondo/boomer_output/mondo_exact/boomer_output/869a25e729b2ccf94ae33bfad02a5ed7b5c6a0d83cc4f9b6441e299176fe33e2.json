@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:869a25e729b2ccf94ae33bfad02a5ed7b5c6a0d83cc4f9b6441e299176fe33e2",
+      "nodes" : [
+        {
+          "id" : "MESH:C563625",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1835403",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007901",
+          "type" : "CLASS",
+          "lbl" : "levator-medial rectus synkinesis"
+        },
+        {
+          "id" : "OMIM:151610",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C563625",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007901",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007901",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:151610",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1835403",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007901",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007901",
+            "MESH:C563625",
+            "OMIM:151610",
+            "UMLS:C1835403"
+          ]
+        }
+      ]
+    }
+  ]
+}

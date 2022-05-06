@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6ec034e701c3486087d801e9413b4292e521c658f9c1dddf473bfe88467b35d2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335172",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002481",
+          "type" : "CLASS",
+          "lbl" : "ovarian neuroendocrine neoplasm"
+        },
+        {
+          "id" : "NCIT:C5237",
+          "type" : "CLASS",
+          "lbl" : "Ovarian Neuroendocrine Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002481",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5237",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002481",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335172",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002481",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C5237",
+            "MONDO:0002481",
+            "DOID:3002",
+            "UMLS:C1335172"
+          ]
+        }
+      ]
+    }
+  ]
+}

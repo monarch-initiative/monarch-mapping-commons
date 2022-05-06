@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:83ebf65e6195f3d71217b2762b1e71aed11a571f9c308272ad3b68631dd59129",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204974",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018322",
+          "type" : "CLASS",
+          "lbl" : "HSD10 disease, infantile type"
+        },
+        {
+          "id" : "Orphanet:391428",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018322",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:391428",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204974",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018322",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018322",
+            "Orphanet:391428",
+            "UMLS:CN204974"
+          ]
+        }
+      ]
+    }
+  ]
+}

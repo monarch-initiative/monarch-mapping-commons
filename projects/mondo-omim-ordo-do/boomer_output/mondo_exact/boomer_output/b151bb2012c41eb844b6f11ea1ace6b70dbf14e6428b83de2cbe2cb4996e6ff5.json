@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b151bb2012c41eb844b6f11ea1ace6b70dbf14e6428b83de2cbe2cb4996e6ff5",
+      "nodes" : [
+        {
+          "id" : "MESH:C565666",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1857493",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009037",
+          "type" : "CLASS",
+          "lbl" : "craniosynostosis with anomalies of the cranial base and digits"
+        },
+        {
+          "id" : "OMIM:218530",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1857493",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009037",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009037",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:218530",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565666",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009037",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009037",
+            "UMLS:C1857493",
+            "OMIM:218530",
+            "MESH:C565666"
+          ]
+        }
+      ]
+    }
+  ]
+}

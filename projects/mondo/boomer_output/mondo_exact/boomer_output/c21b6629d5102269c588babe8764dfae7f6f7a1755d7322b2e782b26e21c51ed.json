@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c21b6629d5102269c588babe8764dfae7f6f7a1755d7322b2e782b26e21c51ed",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237640",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018606",
+          "type" : "CLASS",
+          "lbl" : "extensive peripapillary myelinated nerve fibers"
+        },
+        {
+          "id" : "Orphanet:440724",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237640",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018606",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018606",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:440724",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018606",
+            "UMLS:CN237640",
+            "Orphanet:440724"
+          ]
+        }
+      ]
+    }
+  ]
+}

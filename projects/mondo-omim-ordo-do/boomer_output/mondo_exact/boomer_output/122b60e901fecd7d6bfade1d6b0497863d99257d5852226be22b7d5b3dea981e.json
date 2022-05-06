@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:122b60e901fecd7d6bfade1d6b0497863d99257d5852226be22b7d5b3dea981e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332869",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050910",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000525",
+          "type" : "CLASS",
+          "lbl" : "cecum villous adenoma"
+        },
+        {
+          "id" : "NCIT:C5520",
+          "type" : "CLASS",
+          "lbl" : "Cecum Villous Adenoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0050910",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000525",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332869",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000525",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000525",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5520",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0050910",
+            "MONDO:0000525",
+            "UMLS:C1332869",
+            "NCIT:C5520"
+          ]
+        }
+      ]
+    }
+  ]
+}

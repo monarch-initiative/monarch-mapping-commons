@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e115ad042b70df50d7a209b9e77fe63503478df4c95ca33f092868203449c40e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0454651",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:458713",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIMPS:606711",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000724",
+          "type" : "CLASS",
+          "lbl" : "specific language impairment"
+        },
+        {
+          "id" : "DOID:0060244",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0454651",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000724",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000724",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:458713",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060244",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000724",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000724",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:606711",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:458713",
+            "DOID:0060244",
+            "OMIMPS:606711",
+            "UMLS:C0454651",
+            "MONDO:0000724"
+          ]
+        }
+      ]
+    }
+  ]
+}

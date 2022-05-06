@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1806044fc0961e3e6f674d78fc497fa263ed81069eaa7fbfebe17d987093abe2",
+      "nodes" : [
+        {
+          "id" : "MESH:D006229",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0018567",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3158",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006556",
+          "type" : "CLASS",
+          "lbl" : "hand dermatosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0018567",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006556",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D006229",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006556",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3158",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006556",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006556",
+            "UMLS:C0018567",
+            "MESH:D006229",
+            "DOID:3158"
+          ]
+        }
+      ]
+    }
+  ]
+}

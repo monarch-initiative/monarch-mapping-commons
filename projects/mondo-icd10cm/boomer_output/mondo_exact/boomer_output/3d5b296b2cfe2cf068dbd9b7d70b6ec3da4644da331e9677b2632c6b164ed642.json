@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3d5b296b2cfe2cf068dbd9b7d70b6ec3da4644da331e9677b2632c6b164ed642",
+      "nodes" : [
+        {
+          "id" : "MESH:C565093",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1852063",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007463",
+          "type" : "CLASS",
+          "lbl" : "distal osteosclerosis"
+        },
+        {
+          "id" : "OMIM:126250",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1852063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007463",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007463",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:126250",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565093",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007463",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1852063",
+            "MONDO:0007463",
+            "OMIM:126250",
+            "MESH:C565093"
+          ]
+        }
+      ]
+    }
+  ]
+}

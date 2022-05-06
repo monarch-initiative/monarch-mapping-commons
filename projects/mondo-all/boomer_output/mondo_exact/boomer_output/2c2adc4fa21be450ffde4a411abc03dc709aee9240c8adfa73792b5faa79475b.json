@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2c2adc4fa21be450ffde4a411abc03dc709aee9240c8adfa73792b5faa79475b",
+      "nodes" : [
+        {
+          "id" : "MESH:C537142",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1833790",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008141",
+          "type" : "CLASS",
+          "lbl" : "ossicular malformations, familial"
+        },
+        {
+          "id" : "OMIM:165680",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008141",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:165680",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1833790",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008141",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537142",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008141",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008141",
+            "OMIM:165680",
+            "UMLS:C1833790",
+            "MESH:C537142"
+          ]
+        }
+      ]
+    }
+  ]
+}

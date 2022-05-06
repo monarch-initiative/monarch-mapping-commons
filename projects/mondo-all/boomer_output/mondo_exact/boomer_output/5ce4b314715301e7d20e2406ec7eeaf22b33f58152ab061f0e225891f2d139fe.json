@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5ce4b314715301e7d20e2406ec7eeaf22b33f58152ab061f0e225891f2d139fe",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332632",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5701",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003593",
+          "type" : "CLASS",
+          "lbl" : "breast liposarcoma"
+        },
+        {
+          "id" : "NCIT:C5187",
+          "type" : "CLASS",
+          "lbl" : "Breast Liposarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332632",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003593",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003593",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5187",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5701",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003593",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003593",
+            "UMLS:C1332632",
+            "NCIT:C5187",
+            "DOID:5701"
+          ]
+        }
+      ]
+    }
+  ]
+}

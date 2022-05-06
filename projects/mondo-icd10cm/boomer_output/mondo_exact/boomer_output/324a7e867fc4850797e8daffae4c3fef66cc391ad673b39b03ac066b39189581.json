@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:324a7e867fc4850797e8daffae4c3fef66cc391ad673b39b03ac066b39189581",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205975",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019320",
+          "type" : "CLASS",
+          "lbl" : "acanthokeratolytic verrucous nevus"
+        },
+        {
+          "id" : "Orphanet:79468",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019320",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79468",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205975",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019320",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019320",
+            "Orphanet:79468",
+            "UMLS:CN205975"
+          ]
+        }
+      ]
+    }
+  ]
+}

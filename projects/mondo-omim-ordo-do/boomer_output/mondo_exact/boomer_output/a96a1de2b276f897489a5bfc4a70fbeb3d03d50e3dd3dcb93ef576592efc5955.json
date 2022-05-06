@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a96a1de2b276f897489a5bfc4a70fbeb3d03d50e3dd3dcb93ef576592efc5955",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0281329",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7656",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004320",
+          "type" : "CLASS",
+          "lbl" : "adult infiltrating astrocytic neoplasm"
+        },
+        {
+          "id" : "NCIT:C8289",
+          "type" : "CLASS",
+          "lbl" : "Adult Infiltrating Astrocytic Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7656",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004320",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004320",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8289",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0281329",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004320",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004320",
+            "DOID:7656",
+            "NCIT:C8289",
+            "UMLS:C0281329"
+          ]
+        }
+      ]
+    }
+  ]
+}

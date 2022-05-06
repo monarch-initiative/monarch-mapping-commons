@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2aa7d5c1b6957024689ac2e0a2ecd840a5352375c5d129b08bf03cb77229ac3a",
+      "nodes" : [
+        {
+          "id" : "MESH:C565249",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011650",
+          "type" : "CLASS",
+          "lbl" : "atrioventricular septal defect, susceptibility to, 2"
+        },
+        {
+          "id" : "OMIM:606217",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565249",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011650",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011650",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:606217",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C565249",
+            "MONDO:0011650",
+            "OMIM:606217"
+          ]
+        }
+      ]
+    }
+  ]
+}

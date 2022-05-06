@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c82b82d11999bb51528762980e625e8e743a4a3ab4ff636891722e2b5b80dcae",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1321865",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3079",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002505",
+          "type" : "CLASS",
+          "lbl" : "childhood astrocytic tumor"
+        },
+        {
+          "id" : "NCIT:C9022",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3079",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002505",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002505",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9022",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1321865",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002505",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3079",
+            "MONDO:0002505",
+            "NCIT:C9022",
+            "UMLS:C1321865"
+          ]
+        }
+      ]
+    }
+  ]
+}

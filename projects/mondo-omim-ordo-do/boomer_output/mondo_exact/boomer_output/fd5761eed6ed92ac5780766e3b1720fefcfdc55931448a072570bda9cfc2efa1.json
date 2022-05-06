@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fd5761eed6ed92ac5780766e3b1720fefcfdc55931448a072570bda9cfc2efa1",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205116",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C6960",
+          "type" : "CLASS",
+          "lbl" : "Oligodendroglial Tumor"
+        },
+        {
+          "id" : "UMLS:C1335110",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:46484",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018744",
+          "type" : "CLASS",
+          "lbl" : "oligodendroglial tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018744",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:46484",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018744",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6960",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018744",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1335110",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205116",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018744",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:46484",
+            "MONDO:0018744",
+            "NCIT:C6960",
+            "UMLS:CN205116"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d2d086bc6442a71817b66053948550ee0af6a2fb7f4598f7466766d28df7951b",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205101",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2960",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002470",
+          "type" : "CLASS",
+          "lbl" : "photosensitive trichothiodystrophy"
+        },
+        {
+          "id" : "Orphanet:453",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002470",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:453",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205101",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2960",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002470",
+            "Orphanet:453",
+            "UMLS:CN205101",
+            "DOID:2960"
+          ]
+        }
+      ]
+    }
+  ]
+}

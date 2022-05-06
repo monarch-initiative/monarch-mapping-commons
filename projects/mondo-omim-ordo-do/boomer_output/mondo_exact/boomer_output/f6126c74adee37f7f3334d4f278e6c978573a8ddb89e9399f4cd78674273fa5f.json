@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f6126c74adee37f7f3334d4f278e6c978573a8ddb89e9399f4cd78674273fa5f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334691",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7206",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004141",
+          "type" : "CLASS",
+          "lbl" : "melanomatosis"
+        },
+        {
+          "id" : "NCIT:C9499",
+          "type" : "CLASS",
+          "lbl" : "Melanomatosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334691",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004141",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004141",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9499",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004141",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1334691",
+            "MONDO:0004141",
+            "NCIT:C9499",
+            "DOID:7206"
+          ]
+        }
+      ]
+    }
+  ]
+}

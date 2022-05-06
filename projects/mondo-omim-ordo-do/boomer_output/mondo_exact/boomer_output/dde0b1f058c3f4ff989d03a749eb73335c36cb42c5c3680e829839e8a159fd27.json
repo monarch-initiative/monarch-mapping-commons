@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dde0b1f058c3f4ff989d03a749eb73335c36cb42c5c3680e829839e8a159fd27",
+      "nodes" : [
+        {
+          "id" : "SCTID:236811002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0403818",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0023554",
+          "type" : "CLASS",
+          "lbl" : "acquired testicular failure"
+        },
+        {
+          "id" : "NCIT:C131091",
+          "type" : "CLASS",
+          "lbl" : "Acquired Testicular Failure"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0023554",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C131091",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0403818",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0023554",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:236811002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0023554",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0023554",
+            "NCIT:C131091",
+            "SCTID:236811002",
+            "UMLS:C0403818"
+          ]
+        }
+      ]
+    }
+  ]
+}

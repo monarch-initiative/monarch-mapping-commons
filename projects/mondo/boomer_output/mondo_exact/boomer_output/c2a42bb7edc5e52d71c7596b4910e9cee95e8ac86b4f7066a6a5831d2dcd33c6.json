@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c2a42bb7edc5e52d71c7596b4910e9cee95e8ac86b4f7066a6a5831d2dcd33c6",
+      "nodes" : [
+        {
+          "id" : "MONDO:0001921",
+          "type" : "CLASS",
+          "lbl" : "chronic atticoantral disease"
+        },
+        {
+          "id" : "UMLS:C0155441",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:14248",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:267759006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0565831",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:14248",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001921",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:267759006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001921",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001921",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0155441",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0565831",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001921",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:14248",
+            "MONDO:0001921",
+            "SCTID:267759006",
+            "UMLS:C0565831"
+          ]
+        }
+      ]
+    }
+  ]
+}

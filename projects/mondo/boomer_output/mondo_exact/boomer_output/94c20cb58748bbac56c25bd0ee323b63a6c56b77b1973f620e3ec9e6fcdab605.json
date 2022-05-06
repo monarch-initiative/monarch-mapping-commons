@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:94c20cb58748bbac56c25bd0ee323b63a6c56b77b1973f620e3ec9e6fcdab605",
+      "nodes" : [
+        {
+          "id" : "MESH:C535723",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1863622",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011356",
+          "type" : "CLASS",
+          "lbl" : "exostosis, Dupuytren subungual"
+        },
+        {
+          "id" : "OMIM:603656",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C535723",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011356",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011356",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603656",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1863622",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011356",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011356",
+            "MESH:C535723",
+            "OMIM:603656",
+            "UMLS:C1863622"
+          ]
+        }
+      ]
+    }
+  ]
+}

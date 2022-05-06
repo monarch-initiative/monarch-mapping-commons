@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:739b7042b8139c931ee30c814c73c2379c93443e87a21a1ea9d6ac5e3fe94629",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN776860",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050543",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018778",
+          "type" : "CLASS",
+          "lbl" : "intermediate Charcot-Marie-Tooth disease"
+        },
+        {
+          "id" : "Orphanet:476123",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN776860",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018778",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050543",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018778",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018778",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:476123",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018778",
+            "UMLS:CN776860",
+            "DOID:0050543",
+            "Orphanet:476123"
+          ]
+        }
+      ]
+    }
+  ]
+}

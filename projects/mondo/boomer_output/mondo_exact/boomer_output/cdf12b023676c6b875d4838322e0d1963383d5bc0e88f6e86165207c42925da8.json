@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cdf12b023676c6b875d4838322e0d1963383d5bc0e88f6e86165207c42925da8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4539985",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060551",
+          "type" : "CLASS",
+          "lbl" : "cerebellar atrophy, developmental delay, and seizures"
+        },
+        {
+          "id" : "OMIM:617643",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4539985",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060551",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060551",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617643",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4539985",
+            "MONDO:0060551",
+            "OMIM:617643"
+          ]
+        }
+      ]
+    }
+  ]
+}

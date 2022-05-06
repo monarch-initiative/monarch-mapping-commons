@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f5f441598620ef462a99024b8c8c2bbf32e99584f24259286a82c4705f1d9395",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206848",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019931",
+          "type" : "CLASS",
+          "lbl" : "Leydig cell hypoplasia due to partial LH resistance"
+        },
+        {
+          "id" : "Orphanet:96266",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019931",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:96266",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN206848",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019931",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019931",
+            "Orphanet:96266",
+            "UMLS:CN206848"
+          ]
+        }
+      ]
+    }
+  ]
+}

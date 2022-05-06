@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:83ff1759e06540440f1ae4e2490fe9833c7921463958544545b78e0e6b382ebe",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207093",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020298",
+          "type" : "CLASS",
+          "lbl" : "Prader-Willi syndrome due to maternal uniparental disomy of chromosome 15"
+        },
+        {
+          "id" : "Orphanet:98754",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020298",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98754",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN207093",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020298",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020298",
+            "Orphanet:98754",
+            "UMLS:CN207093"
+          ]
+        }
+      ]
+    }
+  ]
+}

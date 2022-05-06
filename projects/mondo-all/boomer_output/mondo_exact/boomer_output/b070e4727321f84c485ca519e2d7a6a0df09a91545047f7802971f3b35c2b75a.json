@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b070e4727321f84c485ca519e2d7a6a0df09a91545047f7802971f3b35c2b75a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1510961",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5153",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003306",
+          "type" : "CLASS",
+          "lbl" : "atypical neurofibroma"
+        },
+        {
+          "id" : "NCIT:C41426",
+          "type" : "CLASS",
+          "lbl" : "Neurofibroma with Atypia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003306",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C41426",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1510961",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003306",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5153",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003306",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003306",
+            "NCIT:C41426",
+            "UMLS:C1510961",
+            "DOID:5153"
+          ]
+        }
+      ]
+    }
+  ]
+}

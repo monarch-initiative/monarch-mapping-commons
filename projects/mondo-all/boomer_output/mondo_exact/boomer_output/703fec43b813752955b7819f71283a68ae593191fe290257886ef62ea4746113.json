@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:703fec43b813752955b7819f71283a68ae593191fe290257886ef62ea4746113",
+      "nodes" : [
+        {
+          "id" : "MESH:D019449",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:K91.850",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005312",
+          "type" : "CLASS",
+          "lbl" : "pouchitis"
+        },
+        {
+          "id" : "Orphanet:217067",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0376620",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D019449",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005312",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0376620",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005312",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005312",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:217067",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:K91.850",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005312",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:K91.850",
+            "MESH:D019449",
+            "Orphanet:217067",
+            "UMLS:C0376620",
+            "MONDO:0005312"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c8c8d4bc523b5e0b0409d80717a7e395ddd41c60b3eb3fa6937c05fdf5b391ec",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:Q52.11",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015850",
+          "type" : "CLASS",
+          "lbl" : "transverse vaginal septum"
+        },
+        {
+          "id" : "Orphanet:180160",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:Q52.11",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015850",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015850",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:180160",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:Q52.11",
+            "MONDO:0015850",
+            "Orphanet:180160"
+          ]
+        }
+      ]
+    }
+  ]
+}

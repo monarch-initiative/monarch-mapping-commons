@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e2d97b6ac016d947a2deec69ed05f18f333a3b64b032d5aba94825bc2ab15bc5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519321",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7733",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004346",
+          "type" : "CLASS",
+          "lbl" : "signet ring cell intrahepatic cholangiocarcinoma"
+        },
+        {
+          "id" : "NCIT:C41619",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1519321",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004346",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004346",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C41619",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7733",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004346",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1519321",
+            "MONDO:0004346",
+            "NCIT:C41619",
+            "DOID:7733"
+          ]
+        }
+      ]
+    }
+  ]
+}

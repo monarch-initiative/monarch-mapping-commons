@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:271b507b8fc9bf58e7a5be8ec6454e6d27565e4dd0350f3101f4ad6cbb7c275d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227821",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020211",
+          "type" : "CLASS",
+          "lbl" : "syndromic keratoconus"
+        },
+        {
+          "id" : "Orphanet:98623",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020211",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98623",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227821",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020211",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020211",
+            "Orphanet:98623",
+            "UMLS:CN227821"
+          ]
+        }
+      ]
+    }
+  ]
+}

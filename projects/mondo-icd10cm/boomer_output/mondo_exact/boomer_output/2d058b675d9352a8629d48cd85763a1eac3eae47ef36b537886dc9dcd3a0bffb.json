@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2d058b675d9352a8629d48cd85763a1eac3eae47ef36b537886dc9dcd3a0bffb",
+      "nodes" : [
+        {
+          "id" : "NCIT:C3330",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:304055",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:127024001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0032019",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017611",
+          "type" : "CLASS",
+          "lbl" : "pituitary tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0032019",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017611",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017611",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:304055",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:127024001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017611",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017611",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3330",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017611",
+            "UMLS:C0032019",
+            "SCTID:127024001",
+            "NCIT:C3330",
+            "Orphanet:304055"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f2484a1112541ca298394d4dd365811470545b8fc226899f2055a2e68b14f508",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206636",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019729",
+          "type" : "CLASS",
+          "lbl" : "light and heavy chain deposition disease"
+        },
+        {
+          "id" : "Orphanet:93557",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206636",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019729",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019729",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93557",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN206636",
+            "MONDO:0019729",
+            "Orphanet:93557"
+          ]
+        }
+      ]
+    }
+  ]
+}

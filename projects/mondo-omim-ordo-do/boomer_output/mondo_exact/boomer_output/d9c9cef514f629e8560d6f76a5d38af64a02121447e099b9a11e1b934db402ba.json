@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d9c9cef514f629e8560d6f76a5d38af64a02121447e099b9a11e1b934db402ba",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0154209",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:14336",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001946",
+          "type" : "CLASS",
+          "lbl" : "hyperestrogenism"
+        },
+        {
+          "id" : "SCTID:37295009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:E28.0",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:37295009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001946",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:14336",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001946",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0154209",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001946",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:E28.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001946",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:14336",
+            "ICD10CM:E28.0",
+            "SCTID:37295009",
+            "MONDO:0001946",
+            "UMLS:C0154209"
+          ]
+        }
+      ]
+    }
+  ]
+}

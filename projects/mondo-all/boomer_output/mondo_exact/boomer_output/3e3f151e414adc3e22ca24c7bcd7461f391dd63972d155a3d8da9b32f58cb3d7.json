@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3e3f151e414adc3e22ca24c7bcd7461f391dd63972d155a3d8da9b32f58cb3d7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN474476",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044696",
+          "type" : "CLASS",
+          "lbl" : "early-onset progressive encephalopathy-hearing loss-pons hypoplasia-brain atrophy syndrome"
+        },
+        {
+          "id" : "Orphanet:500144",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:617669",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0044696",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617669",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044696",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:500144",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN474476",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044696",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0044696",
+            "OMIM:617669",
+            "Orphanet:500144",
+            "UMLS:CN474476"
+          ]
+        }
+      ]
+    }
+  ]
+}

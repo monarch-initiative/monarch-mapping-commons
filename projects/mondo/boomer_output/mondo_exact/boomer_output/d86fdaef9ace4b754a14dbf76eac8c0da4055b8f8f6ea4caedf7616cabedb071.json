@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d86fdaef9ace4b754a14dbf76eac8c0da4055b8f8f6ea4caedf7616cabedb071",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:956",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004820",
+          "type" : "CLASS",
+          "lbl" : "peripheral nerve schwannoma"
+        },
+        {
+          "id" : "NCIT:C41430",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:956",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004820",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1519001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004820",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004820",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C41430",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:956",
+            "MONDO:0004820",
+            "UMLS:C1519001",
+            "NCIT:C41430"
+          ]
+        }
+      ]
+    }
+  ]
+}

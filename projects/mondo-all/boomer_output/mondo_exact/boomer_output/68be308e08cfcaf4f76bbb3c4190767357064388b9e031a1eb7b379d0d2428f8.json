@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:68be308e08cfcaf4f76bbb3c4190767357064388b9e031a1eb7b379d0d2428f8",
+      "nodes" : [
+        {
+          "id" : "MESH:C538040",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0795858",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016965",
+          "type" : "CLASS",
+          "lbl" : "partial duplication of the long arm of chromosome 15"
+        },
+        {
+          "id" : "Orphanet:262950",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C538040",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016965",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016965",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:262950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0795858",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016965",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C538040",
+            "MONDO:0016965",
+            "Orphanet:262950",
+            "UMLS:C0795858"
+          ]
+        }
+      ]
+    }
+  ]
+}

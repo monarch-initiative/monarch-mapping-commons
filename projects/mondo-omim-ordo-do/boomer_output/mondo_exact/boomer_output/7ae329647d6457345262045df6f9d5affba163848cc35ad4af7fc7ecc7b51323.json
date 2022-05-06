@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7ae329647d6457345262045df6f9d5affba163848cc35ad4af7fc7ecc7b51323",
+      "nodes" : [
+        {
+          "id" : "MESH:C535300",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1863416",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007038",
+          "type" : "CLASS",
+          "lbl" : "Achoo syndrome"
+        },
+        {
+          "id" : "OMIM:100820",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1863416",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007038",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007038",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:100820",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535300",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007038",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007038",
+            "UMLS:C1863416",
+            "OMIM:100820",
+            "MESH:C535300"
+          ]
+        }
+      ]
+    }
+  ]
+}

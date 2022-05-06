@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f84ad02861283ad4906876cc68023a350b0342a73c1b2c7db37e0954106e9680",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2675497",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012942",
+          "type" : "CLASS",
+          "lbl" : "lung cancer susceptibility 3"
+        },
+        {
+          "id" : "OMIM:612571",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2675497",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012942",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012942",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:612571",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2675497",
+            "MONDO:0012942",
+            "OMIM:612571"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5134c0e7d14a26e603d6e0bfb14169ee91b2a8d1154f4f609f9e816cde5f4ed2",
+      "nodes" : [
+        {
+          "id" : "MESH:C563479",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1833689",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008166",
+          "type" : "CLASS",
+          "lbl" : "ovalocytosis, hereditary hemolytic, with defective erythropoiesis"
+        },
+        {
+          "id" : "OMIM:166910",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008166",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:166910",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563479",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008166",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1833689",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008166",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008166",
+            "OMIM:166910",
+            "MESH:C563479",
+            "UMLS:C1833689"
+          ]
+        }
+      ]
+    }
+  ]
+}

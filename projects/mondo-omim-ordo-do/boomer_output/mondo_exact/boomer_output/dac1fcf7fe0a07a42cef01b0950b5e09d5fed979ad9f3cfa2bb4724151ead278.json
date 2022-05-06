@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dac1fcf7fe0a07a42cef01b0950b5e09d5fed979ad9f3cfa2bb4724151ead278",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0153637",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:14384",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C71.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:363469001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001952",
+          "type" : "CLASS",
+          "lbl" : "parietal lobe cancer"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:C71.3",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001952",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:363469001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001952",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0153637",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001952",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:14384",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001952",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C71.3",
+            "UMLS:C0153637",
+            "SCTID:363469001",
+            "MONDO:0001952",
+            "DOID:14384"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6a99979c5eef8010d576634e9ebb7e6642afaab42c02561bb67364dde4dbb378",
+      "nodes" : [
+        {
+          "id" : "SCTID:763622006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN200057",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015647",
+          "type" : "CLASS",
+          "lbl" : "thinking seizures"
+        },
+        {
+          "id" : "Orphanet:166424",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN200057",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015647",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015647",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:166424",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:763622006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015647",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015647",
+            "UMLS:CN200057",
+            "Orphanet:166424",
+            "SCTID:763622006"
+          ]
+        }
+      ]
+    }
+  ]
+}

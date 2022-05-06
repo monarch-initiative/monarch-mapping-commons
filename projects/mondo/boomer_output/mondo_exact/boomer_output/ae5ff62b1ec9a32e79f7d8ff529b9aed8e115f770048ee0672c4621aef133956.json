@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ae5ff62b1ec9a32e79f7d8ff529b9aed8e115f770048ee0672c4621aef133956",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1510795",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1642",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002066",
+          "type" : "CLASS",
+          "lbl" : "breast adenomyoepithelioma"
+        },
+        {
+          "id" : "NCIT:C6899",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1510795",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002066",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002066",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6899",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1642",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002066",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1510795",
+            "MONDO:0002066",
+            "NCIT:C6899",
+            "DOID:1642"
+          ]
+        }
+      ]
+    }
+  ]
+}

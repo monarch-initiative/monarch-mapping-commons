@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6f9fd1e9a44f26b85e1893a139a08975494e5cb5f01313f7f9a4501cb6cc3704",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336904",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8188",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004491",
+          "type" : "CLASS",
+          "lbl" : "uterine corpus choriocarcinoma"
+        },
+        {
+          "id" : "NCIT:C27246",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004491",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27246",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8188",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004491",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336904",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004491",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004491",
+            "NCIT:C27246",
+            "DOID:8188",
+            "UMLS:C1336904"
+          ]
+        }
+      ]
+    }
+  ]
+}

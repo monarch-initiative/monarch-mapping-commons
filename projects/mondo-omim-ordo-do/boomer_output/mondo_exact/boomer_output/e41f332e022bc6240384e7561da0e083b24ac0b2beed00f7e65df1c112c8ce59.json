@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e41f332e022bc6240384e7561da0e083b24ac0b2beed00f7e65df1c112c8ce59",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204070",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017932",
+          "type" : "CLASS",
+          "lbl" : "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome"
+        },
+        {
+          "id" : "Orphanet:324416",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN204070",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017932",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017932",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:324416",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN204070",
+            "MONDO:0017932",
+            "Orphanet:324416"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c2b4b79dd221c672dc5df8c1012d1b981e5ede4952f85d7aaac5bbcf2124b05c",
+      "nodes" : [
+        {
+          "id" : "SCTID:40055000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0149516",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006031",
+          "type" : "CLASS",
+          "lbl" : "chronic rhinosinusitis"
+        },
+        {
+          "id" : "NCIT:C35151",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:40055000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006031",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006031",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35151",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0149516",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006031",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006031",
+            "SCTID:40055000",
+            "NCIT:C35151",
+            "UMLS:C0149516"
+          ]
+        }
+      ]
+    }
+  ]
+}

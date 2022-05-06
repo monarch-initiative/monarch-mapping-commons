@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:808e70d8e958914f6ec2852d32f9580f494955fae1e249c0c89d87830704b317",
+      "nodes" : [
+        {
+          "id" : "MESH:D020521",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:230690007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005098",
+          "type" : "CLASS",
+          "lbl" : "stroke disorder"
+        },
+        {
+          "id" : "NCIT:C3390",
+          "type" : "CLASS",
+          "lbl" : "Stroke"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:230690007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005098",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D020521",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005098",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005098",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3390",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:230690007",
+            "MONDO:0005098",
+            "MESH:D020521",
+            "NCIT:C3390"
+          ]
+        }
+      ]
+    }
+  ]
+}

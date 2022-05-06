@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b9279c674a09f825509d6bce347e4c93c95ea7a940e23949e0b72a8b5caca81a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226098",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018357",
+          "type" : "CLASS",
+          "lbl" : "neonatal antiphospholipid syndrome"
+        },
+        {
+          "id" : "Orphanet:398097",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN226098",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018357",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018357",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:398097",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN226098",
+            "MONDO:0018357",
+            "Orphanet:398097"
+          ]
+        }
+      ]
+    }
+  ]
+}

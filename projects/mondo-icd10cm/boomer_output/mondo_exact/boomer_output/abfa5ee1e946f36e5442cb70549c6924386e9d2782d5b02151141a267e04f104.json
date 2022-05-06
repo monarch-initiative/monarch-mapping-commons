@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:abfa5ee1e946f36e5442cb70549c6924386e9d2782d5b02151141a267e04f104",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202202",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016859",
+          "type" : "CLASS",
+          "lbl" : "blepharophimosis-epicanthus inversus-ptosis due to copy number variations"
+        },
+        {
+          "id" : "Orphanet:261579",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016859",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:261579",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202202",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016859",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016859",
+            "Orphanet:261579",
+            "UMLS:CN202202"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:599ca9ec6f956636ca9c8eb525b06f84e1d034d0018158a509fca0e28ce1cc6a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227675",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019689",
+          "type" : "CLASS",
+          "lbl" : "perlecan-related bone disorder"
+        },
+        {
+          "id" : "Orphanet:93424",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019689",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93424",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227675",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019689",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019689",
+            "Orphanet:93424",
+            "UMLS:CN227675"
+          ]
+        }
+      ]
+    }
+  ]
+}

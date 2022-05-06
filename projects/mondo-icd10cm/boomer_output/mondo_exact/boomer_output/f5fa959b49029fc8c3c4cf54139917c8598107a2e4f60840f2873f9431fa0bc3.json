@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f5fa959b49029fc8c3c4cf54139917c8598107a2e4f60840f2873f9431fa0bc3",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN197327",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015042",
+          "type" : "CLASS",
+          "lbl" : "primary plasmacytoma of the bone"
+        },
+        {
+          "id" : "Orphanet:100021",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015042",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100021",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN197327",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015042",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015042",
+            "Orphanet:100021",
+            "UMLS:CN197327"
+          ]
+        }
+      ]
+    }
+  ]
+}

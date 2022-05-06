@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b8d0eb17fb2ff8278b6e4867d5ac0243cc088ca1bea4a3c9e092c5ace41c693e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203278",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008513",
+          "type" : "CLASS",
+          "lbl" : "synpolydactyly type 1"
+        },
+        {
+          "id" : "Orphanet:295195",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:186000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008513",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:295195",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008513",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:186000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203278",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008513",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:295195",
+            "MONDO:0008513",
+            "OMIM:186000",
+            "UMLS:CN203278"
+          ]
+        }
+      ]
+    }
+  ]
+}

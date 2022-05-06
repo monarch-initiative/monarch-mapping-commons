@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5043d0e1f7fd1e9c119e3aa086f465b1e7b69c3f2719577f4d5d29b10741480f",
+      "nodes" : [
+        {
+          "id" : "MESH:C563607",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1835173",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007936",
+          "type" : "CLASS",
+          "lbl" : "macular dystrophy, fenestrated sheen type"
+        },
+        {
+          "id" : "OMIM:153890",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007936",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:153890",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563607",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007936",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1835173",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007936",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:153890",
+            "MONDO:0007936",
+            "MESH:C563607",
+            "UMLS:C1835173"
+          ]
+        }
+      ]
+    }
+  ]
+}

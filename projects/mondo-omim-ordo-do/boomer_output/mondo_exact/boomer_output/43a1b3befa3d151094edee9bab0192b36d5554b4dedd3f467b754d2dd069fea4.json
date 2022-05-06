@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:43a1b3befa3d151094edee9bab0192b36d5554b4dedd3f467b754d2dd069fea4",
+      "nodes" : [
+        {
+          "id" : "MESH:C536276",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1861967",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007247",
+          "type" : "CLASS",
+          "lbl" : "basal ganglia calcification, idiopathic, childhood-onset"
+        },
+        {
+          "id" : "OMIM:114100",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1861967",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007247",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536276",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007247",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007247",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:114100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1861967",
+            "MONDO:0007247",
+            "OMIM:114100",
+            "MESH:C536276"
+          ]
+        }
+      ]
+    }
+  ]
+}

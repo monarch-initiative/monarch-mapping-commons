@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:395d868d693138e3f7caf64e49fd14a9eef2deab32d3dbef48c8b63f0d3d45b9",
+      "nodes" : [
+        {
+          "id" : "DOID:0070346",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0032817",
+          "type" : "CLASS",
+          "lbl" : "neurodevelopmental disorder with cataracts, poor growth, and dysmorphic facies"
+        },
+        {
+          "id" : "OMIM:618571",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0032817",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:618571",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070346",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0032817",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:618571",
+            "MONDO:0032817",
+            "DOID:0070346"
+          ]
+        }
+      ]
+    }
+  ]
+}

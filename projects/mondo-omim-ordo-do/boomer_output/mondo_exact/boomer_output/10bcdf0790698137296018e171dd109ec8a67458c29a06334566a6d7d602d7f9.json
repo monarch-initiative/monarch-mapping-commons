@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:10bcdf0790698137296018e171dd109ec8a67458c29a06334566a6d7d602d7f9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333308",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5923",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003707",
+          "type" : "CLASS",
+          "lbl" : "distal biliary tract carcinoma"
+        },
+        {
+          "id" : "NCIT:C7109",
+          "type" : "CLASS",
+          "lbl" : "Distal Bile Duct Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5923",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003707",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333308",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003707",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003707",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7109",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5923",
+            "MONDO:0003707",
+            "UMLS:C1333308",
+            "NCIT:C7109"
+          ]
+        }
+      ]
+    }
+  ]
+}

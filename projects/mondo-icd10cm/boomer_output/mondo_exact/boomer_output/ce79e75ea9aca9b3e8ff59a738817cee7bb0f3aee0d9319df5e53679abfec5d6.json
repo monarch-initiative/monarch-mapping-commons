@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ce79e75ea9aca9b3e8ff59a738817cee7bb0f3aee0d9319df5e53679abfec5d6",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202602",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017173",
+          "type" : "CLASS",
+          "lbl" : "non-syndromic male infertility due to sperm motility disorder"
+        },
+        {
+          "id" : "Orphanet:276234",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017173",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:276234",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202602",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017173",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:276234",
+            "MONDO:0017173",
+            "UMLS:CN202602"
+          ]
+        }
+      ]
+    }
+  ]
+}

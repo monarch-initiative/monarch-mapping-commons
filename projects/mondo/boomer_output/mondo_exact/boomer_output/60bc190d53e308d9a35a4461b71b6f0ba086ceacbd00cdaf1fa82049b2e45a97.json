@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:60bc190d53e308d9a35a4461b71b6f0ba086ceacbd00cdaf1fa82049b2e45a97",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:J06.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001218",
+          "type" : "CLASS",
+          "lbl" : "acute laryngopharyngitis"
+        },
+        {
+          "id" : "DOID:11195",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:55355000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0155817",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:J06.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001218",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:55355000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001218",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:11195",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001218",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0155817",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001218",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:J06.0",
+            "UMLS:C0155817",
+            "SCTID:55355000",
+            "DOID:11195",
+            "MONDO:0001218"
+          ]
+        }
+      ]
+    }
+  ]
+}

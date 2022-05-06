@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fcd6a34a88004608a63ea2ee24ecd1647fd3035b5f51b18533639df2d05a975e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1865143",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011258",
+          "type" : "CLASS",
+          "lbl" : "branchiootic syndrome 1"
+        },
+        {
+          "id" : "OMIM:602588",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011258",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:602588",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1865143",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011258",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:602588",
+            "MONDO:0011258",
+            "UMLS:C1865143"
+          ]
+        }
+      ]
+    }
+  ]
+}

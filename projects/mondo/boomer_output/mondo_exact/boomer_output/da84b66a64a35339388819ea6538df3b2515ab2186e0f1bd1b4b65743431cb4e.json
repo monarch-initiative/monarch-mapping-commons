@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:da84b66a64a35339388819ea6538df3b2515ab2186e0f1bd1b4b65743431cb4e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2674218",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110916",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008447",
+          "type" : "CLASS",
+          "lbl" : "hereditary spherocytosis type 1"
+        },
+        {
+          "id" : "OMIM:182900",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008447",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:182900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110916",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008447",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2674218",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008447",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:182900",
+            "MONDO:0008447",
+            "DOID:0110916",
+            "UMLS:C2674218"
+          ]
+        }
+      ]
+    }
+  ]
+}

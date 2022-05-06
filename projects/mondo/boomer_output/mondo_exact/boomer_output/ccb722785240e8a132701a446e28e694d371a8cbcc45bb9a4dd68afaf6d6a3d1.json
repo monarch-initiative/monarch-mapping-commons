@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ccb722785240e8a132701a446e28e694d371a8cbcc45bb9a4dd68afaf6d6a3d1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334525",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5208",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003332",
+          "type" : "CLASS",
+          "lbl" : "malignant struma ovarii"
+        },
+        {
+          "id" : "NCIT:C4291",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5208",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003332",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003332",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4291",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334525",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003332",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5208",
+            "MONDO:0003332",
+            "NCIT:C4291",
+            "UMLS:C0334525"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2f62f8c97a083a17ea64f238bbda005409708f84945953184b4fdec289989932",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202199",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016856",
+          "type" : "CLASS",
+          "lbl" : "Mowat-Wilson syndrome due to a ZEB2 point mutation"
+        },
+        {
+          "id" : "Orphanet:261552",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016856",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:261552",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202199",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016856",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016856",
+            "Orphanet:261552",
+            "UMLS:CN202199"
+          ]
+        }
+      ]
+    }
+  ]
+}

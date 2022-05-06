@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8e210b1eabcb0c64692cd38cacbaad5735177481f4d5f30089fae50fa4a0d195",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237465",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018476",
+          "type" : "CLASS",
+          "lbl" : "dystonia-aphonia syndrome"
+        },
+        {
+          "id" : "Orphanet:412217",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018476",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:412217",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237465",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018476",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:412217",
+            "MONDO:0018476",
+            "UMLS:CN237465"
+          ]
+        }
+      ]
+    }
+  ]
+}

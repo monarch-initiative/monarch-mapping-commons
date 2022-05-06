@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3e6fc1b2c2c93d5286cd0b5a1736c5f28e68a16744aa3e52630a7d4d11fc1e97",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225427",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024535",
+          "type" : "CLASS",
+          "lbl" : "Singleton-Merten syndrome 1"
+        },
+        {
+          "id" : "OMIM:182250",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024535",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:182250",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225427",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024535",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:182250",
+            "MONDO:0024535",
+            "UMLS:C4225427"
+          ]
+        }
+      ]
+    }
+  ]
+}

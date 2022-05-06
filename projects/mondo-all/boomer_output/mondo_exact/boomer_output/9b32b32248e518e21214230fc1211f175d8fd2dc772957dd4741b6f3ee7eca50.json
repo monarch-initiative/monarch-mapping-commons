@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9b32b32248e518e21214230fc1211f175d8fd2dc772957dd4741b6f3ee7eca50",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1321869",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6938",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004045",
+          "type" : "CLASS",
+          "lbl" : "pediatric intraocular retinoblastoma"
+        },
+        {
+          "id" : "NCIT:C9047",
+          "type" : "CLASS",
+          "lbl" : "Childhood Intraocular Retinoblastoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004045",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9047",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6938",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004045",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1321869",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004045",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004045",
+            "NCIT:C9047",
+            "DOID:6938",
+            "UMLS:C1321869"
+          ]
+        }
+      ]
+    }
+  ]
+}

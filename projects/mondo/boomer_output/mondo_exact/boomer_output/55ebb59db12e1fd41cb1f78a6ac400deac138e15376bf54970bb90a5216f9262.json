@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:55ebb59db12e1fd41cb1f78a6ac400deac138e15376bf54970bb90a5216f9262",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336096",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8275",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004520",
+          "type" : "CLASS",
+          "lbl" : "intratubular embryonal carcinoma"
+        },
+        {
+          "id" : "NCIT:C7325",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1336096",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004520",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004520",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7325",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8275",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004520",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004520",
+            "UMLS:C1336096",
+            "NCIT:C7325",
+            "DOID:8275"
+          ]
+        }
+      ]
+    }
+  ]
+}

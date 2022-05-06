@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8527262fee8bdb955b7130deb52f089bf8a83c721cf258fdb32ab5515ab02060",
+      "nodes" : [
+        {
+          "id" : "SCTID:725148000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4510874",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019447",
+          "type" : "CLASS",
+          "lbl" : "atypical lichen myxedematosus"
+        },
+        {
+          "id" : "Orphanet:86797",
+          "type" : "CLASS",
+          "lbl" : "Atypical lichen myxedematosus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4510874",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019447",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:725148000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019447",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019447",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:86797",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019447",
+            "UMLS:C4510874",
+            "SCTID:725148000",
+            "Orphanet:86797"
+          ]
+        }
+      ]
+    }
+  ]
+}

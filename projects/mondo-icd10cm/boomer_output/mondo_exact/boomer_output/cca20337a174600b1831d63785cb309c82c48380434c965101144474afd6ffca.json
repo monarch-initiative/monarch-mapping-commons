@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cca20337a174600b1831d63785cb309c82c48380434c965101144474afd6ffca",
+      "nodes" : [
+        {
+          "id" : "SCTID:197663003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:N25",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001343",
+          "type" : "CLASS",
+          "lbl" : "impaired renal function disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:N25",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001343",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:197663003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001343",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001343",
+            "ICD10CM:N25",
+            "SCTID:197663003"
+          ]
+        }
+      ]
+    }
+  ]
+}

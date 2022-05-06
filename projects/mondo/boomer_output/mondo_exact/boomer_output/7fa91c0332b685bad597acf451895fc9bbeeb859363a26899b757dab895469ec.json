@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7fa91c0332b685bad597acf451895fc9bbeeb859363a26899b757dab895469ec",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335687",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4053",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002853",
+          "type" : "CLASS",
+          "lbl" : "rectum rhabdomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C5627",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335687",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002853",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002853",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5627",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4053",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002853",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1335687",
+            "MONDO:0002853",
+            "NCIT:C5627",
+            "DOID:4053"
+          ]
+        }
+      ]
+    }
+  ]
+}

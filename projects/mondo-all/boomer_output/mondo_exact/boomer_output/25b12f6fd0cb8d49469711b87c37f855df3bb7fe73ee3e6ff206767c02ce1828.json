@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:25b12f6fd0cb8d49469711b87c37f855df3bb7fe73ee3e6ff206767c02ce1828",
+      "nodes" : [
+        {
+          "id" : "MESH:C536936",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:1122",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010750",
+          "type" : "CLASS",
+          "lbl" : "ulnar hypoplasia-split foot syndrome"
+        },
+        {
+          "id" : "UMLS:C1839123",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:314360",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1839123",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010750",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010750",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1122",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536936",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010750",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010750",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:314360",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:314360",
+            "MONDO:0010750",
+            "Orphanet:1122",
+            "UMLS:C1839123",
+            "MESH:C536936"
+          ]
+        }
+      ]
+    }
+  ]
+}

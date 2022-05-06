@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:de25cd530b3af1aed6149228819744152265000af0ecb5faeab3b4a82eb3d54c",
+      "nodes" : [
+        {
+          "id" : "SCTID:271956003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0347285",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021441",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of exocrine pancreas"
+        },
+        {
+          "id" : "NCIT:C4613",
+          "type" : "CLASS",
+          "lbl" : "Benign Exocrine Pancreas Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0347285",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021441",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021441",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4613",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:271956003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021441",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0347285",
+            "MONDO:0021441",
+            "NCIT:C4613",
+            "SCTID:271956003"
+          ]
+        }
+      ]
+    }
+  ]
+}

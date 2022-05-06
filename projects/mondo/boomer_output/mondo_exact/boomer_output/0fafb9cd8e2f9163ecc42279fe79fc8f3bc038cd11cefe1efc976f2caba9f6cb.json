@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0fafb9cd8e2f9163ecc42279fe79fc8f3bc038cd11cefe1efc976f2caba9f6cb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334056",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3274",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002585",
+          "type" : "CLASS",
+          "lbl" : "breast fibrocystic change, proliferative type"
+        },
+        {
+          "id" : "NCIT:C6940",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0334056",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002585",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002585",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6940",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3274",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002585",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002585",
+            "UMLS:C0334056",
+            "NCIT:C6940",
+            "DOID:3274"
+          ]
+        }
+      ]
+    }
+  ]
+}

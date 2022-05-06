@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f379a4cbc38000a91f12282c6c4c7e83bf328c898d101f685874af895fff9004",
+      "nodes" : [
+        {
+          "id" : "SCTID:126787005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0345599",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021368",
+          "type" : "CLASS",
+          "lbl" : "neoplasm of major salivary gland"
+        },
+        {
+          "id" : "NCIT:C4407",
+          "type" : "CLASS",
+          "lbl" : "Major Salivary Gland Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0345599",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021368",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:126787005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021368",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021368",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4407",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021368",
+            "UMLS:C0345599",
+            "SCTID:126787005",
+            "NCIT:C4407"
+          ]
+        }
+      ]
+    }
+  ]
+}

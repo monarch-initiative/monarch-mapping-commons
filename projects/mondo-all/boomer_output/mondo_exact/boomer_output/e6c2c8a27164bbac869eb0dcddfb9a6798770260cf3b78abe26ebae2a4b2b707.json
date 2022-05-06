@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e6c2c8a27164bbac869eb0dcddfb9a6798770260cf3b78abe26ebae2a4b2b707",
+      "nodes" : [
+        {
+          "id" : "SCTID:722117000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN200391",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015800",
+          "type" : "CLASS",
+          "lbl" : "osteosclerosis-developmental delay-craniosynostosis syndrome"
+        },
+        {
+          "id" : "Orphanet:178377",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN200391",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015800",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015800",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:178377",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:722117000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015800",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN200391",
+            "MONDO:0015800",
+            "Orphanet:178377",
+            "SCTID:722117000"
+          ]
+        }
+      ]
+    }
+  ]
+}

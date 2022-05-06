@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e41c66025b132c89fb08a2ed4fade18e020d286815693d9ded31bb92604c7cf8",
+      "nodes" : [
+        {
+          "id" : "MESH:C566356",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1863677",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011349",
+          "type" : "CLASS",
+          "lbl" : "osteoma of cranial vault, familial"
+        },
+        {
+          "id" : "OMIM:603600",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011349",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1863677",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011349",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566356",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011349",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011349",
+            "OMIM:603600",
+            "UMLS:C1863677",
+            "MESH:C566356"
+          ]
+        }
+      ]
+    }
+  ]
+}

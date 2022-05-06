@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d7689be923a9caf22c8ed8c24707ffd436aaf102ec9724f28fb5f73cb3c83ec9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4014557",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014383",
+          "type" : "CLASS",
+          "lbl" : "myopathy, tubular aggregate, 2"
+        },
+        {
+          "id" : "OMIM:615883",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014383",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615883",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4014557",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014383",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:615883",
+            "MONDO:0014383",
+            "UMLS:C4014557"
+          ]
+        }
+      ]
+    }
+  ]
+}

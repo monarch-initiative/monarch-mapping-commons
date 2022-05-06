@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:af337b21a1e94790a9a2d14cd4ceebd2d71b2a9fd74e4b93362fc4efc99e461f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4275164",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:1215",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111340",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014720",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant optic atrophy plus syndrome"
+        },
+        {
+          "id" : "SCTID:715374003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1852267",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014720",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1852267",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111340",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014720",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4275164",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014720",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:715374003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014720",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014720",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1215",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:1215",
+            "DOID:0111340",
+            "MONDO:0014720",
+            "SCTID:715374003",
+            "UMLS:C4275164"
+          ]
+        }
+      ]
+    }
+  ]
+}

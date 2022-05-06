@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c6a3d9965d473b164f4532111c1011ee236e651b079c8d16931884a17ba00038",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237672",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018629",
+          "type" : "CLASS",
+          "lbl" : "focal stiff limb syndrome"
+        },
+        {
+          "id" : "Orphanet:443804",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237672",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018629",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018629",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:443804",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN237672",
+            "MONDO:0018629",
+            "Orphanet:443804"
+          ]
+        }
+      ]
+    }
+  ]
+}

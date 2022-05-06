@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:07af5add10845f8f482601371fef3b718a898b08543e9b117acb0cfade87a908",
+      "nodes" : [
+        {
+          "id" : "SCTID:716200002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009099",
+          "type" : "CLASS",
+          "lbl" : "nephrogenic diabetes insipidus-intracranial calcification syndrome"
+        },
+        {
+          "id" : "Orphanet:3145",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:221995",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009099",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3145",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:716200002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009099",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009099",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:221995",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:3145",
+            "MONDO:0009099",
+            "SCTID:716200002",
+            "OMIM:221995"
+          ]
+        }
+      ]
+    }
+  ]
+}

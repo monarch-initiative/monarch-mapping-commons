@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c4c6c18abd7c8c70735b24b6de09dbb9d3046d9698373d87d1f3132a8998e915",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150419",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111117",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013163",
+          "type" : "CLASS",
+          "lbl" : "nephronophthisis-like nephropathy 1"
+        },
+        {
+          "id" : "OMIM:613159",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3150419",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013163",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111117",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013163",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013163",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613159",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013163",
+            "UMLS:C3150419",
+            "DOID:0111117",
+            "OMIM:613159"
+          ]
+        }
+      ]
+    }
+  ]
+}

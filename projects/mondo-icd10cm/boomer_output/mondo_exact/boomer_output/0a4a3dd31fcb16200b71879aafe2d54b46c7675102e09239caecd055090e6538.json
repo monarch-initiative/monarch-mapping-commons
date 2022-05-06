@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0a4a3dd31fcb16200b71879aafe2d54b46c7675102e09239caecd055090e6538",
+      "nodes" : [
+        {
+          "id" : "MESH:C536846",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1840386",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007776",
+          "type" : "CLASS",
+          "lbl" : "hypersensitivity pneumonitis, familial"
+        },
+        {
+          "id" : "OMIM:145300",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1840386",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007776",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536846",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007776",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007776",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:145300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007776",
+            "UMLS:C1840386",
+            "MESH:C536846",
+            "OMIM:145300"
+          ]
+        }
+      ]
+    }
+  ]
+}

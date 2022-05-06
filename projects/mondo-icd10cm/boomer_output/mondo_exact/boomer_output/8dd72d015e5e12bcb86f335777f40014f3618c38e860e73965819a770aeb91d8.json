@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8dd72d015e5e12bcb86f335777f40014f3618c38e860e73965819a770aeb91d8",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN244573",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0054730",
+          "type" : "CLASS",
+          "lbl" : "spermatogenic failure 26"
+        },
+        {
+          "id" : "OMIM:617961",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0054730",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617961",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN244573",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0054730",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0054730",
+            "OMIM:617961",
+            "UMLS:CN244573"
+          ]
+        }
+      ]
+    }
+  ]
+}

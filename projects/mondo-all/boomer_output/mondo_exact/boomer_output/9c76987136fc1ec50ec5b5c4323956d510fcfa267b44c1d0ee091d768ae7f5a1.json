@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9c76987136fc1ec50ec5b5c4323956d510fcfa267b44c1d0ee091d768ae7f5a1",
+      "nodes" : [
+        {
+          "id" : "MESH:C563430",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1833163",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010956",
+          "type" : "CLASS",
+          "lbl" : "enamel hypoplasia, cataracts, and aqueductal stenosis"
+        },
+        {
+          "id" : "OMIM:600907",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1833163",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010956",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010956",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600907",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563430",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010956",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010956",
+            "UMLS:C1833163",
+            "OMIM:600907",
+            "MESH:C563430"
+          ]
+        }
+      ]
+    }
+  ]
+}

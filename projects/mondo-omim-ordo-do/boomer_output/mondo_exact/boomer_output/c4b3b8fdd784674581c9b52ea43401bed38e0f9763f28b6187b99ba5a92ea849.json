@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c4b3b8fdd784674581c9b52ea43401bed38e0f9763f28b6187b99ba5a92ea849",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0796430",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3542",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002683",
+          "type" : "CLASS",
+          "lbl" : "adult choroid plexus neoplasm"
+        },
+        {
+          "id" : "NCIT:C8568",
+          "type" : "CLASS",
+          "lbl" : "Adult Choroid Plexus Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002683",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8568",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0796430",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002683",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3542",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002683",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002683",
+            "NCIT:C8568",
+            "UMLS:C0796430",
+            "DOID:3542"
+          ]
+        }
+      ]
+    }
+  ]
+}

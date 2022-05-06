@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:08e30f709aba392eedb838d5ffa18d4ba57b5c966fc106d9c0e4c95b561208c0",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN231410",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111417",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018637",
+          "type" : "CLASS",
+          "lbl" : "familial chylomicronemia syndrome"
+        },
+        {
+          "id" : "Orphanet:444490",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018637",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:444490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN231410",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018637",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111417",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018637",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018637",
+            "Orphanet:444490",
+            "UMLS:CN231410",
+            "DOID:0111417"
+          ]
+        }
+      ]
+    }
+  ]
+}

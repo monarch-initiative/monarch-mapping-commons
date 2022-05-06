@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f4534491471fee8558e829a7d3b8c9c8cdf69bcdde797d933b687426a12cda6f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN197498",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015158",
+          "type" : "CLASS",
+          "lbl" : "unexplained periodic fever syndrome"
+        },
+        {
+          "id" : "Orphanet:102237",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN197498",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015158",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015158",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:102237",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN197498",
+            "MONDO:0015158",
+            "Orphanet:102237"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1861e25b7f7ee73c215487c3acfde5e94a519e8b3200842dfca6c37d8950101f",
+      "nodes" : [
+        {
+          "id" : "MESH:D018317",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3193",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002547",
+          "type" : "CLASS",
+          "lbl" : "nerve sheath neoplasm"
+        },
+        {
+          "id" : "NCIT:C4972",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3193",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002547",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D018317",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002547",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002547",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4972",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002547",
+            "DOID:3193",
+            "MESH:D018317",
+            "NCIT:C4972"
+          ]
+        }
+      ]
+    }
+  ]
+}

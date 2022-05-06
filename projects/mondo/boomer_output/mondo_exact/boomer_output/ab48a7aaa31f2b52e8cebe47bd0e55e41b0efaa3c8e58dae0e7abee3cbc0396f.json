@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ab48a7aaa31f2b52e8cebe47bd0e55e41b0efaa3c8e58dae0e7abee3cbc0396f",
+      "nodes" : [
+        {
+          "id" : "Orphanet:209981",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C562385",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008788",
+          "type" : "CLASS",
+          "lbl" : "IRIDA syndrome"
+        },
+        {
+          "id" : "SCTID:722005000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:206200",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:722005000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008788",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008788",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:206200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C562385",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008788",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008788",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:209981",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:206200",
+            "MONDO:0008788",
+            "MESH:C562385",
+            "SCTID:722005000",
+            "Orphanet:209981"
+          ]
+        }
+      ]
+    }
+  ]
+}

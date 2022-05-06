@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eeff63808f15d5764d722d7a7ef506307c812891ac9b7f83a8281ff86eb41861",
+      "nodes" : [
+        {
+          "id" : "SCTID:766978002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN237538",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018537",
+          "type" : "CLASS",
+          "lbl" : "squamous cell carcinoma of gallbladder and extrahepatic biliary tract"
+        },
+        {
+          "id" : "Orphanet:424996",
+          "type" : "CLASS",
+          "lbl" : "Squamous cell carcinoma of gallbladder and extrahepatic biliary tract"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237538",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018537",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018537",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:424996",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:766978002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018537",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN237538",
+            "MONDO:0018537",
+            "Orphanet:424996",
+            "SCTID:766978002"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dc8885efadf962e6c550b2e9728a1de0e8109deb1e686451bfc14384cc90e290",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201075",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016285",
+          "type" : "CLASS",
+          "lbl" : "papillary carcinoma of the cervix uteri"
+        },
+        {
+          "id" : "Orphanet:213817",
+          "type" : "CLASS",
+          "lbl" : "Papillary carcinoma of the cervix uteri"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201075",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016285",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016285",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:213817",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016285",
+            "UMLS:CN201075",
+            "Orphanet:213817"
+          ]
+        }
+      ]
+    }
+  ]
+}

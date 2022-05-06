@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ead2ff6808c40a3477a9c6da64781b8db6c3962361e4e4c938aa622acf863bf8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3810147",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060016",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014280",
+          "type" : "CLASS",
+          "lbl" : "immunodeficiency 19"
+        },
+        {
+          "id" : "OMIM:615617",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014280",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615617",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060016",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014280",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3810147",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014280",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014280",
+            "OMIM:615617",
+            "DOID:0060016",
+            "UMLS:C3810147"
+          ]
+        }
+      ]
+    }
+  ]
+}

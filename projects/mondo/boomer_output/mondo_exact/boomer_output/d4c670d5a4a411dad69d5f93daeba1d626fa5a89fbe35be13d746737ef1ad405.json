@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d4c670d5a4a411dad69d5f93daeba1d626fa5a89fbe35be13d746737ef1ad405",
+      "nodes" : [
+        {
+          "id" : "MESH:C564423",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1844501",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010596",
+          "type" : "CLASS",
+          "lbl" : "membranoproliferative glomerulonephritis, X-linked"
+        },
+        {
+          "id" : "OMIM:305800",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010596",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:305800",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1844501",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010596",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564423",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010596",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010596",
+            "OMIM:305800",
+            "UMLS:C1844501",
+            "MESH:C564423"
+          ]
+        }
+      ]
+    }
+  ]
+}

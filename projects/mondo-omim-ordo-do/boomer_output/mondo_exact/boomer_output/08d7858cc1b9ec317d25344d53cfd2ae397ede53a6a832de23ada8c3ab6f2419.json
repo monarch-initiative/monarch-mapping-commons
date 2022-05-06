@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:08d7858cc1b9ec317d25344d53cfd2ae397ede53a6a832de23ada8c3ab6f2419",
+      "nodes" : [
+        {
+          "id" : "MESH:C537598",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1832435",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011051",
+          "type" : "CLASS",
+          "lbl" : "lethal short-limb skeletal dysplasia, Al Gazali type"
+        },
+        {
+          "id" : "OMIM:601356",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1832435",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011051",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011051",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601356",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537598",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011051",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011051",
+            "UMLS:C1832435",
+            "OMIM:601356",
+            "MESH:C537598"
+          ]
+        }
+      ]
+    }
+  ]
+}

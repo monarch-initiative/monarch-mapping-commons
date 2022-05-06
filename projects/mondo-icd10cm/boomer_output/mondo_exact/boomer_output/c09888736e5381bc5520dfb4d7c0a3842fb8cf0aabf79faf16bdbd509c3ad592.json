@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c09888736e5381bc5520dfb4d7c0a3842fb8cf0aabf79faf16bdbd509c3ad592",
+      "nodes" : [
+        {
+          "id" : "MESH:C565558",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1856686",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009248",
+          "type" : "CLASS",
+          "lbl" : "fructose and galactose intolerance"
+        },
+        {
+          "id" : "OMIM:229500",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565558",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009248",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009248",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:229500",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1856686",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009248",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009248",
+            "MESH:C565558",
+            "OMIM:229500",
+            "UMLS:C1856686"
+          ]
+        }
+      ]
+    }
+  ]
+}

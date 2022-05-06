@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4bcf56cca921b43f8efd4e624ad7dde48990357e356cc37977eed57177993fd3",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:N73.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004940",
+          "type" : "CLASS",
+          "lbl" : "acute female pelvic peritonitis"
+        },
+        {
+          "id" : "UMLS:C0269032",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:9978",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:85051008",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:85051008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004940",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0269032",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004940",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:9978",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004940",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:N73.3",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004940",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004940",
+            "DOID:9978",
+            "UMLS:C0269032",
+            "SCTID:85051008",
+            "ICD10CM:N73.3"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ca46ecc3334806d5aa47eef3bbf535e196a67aa22b52523c1938b4ec99f1d096",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334330",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5914",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003701",
+          "type" : "CLASS",
+          "lbl" : "thyroid gland diffuse sclerosing papillary carcinoma"
+        },
+        {
+          "id" : "NCIT:C7427",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003701",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7427",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334330",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003701",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5914",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003701",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C7427",
+            "MONDO:0003701",
+            "UMLS:C0334330",
+            "DOID:5914"
+          ]
+        }
+      ]
+    }
+  ]
+}

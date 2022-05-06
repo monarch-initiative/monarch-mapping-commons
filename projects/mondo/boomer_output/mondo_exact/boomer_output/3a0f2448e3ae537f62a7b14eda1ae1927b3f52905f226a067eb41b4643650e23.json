@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3a0f2448e3ae537f62a7b14eda1ae1927b3f52905f226a067eb41b4643650e23",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3808874",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110012",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014088",
+          "type" : "CLASS",
+          "lbl" : "advanced sleep phase syndrome 2"
+        },
+        {
+          "id" : "OMIM:615224",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014088",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615224",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110012",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014088",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3808874",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014088",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014088",
+            "OMIM:615224",
+            "DOID:0110012",
+            "UMLS:C3808874"
+          ]
+        }
+      ]
+    }
+  ]
+}

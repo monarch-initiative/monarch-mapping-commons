@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:af572abf757e1c064e93370b93fd986afd7813bf5b1c03da91b248b485af927a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518873",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7685",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004329",
+          "type" : "CLASS",
+          "lbl" : "pancreatic intraductal papillary-mucinous neoplasm with high grade dysplasia"
+        },
+        {
+          "id" : "NCIT:C41251",
+          "type" : "CLASS",
+          "lbl" : "Pancreatic Intraductal Papillary-Mucinous Neoplasm, High Grade"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1518873",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004329",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004329",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C41251",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7685",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004329",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1518873",
+            "MONDO:0004329",
+            "NCIT:C41251",
+            "DOID:7685"
+          ]
+        }
+      ]
+    }
+  ]
+}

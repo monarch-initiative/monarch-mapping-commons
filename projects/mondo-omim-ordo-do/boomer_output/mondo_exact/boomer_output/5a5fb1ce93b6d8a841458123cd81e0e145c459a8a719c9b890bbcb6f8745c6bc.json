@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5a5fb1ce93b6d8a841458123cd81e0e145c459a8a719c9b890bbcb6f8745c6bc",
+      "nodes" : [
+        {
+          "id" : "MESH:C531834",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2930846",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024893",
+          "type" : "CLASS",
+          "lbl" : "toxocara canis infection (canine roundworms)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2930846",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024893",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C531834",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024893",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024893",
+            "UMLS:C2930846",
+            "MESH:C531834"
+          ]
+        }
+      ]
+    }
+  ]
+}

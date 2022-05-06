@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:af4fc50b5ba3ed70b20ce722878a9106857f6dbd4a65c515a62348100afea212",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518329",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7839",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004376",
+          "type" : "CLASS",
+          "lbl" : "infiltrating nipple syringomatous adenoma"
+        },
+        {
+          "id" : "NCIT:C40363",
+          "type" : "CLASS",
+          "lbl" : "Nipple Syringomatous Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1518329",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004376",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004376",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40363",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7839",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004376",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1518329",
+            "MONDO:0004376",
+            "NCIT:C40363",
+            "DOID:7839"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bae7068140ab38d507bc6f3eaf8f82a3308af8fdeb57dba230171d987a3eda54",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN119605",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007944",
+          "type" : "CLASS",
+          "lbl" : "Treacher-Collins syndrome 1"
+        },
+        {
+          "id" : "OMIM:154500",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN119605",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007944",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007944",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:154500",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN119605",
+            "MONDO:0007944",
+            "OMIM:154500"
+          ]
+        }
+      ]
+    }
+  ]
+}

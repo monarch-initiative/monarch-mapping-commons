@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:22838b26d3ef56d0a4a9a5a8f474e903dea2ee670d655eb32dbe89feb0a8bcfa",
+      "nodes" : [
+        {
+          "id" : "MESH:C563533",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1834371",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008063",
+          "type" : "CLASS",
+          "lbl" : "nasal alar collapse, bilateral"
+        },
+        {
+          "id" : "OMIM:161470",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:161470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563533",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008063",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1834371",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008063",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008063",
+            "OMIM:161470",
+            "MESH:C563533",
+            "UMLS:C1834371"
+          ]
+        }
+      ]
+    }
+  ]
+}

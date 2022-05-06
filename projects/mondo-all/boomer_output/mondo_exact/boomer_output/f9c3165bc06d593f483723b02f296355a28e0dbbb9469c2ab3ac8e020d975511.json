@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f9c3165bc06d593f483723b02f296355a28e0dbbb9469c2ab3ac8e020d975511",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202845",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017283",
+          "type" : "CLASS",
+          "lbl" : "facial dysmorphism-developmental delay-behavioral abnormalities syndrome due to 10p11.21p12.31 microdeletion"
+        },
+        {
+          "id" : "Orphanet:284169",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202845",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017283",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017283",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:284169",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN202845",
+            "MONDO:0017283",
+            "Orphanet:284169"
+          ]
+        }
+      ]
+    }
+  ]
+}

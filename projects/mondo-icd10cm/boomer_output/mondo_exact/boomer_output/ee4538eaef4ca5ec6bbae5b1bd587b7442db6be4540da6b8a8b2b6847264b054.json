@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ee4538eaef4ca5ec6bbae5b1bd587b7442db6be4540da6b8a8b2b6847264b054",
+      "nodes" : [
+        {
+          "id" : "DOID:0111312",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011875",
+          "type" : "CLASS",
+          "lbl" : "epilepsy, idiopathic generalized, susceptibility to, 11"
+        },
+        {
+          "id" : "OMIM:607628",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0111312",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011875",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011875",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607628",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0111312",
+            "MONDO:0011875",
+            "OMIM:607628"
+          ]
+        }
+      ]
+    }
+  ]
+}

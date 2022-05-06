@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:434ce8990546596f51d4e685aa67f49858effcda95772065ad7b1e7a72bca8d4",
+      "nodes" : [
+        {
+          "id" : "SCTID:69195002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044343",
+          "type" : "CLASS",
+          "lbl" : "cervical disc degenerative disorder"
+        },
+        {
+          "id" : "UMLS:C0410606",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0158262",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C27156",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:69195002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044343",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0158262",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044343",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044343",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0410606",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044343",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27156",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:69195002",
+            "MONDO:0044343",
+            "UMLS:C0158262",
+            "NCIT:C27156"
+          ]
+        }
+      ]
+    }
+  ]
+}

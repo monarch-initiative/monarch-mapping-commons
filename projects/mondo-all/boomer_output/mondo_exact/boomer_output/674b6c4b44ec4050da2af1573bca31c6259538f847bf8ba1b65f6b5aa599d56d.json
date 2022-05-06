@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:674b6c4b44ec4050da2af1573bca31c6259538f847bf8ba1b65f6b5aa599d56d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335975",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4151",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002892",
+          "type" : "CLASS",
+          "lbl" : "skull base chordoma"
+        },
+        {
+          "id" : "NCIT:C5453",
+          "type" : "CLASS",
+          "lbl" : "Skull Base Chordoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335975",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002892",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002892",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5453",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4151",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002892",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1335975",
+            "MONDO:0002892",
+            "NCIT:C5453",
+            "DOID:4151"
+          ]
+        }
+      ]
+    }
+  ]
+}

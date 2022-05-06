@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d6ac0cea36f906cb46ae98e925ade7d7cda89c1ce5ddf7e9c7a49ac10200bbfd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4520983",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0100285",
+          "type" : "CLASS",
+          "lbl" : "extrahepatic biliary atresia"
+        },
+        {
+          "id" : "OMIM:210500",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0100285",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:210500",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4520983",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0100285",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0100285",
+            "OMIM:210500",
+            "UMLS:C4520983"
+          ]
+        }
+      ]
+    }
+  ]
+}

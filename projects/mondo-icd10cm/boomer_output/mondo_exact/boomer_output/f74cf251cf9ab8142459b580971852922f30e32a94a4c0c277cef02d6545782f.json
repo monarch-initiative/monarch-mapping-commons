@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f74cf251cf9ab8142459b580971852922f30e32a94a4c0c277cef02d6545782f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279070",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3186",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002543",
+          "type" : "CLASS",
+          "lbl" : "adult oligodendroglioma"
+        },
+        {
+          "id" : "NCIT:C4014",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3186",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002543",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002543",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4014",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0279070",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002543",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002543",
+            "DOID:3186",
+            "NCIT:C4014",
+            "UMLS:C0279070"
+          ]
+        }
+      ]
+    }
+  ]
+}

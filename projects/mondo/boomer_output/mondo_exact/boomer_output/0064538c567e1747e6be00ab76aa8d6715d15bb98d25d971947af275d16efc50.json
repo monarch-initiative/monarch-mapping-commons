@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0064538c567e1747e6be00ab76aa8d6715d15bb98d25d971947af275d16efc50",
+      "nodes" : [
+        {
+          "id" : "MESH:C535964",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0022800",
+          "type" : "CLASS",
+          "lbl" : "type 2 collagenopathy"
+        },
+        {
+          "id" : "UMLS:C2931073",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:93421",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN227672",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C535964",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022800",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0022800",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93421",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227672",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022800",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0022800",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C2931073",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C535964",
+            "MONDO:0022800",
+            "Orphanet:93421",
+            "UMLS:CN227672"
+          ]
+        }
+      ]
+    }
+  ]
+}

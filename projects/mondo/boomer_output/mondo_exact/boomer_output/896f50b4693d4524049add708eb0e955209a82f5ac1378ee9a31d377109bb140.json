@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:896f50b4693d4524049add708eb0e955209a82f5ac1378ee9a31d377109bb140",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1879344",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5468",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003455",
+          "type" : "CLASS",
+          "lbl" : "bile duct papillary neoplasm"
+        },
+        {
+          "id" : "NCIT:C6881",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5468",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003455",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003455",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6881",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1879344",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003455",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003455",
+            "DOID:5468",
+            "NCIT:C6881",
+            "UMLS:C1879344"
+          ]
+        }
+      ]
+    }
+  ]
+}

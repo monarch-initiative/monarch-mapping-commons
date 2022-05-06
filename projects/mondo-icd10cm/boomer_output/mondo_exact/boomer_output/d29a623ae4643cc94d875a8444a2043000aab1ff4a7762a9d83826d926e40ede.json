@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d29a623ae4643cc94d875a8444a2043000aab1ff4a7762a9d83826d926e40ede",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201476",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016481",
+          "type" : "CLASS",
+          "lbl" : "silver-Russell syndrome due to 11p15 microduplication"
+        },
+        {
+          "id" : "Orphanet:231144",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201476",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016481",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016481",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:231144",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:231144",
+            "MONDO:0016481",
+            "UMLS:CN201476"
+          ]
+        }
+      ]
+    }
+  ]
+}

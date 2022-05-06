@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0f1c057e47dc6901de204745c378dc1ac44f7891dc4000142c591eb702b55a49",
+      "nodes" : [
+        {
+          "id" : "MESH:D004022",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0012118",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005730",
+          "type" : "CLASS",
+          "lbl" : "Dictyocaulus infectious disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0012118",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005730",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D004022",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005730",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005730",
+            "UMLS:C0012118",
+            "MESH:D004022"
+          ]
+        }
+      ]
+    }
+  ]
+}

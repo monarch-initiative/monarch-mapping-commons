@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3cce10ecd17f5331942a77af86265a91ee5e4cac3dfd705a70cb316b00b3b9df",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227200",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017755",
+          "type" : "CLASS",
+          "lbl" : "inborn disorder of bilirubin metabolism"
+        },
+        {
+          "id" : "Orphanet:309816",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017755",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309816",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227200",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017755",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017755",
+            "Orphanet:309816",
+            "UMLS:CN227200"
+          ]
+        }
+      ]
+    }
+  ]
+}

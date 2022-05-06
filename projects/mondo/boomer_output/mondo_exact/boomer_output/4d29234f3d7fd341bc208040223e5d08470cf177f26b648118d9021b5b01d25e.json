@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4d29234f3d7fd341bc208040223e5d08470cf177f26b648118d9021b5b01d25e",
+      "nodes" : [
+        {
+          "id" : "MESH:C563582",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1834919",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007995",
+          "type" : "CLASS",
+          "lbl" : "microphthalmia, isolated, with cataract 1"
+        },
+        {
+          "id" : "OMIM:156850",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1834919",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007995",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563582",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007995",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007995",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:156850",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1834919",
+            "MONDO:0007995",
+            "MESH:C563582",
+            "OMIM:156850"
+          ]
+        }
+      ]
+    }
+  ]
+}

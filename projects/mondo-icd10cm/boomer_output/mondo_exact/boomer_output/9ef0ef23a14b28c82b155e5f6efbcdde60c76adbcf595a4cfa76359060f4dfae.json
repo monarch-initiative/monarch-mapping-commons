@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9ef0ef23a14b28c82b155e5f6efbcdde60c76adbcf595a4cfa76359060f4dfae",
+      "nodes" : [
+        {
+          "id" : "MESH:D008200",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0024214",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006840",
+          "type" : "CLASS",
+          "lbl" : "lymphangiectasis"
+        },
+        {
+          "id" : "NCIT:C97087",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006840",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C97087",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0024214",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006840",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D008200",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006840",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006840",
+            "NCIT:C97087",
+            "UMLS:C0024214",
+            "MESH:D008200"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f13b0457d6b8b4189a79619c16791651e1d3028f7148021dd0293943f9a22fca",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN776878",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018810",
+          "type" : "CLASS",
+          "lbl" : "lethal hydranencephaly-diaphragmatic hernia syndrome"
+        },
+        {
+          "id" : "Orphanet:480528",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018810",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:480528",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN776878",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018810",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018810",
+            "Orphanet:480528",
+            "UMLS:CN776878"
+          ]
+        }
+      ]
+    }
+  ]
+}

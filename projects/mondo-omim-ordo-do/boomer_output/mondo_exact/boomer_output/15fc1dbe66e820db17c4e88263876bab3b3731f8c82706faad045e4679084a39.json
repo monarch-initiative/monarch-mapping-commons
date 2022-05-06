@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:15fc1dbe66e820db17c4e88263876bab3b3731f8c82706faad045e4679084a39",
+      "nodes" : [
+        {
+          "id" : "MESH:D006966",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:E22.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:237662005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0020514",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005804",
+          "type" : "CLASS",
+          "lbl" : "hyperprolactinemia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:237662005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005804",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D006966",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005804",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0020514",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005804",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:E22.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005804",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D006966",
+            "MONDO:0005804",
+            "UMLS:C0020514",
+            "SCTID:237662005",
+            "ICD10CM:E22.1"
+          ]
+        }
+      ]
+    }
+  ]
+}

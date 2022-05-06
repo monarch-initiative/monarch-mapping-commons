@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ed9ed83ea5f782e6a22eee09b48748df2a9331646d26cce418d5aeecd9292fb2",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206443",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019597",
+          "type" : "CLASS",
+          "lbl" : "46,XY disorder of sex development due to isolated 17,20-lyase deficiency"
+        },
+        {
+          "id" : "Orphanet:90796",
+          "type" : "CLASS",
+          "lbl" : "46,XY disorder of sex development due to isolated 17,20-lyase deficiency"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206443",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019597",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019597",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:90796",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019597",
+            "UMLS:CN206443",
+            "Orphanet:90796"
+          ]
+        }
+      ]
+    }
+  ]
+}

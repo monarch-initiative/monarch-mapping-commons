@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bee6b6d8441e65c4752311b1dff1a088bd1798ce0c393c739bd016136ce754ad",
+      "nodes" : [
+        {
+          "id" : "MESH:C563630",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1835484",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007890",
+          "type" : "CLASS",
+          "lbl" : "lentiginosis, centrofacial neurodysraphic"
+        },
+        {
+          "id" : "OMIM:151000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1835484",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007890",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563630",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007890",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007890",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:151000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007890",
+            "UMLS:C1835484",
+            "OMIM:151000",
+            "MESH:C563630"
+          ]
+        }
+      ]
+    }
+  ]
+}

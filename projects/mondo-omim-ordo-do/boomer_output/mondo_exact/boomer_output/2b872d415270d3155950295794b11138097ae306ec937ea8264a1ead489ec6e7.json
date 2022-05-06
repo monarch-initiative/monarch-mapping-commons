@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2b872d415270d3155950295794b11138097ae306ec937ea8264a1ead489ec6e7",
+      "nodes" : [
+        {
+          "id" : "MESH:C538034",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN036934",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015726",
+          "type" : "CLASS",
+          "lbl" : "distal trisomy 14q"
+        },
+        {
+          "id" : "Orphanet:1705",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015726",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1705",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN036934",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015726",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538034",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015726",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015726",
+            "Orphanet:1705",
+            "UMLS:CN036934",
+            "MESH:C538034"
+          ]
+        }
+      ]
+    }
+  ]
+}

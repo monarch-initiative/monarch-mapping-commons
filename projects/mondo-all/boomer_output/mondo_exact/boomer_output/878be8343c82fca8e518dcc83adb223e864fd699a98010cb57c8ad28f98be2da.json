@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:878be8343c82fca8e518dcc83adb223e864fd699a98010cb57c8ad28f98be2da",
+      "nodes" : [
+        {
+          "id" : "MESH:C567191",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2675154",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007802",
+          "type" : "CLASS",
+          "lbl" : "hypospadias 3, autosomal"
+        },
+        {
+          "id" : "OMIM:146450",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2675154",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007802",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567191",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007802",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007802",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:146450",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007802",
+            "UMLS:C2675154",
+            "MESH:C567191",
+            "OMIM:146450"
+          ]
+        }
+      ]
+    }
+  ]
+}

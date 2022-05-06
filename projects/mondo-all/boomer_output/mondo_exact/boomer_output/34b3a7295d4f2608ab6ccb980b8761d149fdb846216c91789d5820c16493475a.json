@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:34b3a7295d4f2608ab6ccb980b8761d149fdb846216c91789d5820c16493475a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1866558",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011120",
+          "type" : "CLASS",
+          "lbl" : "neural tube defects, folate-sensitive"
+        },
+        {
+          "id" : "OMIM:601634",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011120",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601634",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1866558",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011120",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011120",
+            "OMIM:601634",
+            "UMLS:C1866558"
+          ]
+        }
+      ]
+    }
+  ]
+}

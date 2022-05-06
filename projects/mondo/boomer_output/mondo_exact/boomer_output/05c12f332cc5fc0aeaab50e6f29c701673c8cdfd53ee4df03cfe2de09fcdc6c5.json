@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:05c12f332cc5fc0aeaab50e6f29c701673c8cdfd53ee4df03cfe2de09fcdc6c5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479640",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0054602",
+          "type" : "CLASS",
+          "lbl" : "gaze palsy, familial horizontal, with progressive scoliosis, 2"
+        },
+        {
+          "id" : "OMIM:617542",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4479640",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0054602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0054602",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617542",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0054602",
+            "UMLS:C4479640",
+            "OMIM:617542"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b0ea61bf842bf0cd5d1f7aad7650e8edbe6d3b86f1d9e7ad80e0fa8e97c043ca",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4540131",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060568",
+          "type" : "CLASS",
+          "lbl" : "Pilarowski-Bjornsson syndrome"
+        },
+        {
+          "id" : "Orphanet:529965",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:617682",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0060568",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:529965",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060568",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617682",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4540131",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060568",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0060568",
+            "Orphanet:529965",
+            "OMIM:617682",
+            "UMLS:C4540131"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:777b966a91f9ccdc045f7700029e2bf31bf267128db51945f71c76f27233b2da",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2931067",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:480483",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070224",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:615878",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN776838",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014381",
+          "type" : "CLASS",
+          "lbl" : "cholestasis, progressive familial intrahepatic, 4"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014381",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:480483",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN776838",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014381",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070224",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014381",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014381",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C2931067",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014381",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615878",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:615878",
+            "Orphanet:480483",
+            "UMLS:CN776838",
+            "DOID:0070224",
+            "MONDO:0014381"
+          ]
+        }
+      ]
+    }
+  ]
+}

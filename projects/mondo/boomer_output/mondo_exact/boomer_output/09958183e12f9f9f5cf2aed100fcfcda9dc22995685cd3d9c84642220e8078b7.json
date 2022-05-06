@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:09958183e12f9f9f5cf2aed100fcfcda9dc22995685cd3d9c84642220e8078b7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1563705",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010581",
+          "type" : "CLASS",
+          "lbl" : "diabetes insipidus, nephrogenic, X-linked"
+        },
+        {
+          "id" : "OMIM:304800",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010581",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:304800",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1563705",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010581",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010581",
+            "OMIM:304800",
+            "UMLS:C1563705"
+          ]
+        }
+      ]
+    }
+  ]
+}

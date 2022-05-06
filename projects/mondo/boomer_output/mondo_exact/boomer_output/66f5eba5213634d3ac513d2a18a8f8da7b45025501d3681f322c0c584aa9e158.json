@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:66f5eba5213634d3ac513d2a18a8f8da7b45025501d3681f322c0c584aa9e158",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225327",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060751",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014639",
+          "type" : "CLASS",
+          "lbl" : "familial temporal lobe epilepsy 7"
+        },
+        {
+          "id" : "OMIM:616436",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0060751",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014639",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014639",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616436",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225327",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014639",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014639",
+            "DOID:0060751",
+            "OMIM:616436",
+            "UMLS:C4225327"
+          ]
+        }
+      ]
+    }
+  ]
+}

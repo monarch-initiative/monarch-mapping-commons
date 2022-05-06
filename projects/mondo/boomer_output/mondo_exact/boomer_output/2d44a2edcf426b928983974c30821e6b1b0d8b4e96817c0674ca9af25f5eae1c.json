@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2d44a2edcf426b928983974c30821e6b1b0d8b4e96817c0674ca9af25f5eae1c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519931",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:138",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001806",
+          "type" : "CLASS",
+          "lbl" : "vaginal squamous tumor"
+        },
+        {
+          "id" : "NCIT:C40242",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0001806",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40242",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1519931",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001806",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:138",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001806",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001806",
+            "NCIT:C40242",
+            "UMLS:C1519931",
+            "DOID:138"
+          ]
+        }
+      ]
+    }
+  ]
+}

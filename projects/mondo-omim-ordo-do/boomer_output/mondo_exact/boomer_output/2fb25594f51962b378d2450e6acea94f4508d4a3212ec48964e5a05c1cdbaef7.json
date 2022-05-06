@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2fb25594f51962b378d2450e6acea94f4508d4a3212ec48964e5a05c1cdbaef7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4330935",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050903",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000520",
+          "type" : "CLASS",
+          "lbl" : "parietal lobe ependymal tumor"
+        },
+        {
+          "id" : "NCIT:C131575",
+          "type" : "CLASS",
+          "lbl" : "Parietal Lobe Ependymal Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4330935",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000520",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000520",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C131575",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050903",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000520",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4330935",
+            "MONDO:0000520",
+            "NCIT:C131575",
+            "DOID:0050903"
+          ]
+        }
+      ]
+    }
+  ]
+}

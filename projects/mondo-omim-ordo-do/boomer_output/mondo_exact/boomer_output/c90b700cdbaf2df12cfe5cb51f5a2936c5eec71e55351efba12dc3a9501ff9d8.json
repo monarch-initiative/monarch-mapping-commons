@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c90b700cdbaf2df12cfe5cb51f5a2936c5eec71e55351efba12dc3a9501ff9d8",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207386",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020497",
+          "type" : "CLASS",
+          "lbl" : "Turcot syndrome with polyposis"
+        },
+        {
+          "id" : "Orphanet:99818",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN207386",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020497",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020497",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99818",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN207386",
+            "MONDO:0020497",
+            "Orphanet:99818"
+          ]
+        }
+      ]
+    }
+  ]
+}

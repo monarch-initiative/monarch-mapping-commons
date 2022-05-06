@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1a5c195096d02a5e41527ea0a9f05350438b50aa14b5985c470a44a4937f1670",
+      "nodes" : [
+        {
+          "id" : "MONDO:0013275",
+          "type" : "CLASS",
+          "lbl" : "hemolytic anemia due to glucophosphate isomerase deficiency"
+        },
+        {
+          "id" : "UMLS:C3150730",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:613470",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN072763",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:712",
+          "type" : "CLASS",
+          "lbl" : "Hemolytic anemia due to glucophosphate isomerase deficiency"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013275",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN072763",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013275",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3150730",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013275",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013275",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:712",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:613470",
+            "MONDO:0013275",
+            "UMLS:C3150730",
+            "Orphanet:712"
+          ]
+        }
+      ]
+    }
+  ]
+}

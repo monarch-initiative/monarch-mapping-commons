@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:131dff95c4edd5fdb7ea853c98f5450f5c95b8be6a1569927c139d6f7fd28c8e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203387",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017583",
+          "type" : "CLASS",
+          "lbl" : "mirror polydactyly-vertebral segmentation-limbs defects syndrome"
+        },
+        {
+          "id" : "Orphanet:3004",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203387",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017583",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017583",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3004",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017583",
+            "UMLS:CN203387",
+            "Orphanet:3004"
+          ]
+        }
+      ]
+    }
+  ]
+}

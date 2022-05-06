@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:018307afa60b7f1f5e0f0d1b943737515e813b96941976b9ea55647ccc72dc99",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1848172",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110871",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010241",
+          "type" : "CLASS",
+          "lbl" : "congenital stationary night blindness 2A"
+        },
+        {
+          "id" : "OMIM:300071",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010241",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300071",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110871",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010241",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1848172",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010241",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010241",
+            "OMIM:300071",
+            "DOID:0110871",
+            "UMLS:C1848172"
+          ]
+        }
+      ]
+    }
+  ]
+}

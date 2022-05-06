@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2a1f206278df940ef649a30cacbcd4742c2e59253d70162028670be9e76e90a6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1266093",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6723",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003976",
+          "type" : "CLASS",
+          "lbl" : "malignant type AB thymoma"
+        },
+        {
+          "id" : "NCIT:C6886",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003976",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6886",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1266093",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003976",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6723",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003976",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003976",
+            "NCIT:C6886",
+            "UMLS:C1266093",
+            "DOID:6723"
+          ]
+        }
+      ]
+    }
+  ]
+}

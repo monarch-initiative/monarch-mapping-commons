@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a38d3a3ec205d7d18e92d45e205a8bbcf4db741feced8ea6684fffb0bd412f6c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203582",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017685",
+          "type" : "CLASS",
+          "lbl" : "vitamin B12-responsive methylmalonic acidemia, type cblDv2"
+        },
+        {
+          "id" : "Orphanet:308442",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203582",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017685",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017685",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:308442",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN203582",
+            "MONDO:0017685",
+            "Orphanet:308442"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e0e52f770817e72dcfb035b823f50412a9ca029cd3a7db7e7089baf8a3b98fad",
+      "nodes" : [
+        {
+          "id" : "SCTID:54576000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:K90.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001079",
+          "type" : "CLASS",
+          "lbl" : "pancreatic steatorrhea"
+        },
+        {
+          "id" : "UMLS:C0152166",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10610",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:K90.3",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001079",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0152166",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001079",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:54576000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001079",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10610",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001079",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:10610",
+            "SCTID:54576000",
+            "UMLS:C0152166",
+            "ICD10CM:K90.3",
+            "MONDO:0001079"
+          ]
+        }
+      ]
+    }
+  ]
+}

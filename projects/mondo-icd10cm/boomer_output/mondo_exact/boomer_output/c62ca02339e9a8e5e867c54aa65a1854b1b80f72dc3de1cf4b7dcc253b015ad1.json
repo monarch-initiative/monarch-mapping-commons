@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c62ca02339e9a8e5e867c54aa65a1854b1b80f72dc3de1cf4b7dcc253b015ad1",
+      "nodes" : [
+        {
+          "id" : "MESH:C565673",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1857531",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009029",
+          "type" : "CLASS",
+          "lbl" : "cranial nerves, congenital paresis of"
+        },
+        {
+          "id" : "OMIM:218100",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565673",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009029",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009029",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:218100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1857531",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009029",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009029",
+            "MESH:C565673",
+            "OMIM:218100",
+            "UMLS:C1857531"
+          ]
+        }
+      ]
+    }
+  ]
+}

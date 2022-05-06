@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b776e1291e3a0813d957bf8999c19691ee25fe5583a5ac2d9bc296d6f21678a1",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226733",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015752",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability-cataracts-kyphosis syndrome"
+        },
+        {
+          "id" : "Orphanet:171860",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015752",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:171860",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226733",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015752",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:171860",
+            "MONDO:0015752",
+            "UMLS:CN226733"
+          ]
+        }
+      ]
+    }
+  ]
+}

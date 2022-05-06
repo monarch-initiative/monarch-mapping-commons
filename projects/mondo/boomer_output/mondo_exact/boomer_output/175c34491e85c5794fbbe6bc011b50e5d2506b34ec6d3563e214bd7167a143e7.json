@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:175c34491e85c5794fbbe6bc011b50e5d2506b34ec6d3563e214bd7167a143e7",
+      "nodes" : [
+        {
+          "id" : "MESH:C565478",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1855809",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009429",
+          "type" : "CLASS",
+          "lbl" : "hypophosphatemia, renal, with intracerebral calcifications"
+        },
+        {
+          "id" : "OMIM:241519",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1855809",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009429",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009429",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:241519",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565478",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009429",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009429",
+            "UMLS:C1855809",
+            "OMIM:241519",
+            "MESH:C565478"
+          ]
+        }
+      ]
+    }
+  ]
+}

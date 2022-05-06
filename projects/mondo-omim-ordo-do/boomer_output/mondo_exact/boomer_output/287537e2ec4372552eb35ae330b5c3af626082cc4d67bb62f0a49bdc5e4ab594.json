@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:287537e2ec4372552eb35ae330b5c3af626082cc4d67bb62f0a49bdc5e4ab594",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150412",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013155",
+          "type" : "CLASS",
+          "lbl" : "muscular dystrophy-dystroglycanopathy (congenital with intellectual disability), type B3"
+        },
+        {
+          "id" : "OMIM:613151",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013155",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613151",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3150412",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013155",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013155",
+            "OMIM:613151",
+            "UMLS:C3150412"
+          ]
+        }
+      ]
+    }
+  ]
+}

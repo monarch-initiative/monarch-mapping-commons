@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2c5d8b33c4acd7b3716af70d3f870c9958a64523cc7ad972a678320181994b0b",
+      "nodes" : [
+        {
+          "id" : "MESH:C565099",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1852087",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007456",
+          "type" : "CLASS",
+          "lbl" : "diarrhea, glucose-stimulated secretory, with common variable immunodeficiency"
+        },
+        {
+          "id" : "OMIM:125890",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1852087",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565099",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007456",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:125890",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1852087",
+            "MONDO:0007456",
+            "MESH:C565099",
+            "OMIM:125890"
+          ]
+        }
+      ]
+    }
+  ]
+}

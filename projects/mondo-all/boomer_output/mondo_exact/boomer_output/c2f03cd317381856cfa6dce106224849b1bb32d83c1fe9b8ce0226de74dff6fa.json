@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c2f03cd317381856cfa6dce106224849b1bb32d83c1fe9b8ce0226de74dff6fa",
+      "nodes" : [
+        {
+          "id" : "SCTID:724274009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4510564",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016026",
+          "type" : "CLASS",
+          "lbl" : "infant epilepsy with migrant focal crisis"
+        },
+        {
+          "id" : "Orphanet:1943",
+          "type" : "CLASS",
+          "lbl" : "Early-onset progressive encephalopathy with migrant continuous myoclonus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016026",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1943",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:724274009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016026",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4510564",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016026",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016026",
+            "Orphanet:1943",
+            "SCTID:724274009",
+            "UMLS:C4510564"
+          ]
+        }
+      ]
+    }
+  ]
+}

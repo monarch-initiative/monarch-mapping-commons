@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5be00317f39f70e5a40a85a862bd5c6641c5303ea05f42ac8ed32241d7bb65d8",
+      "nodes" : [
+        {
+          "id" : "DOID:0080044",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019669",
+          "type" : "CLASS",
+          "lbl" : "hypochondrogenesis"
+        },
+        {
+          "id" : "Orphanet:93297",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019669",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93297",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080044",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019669",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019669",
+            "Orphanet:93297",
+            "DOID:0080044"
+          ]
+        }
+      ]
+    }
+  ]
+}

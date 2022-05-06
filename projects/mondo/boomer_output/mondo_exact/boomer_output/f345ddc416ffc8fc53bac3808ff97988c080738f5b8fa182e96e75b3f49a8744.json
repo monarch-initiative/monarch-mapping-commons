@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f345ddc416ffc8fc53bac3808ff97988c080738f5b8fa182e96e75b3f49a8744",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202426",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017067",
+          "type" : "CLASS",
+          "lbl" : "cervicothoracic spina bifida aperta"
+        },
+        {
+          "id" : "Orphanet:268397",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017067",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:268397",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202426",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017067",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:268397",
+            "MONDO:0017067",
+            "UMLS:CN202426"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fdc3007c7d88b251d85b105337e5584b8056ca7a94a8dba8cd7acf379550e5a4",
+      "nodes" : [
+        {
+          "id" : "MESH:C536292",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2931162",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015255",
+          "type" : "CLASS",
+          "lbl" : "blepharophimosis-radioulnar synostosis syndrome"
+        },
+        {
+          "id" : "Orphanet:1256",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015255",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1256",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536292",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015255",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2931162",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015255",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:1256",
+            "MONDO:0015255",
+            "MESH:C536292",
+            "UMLS:C2931162"
+          ]
+        }
+      ]
+    }
+  ]
+}

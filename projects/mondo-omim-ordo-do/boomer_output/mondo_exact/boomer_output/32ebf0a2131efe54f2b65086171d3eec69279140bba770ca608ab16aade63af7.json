@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:32ebf0a2131efe54f2b65086171d3eec69279140bba770ca608ab16aade63af7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0234894",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4399",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006521",
+          "type" : "CLASS",
+          "lbl" : "acneiform dermatitis"
+        },
+        {
+          "id" : "NCIT:C35277",
+          "type" : "CLASS",
+          "lbl" : "Acneiform Dermatitis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0234894",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006521",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006521",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35277",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4399",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006521",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0234894",
+            "MONDO:0006521",
+            "NCIT:C35277",
+            "DOID:4399"
+          ]
+        }
+      ]
+    }
+  ]
+}

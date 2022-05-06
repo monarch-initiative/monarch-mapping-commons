@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:580838526084ea9ed2dd92a5f995f85e3e021908d1cb5d0813491f631e989d37",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN239822",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014945",
+          "type" : "CLASS",
+          "lbl" : "myopathy, distal, with rimmed vacuoles"
+        },
+        {
+          "id" : "OMIM:617158",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014945",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617158",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN239822",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014945",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014945",
+            "OMIM:617158",
+            "UMLS:CN239822"
+          ]
+        }
+      ]
+    }
+  ]
+}

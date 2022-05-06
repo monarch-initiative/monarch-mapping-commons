@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e6f1e1644cdaebf9a3c4120d441c49024402563f08bf999e5c5e6e3edb133a52",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3151057",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013403",
+          "type" : "CLASS",
+          "lbl" : "heterotaxy, visceral, 4, autosomal"
+        },
+        {
+          "id" : "OMIM:613751",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3151057",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013403",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013403",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613751",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3151057",
+            "MONDO:0013403",
+            "OMIM:613751"
+          ]
+        }
+      ]
+    }
+  ]
+}

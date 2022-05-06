@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b768a9b19009c3581c1c7a25d89f01532d9869f873176171f7f941d4d8a053d6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3552304",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012488",
+          "type" : "CLASS",
+          "lbl" : "hepatitis B virus, susceptibility to"
+        },
+        {
+          "id" : "OMIM:610424",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012488",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610424",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3552304",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012488",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012488",
+            "OMIM:610424",
+            "UMLS:C3552304"
+          ]
+        }
+      ]
+    }
+  ]
+}

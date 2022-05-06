@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:87e433401ccffbb21e00cd0700cddefaa8ba83ca7fdd60fd1d52f9b101401c22",
+      "nodes" : [
+        {
+          "id" : "MESH:C565868",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859303",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008937",
+          "type" : "CLASS",
+          "lbl" : "cerebellar ataxia, benign, with thermoanalgesia"
+        },
+        {
+          "id" : "OMIM:212890",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1859303",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008937",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008937",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:212890",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565868",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008937",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008937",
+            "UMLS:C1859303",
+            "OMIM:212890",
+            "MESH:C565868"
+          ]
+        }
+      ]
+    }
+  ]
+}

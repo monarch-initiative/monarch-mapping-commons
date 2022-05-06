@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a8fe82cf749c91847fefd76d3e95eb3245ee09b1dc9e3d03fa92b5eac43bc8ba",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN197328",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015043",
+          "type" : "CLASS",
+          "lbl" : "extramedullary soft tissue plasmacytoma"
+        },
+        {
+          "id" : "Orphanet:100022",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015043",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100022",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN197328",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015043",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015043",
+            "Orphanet:100022",
+            "UMLS:CN197328"
+          ]
+        }
+      ]
+    }
+  ]
+}

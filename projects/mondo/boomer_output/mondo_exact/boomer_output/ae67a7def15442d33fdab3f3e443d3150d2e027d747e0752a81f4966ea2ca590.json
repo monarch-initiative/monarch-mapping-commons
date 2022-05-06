@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ae67a7def15442d33fdab3f3e443d3150d2e027d747e0752a81f4966ea2ca590",
+      "nodes" : [
+        {
+          "id" : "MESH:C564565",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1846173",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010267",
+          "type" : "CLASS",
+          "lbl" : "episodic muscle weakness, X-linked"
+        },
+        {
+          "id" : "OMIM:300211",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1846173",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010267",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564565",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010267",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010267",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300211",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010267",
+            "UMLS:C1846173",
+            "MESH:C564565",
+            "OMIM:300211"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7387be9694635c4af6286c50d3b2cc5bb282343c4b7528f22900e3c92d9e55ad",
+      "nodes" : [
+        {
+          "id" : "Orphanet:140957",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4304021",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN199474",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015372",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant macrothrombocytopenia"
+        },
+        {
+          "id" : "SCTID:720521008",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015372",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:140957",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:720521008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015372",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4304021",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015372",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015372",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN199474",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:140957",
+            "MONDO:0015372",
+            "SCTID:720521008",
+            "UMLS:C4304021"
+          ]
+        }
+      ]
+    }
+  ]
+}

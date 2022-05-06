@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cdf65a4e1b0bb9b9025109e8a2f414291439e3ff8f51ff3a15563f3aff029c3c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1858303",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110891",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C565764",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011471",
+          "type" : "CLASS",
+          "lbl" : "inflammatory bowel disease 3"
+        },
+        {
+          "id" : "OMIM:604519",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110891",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011471",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011471",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:604519",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565764",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011471",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1858303",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011471",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1858303",
+            "MESH:C565764",
+            "OMIM:604519",
+            "MONDO:0011471",
+            "DOID:0110891"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:741e6122933a7b975044fa8d4f70a43b3afbd615ad07607081d4deda93ea6bf9",
+      "nodes" : [
+        {
+          "id" : "MESH:D011507",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:R80",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:576",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003634",
+          "type" : "CLASS",
+          "lbl" : "proteinuria"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:576",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003634",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D011507",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003634",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:R80",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003634",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:576",
+            "MONDO:0003634",
+            "MESH:D011507",
+            "ICD10CM:R80"
+          ]
+        }
+      ]
+    }
+  ]
+}

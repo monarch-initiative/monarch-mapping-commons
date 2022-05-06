@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0318d116df2f955009b6b22f0e767bcbb26723b0b60f71ef9e0438c2b449b441",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4288048",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021650",
+          "type" : "CLASS",
+          "lbl" : "uterine corpus neuroendocrine neoplasm"
+        },
+        {
+          "id" : "NCIT:C126771",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021650",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C126771",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4288048",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021650",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021650",
+            "NCIT:C126771",
+            "UMLS:C4288048"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6043a0b32321c3d190d9f15d6efd0da87d5e1f36c1c6da87a4029d918594153a",
+      "nodes" : [
+        {
+          "id" : "SCTID:62497000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0346082",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021010",
+          "type" : "CLASS",
+          "lbl" : "skin lymphangiosarcoma"
+        },
+        {
+          "id" : "NCIT:C4490",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021010",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0346082",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021010",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:62497000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021010",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021010",
+            "NCIT:C4490",
+            "UMLS:C0346082",
+            "SCTID:62497000"
+          ]
+        }
+      ]
+    }
+  ]
+}

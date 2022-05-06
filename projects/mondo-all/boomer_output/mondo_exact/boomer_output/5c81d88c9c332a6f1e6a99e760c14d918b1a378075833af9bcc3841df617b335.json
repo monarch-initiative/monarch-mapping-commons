@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5c81d88c9c332a6f1e6a99e760c14d918b1a378075833af9bcc3841df617b335",
+      "nodes" : [
+        {
+          "id" : "MESH:C563558",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1834688",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008028",
+          "type" : "CLASS",
+          "lbl" : "muscular dystrophy, Barnes type"
+        },
+        {
+          "id" : "OMIM:158800",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1834688",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008028",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008028",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:158800",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563558",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008028",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008028",
+            "UMLS:C1834688",
+            "OMIM:158800",
+            "MESH:C563558"
+          ]
+        }
+      ]
+    }
+  ]
+}

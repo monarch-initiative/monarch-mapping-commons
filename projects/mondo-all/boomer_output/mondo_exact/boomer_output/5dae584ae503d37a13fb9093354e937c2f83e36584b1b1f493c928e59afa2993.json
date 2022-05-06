@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5dae584ae503d37a13fb9093354e937c2f83e36584b1b1f493c928e59afa2993",
+      "nodes" : [
+        {
+          "id" : "MESH:D012303",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0035639",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0700091",
+          "type" : "CLASS",
+          "lbl" : "ring chromosome disorder"
+        },
+        {
+          "id" : "NCIT:C3360",
+          "type" : "CLASS",
+          "lbl" : "Supernumerary Circular Chromosome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0700091",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3360",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0035639",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0700091",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D012303",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0700091",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0700091",
+            "NCIT:C3360",
+            "UMLS:C0035639",
+            "MESH:D012303"
+          ]
+        }
+      ]
+    }
+  ]
+}

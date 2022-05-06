@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:965c7c6f9a8ee83bf72eb4ae518644cf5044a34fe1c42104ebef2e9a42bd29c8",
+      "nodes" : [
+        {
+          "id" : "MESH:C535747",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050571",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005501",
+          "type" : "CLASS",
+          "lbl" : "congenital disorder of glycosylation type II"
+        },
+        {
+          "id" : "OMIMPS:212066",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0050571",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005501",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535747",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005501",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005501",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:212066",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0050571",
+            "MONDO:0005501",
+            "MESH:C535747",
+            "OMIMPS:212066"
+          ]
+        }
+      ]
+    }
+  ]
+}

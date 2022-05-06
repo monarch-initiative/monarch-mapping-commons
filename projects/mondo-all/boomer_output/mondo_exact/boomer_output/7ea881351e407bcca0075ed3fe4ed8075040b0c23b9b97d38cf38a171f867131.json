@@ -1,0 +1,76 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7ea881351e407bcca0075ed3fe4ed8075040b0c23b9b97d38cf38a171f867131",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2931505",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015995",
+          "type" : "CLASS",
+          "lbl" : "melorheostosis with osteopoikilosis"
+        },
+        {
+          "id" : "Orphanet:1879",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN200621",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2931505",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015995",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015995",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN200621",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015995",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1879",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015995",
+            "UMLS:C2931505",
+            "Orphanet:1879"
+          ]
+        }
+      ]
+    }
+  ]
+}

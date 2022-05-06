@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:751e4bde343907bafbe4b1271790f34071a9804eea5ad9ff9145bd3b4ff958d1",
+      "nodes" : [
+        {
+          "id" : "MESH:C536323",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0796118",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0043185",
+          "type" : "CLASS",
+          "lbl" : "pointer syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0796118",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043185",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536323",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043185",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0043185",
+            "UMLS:C0796118",
+            "MESH:C536323"
+          ]
+        }
+      ]
+    }
+  ]
+}

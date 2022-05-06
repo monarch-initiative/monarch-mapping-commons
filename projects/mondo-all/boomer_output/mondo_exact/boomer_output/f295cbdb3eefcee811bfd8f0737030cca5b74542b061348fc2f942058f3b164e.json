@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f295cbdb3eefcee811bfd8f0737030cca5b74542b061348fc2f942058f3b164e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332581",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3381",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002634",
+          "type" : "CLASS",
+          "lbl" : "liposarcoma of bone"
+        },
+        {
+          "id" : "NCIT:C7598",
+          "type" : "CLASS",
+          "lbl" : "Bone Liposarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332581",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002634",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3381",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002634",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002634",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7598",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002634",
+            "UMLS:C1332581",
+            "DOID:3381",
+            "NCIT:C7598"
+          ]
+        }
+      ]
+    }
+  ]
+}

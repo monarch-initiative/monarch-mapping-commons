@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c3d4f002fc6d834b02844eda6cbab9bb9a42993b198dbefe84596c6f24290b72",
+      "nodes" : [
+        {
+          "id" : "MESH:C564605",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1846609",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011796",
+          "type" : "CLASS",
+          "lbl" : "epilepsy, partial, with pericentral spikes"
+        },
+        {
+          "id" : "OMIM:607221",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564605",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011796",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011796",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607221",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1846609",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011796",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011796",
+            "MESH:C564605",
+            "OMIM:607221",
+            "UMLS:C1846609"
+          ]
+        }
+      ]
+    }
+  ]
+}

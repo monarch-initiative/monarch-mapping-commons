@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:422dbf4b77e4d587cdf7158957e2535cc616cf76f506c08a6fabf42a3679512d",
+      "nodes" : [
+        {
+          "id" : "MONDO:0004192",
+          "type" : "CLASS",
+          "lbl" : "urethra cancer"
+        },
+        {
+          "id" : "ICD10CM:C68.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C7507",
+          "type" : "CLASS",
+          "lbl" : "Malignant Urethral Neoplasm"
+        },
+        {
+          "id" : "SCTID:363459007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:734",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:363459007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004192",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C68.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004192",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:734",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004192",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004192",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7507",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:734",
+            "SCTID:363459007",
+            "MONDO:0004192",
+            "ICD10CM:C68.0",
+            "NCIT:C7507"
+          ]
+        }
+      ]
+    }
+  ]
+}

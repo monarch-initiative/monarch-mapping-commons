@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9c29ac9fe248ad4212d3953364c21e172984c31e9968ffe39c38cf6ea7f1614f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332464",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7050",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004092",
+          "type" : "CLASS",
+          "lbl" : "thymic basaloid carcinoma"
+        },
+        {
+          "id" : "NCIT:C6456",
+          "type" : "CLASS",
+          "lbl" : "Thymic Basaloid Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004092",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332464",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004092",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7050",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004092",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004092",
+            "NCIT:C6456",
+            "UMLS:C1332464",
+            "DOID:7050"
+          ]
+        }
+      ]
+    }
+  ]
+}

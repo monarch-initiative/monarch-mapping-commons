@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f79f1573ef328909177b2eeaf3b284b8e12140bab88e7591c88021fdc972bb96",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:H35.54",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:14252",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001924",
+          "type" : "CLASS",
+          "lbl" : "dystrophies primarily involving the retinal pigment epithelium"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:H35.54",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001924",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:14252",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001924",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001924",
+            "ICD10CM:H35.54",
+            "DOID:14252"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:34f3f9a8216030dddf5224c28b1c1988ae153068a534ea17cd6d27ae128ad0e7",
+      "nodes" : [
+        {
+          "id" : "DOID:0080214",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007858",
+          "type" : "CLASS",
+          "lbl" : "palmoplantar keratoderma, punctate type 1A"
+        },
+        {
+          "id" : "OMIM:148600",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007858",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:148600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080214",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007858",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007858",
+            "OMIM:148600",
+            "DOID:0080214"
+          ]
+        }
+      ]
+    }
+  ]
+}

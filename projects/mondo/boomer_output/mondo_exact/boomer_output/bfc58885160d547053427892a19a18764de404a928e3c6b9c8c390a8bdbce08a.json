@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bfc58885160d547053427892a19a18764de404a928e3c6b9c8c390a8bdbce08a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN239183",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050674",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:485631",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIMPS:607765",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018841",
+          "type" : "CLASS",
+          "lbl" : "congenital bile acid synthesis defect"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018841",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:485631",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN239183",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018841",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050674",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018841",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018841",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:607765",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN239183",
+            "OMIMPS:607765",
+            "DOID:0050674",
+            "MONDO:0018841",
+            "Orphanet:485631"
+          ]
+        }
+      ]
+    }
+  ]
+}

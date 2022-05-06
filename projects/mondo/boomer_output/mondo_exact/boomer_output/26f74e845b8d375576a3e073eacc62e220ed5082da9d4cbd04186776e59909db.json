@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:26f74e845b8d375576a3e073eacc62e220ed5082da9d4cbd04186776e59909db",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205889",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070222",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011156",
+          "type" : "CLASS",
+          "lbl" : "progressive familial intrahepatic cholestasis type 2"
+        },
+        {
+          "id" : "OMIM:601847",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:79304",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011156",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601847",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070222",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011156",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205889",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011156",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011156",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79304",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:601847",
+            "MONDO:0011156",
+            "DOID:0070222",
+            "UMLS:CN205889",
+            "Orphanet:79304"
+          ]
+        }
+      ]
+    }
+  ]
+}

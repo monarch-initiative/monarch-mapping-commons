@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0c0a514d05118d3ce6ee7e95d3c64db4fa47d6974d8e79eb7f698f94906e4ffb",
+      "nodes" : [
+        {
+          "id" : "MESH:C566469",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012509",
+          "type" : "CLASS",
+          "lbl" : "pigmented nodular adrenocortical disease, primary, 1"
+        },
+        {
+          "id" : "OMIM:610489",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012509",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610489",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566469",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012509",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012509",
+            "OMIM:610489",
+            "MESH:C566469"
+          ]
+        }
+      ]
+    }
+  ]
+}

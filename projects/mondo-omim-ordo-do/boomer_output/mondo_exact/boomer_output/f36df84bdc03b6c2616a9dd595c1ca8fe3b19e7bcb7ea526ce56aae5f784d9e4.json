@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f36df84bdc03b6c2616a9dd595c1ca8fe3b19e7bcb7ea526ce56aae5f784d9e4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310625",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015014",
+          "type" : "CLASS",
+          "lbl" : "coloboma, osteopetrosis, microphthalmia, macrocephaly, albinism, and deafness"
+        },
+        {
+          "id" : "Orphanet:603494",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:617306",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4310625",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015014",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015014",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617306",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015014",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:603494",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4310625",
+            "MONDO:0015014",
+            "OMIM:617306",
+            "Orphanet:603494"
+          ]
+        }
+      ]
+    }
+  ]
+}

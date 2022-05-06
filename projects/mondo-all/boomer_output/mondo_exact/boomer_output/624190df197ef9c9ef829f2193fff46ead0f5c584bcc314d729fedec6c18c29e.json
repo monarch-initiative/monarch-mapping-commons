@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:624190df197ef9c9ef829f2193fff46ead0f5c584bcc314d729fedec6c18c29e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN199363",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015333",
+          "type" : "CLASS",
+          "lbl" : "progeroid syndrome"
+        },
+        {
+          "id" : "Orphanet:139033",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015333",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:139033",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN199363",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015333",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015333",
+            "Orphanet:139033",
+            "UMLS:CN199363"
+          ]
+        }
+      ]
+    }
+  ]
+}

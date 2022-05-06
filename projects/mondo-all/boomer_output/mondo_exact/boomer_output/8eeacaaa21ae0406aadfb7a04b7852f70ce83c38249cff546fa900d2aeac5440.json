@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8eeacaaa21ae0406aadfb7a04b7852f70ce83c38249cff546fa900d2aeac5440",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225330",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014635",
+          "type" : "CLASS",
+          "lbl" : "microphthalmia, isolated, with coloboma 10"
+        },
+        {
+          "id" : "OMIM:616428",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4225330",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014635",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014635",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616428",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014635",
+            "UMLS:C4225330",
+            "OMIM:616428"
+          ]
+        }
+      ]
+    }
+  ]
+}

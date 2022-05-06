@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d0780da7ac67216f0ea18027f820109ee5c601fc63e984904f39c5f0466377b7",
+      "nodes" : [
+        {
+          "id" : "MESH:C535381",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1864939",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012390",
+          "type" : "CLASS",
+          "lbl" : "arthrogryposis multiplex with deafness, inguinal hernias, and early death"
+        },
+        {
+          "id" : "OMIM:610001",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C535381",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012390",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012390",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610001",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1864939",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012390",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C535381",
+            "MONDO:0012390",
+            "OMIM:610001",
+            "UMLS:C1864939"
+          ]
+        }
+      ]
+    }
+  ]
+}

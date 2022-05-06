@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1ed53d087155224f91c15d7b290ed85dd3994a9d5e12300a6df7781dbac74157",
+      "nodes" : [
+        {
+          "id" : "MESH:D012142",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:126667002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020641",
+          "type" : "CLASS",
+          "lbl" : "respiratory tract neoplasm"
+        },
+        {
+          "id" : "NCIT:C3355",
+          "type" : "CLASS",
+          "lbl" : "Respiratory System Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D012142",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020641",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:126667002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020641",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020641",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3355",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020641",
+            "MESH:D012142",
+            "SCTID:126667002",
+            "NCIT:C3355"
+          ]
+        }
+      ]
+    }
+  ]
+}

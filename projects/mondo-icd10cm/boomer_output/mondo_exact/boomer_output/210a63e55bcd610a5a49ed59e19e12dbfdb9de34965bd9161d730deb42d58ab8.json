@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:210a63e55bcd610a5a49ed59e19e12dbfdb9de34965bd9161d730deb42d58ab8",
+      "nodes" : [
+        {
+          "id" : "MESH:C565011",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1851099",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007616",
+          "type" : "CLASS",
+          "lbl" : "fibula, recurrent dislocation of head of"
+        },
+        {
+          "id" : "OMIM:135800",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007616",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:135800",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1851099",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007616",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565011",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007616",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007616",
+            "OMIM:135800",
+            "MESH:C565011",
+            "UMLS:C1851099"
+          ]
+        }
+      ]
+    }
+  ]
+}

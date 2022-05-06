@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:40de51007d08210d403140c898684ea3edd6a41f37e5d911755d5eb082be1a31",
+      "nodes" : [
+        {
+          "id" : "MESH:C567039",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1970343",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011345",
+          "type" : "CLASS",
+          "lbl" : "facial dysmorphism, selective tooth agenesis, and choroid calcification"
+        },
+        {
+          "id" : "OMIM:603589",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1970343",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011345",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011345",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603589",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567039",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011345",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011345",
+            "UMLS:C1970343",
+            "OMIM:603589",
+            "MESH:C567039"
+          ]
+        }
+      ]
+    }
+  ]
+}

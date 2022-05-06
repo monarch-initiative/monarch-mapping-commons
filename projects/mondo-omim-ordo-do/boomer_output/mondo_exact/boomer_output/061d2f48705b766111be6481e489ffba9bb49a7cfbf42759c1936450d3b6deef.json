@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:061d2f48705b766111be6481e489ffba9bb49a7cfbf42759c1936450d3b6deef",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335684",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6459",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003884",
+          "type" : "CLASS",
+          "lbl" : "lipoma of the rectum"
+        },
+        {
+          "id" : "NCIT:C5551",
+          "type" : "CLASS",
+          "lbl" : "Rectal Lipoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335684",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003884",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003884",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5551",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6459",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003884",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003884",
+            "UMLS:C1335684",
+            "NCIT:C5551",
+            "DOID:6459"
+          ]
+        }
+      ]
+    }
+  ]
+}

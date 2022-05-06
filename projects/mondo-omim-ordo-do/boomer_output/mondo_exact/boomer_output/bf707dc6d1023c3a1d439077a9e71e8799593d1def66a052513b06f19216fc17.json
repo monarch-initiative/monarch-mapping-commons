@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bf707dc6d1023c3a1d439077a9e71e8799593d1def66a052513b06f19216fc17",
+      "nodes" : [
+        {
+          "id" : "MESH:C565940",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859723",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008821",
+          "type" : "CLASS",
+          "lbl" : "arthrogryposis, distal, with intellectual disability and characteristic facies"
+        },
+        {
+          "id" : "OMIM:208081",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565940",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008821",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008821",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:208081",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1859723",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008821",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C565940",
+            "MONDO:0008821",
+            "OMIM:208081",
+            "UMLS:C1859723"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:591f6a9267b212ddf2ba0a5da5f68c81638e8823188cb77409e192fa67e2b319",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279633",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005037",
+          "type" : "CLASS",
+          "lbl" : "gastric intestinal type adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C9157",
+          "type" : "CLASS",
+          "lbl" : "Gastric Intestinal-Type Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005037",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9157",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0279633",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005037",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005037",
+            "NCIT:C9157",
+            "UMLS:C0279633"
+          ]
+        }
+      ]
+    }
+  ]
+}

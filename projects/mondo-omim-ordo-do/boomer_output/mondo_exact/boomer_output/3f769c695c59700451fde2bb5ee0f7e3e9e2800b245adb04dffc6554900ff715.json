@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3f769c695c59700451fde2bb5ee0f7e3e9e2800b245adb04dffc6554900ff715",
+      "nodes" : [
+        {
+          "id" : "SCTID:111520007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0155068",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10444",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001037",
+          "type" : "CLASS",
+          "lbl" : "ring corneal ulcer"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:10444",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001037",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0155068",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001037",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:111520007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001037",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:10444",
+            "MONDO:0001037",
+            "UMLS:C0155068",
+            "SCTID:111520007"
+          ]
+        }
+      ]
+    }
+  ]
+}

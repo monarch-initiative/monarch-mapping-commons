@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0cffa4285a0da5978deab6f14a5e591831a07ced749298c2cfcd07205347a8dd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333878",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5822",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003658",
+          "type" : "CLASS",
+          "lbl" : "B-cell lymphoma, unclassifiable, with features intermediate between diffuse large b-cell lymphoma and classical Hodgkin lymphoma"
+        },
+        {
+          "id" : "NCIT:C37869",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333878",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003658",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5822",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003658",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003658",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C37869",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333878",
+            "MONDO:0003658",
+            "DOID:5822",
+            "NCIT:C37869"
+          ]
+        }
+      ]
+    }
+  ]
+}

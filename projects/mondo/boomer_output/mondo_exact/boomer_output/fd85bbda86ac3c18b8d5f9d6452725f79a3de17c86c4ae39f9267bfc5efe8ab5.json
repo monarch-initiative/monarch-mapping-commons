@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fd85bbda86ac3c18b8d5f9d6452725f79a3de17c86c4ae39f9267bfc5efe8ab5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN069134",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C580039",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3711385",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:254871",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016808",
+          "type" : "CLASS",
+          "lbl" : "mitochondrial DNA depletion syndrome, hepatocerebral form"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016808",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:254871",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C580039",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016808",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3711385",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016808",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016808",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN069134",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:254871",
+            "MONDO:0016808",
+            "MESH:C580039",
+            "UMLS:C3711385"
+          ]
+        }
+      ]
+    }
+  ]
+}

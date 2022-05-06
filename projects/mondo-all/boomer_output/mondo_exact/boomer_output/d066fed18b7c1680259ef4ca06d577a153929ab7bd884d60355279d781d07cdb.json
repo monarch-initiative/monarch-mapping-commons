@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d066fed18b7c1680259ef4ca06d577a153929ab7bd884d60355279d781d07cdb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335974",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8122",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004469",
+          "type" : "CLASS",
+          "lbl" : "pseudovascular skin squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C27542",
+          "type" : "CLASS",
+          "lbl" : "Skin Pseudovascular Squamous Cell Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:8122",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004469",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335974",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004469",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004469",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27542",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004469",
+            "DOID:8122",
+            "UMLS:C1335974",
+            "NCIT:C27542"
+          ]
+        }
+      ]
+    }
+  ]
+}

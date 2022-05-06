@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5c32c3ca17f761cb57841f4e66ac6263c0ce3f6a5ee2efa475ad21e47f35ef6f",
+      "nodes" : [
+        {
+          "id" : "MESH:C563402",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1832858",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010982",
+          "type" : "CLASS",
+          "lbl" : "ichthyosis-intellectual disability syndrome with large keratohyalin granules in the skin"
+        },
+        {
+          "id" : "OMIM:601039",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010982",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601039",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1832858",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010982",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563402",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010982",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010982",
+            "OMIM:601039",
+            "UMLS:C1832858",
+            "MESH:C563402"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:13d0e22b08da11c41456e34d9c265cdddd342972f03c2360b18d92108652567b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1377850",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5479",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003462",
+          "type" : "CLASS",
+          "lbl" : "papillary adenofibroma"
+        },
+        {
+          "id" : "NCIT:C8986",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5479",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003462",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003462",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8986",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1377850",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003462",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003462",
+            "DOID:5479",
+            "NCIT:C8986",
+            "UMLS:C1377850"
+          ]
+        }
+      ]
+    }
+  ]
+}

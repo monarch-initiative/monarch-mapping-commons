@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:efbb3e31e40440d889dca0cc60f70a31ae3a542a6690cf1e1e01d552ba91e571",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN074243",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024542",
+          "type" : "CLASS",
+          "lbl" : "cerebellar ataxia, intellectual disability, and dysequilibrium syndrome 1"
+        },
+        {
+          "id" : "OMIM:224050",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024542",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:224050",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN074243",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024542",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:224050",
+            "MONDO:0024542",
+            "UMLS:CN074243"
+          ]
+        }
+      ]
+    }
+  ]
+}

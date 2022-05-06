@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b07289e1a748ab6fd9f9b5b999d6728f7ef750854472d3ddeaf184c3696236df",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518723",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6469",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003887",
+          "type" : "CLASS",
+          "lbl" : "ovarian mucinous adenofibroma"
+        },
+        {
+          "id" : "NCIT:C40040",
+          "type" : "CLASS",
+          "lbl" : "Ovarian Mucinous Adenofibroma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6469",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003887",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003887",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40040",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518723",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003887",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6469",
+            "MONDO:0003887",
+            "NCIT:C40040",
+            "UMLS:C1518723"
+          ]
+        }
+      ]
+    }
+  ]
+}

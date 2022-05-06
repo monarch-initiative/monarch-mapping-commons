@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6c395c1fb18f357aa6171e7982a8d935a907de2b8a50b0b9ff8516b1b65ca716",
+      "nodes" : [
+        {
+          "id" : "MESH:C538061",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1856688",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009246",
+          "type" : "CLASS",
+          "lbl" : "Friedreich ataxia and congenital glaucoma"
+        },
+        {
+          "id" : "OMIM:229310",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1856688",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009246",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009246",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:229310",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538061",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009246",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:229310",
+            "MONDO:0009246",
+            "UMLS:C1856688",
+            "MESH:C538061"
+          ]
+        }
+      ]
+    }
+  ]
+}

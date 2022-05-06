@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5a9b83eccf048651f8675cb729b8843e164a80967f807dc956f7712ce1d0a1cf",
+      "nodes" : [
+        {
+          "id" : "MESH:C566046",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111564",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008572",
+          "type" : "CLASS",
+          "lbl" : "tibia, hypoplasia or aplasia of, with polydactyly"
+        },
+        {
+          "id" : "OMIM:188740",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0111564",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008572",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566046",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008572",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008572",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:188740",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0111564",
+            "MONDO:0008572",
+            "MESH:C566046",
+            "OMIM:188740"
+          ]
+        }
+      ]
+    }
+  ]
+}

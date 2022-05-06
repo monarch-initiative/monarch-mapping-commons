@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2305581fcc75828383e527b5d71fb9a4783c6162e2607e3d83c36dd2b3fb76d4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1836271",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012261",
+          "type" : "CLASS",
+          "lbl" : "autism, susceptibility to, 6"
+        },
+        {
+          "id" : "OMIM:609378",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012261",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609378",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1836271",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012261",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012261",
+            "OMIM:609378",
+            "UMLS:C1836271"
+          ]
+        }
+      ]
+    }
+  ]
+}

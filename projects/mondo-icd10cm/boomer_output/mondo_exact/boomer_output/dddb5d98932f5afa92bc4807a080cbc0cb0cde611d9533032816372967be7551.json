@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dddb5d98932f5afa92bc4807a080cbc0cb0cde611d9533032816372967be7551",
+      "nodes" : [
+        {
+          "id" : "SCTID:449270002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3165203",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020399",
+          "type" : "CLASS",
+          "lbl" : "congenital hypoplasia of the mitral valve annulus"
+        },
+        {
+          "id" : "Orphanet:99058",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3165203",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020399",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:449270002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020399",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020399",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99058",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020399",
+            "UMLS:C3165203",
+            "SCTID:449270002",
+            "Orphanet:99058"
+          ]
+        }
+      ]
+    }
+  ]
+}

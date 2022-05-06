@@ -1,0 +1,76 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9ebc1a96404e5d5c51b68948a6e8c9a99616308215fa270d14d64da8092f27d9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0520680",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008807",
+          "type" : "CLASS",
+          "lbl" : "apnea, central sleep"
+        },
+        {
+          "id" : "OMIM:207720",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:107640",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008807",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:207720",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008807",
+          "pred" : "siblingOf",
+          "obj" : "OMIM:107640",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0520680",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008807",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:207720",
+            "MONDO:0008807",
+            "UMLS:C0520680"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3c2d4cd782119743fd2dde7bf8eccd35bb1a54e30aaefefcba71178360d72160",
+      "nodes" : [
+        {
+          "id" : "SCTID:764463001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN073989",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015718",
+          "type" : "CLASS",
+          "lbl" : "mosaic trisomy 12"
+        },
+        {
+          "id" : "Orphanet:1698",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015718",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1698",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:764463001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015718",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN073989",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015718",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015718",
+            "Orphanet:1698",
+            "SCTID:764463001",
+            "UMLS:CN073989"
+          ]
+        }
+      ]
+    }
+  ]
+}

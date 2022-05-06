@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0bc0438fc5937208b0a3b1817b08bf85ade7a16f1cb2b822a85344d2a9eccb34",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN199634",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015498",
+          "type" : "CLASS",
+          "lbl" : "oromandibular-limb anomalies syndrome"
+        },
+        {
+          "id" : "Orphanet:156215",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015498",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:156215",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN199634",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015498",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:156215",
+            "MONDO:0015498",
+            "UMLS:CN199634"
+          ]
+        }
+      ]
+    }
+  ]
+}

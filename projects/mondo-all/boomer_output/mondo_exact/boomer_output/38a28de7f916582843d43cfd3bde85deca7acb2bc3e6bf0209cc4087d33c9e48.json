@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:38a28de7f916582843d43cfd3bde85deca7acb2bc3e6bf0209cc4087d33c9e48",
+      "nodes" : [
+        {
+          "id" : "MESH:C566063",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1861204",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008549",
+          "type" : "CLASS",
+          "lbl" : "thoracic dysostosis, isolated"
+        },
+        {
+          "id" : "OMIM:187750",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C566063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008549",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008549",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:187750",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1861204",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008549",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C566063",
+            "MONDO:0008549",
+            "OMIM:187750",
+            "UMLS:C1861204"
+          ]
+        }
+      ]
+    }
+  ]
+}

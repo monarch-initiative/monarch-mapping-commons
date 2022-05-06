@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e67e6b4caba8d7cf95e23b87540e7f2460da77ae8123e71f06a614aa9bbc7c6c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227201",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017756",
+          "type" : "CLASS",
+          "lbl" : "disorder of pterin metabolism"
+        },
+        {
+          "id" : "Orphanet:309819",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017756",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309819",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227201",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017756",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017756",
+            "Orphanet:309819",
+            "UMLS:CN227201"
+          ]
+        }
+      ]
+    }
+  ]
+}

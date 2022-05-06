@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5df84426e6bfd28c4d2d9e9e3926a388cd3ec256dc0f0d99e8a11021d2d41b5b",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227208",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017766",
+          "type" : "CLASS",
+          "lbl" : "disorder of manganese transport"
+        },
+        {
+          "id" : "Orphanet:309851",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017766",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309851",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227208",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017766",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017766",
+            "UMLS:CN227208",
+            "Orphanet:309851"
+          ]
+        }
+      ]
+    }
+  ]
+}

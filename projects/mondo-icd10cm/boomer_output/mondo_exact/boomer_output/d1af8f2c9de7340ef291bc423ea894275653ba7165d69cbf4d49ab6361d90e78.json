@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d1af8f2c9de7340ef291bc423ea894275653ba7165d69cbf4d49ab6361d90e78",
+      "nodes" : [
+        {
+          "id" : "DOID:0111181",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020756",
+          "type" : "CLASS",
+          "lbl" : "migraine, familial hemiplegic, 1"
+        },
+        {
+          "id" : "OMIM:141500",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020756",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:141500",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111181",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020756",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020756",
+            "OMIM:141500",
+            "DOID:0111181"
+          ]
+        }
+      ]
+    }
+  ]
+}

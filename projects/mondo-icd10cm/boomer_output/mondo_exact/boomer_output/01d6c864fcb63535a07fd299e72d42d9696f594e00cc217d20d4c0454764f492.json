@@ -1,0 +1,130 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:01d6c864fcb63535a07fd299e72d42d9696f594e00cc217d20d4c0454764f492",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:N40-N51",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:N40-N53",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C27019",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D005832",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:48",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:363194005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003150",
+          "type" : "CLASS",
+          "lbl" : "male reproductive system disorder"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003150",
+          "pred" : "siblingOf",
+          "obj" : "ICD10CM:N40-N53",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:363194005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003150",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:N40-N51",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003150",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:48",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003150",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D005832",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003150",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003150",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27019",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C27019",
+            "MESH:D005832",
+            "MONDO:0003150",
+            "DOID:48",
+            "ICD10CM:N40-N51",
+            "SCTID:363194005"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e2f5f7c3b787f473bc8378f2e3383dc14baf31a4f31a55af1cb0a70ed059dfe6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1511284",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1637",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002064",
+          "type" : "CLASS",
+          "lbl" : "breast angiomatosis"
+        },
+        {
+          "id" : "NCIT:C40381",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:1637",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002064",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1511284",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002064",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002064",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40381",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:1637",
+            "MONDO:0002064",
+            "NCIT:C40381",
+            "UMLS:C1511284"
+          ]
+        }
+      ]
+    }
+  ]
+}

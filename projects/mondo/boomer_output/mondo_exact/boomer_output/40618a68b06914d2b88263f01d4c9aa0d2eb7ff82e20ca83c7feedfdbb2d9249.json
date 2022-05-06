@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:40618a68b06914d2b88263f01d4c9aa0d2eb7ff82e20ca83c7feedfdbb2d9249",
+      "nodes" : [
+        {
+          "id" : "DOID:0110750",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011016",
+          "type" : "CLASS",
+          "lbl" : "type 1 diabetes mellitus 11"
+        },
+        {
+          "id" : "UMLS:C1832605",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:601208",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C563371",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011016",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601208",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110750",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011016",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563371",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011016",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1832605",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011016",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C563371",
+            "MONDO:0011016",
+            "DOID:0110750",
+            "OMIM:601208",
+            "UMLS:C1832605"
+          ]
+        }
+      ]
+    }
+  ]
+}

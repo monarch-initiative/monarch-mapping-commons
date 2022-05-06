@@ -1,0 +1,76 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:44339ed1cc0bf2df168a581f172cbef2cfaa4af19c7cd990921fe63c8e507d50",
+      "nodes" : [
+        {
+          "id" : "MESH:D002690",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:A70-A74",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021697",
+          "type" : "CLASS",
+          "lbl" : "chlamydia infectious disease"
+        },
+        {
+          "id" : "MESH:D023521",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:A70-A74",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021697",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D002690",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021697",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021697",
+          "pred" : "siblingOf",
+          "obj" : "MESH:D023521",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:A70-A74",
+            "MONDO:0021697",
+            "MESH:D002690"
+          ]
+        }
+      ]
+    }
+  ]
+}

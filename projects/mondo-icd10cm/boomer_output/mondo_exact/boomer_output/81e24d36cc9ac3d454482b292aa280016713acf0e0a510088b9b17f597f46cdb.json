@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:81e24d36cc9ac3d454482b292aa280016713acf0e0a510088b9b17f597f46cdb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1880119",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080183",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000892",
+          "type" : "CLASS",
+          "lbl" : "colon medullary carcinoma"
+        },
+        {
+          "id" : "NCIT:C60641",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1880119",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000892",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080183",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000892",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000892",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C60641",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000892",
+            "UMLS:C1880119",
+            "DOID:0080183",
+            "NCIT:C60641"
+          ]
+        }
+      ]
+    }
+  ]
+}

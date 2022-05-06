@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:645099cd32b1661e1f6e311b62d63722c1b2153e881e719e162636008acec6fb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333157",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5253",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003348",
+          "type" : "CLASS",
+          "lbl" : "conventional leiomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C9428",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5253",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003348",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003348",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9428",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333157",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003348",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5253",
+            "MONDO:0003348",
+            "NCIT:C9428",
+            "UMLS:C1333157"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0395ed0a7bfc2eb64f506d9f77b7ca0c735ee17e06629c8bb3b62b8bf7528977",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1867340",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008366",
+          "type" : "CLASS",
+          "lbl" : "red cell permeability defect"
+        },
+        {
+          "id" : "OMIM:179650",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1867340",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008366",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008366",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:179650",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008366",
+            "UMLS:C1867340",
+            "OMIM:179650"
+          ]
+        }
+      ]
+    }
+  ]
+}

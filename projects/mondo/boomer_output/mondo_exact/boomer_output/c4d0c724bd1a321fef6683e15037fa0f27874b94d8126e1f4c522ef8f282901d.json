@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c4d0c724bd1a321fef6683e15037fa0f27874b94d8126e1f4c522ef8f282901d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1515863",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006066",
+          "type" : "CLASS",
+          "lbl" : "acinar prostate adenocarcinoma, foamy gland variant"
+        },
+        {
+          "id" : "NCIT:C39882",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1515863",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006066",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006066",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39882",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006066",
+            "UMLS:C1515863",
+            "NCIT:C39882"
+          ]
+        }
+      ]
+    }
+  ]
+}

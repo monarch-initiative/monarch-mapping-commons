@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8fde9c187cd762dd340e999e40528f906cd6824f16d6f25587ba4b0890a2ffb1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3642345",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021116",
+          "type" : "CLASS",
+          "lbl" : "luminal A breast carcinoma"
+        },
+        {
+          "id" : "NCIT:C53554",
+          "type" : "CLASS",
+          "lbl" : "Luminal A Breast Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3642345",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021116",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021116",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C53554",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3642345",
+            "MONDO:0021116",
+            "NCIT:C53554"
+          ]
+        }
+      ]
+    }
+  ]
+}

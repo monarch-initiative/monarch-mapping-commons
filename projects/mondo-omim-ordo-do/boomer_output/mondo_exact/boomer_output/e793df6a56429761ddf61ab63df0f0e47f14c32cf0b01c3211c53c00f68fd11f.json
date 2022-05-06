@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e793df6a56429761ddf61ab63df0f0e47f14c32cf0b01c3211c53c00f68fd11f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204807",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018245",
+          "type" : "CLASS",
+          "lbl" : "2p21 microdeletion syndrome without cystinuria"
+        },
+        {
+          "id" : "Orphanet:369881",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018245",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:369881",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204807",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018245",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018245",
+            "Orphanet:369881",
+            "UMLS:CN204807"
+          ]
+        }
+      ]
+    }
+  ]
+}

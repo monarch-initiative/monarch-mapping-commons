@@ -1,0 +1,113 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ecd535f7efb4f3b1fcf596a19cfc41f82fa1e57e9c5575435a9ef2bfadfa5c24",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:F44.81",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001159",
+          "type" : "CLASS",
+          "lbl" : "multiple personality disorder"
+        },
+        {
+          "id" : "SCTID:31611000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D009105",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10934",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C94330",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D009105",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001159",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:F44.81",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001159",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:31611000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001159",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001159",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C94330",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10934",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001159",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001159",
+            "NCIT:C94330",
+            "SCTID:31611000",
+            "MESH:D009105",
+            "DOID:10934",
+            "ICD10CM:F44.81"
+          ]
+        }
+      ]
+    }
+  ]
+}

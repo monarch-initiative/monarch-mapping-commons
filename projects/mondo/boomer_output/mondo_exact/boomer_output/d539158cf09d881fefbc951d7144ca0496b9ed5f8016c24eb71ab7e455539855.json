@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d539158cf09d881fefbc951d7144ca0496b9ed5f8016c24eb71ab7e455539855",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334635",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8118",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004467",
+          "type" : "CLASS",
+          "lbl" : "mature gastric teratoma"
+        },
+        {
+          "id" : "NCIT:C5260",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004467",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5260",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8118",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004467",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334635",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004467",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004467",
+            "NCIT:C5260",
+            "DOID:8118",
+            "UMLS:C1334635"
+          ]
+        }
+      ]
+    }
+  ]
+}

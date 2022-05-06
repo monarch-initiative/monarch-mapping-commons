@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0e3468f649707946691bef570b1ea87602f58ae60ce5916ddda5da8704525182",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201110",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016305",
+          "type" : "CLASS",
+          "lbl" : "atypical pantothenate kinase-associated neurodegeneration"
+        },
+        {
+          "id" : "Orphanet:216873",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201110",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016305",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016305",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:216873",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN201110",
+            "MONDO:0016305",
+            "Orphanet:216873"
+          ]
+        }
+      ]
+    }
+  ]
+}

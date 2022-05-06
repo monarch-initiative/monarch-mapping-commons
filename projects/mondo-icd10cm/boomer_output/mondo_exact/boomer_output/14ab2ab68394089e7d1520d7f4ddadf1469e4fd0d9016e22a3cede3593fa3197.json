@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:14ab2ab68394089e7d1520d7f4ddadf1469e4fd0d9016e22a3cede3593fa3197",
+      "nodes" : [
+        {
+          "id" : "MESH:C537441",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011131",
+          "type" : "CLASS",
+          "lbl" : "tricho-oculo-dermo-vertebral syndrome"
+        },
+        {
+          "id" : "OMIM:601701",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011131",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601701",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537441",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011131",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011131",
+            "OMIM:601701",
+            "MESH:C537441"
+          ]
+        }
+      ]
+    }
+  ]
+}

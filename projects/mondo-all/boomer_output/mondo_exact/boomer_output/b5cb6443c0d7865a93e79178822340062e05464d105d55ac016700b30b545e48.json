@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b5cb6443c0d7865a93e79178822340062e05464d105d55ac016700b30b545e48",
+      "nodes" : [
+        {
+          "id" : "SCTID:707407001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080305",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006281",
+          "type" : "CLASS",
+          "lbl" : "lung signet ring cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C45514",
+          "type" : "CLASS",
+          "lbl" : "Lung Signet Ring Cell Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:707407001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006281",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006281",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C45514",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080305",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006281",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:707407001",
+            "MONDO:0006281",
+            "NCIT:C45514",
+            "DOID:0080305"
+          ]
+        }
+      ]
+    }
+  ]
+}

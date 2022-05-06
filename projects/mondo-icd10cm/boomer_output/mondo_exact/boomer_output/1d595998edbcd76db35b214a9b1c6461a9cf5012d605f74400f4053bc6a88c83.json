@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1d595998edbcd76db35b214a9b1c6461a9cf5012d605f74400f4053bc6a88c83",
+      "nodes" : [
+        {
+          "id" : "MESH:D048090",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1449809",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005678",
+          "type" : "CLASS",
+          "lbl" : "bovine respiratory disease complex"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1449809",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005678",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D048090",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005678",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1449809",
+            "MONDO:0005678",
+            "MESH:D048090"
+          ]
+        }
+      ]
+    }
+  ]
+}

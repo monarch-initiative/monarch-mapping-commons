@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8af46f3837637f3c7a8dad4362bcb0e3695d464d401cc799326425c4d2e44c5e",
+      "nodes" : [
+        {
+          "id" : "MESH:C565957",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060194",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008780",
+          "type" : "CLASS",
+          "lbl" : "amyotrophic lateral sclerosis type 2, juvenile"
+        },
+        {
+          "id" : "OMIM:205100",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0060194",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008780",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565957",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008780",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008780",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:205100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0060194",
+            "MONDO:0008780",
+            "MESH:C565957",
+            "OMIM:205100"
+          ]
+        }
+      ]
+    }
+  ]
+}

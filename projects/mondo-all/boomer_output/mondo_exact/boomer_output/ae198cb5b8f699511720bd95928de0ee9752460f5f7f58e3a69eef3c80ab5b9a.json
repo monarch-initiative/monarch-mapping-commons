@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ae198cb5b8f699511720bd95928de0ee9752460f5f7f58e3a69eef3c80ab5b9a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0745261",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:724229002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:70590",
+          "type" : "CLASS",
+          "lbl" : "Infantile apnea"
+        },
+        {
+          "id" : "UMLS:CN205590",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019092",
+          "type" : "CLASS",
+          "lbl" : "infantile apnea"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019092",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:70590",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019092",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0745261",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:724229002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019092",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205590",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019092",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019092",
+            "Orphanet:70590",
+            "SCTID:724229002",
+            "UMLS:CN205590"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fd8cf3cd1af36876f75bb6bd40569f0db7396841571def4d9ca06ba22cf0cac3",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203531",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017636",
+          "type" : "CLASS",
+          "lbl" : "hemiparkinsonism-hemiatrophy syndrome"
+        },
+        {
+          "id" : "Orphanet:306669",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203531",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017636",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017636",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:306669",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN203531",
+            "MONDO:0017636",
+            "Orphanet:306669"
+          ]
+        }
+      ]
+    }
+  ]
+}

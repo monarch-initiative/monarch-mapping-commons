@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3a407b130d0e7961adeab3c46ea4c650ab7e802c9f2876a1b4eda7edf44cbcbe",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334282",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021109",
+          "type" : "CLASS",
+          "lbl" : "inverted urothelial papilloma"
+        },
+        {
+          "id" : "NCIT:C6192",
+          "type" : "CLASS",
+          "lbl" : "Inverted Urothelial Papilloma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334282",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021109",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021109",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6192",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1334282",
+            "MONDO:0021109",
+            "NCIT:C6192"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0fc5c25acdd9a1709445e29053e81107d73a24cadaa9ae55e8fa8d99ce8dc021",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3714948",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014324",
+          "type" : "CLASS",
+          "lbl" : "pachyonychia congenita 3"
+        },
+        {
+          "id" : "OMIM:615726",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014324",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615726",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3714948",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014324",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:615726",
+            "MONDO:0014324",
+            "UMLS:C3714948"
+          ]
+        }
+      ]
+    }
+  ]
+}

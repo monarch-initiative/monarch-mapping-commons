@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8bdf25c29a214e948d94dff4b1dde5ded49f6371f68309800d3e170ec572350f",
+      "nodes" : [
+        {
+          "id" : "MESH:D010534",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:126865007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006901",
+          "type" : "CLASS",
+          "lbl" : "peritoneal neoplasm"
+        },
+        {
+          "id" : "NCIT:C3322",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:126865007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006901",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006901",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3322",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D010534",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006901",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006901",
+            "SCTID:126865007",
+            "NCIT:C3322",
+            "MESH:D010534"
+          ]
+        }
+      ]
+    }
+  ]
+}

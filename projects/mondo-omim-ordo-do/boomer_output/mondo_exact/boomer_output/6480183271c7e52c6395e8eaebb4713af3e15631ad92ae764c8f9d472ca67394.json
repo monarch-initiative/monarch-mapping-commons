@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6480183271c7e52c6395e8eaebb4713af3e15631ad92ae764c8f9d472ca67394",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200476",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015872",
+          "type" : "CLASS",
+          "lbl" : "giant adenofibroma of the breast"
+        },
+        {
+          "id" : "Orphanet:180267",
+          "type" : "CLASS",
+          "lbl" : "Giant adenofibroma of the breast"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015872",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:180267",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN200476",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015872",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:180267",
+            "MONDO:0015872",
+            "UMLS:CN200476"
+          ]
+        }
+      ]
+    }
+  ]
+}

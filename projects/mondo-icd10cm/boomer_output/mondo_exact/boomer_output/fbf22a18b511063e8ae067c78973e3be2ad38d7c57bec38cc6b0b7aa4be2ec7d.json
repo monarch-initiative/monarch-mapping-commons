@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fbf22a18b511063e8ae067c78973e3be2ad38d7c57bec38cc6b0b7aa4be2ec7d",
+      "nodes" : [
+        {
+          "id" : "MESH:C564286",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1842486",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011973",
+          "type" : "CLASS",
+          "lbl" : "zinc deficiency, transient neonatal"
+        },
+        {
+          "id" : "OMIM:608118",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1842486",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011973",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011973",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608118",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564286",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011973",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:608118",
+            "MONDO:0011973",
+            "UMLS:C1842486",
+            "MESH:C564286"
+          ]
+        }
+      ]
+    }
+  ]
+}

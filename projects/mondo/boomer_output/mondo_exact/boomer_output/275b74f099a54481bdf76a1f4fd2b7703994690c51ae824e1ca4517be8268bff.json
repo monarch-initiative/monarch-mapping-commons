@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:275b74f099a54481bdf76a1f4fd2b7703994690c51ae824e1ca4517be8268bff",
+      "nodes" : [
+        {
+          "id" : "NCIT:C45716",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060463",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN237663",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1707291",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005563",
+          "type" : "CLASS",
+          "lbl" : "nut midline carcinoma"
+        },
+        {
+          "id" : "Orphanet:443167",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005563",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN237663",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1707291",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005563",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005563",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C45716",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060463",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005563",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005563",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:443167",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1707291",
+            "NCIT:C45716",
+            "DOID:0060463",
+            "MONDO:0005563",
+            "Orphanet:443167"
+          ]
+        }
+      ]
+    }
+  ]
+}

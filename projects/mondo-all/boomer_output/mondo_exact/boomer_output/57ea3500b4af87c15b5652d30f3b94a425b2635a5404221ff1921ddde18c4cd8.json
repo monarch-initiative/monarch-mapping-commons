@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:57ea3500b4af87c15b5652d30f3b94a425b2635a5404221ff1921ddde18c4cd8",
+      "nodes" : [
+        {
+          "id" : "SCTID:716704007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0546394",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015302",
+          "type" : "CLASS",
+          "lbl" : "nodular cutaneous amyloidosis"
+        },
+        {
+          "id" : "Orphanet:137810",
+          "type" : "CLASS",
+          "lbl" : "Nodular cutaneous amyloidosis"
+        },
+        {
+          "id" : "UMLS:C4274331",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:716704007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015302",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015302",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:137810",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4274331",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015302",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015302",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0546394",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015302",
+            "SCTID:716704007",
+            "UMLS:C4274331",
+            "Orphanet:137810"
+          ]
+        }
+      ]
+    }
+  ]
+}

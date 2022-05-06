@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:52b7e48758bad77bd61c950d2bb7ed0a9277a8d6d4e6f66762419263c9b0653c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332149",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5224",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003337",
+          "type" : "CLASS",
+          "lbl" : "acute hemorrhagic encephalitis"
+        },
+        {
+          "id" : "NCIT:C35796",
+          "type" : "CLASS",
+          "lbl" : "Acute Hemorrhagic Encephalitis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332149",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003337",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35796",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5224",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332149",
+            "MONDO:0003337",
+            "NCIT:C35796",
+            "DOID:5224"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:667934f1fd8edbb47f6e460121296fd5500e656582742feae8a55e32ee576e1d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN515063",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060777",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014808",
+          "type" : "CLASS",
+          "lbl" : "congenital secretory sodium diarrhea 8"
+        },
+        {
+          "id" : "OMIM:616868",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014808",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616868",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060777",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014808",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN515063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014808",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014808",
+            "OMIM:616868",
+            "DOID:0060777",
+            "UMLS:CN515063"
+          ]
+        }
+      ]
+    }
+  ]
+}

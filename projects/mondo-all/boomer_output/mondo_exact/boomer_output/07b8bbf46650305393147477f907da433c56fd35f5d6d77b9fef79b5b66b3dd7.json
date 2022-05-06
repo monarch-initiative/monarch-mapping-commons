@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:07b8bbf46650305393147477f907da433c56fd35f5d6d77b9fef79b5b66b3dd7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280758",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110252",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013744",
+          "type" : "CLASS",
+          "lbl" : "cataract 37"
+        },
+        {
+          "id" : "OMIM:614422",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110252",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013744",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3280758",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013744",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013744",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614422",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0110252",
+            "MONDO:0013744",
+            "UMLS:C3280758",
+            "OMIM:614422"
+          ]
+        }
+      ]
+    }
+  ]
+}

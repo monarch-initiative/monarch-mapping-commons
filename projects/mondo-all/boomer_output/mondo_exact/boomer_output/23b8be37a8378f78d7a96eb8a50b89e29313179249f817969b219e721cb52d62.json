@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:23b8be37a8378f78d7a96eb8a50b89e29313179249f817969b219e721cb52d62",
+      "nodes" : [
+        {
+          "id" : "MESH:C565026",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1851378",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007594",
+          "type" : "CLASS",
+          "lbl" : "factor 5 excess with spontaneous thrombosis"
+        },
+        {
+          "id" : "OMIM:134400",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1851378",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007594",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007594",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:134400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565026",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007594",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1851378",
+            "MONDO:0007594",
+            "OMIM:134400",
+            "MESH:C565026"
+          ]
+        }
+      ]
+    }
+  ]
+}

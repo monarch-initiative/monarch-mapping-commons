@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6b17692cf44ac69bb1f1d37f673962da28e11e7af7499a4f46605b01d299920a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN228931",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111197",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015363",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive distal hereditary motor neuropathy"
+        },
+        {
+          "id" : "Orphanet:140468",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015363",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:140468",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN228931",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015363",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111197",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015363",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:140468",
+            "MONDO:0015363",
+            "UMLS:CN228931",
+            "DOID:0111197"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1679556306198eeddb0ce76abba13066cb1cbae6c4dd1696f743293ae205f557",
+      "nodes" : [
+        {
+          "id" : "DOID:3697",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2939185",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002738",
+          "type" : "CLASS",
+          "lbl" : "acute transudative otitis media"
+        },
+        {
+          "id" : "UMLS:C0271432",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:359609001",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0271432",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002738",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:359609001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002738",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002738",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C2939185",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3697",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002738",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002738",
+            "UMLS:C0271432",
+            "SCTID:359609001",
+            "DOID:3697"
+          ]
+        }
+      ]
+    }
+  ]
+}

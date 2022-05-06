@@ -1,0 +1,130 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9e01f1b638120037f15624ee26a690c8fc14e70749ec1e3e0aec1e87b22ba58c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0345960",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C4452",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0206703",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D018286",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5583",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006275",
+          "type" : "CLASS",
+          "lbl" : "lung giant cell carcinoma"
+        },
+        {
+          "id" : "SCTID:254631008",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006275",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0206703",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5583",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006275",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0345960",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006275",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D018286",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006275",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006275",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4452",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:254631008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006275",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:254631008",
+            "MESH:D018286",
+            "NCIT:C4452",
+            "DOID:5583",
+            "UMLS:C0345960",
+            "MONDO:0006275"
+          ]
+        }
+      ]
+    }
+  ]
+}

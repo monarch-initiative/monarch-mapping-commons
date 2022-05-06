@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0c0f658b8c3614ee5de1a1c063b2728a9a5976820fbb839b8194bff29870e8ea",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3277076",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111059",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007930",
+          "type" : "CLASS",
+          "lbl" : "Bernard-Soulier syndrome, type A2, autosomal dominant"
+        },
+        {
+          "id" : "OMIM:153670",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007930",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:153670",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111059",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007930",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3277076",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007930",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:153670",
+            "MONDO:0007930",
+            "DOID:0111059",
+            "UMLS:C3277076"
+          ]
+        }
+      ]
+    }
+  ]
+}

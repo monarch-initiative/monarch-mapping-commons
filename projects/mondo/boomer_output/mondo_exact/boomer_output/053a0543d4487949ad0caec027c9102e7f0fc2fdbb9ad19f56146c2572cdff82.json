@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:053a0543d4487949ad0caec027c9102e7f0fc2fdbb9ad19f56146c2572cdff82",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479637",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044323",
+          "type" : "CLASS",
+          "lbl" : "Rahman syndrome"
+        },
+        {
+          "id" : "OMIM:617537",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0044323",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617537",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4479637",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044323",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0044323",
+            "UMLS:C4479637",
+            "OMIM:617537"
+          ]
+        }
+      ]
+    }
+  ]
+}

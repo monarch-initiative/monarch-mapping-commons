@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f31cff03c14357972124db391e4ef02f696eb2e09c8d2ef67958c76a9ab2887b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1520082",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2076",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002198",
+          "type" : "CLASS",
+          "lbl" : "vulvar glandular neoplasm"
+        },
+        {
+          "id" : "NCIT:C40292",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002198",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40292",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2076",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002198",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1520082",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002198",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002198",
+            "NCIT:C40292",
+            "DOID:2076",
+            "UMLS:C1520082"
+          ]
+        }
+      ]
+    }
+  ]
+}

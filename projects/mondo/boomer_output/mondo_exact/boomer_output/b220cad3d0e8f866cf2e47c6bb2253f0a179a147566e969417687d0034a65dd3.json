@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b220cad3d0e8f866cf2e47c6bb2253f0a179a147566e969417687d0034a65dd3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1517116",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1965",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002159",
+          "type" : "CLASS",
+          "lbl" : "fallopian tube leiomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C40128",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:1965",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002159",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1517116",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002159",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002159",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40128",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:1965",
+            "MONDO:0002159",
+            "UMLS:C1517116",
+            "NCIT:C40128"
+          ]
+        }
+      ]
+    }
+  ]
+}

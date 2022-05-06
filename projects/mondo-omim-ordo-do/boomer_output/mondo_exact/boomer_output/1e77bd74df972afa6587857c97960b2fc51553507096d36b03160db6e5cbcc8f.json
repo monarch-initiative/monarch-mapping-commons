@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1e77bd74df972afa6587857c97960b2fc51553507096d36b03160db6e5cbcc8f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0155686",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002815",
+          "type" : "CLASS",
+          "lbl" : "acute myocarditis"
+        },
+        {
+          "id" : "NCIT:C35206",
+          "type" : "CLASS",
+          "lbl" : "Acute Myocarditis"
+        },
+        {
+          "id" : "DOID:3951",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:46701001",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:46701001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002815",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002815",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35206",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0155686",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002815",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3951",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002815",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002815",
+            "DOID:3951",
+            "UMLS:C0155686",
+            "SCTID:46701001",
+            "NCIT:C35206"
+          ]
+        }
+      ]
+    }
+  ]
+}

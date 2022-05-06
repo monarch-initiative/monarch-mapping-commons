@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2d4411775687170ddb78c9c435a1ff050cff8416db0a64a866ac5d12308c1e92",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204808",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018246",
+          "type" : "CLASS",
+          "lbl" : "homozygous 2p21 microdeletion syndrome"
+        },
+        {
+          "id" : "Orphanet:369886",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN204808",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018246",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018246",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:369886",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN204808",
+            "MONDO:0018246",
+            "Orphanet:369886"
+          ]
+        }
+      ]
+    }
+  ]
+}

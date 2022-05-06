@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c8f8479f5c2d72453909d62fe13b30e6e6e53d208f108a22d5d710a7c97a81c8",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN776923",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018821",
+          "type" : "CLASS",
+          "lbl" : "X-linked female restricted facial dysmorphism-short stature-choanal atresia-intellectual disability"
+        },
+        {
+          "id" : "Orphanet:480880",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018821",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:480880",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN776923",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018821",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018821",
+            "Orphanet:480880",
+            "UMLS:CN776923"
+          ]
+        }
+      ]
+    }
+  ]
+}

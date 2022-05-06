@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e1e580797522647a60caa5efcfb1a20a7d93499756b1341824407dd500b7e5b6",
+      "nodes" : [
+        {
+          "id" : "SCTID:63565007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0158995",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000577",
+          "type" : "CLASS",
+          "lbl" : "congenital anemia"
+        },
+        {
+          "id" : "NCIT:C35228",
+          "type" : "CLASS",
+          "lbl" : "Congenital Anemia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000577",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35228",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0158995",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000577",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:63565007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000577",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000577",
+            "NCIT:C35228",
+            "UMLS:C0158995",
+            "SCTID:63565007"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:230605ab56a1347a221da3f32b37e75eb9327f75b1c4a72b5b6ea7471340dfca",
+      "nodes" : [
+        {
+          "id" : "DOID:4001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005140",
+          "type" : "CLASS",
+          "lbl" : "ovarian carcinoma"
+        },
+        {
+          "id" : "NCIT:C4908",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005140",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4908",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005140",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4908",
+            "MONDO:0005140",
+            "DOID:4001"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:19adac52aae8b20afdb74e24f58d35788268d6dd6987a2aad094dcd1274ab892",
+      "nodes" : [
+        {
+          "id" : "MESH:C565120",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1852280",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007425",
+          "type" : "CLASS",
+          "lbl" : "deafness, sensorineural, with peripheral neuropathy and arterial disease"
+        },
+        {
+          "id" : "OMIM:124950",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565120",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007425",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007425",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:124950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1852280",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007425",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007425",
+            "MESH:C565120",
+            "OMIM:124950",
+            "UMLS:C1852280"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a2bd32b4dcba5b798c32820029ed6c2e2a19a6392fff22524b64085a2f138104",
+      "nodes" : [
+        {
+          "id" : "NCIT:C50577",
+          "type" : "CLASS",
+          "lbl" : "Heart Failure"
+        },
+        {
+          "id" : "UMLS:CN236639",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D006333",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005252",
+          "type" : "CLASS",
+          "lbl" : "heart failure"
+        },
+        {
+          "id" : "SCTID:84114007",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005252",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C50577",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:84114007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005252",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D006333",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005252",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN236639",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005252",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:84114007",
+            "UMLS:CN236639",
+            "MONDO:0005252",
+            "NCIT:C50577",
+            "MESH:D006333"
+          ]
+        }
+      ]
+    }
+  ]
+}

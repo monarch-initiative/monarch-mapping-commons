@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:12acbf43dd8aca6ac30c4bd848518c6d0a6e837609635464625c0cb8a20e6a59",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332972",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7522",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004263",
+          "type" : "CLASS",
+          "lbl" : "pediatric infratentorial ependymoblastoma"
+        },
+        {
+          "id" : "NCIT:C6773",
+          "type" : "CLASS",
+          "lbl" : "Childhood Infratentorial Embryonal Tumor with Multilayered Rosettes, C19MC-Altered"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7522",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004263",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332972",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004263",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004263",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6773",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004263",
+            "DOID:7522",
+            "UMLS:C1332972",
+            "NCIT:C6773"
+          ]
+        }
+      ]
+    }
+  ]
+}

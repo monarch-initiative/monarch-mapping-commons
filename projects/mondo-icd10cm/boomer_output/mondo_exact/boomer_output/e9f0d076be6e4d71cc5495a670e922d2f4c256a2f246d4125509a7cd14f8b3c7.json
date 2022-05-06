@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e9f0d076be6e4d71cc5495a670e922d2f4c256a2f246d4125509a7cd14f8b3c7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205163",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:49566",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:725157006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4510896",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018854",
+          "type" : "CLASS",
+          "lbl" : "acquired purpura fulminans"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018854",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN205163",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4510896",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018854",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018854",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:49566",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:725157006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018854",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018854",
+            "UMLS:C4510896",
+            "Orphanet:49566",
+            "SCTID:725157006"
+          ]
+        }
+      ]
+    }
+  ]
+}

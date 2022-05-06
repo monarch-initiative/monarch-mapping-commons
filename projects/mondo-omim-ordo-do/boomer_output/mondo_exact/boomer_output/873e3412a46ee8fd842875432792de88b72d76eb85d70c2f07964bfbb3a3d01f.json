@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:873e3412a46ee8fd842875432792de88b72d76eb85d70c2f07964bfbb3a3d01f",
+      "nodes" : [
+        {
+          "id" : "SCTID:92169007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0154024",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021488",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of lacrimal gland"
+        },
+        {
+          "id" : "NCIT:C3621",
+          "type" : "CLASS",
+          "lbl" : "Benign Lacrimal Gland Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0154024",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021488",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92169007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021488",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021488",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3621",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021488",
+            "UMLS:C0154024",
+            "SCTID:92169007",
+            "NCIT:C3621"
+          ]
+        }
+      ]
+    }
+  ]
+}

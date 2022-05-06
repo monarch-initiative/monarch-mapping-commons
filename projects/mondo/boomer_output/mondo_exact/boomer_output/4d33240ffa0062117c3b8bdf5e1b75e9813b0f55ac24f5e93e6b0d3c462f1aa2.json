@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4d33240ffa0062117c3b8bdf5e1b75e9813b0f55ac24f5e93e6b0d3c462f1aa2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3828832",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050806",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000460",
+          "type" : "CLASS",
+          "lbl" : "neural glioblastoma"
+        },
+        {
+          "id" : "NCIT:C111693",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3828832",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000460",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050806",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000460",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000460",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C111693",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3828832",
+            "MONDO:0000460",
+            "DOID:0050806",
+            "NCIT:C111693"
+          ]
+        }
+      ]
+    }
+  ]
+}

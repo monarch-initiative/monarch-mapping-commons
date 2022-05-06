@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6b28d9aefcd95a8c9d12a6b4c70e719ba7f72fb92fdeac35ca237d70e278e59b",
+      "nodes" : [
+        {
+          "id" : "MESH:C566563",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1865699",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011209",
+          "type" : "CLASS",
+          "lbl" : "progeroid facial appearance with hand anomalies"
+        },
+        {
+          "id" : "OMIM:602249",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011209",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:602249",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1865699",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011209",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566563",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011209",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011209",
+            "OMIM:602249",
+            "UMLS:C1865699",
+            "MESH:C566563"
+          ]
+        }
+      ]
+    }
+  ]
+}

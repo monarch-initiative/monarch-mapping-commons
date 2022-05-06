@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0ecab95ac89b5d52944d0210d442e522d6fc26934401fe81392b2c6e6fc19ca5",
+      "nodes" : [
+        {
+          "id" : "MESH:C565441",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1855505",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009521",
+          "type" : "CLASS",
+          "lbl" : "leukemia, acute myelocytic, with polyposis coli and colon cancer"
+        },
+        {
+          "id" : "OMIM:246470",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009521",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:246470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1855505",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009521",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565441",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009521",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:246470",
+            "MONDO:0009521",
+            "UMLS:C1855505",
+            "MESH:C565441"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d389d0904357ee65b6511b51282cd2a6f56ba5311912bd06b7334119442e7acf",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN225944",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4518774",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:733418003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:397715",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018342",
+          "type" : "CLASS",
+          "lbl" : "Joubert syndrome with Jeune asphyxiating thoracic dystrophy"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4518774",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018342",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018342",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:397715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018342",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN225944",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:733418003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018342",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4518774",
+            "MONDO:0018342",
+            "Orphanet:397715",
+            "SCTID:733418003"
+          ]
+        }
+      ]
+    }
+  ]
+}

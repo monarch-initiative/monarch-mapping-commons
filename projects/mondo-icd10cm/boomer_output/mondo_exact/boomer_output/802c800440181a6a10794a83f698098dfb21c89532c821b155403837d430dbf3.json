@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:802c800440181a6a10794a83f698098dfb21c89532c821b155403837d430dbf3",
+      "nodes" : [
+        {
+          "id" : "SCTID:42030000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0080276",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:N00-N99",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021145",
+          "type" : "CLASS",
+          "lbl" : "disorder of genitourinary system"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:N00-N99",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021145",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:42030000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021145",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0080276",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021145",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:N00-N99",
+            "MONDO:0021145",
+            "SCTID:42030000",
+            "UMLS:C0080276"
+          ]
+        }
+      ]
+    }
+  ]
+}

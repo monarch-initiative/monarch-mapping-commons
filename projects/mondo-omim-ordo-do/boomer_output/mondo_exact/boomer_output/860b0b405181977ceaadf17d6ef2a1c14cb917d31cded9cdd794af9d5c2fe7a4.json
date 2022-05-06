@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:860b0b405181977ceaadf17d6ef2a1c14cb917d31cded9cdd794af9d5c2fe7a4",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201979",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016731",
+          "type" : "CLASS",
+          "lbl" : "desmoplastic infantile astrocytoma/ganglioglioma"
+        },
+        {
+          "id" : "Orphanet:251940",
+          "type" : "CLASS",
+          "lbl" : "Desmoplastic infantile astrocytoma/ganglioglioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016731",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:251940",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201979",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016731",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016731",
+            "Orphanet:251940",
+            "UMLS:CN201979"
+          ]
+        }
+      ]
+    }
+  ]
+}

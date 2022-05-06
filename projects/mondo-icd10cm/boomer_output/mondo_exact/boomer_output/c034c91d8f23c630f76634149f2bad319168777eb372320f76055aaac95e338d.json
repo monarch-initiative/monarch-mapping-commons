@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c034c91d8f23c630f76634149f2bad319168777eb372320f76055aaac95e338d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237741",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018675",
+          "type" : "CLASS",
+          "lbl" : "IgG4-related ophthalmic disorder"
+        },
+        {
+          "id" : "Orphanet:449563",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018675",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:449563",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237741",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018675",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018675",
+            "Orphanet:449563",
+            "UMLS:CN237741"
+          ]
+        }
+      ]
+    }
+  ]
+}

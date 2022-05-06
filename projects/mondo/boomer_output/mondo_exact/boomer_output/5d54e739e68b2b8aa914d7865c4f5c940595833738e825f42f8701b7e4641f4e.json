@@ -1,0 +1,111 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5d54e739e68b2b8aa914d7865c4f5c940595833738e825f42f8701b7e4641f4e",
+      "nodes" : [
+        {
+          "id" : "MESH:C565663",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C537906",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1857472",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009041",
+          "type" : "CLASS",
+          "lbl" : "craniosynostosis-intellectual disability-clefting syndrome"
+        },
+        {
+          "id" : "UMLS:C2931663",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:218650",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009041",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:218650",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537906",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009041",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009041",
+          "pred" : "siblingOf",
+          "obj" : "MESH:C565663",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009041",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C2931663",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1857472",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009041",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C537906",
+            "MONDO:0009041",
+            "UMLS:C1857472",
+            "OMIM:218650"
+          ]
+        }
+      ]
+    }
+  ]
+}

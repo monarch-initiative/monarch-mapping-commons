@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:366d4b4f84f26f4f84899530b26e0c20f027e423e704727d9510d02d72b39c9d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1842260",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012009",
+          "type" : "CLASS",
+          "lbl" : "coronary heart disease, susceptibility to, 2"
+        },
+        {
+          "id" : "OMIM:608316",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1842260",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012009",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608316",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012009",
+            "UMLS:C1842260",
+            "OMIM:608316"
+          ]
+        }
+      ]
+    }
+  ]
+}

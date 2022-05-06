@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3558dd0ebb8ba69d587ec43593db4f1b62505beb7c87951a966da68107e4eed8",
+      "nodes" : [
+        {
+          "id" : "SCTID:79118000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D010439",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:752",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004260",
+          "type" : "CLASS",
+          "lbl" : "peptic ulcer perforation"
+        },
+        {
+          "id" : "UMLS:C0030925",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0267291",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0030925",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004260",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D010439",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004260",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004260",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0267291",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:79118000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004260",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:752",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004260",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004260",
+            "UMLS:C0030925",
+            "SCTID:79118000",
+            "DOID:752",
+            "MESH:D010439"
+          ]
+        }
+      ]
+    }
+  ]
+}

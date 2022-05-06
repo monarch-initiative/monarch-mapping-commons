@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0ee90318874b394d88e19b495cc6c7f81da8d875807f89a9fafea118de2ce272",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332079",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017602",
+          "type" : "CLASS",
+          "lbl" : "ALK-positive anaplastic large cell lymphoma"
+        },
+        {
+          "id" : "NCIT:C37193",
+          "type" : "CLASS",
+          "lbl" : "Anaplastic Large Cell Lymphoma, ALK-Positive"
+        },
+        {
+          "id" : "Orphanet:300895",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017602",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:300895",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332079",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017602",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C37193",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017602",
+            "Orphanet:300895",
+            "UMLS:C1332079",
+            "NCIT:C37193"
+          ]
+        }
+      ]
+    }
+  ]
+}

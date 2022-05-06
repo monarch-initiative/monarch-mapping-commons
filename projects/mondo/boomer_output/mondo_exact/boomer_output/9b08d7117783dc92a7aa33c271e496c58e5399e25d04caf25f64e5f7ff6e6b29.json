@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9b08d7117783dc92a7aa33c271e496c58e5399e25d04caf25f64e5f7ff6e6b29",
+      "nodes" : [
+        {
+          "id" : "MESH:C566347",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1863618",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011357",
+          "type" : "CLASS",
+          "lbl" : "eccrine syringofibroadenomatosis with eyelid abnormalities"
+        },
+        {
+          "id" : "OMIM:603669",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011357",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603669",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1863618",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011357",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566347",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011357",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011357",
+            "OMIM:603669",
+            "UMLS:C1863618",
+            "MESH:C566347"
+          ]
+        }
+      ]
+    }
+  ]
+}

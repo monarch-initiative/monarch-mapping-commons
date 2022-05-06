@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e09258ce98a6a0c0b9aa072988f4f204156653cec46e626190cd655e4084e779",
+      "nodes" : [
+        {
+          "id" : "SCTID:715574002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN205270",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018899",
+          "type" : "CLASS",
+          "lbl" : "posterior cortical atrophy"
+        },
+        {
+          "id" : "Orphanet:54247",
+          "type" : "CLASS",
+          "lbl" : "Posterior cortical atrophy"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018899",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:54247",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:715574002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018899",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205270",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018899",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018899",
+            "Orphanet:54247",
+            "SCTID:715574002",
+            "UMLS:CN205270"
+          ]
+        }
+      ]
+    }
+  ]
+}

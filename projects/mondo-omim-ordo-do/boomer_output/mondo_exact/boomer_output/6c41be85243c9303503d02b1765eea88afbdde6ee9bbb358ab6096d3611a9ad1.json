@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6c41be85243c9303503d02b1765eea88afbdde6ee9bbb358ab6096d3611a9ad1",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203259",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017528",
+          "type" : "CLASS",
+          "lbl" : "polydactyly of an index finger, bilateral"
+        },
+        {
+          "id" : "Orphanet:295154",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017528",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:295154",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203259",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017528",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017528",
+            "Orphanet:295154",
+            "UMLS:CN203259"
+          ]
+        }
+      ]
+    }
+  ]
+}

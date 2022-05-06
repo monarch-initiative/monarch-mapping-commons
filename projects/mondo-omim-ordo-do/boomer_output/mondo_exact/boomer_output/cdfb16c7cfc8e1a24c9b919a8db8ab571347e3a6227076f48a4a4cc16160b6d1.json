@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cdfb16c7cfc8e1a24c9b919a8db8ab571347e3a6227076f48a4a4cc16160b6d1",
+      "nodes" : [
+        {
+          "id" : "SCTID:82473003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0034544",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021765",
+          "type" : "CLASS",
+          "lbl" : "radiculitis"
+        },
+        {
+          "id" : "NCIT:C78581",
+          "type" : "CLASS",
+          "lbl" : "Radiculitis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0034544",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021765",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021765",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C78581",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:82473003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021765",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0034544",
+            "MONDO:0021765",
+            "NCIT:C78581",
+            "SCTID:82473003"
+          ]
+        }
+      ]
+    }
+  ]
+}

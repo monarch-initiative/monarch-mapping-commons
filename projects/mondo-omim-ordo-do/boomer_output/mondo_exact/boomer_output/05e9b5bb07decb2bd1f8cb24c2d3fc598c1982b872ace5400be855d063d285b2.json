@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:05e9b5bb07decb2bd1f8cb24c2d3fc598c1982b872ace5400be855d063d285b2",
+      "nodes" : [
+        {
+          "id" : "MESH:C535722",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1847196",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011745",
+          "type" : "CLASS",
+          "lbl" : "duodenojejunal atresia with volvulus, absent dorsal mesentery, and absent superior mesenteric artery"
+        },
+        {
+          "id" : "OMIM:606894",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011745",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:606894",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1847196",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011745",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535722",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011745",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011745",
+            "OMIM:606894",
+            "UMLS:C1847196",
+            "MESH:C535722"
+          ]
+        }
+      ]
+    }
+  ]
+}

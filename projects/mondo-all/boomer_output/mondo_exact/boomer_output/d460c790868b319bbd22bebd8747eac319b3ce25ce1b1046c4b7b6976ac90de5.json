@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d460c790868b319bbd22bebd8747eac319b3ce25ce1b1046c4b7b6976ac90de5",
+      "nodes" : [
+        {
+          "id" : "MESH:C538056",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1832241",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011096",
+          "type" : "CLASS",
+          "lbl" : "autosomal agammaglobulinemia"
+        },
+        {
+          "id" : "Orphanet:33110",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1832241",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011096",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011096",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:33110",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538056",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011096",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1832241",
+            "MONDO:0011096",
+            "Orphanet:33110",
+            "MESH:C538056"
+          ]
+        }
+      ]
+    }
+  ]
+}

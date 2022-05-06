@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bb7b39d393786fb0a84104c4ae968c954b4daedc501d14f6ee8b2887121baa8f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1096346",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1796",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002117",
+          "type" : "CLASS",
+          "lbl" : "pancreas sarcoma"
+        },
+        {
+          "id" : "NCIT:C5715",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:1796",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002117",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1096346",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002117",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002117",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002117",
+            "DOID:1796",
+            "UMLS:C1096346",
+            "NCIT:C5715"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:df22d7c9fc1da4c61ba6d6ba165b88931e3ca05d00b8a0c29e6f77eac3e8dbf1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0948749",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:12342",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001502",
+          "type" : "CLASS",
+          "lbl" : "retroperitoneum carcinoma"
+        },
+        {
+          "id" : "NCIT:C7352",
+          "type" : "CLASS",
+          "lbl" : "Retroperitoneal Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0001502",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7352",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:12342",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001502",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0948749",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001502",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001502",
+            "NCIT:C7352",
+            "DOID:12342",
+            "UMLS:C0948749"
+          ]
+        }
+      ]
+    }
+  ]
+}

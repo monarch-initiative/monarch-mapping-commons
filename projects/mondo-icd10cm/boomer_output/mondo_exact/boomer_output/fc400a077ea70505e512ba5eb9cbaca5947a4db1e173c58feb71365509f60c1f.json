@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fc400a077ea70505e512ba5eb9cbaca5947a4db1e173c58feb71365509f60c1f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202625",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:276575",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4274080",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:717046003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017184",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant hyperinsulinism due to SUR1 deficiency"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017184",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:276575",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202625",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017184",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:717046003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017184",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017184",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4274080",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:276575",
+            "MONDO:0017184",
+            "UMLS:CN202625",
+            "SCTID:717046003"
+          ]
+        }
+      ]
+    }
+  ]
+}

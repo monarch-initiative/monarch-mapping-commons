@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a6e702506750ded16ae8959e9bf371790920958b82dfa4cd4fb6742b65d07b82",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN197448",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015101",
+          "type" : "CLASS",
+          "lbl" : "Marin-Amat syndrome"
+        },
+        {
+          "id" : "Orphanet:101104",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN197448",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015101",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015101",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:101104",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015101",
+            "UMLS:CN197448",
+            "Orphanet:101104"
+          ]
+        }
+      ]
+    }
+  ]
+}

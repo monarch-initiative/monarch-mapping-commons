@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ec41cc29947403f5a9482fb43c8177b7c73f61d2b30d93f65df89c4acbc50fc5",
+      "nodes" : [
+        {
+          "id" : "OMIM:616457",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4225320",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080419",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014647",
+          "type" : "CLASS",
+          "lbl" : "developmental and epileptic encephalopathy, 50"
+        },
+        {
+          "id" : "Orphanet:448010",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014647",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:448010",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080419",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014647",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014647",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225320",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014647",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:616457",
+            "MONDO:0014647",
+            "DOID:0080419",
+            "UMLS:C4225320",
+            "Orphanet:448010"
+          ]
+        }
+      ]
+    }
+  ]
+}

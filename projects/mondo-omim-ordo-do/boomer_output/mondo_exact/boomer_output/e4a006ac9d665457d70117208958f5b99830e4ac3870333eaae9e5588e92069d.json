@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e4a006ac9d665457d70117208958f5b99830e4ac3870333eaae9e5588e92069d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310696",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014936",
+          "type" : "CLASS",
+          "lbl" : "ZTTK syndrome"
+        },
+        {
+          "id" : "Orphanet:500150",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:617140",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014936",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617140",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014936",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:500150",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310696",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014936",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014936",
+            "OMIM:617140",
+            "Orphanet:500150",
+            "UMLS:C4310696"
+          ]
+        }
+      ]
+    }
+  ]
+}

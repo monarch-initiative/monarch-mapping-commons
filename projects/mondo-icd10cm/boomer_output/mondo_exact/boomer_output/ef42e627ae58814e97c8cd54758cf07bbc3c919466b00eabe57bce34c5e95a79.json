@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ef42e627ae58814e97c8cd54758cf07bbc3c919466b00eabe57bce34c5e95a79",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1847572",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:606744",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070013",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C537534",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011715",
+          "type" : "CLASS",
+          "lbl" : "Seckel syndrome 2"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C537534",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011715",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:606744",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1847572",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070013",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0070013",
+            "UMLS:C1847572",
+            "OMIM:606744",
+            "MONDO:0011715",
+            "MESH:C537534"
+          ]
+        }
+      ]
+    }
+  ]
+}

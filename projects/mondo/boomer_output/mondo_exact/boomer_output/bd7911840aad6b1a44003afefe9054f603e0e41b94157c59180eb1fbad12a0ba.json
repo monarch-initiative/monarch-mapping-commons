@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bd7911840aad6b1a44003afefe9054f603e0e41b94157c59180eb1fbad12a0ba",
+      "nodes" : [
+        {
+          "id" : "DOID:1788",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005512",
+          "type" : "CLASS",
+          "lbl" : "malignant peritoneal mesothelioma"
+        },
+        {
+          "id" : "NCIT:C8704",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:168811",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005512",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:168811",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005512",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8704",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1788",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005512",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:168811",
+            "MONDO:0005512",
+            "NCIT:C8704",
+            "DOID:1788"
+          ]
+        }
+      ]
+    }
+  ]
+}

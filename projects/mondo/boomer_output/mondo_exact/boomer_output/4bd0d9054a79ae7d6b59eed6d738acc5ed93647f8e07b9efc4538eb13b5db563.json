@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4bd0d9054a79ae7d6b59eed6d738acc5ed93647f8e07b9efc4538eb13b5db563",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332346",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8227",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004507",
+          "type" : "CLASS",
+          "lbl" : "atypical breast papilloma"
+        },
+        {
+          "id" : "NCIT:C36089",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332346",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004507",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004507",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C36089",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8227",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004507",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004507",
+            "UMLS:C1332346",
+            "NCIT:C36089",
+            "DOID:8227"
+          ]
+        }
+      ]
+    }
+  ]
+}

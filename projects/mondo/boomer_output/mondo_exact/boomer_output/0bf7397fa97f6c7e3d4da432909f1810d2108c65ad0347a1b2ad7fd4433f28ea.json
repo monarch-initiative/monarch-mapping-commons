@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0bf7397fa97f6c7e3d4da432909f1810d2108c65ad0347a1b2ad7fd4433f28ea",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279545",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8282",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004521",
+          "type" : "CLASS",
+          "lbl" : "adult epithelioid sarcoma"
+        },
+        {
+          "id" : "NCIT:C7944",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:8282",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004521",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004521",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7944",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0279545",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004521",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:8282",
+            "MONDO:0004521",
+            "NCIT:C7944",
+            "UMLS:C0279545"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fbfb42ed00e05c31bade56310fc6b7c610f766e46274b87c22086755bcb3dbea",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1513711",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7293",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004175",
+          "type" : "CLASS",
+          "lbl" : "mucin-rich endometrial endometrioid adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C8717",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004175",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8717",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7293",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004175",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1513711",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004175",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004175",
+            "NCIT:C8717",
+            "DOID:7293",
+            "UMLS:C1513711"
+          ]
+        }
+      ]
+    }
+  ]
+}

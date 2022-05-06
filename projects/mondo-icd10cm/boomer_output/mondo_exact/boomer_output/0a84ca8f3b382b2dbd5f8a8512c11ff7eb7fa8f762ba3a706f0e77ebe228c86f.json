@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0a84ca8f3b382b2dbd5f8a8512c11ff7eb7fa8f762ba3a706f0e77ebe228c86f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1112577",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4038",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002846",
+          "type" : "CLASS",
+          "lbl" : "granulomatous gastritis"
+        },
+        {
+          "id" : "NCIT:C27348",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4038",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002846",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1112577",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002846",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002846",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27348",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002846",
+            "DOID:4038",
+            "UMLS:C1112577",
+            "NCIT:C27348"
+          ]
+        }
+      ]
+    }
+  ]
+}

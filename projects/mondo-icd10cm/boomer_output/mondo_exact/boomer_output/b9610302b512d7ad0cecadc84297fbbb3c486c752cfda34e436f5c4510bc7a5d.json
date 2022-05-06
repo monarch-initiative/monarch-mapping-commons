@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b9610302b512d7ad0cecadc84297fbbb3c486c752cfda34e436f5c4510bc7a5d",
+      "nodes" : [
+        {
+          "id" : "DOID:0070342",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011326",
+          "type" : "CLASS",
+          "lbl" : "citrullinemia, type II, adult-onset"
+        },
+        {
+          "id" : "OMIM:603471",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0070342",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011326",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011326",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603471",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011326",
+            "DOID:0070342",
+            "OMIM:603471"
+          ]
+        }
+      ]
+    }
+  ]
+}

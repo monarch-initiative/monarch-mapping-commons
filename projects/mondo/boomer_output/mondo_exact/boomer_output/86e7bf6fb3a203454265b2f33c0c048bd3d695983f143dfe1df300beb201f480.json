@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:86e7bf6fb3a203454265b2f33c0c048bd3d695983f143dfe1df300beb201f480",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1709570",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006377",
+          "type" : "CLASS",
+          "lbl" : "pleural biphasic mesothelioma"
+        },
+        {
+          "id" : "NCIT:C45665",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006377",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C45665",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1709570",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006377",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006377",
+            "NCIT:C45665",
+            "UMLS:C1709570"
+          ]
+        }
+      ]
+    }
+  ]
+}

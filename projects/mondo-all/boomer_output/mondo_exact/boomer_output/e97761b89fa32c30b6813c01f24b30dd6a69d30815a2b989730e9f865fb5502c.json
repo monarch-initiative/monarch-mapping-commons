@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e97761b89fa32c30b6813c01f24b30dd6a69d30815a2b989730e9f865fb5502c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1865294",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011235",
+          "type" : "CLASS",
+          "lbl" : "pelvic dysplasia-arthrogryposis of lower limbs syndrome"
+        },
+        {
+          "id" : "Orphanet:2840",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:602484",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011235",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2840",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1865294",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011235",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011235",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:602484",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011235",
+            "Orphanet:2840",
+            "UMLS:C1865294",
+            "OMIM:602484"
+          ]
+        }
+      ]
+    }
+  ]
+}

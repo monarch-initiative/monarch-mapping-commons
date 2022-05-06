@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:09b034f158bdf63c4cdbadb255c48f3519b27f5ddaf43395e110def7e89fb2a8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334612",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7613",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004307",
+          "type" : "CLASS",
+          "lbl" : "sarcomatosis of the meninges"
+        },
+        {
+          "id" : "NCIT:C4334",
+          "type" : "CLASS",
+          "lbl" : "Meningeal Sarcomatosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004307",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4334",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334612",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004307",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7613",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004307",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004307",
+            "NCIT:C4334",
+            "UMLS:C0334612",
+            "DOID:7613"
+          ]
+        }
+      ]
+    }
+  ]
+}

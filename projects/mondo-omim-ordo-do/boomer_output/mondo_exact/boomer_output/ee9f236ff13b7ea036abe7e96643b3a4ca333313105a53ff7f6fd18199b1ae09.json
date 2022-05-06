@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ee9f236ff13b7ea036abe7e96643b3a4ca333313105a53ff7f6fd18199b1ae09",
+      "nodes" : [
+        {
+          "id" : "SCTID:6183001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007329",
+          "type" : "CLASS",
+          "lbl" : "cirrhosis, familial"
+        },
+        {
+          "id" : "NCIT:C84411",
+          "type" : "CLASS",
+          "lbl" : "Cryptogenic Cirrhosis"
+        },
+        {
+          "id" : "OMIM:215600",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007329",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:215600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:6183001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007329",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007329",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C84411",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007329",
+            "OMIM:215600",
+            "SCTID:6183001",
+            "NCIT:C84411"
+          ]
+        }
+      ]
+    }
+  ]
+}

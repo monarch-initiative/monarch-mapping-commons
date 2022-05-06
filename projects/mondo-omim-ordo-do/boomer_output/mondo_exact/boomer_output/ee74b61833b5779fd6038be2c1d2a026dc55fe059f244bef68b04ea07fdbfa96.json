@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ee74b61833b5779fd6038be2c1d2a026dc55fe059f244bef68b04ea07fdbfa96",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333472",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2766",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002418",
+          "type" : "CLASS",
+          "lbl" : "ethmoid sinus adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C6237",
+          "type" : "CLASS",
+          "lbl" : "Ethmoid Sinus Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333472",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002418",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002418",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6237",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2766",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002418",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002418",
+            "UMLS:C1333472",
+            "NCIT:C6237",
+            "DOID:2766"
+          ]
+        }
+      ]
+    }
+  ]
+}

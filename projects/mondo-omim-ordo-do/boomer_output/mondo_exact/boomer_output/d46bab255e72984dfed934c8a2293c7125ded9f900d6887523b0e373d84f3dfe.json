@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d46bab255e72984dfed934c8a2293c7125ded9f900d6887523b0e373d84f3dfe",
+      "nodes" : [
+        {
+          "id" : "DOID:2115",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002211",
+          "type" : "CLASS",
+          "lbl" : "B cell deficiency"
+        },
+        {
+          "id" : "NCIT:C4799",
+          "type" : "CLASS",
+          "lbl" : "Deficiency of Humoral Immunity"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002211",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4799",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2115",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002211",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002211",
+            "NCIT:C4799",
+            "DOID:2115"
+          ]
+        }
+      ]
+    }
+  ]
+}

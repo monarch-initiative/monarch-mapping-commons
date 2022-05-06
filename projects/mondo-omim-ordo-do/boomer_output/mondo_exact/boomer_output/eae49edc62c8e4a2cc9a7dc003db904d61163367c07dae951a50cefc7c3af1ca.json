@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eae49edc62c8e4a2cc9a7dc003db904d61163367c07dae951a50cefc7c3af1ca",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1843691",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015794",
+          "type" : "CLASS",
+          "lbl" : "antenatal multiminicore disease with arthrogryposis multiplex congenita"
+        },
+        {
+          "id" : "Orphanet:178148",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1843691",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015794",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015794",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:178148",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015794",
+            "UMLS:C1843691",
+            "Orphanet:178148"
+          ]
+        }
+      ]
+    }
+  ]
+}

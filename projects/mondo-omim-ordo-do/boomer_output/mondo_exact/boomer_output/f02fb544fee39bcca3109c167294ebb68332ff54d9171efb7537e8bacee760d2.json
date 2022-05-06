@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f02fb544fee39bcca3109c167294ebb68332ff54d9171efb7537e8bacee760d2",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200063",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015653",
+          "type" : "CLASS",
+          "lbl" : "monogenic epilepsy"
+        },
+        {
+          "id" : "Orphanet:166472",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN200063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015653",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015653",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:166472",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN200063",
+            "MONDO:0015653",
+            "Orphanet:166472"
+          ]
+        }
+      ]
+    }
+  ]
+}

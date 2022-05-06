@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3ec0185c77386795b0c1dec76a3c28f2c46bcc84fccbb4cc61e7055ab5242313",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518358",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6239",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003822",
+          "type" : "CLASS",
+          "lbl" : "non-invasive bladder papillary urothelial neoplasm"
+        },
+        {
+          "id" : "NCIT:C39831",
+          "type" : "CLASS",
+          "lbl" : "Bladder Non-Invasive Papillary Urothelial Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6239",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003822",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518358",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003822",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003822",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39831",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6239",
+            "MONDO:0003822",
+            "UMLS:C1518358",
+            "NCIT:C39831"
+          ]
+        }
+      ]
+    }
+  ]
+}

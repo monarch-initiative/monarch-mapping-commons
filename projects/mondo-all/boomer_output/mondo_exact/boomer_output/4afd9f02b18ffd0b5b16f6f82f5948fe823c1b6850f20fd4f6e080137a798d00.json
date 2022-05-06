@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4afd9f02b18ffd0b5b16f6f82f5948fe823c1b6850f20fd4f6e080137a798d00",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1266130",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5698",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003590",
+          "type" : "CLASS",
+          "lbl" : "fibroblastic liposarcoma"
+        },
+        {
+          "id" : "NCIT:C6509",
+          "type" : "CLASS",
+          "lbl" : "Fibroblastic Liposarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003590",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6509",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1266130",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003590",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5698",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003590",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003590",
+            "UMLS:C1266130",
+            "NCIT:C6509",
+            "DOID:5698"
+          ]
+        }
+      ]
+    }
+  ]
+}

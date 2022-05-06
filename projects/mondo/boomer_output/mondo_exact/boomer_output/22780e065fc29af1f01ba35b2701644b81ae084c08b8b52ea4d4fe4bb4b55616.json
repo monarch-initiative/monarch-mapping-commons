@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:22780e065fc29af1f01ba35b2701644b81ae084c08b8b52ea4d4fe4bb4b55616",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204734",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018212",
+          "type" : "CLASS",
+          "lbl" : "familial cervical artery dissection"
+        },
+        {
+          "id" : "Orphanet:36382",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018212",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:36382",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204734",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018212",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018212",
+            "Orphanet:36382",
+            "UMLS:CN204734"
+          ]
+        }
+      ]
+    }
+  ]
+}

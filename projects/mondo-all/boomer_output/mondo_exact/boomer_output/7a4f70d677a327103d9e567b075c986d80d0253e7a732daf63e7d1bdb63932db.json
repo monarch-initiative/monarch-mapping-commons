@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7a4f70d677a327103d9e567b075c986d80d0253e7a732daf63e7d1bdb63932db",
+      "nodes" : [
+        {
+          "id" : "Orphanet:998",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:722285005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C537042",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:74320008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010403",
+          "type" : "CLASS",
+          "lbl" : "albinism-hearing loss syndrome"
+        },
+        {
+          "id" : "OMIM:300700",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C537042",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010403",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010403",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010403",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:998",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010403",
+          "pred" : "siblingOf",
+          "obj" : "SCTID:722285005",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:74320008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010403",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:998",
+            "SCTID:74320008",
+            "MONDO:0010403",
+            "MESH:C537042",
+            "OMIM:300700"
+          ]
+        }
+      ]
+    }
+  ]
+}

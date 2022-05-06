@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a75ca2cf6bdc1e5b485a48120d65c862282676d782a03eb2987f1cd4b0648a74",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1378340",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7532",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004267",
+          "type" : "CLASS",
+          "lbl" : "squamous papillomatosis"
+        },
+        {
+          "id" : "NCIT:C9009",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004267",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9009",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1378340",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004267",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7532",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004267",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004267",
+            "NCIT:C9009",
+            "UMLS:C1378340",
+            "DOID:7532"
+          ]
+        }
+      ]
+    }
+  ]
+}

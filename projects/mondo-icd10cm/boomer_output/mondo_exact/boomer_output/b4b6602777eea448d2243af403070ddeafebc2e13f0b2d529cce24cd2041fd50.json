@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b4b6602777eea448d2243af403070ddeafebc2e13f0b2d529cce24cd2041fd50",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3554560",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111693",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014055",
+          "type" : "CLASS",
+          "lbl" : "epilepsy, familial adult myoclonic, 4"
+        },
+        {
+          "id" : "OMIM:615127",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014055",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615127",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111693",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014055",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3554560",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014055",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014055",
+            "OMIM:615127",
+            "DOID:0111693",
+            "UMLS:C3554560"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1ab4200c59f2f81e4371acc172e26eac199270a7d0a437e6127fc3dad81eb005",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334675",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6208",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003808",
+          "type" : "CLASS",
+          "lbl" : "mediastinal extraskeletal osteosarcoma"
+        },
+        {
+          "id" : "NCIT:C6615",
+          "type" : "CLASS",
+          "lbl" : "Mediastinal Extraskeletal Osteosarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334675",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003808",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003808",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6615",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6208",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003808",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1334675",
+            "MONDO:0003808",
+            "NCIT:C6615",
+            "DOID:6208"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:72cd473dd04f7c038f44de2749feb5e79e23fab0e3331bf0323eea8d873522b6",
+      "nodes" : [
+        {
+          "id" : "DOID:0070357",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0026726",
+          "type" : "CLASS",
+          "lbl" : "nephrotic syndrome, type 20"
+        },
+        {
+          "id" : "OMIM:301028",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0026726",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:301028",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070357",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0026726",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:301028",
+            "MONDO:0026726",
+            "DOID:0070357"
+          ]
+        }
+      ]
+    }
+  ]
+}

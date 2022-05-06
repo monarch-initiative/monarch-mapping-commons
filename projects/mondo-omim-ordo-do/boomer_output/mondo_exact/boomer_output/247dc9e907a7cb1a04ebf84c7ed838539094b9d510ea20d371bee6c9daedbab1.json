@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:247dc9e907a7cb1a04ebf84c7ed838539094b9d510ea20d371bee6c9daedbab1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3151356",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080317",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013491",
+          "type" : "CLASS",
+          "lbl" : "megalencephalic leukoencephalopathy with subcortical cysts 2B, remitting, with or without intellectual disability"
+        },
+        {
+          "id" : "OMIM:613926",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3151356",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013491",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013491",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613926",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080317",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013491",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013491",
+            "UMLS:C3151356",
+            "OMIM:613926",
+            "DOID:0080317"
+          ]
+        }
+      ]
+    }
+  ]
+}

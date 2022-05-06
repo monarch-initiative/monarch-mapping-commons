@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b3e42acc49f03b30463dfffccea749f7ea82ebe7c766fcd642d6342c7f0144bd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0149845",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5391",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003427",
+          "type" : "CLASS",
+          "lbl" : "bronchus adenoma"
+        },
+        {
+          "id" : "NCIT:C3494",
+          "type" : "CLASS",
+          "lbl" : "Lung Papillary Adenoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5391",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003427",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0149845",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003427",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003427",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3494",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5391",
+            "MONDO:0003427",
+            "UMLS:C0149845",
+            "NCIT:C3494"
+          ]
+        }
+      ]
+    }
+  ]
+}

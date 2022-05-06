@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c19bee4a62982fd50b4a6726c0513af9ba502cc8d503e8288dc71a604b8fcac7",
+      "nodes" : [
+        {
+          "id" : "SCTID:708031000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3872845",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015927",
+          "type" : "CLASS",
+          "lbl" : "idiopathic eosinophilic pneumonia"
+        },
+        {
+          "id" : "Orphanet:182101",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3872845",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015927",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015927",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:182101",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:708031000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015927",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3872845",
+            "MONDO:0015927",
+            "Orphanet:182101",
+            "SCTID:708031000"
+          ]
+        }
+      ]
+    }
+  ]
+}

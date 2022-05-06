@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4c7cda33fbe5c264102f76a5dcaa17e0c98474f27827d5a4ebe18f5f3bf3c7a4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225381",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014574",
+          "type" : "CLASS",
+          "lbl" : "peeling skin-leukonuchia-acral punctate keratoses-cheilitis-knuckle pads syndrome"
+        },
+        {
+          "id" : "Orphanet:444138",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616295",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014574",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:444138",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014574",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616295",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225381",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014574",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:444138",
+            "MONDO:0014574",
+            "OMIM:616295",
+            "UMLS:C4225381"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4cf8f0e4853824bac48e828cf9fb7cfbefdacd80c0f72c6f3ee4593b5c407664",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0021847",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020718",
+          "type" : "CLASS",
+          "lbl" : "congenital short bowel syndrome 1"
+        },
+        {
+          "id" : "OMIM:615237",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020718",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615237",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0021847",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020718",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:615237",
+            "MONDO:0020718",
+            "UMLS:C0021847"
+          ]
+        }
+      ]
+    }
+  ]
+}

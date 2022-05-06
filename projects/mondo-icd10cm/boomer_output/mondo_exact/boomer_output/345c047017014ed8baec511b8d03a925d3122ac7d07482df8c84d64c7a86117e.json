@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:345c047017014ed8baec511b8d03a925d3122ac7d07482df8c84d64c7a86117e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN197356",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015063",
+          "type" : "CLASS",
+          "lbl" : "duodenal neuroendocrine tumor, well differentiated, low or intermediate grade"
+        },
+        {
+          "id" : "NCIT:C135080",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:100076",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100076",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C135080",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN197356",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015063",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015063",
+            "Orphanet:100076",
+            "NCIT:C135080",
+            "UMLS:CN197356"
+          ]
+        }
+      ]
+    }
+  ]
+}

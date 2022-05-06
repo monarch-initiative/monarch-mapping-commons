@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3eacb2fdf5b8e8ec803e124d58d2cc10d82d73ba6ce13b9cf248b4203e7ddc47",
+      "nodes" : [
+        {
+          "id" : "DOID:10688",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001100",
+          "type" : "CLASS",
+          "lbl" : "hypertrophy of breast"
+        },
+        {
+          "id" : "SCTID:372281005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C3125",
+          "type" : "CLASS",
+          "lbl" : "Breast Hypertrophy"
+        },
+        {
+          "id" : "ICD10CM:N62",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:N62",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10688",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:372281005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001100",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3125",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:372281005",
+            "NCIT:C3125",
+            "MONDO:0001100",
+            "ICD10CM:N62",
+            "DOID:10688"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:62a973007a0324c019bbb31a9a04901f781a81d590ab8e00ed29c5d419835642",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207128",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020308",
+          "type" : "CLASS",
+          "lbl" : "benign childhood occipital epilepsy, Gastaut type"
+        },
+        {
+          "id" : "Orphanet:98816",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020308",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98816",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN207128",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020308",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020308",
+            "Orphanet:98816",
+            "UMLS:CN207128"
+          ]
+        }
+      ]
+    }
+  ]
+}

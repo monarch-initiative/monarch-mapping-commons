@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eddc66cc973de247184ea746b69bf86b055a73f16d31e815971b3bd803f42349",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334653",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10661",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001096",
+          "type" : "CLASS",
+          "lbl" : "mediastinum ganglioneuroblastoma"
+        },
+        {
+          "id" : "NCIT:C6627",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334653",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001096",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001096",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6627",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10661",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001096",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1334653",
+            "MONDO:0001096",
+            "NCIT:C6627",
+            "DOID:10661"
+          ]
+        }
+      ]
+    }
+  ]
+}

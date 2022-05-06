@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b6101782a2a5b95dd5fedc9c1a3eeddd64c447e4078d154d1344e76f2edeaee3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2986656",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021119",
+          "type" : "CLASS",
+          "lbl" : "non-functioning endocrine neoplasm"
+        },
+        {
+          "id" : "NCIT:C94760",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2986656",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021119",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021119",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C94760",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021119",
+            "UMLS:C2986656",
+            "NCIT:C94760"
+          ]
+        }
+      ]
+    }
+  ]
+}

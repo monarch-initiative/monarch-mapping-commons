@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3fd06be02ef2b60a0efdb963221b3344d67bf26b85c4e41dd4add80866dd9b73",
+      "nodes" : [
+        {
+          "id" : "MESH:C565067",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1851851",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007512",
+          "type" : "CLASS",
+          "lbl" : "ectodermal dysplasia syndrome with distinctive facial appearance and preaxial polydactyly of feet"
+        },
+        {
+          "id" : "OMIM:129540",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007512",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:129540",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1851851",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007512",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565067",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007512",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007512",
+            "OMIM:129540",
+            "MESH:C565067",
+            "UMLS:C1851851"
+          ]
+        }
+      ]
+    }
+  ]
+}

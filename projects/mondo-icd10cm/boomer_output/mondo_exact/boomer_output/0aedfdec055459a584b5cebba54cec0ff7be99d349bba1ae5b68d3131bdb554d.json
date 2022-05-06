@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0aedfdec055459a584b5cebba54cec0ff7be99d349bba1ae5b68d3131bdb554d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0494261",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:628",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:101972",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C27871",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015131",
+          "type" : "CLASS",
+          "lbl" : "combined immunodeficiency"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015131",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27871",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:628",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015131",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015131",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:101972",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0494261",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015131",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:101972",
+            "NCIT:C27871",
+            "DOID:628",
+            "MONDO:0015131",
+            "UMLS:C0494261"
+          ]
+        }
+      ]
+    }
+  ]
+}

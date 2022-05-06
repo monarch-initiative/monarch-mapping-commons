@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a0b8a55996cbfcf1d47a2fab6c4134e008f4762017d6665d837ab70e34f33ff4",
+      "nodes" : [
+        {
+          "id" : "MESH:C563512",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1834143",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008103",
+          "type" : "CLASS",
+          "lbl" : "noduli Cutanei, multiple, with urinary tract abnormalities"
+        },
+        {
+          "id" : "OMIM:163850",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008103",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:163850",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563512",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008103",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1834143",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008103",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008103",
+            "OMIM:163850",
+            "MESH:C563512",
+            "UMLS:C1834143"
+          ]
+        }
+      ]
+    }
+  ]
+}

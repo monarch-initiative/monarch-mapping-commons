@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0eeff458c7596ba9d487692d9a59644979876bf340c1af03c0cb4f73f63d6725",
+      "nodes" : [
+        {
+          "id" : "MESH:D015465",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0023472",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021367",
+          "type" : "CLASS",
+          "lbl" : "leukemia, myeloid, accelerated-phase"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0023472",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021367",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D015465",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021367",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021367",
+            "UMLS:C0023472",
+            "MESH:D015465"
+          ]
+        }
+      ]
+    }
+  ]
+}

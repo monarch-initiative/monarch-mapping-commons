@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:42a034069fdde874d1de34c944625f899413f22b53197a74f440efe9fbb6bcb3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4273988",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN206220",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:717225001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019448",
+          "type" : "CLASS",
+          "lbl" : "benign adult familial myoclonic epilepsy"
+        },
+        {
+          "id" : "Orphanet:86814",
+          "type" : "CLASS",
+          "lbl" : "Benign adult familial myoclonic epilepsy"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019448",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN206220",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4273988",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019448",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:717225001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019448",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019448",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:86814",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4273988",
+            "MONDO:0019448",
+            "SCTID:717225001",
+            "Orphanet:86814"
+          ]
+        }
+      ]
+    }
+  ]
+}

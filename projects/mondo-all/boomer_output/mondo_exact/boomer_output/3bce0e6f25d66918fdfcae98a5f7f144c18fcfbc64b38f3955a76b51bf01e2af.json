@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3bce0e6f25d66918fdfcae98a5f7f144c18fcfbc64b38f3955a76b51bf01e2af",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200962",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016206",
+          "type" : "CLASS",
+          "lbl" : "idiopathic uveal effusion syndrome"
+        },
+        {
+          "id" : "Orphanet:209956",
+          "type" : "CLASS",
+          "lbl" : "Idiopathic uveal effusion syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:209956",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN200962",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016206",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016206",
+            "Orphanet:209956",
+            "UMLS:CN200962"
+          ]
+        }
+      ]
+    }
+  ]
+}

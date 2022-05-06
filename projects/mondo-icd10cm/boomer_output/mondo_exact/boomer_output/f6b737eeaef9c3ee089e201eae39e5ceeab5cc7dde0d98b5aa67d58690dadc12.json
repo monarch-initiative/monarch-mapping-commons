@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f6b737eeaef9c3ee089e201eae39e5ceeab5cc7dde0d98b5aa67d58690dadc12",
+      "nodes" : [
+        {
+          "id" : "MESH:C565947",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859761",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008802",
+          "type" : "CLASS",
+          "lbl" : "antithrombin, familial hemorrhagic diathesis due to"
+        },
+        {
+          "id" : "OMIM:207300",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1859761",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008802",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008802",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:207300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565947",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008802",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1859761",
+            "MONDO:0008802",
+            "OMIM:207300",
+            "MESH:C565947"
+          ]
+        }
+      ]
+    }
+  ]
+}

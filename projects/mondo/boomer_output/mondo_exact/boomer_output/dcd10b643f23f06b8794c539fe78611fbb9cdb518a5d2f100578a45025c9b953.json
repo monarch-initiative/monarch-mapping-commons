@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dcd10b643f23f06b8794c539fe78611fbb9cdb518a5d2f100578a45025c9b953",
+      "nodes" : [
+        {
+          "id" : "SCTID:253771003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015731",
+          "type" : "CLASS",
+          "lbl" : "high anorectal malformation"
+        },
+        {
+          "id" : "Orphanet:171201",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015731",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:171201",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:253771003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015731",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015731",
+            "Orphanet:171201",
+            "SCTID:253771003"
+          ]
+        }
+      ]
+    }
+  ]
+}

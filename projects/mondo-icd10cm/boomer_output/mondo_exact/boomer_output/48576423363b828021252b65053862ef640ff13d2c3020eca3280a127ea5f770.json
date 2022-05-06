@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:48576423363b828021252b65053862ef640ff13d2c3020eca3280a127ea5f770",
+      "nodes" : [
+        {
+          "id" : "NCIT:C127907",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:123842006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000554",
+          "type" : "CLASS",
+          "lbl" : "endocervical adenocarcinoma"
+        },
+        {
+          "id" : "DOID:0050940",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1263762",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4289591",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0050940",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000554",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000554",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1263762",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000554",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C127907",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:123842006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000554",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4289591",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000554",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C127907",
+            "MONDO:0000554",
+            "DOID:0050940",
+            "UMLS:C4289591",
+            "SCTID:123842006"
+          ]
+        }
+      ]
+    }
+  ]
+}

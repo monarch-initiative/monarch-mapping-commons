@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:50eca086af390fcc991bb166c3acd0b0167bb05d7a7fc180f1e6690bd7d140e7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237754",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018688",
+          "type" : "CLASS",
+          "lbl" : "anti-p200 pemphigoid"
+        },
+        {
+          "id" : "Orphanet:454710",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237754",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018688",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018688",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:454710",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018688",
+            "UMLS:CN237754",
+            "Orphanet:454710"
+          ]
+        }
+      ]
+    }
+  ]
+}

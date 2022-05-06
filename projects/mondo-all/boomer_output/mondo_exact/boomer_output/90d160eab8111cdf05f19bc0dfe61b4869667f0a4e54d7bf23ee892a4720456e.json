@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:90d160eab8111cdf05f19bc0dfe61b4869667f0a4e54d7bf23ee892a4720456e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336978",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8255",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006620",
+          "type" : "CLASS",
+          "lbl" : "vulva fibroepithelial polyp"
+        },
+        {
+          "id" : "NCIT:C6857",
+          "type" : "CLASS",
+          "lbl" : "Vulvar Fibroepithelial Stromal Polyp"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006620",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6857",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336978",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006620",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8255",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006620",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006620",
+            "NCIT:C6857",
+            "UMLS:C1336978",
+            "DOID:8255"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9ab387f89fe9ffadc1626f8759e0b47db2bfbf83c2e2754400db113fe7ff9c19",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6162",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003788",
+          "type" : "CLASS",
+          "lbl" : "childhood embryonal testis carcinoma"
+        },
+        {
+          "id" : "NCIT:C6545",
+          "type" : "CLASS",
+          "lbl" : "Childhood Testicular Embryonal Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003788",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003788",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6545",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6162",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003788",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333007",
+            "MONDO:0003788",
+            "NCIT:C6545",
+            "DOID:6162"
+          ]
+        }
+      ]
+    }
+  ]
+}

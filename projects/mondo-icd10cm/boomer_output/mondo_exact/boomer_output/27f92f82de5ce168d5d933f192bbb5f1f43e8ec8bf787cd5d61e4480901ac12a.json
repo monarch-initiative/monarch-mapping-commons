@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:27f92f82de5ce168d5d933f192bbb5f1f43e8ec8bf787cd5d61e4480901ac12a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335062",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003316",
+          "type" : "CLASS",
+          "lbl" : "nonanaplastic kidney Wilms tumor"
+        },
+        {
+          "id" : "NCIT:C6951",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335062",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003316",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003316",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6951",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1335062",
+            "MONDO:0003316",
+            "NCIT:C6951"
+          ]
+        }
+      ]
+    }
+  ]
+}

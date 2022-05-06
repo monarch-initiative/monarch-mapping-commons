@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:955489f18b80a4edcf15881384903a41c108761775ef19c9c30eb09d006f7070",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225323",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014643",
+          "type" : "CLASS",
+          "lbl" : "congenital cataract-microcephaly-nevus flammeus simplex-severe intellectual disability syndrome"
+        },
+        {
+          "id" : "Orphanet:464738",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616449",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014643",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616449",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225323",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014643",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014643",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:464738",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014643",
+            "OMIM:616449",
+            "UMLS:C4225323",
+            "Orphanet:464738"
+          ]
+        }
+      ]
+    }
+  ]
+}

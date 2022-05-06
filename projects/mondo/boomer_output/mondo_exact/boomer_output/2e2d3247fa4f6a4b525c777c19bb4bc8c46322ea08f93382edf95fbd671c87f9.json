@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2e2d3247fa4f6a4b525c777c19bb4bc8c46322ea08f93382edf95fbd671c87f9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3272407",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024642",
+          "type" : "CLASS",
+          "lbl" : "gastric neuroendocrine tumor G2"
+        },
+        {
+          "id" : "NCIT:C95880",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3272407",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024642",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0024642",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C95880",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3272407",
+            "MONDO:0024642",
+            "NCIT:C95880"
+          ]
+        }
+      ]
+    }
+  ]
+}

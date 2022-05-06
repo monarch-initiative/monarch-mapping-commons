@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c02e2d22f20a3432ab8ca7e8d026e38f5e85e6faee1560616c1f76bb1a1695e2",
+      "nodes" : [
+        {
+          "id" : "MESH:D009810",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0043251",
+          "type" : "CLASS",
+          "lbl" : "odontoma"
+        },
+        {
+          "id" : "NCIT:C3287",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0043251",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3287",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D009810",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043251",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0043251",
+            "NCIT:C3287",
+            "MESH:D009810"
+          ]
+        }
+      ]
+    }
+  ]
+}

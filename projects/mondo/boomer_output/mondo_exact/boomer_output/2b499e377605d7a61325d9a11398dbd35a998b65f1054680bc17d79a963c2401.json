@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2b499e377605d7a61325d9a11398dbd35a998b65f1054680bc17d79a963c2401",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0031880",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009763",
+          "type" : "CLASS",
+          "lbl" : "obesity-hypoventilation syndrome"
+        },
+        {
+          "id" : "SCTID:190966007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:257500",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D010845",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009763",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:257500",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0031880",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009763",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:190966007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009763",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D010845",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009763",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:190966007",
+            "MESH:D010845",
+            "UMLS:C0031880",
+            "OMIM:257500",
+            "MONDO:0009763"
+          ]
+        }
+      ]
+    }
+  ]
+}

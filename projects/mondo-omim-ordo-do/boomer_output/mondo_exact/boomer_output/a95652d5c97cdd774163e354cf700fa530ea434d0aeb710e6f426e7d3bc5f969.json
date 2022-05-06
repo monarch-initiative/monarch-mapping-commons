@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a95652d5c97cdd774163e354cf700fa530ea434d0aeb710e6f426e7d3bc5f969",
+      "nodes" : [
+        {
+          "id" : "MESH:C566408",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1864183",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011290",
+          "type" : "CLASS",
+          "lbl" : "dislocated elbows, bowed tibias, scoliosis, deafness, cataract, microcephaly, and intellectual disability"
+        },
+        {
+          "id" : "OMIM:603133",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C566408",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011290",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011290",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603133",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1864183",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011290",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C566408",
+            "MONDO:0011290",
+            "OMIM:603133",
+            "UMLS:C1864183"
+          ]
+        }
+      ]
+    }
+  ]
+}

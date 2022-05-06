@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:39a350550c92bda3e0021a7ae625768e184bdda853e09f7b86917fc06504e580",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016802",
+          "type" : "CLASS",
+          "lbl" : "mitochondrial protein import disorder"
+        },
+        {
+          "id" : "Orphanet:254834",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016802",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016802",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:254834",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN227003",
+            "MONDO:0016802",
+            "Orphanet:254834"
+          ]
+        }
+      ]
+    }
+  ]
+}

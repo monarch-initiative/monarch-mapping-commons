@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c432dd75159baa073414c5568b0eec8cd2d2d5363e68531fc93af818e78effb4",
+      "nodes" : [
+        {
+          "id" : "MESH:C564736",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1848436",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010205",
+          "type" : "CLASS",
+          "lbl" : "Wolman disease with hypolipoproteinemia and acanthocytosis"
+        },
+        {
+          "id" : "OMIM:278100",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564736",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010205",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010205",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:278100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1848436",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010205",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010205",
+            "MESH:C564736",
+            "OMIM:278100",
+            "UMLS:C1848436"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4c6000447594fa9584b756750afb4c2543eb603de9d038234a649dba2edec6a9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0027654",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:688",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005564",
+          "type" : "CLASS",
+          "lbl" : "embryonal neoplasm"
+        },
+        {
+          "id" : "NCIT:C3264",
+          "type" : "CLASS",
+          "lbl" : "Embryonal Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005564",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3264",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0027654",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005564",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:688",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005564",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005564",
+            "NCIT:C3264",
+            "UMLS:C0027654",
+            "DOID:688"
+          ]
+        }
+      ]
+    }
+  ]
+}

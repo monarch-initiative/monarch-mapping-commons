@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:728632f03e0c17488fa74b6447fd13eedd10be09690a7249d6514c75941f2c7c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204616",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018168",
+          "type" : "CLASS",
+          "lbl" : "primary non-essential cutis verticis gyrata"
+        },
+        {
+          "id" : "Orphanet:357225",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN204616",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018168",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018168",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:357225",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018168",
+            "UMLS:CN204616",
+            "Orphanet:357225"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0b3cc90c413016e49bc3ce5319f4abaa81049dcd653274d95ca6f8f9845b8260",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1378050",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010795",
+          "type" : "CLASS",
+          "lbl" : "oncocytic neoplasm"
+        },
+        {
+          "id" : "NCIT:C7072",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:553000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010795",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7072",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1378050",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010795",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010795",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:553000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010795",
+            "NCIT:C7072",
+            "UMLS:C1378050",
+            "OMIM:553000"
+          ]
+        }
+      ]
+    }
+  ]
+}

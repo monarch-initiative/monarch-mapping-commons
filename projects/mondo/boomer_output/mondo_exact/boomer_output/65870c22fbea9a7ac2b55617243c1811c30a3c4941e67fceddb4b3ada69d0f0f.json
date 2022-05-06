@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:65870c22fbea9a7ac2b55617243c1811c30a3c4941e67fceddb4b3ada69d0f0f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279765",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5299",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006191",
+          "type" : "CLASS",
+          "lbl" : "endometrial clear cell adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C8028",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006191",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8028",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5299",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006191",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0279765",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006191",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C8028",
+            "MONDO:0006191",
+            "DOID:5299",
+            "UMLS:C0279765"
+          ]
+        }
+      ]
+    }
+  ]
+}

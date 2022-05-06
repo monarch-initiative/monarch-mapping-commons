@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6a3efd6c92775b8efbeddacc126f86f0b1f2aac382f5f2f6a720cda95886a179",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN357508",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000065",
+          "type" : "CLASS",
+          "lbl" : "microvascular complications of diabetes, susceptibility"
+        },
+        {
+          "id" : "OMIMPS:603933",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000065",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:603933",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN357508",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000065",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000065",
+            "OMIMPS:603933",
+            "UMLS:CN357508"
+          ]
+        }
+      ]
+    }
+  ]
+}

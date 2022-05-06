@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ce91cd30c5ee7c2a87dfbcc18611a745f3b5ca3e497ca5027ae2b4679aaac350",
+      "nodes" : [
+        {
+          "id" : "MESH:C562417",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007062",
+          "type" : "CLASS",
+          "lbl" : "congenital absence/hypoplasia of fingers excluding thumb, unilateral"
+        },
+        {
+          "id" : "Orphanet:973",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:102650",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007062",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:102650",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007062",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:973",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C562417",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007062",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007062",
+            "OMIM:102650",
+            "MESH:C562417",
+            "Orphanet:973"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9cbaa85c79a8d4e393d6d0ef1f037f2739b5c7dc06b6d618262c0e80057a72eb",
+      "nodes" : [
+        {
+          "id" : "MESH:C563516",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1834180",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008088",
+          "type" : "CLASS",
+          "lbl" : "neuropathy, with paraprotein in serum, cerebrospinal fluid and urine"
+        },
+        {
+          "id" : "OMIM:162600",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008088",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:162600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1834180",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008088",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563516",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008088",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008088",
+            "OMIM:162600",
+            "UMLS:C1834180",
+            "MESH:C563516"
+          ]
+        }
+      ]
+    }
+  ]
+}

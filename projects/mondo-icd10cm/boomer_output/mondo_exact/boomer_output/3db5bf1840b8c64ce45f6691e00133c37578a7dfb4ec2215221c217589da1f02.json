@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3db5bf1840b8c64ce45f6691e00133c37578a7dfb4ec2215221c217589da1f02",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226610",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015157",
+          "type" : "CLASS",
+          "lbl" : "human herpesvirus 8-related tumor"
+        },
+        {
+          "id" : "Orphanet:102024",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015157",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:102024",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226610",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015157",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015157",
+            "Orphanet:102024",
+            "UMLS:CN226610"
+          ]
+        }
+      ]
+    }
+  ]
+}

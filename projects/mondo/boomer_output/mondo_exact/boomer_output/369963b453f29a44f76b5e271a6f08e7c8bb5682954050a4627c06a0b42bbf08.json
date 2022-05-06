@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:369963b453f29a44f76b5e271a6f08e7c8bb5682954050a4627c06a0b42bbf08",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332186",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7750",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004352",
+          "type" : "CLASS",
+          "lbl" : "adult brain ependymoma"
+        },
+        {
+          "id" : "NCIT:C9372",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004352",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9372",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7750",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004352",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332186",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004352",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004352",
+            "NCIT:C9372",
+            "DOID:7750",
+            "UMLS:C1332186"
+          ]
+        }
+      ]
+    }
+  ]
+}

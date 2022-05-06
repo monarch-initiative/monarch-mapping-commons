@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3a2e9253efce6787a33493f86a5894d6ed46b22140a19c7884fa42c07801cdb2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1836217",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012270",
+          "type" : "CLASS",
+          "lbl" : "Tukel syndrome"
+        },
+        {
+          "id" : "OMIM:609428",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1836217",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012270",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012270",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609428",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012270",
+            "UMLS:C1836217",
+            "OMIM:609428"
+          ]
+        }
+      ]
+    }
+  ]
+}

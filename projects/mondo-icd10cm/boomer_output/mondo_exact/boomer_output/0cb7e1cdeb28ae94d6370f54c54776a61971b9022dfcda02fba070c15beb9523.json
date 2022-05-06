@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0cb7e1cdeb28ae94d6370f54c54776a61971b9022dfcda02fba070c15beb9523",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334925",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0056820",
+          "type" : "CLASS",
+          "lbl" : "nasal cavity and paranasal sinus neoplasm"
+        },
+        {
+          "id" : "NCIT:C7336",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0056820",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7336",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334925",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0056820",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0056820",
+            "NCIT:C7336",
+            "UMLS:C1334925"
+          ]
+        }
+      ]
+    }
+  ]
+}

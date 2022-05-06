@@ -1,0 +1,76 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b83fecc30f4b3400c5f40c2405ed5185e872d23cb5439140bebb7d740e08f2fb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0265428",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016526",
+          "type" : "CLASS",
+          "lbl" : "trisomy 9p"
+        },
+        {
+          "id" : "Orphanet:262767",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:236",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016526",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:262767",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0265428",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016526",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016526",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:236",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016526",
+            "Orphanet:262767",
+            "UMLS:C0265428"
+          ]
+        }
+      ]
+    }
+  ]
+}

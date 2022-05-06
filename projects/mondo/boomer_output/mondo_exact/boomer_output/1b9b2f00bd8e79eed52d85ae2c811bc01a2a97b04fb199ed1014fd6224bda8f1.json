@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1b9b2f00bd8e79eed52d85ae2c811bc01a2a97b04fb199ed1014fd6224bda8f1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3898586",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0056815",
+          "type" : "CLASS",
+          "lbl" : "liver adenosquamous carcinoma"
+        },
+        {
+          "id" : "NCIT:C118630",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0056815",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C118630",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3898586",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0056815",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C118630",
+            "MONDO:0056815",
+            "UMLS:C3898586"
+          ]
+        }
+      ]
+    }
+  ]
+}

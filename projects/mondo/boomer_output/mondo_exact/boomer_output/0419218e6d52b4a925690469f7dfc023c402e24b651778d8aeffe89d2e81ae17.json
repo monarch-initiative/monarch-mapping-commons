@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0419218e6d52b4a925690469f7dfc023c402e24b651778d8aeffe89d2e81ae17",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4015671",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110655",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014548",
+          "type" : "CLASS",
+          "lbl" : "long QT syndrome 14"
+        },
+        {
+          "id" : "OMIM:616247",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110655",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014548",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014548",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616247",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4015671",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014548",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014548",
+            "DOID:0110655",
+            "OMIM:616247",
+            "UMLS:C4015671"
+          ]
+        }
+      ]
+    }
+  ]
+}

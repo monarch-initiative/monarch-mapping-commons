@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e93d7051b407f05f75a73afc15cdde0567f6e978361463e305f0416a13f3422b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1837697",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012079",
+          "type" : "CLASS",
+          "lbl" : "asperger syndrome, susceptibility to, 2"
+        },
+        {
+          "id" : "OMIM:608631",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012079",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608631",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1837697",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012079",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:608631",
+            "MONDO:0012079",
+            "UMLS:C1837697"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:474de3ca79c22001fc9c75600787c9a40f27cb83afe70f0beb11b3f498b62b2f",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:E26.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:190507007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001422",
+          "type" : "CLASS",
+          "lbl" : "primary aldosteronism"
+        },
+        {
+          "id" : "DOID:12028",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C34510",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:12028",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001422",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:E26.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001422",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001422",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C34510",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:190507007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001422",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:190507007",
+            "DOID:12028",
+            "NCIT:C34510",
+            "ICD10CM:E26.0",
+            "MONDO:0001422"
+          ]
+        }
+      ]
+    }
+  ]
+}

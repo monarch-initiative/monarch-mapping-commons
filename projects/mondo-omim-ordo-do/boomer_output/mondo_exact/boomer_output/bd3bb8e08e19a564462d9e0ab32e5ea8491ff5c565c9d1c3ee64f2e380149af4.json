@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bd3bb8e08e19a564462d9e0ab32e5ea8491ff5c565c9d1c3ee64f2e380149af4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0278600",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6383",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003869",
+          "type" : "CLASS",
+          "lbl" : "childhood brain stem glioma"
+        },
+        {
+          "id" : "NCIT:C9042",
+          "type" : "CLASS",
+          "lbl" : "Childhood Brain Stem Glioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003869",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9042",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6383",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003869",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0278600",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003869",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003869",
+            "NCIT:C9042",
+            "DOID:6383",
+            "UMLS:C0278600"
+          ]
+        }
+      ]
+    }
+  ]
+}

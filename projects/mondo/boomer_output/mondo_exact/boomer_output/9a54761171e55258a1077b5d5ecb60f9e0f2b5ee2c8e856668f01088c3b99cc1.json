@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9a54761171e55258a1077b5d5ecb60f9e0f2b5ee2c8e856668f01088c3b99cc1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4015424",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014522",
+          "type" : "CLASS",
+          "lbl" : "retinal dystrophy and obesity"
+        },
+        {
+          "id" : "OMIM:616188",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4015424",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014522",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014522",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616188",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014522",
+            "UMLS:C4015424",
+            "OMIM:616188"
+          ]
+        }
+      ]
+    }
+  ]
+}

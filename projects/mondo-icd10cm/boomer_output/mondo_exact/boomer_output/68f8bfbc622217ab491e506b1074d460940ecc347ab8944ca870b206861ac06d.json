@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:68f8bfbc622217ab491e506b1074d460940ecc347ab8944ca870b206861ac06d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203735",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017785",
+          "type" : "CLASS",
+          "lbl" : "PENS syndrome"
+        },
+        {
+          "id" : "Orphanet:313936",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017785",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:313936",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203735",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017785",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017785",
+            "Orphanet:313936",
+            "UMLS:CN203735"
+          ]
+        }
+      ]
+    }
+  ]
+}

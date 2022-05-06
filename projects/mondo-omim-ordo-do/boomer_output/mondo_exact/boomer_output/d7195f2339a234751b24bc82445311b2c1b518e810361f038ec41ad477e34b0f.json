@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d7195f2339a234751b24bc82445311b2c1b518e810361f038ec41ad477e34b0f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4014435",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070056",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014361",
+          "type" : "CLASS",
+          "lbl" : "autism spectrum disorder due to AUTS2 deficiency"
+        },
+        {
+          "id" : "OMIM:615834",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:352490",
+          "type" : "CLASS",
+          "lbl" : "Autism spectrum disorder due to AUTS2 deficiency"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014361",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615834",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014361",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:352490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070056",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014361",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4014435",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014361",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4014435",
+            "OMIM:615834",
+            "MONDO:0014361",
+            "Orphanet:352490",
+            "DOID:0070056"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ce9a5ba83ea5c7642a905898643e6da01b8275d8ba54ae516ac3a39377ee751c",
+      "nodes" : [
+        {
+          "id" : "MONDO:0035112",
+          "type" : "CLASS",
+          "lbl" : "acute myeloid leukemia with BCR-ABL1"
+        },
+        {
+          "id" : "NCIT:C129785",
+          "type" : "CLASS",
+          "lbl" : "Acute Myeloid Leukemia with BCR-ABL1"
+        },
+        {
+          "id" : "Orphanet:585867",
+          "type" : "CLASS",
+          "lbl" : "Acute myeloid leukemia with t(9;22)(q34.1;q11.2)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0035112",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:585867",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0035112",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C129785",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:585867",
+            "MONDO:0035112",
+            "NCIT:C129785"
+          ]
+        }
+      ]
+    }
+  ]
+}

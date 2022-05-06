@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:23a37aeb71f8e15cbc27cefa71807cd4d0c969dd12e712b63baef415b25b6446",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN776824",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018831",
+          "type" : "CLASS",
+          "lbl" : "HTRA1-related cerebral small vessel disease"
+        },
+        {
+          "id" : "Orphanet:482072",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN776824",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018831",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018831",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:482072",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018831",
+            "UMLS:CN776824",
+            "Orphanet:482072"
+          ]
+        }
+      ]
+    }
+  ]
+}

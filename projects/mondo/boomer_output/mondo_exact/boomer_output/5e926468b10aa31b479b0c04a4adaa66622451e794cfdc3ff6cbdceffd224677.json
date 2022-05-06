@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5e926468b10aa31b479b0c04a4adaa66622451e794cfdc3ff6cbdceffd224677",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0879606",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6244",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003824",
+          "type" : "CLASS",
+          "lbl" : "hereditary kidney oncocytoma"
+        },
+        {
+          "id" : "NCIT:C8960",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003824",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8960",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6244",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003824",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0879606",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003824",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003824",
+            "NCIT:C8960",
+            "DOID:6244",
+            "UMLS:C0879606"
+          ]
+        }
+      ]
+    }
+  ]
+}

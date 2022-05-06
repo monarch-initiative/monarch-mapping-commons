@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d5775c877b36328f7b5623cfe942c39c072bda504f8ba7cb182f1c41aac1c7e9",
+      "nodes" : [
+        {
+          "id" : "OMIM:609324",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1836315",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:166029",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012253",
+          "type" : "CLASS",
+          "lbl" : "multiple epiphyseal dysplasia, with severe proximal femoral dysplasia"
+        },
+        {
+          "id" : "MESH:C563736",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C563736",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012253",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012253",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:166029",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012253",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609324",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1836315",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012253",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1836315",
+            "MONDO:0012253",
+            "MESH:C563736",
+            "Orphanet:166029",
+            "OMIM:609324"
+          ]
+        }
+      ]
+    }
+  ]
+}

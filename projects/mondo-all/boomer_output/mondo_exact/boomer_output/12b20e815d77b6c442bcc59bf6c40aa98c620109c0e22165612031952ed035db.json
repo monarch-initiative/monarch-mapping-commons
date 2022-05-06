@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:12b20e815d77b6c442bcc59bf6c40aa98c620109c0e22165612031952ed035db",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1516427",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:9442",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004787",
+          "type" : "CLASS",
+          "lbl" : "cervical mullerian papilloma"
+        },
+        {
+          "id" : "NCIT:C40215",
+          "type" : "CLASS",
+          "lbl" : "Cervical Mullerian Papilloma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:9442",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004787",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004787",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40215",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1516427",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004787",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:9442",
+            "MONDO:0004787",
+            "NCIT:C40215",
+            "UMLS:C1516427"
+          ]
+        }
+      ]
+    }
+  ]
+}

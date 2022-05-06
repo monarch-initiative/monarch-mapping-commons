@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f48db0a37d6c02697dbc8f441b2534729fae9f3dbb50207ddd70a5c7cd6fc448",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333761",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5635",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006034",
+          "type" : "CLASS",
+          "lbl" : "gastric adenosquamous carcinoma"
+        },
+        {
+          "id" : "NCIT:C5474",
+          "type" : "CLASS",
+          "lbl" : "Gastric Adenosquamous Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333761",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006034",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006034",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5474",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5635",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006034",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006034",
+            "UMLS:C1333761",
+            "NCIT:C5474",
+            "DOID:5635"
+          ]
+        }
+      ]
+    }
+  ]
+}

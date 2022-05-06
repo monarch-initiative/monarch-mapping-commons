@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a1c0824a28757d7e034221cd9fad849b50ccb05e1b30a7146bea7635a6d6c9d9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4288002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0056816",
+          "type" : "CLASS",
+          "lbl" : "vulvar neuroendocrine carcinoma"
+        },
+        {
+          "id" : "NCIT:C128243",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0056816",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C128243",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4288002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0056816",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0056816",
+            "NCIT:C128243",
+            "UMLS:C4288002"
+          ]
+        }
+      ]
+    }
+  ]
+}

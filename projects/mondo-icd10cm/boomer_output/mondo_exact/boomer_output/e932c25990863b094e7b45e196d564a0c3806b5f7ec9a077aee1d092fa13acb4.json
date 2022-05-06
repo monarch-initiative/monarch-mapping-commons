@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e932c25990863b094e7b45e196d564a0c3806b5f7ec9a077aee1d092fa13acb4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809798",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014228",
+          "type" : "CLASS",
+          "lbl" : "corneal dystrophy, Fuchs endothelial, 8"
+        },
+        {
+          "id" : "OMIM:615523",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014228",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615523",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3809798",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014228",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014228",
+            "OMIM:615523",
+            "UMLS:C3809798"
+          ]
+        }
+      ]
+    }
+  ]
+}

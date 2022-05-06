@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:efd785864a049af437b4361f0afa1c1b691d48f3e73ec94d4140a985fee8707a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334578",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5505",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003475",
+          "type" : "CLASS",
+          "lbl" : "papillary ependymoma"
+        },
+        {
+          "id" : "NCIT:C4319",
+          "type" : "CLASS",
+          "lbl" : "Papillary Ependymoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5505",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003475",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003475",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4319",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334578",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003475",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5505",
+            "MONDO:0003475",
+            "NCIT:C4319",
+            "UMLS:C0334578"
+          ]
+        }
+      ]
+    }
+  ]
+}

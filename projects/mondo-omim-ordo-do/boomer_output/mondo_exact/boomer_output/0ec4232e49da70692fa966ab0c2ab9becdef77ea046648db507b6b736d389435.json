@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0ec4232e49da70692fa966ab0c2ab9becdef77ea046648db507b6b736d389435",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1153706",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2870",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C7359",
+          "type" : "CLASS",
+          "lbl" : "Endometrial Adenocarcinoma"
+        },
+        {
+          "id" : "UMLS:C0279763",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005461",
+          "type" : "CLASS",
+          "lbl" : "endometrium adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0279763",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005461",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005461",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1153706",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005461",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7359",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2870",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005461",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0279763",
+            "MONDO:0005461",
+            "NCIT:C7359",
+            "DOID:2870"
+          ]
+        }
+      ]
+    }
+  ]
+}

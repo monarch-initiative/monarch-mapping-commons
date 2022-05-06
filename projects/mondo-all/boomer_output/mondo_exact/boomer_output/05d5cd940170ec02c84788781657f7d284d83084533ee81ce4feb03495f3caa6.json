@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:05d5cd940170ec02c84788781657f7d284d83084533ee81ce4feb03495f3caa6",
+      "nodes" : [
+        {
+          "id" : "MESH:C564262",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1842315",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012007",
+          "type" : "CLASS",
+          "lbl" : "scimitar anomaly, multiple cardiac malformations, and craniofacial and central nervous system abnormalities"
+        },
+        {
+          "id" : "OMIM:608281",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1842315",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012007",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564262",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012007",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608281",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012007",
+            "UMLS:C1842315",
+            "MESH:C564262",
+            "OMIM:608281"
+          ]
+        }
+      ]
+    }
+  ]
+}

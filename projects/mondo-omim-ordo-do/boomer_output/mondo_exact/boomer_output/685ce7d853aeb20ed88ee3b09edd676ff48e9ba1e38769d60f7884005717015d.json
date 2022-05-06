@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:685ce7d853aeb20ed88ee3b09edd676ff48e9ba1e38769d60f7884005717015d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1515311",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7435",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004219",
+          "type" : "CLASS",
+          "lbl" : "polyvesicular vitelline pattern testicular yolk sac tumor"
+        },
+        {
+          "id" : "NCIT:C39930",
+          "type" : "CLASS",
+          "lbl" : "Testicular Yolk Sac Tumor, Polyvesicular Vitelline Pattern"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7435",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004219",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004219",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39930",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1515311",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004219",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:7435",
+            "MONDO:0004219",
+            "NCIT:C39930",
+            "UMLS:C1515311"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4e216f3f6fed4d35541d16cf8f5c643666dd1a64856189a6a1e28098d9738c16",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203524",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017630",
+          "type" : "CLASS",
+          "lbl" : "X-linked complicated spastic paraplegia type 1"
+        },
+        {
+          "id" : "Orphanet:306617",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203524",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017630",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017630",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:306617",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017630",
+            "Orphanet:306617",
+            "UMLS:CN203524"
+          ]
+        }
+      ]
+    }
+  ]
+}

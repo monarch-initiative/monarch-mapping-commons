@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:70340581beeeb4bf094add610d20ff3cb752215241f841dbc18cfa5f4a67a565",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518882",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6975",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004056",
+          "type" : "CLASS",
+          "lbl" : "bladder papillary urothelial carcinoma"
+        },
+        {
+          "id" : "NCIT:C7383",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004056",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7383",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518882",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004056",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6975",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004056",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004056",
+            "NCIT:C7383",
+            "UMLS:C1518882",
+            "DOID:6975"
+          ]
+        }
+      ]
+    }
+  ]
+}

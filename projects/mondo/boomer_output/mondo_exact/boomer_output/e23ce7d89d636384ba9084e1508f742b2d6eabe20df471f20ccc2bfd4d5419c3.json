@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e23ce7d89d636384ba9084e1508f742b2d6eabe20df471f20ccc2bfd4d5419c3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150757",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060835",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013293",
+          "type" : "CLASS",
+          "lbl" : "isolated microphthalmia 6"
+        },
+        {
+          "id" : "OMIM:613517",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3150757",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013293",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013293",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613517",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060835",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013293",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3150757",
+            "MONDO:0013293",
+            "OMIM:613517",
+            "DOID:0060835"
+          ]
+        }
+      ]
+    }
+  ]
+}

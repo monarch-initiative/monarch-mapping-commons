@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e6e5c6a8e854138de56fa67950b2a89cca1e28c777c090dfef9c9cfcaab06ecb",
+      "nodes" : [
+        {
+          "id" : "MESH:C564927",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1850314",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009782",
+          "type" : "CLASS",
+          "lbl" : "ophthalmoplegia totalis with ptosis and miosis"
+        },
+        {
+          "id" : "OMIM:258400",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1850314",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009782",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009782",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:258400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564927",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009782",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1850314",
+            "MONDO:0009782",
+            "OMIM:258400",
+            "MESH:C564927"
+          ]
+        }
+      ]
+    }
+  ]
+}

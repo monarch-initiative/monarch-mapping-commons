@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a3828b368a5258e29814f27e23e5f3ad936630c4d4ed7fc434c0e408ba715807",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206630",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019723",
+          "type" : "CLASS",
+          "lbl" : "disease of glomerular basement membrane"
+        },
+        {
+          "id" : "Orphanet:93550",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206630",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019723",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019723",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93550",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019723",
+            "UMLS:CN206630",
+            "Orphanet:93550"
+          ]
+        }
+      ]
+    }
+  ]
+}

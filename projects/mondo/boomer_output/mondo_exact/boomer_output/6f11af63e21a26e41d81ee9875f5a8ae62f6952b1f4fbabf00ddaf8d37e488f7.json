@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6f11af63e21a26e41d81ee9875f5a8ae62f6952b1f4fbabf00ddaf8d37e488f7",
+      "nodes" : [
+        {
+          "id" : "MESH:C537708",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0796010",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009497",
+          "type" : "CLASS",
+          "lbl" : "Kifafa seizure disorder"
+        },
+        {
+          "id" : "OMIM:245180",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009497",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:245180",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537708",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009497",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0796010",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009497",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009497",
+            "OMIM:245180",
+            "MESH:C537708",
+            "UMLS:C0796010"
+          ]
+        }
+      ]
+    }
+  ]
+}

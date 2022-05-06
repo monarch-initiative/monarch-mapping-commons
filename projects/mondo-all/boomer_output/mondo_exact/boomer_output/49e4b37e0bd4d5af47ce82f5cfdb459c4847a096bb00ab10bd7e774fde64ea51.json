@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:49e4b37e0bd4d5af47ce82f5cfdb459c4847a096bb00ab10bd7e774fde64ea51",
+      "nodes" : [
+        {
+          "id" : "MESH:C565199",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1853156",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012537",
+          "type" : "CLASS",
+          "lbl" : "split-hand/foot malformation with long bone deficiency 2"
+        },
+        {
+          "id" : "OMIM:610685",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012537",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610685",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1853156",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012537",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565199",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012537",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012537",
+            "OMIM:610685",
+            "UMLS:C1853156",
+            "MESH:C565199"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d399efa86e195954591713f3a2c2eb07caba0a93e10bc1ff9a6f6f093a3fa642",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227743",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020049",
+          "type" : "CLASS",
+          "lbl" : "autosomal anomaly"
+        },
+        {
+          "id" : "Orphanet:98127",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020049",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98127",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227743",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020049",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020049",
+            "Orphanet:98127",
+            "UMLS:CN227743"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6ab36490e1d68f173356852c6c6b5c33759d574f08fb10f6229912abbe8f1524",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553250",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013822",
+          "type" : "CLASS",
+          "lbl" : "acrodysostosis 2 with or without hormone resistance"
+        },
+        {
+          "id" : "OMIM:614613",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3553250",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013822",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013822",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614613",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013822",
+            "UMLS:C3553250",
+            "OMIM:614613"
+          ]
+        }
+      ]
+    }
+  ]
+}

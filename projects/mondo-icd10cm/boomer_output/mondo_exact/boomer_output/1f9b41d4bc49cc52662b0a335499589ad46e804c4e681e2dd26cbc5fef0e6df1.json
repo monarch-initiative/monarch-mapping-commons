@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1f9b41d4bc49cc52662b0a335499589ad46e804c4e681e2dd26cbc5fef0e6df1",
+      "nodes" : [
+        {
+          "id" : "MESH:C564842",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1849405",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009982",
+          "type" : "CLASS",
+          "lbl" : "retinitis pigmentosa inversa with deafness"
+        },
+        {
+          "id" : "OMIM:268010",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009982",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:268010",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1849405",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009982",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564842",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009982",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009982",
+            "OMIM:268010",
+            "UMLS:C1849405",
+            "MESH:C564842"
+          ]
+        }
+      ]
+    }
+  ]
+}

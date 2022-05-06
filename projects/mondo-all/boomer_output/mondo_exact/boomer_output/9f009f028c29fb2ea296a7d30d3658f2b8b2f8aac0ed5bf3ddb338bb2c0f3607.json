@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9f009f028c29fb2ea296a7d30d3658f2b8b2f8aac0ed5bf3ddb338bb2c0f3607",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202304",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4305156",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:263543",
+          "type" : "CLASS",
+          "lbl" : "Generalized peeling skin syndrome"
+        },
+        {
+          "id" : "MONDO:0010033",
+          "type" : "CLASS",
+          "lbl" : "generalized peeling skin syndrome"
+        },
+        {
+          "id" : "SCTID:718749004",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010033",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4305156",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202304",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010033",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:718749004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010033",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010033",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:263543",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN202304",
+            "MONDO:0010033",
+            "SCTID:718749004",
+            "Orphanet:263543"
+          ]
+        }
+      ]
+    }
+  ]
+}

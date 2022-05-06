@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a50af2022b3ab23c4cbb811a3279cc84e354accae1056c197d657f9702503758",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204698",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018191",
+          "type" : "CLASS",
+          "lbl" : "tumor of testis and paratestis"
+        },
+        {
+          "id" : "Orphanet:363472",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN204698",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018191",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018191",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:363472",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN204698",
+            "MONDO:0018191",
+            "Orphanet:363472"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4cc0f01bf64ed5685a4d605af27cbd5e8773f4c078d2783b60d886a4747cc684",
+      "nodes" : [
+        {
+          "id" : "MESH:D009379",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021545",
+          "type" : "CLASS",
+          "lbl" : "myomatous neoplasm"
+        },
+        {
+          "id" : "NCIT:C4063",
+          "type" : "CLASS",
+          "lbl" : "Myomatous Neoplasm"
+        },
+        {
+          "id" : "MESH:D019042",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021545",
+          "pred" : "siblingOf",
+          "obj" : "MESH:D019042",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021545",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4063",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D009379",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021545",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021545",
+            "NCIT:C4063",
+            "MESH:D009379"
+          ]
+        }
+      ]
+    }
+  ]
+}

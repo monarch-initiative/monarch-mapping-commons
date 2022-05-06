@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:788a83426818b410ef19e5b18f45246ff85d0c334ecdb0c08177e65c4d7e45bf",
+      "nodes" : [
+        {
+          "id" : "MESH:C565246",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1853480",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011654",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability, microcephaly, growth retardation, joint contractures, and facial dysmorphism"
+        },
+        {
+          "id" : "OMIM:606242",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011654",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:606242",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565246",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011654",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1853480",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011654",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011654",
+            "OMIM:606242",
+            "MESH:C565246",
+            "UMLS:C1853480"
+          ]
+        }
+      ]
+    }
+  ]
+}

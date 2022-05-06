@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:467c39d50d7a3b57e6333636863738b71448e7b5e611d01808ee7c03381c1e0f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204964",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018317",
+          "type" : "CLASS",
+          "lbl" : "growth retardation-mild developmental delay-chronic hepatitis syndrome"
+        },
+        {
+          "id" : "Orphanet:391366",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018317",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:391366",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204964",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018317",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:391366",
+            "MONDO:0018317",
+            "UMLS:CN204964"
+          ]
+        }
+      ]
+    }
+  ]
+}

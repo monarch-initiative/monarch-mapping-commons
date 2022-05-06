@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bfbfbb8feedbf81cfa89e3dfaf39d36d7738957f448039b39bb79f1ecfff4adb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336711",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:12286",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001482",
+          "type" : "CLASS",
+          "lbl" : "testicular leukemia"
+        },
+        {
+          "id" : "NCIT:C9277",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:12286",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001482",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001482",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9277",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336711",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001482",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001482",
+            "DOID:12286",
+            "NCIT:C9277",
+            "UMLS:C1336711"
+          ]
+        }
+      ]
+    }
+  ]
+}

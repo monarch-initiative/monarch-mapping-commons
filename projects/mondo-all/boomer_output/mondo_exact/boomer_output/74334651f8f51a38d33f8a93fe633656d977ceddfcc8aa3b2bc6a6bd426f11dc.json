@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:74334651f8f51a38d33f8a93fe633656d977ceddfcc8aa3b2bc6a6bd426f11dc",
+      "nodes" : [
+        {
+          "id" : "MONDO:0020781",
+          "type" : "CLASS",
+          "lbl" : "encephalopathy, progressive, early-onset, with brain edema and/or leukoencephalopathy, 1"
+        },
+        {
+          "id" : "Orphanet:555407",
+          "type" : "CLASS",
+          "lbl" : "NAD(P)HX epimerase deficiency"
+        },
+        {
+          "id" : "OMIM:617186",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020781",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617186",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020781",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:555407",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020781",
+            "OMIM:617186",
+            "Orphanet:555407"
+          ]
+        }
+      ]
+    }
+  ]
+}

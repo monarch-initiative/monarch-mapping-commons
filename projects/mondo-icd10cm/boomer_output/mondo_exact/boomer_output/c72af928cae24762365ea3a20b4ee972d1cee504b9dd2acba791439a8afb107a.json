@@ -1,0 +1,111 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c72af928cae24762365ea3a20b4ee972d1cee504b9dd2acba791439a8afb107a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4273714",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019006",
+          "type" : "CLASS",
+          "lbl" : "familial idiopathic steroid-resistant nephrotic syndrome"
+        },
+        {
+          "id" : "UMLS:CN536255",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:656",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1868672",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:718141008",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019006",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1868672",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019006",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4273714",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN536255",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019006",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:656",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:718141008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019006",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:718141008",
+            "MONDO:0019006",
+            "UMLS:CN536255",
+            "Orphanet:656"
+          ]
+        }
+      ]
+    }
+  ]
+}

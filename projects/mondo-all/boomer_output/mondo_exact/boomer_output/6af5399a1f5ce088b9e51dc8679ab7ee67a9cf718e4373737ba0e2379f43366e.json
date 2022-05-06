@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6af5399a1f5ce088b9e51dc8679ab7ee67a9cf718e4373737ba0e2379f43366e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4014954",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014456",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive severe congenital neutropenia due to JAGN1 deficiency"
+        },
+        {
+          "id" : "Orphanet:423384",
+          "type" : "CLASS",
+          "lbl" : "Autosomal recessive severe congenital neutropenia due to JAGN1 deficiency"
+        },
+        {
+          "id" : "OMIM:616022",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014456",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:423384",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014456",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616022",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4014954",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014456",
+            "Orphanet:423384",
+            "OMIM:616022",
+            "UMLS:C4014954"
+          ]
+        }
+      ]
+    }
+  ]
+}

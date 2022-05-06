@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:922f24b0b9bb67ad55b290d2d16073836560f6d2547ecfc4a59ff28ab083f345",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202703",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017221",
+          "type" : "CLASS",
+          "lbl" : "Pelizaeus-Merzbacher disease, connatal form"
+        },
+        {
+          "id" : "Orphanet:280210",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017221",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:280210",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202703",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017221",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:280210",
+            "MONDO:0017221",
+            "UMLS:CN202703"
+          ]
+        }
+      ]
+    }
+  ]
+}

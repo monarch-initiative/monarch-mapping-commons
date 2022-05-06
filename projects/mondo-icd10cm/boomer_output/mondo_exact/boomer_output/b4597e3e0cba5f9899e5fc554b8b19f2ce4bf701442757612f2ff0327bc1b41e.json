@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b4597e3e0cba5f9899e5fc554b8b19f2ce4bf701442757612f2ff0327bc1b41e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1514200",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8042",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004442",
+          "type" : "CLASS",
+          "lbl" : "testis polyembryoma"
+        },
+        {
+          "id" : "NCIT:C40962",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1514200",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004442",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8042",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004442",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004442",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40962",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1514200",
+            "MONDO:0004442",
+            "NCIT:C40962",
+            "DOID:8042"
+          ]
+        }
+      ]
+    }
+  ]
+}

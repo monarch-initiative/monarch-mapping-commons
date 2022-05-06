@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:002c13a02d4342f0375433cef6bdd6a61c666a0a19d8fc94268f4f7a8360ca97",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225666",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:719575008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616898",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4305230",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:261190",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014822",
+          "type" : "CLASS",
+          "lbl" : "15q14 microdeletion syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014822",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616898",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4305230",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014822",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014822",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4225666",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014822",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:261190",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:719575008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014822",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014822",
+            "OMIM:616898",
+            "SCTID:719575008",
+            "Orphanet:261190",
+            "UMLS:C4305230"
+          ]
+        }
+      ]
+    }
+  ]
+}

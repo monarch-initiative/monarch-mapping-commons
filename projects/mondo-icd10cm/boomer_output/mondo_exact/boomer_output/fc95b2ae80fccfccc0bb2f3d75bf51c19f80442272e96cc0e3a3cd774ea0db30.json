@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fc95b2ae80fccfccc0bb2f3d75bf51c19f80442272e96cc0e3a3cd774ea0db30",
+      "nodes" : [
+        {
+          "id" : "MESH:C537010",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2931392",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0023540",
+          "type" : "CLASS",
+          "lbl" : "Kashani-Strom-Utley syndrome"
+        },
+        {
+          "id" : "Orphanet:1137",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C537010",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0023540",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0023540",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1137",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2931392",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0023540",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C537010",
+            "MONDO:0023540",
+            "Orphanet:1137",
+            "UMLS:C2931392"
+          ]
+        }
+      ]
+    }
+  ]
+}

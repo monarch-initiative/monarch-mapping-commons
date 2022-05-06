@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fee693b1d37454a462a0ef38b402b2e78558478ee73132e0e50e9711598f686f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225292",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014682",
+          "type" : "CLASS",
+          "lbl" : "thyroid cancer, nonmedullary, 5"
+        },
+        {
+          "id" : "OMIM:616535",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4225292",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014682",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014682",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616535",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014682",
+            "UMLS:C4225292",
+            "OMIM:616535"
+          ]
+        }
+      ]
+    }
+  ]
+}

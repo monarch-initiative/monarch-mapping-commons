@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:386548470cc66b771a37e8d86626c1d5439859f8f293d1d064c6f17591529905",
+      "nodes" : [
+        {
+          "id" : "DOID:3996",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C64-C68",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:448233000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006295",
+          "type" : "CLASS",
+          "lbl" : "malignant urinary system neoplasm"
+        },
+        {
+          "id" : "NCIT:C9297",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3996",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006295",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:448233000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006295",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C64-C68",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006295",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006295",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9297",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:C64-C68",
+            "NCIT:C9297",
+            "MONDO:0006295",
+            "SCTID:448233000",
+            "DOID:3996"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:564e9892da74b8acce48e97267ebf147e3251ad7a4e9c33f23b8eb2e9755c5b5",
+      "nodes" : [
+        {
+          "id" : "SCTID:92126004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0347201",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021491",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of gum"
+        },
+        {
+          "id" : "NCIT:C4598",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:92126004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021491",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021491",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4598",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0347201",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021491",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021491",
+            "SCTID:92126004",
+            "NCIT:C4598",
+            "UMLS:C0347201"
+          ]
+        }
+      ]
+    }
+  ]
+}

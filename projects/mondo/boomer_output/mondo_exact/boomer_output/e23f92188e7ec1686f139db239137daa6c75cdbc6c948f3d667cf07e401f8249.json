@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e23f92188e7ec1686f139db239137daa6c75cdbc6c948f3d667cf07e401f8249",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3273116",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015073",
+          "type" : "CLASS",
+          "lbl" : "gallbladder neuroendocrine tumor, grade 1/2"
+        },
+        {
+          "id" : "NCIT:C96918",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:100086",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN197366",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015073",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C96918",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015073",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100086",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3273116",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015073",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015073",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN197366",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C96918",
+            "MONDO:0015073",
+            "Orphanet:100086",
+            "UMLS:C3273116"
+          ]
+        }
+      ]
+    }
+  ]
+}

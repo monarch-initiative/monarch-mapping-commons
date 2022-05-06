@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:38fc9798512437398a665186b4b3000c0af7aed97ffe60ad2d1345e4c3e59285",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225161",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014823",
+          "type" : "CLASS",
+          "lbl" : "hypotonia, infantile, with psychomotor retardation and characteristic facies 3"
+        },
+        {
+          "id" : "Orphanet:488632",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616900",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014823",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:488632",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014823",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225161",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014823",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014823",
+            "Orphanet:488632",
+            "OMIM:616900",
+            "UMLS:C4225161"
+          ]
+        }
+      ]
+    }
+  ]
+}

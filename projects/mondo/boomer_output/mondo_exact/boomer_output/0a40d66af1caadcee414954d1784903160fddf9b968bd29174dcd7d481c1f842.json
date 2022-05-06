@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0a40d66af1caadcee414954d1784903160fddf9b968bd29174dcd7d481c1f842",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279665",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002701",
+          "type" : "CLASS",
+          "lbl" : "ovarian mucinous cystadenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C4026",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:254851009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3604",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:254851009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002701",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0279665",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002701",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3604",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002701",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002701",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4026",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:254851009",
+            "UMLS:C0279665",
+            "NCIT:C4026",
+            "DOID:3604",
+            "MONDO:0002701"
+          ]
+        }
+      ]
+    }
+  ]
+}

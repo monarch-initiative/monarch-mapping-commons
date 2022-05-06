@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:28c7ac4269e4cfe0fa32ce9b8956a01e13b7c1a3faed1e6a85339b84b55e112e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN199458",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015367",
+          "type" : "CLASS",
+          "lbl" : "Charlie M syndrome"
+        },
+        {
+          "id" : "Orphanet:1406",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:733034007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4518555",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN199458",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015367",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015367",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4518555",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:733034007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015367",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015367",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1406",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN199458",
+            "MONDO:0015367",
+            "Orphanet:1406",
+            "SCTID:733034007"
+          ]
+        }
+      ]
+    }
+  ]
+}

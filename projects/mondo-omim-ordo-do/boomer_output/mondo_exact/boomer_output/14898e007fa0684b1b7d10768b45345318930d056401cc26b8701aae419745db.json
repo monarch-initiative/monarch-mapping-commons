@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:14898e007fa0684b1b7d10768b45345318930d056401cc26b8701aae419745db",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201996",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016749",
+          "type" : "CLASS",
+          "lbl" : "tumor of cranial and spinal nerves"
+        },
+        {
+          "id" : "Orphanet:252057",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201996",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016749",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016749",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:252057",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN201996",
+            "MONDO:0016749",
+            "Orphanet:252057"
+          ]
+        }
+      ]
+    }
+  ]
+}

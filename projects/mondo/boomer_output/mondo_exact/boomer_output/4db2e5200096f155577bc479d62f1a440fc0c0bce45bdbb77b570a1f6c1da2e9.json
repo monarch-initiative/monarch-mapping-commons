@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4db2e5200096f155577bc479d62f1a440fc0c0bce45bdbb77b570a1f6c1da2e9",
+      "nodes" : [
+        {
+          "id" : "SCTID:204312002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020428",
+          "type" : "CLASS",
+          "lbl" : "congenital Gerbode defect"
+        },
+        {
+          "id" : "Orphanet:99095",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020428",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99095",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:204312002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020428",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020428",
+            "Orphanet:99095",
+            "SCTID:204312002"
+          ]
+        }
+      ]
+    }
+  ]
+}

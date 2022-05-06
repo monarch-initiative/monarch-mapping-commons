@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:46d6341ece5e4b17a33b110a30b0e0393e7de0e9e6fc421bf083528482180d73",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN252657",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020841",
+          "type" : "CLASS",
+          "lbl" : "neurodevelopmental disorder with cerebellar atrophy and with or without seizures"
+        },
+        {
+          "id" : "OMIM:618056",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020841",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:618056",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN252657",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020841",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020841",
+            "OMIM:618056",
+            "UMLS:CN252657"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e20a7a888c6f3af825e15b69fdf8d834f2ffe786adc4fcfba89c157917991239",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN776841",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018779",
+          "type" : "CLASS",
+          "lbl" : "hypercontractile muscle stiffness syndrome"
+        },
+        {
+          "id" : "Orphanet:476403",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018779",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:476403",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN776841",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018779",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018779",
+            "Orphanet:476403",
+            "UMLS:CN776841"
+          ]
+        }
+      ]
+    }
+  ]
+}

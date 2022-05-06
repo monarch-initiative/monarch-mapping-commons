@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0750198ca2aca22682402f43286352b1d8166f28471e58356afa3b3242bc0768",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150790",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060423",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013299",
+          "type" : "CLASS",
+          "lbl" : "chromosome 6q11-q14 deletion syndrome"
+        },
+        {
+          "id" : "OMIM:613544",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3150790",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013299",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013299",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613544",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060423",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013299",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3150790",
+            "MONDO:0013299",
+            "OMIM:613544",
+            "DOID:0060423"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6b7ad4b3c4f131eecfe69d8474723b80c77dd790ae46b9c2c169c9834b139280",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336764",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044885",
+          "type" : "CLASS",
+          "lbl" : "tonsillar lipoma"
+        },
+        {
+          "id" : "NCIT:C5989",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1336764",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044885",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044885",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1336764",
+            "MONDO:0044885",
+            "NCIT:C5989"
+          ]
+        }
+      ]
+    }
+  ]
+}

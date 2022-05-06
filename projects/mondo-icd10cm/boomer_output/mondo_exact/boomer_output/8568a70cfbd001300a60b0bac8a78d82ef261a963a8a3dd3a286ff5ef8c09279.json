@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8568a70cfbd001300a60b0bac8a78d82ef261a963a8a3dd3a286ff5ef8c09279",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207422",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015027",
+          "type" : "CLASS",
+          "lbl" : "familial isolated hyperparathyroidism"
+        },
+        {
+          "id" : "NCIT:C94830",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:99879",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015027",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C94830",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015027",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99879",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN207422",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015027",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015027",
+            "NCIT:C94830",
+            "Orphanet:99879",
+            "UMLS:CN207422"
+          ]
+        }
+      ]
+    }
+  ]
+}

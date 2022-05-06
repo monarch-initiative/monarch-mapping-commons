@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e1cf6dbf524e1e1eb95ff811c2f0a5a4a32ba9f2fc7cda840973c426aa0543a3",
+      "nodes" : [
+        {
+          "id" : "NCIT:C7058",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021143",
+          "type" : "CLASS",
+          "lbl" : "melanocytic neoplasm"
+        },
+        {
+          "id" : "SCTID:399956005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D018326",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1302746",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D018326",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021143",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:399956005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021143",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021143",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7058",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1302746",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021143",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:399956005",
+            "MONDO:0021143",
+            "NCIT:C7058",
+            "UMLS:C1302746",
+            "MESH:D018326"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c424fa15d95d34421e7ca9e8dfbe132b64688043f2f23f1b75956cb45cd9485f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202416",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017058",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive intermediate Charcot-Marie-Tooth disease"
+        },
+        {
+          "id" : "Orphanet:268337",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017058",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:268337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202416",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017058",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017058",
+            "Orphanet:268337",
+            "UMLS:CN202416"
+          ]
+        }
+      ]
+    }
+  ]
+}

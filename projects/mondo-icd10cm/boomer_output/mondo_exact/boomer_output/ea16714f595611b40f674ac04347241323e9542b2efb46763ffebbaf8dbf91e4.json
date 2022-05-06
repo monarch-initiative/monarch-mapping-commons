@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ea16714f595611b40f674ac04347241323e9542b2efb46763ffebbaf8dbf91e4",
+      "nodes" : [
+        {
+          "id" : "SCTID:17741008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0001361",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020686",
+          "type" : "CLASS",
+          "lbl" : "acute tonsillitis"
+        },
+        {
+          "id" : "NCIT:C97142",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0001361",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020686",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:17741008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020686",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020686",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C97142",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020686",
+            "UMLS:C0001361",
+            "SCTID:17741008",
+            "NCIT:C97142"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9038a3920403ebb414785d0034ebc5214ed48c478821479bed0223d4376c10f8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310616",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111652",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015024",
+          "type" : "CLASS",
+          "lbl" : "ectodermal dysplasia 12, hypohidrotic/hair/tooth/nail type"
+        },
+        {
+          "id" : "OMIM:617337",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4310616",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015024",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015024",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111652",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015024",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4310616",
+            "MONDO:0015024",
+            "OMIM:617337",
+            "DOID:0111652"
+          ]
+        }
+      ]
+    }
+  ]
+}

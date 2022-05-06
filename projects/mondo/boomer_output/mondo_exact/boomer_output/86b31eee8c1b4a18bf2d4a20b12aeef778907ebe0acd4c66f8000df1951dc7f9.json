@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:86b31eee8c1b4a18bf2d4a20b12aeef778907ebe0acd4c66f8000df1951dc7f9",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202863",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017289",
+          "type" : "CLASS",
+          "lbl" : "fetal lung interstitial tumor"
+        },
+        {
+          "id" : "Orphanet:284362",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017289",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:284362",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202863",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017289",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:284362",
+            "MONDO:0017289",
+            "UMLS:CN202863"
+          ]
+        }
+      ]
+    }
+  ]
+}

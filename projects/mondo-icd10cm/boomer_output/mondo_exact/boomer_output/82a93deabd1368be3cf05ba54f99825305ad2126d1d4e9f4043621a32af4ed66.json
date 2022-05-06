@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:82a93deabd1368be3cf05ba54f99825305ad2126d1d4e9f4043621a32af4ed66",
+      "nodes" : [
+        {
+          "id" : "MESH:D011201",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0032851",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0025113",
+          "type" : "CLASS",
+          "lbl" : "poultry disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0032851",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025113",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D011201",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025113",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0025113",
+            "UMLS:C0032851",
+            "MESH:D011201"
+          ]
+        }
+      ]
+    }
+  ]
+}

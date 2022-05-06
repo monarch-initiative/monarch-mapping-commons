@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fd9d0b266be21b02b696626c6d770fd18252e8073f7550a012e5340a6b6ce1e8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335387",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5195",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003327",
+          "type" : "CLASS",
+          "lbl" : "peripheral ganglioneuroblastoma"
+        },
+        {
+          "id" : "NCIT:C6594",
+          "type" : "CLASS",
+          "lbl" : "Peripheral Ganglioneuroblastoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5195",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003327",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335387",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003327",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003327",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6594",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003327",
+            "DOID:5195",
+            "UMLS:C1335387",
+            "NCIT:C6594"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:aa4f1b00fb0b952893ca067a65b354b9a827e0f0ce48ef2edff3426f592305cc",
+      "nodes" : [
+        {
+          "id" : "SCTID:93031005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020452",
+          "type" : "CLASS",
+          "lbl" : "inferior vena cava interruption"
+        },
+        {
+          "id" : "Orphanet:99123",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020452",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99123",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:93031005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020452",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:99123",
+            "MONDO:0020452",
+            "SCTID:93031005"
+          ]
+        }
+      ]
+    }
+  ]
+}

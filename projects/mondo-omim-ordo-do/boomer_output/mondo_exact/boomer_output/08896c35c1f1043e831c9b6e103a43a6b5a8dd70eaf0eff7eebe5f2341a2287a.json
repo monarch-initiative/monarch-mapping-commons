@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:08896c35c1f1043e831c9b6e103a43a6b5a8dd70eaf0eff7eebe5f2341a2287a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4012409",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010492",
+          "type" : "CLASS",
+          "lbl" : "pituitary adenoma, growth hormone-secreting, 2"
+        },
+        {
+          "id" : "OMIM:300943",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4012409",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010492",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010492",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300943",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4012409",
+            "MONDO:0010492",
+            "OMIM:300943"
+          ]
+        }
+      ]
+    }
+  ]
+}

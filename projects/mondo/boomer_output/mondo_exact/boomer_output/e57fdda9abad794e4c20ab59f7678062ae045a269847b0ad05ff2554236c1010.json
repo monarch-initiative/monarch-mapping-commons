@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e57fdda9abad794e4c20ab59f7678062ae045a269847b0ad05ff2554236c1010",
+      "nodes" : [
+        {
+          "id" : "SCTID:92321003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0154027",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021453",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of retina"
+        },
+        {
+          "id" : "NCIT:C3624",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021453",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3624",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0154027",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021453",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92321003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021453",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021453",
+            "NCIT:C3624",
+            "UMLS:C0154027",
+            "SCTID:92321003"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:aa470f84f4c1af25d5d9076542e831d3784a5a27c584154e03766bc03978aed3",
+      "nodes" : [
+        {
+          "id" : "MESH:D001072",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:R48.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060135",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000665",
+          "type" : "CLASS",
+          "lbl" : "apraxia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D001072",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000665",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060135",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000665",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:R48.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000665",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000665",
+            "MESH:D001072",
+            "ICD10CM:R48.2",
+            "DOID:0060135"
+          ]
+        }
+      ]
+    }
+  ]
+}

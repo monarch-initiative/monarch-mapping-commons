@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8cb01d4956bbf9e93398d9b51b39bb9810ba1acb77677935ace65183aa1043a6",
+      "nodes" : [
+        {
+          "id" : "DOID:0060192",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005532",
+          "type" : "CLASS",
+          "lbl" : "Crohn's colitis"
+        },
+        {
+          "id" : "NCIT:C35211",
+          "type" : "CLASS",
+          "lbl" : "Crohn Colitis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005532",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35211",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060192",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005532",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005532",
+            "NCIT:C35211",
+            "DOID:0060192"
+          ]
+        }
+      ]
+    }
+  ]
+}

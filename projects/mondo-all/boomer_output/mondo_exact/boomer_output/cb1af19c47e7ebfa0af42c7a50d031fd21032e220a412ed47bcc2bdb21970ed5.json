@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cb1af19c47e7ebfa0af42c7a50d031fd21032e220a412ed47bcc2bdb21970ed5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334090",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024478",
+          "type" : "CLASS",
+          "lbl" : "mesenchymal hamartoma"
+        },
+        {
+          "id" : "NCIT:C40427",
+          "type" : "CLASS",
+          "lbl" : "Mesenchymal Hamartoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024478",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40427",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334090",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024478",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024478",
+            "NCIT:C40427",
+            "UMLS:C0334090"
+          ]
+        }
+      ]
+    }
+  ]
+}

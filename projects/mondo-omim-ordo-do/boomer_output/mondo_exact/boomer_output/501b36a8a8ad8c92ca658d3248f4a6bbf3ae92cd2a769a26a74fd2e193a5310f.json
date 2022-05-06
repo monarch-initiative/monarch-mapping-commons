@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:501b36a8a8ad8c92ca658d3248f4a6bbf3ae92cd2a769a26a74fd2e193a5310f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479246",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044302",
+          "type" : "CLASS",
+          "lbl" : "congenital heart defects, dysmorphic facial features, and intellectual developmental disorder"
+        },
+        {
+          "id" : "OMIM:617360",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4479246",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044302",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044302",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617360",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4479246",
+            "MONDO:0044302",
+            "OMIM:617360"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2f456b886164a5be264be6bc62f3994f33d3620e83f43aeda0f8579b26a27835",
+      "nodes" : [
+        {
+          "id" : "MESH:C565817",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1858696",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011410",
+          "type" : "CLASS",
+          "lbl" : "Hirschsprung disease with heart defects, laryngeal anomalies, and preaxial polydactyly"
+        },
+        {
+          "id" : "OMIM:604211",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1858696",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011410",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011410",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:604211",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565817",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011410",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011410",
+            "UMLS:C1858696",
+            "OMIM:604211",
+            "MESH:C565817"
+          ]
+        }
+      ]
+    }
+  ]
+}

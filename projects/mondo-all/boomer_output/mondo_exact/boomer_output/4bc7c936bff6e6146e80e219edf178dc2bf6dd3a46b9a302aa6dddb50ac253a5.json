@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4bc7c936bff6e6146e80e219edf178dc2bf6dd3a46b9a302aa6dddb50ac253a5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334255",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5615",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003545",
+          "type" : "CLASS",
+          "lbl" : "intradural extramedullary spinal canal neoplasm"
+        },
+        {
+          "id" : "NCIT:C5135",
+          "type" : "CLASS",
+          "lbl" : "Intradural Extramedullary Spinal Canal Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334255",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003545",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003545",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5135",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5615",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003545",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1334255",
+            "MONDO:0003545",
+            "NCIT:C5135",
+            "DOID:5615"
+          ]
+        }
+      ]
+    }
+  ]
+}

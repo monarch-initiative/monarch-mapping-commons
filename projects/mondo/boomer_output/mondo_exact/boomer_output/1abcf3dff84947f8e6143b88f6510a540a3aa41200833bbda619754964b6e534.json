@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1abcf3dff84947f8e6143b88f6510a540a3aa41200833bbda619754964b6e534",
+      "nodes" : [
+        {
+          "id" : "MESH:C537717",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007923",
+          "type" : "CLASS",
+          "lbl" : "macrocephaly, benign familial"
+        },
+        {
+          "id" : "OMIM:153470",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C537717",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007923",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007923",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:153470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007923",
+            "MESH:C537717",
+            "OMIM:153470"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:56b15d189ecdf71609ad433e874c2daf2a9c54b684a4952abf900fb2eee716a2",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN924920",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020207",
+          "type" : "CLASS",
+          "lbl" : "obsolete rare isolated myopia"
+        },
+        {
+          "id" : "Orphanet:98619",
+          "type" : "CLASS",
+          "lbl" : "Rare isolated myopia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020207",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98619",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN924920",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020207",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020207",
+            "Orphanet:98619",
+            "UMLS:CN924920"
+          ]
+        }
+      ]
+    }
+  ]
+}

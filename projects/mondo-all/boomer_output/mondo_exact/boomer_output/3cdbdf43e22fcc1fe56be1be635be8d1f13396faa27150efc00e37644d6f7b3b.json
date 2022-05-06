@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3cdbdf43e22fcc1fe56be1be635be8d1f13396faa27150efc00e37644d6f7b3b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332951",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4206",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002914",
+          "type" : "CLASS",
+          "lbl" : "childhood brain stem neoplasm"
+        },
+        {
+          "id" : "NCIT:C5969",
+          "type" : "CLASS",
+          "lbl" : "Childhood Brain Stem Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002914",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5969",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332951",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002914",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002914",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002914",
+            "NCIT:C5969",
+            "UMLS:C1332951",
+            "DOID:4206"
+          ]
+        }
+      ]
+    }
+  ]
+}

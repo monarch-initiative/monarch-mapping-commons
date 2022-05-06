@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:64e46c74d777ab0865b3e5cd347c3f1dc1c5dc557f1928928d96bc6d19316566",
+      "nodes" : [
+        {
+          "id" : "MESH:C565600",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:83586000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009158",
+          "type" : "CLASS",
+          "lbl" : "Ehlers-Danlos syndrome, fibronectinemic type"
+        },
+        {
+          "id" : "OMIM:225310",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:83586000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009158",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565600",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009158",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009158",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:225310",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009158",
+            "SCTID:83586000",
+            "MESH:C565600",
+            "OMIM:225310"
+          ]
+        }
+      ]
+    }
+  ]
+}

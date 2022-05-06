@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:58d6acd48bd44b7384a77a4c6c688b754330cc54e4e53bafb0e20904ad4bc077",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336036",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7820",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004370",
+          "type" : "CLASS",
+          "lbl" : "sphenocavernous meningioma"
+        },
+        {
+          "id" : "NCIT:C5313",
+          "type" : "CLASS",
+          "lbl" : "Sphenocavernous Meningioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004370",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5313",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7820",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004370",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336036",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004370",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004370",
+            "NCIT:C5313",
+            "UMLS:C1336036",
+            "DOID:7820"
+          ]
+        }
+      ]
+    }
+  ]
+}

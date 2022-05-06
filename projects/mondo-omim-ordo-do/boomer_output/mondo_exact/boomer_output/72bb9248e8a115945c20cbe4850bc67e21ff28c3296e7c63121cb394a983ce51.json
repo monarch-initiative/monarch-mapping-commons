@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:72bb9248e8a115945c20cbe4850bc67e21ff28c3296e7c63121cb394a983ce51",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310692",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014941",
+          "type" : "CLASS",
+          "lbl" : "arthrogryposis, distal, with impaired proprioception and touch"
+        },
+        {
+          "id" : "OMIM:617146",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014941",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617146",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310692",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014941",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:617146",
+            "MONDO:0014941",
+            "UMLS:C4310692"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6e33d26c30f3a28eef180ab641687fe3522d318fc1e59ee9cb5c9a074b6985d7",
+      "nodes" : [
+        {
+          "id" : "Orphanet:2300",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C562441",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009465",
+          "type" : "CLASS",
+          "lbl" : "multiple intestinal atresia"
+        },
+        {
+          "id" : "DOID:14671",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:95472001",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:14671",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009465",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C562441",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009465",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:95472001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009465",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009465",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:95472001",
+            "Orphanet:2300",
+            "MESH:C562441",
+            "MONDO:0009465",
+            "DOID:14671"
+          ]
+        }
+      ]
+    }
+  ]
+}

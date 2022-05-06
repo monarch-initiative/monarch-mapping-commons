@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1d4b4112ca77149484d1b4706a8c26ea6e3fd46abac0a184802f7ddf8d7bf575",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280798",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070133",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013754",
+          "type" : "CLASS",
+          "lbl" : "cutis laxa, autosomal recessive, type 1B"
+        },
+        {
+          "id" : "OMIM:614437",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3280798",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013754",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013754",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614437",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070133",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013754",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013754",
+            "UMLS:C3280798",
+            "OMIM:614437",
+            "DOID:0070133"
+          ]
+        }
+      ]
+    }
+  ]
+}

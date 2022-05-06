@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9510d7f279f7a7238478a931f1001b3dbd721b2fcd864f230465a3426fbd9035",
+      "nodes" : [
+        {
+          "id" : "MESH:C535934",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:605479",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:99961",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070232",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011559",
+          "type" : "CLASS",
+          "lbl" : "benign recurrent intrahepatic cholestasis type 2"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011559",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99961",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070232",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011559",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011559",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:605479",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535934",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011559",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C535934",
+            "Orphanet:99961",
+            "MONDO:0011559",
+            "DOID:0070232",
+            "OMIM:605479"
+          ]
+        }
+      ]
+    }
+  ]
+}

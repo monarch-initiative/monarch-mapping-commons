@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e82c6cc425a1e5bc547a2b1fdef1439267dd2401ce677cdcefc642c6c2a1858f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204200",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017994",
+          "type" : "CLASS",
+          "lbl" : "severe early-onset obesity-insulin resistance syndrome due to SH2B1 deficiency"
+        },
+        {
+          "id" : "Orphanet:329249",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN204200",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017994",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017994",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:329249",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017994",
+            "UMLS:CN204200",
+            "Orphanet:329249"
+          ]
+        }
+      ]
+    }
+  ]
+}

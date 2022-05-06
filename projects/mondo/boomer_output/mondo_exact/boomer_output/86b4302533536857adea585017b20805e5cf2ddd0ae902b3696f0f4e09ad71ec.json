@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:86b4302533536857adea585017b20805e5cf2ddd0ae902b3696f0f4e09ad71ec",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4015307",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014504",
+          "type" : "CLASS",
+          "lbl" : "Perrault syndrome 5"
+        },
+        {
+          "id" : "OMIM:616138",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014504",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616138",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4015307",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014504",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014504",
+            "OMIM:616138",
+            "UMLS:C4015307"
+          ]
+        }
+      ]
+    }
+  ]
+}

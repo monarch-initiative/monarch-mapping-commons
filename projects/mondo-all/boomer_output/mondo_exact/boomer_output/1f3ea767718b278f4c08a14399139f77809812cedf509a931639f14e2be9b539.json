@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1f3ea767718b278f4c08a14399139f77809812cedf509a931639f14e2be9b539",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280501",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013693",
+          "type" : "CLASS",
+          "lbl" : "inflammatory skin and bowel disease, neonatal, 1"
+        },
+        {
+          "id" : "OMIM:614328",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013693",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614328",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3280501",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013693",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:614328",
+            "MONDO:0013693",
+            "UMLS:C3280501"
+          ]
+        }
+      ]
+    }
+  ]
+}

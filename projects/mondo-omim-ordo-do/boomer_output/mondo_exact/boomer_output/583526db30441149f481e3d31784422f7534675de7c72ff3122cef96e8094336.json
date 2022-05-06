@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:583526db30441149f481e3d31784422f7534675de7c72ff3122cef96e8094336",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227829",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020225",
+          "type" : "CLASS",
+          "lbl" : "syndromic cataract"
+        },
+        {
+          "id" : "Orphanet:98641",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020225",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98641",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227829",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020225",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020225",
+            "Orphanet:98641",
+            "UMLS:CN227829"
+          ]
+        }
+      ]
+    }
+  ]
+}

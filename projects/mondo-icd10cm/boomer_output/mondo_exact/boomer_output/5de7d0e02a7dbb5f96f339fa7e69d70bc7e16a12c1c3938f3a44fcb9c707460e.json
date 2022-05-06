@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5de7d0e02a7dbb5f96f339fa7e69d70bc7e16a12c1c3938f3a44fcb9c707460e",
+      "nodes" : [
+        {
+          "id" : "MESH:C535695",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007939",
+          "type" : "CLASS",
+          "lbl" : "malignant hyperthermia, susceptibility to, 2"
+        },
+        {
+          "id" : "OMIM:154275",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007939",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:154275",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535695",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007939",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007939",
+            "OMIM:154275",
+            "MESH:C535695"
+          ]
+        }
+      ]
+    }
+  ]
+}

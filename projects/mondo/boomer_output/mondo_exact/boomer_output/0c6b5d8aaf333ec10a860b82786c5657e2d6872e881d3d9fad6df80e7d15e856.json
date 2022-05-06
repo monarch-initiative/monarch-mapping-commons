@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0c6b5d8aaf333ec10a860b82786c5657e2d6872e881d3d9fad6df80e7d15e856",
+      "nodes" : [
+        {
+          "id" : "MESH:C535372",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0265479",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0022757",
+          "type" : "CLASS",
+          "lbl" : "chromosome 20 trisomy"
+        },
+        {
+          "id" : "NCIT:C36397",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C535372",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022757",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0022757",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C36397",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0265479",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022757",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C535372",
+            "MONDO:0022757",
+            "NCIT:C36397",
+            "UMLS:C0265479"
+          ]
+        }
+      ]
+    }
+  ]
+}

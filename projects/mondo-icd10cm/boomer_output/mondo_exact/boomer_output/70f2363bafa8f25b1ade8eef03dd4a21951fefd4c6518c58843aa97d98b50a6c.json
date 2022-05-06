@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:70f2363bafa8f25b1ade8eef03dd4a21951fefd4c6518c58843aa97d98b50a6c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201345",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016411",
+          "type" : "CLASS",
+          "lbl" : "hypothyroidism due to deficient transcription factors involved in pituitary development or function"
+        },
+        {
+          "id" : "Orphanet:226307",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016411",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:226307",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201345",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016411",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016411",
+            "Orphanet:226307",
+            "UMLS:CN201345"
+          ]
+        }
+      ]
+    }
+  ]
+}

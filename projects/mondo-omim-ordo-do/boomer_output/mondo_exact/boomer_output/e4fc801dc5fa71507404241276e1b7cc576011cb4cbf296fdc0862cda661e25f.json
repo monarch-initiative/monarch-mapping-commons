@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e4fc801dc5fa71507404241276e1b7cc576011cb4cbf296fdc0862cda661e25f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203197",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017454",
+          "type" : "CLASS",
+          "lbl" : "triphalangeal thumb-polysyndactyly syndrome"
+        },
+        {
+          "id" : "Orphanet:2950",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203197",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017454",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017454",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN203197",
+            "MONDO:0017454",
+            "Orphanet:2950"
+          ]
+        }
+      ]
+    }
+  ]
+}

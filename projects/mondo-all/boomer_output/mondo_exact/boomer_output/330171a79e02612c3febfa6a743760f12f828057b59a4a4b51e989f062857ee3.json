@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:330171a79e02612c3febfa6a743760f12f828057b59a4a4b51e989f062857ee3",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:Q71.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017443",
+          "type" : "CLASS",
+          "lbl" : "congenital absence of both forearm and hand"
+        },
+        {
+          "id" : "Orphanet:294979",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:Q71.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017443",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017443",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:294979",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017443",
+            "ICD10CM:Q71.2",
+            "Orphanet:294979"
+          ]
+        }
+      ]
+    }
+  ]
+}

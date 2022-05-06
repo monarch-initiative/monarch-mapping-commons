@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c3859816c5f46e8fada749075b486b83595a7b8cf4188f657b87e515d62c3364",
+      "nodes" : [
+        {
+          "id" : "SCTID:253604004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015097",
+          "type" : "CLASS",
+          "lbl" : "aortic valve dysplasia"
+        },
+        {
+          "id" : "Orphanet:101043",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015097",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:101043",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:253604004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015097",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015097",
+            "Orphanet:101043",
+            "SCTID:253604004"
+          ]
+        }
+      ]
+    }
+  ]
+}

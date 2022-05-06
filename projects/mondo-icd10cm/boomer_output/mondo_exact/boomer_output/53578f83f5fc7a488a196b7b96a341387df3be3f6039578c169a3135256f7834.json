@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:53578f83f5fc7a488a196b7b96a341387df3be3f6039578c169a3135256f7834",
+      "nodes" : [
+        {
+          "id" : "MESH:C566573",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1865831",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011199",
+          "type" : "CLASS",
+          "lbl" : "nephropathy, progressive tubulointerstitial, with cholestatic liver disease"
+        },
+        {
+          "id" : "OMIM:602114",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011199",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:602114",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566573",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011199",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1865831",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011199",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:602114",
+            "MONDO:0011199",
+            "MESH:C566573",
+            "UMLS:C1865831"
+          ]
+        }
+      ]
+    }
+  ]
+}

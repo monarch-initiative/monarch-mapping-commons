@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0d90a6875f2d51d8228ff2650a71d2b7245ad81e039d24f38335a88a780d73df",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0031024",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006989",
+          "type" : "CLASS",
+          "lbl" : "suppurative periapical periodontitis"
+        },
+        {
+          "id" : "DOID:2562",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D010482",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C34913",
+          "type" : "CLASS",
+          "lbl" : "Periapical Dental Abscess"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006989",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C34913",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D010482",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2562",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0031024",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C34913",
+            "UMLS:C0031024",
+            "MESH:D010482",
+            "MONDO:0006989",
+            "DOID:2562"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:81d4e1bfd404badc9a929540a05f1d50922f7f4fbae6e9c5a32c9f9db8e3846f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0302327",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7614",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004308",
+          "type" : "CLASS",
+          "lbl" : "meningeal sarcoma"
+        },
+        {
+          "id" : "NCIT:C4073",
+          "type" : "CLASS",
+          "lbl" : "Meningeal Sarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004308",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4073",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0302327",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004308",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7614",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004308",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004308",
+            "NCIT:C4073",
+            "UMLS:C0302327",
+            "DOID:7614"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8d946a28c44fa1b50ad91ffa0bdac078de155952896679776c525564d38567f7",
+      "nodes" : [
+        {
+          "id" : "DOID:13206",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021259",
+          "type" : "CLASS",
+          "lbl" : "prostate neoplasm"
+        },
+        {
+          "id" : "NCIT:C3343",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:13206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021259",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021259",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3343",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:13206",
+            "MONDO:0021259",
+            "NCIT:C3343"
+          ]
+        }
+      ]
+    }
+  ]
+}

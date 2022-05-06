@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6b8984438e60d828986796ca93e921845cbcb16f3ab05a21b24875d7016122f5",
+      "nodes" : [
+        {
+          "id" : "MESH:C543241",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1853577",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010439",
+          "type" : "CLASS",
+          "lbl" : "cardiomyopathy, fatal fetal, due to myocardial calcification"
+        },
+        {
+          "id" : "OMIM:300829",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1853577",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010439",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010439",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300829",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C543241",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010439",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1853577",
+            "MONDO:0010439",
+            "OMIM:300829",
+            "MESH:C543241"
+          ]
+        }
+      ]
+    }
+  ]
+}

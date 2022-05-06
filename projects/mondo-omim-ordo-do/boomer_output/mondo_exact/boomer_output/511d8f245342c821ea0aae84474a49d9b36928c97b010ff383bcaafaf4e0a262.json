@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:511d8f245342c821ea0aae84474a49d9b36928c97b010ff383bcaafaf4e0a262",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1855179",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020373",
+          "type" : "CLASS",
+          "lbl" : "early-onset anterior polar cataract"
+        },
+        {
+          "id" : "Orphanet:98988",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020373",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98988",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1855179",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020373",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020373",
+            "Orphanet:98988",
+            "UMLS:C1855179"
+          ]
+        }
+      ]
+    }
+  ]
+}

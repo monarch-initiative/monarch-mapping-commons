@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2ddcad7982d9310483bf5891b8f90c066a1e6881a696c7d543b0758c79ca65e0",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3149378",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011864",
+          "type" : "CLASS",
+          "lbl" : "immunodeficiency, common variable, 1"
+        },
+        {
+          "id" : "OMIM:607594",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011864",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607594",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3149378",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011864",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011864",
+            "OMIM:607594",
+            "UMLS:C3149378"
+          ]
+        }
+      ]
+    }
+  ]
+}

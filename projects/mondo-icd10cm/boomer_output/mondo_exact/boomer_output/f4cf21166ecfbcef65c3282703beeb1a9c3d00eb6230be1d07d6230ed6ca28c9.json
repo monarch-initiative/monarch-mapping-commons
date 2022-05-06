@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f4cf21166ecfbcef65c3282703beeb1a9c3d00eb6230be1d07d6230ed6ca28c9",
+      "nodes" : [
+        {
+          "id" : "MESH:D019247",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0343755",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005797",
+          "type" : "CLASS",
+          "lbl" : "HIV wasting syndrome"
+        },
+        {
+          "id" : "Orphanet:90081",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005797",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:90081",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D019247",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005797",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0343755",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005797",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005797",
+            "Orphanet:90081",
+            "MESH:D019247",
+            "UMLS:C0343755"
+          ]
+        }
+      ]
+    }
+  ]
+}

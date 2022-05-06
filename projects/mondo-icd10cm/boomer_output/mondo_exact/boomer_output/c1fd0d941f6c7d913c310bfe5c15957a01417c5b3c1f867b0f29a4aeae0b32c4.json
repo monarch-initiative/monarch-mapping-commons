@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c1fd0d941f6c7d913c310bfe5c15957a01417c5b3c1f867b0f29a4aeae0b32c4",
+      "nodes" : [
+        {
+          "id" : "Orphanet:97285",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1336753",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C5265",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10011",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019962",
+          "type" : "CLASS",
+          "lbl" : "thyroid lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:10011",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019962",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336753",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019962",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019962",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5265",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019962",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:97285",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:10011",
+            "NCIT:C5265",
+            "Orphanet:97285",
+            "UMLS:C1336753",
+            "MONDO:0019962"
+          ]
+        }
+      ]
+    }
+  ]
+}

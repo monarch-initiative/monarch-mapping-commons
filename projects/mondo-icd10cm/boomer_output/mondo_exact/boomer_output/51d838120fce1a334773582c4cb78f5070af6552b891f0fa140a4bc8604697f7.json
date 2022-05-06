@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:51d838120fce1a334773582c4cb78f5070af6552b891f0fa140a4bc8604697f7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237712",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018654",
+          "type" : "CLASS",
+          "lbl" : "idiopathic dropped head syndrome"
+        },
+        {
+          "id" : "Orphanet:447881",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237712",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018654",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018654",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:447881",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN237712",
+            "MONDO:0018654",
+            "Orphanet:447881"
+          ]
+        }
+      ]
+    }
+  ]
+}

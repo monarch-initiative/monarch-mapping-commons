@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:019498ec1eef06cc83eb29a1178ed0d7deaca35b7b4cd23f82405b4904dfbad4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334265",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0037254",
+          "type" : "CLASS",
+          "lbl" : "transitional cell neoplasm"
+        },
+        {
+          "id" : "NCIT:C6783",
+          "type" : "CLASS",
+          "lbl" : "Transitional Cell Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0334265",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0037254",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0037254",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6783",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0037254",
+            "UMLS:C0334265",
+            "NCIT:C6783"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:91498e8bb8b4d37f117f2a6b5daf442c90e8a72faf481f497b4774f7170f4ca5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4014588",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014387",
+          "type" : "CLASS",
+          "lbl" : "leukoencephalopathy, progressive, with ovarian failure"
+        },
+        {
+          "id" : "OMIM:615889",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014387",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615889",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4014588",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014387",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014387",
+            "OMIM:615889",
+            "UMLS:C4014588"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:db74caebe6c498730697a44aa8ae7bfc013229d20d8fa601dcccc0edf182ba1f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332557",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5306",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003386",
+          "type" : "CLASS",
+          "lbl" : "bladder clear cell adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C6179",
+          "type" : "CLASS",
+          "lbl" : "Bladder Clear Cell Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5306",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003386",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003386",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6179",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332557",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003386",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003386",
+            "DOID:5306",
+            "NCIT:C6179",
+            "UMLS:C1332557"
+          ]
+        }
+      ]
+    }
+  ]
+}

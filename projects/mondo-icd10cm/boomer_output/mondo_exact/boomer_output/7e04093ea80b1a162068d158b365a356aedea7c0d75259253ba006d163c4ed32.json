@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7e04093ea80b1a162068d158b365a356aedea7c0d75259253ba006d163c4ed32",
+      "nodes" : [
+        {
+          "id" : "MESH:C566836",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1868652",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008186",
+          "type" : "CLASS",
+          "lbl" : "pancytopenia and occlusive vascular disease"
+        },
+        {
+          "id" : "OMIM:167850",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1868652",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008186",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566836",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008186",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008186",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:167850",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1868652",
+            "MONDO:0008186",
+            "MESH:C566836",
+            "OMIM:167850"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8367be8be93cccfe1fe7976a648c39fb756e3b98ebab68146cb24d5d457ce159",
+      "nodes" : [
+        {
+          "id" : "MESH:C531598",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2930792",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0043003",
+          "type" : "CLASS",
+          "lbl" : "familial acanthosis nigricans"
+        },
+        {
+          "id" : "OMIM:100600",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C531598",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043003",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0043003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:100600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2930792",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043003",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C531598",
+            "MONDO:0043003",
+            "OMIM:100600",
+            "UMLS:C2930792"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:694666d88afa37bfc667da5ea2085e3c4ca7060fe0f60a59a2b253399e94c81d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0349515",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10054",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005208",
+          "type" : "CLASS",
+          "lbl" : "amelanotic skin melanoma"
+        },
+        {
+          "id" : "NCIT:C4633",
+          "type" : "CLASS",
+          "lbl" : "Amelanotic Cutaneous Melanoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005208",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4633",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10054",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005208",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0349515",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005208",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4633",
+            "MONDO:0005208",
+            "DOID:10054",
+            "UMLS:C0349515"
+          ]
+        }
+      ]
+    }
+  ]
+}

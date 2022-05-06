@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:05b0801ee6ae8f8f89e136ecb7c027c5bc663502f854446700d4960a4f016e25",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1709666",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006387",
+          "type" : "CLASS",
+          "lbl" : "primary pulmonary diffuse large B-cell lymphoma"
+        },
+        {
+          "id" : "NCIT:C45605",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1709666",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006387",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006387",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C45605",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1709666",
+            "MONDO:0006387",
+            "NCIT:C45605"
+          ]
+        }
+      ]
+    }
+  ]
+}

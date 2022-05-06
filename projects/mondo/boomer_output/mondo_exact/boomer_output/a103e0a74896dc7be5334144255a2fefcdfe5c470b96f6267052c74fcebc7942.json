@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a103e0a74896dc7be5334144255a2fefcdfe5c470b96f6267052c74fcebc7942",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809216",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111233",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014140",
+          "type" : "CLASS",
+          "lbl" : "muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type A14"
+        },
+        {
+          "id" : "OMIM:615350",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3809216",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014140",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014140",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111233",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014140",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3809216",
+            "MONDO:0014140",
+            "OMIM:615350",
+            "DOID:0111233"
+          ]
+        }
+      ]
+    }
+  ]
+}

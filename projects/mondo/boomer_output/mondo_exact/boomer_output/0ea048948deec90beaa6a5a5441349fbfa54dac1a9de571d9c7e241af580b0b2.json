@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0ea048948deec90beaa6a5a5441349fbfa54dac1a9de571d9c7e241af580b0b2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1857423",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111625",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:443988",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:219730",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009063",
+          "type" : "CLASS",
+          "lbl" : "ventriculomegaly-cystic kidney disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1857423",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009063",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:443988",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111625",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009063",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:219730",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1857423",
+            "DOID:0111625",
+            "OMIM:219730",
+            "Orphanet:443988",
+            "MONDO:0009063"
+          ]
+        }
+      ]
+    }
+  ]
+}

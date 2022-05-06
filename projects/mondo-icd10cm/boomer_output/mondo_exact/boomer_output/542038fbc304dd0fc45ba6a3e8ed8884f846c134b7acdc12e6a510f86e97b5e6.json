@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:542038fbc304dd0fc45ba6a3e8ed8884f846c134b7acdc12e6a510f86e97b5e6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1709780",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006391",
+          "type" : "CLASS",
+          "lbl" : "pyloric gland adenoma"
+        },
+        {
+          "id" : "NCIT:C43526",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006391",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C43526",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1709780",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006391",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C43526",
+            "MONDO:0006391",
+            "UMLS:C1709780"
+          ]
+        }
+      ]
+    }
+  ]
+}

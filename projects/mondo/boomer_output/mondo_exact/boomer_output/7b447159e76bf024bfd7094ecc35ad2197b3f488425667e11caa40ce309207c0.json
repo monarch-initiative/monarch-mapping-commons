@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7b447159e76bf024bfd7094ecc35ad2197b3f488425667e11caa40ce309207c0",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1843632",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011860",
+          "type" : "CLASS",
+          "lbl" : "leprosy, susceptibility to, 2"
+        },
+        {
+          "id" : "OMIM:607572",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1843632",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011860",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011860",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607572",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1843632",
+            "MONDO:0011860",
+            "OMIM:607572"
+          ]
+        }
+      ]
+    }
+  ]
+}

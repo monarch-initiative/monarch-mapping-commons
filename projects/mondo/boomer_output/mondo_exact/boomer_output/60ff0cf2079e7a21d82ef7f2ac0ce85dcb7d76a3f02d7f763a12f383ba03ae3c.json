@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:60ff0cf2079e7a21d82ef7f2ac0ce85dcb7d76a3f02d7f763a12f383ba03ae3c",
+      "nodes" : [
+        {
+          "id" : "SCTID:92612007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0347100",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021288",
+          "type" : "CLASS",
+          "lbl" : "carcinoma in situ of hypopharynx"
+        },
+        {
+          "id" : "NCIT:C9101",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0347100",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021288",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92612007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021288",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021288",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9101",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0347100",
+            "MONDO:0021288",
+            "SCTID:92612007",
+            "NCIT:C9101"
+          ]
+        }
+      ]
+    }
+  ]
+}

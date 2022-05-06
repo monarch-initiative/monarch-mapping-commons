@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c8ccebf9004ee4e0086a98070b119eaf45fcc1cc4149c11bc0fd8b07316fc899",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279991",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5893",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003691",
+          "type" : "CLASS",
+          "lbl" : "childhood malignant mesenchymoma"
+        },
+        {
+          "id" : "NCIT:C8097",
+          "type" : "CLASS",
+          "lbl" : "Childhood Malignant Mesenchymoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003691",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8097",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0279991",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003691",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5893",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003691",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C8097",
+            "MONDO:0003691",
+            "UMLS:C0279991",
+            "DOID:5893"
+          ]
+        }
+      ]
+    }
+  ]
+}

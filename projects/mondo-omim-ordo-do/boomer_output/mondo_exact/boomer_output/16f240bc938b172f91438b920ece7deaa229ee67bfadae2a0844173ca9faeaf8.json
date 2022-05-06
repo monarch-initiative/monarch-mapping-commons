@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:16f240bc938b172f91438b920ece7deaa229ee67bfadae2a0844173ca9faeaf8",
+      "nodes" : [
+        {
+          "id" : "DOID:1425",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C35666",
+          "type" : "CLASS",
+          "lbl" : "Ureter Abscess"
+        },
+        {
+          "id" : "MONDO:0001922",
+          "type" : "CLASS",
+          "lbl" : "pyoureter"
+        },
+        {
+          "id" : "SCTID:85884009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0034223",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:85884009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001922",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001922",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35666",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1425",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001922",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0034223",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001922",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:85884009",
+            "MONDO:0001922",
+            "UMLS:C0034223",
+            "DOID:1425",
+            "NCIT:C35666"
+          ]
+        }
+      ]
+    }
+  ]
+}

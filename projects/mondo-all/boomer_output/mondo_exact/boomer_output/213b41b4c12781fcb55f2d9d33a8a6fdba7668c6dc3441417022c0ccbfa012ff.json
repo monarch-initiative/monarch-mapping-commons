@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:213b41b4c12781fcb55f2d9d33a8a6fdba7668c6dc3441417022c0ccbfa012ff",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227802",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020157",
+          "type" : "CLASS",
+          "lbl" : "syndromic palpebral coloboma"
+        },
+        {
+          "id" : "Orphanet:98566",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020157",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98566",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227802",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020157",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020157",
+            "Orphanet:98566",
+            "UMLS:CN227802"
+          ]
+        }
+      ]
+    }
+  ]
+}

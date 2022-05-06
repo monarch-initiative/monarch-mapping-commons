@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:62198ea69229ad687ade90b61adbefb4bec616e042adb3894a32b422cc11f586",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3899675",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0022578",
+          "type" : "CLASS",
+          "lbl" : "childhood bladder carcinoma"
+        },
+        {
+          "id" : "NCIT:C118816",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0022578",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C118816",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3899675",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022578",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0022578",
+            "NCIT:C118816",
+            "UMLS:C3899675"
+          ]
+        }
+      ]
+    }
+  ]
+}

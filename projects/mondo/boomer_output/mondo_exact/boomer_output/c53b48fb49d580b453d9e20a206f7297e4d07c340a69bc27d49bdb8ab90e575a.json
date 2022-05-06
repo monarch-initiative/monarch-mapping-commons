@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c53b48fb49d580b453d9e20a206f7297e4d07c340a69bc27d49bdb8ab90e575a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202748",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017240",
+          "type" : "CLASS",
+          "lbl" : "acrodysostosis with multiple hormone resistance"
+        },
+        {
+          "id" : "Orphanet:280651",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017240",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:280651",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202748",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017240",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:280651",
+            "MONDO:0017240",
+            "UMLS:CN202748"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:060107b0efe89384ea7b3721f57910d37dd4d3f9366f64a88efcdeabc96e361f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203788",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017818",
+          "type" : "CLASS",
+          "lbl" : "lethal arteriopathy syndrome due to fibulin-4 deficiency"
+        },
+        {
+          "id" : "Orphanet:314718",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017818",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:314718",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203788",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017818",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017818",
+            "Orphanet:314718",
+            "UMLS:CN203788"
+          ]
+        }
+      ]
+    }
+  ]
+}

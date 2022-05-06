@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9cd34da6822786a37f4cf92e617ccc44f5a851ca27c6bcfc79fd902c0156a20f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1515310",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8193",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004493",
+          "type" : "CLASS",
+          "lbl" : "testicular yolk sac tumor, papillary pattern"
+        },
+        {
+          "id" : "NCIT:C39928",
+          "type" : "CLASS",
+          "lbl" : "Testicular Yolk Sac Tumor, Papillary Pattern"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004493",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39928",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1515310",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8193",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004493",
+            "NCIT:C39928",
+            "UMLS:C1515310",
+            "DOID:8193"
+          ]
+        }
+      ]
+    }
+  ]
+}

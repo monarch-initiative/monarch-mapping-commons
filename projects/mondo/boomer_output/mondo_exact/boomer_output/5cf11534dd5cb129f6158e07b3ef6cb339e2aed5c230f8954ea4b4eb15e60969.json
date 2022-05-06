@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5cf11534dd5cb129f6158e07b3ef6cb339e2aed5c230f8954ea4b4eb15e60969",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3642347",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004984",
+          "type" : "CLASS",
+          "lbl" : "basal-like breast carcinoma"
+        },
+        {
+          "id" : "NCIT:C53558",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004984",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C53558",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3642347",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004984",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C53558",
+            "MONDO:0004984",
+            "UMLS:C3642347"
+          ]
+        }
+      ]
+    }
+  ]
+}

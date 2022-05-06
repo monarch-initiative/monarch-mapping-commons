@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:44bcbc274bfbf193096349f52256861d6624b0b8c8df2fba194f15c16fbab665",
+      "nodes" : [
+        {
+          "id" : "MESH:C566720",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1867331",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008372",
+          "type" : "CLASS",
+          "lbl" : "retinal aplasia"
+        },
+        {
+          "id" : "OMIM:179900",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1867331",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008372",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566720",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008372",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008372",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:179900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1867331",
+            "MONDO:0008372",
+            "OMIM:179900",
+            "MESH:C566720"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1618f6771f06a270ee1532dc9475b8fb51800fc3252eeaca4d3d272aefa6da1b",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN757796",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080227",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0030921",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability, autosomal dominant 55, with seizures"
+        },
+        {
+          "id" : "OMIM:617831",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080227",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0030921",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0030921",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617831",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN757796",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0030921",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0080227",
+            "MONDO:0030921",
+            "OMIM:617831",
+            "UMLS:CN757796"
+          ]
+        }
+      ]
+    }
+  ]
+}

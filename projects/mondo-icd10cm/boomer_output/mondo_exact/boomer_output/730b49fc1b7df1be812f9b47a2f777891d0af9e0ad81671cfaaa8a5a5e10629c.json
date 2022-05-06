@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:730b49fc1b7df1be812f9b47a2f777891d0af9e0ad81671cfaaa8a5a5e10629c",
+      "nodes" : [
+        {
+          "id" : "MESH:D020520",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0751955",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3454",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005394",
+          "type" : "CLASS",
+          "lbl" : "brain infarction"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3454",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005394",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D020520",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005394",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0751955",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005394",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3454",
+            "MONDO:0005394",
+            "MESH:D020520",
+            "UMLS:C0751955"
+          ]
+        }
+      ]
+    }
+  ]
+}

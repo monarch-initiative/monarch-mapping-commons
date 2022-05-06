@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:490d1afe05a10aa38304af6d7223856fc59de83688fd0a42c517041c31123429",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN239241",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060558",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017436",
+          "type" : "CLASS",
+          "lbl" : "lethal congenital contracture syndrome"
+        },
+        {
+          "id" : "Orphanet:294965",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIMPS:253310",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0060558",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017436",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017436",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:294965",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017436",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:253310",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN239241",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017436",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIMPS:253310",
+            "UMLS:CN239241",
+            "Orphanet:294965",
+            "DOID:0060558",
+            "MONDO:0017436"
+          ]
+        }
+      ]
+    }
+  ]
+}

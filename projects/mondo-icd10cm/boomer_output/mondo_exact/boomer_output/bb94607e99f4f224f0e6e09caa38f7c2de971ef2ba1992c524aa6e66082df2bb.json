@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bb94607e99f4f224f0e6e09caa38f7c2de971ef2ba1992c524aa6e66082df2bb",
+      "nodes" : [
+        {
+          "id" : "MESH:D020945",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0043985",
+          "type" : "CLASS",
+          "lbl" : "central nervous system lupus"
+        },
+        {
+          "id" : "NCIT:C116919",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0043985",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C116919",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D020945",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043985",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0043985",
+            "NCIT:C116919",
+            "MESH:D020945"
+          ]
+        }
+      ]
+    }
+  ]
+}

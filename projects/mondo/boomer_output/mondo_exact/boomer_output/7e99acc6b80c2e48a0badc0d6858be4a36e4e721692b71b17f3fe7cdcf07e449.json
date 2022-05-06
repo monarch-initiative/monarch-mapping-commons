@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7e99acc6b80c2e48a0badc0d6858be4a36e4e721692b71b17f3fe7cdcf07e449",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3554398",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014025",
+          "type" : "CLASS",
+          "lbl" : "lower motor neuron syndrome with late-adult onset"
+        },
+        {
+          "id" : "Orphanet:276435",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:615048",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014025",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615048",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014025",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:276435",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3554398",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014025",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014025",
+            "OMIM:615048",
+            "Orphanet:276435",
+            "UMLS:C3554398"
+          ]
+        }
+      ]
+    }
+  ]
+}

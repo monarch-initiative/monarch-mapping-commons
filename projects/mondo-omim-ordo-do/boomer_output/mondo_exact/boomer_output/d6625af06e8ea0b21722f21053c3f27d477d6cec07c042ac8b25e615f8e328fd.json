@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d6625af06e8ea0b21722f21053c3f27d477d6cec07c042ac8b25e615f8e328fd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334422",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8020",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024323",
+          "type" : "CLASS",
+          "lbl" : "glomangiomyoma"
+        },
+        {
+          "id" : "NCIT:C4223",
+          "type" : "CLASS",
+          "lbl" : "Glomangiomyoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024323",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4223",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334422",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024323",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8020",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024323",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4223",
+            "MONDO:0024323",
+            "UMLS:C0334422",
+            "DOID:8020"
+          ]
+        }
+      ]
+    }
+  ]
+}

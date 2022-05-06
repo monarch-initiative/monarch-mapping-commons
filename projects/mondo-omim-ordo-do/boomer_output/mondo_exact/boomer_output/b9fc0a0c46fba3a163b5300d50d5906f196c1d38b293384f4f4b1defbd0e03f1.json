@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b9fc0a0c46fba3a163b5300d50d5906f196c1d38b293384f4f4b1defbd0e03f1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2711059",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016451",
+          "type" : "CLASS",
+          "lbl" : "idiopathic hypersomnia with long sleep time"
+        },
+        {
+          "id" : "SCTID:442416002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:G47.11",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:228315",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:442416002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016451",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016451",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:228315",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:G47.11",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016451",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2711059",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016451",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016451",
+            "ICD10CM:G47.11",
+            "UMLS:C2711059",
+            "Orphanet:228315",
+            "SCTID:442416002"
+          ]
+        }
+      ]
+    }
+  ]
+}

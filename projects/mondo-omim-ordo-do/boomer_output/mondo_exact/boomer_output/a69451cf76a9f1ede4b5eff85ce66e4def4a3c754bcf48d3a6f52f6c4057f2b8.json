@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a69451cf76a9f1ede4b5eff85ce66e4def4a3c754bcf48d3a6f52f6c4057f2b8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150973",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013382",
+          "type" : "CLASS",
+          "lbl" : "progressive demyelinating neuropathy with bilateral striatal necrosis"
+        },
+        {
+          "id" : "Orphanet:217396",
+          "type" : "CLASS",
+          "lbl" : "Progressive polyneuropathy with bilateral striatal necrosis"
+        },
+        {
+          "id" : "OMIM:613710",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013382",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613710",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3150973",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013382",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013382",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:217396",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013382",
+            "OMIM:613710",
+            "UMLS:C3150973",
+            "Orphanet:217396"
+          ]
+        }
+      ]
+    }
+  ]
+}

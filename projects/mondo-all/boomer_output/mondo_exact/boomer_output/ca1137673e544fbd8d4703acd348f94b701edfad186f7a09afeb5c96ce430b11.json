@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ca1137673e544fbd8d4703acd348f94b701edfad186f7a09afeb5c96ce430b11",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335512",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10290",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000996",
+          "type" : "CLASS",
+          "lbl" : "prostate lymphoma"
+        },
+        {
+          "id" : "NCIT:C5533",
+          "type" : "CLASS",
+          "lbl" : "Prostate Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000996",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5533",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335512",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000996",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10290",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000996",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000996",
+            "NCIT:C5533",
+            "UMLS:C1335512",
+            "DOID:10290"
+          ]
+        }
+      ]
+    }
+  ]
+}

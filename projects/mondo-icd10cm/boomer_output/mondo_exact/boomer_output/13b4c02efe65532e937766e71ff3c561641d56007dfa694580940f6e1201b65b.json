@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:13b4c02efe65532e937766e71ff3c561641d56007dfa694580940f6e1201b65b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3810041",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110050",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014265",
+          "type" : "CLASS",
+          "lbl" : "Alzheimer disease 18"
+        },
+        {
+          "id" : "OMIM:615590",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110050",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014265",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3810041",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014265",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014265",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615590",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014265",
+            "DOID:0110050",
+            "UMLS:C3810041",
+            "OMIM:615590"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:965073f8193918188676803048cca9542322cdcd5c6613e6394167ab91835fd5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN674504",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:612645",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110476",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012977",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive nonsyndromic hearing loss 1B"
+        },
+        {
+          "id" : "MESH:C567213",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2675235",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012977",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:612645",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567213",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012977",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012977",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C2675235",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN674504",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012977",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110476",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012977",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0110476",
+            "OMIM:612645",
+            "MONDO:0012977",
+            "MESH:C567213",
+            "UMLS:CN674504"
+          ]
+        }
+      ]
+    }
+  ]
+}

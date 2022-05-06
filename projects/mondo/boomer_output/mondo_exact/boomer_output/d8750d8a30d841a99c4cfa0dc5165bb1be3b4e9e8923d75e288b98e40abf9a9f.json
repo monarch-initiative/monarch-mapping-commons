@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d8750d8a30d841a99c4cfa0dc5165bb1be3b4e9e8923d75e288b98e40abf9a9f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227633",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019430",
+          "type" : "CLASS",
+          "lbl" : "X-linked intellectual disability-ataxia-apraxia syndrome"
+        },
+        {
+          "id" : "Orphanet:85338",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019430",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:85338",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227633",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019430",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019430",
+            "Orphanet:85338",
+            "UMLS:CN227633"
+          ]
+        }
+      ]
+    }
+  ]
+}

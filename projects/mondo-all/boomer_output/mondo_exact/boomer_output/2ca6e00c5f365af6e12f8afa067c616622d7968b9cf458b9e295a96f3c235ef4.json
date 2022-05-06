@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2ca6e00c5f365af6e12f8afa067c616622d7968b9cf458b9e295a96f3c235ef4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0749163",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7587",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004293",
+          "type" : "CLASS",
+          "lbl" : "supraglottis squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C4945",
+          "type" : "CLASS",
+          "lbl" : "Supraglottic Squamous Cell Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004293",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4945",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7587",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004293",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0749163",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004293",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004293",
+            "NCIT:C4945",
+            "DOID:7587",
+            "UMLS:C0749163"
+          ]
+        }
+      ]
+    }
+  ]
+}

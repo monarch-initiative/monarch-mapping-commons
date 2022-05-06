@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a36e2d6aae29a9063341825a1c81c822a3ef0c6ff46a3e5c959ccfe7e3715f35",
+      "nodes" : [
+        {
+          "id" : "SCTID:766977007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN206378",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019549",
+          "type" : "CLASS",
+          "lbl" : "severe early-onset axonal neuropathy due to MFN2 deficiency"
+        },
+        {
+          "id" : "Orphanet:90118",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206378",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019549",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019549",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:90118",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:766977007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019549",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN206378",
+            "MONDO:0019549",
+            "Orphanet:90118",
+            "SCTID:766977007"
+          ]
+        }
+      ]
+    }
+  ]
+}

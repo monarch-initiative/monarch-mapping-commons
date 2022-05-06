@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f925d3b5c3e5ec023c735c2513afe918b55ced0d432f92788e947ec3c49af347",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518167",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6776",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003990",
+          "type" : "CLASS",
+          "lbl" : "malignant breast myoepithelioma"
+        },
+        {
+          "id" : "NCIT:C40395",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003990",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40395",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6776",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003990",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518167",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003990",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003990",
+            "NCIT:C40395",
+            "DOID:6776",
+            "UMLS:C1518167"
+          ]
+        }
+      ]
+    }
+  ]
+}

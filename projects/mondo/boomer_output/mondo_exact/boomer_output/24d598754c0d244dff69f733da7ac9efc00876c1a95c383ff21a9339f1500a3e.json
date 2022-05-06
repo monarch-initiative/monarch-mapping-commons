@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:24d598754c0d244dff69f733da7ac9efc00876c1a95c383ff21a9339f1500a3e",
+      "nodes" : [
+        {
+          "id" : "SCTID:55133004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0270962",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018948",
+          "type" : "CLASS",
+          "lbl" : "multiminicore myopathy"
+        },
+        {
+          "id" : "Orphanet:598",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018948",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:598",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0270962",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018948",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:55133004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018948",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:598",
+            "MONDO:0018948",
+            "UMLS:C0270962",
+            "SCTID:55133004"
+          ]
+        }
+      ]
+    }
+  ]
+}

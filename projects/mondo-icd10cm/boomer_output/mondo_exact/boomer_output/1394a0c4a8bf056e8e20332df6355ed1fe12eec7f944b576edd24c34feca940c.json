@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1394a0c4a8bf056e8e20332df6355ed1fe12eec7f944b576edd24c34feca940c",
+      "nodes" : [
+        {
+          "id" : "SCTID:92021007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0153998",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021525",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of corpus uteri"
+        },
+        {
+          "id" : "NCIT:C3608",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0153998",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021525",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021525",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3608",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92021007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021525",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0153998",
+            "MONDO:0021525",
+            "NCIT:C3608",
+            "SCTID:92021007"
+          ]
+        }
+      ]
+    }
+  ]
+}

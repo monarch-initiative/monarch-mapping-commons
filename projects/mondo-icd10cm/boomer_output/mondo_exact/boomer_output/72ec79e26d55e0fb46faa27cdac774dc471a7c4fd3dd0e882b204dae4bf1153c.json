@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:72ec79e26d55e0fb46faa27cdac774dc471a7c4fd3dd0e882b204dae4bf1153c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1834559",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019943",
+          "type" : "CLASS",
+          "lbl" : "hereditary continuous muscle fiber activity"
+        },
+        {
+          "id" : "Orphanet:972",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019943",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:972",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1834559",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019943",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019943",
+            "Orphanet:972",
+            "UMLS:C1834559"
+          ]
+        }
+      ]
+    }
+  ]
+}

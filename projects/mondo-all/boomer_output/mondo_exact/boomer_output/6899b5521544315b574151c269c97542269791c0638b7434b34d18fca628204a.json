@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6899b5521544315b574151c269c97542269791c0638b7434b34d18fca628204a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201501",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016498",
+          "type" : "CLASS",
+          "lbl" : "acute pure sensory neuropathy"
+        },
+        {
+          "id" : "Orphanet:231450",
+          "type" : "CLASS",
+          "lbl" : "Acute pure sensory neuropathy"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016498",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:231450",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201501",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016498",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016498",
+            "Orphanet:231450",
+            "UMLS:CN201501"
+          ]
+        }
+      ]
+    }
+  ]
+}

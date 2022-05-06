@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cce73f0747ed0bd5178fe5004d6ceab13f28a91c8f55bf823d07ab4dcab712a5",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:I27.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:14557",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001999",
+          "type" : "CLASS",
+          "lbl" : "primary pulmonary hypertension"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:14557",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001999",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:I27.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001999",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:14557",
+            "MONDO:0001999",
+            "ICD10CM:I27.0"
+          ]
+        }
+      ]
+    }
+  ]
+}

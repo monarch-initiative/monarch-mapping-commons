@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:095b534e609394b1912a7147ece94584e95992eca014e8377af88fdfdda3f76e",
+      "nodes" : [
+        {
+          "id" : "SCTID:723496007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4509932",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016996",
+          "type" : "CLASS",
+          "lbl" : "NK-cell enteropathy"
+        },
+        {
+          "id" : "Orphanet:263665",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4509932",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016996",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:723496007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016996",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016996",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:263665",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016996",
+            "UMLS:C4509932",
+            "SCTID:723496007",
+            "Orphanet:263665"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:64e127f2fa40f849be7433b4d6fafd5fd33bd63b34608f88d3546c7f4e12f87d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336709",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5331",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003395",
+          "type" : "CLASS",
+          "lbl" : "testicular granulosa cell tumor"
+        },
+        {
+          "id" : "NCIT:C6357",
+          "type" : "CLASS",
+          "lbl" : "Testicular Granulosa Cell Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5331",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003395",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003395",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6357",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336709",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003395",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5331",
+            "MONDO:0003395",
+            "NCIT:C6357",
+            "UMLS:C1336709"
+          ]
+        }
+      ]
+    }
+  ]
+}

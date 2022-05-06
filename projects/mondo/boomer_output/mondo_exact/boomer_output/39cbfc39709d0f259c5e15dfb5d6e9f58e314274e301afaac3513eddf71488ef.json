@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:39cbfc39709d0f259c5e15dfb5d6e9f58e314274e301afaac3513eddf71488ef",
+      "nodes" : [
+        {
+          "id" : "MESH:C565142",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1852457",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007406",
+          "type" : "CLASS",
+          "lbl" : "cryofibrinogenemia, familial primary"
+        },
+        {
+          "id" : "OMIM:123540",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1852457",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007406",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007406",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:123540",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565142",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007406",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1852457",
+            "MONDO:0007406",
+            "OMIM:123540",
+            "MESH:C565142"
+          ]
+        }
+      ]
+    }
+  ]
+}

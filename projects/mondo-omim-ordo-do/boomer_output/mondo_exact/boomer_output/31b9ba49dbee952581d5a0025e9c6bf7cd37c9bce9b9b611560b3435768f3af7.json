@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:31b9ba49dbee952581d5a0025e9c6bf7cd37c9bce9b9b611560b3435768f3af7",
+      "nodes" : [
+        {
+          "id" : "Orphanet:98045",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020023",
+          "type" : "CLASS",
+          "lbl" : "respiratory or mediastinal malformation"
+        },
+        {
+          "id" : "Orphanet:108995",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN226638",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015222",
+          "type" : "CLASS",
+          "lbl" : "syndromic respiratory or mediastinal malformation"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015222",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0020023",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226638",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015222",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020023",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98045",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015222",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:108995",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:98045",
+            "MONDO:0020023"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UMLS:CN226638",
+            "MONDO:0015222",
+            "Orphanet:108995"
+          ]
+        }
+      ]
+    }
+  ]
+}

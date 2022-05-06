@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:702a2b61a553aeaf85c57ce24ad3b28a45743435706705547d6451aa4f7d7beb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332490",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7181",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004134",
+          "type" : "CLASS",
+          "lbl" : "benign dermal neurilemmoma"
+        },
+        {
+          "id" : "NCIT:C5569",
+          "type" : "CLASS",
+          "lbl" : "Cutaneous Schwannoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332490",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004134",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004134",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5569",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7181",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004134",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332490",
+            "MONDO:0004134",
+            "NCIT:C5569",
+            "DOID:7181"
+          ]
+        }
+      ]
+    }
+  ]
+}

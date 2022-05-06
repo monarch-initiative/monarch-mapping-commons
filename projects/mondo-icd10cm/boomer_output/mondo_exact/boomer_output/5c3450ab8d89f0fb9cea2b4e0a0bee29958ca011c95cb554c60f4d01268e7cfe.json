@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5c3450ab8d89f0fb9cea2b4e0a0bee29958ca011c95cb554c60f4d01268e7cfe",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334946",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4698",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003103",
+          "type" : "CLASS",
+          "lbl" : "nerve root neoplasm"
+        },
+        {
+          "id" : "NCIT:C5119",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003103",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5119",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4698",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003103",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334946",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003103",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003103",
+            "NCIT:C5119",
+            "DOID:4698",
+            "UMLS:C1334946"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f6ee837defce101d0ba520885a6aa72c2dd3155dd12864c57fcd3523b0fe4ae6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3810090",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014274",
+          "type" : "CLASS",
+          "lbl" : "L-ferritin deficiency"
+        },
+        {
+          "id" : "Orphanet:440731",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:615604",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014274",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:440731",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3810090",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014274",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014274",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615604",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014274",
+            "Orphanet:440731",
+            "UMLS:C3810090",
+            "OMIM:615604"
+          ]
+        }
+      ]
+    }
+  ]
+}

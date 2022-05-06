@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f005d437fc02802909d78fd7eac4822d0f22db4374fcd032bfb5004d1287535f",
+      "nodes" : [
+        {
+          "id" : "MESH:C564156",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1840373",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007782",
+          "type" : "CLASS",
+          "lbl" : "hyperthermia, cutaneous, with headaches and nausea"
+        },
+        {
+          "id" : "OMIM:145590",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1840373",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007782",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564156",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007782",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007782",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:145590",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1840373",
+            "MONDO:0007782",
+            "MESH:C564156",
+            "OMIM:145590"
+          ]
+        }
+      ]
+    }
+  ]
+}

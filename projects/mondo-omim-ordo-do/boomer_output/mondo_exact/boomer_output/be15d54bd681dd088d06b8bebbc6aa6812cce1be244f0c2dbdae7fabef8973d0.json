@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:be15d54bd681dd088d06b8bebbc6aa6812cce1be244f0c2dbdae7fabef8973d0",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:Q72.13",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017497",
+          "type" : "CLASS",
+          "lbl" : "congenital absence of thigh and lower leg with foot present, bilateral"
+        },
+        {
+          "id" : "Orphanet:295091",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:Q72.13",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017497",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017497",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:295091",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:Q72.13",
+            "MONDO:0017497",
+            "Orphanet:295091"
+          ]
+        }
+      ]
+    }
+  ]
+}

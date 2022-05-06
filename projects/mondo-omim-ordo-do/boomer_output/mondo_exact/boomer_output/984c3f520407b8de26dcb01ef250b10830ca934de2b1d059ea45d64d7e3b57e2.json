@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:984c3f520407b8de26dcb01ef250b10830ca934de2b1d059ea45d64d7e3b57e2",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN197373",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:D44.8",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015079",
+          "type" : "CLASS",
+          "lbl" : "multiple polyglandular tumor"
+        },
+        {
+          "id" : "Orphanet:100094",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN197373",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015079",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D44.8",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015079",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015079",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100094",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015079",
+            "UMLS:CN197373",
+            "Orphanet:100094",
+            "ICD10CM:D44.8"
+          ]
+        }
+      ]
+    }
+  ]
+}

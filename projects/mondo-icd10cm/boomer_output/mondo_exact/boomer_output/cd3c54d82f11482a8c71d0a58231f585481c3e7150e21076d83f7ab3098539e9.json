@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cd3c54d82f11482a8c71d0a58231f585481c3e7150e21076d83f7ab3098539e9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1836545",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019264",
+          "type" : "CLASS",
+          "lbl" : "alpha-N-acetylgalactosaminidase deficiency type 3"
+        },
+        {
+          "id" : "Orphanet:79281",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019264",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79281",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1836545",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019264",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:79281",
+            "MONDO:0019264",
+            "UMLS:C1836545"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:075d255f43b656e2ec8988719ed0aa09007becbc7c13a7311c7f15a6def30e28",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206697",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019762",
+          "type" : "CLASS",
+          "lbl" : "laryngotracheoesophageal cleft type 2"
+        },
+        {
+          "id" : "Orphanet:93939",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019762",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93939",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN206697",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019762",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019762",
+            "Orphanet:93939",
+            "UMLS:CN206697"
+          ]
+        }
+      ]
+    }
+  ]
+}

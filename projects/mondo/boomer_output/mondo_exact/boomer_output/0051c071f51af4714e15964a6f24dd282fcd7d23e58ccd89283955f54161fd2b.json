@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0051c071f51af4714e15964a6f24dd282fcd7d23e58ccd89283955f54161fd2b",
+      "nodes" : [
+        {
+          "id" : "MESH:D061387",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0339959",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:233609002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0025598",
+          "type" : "CLASS",
+          "lbl" : "pneumonia caused by chlamydia"
+        },
+        {
+          "id" : "DOID:0040083",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:233609002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025598",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0040083",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025598",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0339959",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025598",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D061387",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025598",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0025598",
+            "SCTID:233609002",
+            "UMLS:C0339959",
+            "MESH:D061387",
+            "DOID:0040083"
+          ]
+        }
+      ]
+    }
+  ]
+}

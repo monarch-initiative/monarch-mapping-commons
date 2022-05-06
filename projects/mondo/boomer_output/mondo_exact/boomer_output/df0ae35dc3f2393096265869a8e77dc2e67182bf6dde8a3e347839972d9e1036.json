@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:df0ae35dc3f2393096265869a8e77dc2e67182bf6dde8a3e347839972d9e1036",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226726",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015677",
+          "type" : "CLASS",
+          "lbl" : "cardiac diverticulum"
+        },
+        {
+          "id" : "Orphanet:1686",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015677",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1686",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226726",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015677",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015677",
+            "Orphanet:1686",
+            "UMLS:CN226726"
+          ]
+        }
+      ]
+    }
+  ]
+}

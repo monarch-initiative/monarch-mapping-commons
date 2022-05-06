@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:85522ea0ec90aa1845633496787d34fdebcb9f4430326c23d2641d42bda441d5",
+      "nodes" : [
+        {
+          "id" : "DOID:0060159",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:289899",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1263739",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C101334",
+          "type" : "CLASS",
+          "lbl" : "Organic Acid Metabolism Disorder"
+        },
+        {
+          "id" : "MONDO:0000688",
+          "type" : "CLASS",
+          "lbl" : "inherited organic acidemia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000688",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:289899",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1263739",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000688",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000688",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C101334",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060159",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000688",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C101334",
+            "Orphanet:289899",
+            "DOID:0060159",
+            "UMLS:C1263739",
+            "MONDO:0000688"
+          ]
+        }
+      ]
+    }
+  ]
+}

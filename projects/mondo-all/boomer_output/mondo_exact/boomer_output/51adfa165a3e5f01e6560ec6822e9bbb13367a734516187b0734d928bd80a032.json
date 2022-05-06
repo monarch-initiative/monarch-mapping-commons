@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:51adfa165a3e5f01e6560ec6822e9bbb13367a734516187b0734d928bd80a032",
+      "nodes" : [
+        {
+          "id" : "MESH:D012206",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:240131006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005290",
+          "type" : "CLASS",
+          "lbl" : "rhabdomyolysis"
+        },
+        {
+          "id" : "NCIT:C118318",
+          "type" : "CLASS",
+          "lbl" : "Rhabdomyolysis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D012206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005290",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005290",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C118318",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:240131006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005290",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005290",
+            "NCIT:C118318",
+            "MESH:D012206",
+            "SCTID:240131006"
+          ]
+        }
+      ]
+    }
+  ]
+}

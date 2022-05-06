@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e566b3f1a57ade293aa23b9b7398b75658c26c5e28324072060de059c08a3322",
+      "nodes" : [
+        {
+          "id" : "SCTID:197821004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0346269",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021390",
+          "type" : "CLASS",
+          "lbl" : "polyp of ureter"
+        },
+        {
+          "id" : "NCIT:C4530",
+          "type" : "CLASS",
+          "lbl" : "Ureter Polyp"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0346269",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021390",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:197821004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021390",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021390",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4530",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0346269",
+            "MONDO:0021390",
+            "SCTID:197821004",
+            "NCIT:C4530"
+          ]
+        }
+      ]
+    }
+  ]
+}

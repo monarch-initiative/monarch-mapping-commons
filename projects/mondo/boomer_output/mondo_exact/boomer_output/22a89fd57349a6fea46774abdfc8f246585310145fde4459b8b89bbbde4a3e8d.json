@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:22a89fd57349a6fea46774abdfc8f246585310145fde4459b8b89bbbde4a3e8d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227073",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017057",
+          "type" : "CLASS",
+          "lbl" : "hereditary thrombocytopenia with normal platelets"
+        },
+        {
+          "id" : "Orphanet:268322",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017057",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:268322",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227073",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017057",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017057",
+            "Orphanet:268322",
+            "UMLS:CN227073"
+          ]
+        }
+      ]
+    }
+  ]
+}

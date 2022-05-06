@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0c8338b3f04ae824976db96dcfe108c48b5c06c88ba456cbed94f221c41cdf21",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332251",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5527",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003490",
+          "type" : "CLASS",
+          "lbl" : "ampulla of vater squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C27417",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003490",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27417",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5527",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332251",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332251",
+            "MONDO:0003490",
+            "NCIT:C27417",
+            "DOID:5527"
+          ]
+        }
+      ]
+    }
+  ]
+}

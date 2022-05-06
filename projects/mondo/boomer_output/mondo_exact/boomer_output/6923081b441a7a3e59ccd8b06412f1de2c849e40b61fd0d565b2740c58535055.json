@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6923081b441a7a3e59ccd8b06412f1de2c849e40b61fd0d565b2740c58535055",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3806174",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110140",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014446",
+          "type" : "CLASS",
+          "lbl" : "Bardet-Biedl syndrome 18"
+        },
+        {
+          "id" : "OMIM:615995",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014446",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615995",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3806174",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014446",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110140",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014446",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014446",
+            "OMIM:615995",
+            "UMLS:C3806174",
+            "DOID:0110140"
+          ]
+        }
+      ]
+    }
+  ]
+}

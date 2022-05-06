@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bcded4f077045cdf88536d6167610ddefdccbc2b9fecf64d8f802931393cce71",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206974",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020070",
+          "type" : "CLASS",
+          "lbl" : "neonatal epilepsy syndrome"
+        },
+        {
+          "id" : "Orphanet:98257",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206974",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020070",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020070",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98257",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN206974",
+            "MONDO:0020070",
+            "Orphanet:98257"
+          ]
+        }
+      ]
+    }
+  ]
+}

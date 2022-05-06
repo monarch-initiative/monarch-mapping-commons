@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:88fcfcc0aad750cd259585491df2e7c1db5b9589ecfd80a7789f8b9c07ef3f1a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4013948",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013954",
+          "type" : "CLASS",
+          "lbl" : "mendelian susceptibility to mycobacterial diseases due to complete IL12B deficiency"
+        },
+        {
+          "id" : "Orphanet:319558",
+          "type" : "CLASS",
+          "lbl" : "Mendelian susceptibility to mycobacterial diseases due to complete IL12B deficiency"
+        },
+        {
+          "id" : "OMIM:614890",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013954",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614890",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013954",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:319558",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4013948",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013954",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013954",
+            "OMIM:614890",
+            "UMLS:C4013948",
+            "Orphanet:319558"
+          ]
+        }
+      ]
+    }
+  ]
+}

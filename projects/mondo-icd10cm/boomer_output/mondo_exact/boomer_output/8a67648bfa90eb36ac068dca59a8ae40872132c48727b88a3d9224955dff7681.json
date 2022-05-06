@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8a67648bfa90eb36ac068dca59a8ae40872132c48727b88a3d9224955dff7681",
+      "nodes" : [
+        {
+          "id" : "MESH:C564051",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1839162",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010744",
+          "type" : "CLASS",
+          "lbl" : "thrombocytopenia with elevated serum IgA and renal disease"
+        },
+        {
+          "id" : "OMIM:314000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1839162",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010744",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564051",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010744",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010744",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:314000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C564051",
+            "MONDO:0010744",
+            "UMLS:C1839162",
+            "OMIM:314000"
+          ]
+        }
+      ]
+    }
+  ]
+}

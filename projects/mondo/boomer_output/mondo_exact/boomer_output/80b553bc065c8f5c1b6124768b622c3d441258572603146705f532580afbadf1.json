@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:80b553bc065c8f5c1b6124768b622c3d441258572603146705f532580afbadf1",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207426",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020526",
+          "type" : "CLASS",
+          "lbl" : "acute megakaryoblastic leukemia in down syndrome"
+        },
+        {
+          "id" : "Orphanet:99887",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020526",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99887",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN207426",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020526",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020526",
+            "Orphanet:99887",
+            "UMLS:CN207426"
+          ]
+        }
+      ]
+    }
+  ]
+}

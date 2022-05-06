@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:671353dc0a461cf0800245c67ff7629be70bfd4020b0d71220818662190c7db2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3554611",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014069",
+          "type" : "CLASS",
+          "lbl" : "syndactyly-camptodactyly and clinodactyly of fifth fingers-bifid toes syndrome"
+        },
+        {
+          "id" : "Orphanet:357332",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:615170",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014069",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615170",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3554611",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014069",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014069",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:357332",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:615170",
+            "MONDO:0014069",
+            "UMLS:C3554611",
+            "Orphanet:357332"
+          ]
+        }
+      ]
+    }
+  ]
+}

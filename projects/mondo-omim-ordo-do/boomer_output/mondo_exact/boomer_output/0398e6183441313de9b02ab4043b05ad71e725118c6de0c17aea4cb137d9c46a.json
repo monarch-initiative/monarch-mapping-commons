@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0398e6183441313de9b02ab4043b05ad71e725118c6de0c17aea4cb137d9c46a",
+      "nodes" : [
+        {
+          "id" : "SCTID:126732009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1290402",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021380",
+          "type" : "CLASS",
+          "lbl" : "neoplasm of myocardium"
+        },
+        {
+          "id" : "NCIT:C5349",
+          "type" : "CLASS",
+          "lbl" : "Myocardial Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:126732009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021380",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021380",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5349",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1290402",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021380",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:126732009",
+            "MONDO:0021380",
+            "NCIT:C5349",
+            "UMLS:C1290402"
+          ]
+        }
+      ]
+    }
+  ]
+}

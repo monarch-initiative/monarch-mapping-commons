@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9ca01cdaa8677f33dd0cf41f827f29ecebeebe7811ebc1f6e120e25b0fb46660",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4525405",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021588",
+          "type" : "CLASS",
+          "lbl" : "eyelid sebaceous gland carcinoma"
+        },
+        {
+          "id" : "NCIT:C134831",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4525405",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021588",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021588",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C134831",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021588",
+            "UMLS:C4525405",
+            "NCIT:C134831"
+          ]
+        }
+      ]
+    }
+  ]
+}

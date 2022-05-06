@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5b389e1bbc43601d662e80f24357a7abe738e5294785791c9e03a8754f16f210",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1868139",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:174000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:88949",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C123171",
+          "type" : "CLASS",
+          "lbl" : "Medullary Cystic Kidney Disease Type I"
+        },
+        {
+          "id" : "MONDO:0020726",
+          "type" : "CLASS",
+          "lbl" : "tubulointerstitial kidney disease, autosomal dominant, 2"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020726",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:88949",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020726",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:174000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1868139",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020726",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020726",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C123171",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020726",
+            "OMIM:174000",
+            "Orphanet:88949",
+            "UMLS:C1868139",
+            "NCIT:C123171"
+          ]
+        }
+      ]
+    }
+  ]
+}

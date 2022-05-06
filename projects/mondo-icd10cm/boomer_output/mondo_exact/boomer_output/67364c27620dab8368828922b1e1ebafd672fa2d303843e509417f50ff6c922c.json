@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:67364c27620dab8368828922b1e1ebafd672fa2d303843e509417f50ff6c922c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553308",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013833",
+          "type" : "CLASS",
+          "lbl" : "keratoconus 7"
+        },
+        {
+          "id" : "OMIM:614629",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013833",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614629",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3553308",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013833",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:614629",
+            "MONDO:0013833",
+            "UMLS:C3553308"
+          ]
+        }
+      ]
+    }
+  ]
+}

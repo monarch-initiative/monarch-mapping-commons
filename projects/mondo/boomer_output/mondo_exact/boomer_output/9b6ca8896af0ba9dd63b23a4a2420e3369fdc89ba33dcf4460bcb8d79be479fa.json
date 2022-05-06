@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9b6ca8896af0ba9dd63b23a4a2420e3369fdc89ba33dcf4460bcb8d79be479fa",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1709050",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044727",
+          "type" : "CLASS",
+          "lbl" : "pancreatic carcinoma with mixed differentiation"
+        },
+        {
+          "id" : "NCIT:C45843",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:506112",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1709050",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044727",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044727",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C45843",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044727",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:506112",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0044727",
+            "UMLS:C1709050",
+            "NCIT:C45843",
+            "Orphanet:506112"
+          ]
+        }
+      ]
+    }
+  ]
+}

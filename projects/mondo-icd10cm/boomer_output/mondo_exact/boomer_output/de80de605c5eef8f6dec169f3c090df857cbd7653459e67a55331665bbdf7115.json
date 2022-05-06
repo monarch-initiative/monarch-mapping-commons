@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:de80de605c5eef8f6dec169f3c090df857cbd7653459e67a55331665bbdf7115",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3808899",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060333",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014091",
+          "type" : "CLASS",
+          "lbl" : "mitochondrial complex V (ATP synthase) deficiency nuclear type 4"
+        },
+        {
+          "id" : "OMIM:615228",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3808899",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014091",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014091",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615228",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060333",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014091",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014091",
+            "UMLS:C3808899",
+            "OMIM:615228",
+            "DOID:0060333"
+          ]
+        }
+      ]
+    }
+  ]
+}

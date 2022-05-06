@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dfeb987336c709cbdc3e7426b97dd889e32164da183be927fbe0dfa2600ba772",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333957",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:501",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003241",
+          "type" : "CLASS",
+          "lbl" : "central nervous system hemangioma"
+        },
+        {
+          "id" : "NCIT:C7004",
+          "type" : "CLASS",
+          "lbl" : "Central Nervous System Hemangioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:501",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003241",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003241",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7004",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333957",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003241",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:501",
+            "MONDO:0003241",
+            "NCIT:C7004",
+            "UMLS:C1333957"
+          ]
+        }
+      ]
+    }
+  ]
+}

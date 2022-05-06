@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d15197c1fca2b028c5b1a18ce0548e9d4b85008d560822dc318be7d6b2d84b51",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332272",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3691",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002734",
+          "type" : "CLASS",
+          "lbl" : "anal mucinous adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C5606",
+          "type" : "CLASS",
+          "lbl" : "Anal Mucinous Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332272",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002734",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002734",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5606",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3691",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002734",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002734",
+            "UMLS:C1332272",
+            "NCIT:C5606",
+            "DOID:3691"
+          ]
+        }
+      ]
+    }
+  ]
+}

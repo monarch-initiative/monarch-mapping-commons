@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2d5d24d092b4f2419cf1c144aef130c1357ef741de4009ac044e4ca2cc6d0c31",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333016",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5342",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003400",
+          "type" : "CLASS",
+          "lbl" : "childhood endodermal sinus tumor"
+        },
+        {
+          "id" : "NCIT:C27364",
+          "type" : "CLASS",
+          "lbl" : "Childhood Yolk Sac Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333016",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5342",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003400",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27364",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333016",
+            "MONDO:0003400",
+            "NCIT:C27364",
+            "DOID:5342"
+          ]
+        }
+      ]
+    }
+  ]
+}

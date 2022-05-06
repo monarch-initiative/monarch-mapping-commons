@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f621d722d4ef86cfa56d756b081d5d7b05a70e0de5c71a49e434cd27672d7924",
+      "nodes" : [
+        {
+          "id" : "SCTID:254943007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0346290",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044764",
+          "type" : "CLASS",
+          "lbl" : "benign choroid plexus neoplasm"
+        },
+        {
+          "id" : "NCIT:C8405",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0044764",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8405",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0346290",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044764",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:254943007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044764",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C8405",
+            "MONDO:0044764",
+            "UMLS:C0346290",
+            "SCTID:254943007"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:412126c437a96f9b381d891ead8b19494ae6f06f2176dd87dd2ed58b1d7e227c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2677434",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080404",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010906",
+          "type" : "CLASS",
+          "lbl" : "orofacial cleft 11"
+        },
+        {
+          "id" : "OMIM:600625",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2677434",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010906",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010906",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600625",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080404",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010906",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010906",
+            "UMLS:C2677434",
+            "OMIM:600625",
+            "DOID:0080404"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:63f1407de86b061a1f7dc2db3558176e5ca0922e487f82a8d13836c0b30b7bc6",
+      "nodes" : [
+        {
+          "id" : "SCTID:128080005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0339296",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015290",
+          "type" : "CLASS",
+          "lbl" : "neurotrophic keratopathy"
+        },
+        {
+          "id" : "Orphanet:137596",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0339296",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015290",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:128080005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015290",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015290",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:137596",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015290",
+            "UMLS:C0339296",
+            "SCTID:128080005",
+            "Orphanet:137596"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4c67b80f3f00daa14a8c5764e4f3fbb105b0caae769a067d454f9936a3d5f82f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310786",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014840",
+          "type" : "CLASS",
+          "lbl" : "agammaglobulinemia 8, autosomal dominant"
+        },
+        {
+          "id" : "OMIM:616941",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4310786",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014840",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014840",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616941",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014840",
+            "UMLS:C4310786",
+            "OMIM:616941"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:57adc441c5dd1c317d6cf1a6332db9a760983e9f0f31181895b95e45bed7a5a0",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237773",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018702",
+          "type" : "CLASS",
+          "lbl" : "Castleman-Kojima disease"
+        },
+        {
+          "id" : "Orphanet:457077",
+          "type" : "CLASS",
+          "lbl" : "TAFRO syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018702",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:457077",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237773",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018702",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:457077",
+            "MONDO:0018702",
+            "UMLS:CN237773"
+          ]
+        }
+      ]
+    }
+  ]
+}

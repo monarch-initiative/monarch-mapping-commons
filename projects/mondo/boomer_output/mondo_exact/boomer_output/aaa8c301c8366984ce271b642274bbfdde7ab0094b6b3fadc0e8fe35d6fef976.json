@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:aaa8c301c8366984ce271b642274bbfdde7ab0094b6b3fadc0e8fe35d6fef976",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310690",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080337",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014943",
+          "type" : "CLASS",
+          "lbl" : "mitochondrial DNA depletion syndrome 15 (hepatocerebral type);"
+        },
+        {
+          "id" : "OMIM:617156",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080337",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014943",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310690",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014943",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014943",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617156",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0080337",
+            "MONDO:0014943",
+            "UMLS:C4310690",
+            "OMIM:617156"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9e17c6cdcca141d5aa2f52b17ec3858aa52daf10f46924a9d9ab6194029381a1",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN653906",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080270",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0033261",
+          "type" : "CLASS",
+          "lbl" : "hearing loss, autosomal dominant 34, with or without inflammation"
+        },
+        {
+          "id" : "OMIM:617772",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN653906",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0033261",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0033261",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617772",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080270",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0033261",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0033261",
+            "UMLS:CN653906",
+            "OMIM:617772",
+            "DOID:0080270"
+          ]
+        }
+      ]
+    }
+  ]
+}

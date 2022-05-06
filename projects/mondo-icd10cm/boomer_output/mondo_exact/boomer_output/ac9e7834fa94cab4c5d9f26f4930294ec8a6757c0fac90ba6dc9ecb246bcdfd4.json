@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ac9e7834fa94cab4c5d9f26f4930294ec8a6757c0fac90ba6dc9ecb246bcdfd4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336037",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7678",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004326",
+          "type" : "CLASS",
+          "lbl" : "sphenoid sinus inverted papilloma"
+        },
+        {
+          "id" : "NCIT:C6841",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1336037",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004326",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7678",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004326",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004326",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6841",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004326",
+            "UMLS:C1336037",
+            "DOID:7678",
+            "NCIT:C6841"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b71edecfe9bc079a14ebff9e05810eecd9c148504be615b653d4553f001c3e79",
+      "nodes" : [
+        {
+          "id" : "MESH:C565742",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1858083",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011494",
+          "type" : "CLASS",
+          "lbl" : "hyaluronan metabolism, defect 1N"
+        },
+        {
+          "id" : "OMIM:604855",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1858083",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011494",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565742",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011494",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011494",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:604855",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011494",
+            "UMLS:C1858083",
+            "MESH:C565742",
+            "OMIM:604855"
+          ]
+        }
+      ]
+    }
+  ]
+}

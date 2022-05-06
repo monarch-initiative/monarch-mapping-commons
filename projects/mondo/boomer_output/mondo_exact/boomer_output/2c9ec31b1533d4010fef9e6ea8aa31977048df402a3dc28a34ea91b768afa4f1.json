@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2c9ec31b1533d4010fef9e6ea8aa31977048df402a3dc28a34ea91b768afa4f1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225188",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080517",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014794",
+          "type" : "CLASS",
+          "lbl" : "Meier-Gorlin syndrome 6"
+        },
+        {
+          "id" : "OMIM:616835",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4225188",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014794",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014794",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616835",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080517",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014794",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014794",
+            "OMIM:616835",
+            "UMLS:C4225188",
+            "DOID:0080517"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b933ba5839db3892cd95e4168e4e2d78ca3fb96f4ab81729ca092d530b2fdbc0",
+      "nodes" : [
+        {
+          "id" : "MESH:C564628",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1846838",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011768",
+          "type" : "CLASS",
+          "lbl" : "myasthenia gravis with thymus hyperplasia"
+        },
+        {
+          "id" : "OMIM:607085",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1846838",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011768",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564628",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011768",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011768",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607085",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1846838",
+            "MONDO:0011768",
+            "MESH:C564628",
+            "OMIM:607085"
+          ]
+        }
+      ]
+    }
+  ]
+}

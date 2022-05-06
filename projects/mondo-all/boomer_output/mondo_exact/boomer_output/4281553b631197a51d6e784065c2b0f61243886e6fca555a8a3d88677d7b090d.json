@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4281553b631197a51d6e784065c2b0f61243886e6fca555a8a3d88677d7b090d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479322",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111650",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044305",
+          "type" : "CLASS",
+          "lbl" : "ectodermal dysplasia 13, hair/tooth type"
+        },
+        {
+          "id" : "OMIM:617392",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4479322",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044305",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044305",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617392",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111650",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044305",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0044305",
+            "UMLS:C4479322",
+            "OMIM:617392",
+            "DOID:0111650"
+          ]
+        }
+      ]
+    }
+  ]
+}

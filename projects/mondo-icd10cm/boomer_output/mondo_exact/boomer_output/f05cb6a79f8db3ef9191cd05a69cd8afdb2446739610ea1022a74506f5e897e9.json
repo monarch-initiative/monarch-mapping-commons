@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f05cb6a79f8db3ef9191cd05a69cd8afdb2446739610ea1022a74506f5e897e9",
+      "nodes" : [
+        {
+          "id" : "SCTID:840539006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0100096",
+          "type" : "CLASS",
+          "lbl" : "COVID-19"
+        },
+        {
+          "id" : "ICD10CM:U07.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080600",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D000086382",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:840539006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0100096",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D000086382",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0100096",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080600",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0100096",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:U07.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0100096",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0080600",
+            "MONDO:0100096",
+            "SCTID:840539006",
+            "ICD10CM:U07.1",
+            "MESH:D000086382"
+          ]
+        }
+      ]
+    }
+  ]
+}

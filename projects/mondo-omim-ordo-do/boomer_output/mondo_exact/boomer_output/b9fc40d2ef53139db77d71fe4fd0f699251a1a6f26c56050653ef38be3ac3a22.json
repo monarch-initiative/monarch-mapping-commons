@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b9fc40d2ef53139db77d71fe4fd0f699251a1a6f26c56050653ef38be3ac3a22",
+      "nodes" : [
+        {
+          "id" : "MESH:C567729",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2751055",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013151",
+          "type" : "CLASS",
+          "lbl" : "choroidal dystrophy, central areolar, 3"
+        },
+        {
+          "id" : "OMIM:613144",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2751055",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013151",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013151",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613144",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567729",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013151",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013151",
+            "UMLS:C2751055",
+            "OMIM:613144",
+            "MESH:C567729"
+          ]
+        }
+      ]
+    }
+  ]
+}

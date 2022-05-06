@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5c205876fec5bc3778bd1f57b830f1000ecdc11ba0ffa549d17cf12c68aaf3a5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227181",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017709",
+          "type" : "CLASS",
+          "lbl" : "disorder of lipid absorption and transport"
+        },
+        {
+          "id" : "Orphanet:309028",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017709",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309028",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227181",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017709",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017709",
+            "Orphanet:309028",
+            "UMLS:CN227181"
+          ]
+        }
+      ]
+    }
+  ]
+}

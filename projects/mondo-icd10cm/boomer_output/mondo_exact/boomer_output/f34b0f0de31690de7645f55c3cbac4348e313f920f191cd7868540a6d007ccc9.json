@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f34b0f0de31690de7645f55c3cbac4348e313f920f191cd7868540a6d007ccc9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333454",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5276",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003365",
+          "type" : "CLASS",
+          "lbl" : "esophagus leiomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C5334",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003365",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5334",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5276",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003365",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333454",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003365",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C5334",
+            "MONDO:0003365",
+            "DOID:5276",
+            "UMLS:C1333454"
+          ]
+        }
+      ]
+    }
+  ]
+}

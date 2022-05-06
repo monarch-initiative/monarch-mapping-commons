@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e3d56ad722cd12ace391a570860c697d50a1a0d1c7e5f61948855e9676dcc480",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227653",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019559",
+          "type" : "CLASS",
+          "lbl" : "hypertrophic or verrucous lupus erythematosus"
+        },
+        {
+          "id" : "Orphanet:90282",
+          "type" : "CLASS",
+          "lbl" : "Hypertrophic or verrucous lupus erythematosus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019559",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:90282",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227653",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019559",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:90282",
+            "MONDO:0019559",
+            "UMLS:CN227653"
+          ]
+        }
+      ]
+    }
+  ]
+}

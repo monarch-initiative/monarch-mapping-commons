@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:da01f9e04cf9e837bf18e0e73ce5ccff8524bb288665fcf14670c2a3fbe91a2d",
+      "nodes" : [
+        {
+          "id" : "SCTID:737580004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4545229",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015743",
+          "type" : "CLASS",
+          "lbl" : "idiopathic bilateral vestibulopathy"
+        },
+        {
+          "id" : "Orphanet:171684",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4545229",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015743",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:737580004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015743",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015743",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:171684",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4545229",
+            "MONDO:0015743",
+            "SCTID:737580004",
+            "Orphanet:171684"
+          ]
+        }
+      ]
+    }
+  ]
+}

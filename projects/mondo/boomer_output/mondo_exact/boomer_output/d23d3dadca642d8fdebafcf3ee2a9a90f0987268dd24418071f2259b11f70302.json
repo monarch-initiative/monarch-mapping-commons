@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d23d3dadca642d8fdebafcf3ee2a9a90f0987268dd24418071f2259b11f70302",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0022951",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:267425008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10604",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0100345",
+          "type" : "CLASS",
+          "lbl" : "lactose intolerance"
+        },
+        {
+          "id" : "NCIT:C3154",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:10604",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0100345",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0100345",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3154",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:267425008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0100345",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0022951",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0100345",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0022951",
+            "DOID:10604",
+            "SCTID:267425008",
+            "NCIT:C3154",
+            "MONDO:0100345"
+          ]
+        }
+      ]
+    }
+  ]
+}

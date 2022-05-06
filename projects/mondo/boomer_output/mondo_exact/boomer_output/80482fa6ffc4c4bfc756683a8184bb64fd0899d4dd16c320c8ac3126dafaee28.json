@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:80482fa6ffc4c4bfc756683a8184bb64fd0899d4dd16c320c8ac3126dafaee28",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225276",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014698",
+          "type" : "CLASS",
+          "lbl" : "microcephaly-intellectual disability-sensorineural hearing loss-epilepsy-abnormal muscle tone syndrome"
+        },
+        {
+          "id" : "Orphanet:457351",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616577",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014698",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616577",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014698",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:457351",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225276",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014698",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014698",
+            "OMIM:616577",
+            "Orphanet:457351",
+            "UMLS:C4225276"
+          ]
+        }
+      ]
+    }
+  ]
+}

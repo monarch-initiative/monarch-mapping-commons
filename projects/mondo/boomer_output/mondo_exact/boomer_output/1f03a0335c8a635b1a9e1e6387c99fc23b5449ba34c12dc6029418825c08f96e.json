@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1f03a0335c8a635b1a9e1e6387c99fc23b5449ba34c12dc6029418825c08f96e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310671",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044646",
+          "type" : "CLASS",
+          "lbl" : "early-onset progressive diffuse brain atrophy-microcephaly-muscle weakness-optic atrophy syndrome"
+        },
+        {
+          "id" : "Orphanet:496641",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:617193",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0044646",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:496641",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310671",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044646",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044646",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617193",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:496641",
+            "MONDO:0044646",
+            "UMLS:C4310671",
+            "OMIM:617193"
+          ]
+        }
+      ]
+    }
+  ]
+}

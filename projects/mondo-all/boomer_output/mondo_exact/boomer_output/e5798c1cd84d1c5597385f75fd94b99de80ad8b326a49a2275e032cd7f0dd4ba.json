@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e5798c1cd84d1c5597385f75fd94b99de80ad8b326a49a2275e032cd7f0dd4ba",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:D13.6",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:92264007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C4612",
+          "type" : "CLASS",
+          "lbl" : "Benign Pancreatic Neoplasm"
+        },
+        {
+          "id" : "MONDO:0021470",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of pancreas"
+        },
+        {
+          "id" : "UMLS:C0347284",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021470",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4612",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D13.6",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92264007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0347284",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4612",
+            "UMLS:C0347284",
+            "MONDO:0021470",
+            "SCTID:92264007",
+            "ICD10CM:D13.6"
+          ]
+        }
+      ]
+    }
+  ]
+}

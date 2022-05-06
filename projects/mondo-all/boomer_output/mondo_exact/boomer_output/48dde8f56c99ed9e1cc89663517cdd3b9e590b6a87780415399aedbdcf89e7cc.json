@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:48dde8f56c99ed9e1cc89663517cdd3b9e590b6a87780415399aedbdcf89e7cc",
+      "nodes" : [
+        {
+          "id" : "MESH:D035583",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021200",
+          "type" : "CLASS",
+          "lbl" : "obsolete rare disease"
+        },
+        {
+          "id" : "NCIT:C4873",
+          "type" : "CLASS",
+          "lbl" : "Rare Disorder"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D035583",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021200",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4873",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D035583",
+            "MONDO:0021200",
+            "NCIT:C4873"
+          ]
+        }
+      ]
+    }
+  ]
+}

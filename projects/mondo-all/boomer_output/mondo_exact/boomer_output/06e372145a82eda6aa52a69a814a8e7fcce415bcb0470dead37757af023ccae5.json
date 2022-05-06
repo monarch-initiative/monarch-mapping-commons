@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:06e372145a82eda6aa52a69a814a8e7fcce415bcb0470dead37757af023ccae5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334548",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2601",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002359",
+          "type" : "CLASS",
+          "lbl" : "periosteal chondroma"
+        },
+        {
+          "id" : "NCIT:C4302",
+          "type" : "CLASS",
+          "lbl" : "Periosteal Chondroma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:2601",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002359",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334548",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002359",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002359",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4302",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:2601",
+            "MONDO:0002359",
+            "UMLS:C0334548",
+            "NCIT:C4302"
+          ]
+        }
+      ]
+    }
+  ]
+}

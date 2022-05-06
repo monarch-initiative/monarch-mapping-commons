@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fcaac92ef0b06e773839a2658d068537f8c6b145d7ce9eae790e613a31e175ce",
+      "nodes" : [
+        {
+          "id" : "MESH:C538443",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3888109",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007053",
+          "type" : "CLASS",
+          "lbl" : "restless legs syndrome 1"
+        },
+        {
+          "id" : "OMIM:102300",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3888109",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007053",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007053",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:102300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538443",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007053",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3888109",
+            "MONDO:0007053",
+            "OMIM:102300",
+            "MESH:C538443"
+          ]
+        }
+      ]
+    }
+  ]
+}

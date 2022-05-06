@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cce2375853b06dbc2d88c88eab0326c4a04886e6a089949ad9881f65c007af2e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225197",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014783",
+          "type" : "CLASS",
+          "lbl" : "preimplantation embryonic lethality 1"
+        },
+        {
+          "id" : "OMIM:616814",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4225197",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014783",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014783",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616814",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:616814",
+            "MONDO:0014783",
+            "UMLS:C4225197"
+          ]
+        }
+      ]
+    }
+  ]
+}

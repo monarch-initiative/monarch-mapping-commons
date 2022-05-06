@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fd8dfa1c5ca07a4d235c2ab86b643e51c79ac93ac2561b0d446242f9a41c7337",
+      "nodes" : [
+        {
+          "id" : "MESH:C565063",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1851847",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007518",
+          "type" : "CLASS",
+          "lbl" : "edema, familial idiopathic, prepubertal"
+        },
+        {
+          "id" : "OMIM:129840",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1851847",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007518",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007518",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:129840",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007518",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1851847",
+            "MONDO:0007518",
+            "OMIM:129840",
+            "MESH:C565063"
+          ]
+        }
+      ]
+    }
+  ]
+}

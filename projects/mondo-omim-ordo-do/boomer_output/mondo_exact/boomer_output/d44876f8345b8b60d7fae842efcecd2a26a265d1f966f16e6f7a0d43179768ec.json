@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d44876f8345b8b60d7fae842efcecd2a26a265d1f966f16e6f7a0d43179768ec",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1838332",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010853",
+          "type" : "CLASS",
+          "lbl" : "Helicobacter pylori infection, susceptibility to"
+        },
+        {
+          "id" : "OMIM:600263",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010853",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600263",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1838332",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010853",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010853",
+            "OMIM:600263",
+            "UMLS:C1838332"
+          ]
+        }
+      ]
+    }
+  ]
+}

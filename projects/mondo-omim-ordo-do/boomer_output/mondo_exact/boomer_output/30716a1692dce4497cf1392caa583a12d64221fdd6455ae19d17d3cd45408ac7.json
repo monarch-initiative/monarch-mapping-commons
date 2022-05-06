@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:30716a1692dce4497cf1392caa583a12d64221fdd6455ae19d17d3cd45408ac7",
+      "nodes" : [
+        {
+          "id" : "MESH:D017109",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:230333002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:G25.71",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006731",
+          "type" : "CLASS",
+          "lbl" : "drug-induced akathisia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:G25.71",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006731",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D017109",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006731",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:230333002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006731",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:G25.71",
+            "MONDO:0006731",
+            "MESH:D017109",
+            "SCTID:230333002"
+          ]
+        }
+      ]
+    }
+  ]
+}

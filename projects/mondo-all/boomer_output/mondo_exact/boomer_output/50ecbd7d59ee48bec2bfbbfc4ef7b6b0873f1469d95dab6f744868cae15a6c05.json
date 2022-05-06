@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:50ecbd7d59ee48bec2bfbbfc4ef7b6b0873f1469d95dab6f744868cae15a6c05",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202038",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016782",
+          "type" : "CLASS",
+          "lbl" : "paternal 14q32.2 hypomethylation syndrome"
+        },
+        {
+          "id" : "Orphanet:254531",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016782",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:254531",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202038",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016782",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016782",
+            "Orphanet:254531",
+            "UMLS:CN202038"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dce2838876b88815acde82bd9ce285a7ad0c3c11092b61dc2e27b0e05ba5c712",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479250",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044303",
+          "type" : "CLASS",
+          "lbl" : "congenital heart defects and ectodermal dysplasia"
+        },
+        {
+          "id" : "OMIM:617364",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0044303",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617364",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4479250",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044303",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0044303",
+            "OMIM:617364",
+            "UMLS:C4479250"
+          ]
+        }
+      ]
+    }
+  ]
+}

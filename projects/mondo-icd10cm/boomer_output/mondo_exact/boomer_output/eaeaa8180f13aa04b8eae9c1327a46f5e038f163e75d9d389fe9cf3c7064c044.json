@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eaeaa8180f13aa04b8eae9c1327a46f5e038f163e75d9d389fe9cf3c7064c044",
+      "nodes" : [
+        {
+          "id" : "DOID:0111398",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009135",
+          "type" : "CLASS",
+          "lbl" : "anemia, congenital dyserythropoietic, type 1a"
+        },
+        {
+          "id" : "OMIM:224120",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009135",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:224120",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111398",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009135",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:224120",
+            "MONDO:0009135",
+            "DOID:0111398"
+          ]
+        }
+      ]
+    }
+  ]
+}

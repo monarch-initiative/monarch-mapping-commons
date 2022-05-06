@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:07da0bc59b060cd92131d2c0466a359ac432b73e083f25fbaced569c07ace876",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3281066",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110842",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013788",
+          "type" : "CLASS",
+          "lbl" : "Usher syndrome type 3B"
+        },
+        {
+          "id" : "OMIM:614504",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110842",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013788",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013788",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614504",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3281066",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013788",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0110842",
+            "MONDO:0013788",
+            "OMIM:614504",
+            "UMLS:C3281066"
+          ]
+        }
+      ]
+    }
+  ]
+}

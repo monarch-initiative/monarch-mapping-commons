@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e4062f9ec8fff2451ef6384d5d2b8af187af198f2d369aa3c676c6b4ce891e96",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:Q60.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019979",
+          "type" : "CLASS",
+          "lbl" : "renal hypoplasia, unilateral"
+        },
+        {
+          "id" : "Orphanet:97361",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:Q60.3",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019979",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019979",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:97361",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:Q60.3",
+            "MONDO:0019979",
+            "Orphanet:97361"
+          ]
+        }
+      ]
+    }
+  ]
+}

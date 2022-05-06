@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a4c675f01e118830f2050ca057999e0d47cb0856b92f0b5f3218bfea35f10fb4",
+      "nodes" : [
+        {
+          "id" : "MESH:C566008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1860519",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008640",
+          "type" : "CLASS",
+          "lbl" : "vasculitis, lymphocytic, nodular"
+        },
+        {
+          "id" : "OMIM:192310",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C566008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008640",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008640",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:192310",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1860519",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008640",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:192310",
+            "MONDO:0008640",
+            "MESH:C566008",
+            "UMLS:C1860519"
+          ]
+        }
+      ]
+    }
+  ]
+}

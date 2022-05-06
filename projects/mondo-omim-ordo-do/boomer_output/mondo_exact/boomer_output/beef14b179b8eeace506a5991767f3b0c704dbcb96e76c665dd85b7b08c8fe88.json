@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:beef14b179b8eeace506a5991767f3b0c704dbcb96e76c665dd85b7b08c8fe88",
+      "nodes" : [
+        {
+          "id" : "MESH:C563344",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1832441",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011044",
+          "type" : "CLASS",
+          "lbl" : "ectrodactyly of lower limbs, congenital heart defect, and micrognathia"
+        },
+        {
+          "id" : "OMIM:601348",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C563344",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011044",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011044",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601348",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1832441",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011044",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C563344",
+            "MONDO:0011044",
+            "OMIM:601348",
+            "UMLS:C1832441"
+          ]
+        }
+      ]
+    }
+  ]
+}

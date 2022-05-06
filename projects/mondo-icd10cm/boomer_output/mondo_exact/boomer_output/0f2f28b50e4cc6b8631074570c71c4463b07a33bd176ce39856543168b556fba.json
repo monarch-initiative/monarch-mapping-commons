@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0f2f28b50e4cc6b8631074570c71c4463b07a33bd176ce39856543168b556fba",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519853",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:13958",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001846",
+          "type" : "CLASS",
+          "lbl" : "uterine corpus bizarre leiomyoma"
+        },
+        {
+          "id" : "NCIT:C40167",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:13958",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001846",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001846",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40167",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1519853",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001846",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001846",
+            "DOID:13958",
+            "NCIT:C40167",
+            "UMLS:C1519853"
+          ]
+        }
+      ]
+    }
+  ]
+}

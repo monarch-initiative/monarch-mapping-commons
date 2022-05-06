@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:42c600c3bce080f6b68809c2ac3eb48eb74cdf3b05252ca4aae7460db8ae2995",
+      "nodes" : [
+        {
+          "id" : "SCTID:430888006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2315777",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020212",
+          "type" : "CLASS",
+          "lbl" : "superficial corneal dystrophy"
+        },
+        {
+          "id" : "Orphanet:98625",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020212",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98625",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2315777",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020212",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:430888006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020212",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2315777",
+            "MONDO:0020212",
+            "Orphanet:98625",
+            "SCTID:430888006"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7bc79132f88388b4362744a0422eb479f80f141aac1d175a554e0d3af8d55405",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333455",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10187",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000963",
+          "type" : "CLASS",
+          "lbl" : "esophageal lipoma"
+        },
+        {
+          "id" : "NCIT:C5701",
+          "type" : "CLASS",
+          "lbl" : "Esophageal Lipoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:10187",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000963",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000963",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5701",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333455",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000963",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:10187",
+            "MONDO:0000963",
+            "NCIT:C5701",
+            "UMLS:C1333455"
+          ]
+        }
+      ]
+    }
+  ]
+}

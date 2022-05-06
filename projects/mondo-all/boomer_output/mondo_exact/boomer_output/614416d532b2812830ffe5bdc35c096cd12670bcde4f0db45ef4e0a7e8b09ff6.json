@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:614416d532b2812830ffe5bdc35c096cd12670bcde4f0db45ef4e0a7e8b09ff6",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226743",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015821",
+          "type" : "CLASS",
+          "lbl" : "mycosis fungoides and variants"
+        },
+        {
+          "id" : "Orphanet:178566",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015821",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:178566",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226743",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015821",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:178566",
+            "MONDO:0015821",
+            "UMLS:CN226743"
+          ]
+        }
+      ]
+    }
+  ]
+}

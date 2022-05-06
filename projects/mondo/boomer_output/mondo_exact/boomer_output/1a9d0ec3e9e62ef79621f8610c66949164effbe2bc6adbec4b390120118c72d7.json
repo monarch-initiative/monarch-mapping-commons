@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1a9d0ec3e9e62ef79621f8610c66949164effbe2bc6adbec4b390120118c72d7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3496337",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018170",
+          "type" : "CLASS",
+          "lbl" : "idiopathic nephrotic syndrome"
+        },
+        {
+          "id" : "NCIT:C122796",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:357502",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018170",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:357502",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3496337",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018170",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018170",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C122796",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018170",
+            "Orphanet:357502",
+            "UMLS:C3496337",
+            "NCIT:C122796"
+          ]
+        }
+      ]
+    }
+  ]
+}

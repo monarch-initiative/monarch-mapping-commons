@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8b7dfe92774b26606244472da863c206c06c128d4ec6310ed0804f031e7e8e52",
+      "nodes" : [
+        {
+          "id" : "MESH:C563900",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1837809",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012069",
+          "type" : "CLASS",
+          "lbl" : "keratoconus 3"
+        },
+        {
+          "id" : "OMIM:608586",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1837809",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012069",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563900",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012069",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012069",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608586",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012069",
+            "UMLS:C1837809",
+            "MESH:C563900",
+            "OMIM:608586"
+          ]
+        }
+      ]
+    }
+  ]
+}

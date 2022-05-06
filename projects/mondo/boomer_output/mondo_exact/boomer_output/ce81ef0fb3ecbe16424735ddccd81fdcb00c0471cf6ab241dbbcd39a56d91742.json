@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ce81ef0fb3ecbe16424735ddccd81fdcb00c0471cf6ab241dbbcd39a56d91742",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237665",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018624",
+          "type" : "CLASS",
+          "lbl" : "spontaneous intracranial hypotension"
+        },
+        {
+          "id" : "Orphanet:443180",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237665",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018624",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018624",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:443180",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN237665",
+            "MONDO:0018624",
+            "Orphanet:443180"
+          ]
+        }
+      ]
+    }
+  ]
+}

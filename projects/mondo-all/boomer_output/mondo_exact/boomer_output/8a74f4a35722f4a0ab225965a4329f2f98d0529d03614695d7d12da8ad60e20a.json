@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8a74f4a35722f4a0ab225965a4329f2f98d0529d03614695d7d12da8ad60e20a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1517115",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5124",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003285",
+          "type" : "CLASS",
+          "lbl" : "fallopian tube leiomyoma"
+        },
+        {
+          "id" : "NCIT:C40127",
+          "type" : "CLASS",
+          "lbl" : "Fallopian Tube Leiomyoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003285",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40127",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5124",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003285",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1517115",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003285",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C40127",
+            "MONDO:0003285",
+            "DOID:5124",
+            "UMLS:C1517115"
+          ]
+        }
+      ]
+    }
+  ]
+}

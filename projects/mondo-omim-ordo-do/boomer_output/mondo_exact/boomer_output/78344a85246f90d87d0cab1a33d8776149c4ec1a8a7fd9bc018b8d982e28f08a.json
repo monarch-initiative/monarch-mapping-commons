@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:78344a85246f90d87d0cab1a33d8776149c4ec1a8a7fd9bc018b8d982e28f08a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332337",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7596",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004295",
+          "type" : "CLASS",
+          "lbl" : "asbestos-related lung carcinoma"
+        },
+        {
+          "id" : "NCIT:C27925",
+          "type" : "CLASS",
+          "lbl" : "Asbestos-Related Lung Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004295",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27925",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332337",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004295",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7596",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004295",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C27925",
+            "MONDO:0004295",
+            "UMLS:C1332337",
+            "DOID:7596"
+          ]
+        }
+      ]
+    }
+  ]
+}

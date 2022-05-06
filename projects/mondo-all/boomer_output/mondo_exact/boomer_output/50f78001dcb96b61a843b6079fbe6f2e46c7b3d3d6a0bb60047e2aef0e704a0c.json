@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:50f78001dcb96b61a843b6079fbe6f2e46c7b3d3d6a0bb60047e2aef0e704a0c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202530",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0025511",
+          "type" : "CLASS",
+          "lbl" : "inherited neuroendocrine tumor"
+        },
+        {
+          "id" : "Orphanet:271847",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202530",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025511",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0025511",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:271847",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN202530",
+            "MONDO:0025511",
+            "Orphanet:271847"
+          ]
+        }
+      ]
+    }
+  ]
+}

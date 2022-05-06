@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:defee1dec30b1c3564c85b606d290d870c3724b4a403ccd96c1d391a550c13d4",
+      "nodes" : [
+        {
+          "id" : "MESH:C565399",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1855195",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009596",
+          "type" : "CLASS",
+          "lbl" : "metaphyseal chondrodysplasia, Pena type"
+        },
+        {
+          "id" : "OMIM:250300",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1855195",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009596",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009596",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:250300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565399",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009596",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009596",
+            "UMLS:C1855195",
+            "OMIM:250300",
+            "MESH:C565399"
+          ]
+        }
+      ]
+    }
+  ]
+}

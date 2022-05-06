@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:58000a1bf0bfe408389c6d46d7aec0e77a29acaeafc27563bb95db83aa69941f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0346367",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8400",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004550",
+          "type" : "CLASS",
+          "lbl" : "malignant cornea melanoma"
+        },
+        {
+          "id" : "NCIT:C4553",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0346367",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004550",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004550",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4553",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8400",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004550",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004550",
+            "UMLS:C0346367",
+            "NCIT:C4553",
+            "DOID:8400"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5ef21afe0cd4dff5a0334e66e6bd25d1f84a5dac6f165781add10ca8b93d6ade",
+      "nodes" : [
+        {
+          "id" : "MESH:C535775",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1865783",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011203",
+          "type" : "CLASS",
+          "lbl" : "Pierre Robin sequence with pectus excavatum and rib and scapular anomalies"
+        },
+        {
+          "id" : "OMIM:602196",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1865783",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011203",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535775",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011203",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011203",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:602196",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011203",
+            "UMLS:C1865783",
+            "MESH:C535775",
+            "OMIM:602196"
+          ]
+        }
+      ]
+    }
+  ]
+}

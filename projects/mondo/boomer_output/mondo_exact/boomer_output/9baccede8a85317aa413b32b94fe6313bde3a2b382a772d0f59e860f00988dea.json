@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9baccede8a85317aa413b32b94fe6313bde3a2b382a772d0f59e860f00988dea",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200368",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015786",
+          "type" : "CLASS",
+          "lbl" : "Prader-Willi syndrome due to imprinting mutation"
+        },
+        {
+          "id" : "Orphanet:177910",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015786",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:177910",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN200368",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015786",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015786",
+            "Orphanet:177910",
+            "UMLS:CN200368"
+          ]
+        }
+      ]
+    }
+  ]
+}

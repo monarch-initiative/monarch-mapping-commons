@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ddcebf43e8c8aa6873256a70315658510f9c993ec08295553efee065a0d2f1cb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334620",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4230",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002924",
+          "type" : "CLASS",
+          "lbl" : "smooth muscle cancer"
+        },
+        {
+          "id" : "NCIT:C6511",
+          "type" : "CLASS",
+          "lbl" : "Malignant Smooth Muscle Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334620",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002924",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4230",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002924",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002924",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6511",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1334620",
+            "MONDO:0002924",
+            "DOID:4230",
+            "NCIT:C6511"
+          ]
+        }
+      ]
+    }
+  ]
+}

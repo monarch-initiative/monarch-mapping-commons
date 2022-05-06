@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ba3ed7260a81b3d635e1604aab7be9ee725a06564af03421bdce95d6c17c3f7f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334472",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5703",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003594",
+          "type" : "CLASS",
+          "lbl" : "mixed liposarcoma"
+        },
+        {
+          "id" : "NCIT:C4253",
+          "type" : "CLASS",
+          "lbl" : "Mixed Liposarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003594",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4253",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5703",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003594",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334472",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003594",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003594",
+            "NCIT:C4253",
+            "DOID:5703",
+            "UMLS:C0334472"
+          ]
+        }
+      ]
+    }
+  ]
+}

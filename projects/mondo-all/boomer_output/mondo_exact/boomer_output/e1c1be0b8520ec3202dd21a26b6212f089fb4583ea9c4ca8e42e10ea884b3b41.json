@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e1c1be0b8520ec3202dd21a26b6212f089fb4583ea9c4ca8e42e10ea884b3b41",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN074256",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008227",
+          "type" : "CLASS",
+          "lbl" : "peripheral dysostosis"
+        },
+        {
+          "id" : "Orphanet:1795",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:170700",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008227",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:170700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN074256",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008227",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008227",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1795",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008227",
+            "OMIM:170700",
+            "UMLS:CN074256",
+            "Orphanet:1795"
+          ]
+        }
+      ]
+    }
+  ]
+}

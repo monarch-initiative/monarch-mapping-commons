@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d21aeca80272f311a27159a89a83c43680a7e5ffb2ac3e6b94322d27f21587fb",
+      "nodes" : [
+        {
+          "id" : "DOID:13129",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001641",
+          "type" : "CLASS",
+          "lbl" : "severe pre-eclampsia"
+        },
+        {
+          "id" : "NCIT:C112843",
+          "type" : "CLASS",
+          "lbl" : "Severe Preeclampsia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0001641",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C112843",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:13129",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001641",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001641",
+            "NCIT:C112843",
+            "DOID:13129"
+          ]
+        }
+      ]
+    }
+  ]
+}

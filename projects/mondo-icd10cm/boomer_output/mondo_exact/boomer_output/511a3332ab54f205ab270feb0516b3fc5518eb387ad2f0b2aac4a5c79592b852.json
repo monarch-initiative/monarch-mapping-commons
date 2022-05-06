@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:511a3332ab54f205ab270feb0516b3fc5518eb387ad2f0b2aac4a5c79592b852",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280781",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013747",
+          "type" : "CLASS",
+          "lbl" : "atrioventricular septal defect 4"
+        },
+        {
+          "id" : "OMIM:614430",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013747",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614430",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3280781",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013747",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013747",
+            "OMIM:614430",
+            "UMLS:C3280781"
+          ]
+        }
+      ]
+    }
+  ]
+}

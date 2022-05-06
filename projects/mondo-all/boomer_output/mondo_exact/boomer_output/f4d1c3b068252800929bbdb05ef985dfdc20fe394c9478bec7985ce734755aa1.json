@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f4d1c3b068252800929bbdb05ef985dfdc20fe394c9478bec7985ce734755aa1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279622",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3377",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002630",
+          "type" : "CLASS",
+          "lbl" : "small cell osteogenic sarcoma"
+        },
+        {
+          "id" : "NCIT:C4023",
+          "type" : "CLASS",
+          "lbl" : "Small Cell Osteosarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3377",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002630",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0279622",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002630",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002630",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4023",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3377",
+            "MONDO:0002630",
+            "UMLS:C0279622",
+            "NCIT:C4023"
+          ]
+        }
+      ]
+    }
+  ]
+}

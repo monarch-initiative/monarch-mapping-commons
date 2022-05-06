@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ea3d6b4f5ce2c4252083ee5616ca7e2e995c9f49b55ea1568b86096a9c6bbac2",
+      "nodes" : [
+        {
+          "id" : "SCTID:443493003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0278883",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005191",
+          "type" : "CLASS",
+          "lbl" : "metastatic melanoma"
+        },
+        {
+          "id" : "NCIT:C8925",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005191",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8925",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:443493003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005191",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0278883",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005191",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005191",
+            "SCTID:443493003",
+            "NCIT:C8925",
+            "UMLS:C0278883"
+          ]
+        }
+      ]
+    }
+  ]
+}

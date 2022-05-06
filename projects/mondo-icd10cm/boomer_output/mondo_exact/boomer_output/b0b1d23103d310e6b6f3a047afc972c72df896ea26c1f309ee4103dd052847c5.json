@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b0b1d23103d310e6b6f3a047afc972c72df896ea26c1f309ee4103dd052847c5",
+      "nodes" : [
+        {
+          "id" : "NCIT:C4016",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:428281000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002129",
+          "type" : "CLASS",
+          "lbl" : "bone cancer"
+        },
+        {
+          "id" : "DOID:184",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D001859",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:428281000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002129",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:184",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002129",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002129",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4016",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D001859",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002129",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002129",
+            "SCTID:428281000",
+            "MESH:D001859",
+            "NCIT:C4016",
+            "DOID:184"
+          ]
+        }
+      ]
+    }
+  ]
+}

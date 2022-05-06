@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:943580113922a438c313488e3fdd076501d3d2107c8b8939fd3f372fd488428e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333798",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0045070",
+          "type" : "CLASS",
+          "lbl" : "digestive system melanoma"
+        },
+        {
+          "id" : "NCIT:C7091",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0045070",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7091",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333798",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0045070",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0045070",
+            "UMLS:C1333798",
+            "NCIT:C7091"
+          ]
+        }
+      ]
+    }
+  ]
+}

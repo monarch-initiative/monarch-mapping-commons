@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:08a07f510d4ddeec73cc462e3587c7aa42d5758a85e5129d4a7aba171a0e3772",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334553",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006232",
+          "type" : "CLASS",
+          "lbl" : "giant cell tumor of soft tissue"
+        },
+        {
+          "id" : "NCIT:C49107",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006232",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C49107",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334553",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006232",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006232",
+            "NCIT:C49107",
+            "UMLS:C0334553"
+          ]
+        }
+      ]
+    }
+  ]
+}

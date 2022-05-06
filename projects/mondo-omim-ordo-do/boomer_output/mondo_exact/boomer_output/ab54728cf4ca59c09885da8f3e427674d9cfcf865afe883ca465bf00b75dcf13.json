@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ab54728cf4ca59c09885da8f3e427674d9cfcf865afe883ca465bf00b75dcf13",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4331262",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:251975",
+          "type" : "CLASS",
+          "lbl" : "Rosette-forming glioneuronal tumor"
+        },
+        {
+          "id" : "MONDO:0016736",
+          "type" : "CLASS",
+          "lbl" : "rosette-forming glioneuronal tumor of fourth ventricule"
+        },
+        {
+          "id" : "UMLS:CN201984",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C129431",
+          "type" : "CLASS",
+          "lbl" : "Rosette-Forming Glioneuronal Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201984",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016736",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016736",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C129431",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016736",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4331262",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016736",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:251975",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN201984",
+            "MONDO:0016736",
+            "NCIT:C129431",
+            "Orphanet:251975"
+          ]
+        }
+      ]
+    }
+  ]
+}

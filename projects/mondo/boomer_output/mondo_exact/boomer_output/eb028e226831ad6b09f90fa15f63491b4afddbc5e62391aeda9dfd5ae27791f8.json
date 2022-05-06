@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eb028e226831ad6b09f90fa15f63491b4afddbc5e62391aeda9dfd5ae27791f8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1840264",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007816",
+          "type" : "CLASS",
+          "lbl" : "immune suppression"
+        },
+        {
+          "id" : "OMIM:146850",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007816",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:146850",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1840264",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007816",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007816",
+            "OMIM:146850",
+            "UMLS:C1840264"
+          ]
+        }
+      ]
+    }
+  ]
+}

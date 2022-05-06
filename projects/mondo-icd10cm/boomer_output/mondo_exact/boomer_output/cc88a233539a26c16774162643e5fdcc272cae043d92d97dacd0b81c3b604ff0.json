@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cc88a233539a26c16774162643e5fdcc272cae043d92d97dacd0b81c3b604ff0",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227177",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017703",
+          "type" : "CLASS",
+          "lbl" : "disorder of glyoxylate metabolism"
+        },
+        {
+          "id" : "Orphanet:308998",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017703",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:308998",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227177",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017703",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017703",
+            "Orphanet:308998",
+            "UMLS:CN227177"
+          ]
+        }
+      ]
+    }
+  ]
+}

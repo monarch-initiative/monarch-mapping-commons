@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:15636169706587dd32d5ec855dc2d418dd126fe736427b3e7db0abcdf794a6af",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225309",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014661",
+          "type" : "CLASS",
+          "lbl" : "epidermolysis bullosa simplex with nail dystrophy"
+        },
+        {
+          "id" : "OMIM:616487",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4225309",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014661",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014661",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616487",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014661",
+            "UMLS:C4225309",
+            "OMIM:616487"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5b43069f8efaf53c083073f041703cb900cea6e82bbfc693aa01129350b07d61",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237646",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018610",
+          "type" : "CLASS",
+          "lbl" : "early-onset posterior subcapsular cataract"
+        },
+        {
+          "id" : "Orphanet:441447",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237646",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018610",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018610",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:441447",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:441447",
+            "MONDO:0018610",
+            "UMLS:CN237646"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a14cb1620a2e36355f8a5d0d659c186d17a5f19168728cd8d97838a9aa14d377",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225213",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014766",
+          "type" : "CLASS",
+          "lbl" : "leukodystrophy and acquired microcephaly with or without dystonia;"
+        },
+        {
+          "id" : "OMIM:616763",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4225213",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014766",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014766",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616763",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4225213",
+            "MONDO:0014766",
+            "OMIM:616763"
+          ]
+        }
+      ]
+    }
+  ]
+}

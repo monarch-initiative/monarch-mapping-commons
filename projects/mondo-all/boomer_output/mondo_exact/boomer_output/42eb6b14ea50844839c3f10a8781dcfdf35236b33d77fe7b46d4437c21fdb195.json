@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:42eb6b14ea50844839c3f10a8781dcfdf35236b33d77fe7b46d4437c21fdb195",
+      "nodes" : [
+        {
+          "id" : "MESH:C536389",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011733",
+          "type" : "CLASS",
+          "lbl" : "parasomnia, sleep bruxism type"
+        },
+        {
+          "id" : "OMIM:606840",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011733",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:606840",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536389",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011733",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011733",
+            "OMIM:606840",
+            "MESH:C536389"
+          ]
+        }
+      ]
+    }
+  ]
+}

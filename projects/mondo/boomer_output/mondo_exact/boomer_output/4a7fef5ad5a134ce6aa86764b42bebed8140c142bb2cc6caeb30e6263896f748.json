@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4a7fef5ad5a134ce6aa86764b42bebed8140c142bb2cc6caeb30e6263896f748",
+      "nodes" : [
+        {
+          "id" : "SCTID:78200003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0271858",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021132",
+          "type" : "CLASS",
+          "lbl" : "tertiary hyperparathyroidism"
+        },
+        {
+          "id" : "NCIT:C114821",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0271858",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021132",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021132",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C114821",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:78200003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021132",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021132",
+            "UMLS:C0271858",
+            "NCIT:C114821",
+            "SCTID:78200003"
+          ]
+        }
+      ]
+    }
+  ]
+}

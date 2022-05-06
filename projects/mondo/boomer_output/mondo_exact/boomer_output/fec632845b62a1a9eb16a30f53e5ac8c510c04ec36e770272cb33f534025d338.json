@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fec632845b62a1a9eb16a30f53e5ac8c510c04ec36e770272cb33f534025d338",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518695",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5896",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003694",
+          "type" : "CLASS",
+          "lbl" : "ovarian clear cell cystadenofibroma"
+        },
+        {
+          "id" : "NCIT:C40086",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003694",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40086",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518695",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003694",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5896",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003694",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003694",
+            "NCIT:C40086",
+            "UMLS:C1518695",
+            "DOID:5896"
+          ]
+        }
+      ]
+    }
+  ]
+}

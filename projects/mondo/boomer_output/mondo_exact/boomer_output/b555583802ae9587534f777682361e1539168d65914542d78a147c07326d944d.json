@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b555583802ae9587534f777682361e1539168d65914542d78a147c07326d944d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1704251",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0349669",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5826",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C4671",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:278052009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003661",
+          "type" : "CLASS",
+          "lbl" : "breast lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003661",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0349669",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5826",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003661",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003661",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4671",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1704251",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003661",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:278052009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003661",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:278052009",
+            "NCIT:C4671",
+            "DOID:5826",
+            "MONDO:0003661",
+            "UMLS:C1704251"
+          ]
+        }
+      ]
+    }
+  ]
+}

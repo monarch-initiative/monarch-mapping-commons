@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b3e7236a7ed62aecd7be7bd98dfdf2ab26d95854ba03af1f955daec7ca65f99a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203743",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017793",
+          "type" : "CLASS",
+          "lbl" : "marfanoid habitus-inguinal hernia-advanced bone age syndrome"
+        },
+        {
+          "id" : "Orphanet:314041",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017793",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:314041",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203743",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017793",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:314041",
+            "MONDO:0017793",
+            "UMLS:CN203743"
+          ]
+        }
+      ]
+    }
+  ]
+}

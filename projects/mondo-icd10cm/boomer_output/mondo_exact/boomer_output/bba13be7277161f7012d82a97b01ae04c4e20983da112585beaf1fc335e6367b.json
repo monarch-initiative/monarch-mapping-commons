@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bba13be7277161f7012d82a97b01ae04c4e20983da112585beaf1fc335e6367b",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203619",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017723",
+          "type" : "CLASS",
+          "lbl" : "Sandhoff disease, adult form"
+        },
+        {
+          "id" : "Orphanet:309169",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203619",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017723",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017723",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309169",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017723",
+            "UMLS:CN203619",
+            "Orphanet:309169"
+          ]
+        }
+      ]
+    }
+  ]
+}

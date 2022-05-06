@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c4dfcab6d44665d834de22cdcdc417b1b541e662e745fbea8ab15d95f10d6ac1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1864746",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110509",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:609706",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C566453",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012333",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive nonsyndromic hearing loss 53"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012333",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609706",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110509",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012333",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566453",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012333",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1864746",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012333",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1864746",
+            "DOID:0110509",
+            "MESH:C566453",
+            "MONDO:0012333",
+            "OMIM:609706"
+          ]
+        }
+      ]
+    }
+  ]
+}

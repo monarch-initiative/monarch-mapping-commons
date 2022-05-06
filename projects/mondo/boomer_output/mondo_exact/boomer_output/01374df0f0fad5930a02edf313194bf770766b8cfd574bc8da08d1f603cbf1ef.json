@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:01374df0f0fad5930a02edf313194bf770766b8cfd574bc8da08d1f603cbf1ef",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1517121",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1973",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002162",
+          "type" : "CLASS",
+          "lbl" : "fallopian tube adenosarcoma"
+        },
+        {
+          "id" : "NCIT:C40125",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1517121",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002162",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002162",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40125",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1973",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002162",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1517121",
+            "MONDO:0002162",
+            "NCIT:C40125",
+            "DOID:1973"
+          ]
+        }
+      ]
+    }
+  ]
+}

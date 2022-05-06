@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:efdb9abc772d4a8864688e4e790feec4f1cc0dc9fd3232663382a070d6722d5d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1836080",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012287",
+          "type" : "CLASS",
+          "lbl" : "Stickler syndrome, type I, nonsyndromic ocular"
+        },
+        {
+          "id" : "OMIM:609508",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1836080",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012287",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012287",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609508",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012287",
+            "UMLS:C1836080",
+            "OMIM:609508"
+          ]
+        }
+      ]
+    }
+  ]
+}

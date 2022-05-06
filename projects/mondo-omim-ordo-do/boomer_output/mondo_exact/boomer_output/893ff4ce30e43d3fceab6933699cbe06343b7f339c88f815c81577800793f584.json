@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:893ff4ce30e43d3fceab6933699cbe06343b7f339c88f815c81577800793f584",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN889218",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060664",
+          "type" : "CLASS",
+          "lbl" : "neurodevelopmental disorder with microcephaly, cataracts, and renal abnormalities"
+        },
+        {
+          "id" : "OMIM:617913",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN889218",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060664",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060664",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617913",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0060664",
+            "UMLS:CN889218",
+            "OMIM:617913"
+          ]
+        }
+      ]
+    }
+  ]
+}

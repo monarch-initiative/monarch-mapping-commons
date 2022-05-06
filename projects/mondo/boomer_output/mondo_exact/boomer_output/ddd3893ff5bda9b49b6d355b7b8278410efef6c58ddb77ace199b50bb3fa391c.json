@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ddd3893ff5bda9b49b6d355b7b8278410efef6c58ddb77ace199b50bb3fa391c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3554245",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013996",
+          "type" : "CLASS",
+          "lbl" : "focal facial dermal dysplasia type II"
+        },
+        {
+          "id" : "Orphanet:398173",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:614973",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013996",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:398173",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013996",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614973",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3554245",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013996",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013996",
+            "Orphanet:398173",
+            "OMIM:614973",
+            "UMLS:C3554245"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9f016b49c7522f710d6bc224b9bd297cb650d0cd4081ad6309f8fb5d44f9268b",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206182",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019426",
+          "type" : "CLASS",
+          "lbl" : "X-linked intellectual disability-corpus callosum agenesis-spastic quadriparesis syndrome"
+        },
+        {
+          "id" : "Orphanet:85330",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019426",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:85330",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN206182",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019426",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019426",
+            "Orphanet:85330",
+            "UMLS:CN206182"
+          ]
+        }
+      ]
+    }
+  ]
+}

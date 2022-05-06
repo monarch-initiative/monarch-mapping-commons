@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e753fbfa980d0ac65c45a3ddea6a37fdc4b7fa5e174dfd28ee771ce84e404a02",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332640",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7030",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004079",
+          "type" : "CLASS",
+          "lbl" : "lung mucous gland adenoma"
+        },
+        {
+          "id" : "NCIT:C5664",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004079",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5664",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332640",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004079",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7030",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004079",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C5664",
+            "MONDO:0004079",
+            "UMLS:C1332640",
+            "DOID:7030"
+          ]
+        }
+      ]
+    }
+  ]
+}

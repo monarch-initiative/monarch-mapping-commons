@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:10ab32c3bb6d75509b8138005b258cc88466a9b02b5f5878e802db9d93721adf",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203895",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017860",
+          "type" : "CLASS",
+          "lbl" : "methanol poisoning"
+        },
+        {
+          "id" : "Orphanet:31825",
+          "type" : "CLASS",
+          "lbl" : "Methanol poisoning"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017860",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:31825",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203895",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017860",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:31825",
+            "MONDO:0017860",
+            "UMLS:CN203895"
+          ]
+        }
+      ]
+    }
+  ]
+}

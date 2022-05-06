@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fd24782282c7796611ab4b791d87392c8de2a4752539a0cdb47a3afe8a2d9fba",
+      "nodes" : [
+        {
+          "id" : "MESH:C565606",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1857068",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:224800",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009146",
+          "type" : "CLASS",
+          "lbl" : "ectodermal dysplasia-sensorineural deafness syndrome"
+        },
+        {
+          "id" : "MESH:C535757",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:1883",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009146",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1883",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535757",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009146",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009146",
+          "pred" : "siblingOf",
+          "obj" : "MESH:C565606",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1857068",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009146",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009146",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:224800",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1857068",
+            "MESH:C535757",
+            "OMIM:224800",
+            "MONDO:0009146",
+            "Orphanet:1883"
+          ]
+        }
+      ]
+    }
+  ]
+}

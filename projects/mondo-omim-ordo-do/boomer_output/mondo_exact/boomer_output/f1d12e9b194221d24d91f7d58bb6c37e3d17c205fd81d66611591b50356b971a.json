@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f1d12e9b194221d24d91f7d58bb6c37e3d17c205fd81d66611591b50356b971a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206986",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020084",
+          "type" : "CLASS",
+          "lbl" : "lymphoproliferative disease associated with primary immune disease"
+        },
+        {
+          "id" : "Orphanet:98291",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020084",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98291",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN206986",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020084",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020084",
+            "Orphanet:98291",
+            "UMLS:CN206986"
+          ]
+        }
+      ]
+    }
+  ]
+}

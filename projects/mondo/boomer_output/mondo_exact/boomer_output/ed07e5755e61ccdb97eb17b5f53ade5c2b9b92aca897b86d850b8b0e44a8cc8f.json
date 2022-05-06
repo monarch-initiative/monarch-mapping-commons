@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ed07e5755e61ccdb97eb17b5f53ade5c2b9b92aca897b86d850b8b0e44a8cc8f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334286",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4075",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002868",
+          "type" : "CLASS",
+          "lbl" : "bile duct mucinous cystic neoplasm with an associated invasive carcinoma"
+        },
+        {
+          "id" : "NCIT:C4130",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4075",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002868",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002868",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4130",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334286",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002868",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:4075",
+            "MONDO:0002868",
+            "NCIT:C4130",
+            "UMLS:C0334286"
+          ]
+        }
+      ]
+    }
+  ]
+}

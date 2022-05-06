@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f725faa6c1d5984ed9dc22e346a637ee6de111829ce77fbd9f90352d294b1e5e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227228",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017964",
+          "type" : "CLASS",
+          "lbl" : "46,XX disorder of sex development induced by exogenous maternal-derived androgen"
+        },
+        {
+          "id" : "Orphanet:325099",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227228",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017964",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017964",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:325099",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN227228",
+            "MONDO:0017964",
+            "Orphanet:325099"
+          ]
+        }
+      ]
+    }
+  ]
+}

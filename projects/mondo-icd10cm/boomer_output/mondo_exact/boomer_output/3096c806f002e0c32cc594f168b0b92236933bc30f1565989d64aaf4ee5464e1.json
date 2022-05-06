@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3096c806f002e0c32cc594f168b0b92236933bc30f1565989d64aaf4ee5464e1",
+      "nodes" : [
+        {
+          "id" : "SCTID:65389002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1527231",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015339",
+          "type" : "CLASS",
+          "lbl" : "adrenomyeloneuropathy"
+        },
+        {
+          "id" : "Orphanet:139399",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1527231",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015339",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:65389002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015339",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015339",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:139399",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015339",
+            "UMLS:C1527231",
+            "SCTID:65389002",
+            "Orphanet:139399"
+          ]
+        }
+      ]
+    }
+  ]
+}

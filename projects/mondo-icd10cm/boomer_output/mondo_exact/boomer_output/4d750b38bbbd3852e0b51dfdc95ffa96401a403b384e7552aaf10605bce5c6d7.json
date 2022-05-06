@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4d750b38bbbd3852e0b51dfdc95ffa96401a403b384e7552aaf10605bce5c6d7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809137",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014129",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive limb-girdle muscular dystrophy type 2R"
+        },
+        {
+          "id" : "Orphanet:363543",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:615325",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014129",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615325",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014129",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:363543",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3809137",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014129",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014129",
+            "OMIM:615325",
+            "Orphanet:363543",
+            "UMLS:C3809137"
+          ]
+        }
+      ]
+    }
+  ]
+}

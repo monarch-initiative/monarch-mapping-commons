@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8fb703d52d684134830b6977b44a3aa18408781302b97ccc20dd2f4fb590cbef",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207427",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060890",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020527",
+          "type" : "CLASS",
+          "lbl" : "ectopic Cushing syndrome"
+        },
+        {
+          "id" : "Orphanet:99889",
+          "type" : "CLASS",
+          "lbl" : "Cushing syndrome due to ectopic ACTH secretion"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0060890",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020527",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020527",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99889",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN207427",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020527",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0060890",
+            "MONDO:0020527",
+            "Orphanet:99889",
+            "UMLS:CN207427"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:02d775fa5d0a57a33758bb2579ae1becece04f61cf17194358a6860e57666fc8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280965",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013772",
+          "type" : "CLASS",
+          "lbl" : "congenital cataract-hearing loss-severe developmental delay syndrome"
+        },
+        {
+          "id" : "Orphanet:300313",
+          "type" : "CLASS",
+          "lbl" : "Congenital cataract-hearing loss-severe developmental delay syndrome"
+        },
+        {
+          "id" : "OMIM:614482",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013772",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614482",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3280965",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013772",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013772",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:300313",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013772",
+            "OMIM:614482",
+            "Orphanet:300313",
+            "UMLS:C3280965"
+          ]
+        }
+      ]
+    }
+  ]
+}

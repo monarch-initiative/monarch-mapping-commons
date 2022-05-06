@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:55b40a2c490feb12fa3b8149ee6c363ab9efbb81083080e3ba71144dd6db5a0c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279663",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5746",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006046",
+          "type" : "CLASS",
+          "lbl" : "ovarian serous cystadenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C7978",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0279663",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006046",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006046",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7978",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5746",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006046",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0279663",
+            "MONDO:0006046",
+            "NCIT:C7978",
+            "DOID:5746"
+          ]
+        }
+      ]
+    }
+  ]
+}

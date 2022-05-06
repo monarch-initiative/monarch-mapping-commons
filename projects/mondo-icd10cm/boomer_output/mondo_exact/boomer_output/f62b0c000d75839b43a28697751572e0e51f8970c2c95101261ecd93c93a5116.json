@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f62b0c000d75839b43a28697751572e0e51f8970c2c95101261ecd93c93a5116",
+      "nodes" : [
+        {
+          "id" : "DOID:4045",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0684743",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:363495004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0027095",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C4883",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005864",
+          "type" : "CLASS",
+          "lbl" : "muscle cancer"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0027095",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005864",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:363495004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005864",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4045",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005864",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005864",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0684743",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005864",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4883",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4883",
+            "SCTID:363495004",
+            "MONDO:0005864",
+            "UMLS:C0027095",
+            "DOID:4045"
+          ]
+        }
+      ]
+    }
+  ]
+}

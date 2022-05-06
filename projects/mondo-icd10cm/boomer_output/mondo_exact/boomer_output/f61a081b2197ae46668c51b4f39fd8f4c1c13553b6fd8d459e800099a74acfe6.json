@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f61a081b2197ae46668c51b4f39fd8f4c1c13553b6fd8d459e800099a74acfe6",
+      "nodes" : [
+        {
+          "id" : "SCTID:444604002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0334384",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006306",
+          "type" : "CLASS",
+          "lbl" : "mixed lobular and ductal breast carcinoma"
+        },
+        {
+          "id" : "NCIT:C5160",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006306",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5160",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334384",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006306",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:444604002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006306",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006306",
+            "NCIT:C5160",
+            "UMLS:C0334384",
+            "SCTID:444604002"
+          ]
+        }
+      ]
+    }
+  ]
+}

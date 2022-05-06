@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a2a03802eaa03322960d315d84a23fc4f135b8f361f2b9ec6ab8560863a023b9",
+      "nodes" : [
+        {
+          "id" : "SCTID:6996004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020064",
+          "type" : "CLASS",
+          "lbl" : "pulmonary valve agenesis"
+        },
+        {
+          "id" : "Orphanet:982",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020064",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:982",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:6996004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020064",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:982",
+            "MONDO:0020064",
+            "SCTID:6996004"
+          ]
+        }
+      ]
+    }
+  ]
+}

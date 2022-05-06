@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8ef32aca3485b270d8702aa529d2fbdf70134e48e028f5ac334de47f24f00bb6",
+      "nodes" : [
+        {
+          "id" : "SCTID:126956001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1263888",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021373",
+          "type" : "CLASS",
+          "lbl" : "neoplasm of parietal lobe"
+        },
+        {
+          "id" : "NCIT:C5573",
+          "type" : "CLASS",
+          "lbl" : "Parietal Lobe Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:126956001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021373",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021373",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5573",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1263888",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021373",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:126956001",
+            "MONDO:0021373",
+            "NCIT:C5573",
+            "UMLS:C1263888"
+          ]
+        }
+      ]
+    }
+  ]
+}

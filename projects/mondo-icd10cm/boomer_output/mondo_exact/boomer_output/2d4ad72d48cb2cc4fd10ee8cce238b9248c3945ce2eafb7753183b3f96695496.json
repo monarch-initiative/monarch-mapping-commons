@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2d4ad72d48cb2cc4fd10ee8cce238b9248c3945ce2eafb7753183b3f96695496",
+      "nodes" : [
+        {
+          "id" : "MESH:D016400",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0079746",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0022037",
+          "type" : "CLASS",
+          "lbl" : "large-cell immunoblastic lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0079746",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022037",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D016400",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022037",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0079746",
+            "MONDO:0022037",
+            "MESH:D016400"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8631d76fe24651ee1d070c78293ae6aa131a052ca100682b95c512bcafa273d6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3272822",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024656",
+          "type" : "CLASS",
+          "lbl" : "colorectal lymphoma"
+        },
+        {
+          "id" : "NCIT:C96498",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024656",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C96498",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3272822",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024656",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024656",
+            "NCIT:C96498",
+            "UMLS:C3272822"
+          ]
+        }
+      ]
+    }
+  ]
+}

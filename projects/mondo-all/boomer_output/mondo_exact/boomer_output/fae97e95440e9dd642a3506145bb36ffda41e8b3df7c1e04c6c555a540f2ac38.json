@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fae97e95440e9dd642a3506145bb36ffda41e8b3df7c1e04c6c555a540f2ac38",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237637",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018605",
+          "type" : "CLASS",
+          "lbl" : "disorders of pentose/polyol metabolism"
+        },
+        {
+          "id" : "Orphanet:440701",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237637",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018605",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018605",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:440701",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018605",
+            "UMLS:CN237637",
+            "Orphanet:440701"
+          ]
+        }
+      ]
+    }
+  ]
+}

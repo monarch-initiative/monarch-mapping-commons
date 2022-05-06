@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3175379cc1add0c25af75c30ad7ad63635cd247cf7e42c3f2158bd5478fe47a2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2987398",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006222",
+          "type" : "CLASS",
+          "lbl" : "gastric choriocarcinoma"
+        },
+        {
+          "id" : "NCIT:C95749",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2987398",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006222",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006222",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C95749",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006222",
+            "UMLS:C2987398",
+            "NCIT:C95749"
+          ]
+        }
+      ]
+    }
+  ]
+}

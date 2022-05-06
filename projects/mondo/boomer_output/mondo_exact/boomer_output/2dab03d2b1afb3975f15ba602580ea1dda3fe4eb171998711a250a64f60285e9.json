@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2dab03d2b1afb3975f15ba602580ea1dda3fe4eb171998711a250a64f60285e9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518711",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6445",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003879",
+          "type" : "CLASS",
+          "lbl" : "ovarian endometrioid adenocarcinofibroma"
+        },
+        {
+          "id" : "NCIT:C40060",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6445",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003879",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003879",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40060",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518711",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003879",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6445",
+            "MONDO:0003879",
+            "NCIT:C40060",
+            "UMLS:C1518711"
+          ]
+        }
+      ]
+    }
+  ]
+}

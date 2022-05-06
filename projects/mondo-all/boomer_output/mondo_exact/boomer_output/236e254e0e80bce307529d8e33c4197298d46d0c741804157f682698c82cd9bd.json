@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:236e254e0e80bce307529d8e33c4197298d46d0c741804157f682698c82cd9bd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1511313",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5370",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003411",
+          "type" : "CLASS",
+          "lbl" : "breast hemangiopericytoma"
+        },
+        {
+          "id" : "NCIT:C40396",
+          "type" : "CLASS",
+          "lbl" : "Breast Hemangiopericytoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5370",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003411",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1511313",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003411",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003411",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40396",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5370",
+            "MONDO:0003411",
+            "UMLS:C1511313",
+            "NCIT:C40396"
+          ]
+        }
+      ]
+    }
+  ]
+}

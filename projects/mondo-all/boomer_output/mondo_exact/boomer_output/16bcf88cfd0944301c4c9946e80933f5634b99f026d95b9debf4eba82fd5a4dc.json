@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:16bcf88cfd0944301c4c9946e80933f5634b99f026d95b9debf4eba82fd5a4dc",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0398641",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007929",
+          "type" : "CLASS",
+          "lbl" : "obsolete Epstein syndrome"
+        },
+        {
+          "id" : "NCIT:C131639",
+          "type" : "CLASS",
+          "lbl" : "Epstein Syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007929",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C131639",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0398641",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007929",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C131639",
+            "MONDO:0007929",
+            "UMLS:C0398641"
+          ]
+        }
+      ]
+    }
+  ]
+}

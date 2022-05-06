@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b00e7373cf8f3cf2ec5f2b70d89ee79b1aed9a83e9ae105b64c1f175d1aa0890",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4015128",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014479",
+          "type" : "CLASS",
+          "lbl" : "porokeratosis 8, disseminated superficial actinic type"
+        },
+        {
+          "id" : "OMIM:616063",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014479",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616063",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4015128",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014479",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014479",
+            "OMIM:616063",
+            "UMLS:C4015128"
+          ]
+        }
+      ]
+    }
+  ]
+}

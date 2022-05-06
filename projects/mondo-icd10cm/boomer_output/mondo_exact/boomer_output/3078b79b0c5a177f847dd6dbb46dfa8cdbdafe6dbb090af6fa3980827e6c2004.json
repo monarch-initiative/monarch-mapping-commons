@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3078b79b0c5a177f847dd6dbb46dfa8cdbdafe6dbb090af6fa3980827e6c2004",
+      "nodes" : [
+        {
+          "id" : "MESH:D016263",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0078911",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005798",
+          "type" : "CLASS",
+          "lbl" : "HIV-associated nephropathy"
+        },
+        {
+          "id" : "NCIT:C26918",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D016263",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005798",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005798",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C26918",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0078911",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005798",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005798",
+            "MESH:D016263",
+            "NCIT:C26918",
+            "UMLS:C0078911"
+          ]
+        }
+      ]
+    }
+  ]
+}

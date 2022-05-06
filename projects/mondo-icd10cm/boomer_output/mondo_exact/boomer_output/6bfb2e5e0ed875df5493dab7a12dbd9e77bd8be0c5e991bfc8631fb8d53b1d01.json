@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6bfb2e5e0ed875df5493dab7a12dbd9e77bd8be0c5e991bfc8631fb8d53b1d01",
+      "nodes" : [
+        {
+          "id" : "MESH:C563952",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1838243",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010871",
+          "type" : "CLASS",
+          "lbl" : "succinic acidemia"
+        },
+        {
+          "id" : "OMIM:600335",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010871",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600335",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563952",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010871",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1838243",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010871",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010871",
+            "OMIM:600335",
+            "MESH:C563952",
+            "UMLS:C1838243"
+          ]
+        }
+      ]
+    }
+  ]
+}

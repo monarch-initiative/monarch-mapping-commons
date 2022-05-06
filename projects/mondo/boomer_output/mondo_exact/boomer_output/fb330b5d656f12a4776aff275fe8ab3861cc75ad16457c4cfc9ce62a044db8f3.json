@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fb330b5d656f12a4776aff275fe8ab3861cc75ad16457c4cfc9ce62a044db8f3",
+      "nodes" : [
+        {
+          "id" : "SCTID:445436005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020442",
+          "type" : "CLASS",
+          "lbl" : "left superior vena cava persisting to left-sided atrium"
+        },
+        {
+          "id" : "Orphanet:99111",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020442",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99111",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:445436005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020442",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:99111",
+            "MONDO:0020442",
+            "SCTID:445436005"
+          ]
+        }
+      ]
+    }
+  ]
+}

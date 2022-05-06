@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3b1a66bf02956652befdae0c41ab332db2194f51d653f18dcb11b413b0b02031",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200725",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016046",
+          "type" : "CLASS",
+          "lbl" : "familial clubfoot with or without associated lower limb anomalies"
+        },
+        {
+          "id" : "Orphanet:199315",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016046",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:199315",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN200725",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016046",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016046",
+            "Orphanet:199315",
+            "UMLS:CN200725"
+          ]
+        }
+      ]
+    }
+  ]
+}

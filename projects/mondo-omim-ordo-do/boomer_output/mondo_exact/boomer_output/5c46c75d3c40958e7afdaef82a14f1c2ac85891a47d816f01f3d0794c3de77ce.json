@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5c46c75d3c40958e7afdaef82a14f1c2ac85891a47d816f01f3d0794c3de77ce",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0042162",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021225",
+          "type" : "CLASS",
+          "lbl" : "uvea neoplasm"
+        },
+        {
+          "id" : "NCIT:C3436",
+          "type" : "CLASS",
+          "lbl" : "Uveal Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021225",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3436",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0042162",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021225",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021225",
+            "NCIT:C3436",
+            "UMLS:C0042162"
+          ]
+        }
+      ]
+    }
+  ]
+}

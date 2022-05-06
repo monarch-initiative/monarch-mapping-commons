@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:81d83df39704ea1a8b22c7615e971a6b8c5ecf59c8a8e19164f597064a37a2c9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2675767",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070301",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013591",
+          "type" : "CLASS",
+          "lbl" : "epiphyseal dysplasia, multiple, 6"
+        },
+        {
+          "id" : "OMIM:614135",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2675767",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013591",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013591",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614135",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070301",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013591",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013591",
+            "UMLS:C2675767",
+            "OMIM:614135",
+            "DOID:0070301"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e698efe33f0fcd6da2d074215f2c0663e25e9c37e65815cc94703352004e076f",
+      "nodes" : [
+        {
+          "id" : "MESH:D001523",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:150",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002025",
+          "type" : "CLASS",
+          "lbl" : "psychiatric disorder"
+        },
+        {
+          "id" : "NCIT:C2893",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D001523",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002025",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002025",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C2893",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:150",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002025",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D001523",
+            "MONDO:0002025",
+            "NCIT:C2893",
+            "DOID:150"
+          ]
+        }
+      ]
+    }
+  ]
+}

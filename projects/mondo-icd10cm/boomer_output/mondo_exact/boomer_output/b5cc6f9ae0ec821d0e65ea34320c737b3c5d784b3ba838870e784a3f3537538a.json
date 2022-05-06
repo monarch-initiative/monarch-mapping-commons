@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b5cc6f9ae0ec821d0e65ea34320c737b3c5d784b3ba838870e784a3f3537538a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN197320",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015030",
+          "type" : "CLASS",
+          "lbl" : "sclerosing perineurioma"
+        },
+        {
+          "id" : "Orphanet:100001",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015030",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100001",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN197320",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015030",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015030",
+            "Orphanet:100001",
+            "UMLS:CN197320"
+          ]
+        }
+      ]
+    }
+  ]
+}

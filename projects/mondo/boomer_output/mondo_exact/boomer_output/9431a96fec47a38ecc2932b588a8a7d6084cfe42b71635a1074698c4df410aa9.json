@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9431a96fec47a38ecc2932b588a8a7d6084cfe42b71635a1074698c4df410aa9",
+      "nodes" : [
+        {
+          "id" : "SCTID:92412003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0345749",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021530",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of subglottis"
+        },
+        {
+          "id" : "NCIT:C4427",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0345749",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021530",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021530",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4427",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92412003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021530",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0345749",
+            "MONDO:0021530",
+            "NCIT:C4427",
+            "SCTID:92412003"
+          ]
+        }
+      ]
+    }
+  ]
+}

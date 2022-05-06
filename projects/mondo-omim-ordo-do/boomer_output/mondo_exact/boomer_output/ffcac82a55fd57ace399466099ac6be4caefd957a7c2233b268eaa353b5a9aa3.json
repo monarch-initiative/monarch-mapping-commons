@@ -1,0 +1,130 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ffcac82a55fd57ace399466099ac6be4caefd957a7c2233b268eaa353b5a9aa3",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:D10-D36",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C3677",
+          "type" : "CLASS",
+          "lbl" : "Benign Neoplasm"
+        },
+        {
+          "id" : "SCTID:20376005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060072",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005165",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm"
+        },
+        {
+          "id" : "DOID:0060084",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060085",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:D10-D36",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005165",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060072",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005165",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005165",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3677",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:20376005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005165",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005165",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0060085",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005165",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0060084",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0060072",
+            "ICD10CM:D10-D36",
+            "NCIT:C3677",
+            "SCTID:20376005",
+            "MONDO:0005165"
+          ]
+        }
+      ]
+    }
+  ]
+}

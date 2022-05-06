@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:29a025d7dd8d4358d5507f0048e489943fd3b34fc293b1e1d999a3376b2947e8",
+      "nodes" : [
+        {
+          "id" : "SCTID:312898002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0730271",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015807",
+          "type" : "CLASS",
+          "lbl" : "myopic macular degeneration"
+        },
+        {
+          "id" : "Orphanet:178493",
+          "type" : "CLASS",
+          "lbl" : "Myopic macular degeneration"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0730271",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015807",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:312898002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015807",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015807",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:178493",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015807",
+            "UMLS:C0730271",
+            "SCTID:312898002",
+            "Orphanet:178493"
+          ]
+        }
+      ]
+    }
+  ]
+}

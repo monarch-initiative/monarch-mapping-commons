@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c7b1d1b08e863048040f8a2bf6870787cfb4fabcc36f8efb820e2a4608aa80d9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310935",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080121",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009636",
+          "type" : "CLASS",
+          "lbl" : "mitochondrial DNA depletion syndrome 3"
+        },
+        {
+          "id" : "UMLS:C3151513",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:279934",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:251880",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009636",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:251880",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009636",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:279934",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009636",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4310935",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080121",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009636",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3151513",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009636",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009636",
+            "Orphanet:279934",
+            "UMLS:C3151513",
+            "OMIM:251880",
+            "DOID:0080121"
+          ]
+        }
+      ]
+    }
+  ]
+}

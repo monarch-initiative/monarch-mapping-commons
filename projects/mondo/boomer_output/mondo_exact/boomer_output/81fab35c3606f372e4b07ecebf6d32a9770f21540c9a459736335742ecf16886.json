@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:81fab35c3606f372e4b07ecebf6d32a9770f21540c9a459736335742ecf16886",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN242144",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018706",
+          "type" : "CLASS",
+          "lbl" : "syndromic sensorineural deafness due to combined oxidative phosphorylation defect"
+        },
+        {
+          "id" : "Orphanet:457223",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018706",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:457223",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN242144",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018706",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:457223",
+            "MONDO:0018706",
+            "UMLS:CN242144"
+          ]
+        }
+      ]
+    }
+  ]
+}

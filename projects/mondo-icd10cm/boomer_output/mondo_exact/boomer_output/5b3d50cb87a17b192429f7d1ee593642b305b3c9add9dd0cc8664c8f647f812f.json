@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5b3d50cb87a17b192429f7d1ee593642b305b3c9add9dd0cc8664c8f647f812f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0085750",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5998",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003725",
+          "type" : "CLASS",
+          "lbl" : "breast adenosis"
+        },
+        {
+          "id" : "NCIT:C3484",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5998",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003725",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0085750",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003725",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003725",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3484",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5998",
+            "MONDO:0003725",
+            "UMLS:C0085750",
+            "NCIT:C3484"
+          ]
+        }
+      ]
+    }
+  ]
+}

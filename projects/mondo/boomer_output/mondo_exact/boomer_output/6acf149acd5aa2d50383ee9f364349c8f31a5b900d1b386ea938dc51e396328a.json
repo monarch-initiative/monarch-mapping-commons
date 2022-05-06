@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6acf149acd5aa2d50383ee9f364349c8f31a5b900d1b386ea938dc51e396328a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3274137",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024639",
+          "type" : "CLASS",
+          "lbl" : "gastric enterochromaffin cell serotonin-producing neuroendocrine tumor"
+        },
+        {
+          "id" : "NCIT:C27443",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024639",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27443",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3274137",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024639",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C27443",
+            "MONDO:0024639",
+            "UMLS:C3274137"
+          ]
+        }
+      ]
+    }
+  ]
+}

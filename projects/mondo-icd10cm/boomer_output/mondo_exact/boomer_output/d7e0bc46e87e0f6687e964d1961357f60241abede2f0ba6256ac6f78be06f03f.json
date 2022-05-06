@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d7e0bc46e87e0f6687e964d1961357f60241abede2f0ba6256ac6f78be06f03f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN197419",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015096",
+          "type" : "CLASS",
+          "lbl" : "familial hypofibrinogenemia"
+        },
+        {
+          "id" : "Orphanet:101041",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015096",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:101041",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN197419",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015096",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015096",
+            "Orphanet:101041",
+            "UMLS:CN197419"
+          ]
+        }
+      ]
+    }
+  ]
+}

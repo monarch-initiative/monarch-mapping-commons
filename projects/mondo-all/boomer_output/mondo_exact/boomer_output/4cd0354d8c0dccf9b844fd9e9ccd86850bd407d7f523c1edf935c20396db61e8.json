@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4cd0354d8c0dccf9b844fd9e9ccd86850bd407d7f523c1edf935c20396db61e8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336939",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:125",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001536",
+          "type" : "CLASS",
+          "lbl" : "vaginal leiomyoma"
+        },
+        {
+          "id" : "NCIT:C6373",
+          "type" : "CLASS",
+          "lbl" : "Vaginal Leiomyoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:125",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001536",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001536",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6373",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336939",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001536",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:125",
+            "MONDO:0001536",
+            "NCIT:C6373",
+            "UMLS:C1336939"
+          ]
+        }
+      ]
+    }
+  ]
+}

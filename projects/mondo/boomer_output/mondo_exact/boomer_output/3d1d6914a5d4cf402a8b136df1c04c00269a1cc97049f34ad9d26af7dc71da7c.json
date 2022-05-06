@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3d1d6914a5d4cf402a8b136df1c04c00269a1cc97049f34ad9d26af7dc71da7c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1707446",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006166",
+          "type" : "CLASS",
+          "lbl" : "columnar cell hyperplasia of the breast"
+        },
+        {
+          "id" : "NCIT:C54183",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006166",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C54183",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1707446",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006166",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006166",
+            "NCIT:C54183",
+            "UMLS:C1707446"
+          ]
+        }
+      ]
+    }
+  ]
+}

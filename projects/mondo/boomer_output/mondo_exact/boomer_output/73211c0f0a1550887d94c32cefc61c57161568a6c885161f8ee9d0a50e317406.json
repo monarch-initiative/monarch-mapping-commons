@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:73211c0f0a1550887d94c32cefc61c57161568a6c885161f8ee9d0a50e317406",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334505",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5487",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003466",
+          "type" : "CLASS",
+          "lbl" : "spindle cell synovial sarcoma"
+        },
+        {
+          "id" : "NCIT:C4277",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003466",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4277",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334505",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003466",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5487",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003466",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003466",
+            "NCIT:C4277",
+            "UMLS:C0334505",
+            "DOID:5487"
+          ]
+        }
+      ]
+    }
+  ]
+}

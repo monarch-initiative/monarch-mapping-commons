@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:aff60dec54c6cb3411766316a53a2241826c2ae3a7386c46ef2c1a18ea39d9e4",
+      "nodes" : [
+        {
+          "id" : "SCTID:74391003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:M08.4",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005251",
+          "type" : "CLASS",
+          "lbl" : "obsolete pauciarticular juvenile rheumatoid arthritis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:M08.4",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005251",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:74391003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005251",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:M08.4",
+            "MONDO:0005251",
+            "SCTID:74391003"
+          ]
+        }
+      ]
+    }
+  ]
+}

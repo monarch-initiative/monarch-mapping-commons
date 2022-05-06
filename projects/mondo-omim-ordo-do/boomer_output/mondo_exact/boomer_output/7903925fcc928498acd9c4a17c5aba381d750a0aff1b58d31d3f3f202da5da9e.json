@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7903925fcc928498acd9c4a17c5aba381d750a0aff1b58d31d3f3f202da5da9e",
+      "nodes" : [
+        {
+          "id" : "MESH:C538287",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015300",
+          "type" : "CLASS",
+          "lbl" : "cataract - microcornea syndrome"
+        },
+        {
+          "id" : "Orphanet:1377",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C538287",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015300",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1377",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015300",
+            "MESH:C538287",
+            "Orphanet:1377"
+          ]
+        }
+      ]
+    }
+  ]
+}

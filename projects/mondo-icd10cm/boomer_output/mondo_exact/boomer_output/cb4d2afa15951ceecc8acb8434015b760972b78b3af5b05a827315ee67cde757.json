@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cb4d2afa15951ceecc8acb8434015b760972b78b3af5b05a827315ee67cde757",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1510791",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2075",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002197",
+          "type" : "CLASS",
+          "lbl" : "minor vestibular glands adenoma"
+        },
+        {
+          "id" : "NCIT:C40301",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:2075",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002197",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002197",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40301",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1510791",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002197",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:2075",
+            "MONDO:0002197",
+            "NCIT:C40301",
+            "UMLS:C1510791"
+          ]
+        }
+      ]
+    }
+  ]
+}

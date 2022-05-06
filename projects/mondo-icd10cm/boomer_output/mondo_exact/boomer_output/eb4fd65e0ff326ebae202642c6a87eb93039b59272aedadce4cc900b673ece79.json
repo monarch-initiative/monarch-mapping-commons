@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eb4fd65e0ff326ebae202642c6a87eb93039b59272aedadce4cc900b673ece79",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3552553",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C567220",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012880",
+          "type" : "CLASS",
+          "lbl" : "hypogonadotropic hypogonadism 5 with or without anosmia"
+        },
+        {
+          "id" : "DOID:0090084",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:612370",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C567220",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012880",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0090084",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012880",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3552553",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012880",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012880",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:612370",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0090084",
+            "OMIM:612370",
+            "MONDO:0012880",
+            "MESH:C567220",
+            "UMLS:C3552553"
+          ]
+        }
+      ]
+    }
+  ]
+}

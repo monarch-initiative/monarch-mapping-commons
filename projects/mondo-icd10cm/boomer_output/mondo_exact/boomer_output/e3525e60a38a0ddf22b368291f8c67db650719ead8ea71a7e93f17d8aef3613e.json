@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e3525e60a38a0ddf22b368291f8c67db650719ead8ea71a7e93f17d8aef3613e",
+      "nodes" : [
+        {
+          "id" : "MESH:C537294",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1844406",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010599",
+          "type" : "CLASS",
+          "lbl" : "granulomas, congenital cerebral"
+        },
+        {
+          "id" : "OMIM:306300",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010599",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:306300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1844406",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010599",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537294",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010599",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010599",
+            "OMIM:306300",
+            "UMLS:C1844406",
+            "MESH:C537294"
+          ]
+        }
+      ]
+    }
+  ]
+}

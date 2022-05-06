@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8ca6f6c92468bd1252f1a942be844f0f2495fdf4774242dba6743679efaa142a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206975",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020071",
+          "type" : "CLASS",
+          "lbl" : "infantile epilepsy syndrome"
+        },
+        {
+          "id" : "Orphanet:98258",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206975",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020071",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020071",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98258",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN206975",
+            "MONDO:0020071",
+            "Orphanet:98258"
+          ]
+        }
+      ]
+    }
+  ]
+}

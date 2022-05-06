@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9f7db4f78e3213dcc9d900756ef10c16ce8ef248e7c808db677100cf0b4cc8bf",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3273942",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006233",
+          "type" : "CLASS",
+          "lbl" : "gonadal teratoma"
+        },
+        {
+          "id" : "NCIT:C98291",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3273942",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006233",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006233",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C98291",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006233",
+            "UMLS:C3273942",
+            "NCIT:C98291"
+          ]
+        }
+      ]
+    }
+  ]
+}

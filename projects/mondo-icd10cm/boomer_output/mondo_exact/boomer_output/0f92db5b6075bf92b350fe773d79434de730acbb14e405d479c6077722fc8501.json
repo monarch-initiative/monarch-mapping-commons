@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0f92db5b6075bf92b350fe773d79434de730acbb14e405d479c6077722fc8501",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237645",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018609",
+          "type" : "CLASS",
+          "lbl" : "syndromic hereditary optic neuropathy"
+        },
+        {
+          "id" : "Orphanet:441434",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018609",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:441434",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237645",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018609",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018609",
+            "Orphanet:441434",
+            "UMLS:CN237645"
+          ]
+        }
+      ]
+    }
+  ]
+}

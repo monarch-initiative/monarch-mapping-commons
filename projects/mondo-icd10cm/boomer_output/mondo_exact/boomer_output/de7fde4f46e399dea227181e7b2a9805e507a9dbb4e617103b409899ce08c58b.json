@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:de7fde4f46e399dea227181e7b2a9805e507a9dbb4e617103b409899ce08c58b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335765",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024341",
+          "type" : "CLASS",
+          "lbl" : "retinal cell neoplasm"
+        },
+        {
+          "id" : "NCIT:C7061",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335765",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024341",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0024341",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7061",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1335765",
+            "MONDO:0024341",
+            "NCIT:C7061"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e19362fbf2cd0506045f27fb899854c36e2b81f081bf4e0af7923a29463e195e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3642324",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5726",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003611",
+          "type" : "CLASS",
+          "lbl" : "uterine ligament papillary cystadenoma associated with von Hippel-Lindau disease"
+        },
+        {
+          "id" : "NCIT:C40142",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3642324",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003611",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003611",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40142",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5726",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003611",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3642324",
+            "MONDO:0003611",
+            "NCIT:C40142",
+            "DOID:5726"
+          ]
+        }
+      ]
+    }
+  ]
+}

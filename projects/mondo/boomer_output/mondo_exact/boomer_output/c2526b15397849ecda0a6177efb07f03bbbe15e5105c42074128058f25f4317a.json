@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c2526b15397849ecda0a6177efb07f03bbbe15e5105c42074128058f25f4317a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN199218",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015283",
+          "type" : "CLASS",
+          "lbl" : "maternally-inherited cardiomyopathy and hearing loss"
+        },
+        {
+          "id" : "Orphanet:1349",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015283",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1349",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN199218",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015283",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015283",
+            "Orphanet:1349",
+            "UMLS:CN199218"
+          ]
+        }
+      ]
+    }
+  ]
+}

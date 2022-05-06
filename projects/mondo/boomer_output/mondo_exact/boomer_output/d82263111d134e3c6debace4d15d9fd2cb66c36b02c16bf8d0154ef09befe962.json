@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d82263111d134e3c6debace4d15d9fd2cb66c36b02c16bf8d0154ef09befe962",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1837615",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:608647",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012088",
+          "type" : "CLASS",
+          "lbl" : "primary ciliary dyskinesia 5"
+        },
+        {
+          "id" : "DOID:0110617",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C563886",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C563886",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012088",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110617",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012088",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1837615",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012088",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012088",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608647",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0110617",
+            "OMIM:608647",
+            "MONDO:0012088",
+            "UMLS:C1837615",
+            "MESH:C563886"
+          ]
+        }
+      ]
+    }
+  ]
+}

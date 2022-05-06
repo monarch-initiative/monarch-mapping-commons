@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d2d5c3e1c7b37bbc3d110d33794dc13f07685f2f9f8ed902b74a479f7ef8d643",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201629",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016547",
+          "type" : "CLASS",
+          "lbl" : "Beckwith-Wiedemann syndrome due to NSD1 mutation"
+        },
+        {
+          "id" : "Orphanet:238613",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016547",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:238613",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201629",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016547",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016547",
+            "Orphanet:238613",
+            "UMLS:CN201629"
+          ]
+        }
+      ]
+    }
+  ]
+}

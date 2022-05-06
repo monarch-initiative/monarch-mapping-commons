@@ -1,0 +1,76 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:306196794f13de69a5165a1f373995c61703beb44d015b4b51b7eefc84b7140c",
+      "nodes" : [
+        {
+          "id" : "DOID:0080276",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0033044",
+          "type" : "CLASS",
+          "lbl" : "Meckel syndrome 13"
+        },
+        {
+          "id" : "OMIM:617562",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080253",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0033044",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0080253",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0033044",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617562",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080276",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0033044",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0033044",
+            "OMIM:617562",
+            "DOID:0080276"
+          ]
+        }
+      ]
+    }
+  ]
+}

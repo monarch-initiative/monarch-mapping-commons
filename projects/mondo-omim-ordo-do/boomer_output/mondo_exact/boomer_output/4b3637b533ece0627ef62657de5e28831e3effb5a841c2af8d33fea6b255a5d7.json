@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4b3637b533ece0627ef62657de5e28831e3effb5a841c2af8d33fea6b255a5d7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200370",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015788",
+          "type" : "CLASS",
+          "lbl" : "symptomatic form of hemophilia B in female carriers"
+        },
+        {
+          "id" : "Orphanet:177929",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN200370",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015788",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015788",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:177929",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN200370",
+            "MONDO:0015788",
+            "Orphanet:177929"
+          ]
+        }
+      ]
+    }
+  ]
+}

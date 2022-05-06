@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:649d3a6f16ff1828cc648ece74f78cde6232628d6ab44f7fb946f78f552a305c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN248514",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0054817",
+          "type" : "CLASS",
+          "lbl" : "leukodystrophy, hypomyelinating, 17"
+        },
+        {
+          "id" : "OMIM:618006",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0054817",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:618006",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN248514",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0054817",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0054817",
+            "OMIM:618006",
+            "UMLS:CN248514"
+          ]
+        }
+      ]
+    }
+  ]
+}

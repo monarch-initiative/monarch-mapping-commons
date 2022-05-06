@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:568a4c1dde7515e57af2f78c6c18296c534bab62d9478ba8c4adf91c19a71e74",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332206",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5825",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003660",
+          "type" : "CLASS",
+          "lbl" : "adult lymphoma"
+        },
+        {
+          "id" : "NCIT:C7587",
+          "type" : "CLASS",
+          "lbl" : "Adult Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5825",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003660",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003660",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003660",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7587",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5825",
+            "MONDO:0003660",
+            "UMLS:C1332206",
+            "NCIT:C7587"
+          ]
+        }
+      ]
+    }
+  ]
+}

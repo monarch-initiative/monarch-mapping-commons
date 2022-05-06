@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0b46e93526612f0b333a9b523df26abe680d599c052c07cbbcfd8aa8825168f3",
+      "nodes" : [
+        {
+          "id" : "MESH:C537978",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2931683",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011690",
+          "type" : "CLASS",
+          "lbl" : "Camurati-Engelmann disease, type 2"
+        },
+        {
+          "id" : "OMIM:606631",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011690",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:606631",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2931683",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011690",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537978",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011690",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011690",
+            "OMIM:606631",
+            "UMLS:C2931683",
+            "MESH:C537978"
+          ]
+        }
+      ]
+    }
+  ]
+}

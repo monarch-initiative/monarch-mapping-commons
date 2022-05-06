@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ac728021b5d4c62af9bc17363cc385bc809f2b882db37c42a2ee136595ca6e2f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335419",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6856",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004015",
+          "type" : "CLASS",
+          "lbl" : "pineal region teratoma"
+        },
+        {
+          "id" : "NCIT:C6753",
+          "type" : "CLASS",
+          "lbl" : "Pineal Region Teratoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335419",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004015",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004015",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6753",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6856",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004015",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1335419",
+            "MONDO:0004015",
+            "NCIT:C6753",
+            "DOID:6856"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:497a822e386dc0d927f327184f6e5edbd2e7c786693372f990a82838fbdc2bc8",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205357",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018951",
+          "type" : "CLASS",
+          "lbl" : "distal myopathy with vocal cord weakness"
+        },
+        {
+          "id" : "Orphanet:600",
+          "type" : "CLASS",
+          "lbl" : "Vocal cord and pharyngeal distal myopathy"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN205357",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018951",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018951",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN205357",
+            "MONDO:0018951",
+            "Orphanet:600"
+          ]
+        }
+      ]
+    }
+  ]
+}

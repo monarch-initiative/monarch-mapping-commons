@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:730d56be82aeed83da2de7b8bcac5d81dacf779eb8d6dbfa58c1d8e75e78d2eb",
+      "nodes" : [
+        {
+          "id" : "SCTID:715343000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018541",
+          "type" : "CLASS",
+          "lbl" : "familial hypoaldosteronism"
+        },
+        {
+          "id" : "UMLS:CN205074",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4275180",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:427",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4275180",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018541",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018541",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN205074",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018541",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:427",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:715343000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018541",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018541",
+            "UMLS:C4275180",
+            "Orphanet:427",
+            "SCTID:715343000"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:65fa01aa5011f12c5bb114f58c7f182c9bfe88e33155166cfbc7420174eedc82",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479599",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0054591",
+          "type" : "CLASS",
+          "lbl" : "Stankiewicz-Isidor syndrome"
+        },
+        {
+          "id" : "OMIM:617516",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0054591",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617516",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4479599",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0054591",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:617516",
+            "MONDO:0054591",
+            "UMLS:C4479599"
+          ]
+        }
+      ]
+    }
+  ]
+}

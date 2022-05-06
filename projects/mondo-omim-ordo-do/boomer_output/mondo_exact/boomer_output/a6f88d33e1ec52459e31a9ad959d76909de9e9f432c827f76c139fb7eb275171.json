@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a6f88d33e1ec52459e31a9ad959d76909de9e9f432c827f76c139fb7eb275171",
+      "nodes" : [
+        {
+          "id" : "OMIM:300908",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010480",
+          "type" : "CLASS",
+          "lbl" : "anemia, nonspherocytic hemolytic, due to G6PD deficiency"
+        },
+        {
+          "id" : "UMLS:C2720289",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C567533",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:466026",
+          "type" : "CLASS",
+          "lbl" : "Class I glucose-6-phosphate dehydrogenase deficiency"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2720289",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010480",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010480",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:466026",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010480",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300908",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567533",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010480",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C567533",
+            "MONDO:0010480",
+            "UMLS:C2720289",
+            "Orphanet:466026",
+            "OMIM:300908"
+          ]
+        }
+      ]
+    }
+  ]
+}

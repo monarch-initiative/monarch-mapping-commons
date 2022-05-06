@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:abcc4f0d077e1f1e8e702d9cc784889f6cb1583f0b5322ed3c0c80126a64ecda",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1837811",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012067",
+          "type" : "CLASS",
+          "lbl" : "asthma-related traits, susceptibility to, 2"
+        },
+        {
+          "id" : "OMIM:608584",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012067",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608584",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1837811",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012067",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012067",
+            "OMIM:608584",
+            "UMLS:C1837811"
+          ]
+        }
+      ]
+    }
+  ]
+}

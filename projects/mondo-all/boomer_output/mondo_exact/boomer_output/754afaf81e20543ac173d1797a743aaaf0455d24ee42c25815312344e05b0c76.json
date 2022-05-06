@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:754afaf81e20543ac173d1797a743aaaf0455d24ee42c25815312344e05b0c76",
+      "nodes" : [
+        {
+          "id" : "MESH:C565425",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1855468",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009546",
+          "type" : "CLASS",
+          "lbl" : "macrosomia adiposa congenita"
+        },
+        {
+          "id" : "OMIM:248100",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565425",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009546",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009546",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:248100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1855468",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009546",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009546",
+            "MESH:C565425",
+            "OMIM:248100",
+            "UMLS:C1855468"
+          ]
+        }
+      ]
+    }
+  ]
+}

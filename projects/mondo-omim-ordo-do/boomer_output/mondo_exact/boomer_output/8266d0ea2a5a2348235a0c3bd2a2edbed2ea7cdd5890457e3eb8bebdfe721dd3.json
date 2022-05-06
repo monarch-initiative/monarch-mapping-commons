@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8266d0ea2a5a2348235a0c3bd2a2edbed2ea7cdd5890457e3eb8bebdfe721dd3",
+      "nodes" : [
+        {
+          "id" : "MESH:D020300",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN236663",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005049",
+          "type" : "CLASS",
+          "lbl" : "intracranial hemorrhage"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D020300",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005049",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN236663",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005049",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D020300",
+            "MONDO:0005049",
+            "UMLS:CN236663"
+          ]
+        }
+      ]
+    }
+  ]
+}

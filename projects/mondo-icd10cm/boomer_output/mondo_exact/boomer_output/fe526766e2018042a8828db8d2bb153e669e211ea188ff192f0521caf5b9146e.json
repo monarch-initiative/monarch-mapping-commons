@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fe526766e2018042a8828db8d2bb153e669e211ea188ff192f0521caf5b9146e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4454",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003007",
+          "type" : "CLASS",
+          "lbl" : "childhood kidney cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C6568",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6568",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4454",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003007",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003007",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6568",
+            "MONDO:0003007",
+            "DOID:4454",
+            "UMLS:C1333001"
+          ]
+        }
+      ]
+    }
+  ]
+}

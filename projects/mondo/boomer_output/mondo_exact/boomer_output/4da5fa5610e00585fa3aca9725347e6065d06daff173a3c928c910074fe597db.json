@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4da5fa5610e00585fa3aca9725347e6065d06daff173a3c928c910074fe597db",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479651",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060507",
+          "type" : "CLASS",
+          "lbl" : "retinal dystrophy with or without macular staphyloma"
+        },
+        {
+          "id" : "OMIM:617547",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0060507",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617547",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4479651",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060507",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0060507",
+            "OMIM:617547",
+            "UMLS:C4479651"
+          ]
+        }
+      ]
+    }
+  ]
+}

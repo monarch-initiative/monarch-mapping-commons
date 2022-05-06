@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:34112a4b85ae9a0ed50dc04780374b0262b14a12a9cf30d1b015eac4c2a4ea8d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4510369",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:91136",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:724099000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019604",
+          "type" : "CLASS",
+          "lbl" : "acquired monoclonal Ig light chain-associated Fanconi syndrome"
+        },
+        {
+          "id" : "UMLS:CN206457",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019604",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:91136",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4510369",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019604",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:724099000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019604",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019604",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN206457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4510369",
+            "MONDO:0019604",
+            "Orphanet:91136",
+            "SCTID:724099000"
+          ]
+        }
+      ]
+    }
+  ]
+}

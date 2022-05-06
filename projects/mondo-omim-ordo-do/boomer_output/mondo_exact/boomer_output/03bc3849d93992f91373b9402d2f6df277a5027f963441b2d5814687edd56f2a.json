@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:03bc3849d93992f91373b9402d2f6df277a5027f963441b2d5814687edd56f2a",
+      "nodes" : [
+        {
+          "id" : "SCTID:90496008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007554",
+          "type" : "CLASS",
+          "lbl" : "epidermolysis bullosa simplex 1B, generalized intermediate"
+        },
+        {
+          "id" : "Orphanet:79399",
+          "type" : "CLASS",
+          "lbl" : "Autosomal dominant generalized epidermolysis bullosa simplex, intermediate form"
+        },
+        {
+          "id" : "OMIM:131900",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007554",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:131900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:90496008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007554",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007554",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79399",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:131900",
+            "MONDO:0007554",
+            "SCTID:90496008",
+            "Orphanet:79399"
+          ]
+        }
+      ]
+    }
+  ]
+}

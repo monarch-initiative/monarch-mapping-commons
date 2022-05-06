@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4f58a3ca0554e5443bf5340d0ba750ff474c0ff7dbd76422c6af7fa129fd4ff9",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204468",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018107",
+          "type" : "CLASS",
+          "lbl" : "idiopathic recurrent and disabling cutaneous herpes"
+        },
+        {
+          "id" : "Orphanet:35061",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN204468",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018107",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018107",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:35061",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018107",
+            "UMLS:CN204468",
+            "Orphanet:35061"
+          ]
+        }
+      ]
+    }
+  ]
+}

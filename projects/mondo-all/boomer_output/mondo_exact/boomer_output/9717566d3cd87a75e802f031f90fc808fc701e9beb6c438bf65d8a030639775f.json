@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9717566d3cd87a75e802f031f90fc808fc701e9beb6c438bf65d8a030639775f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN776941",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018787",
+          "type" : "CLASS",
+          "lbl" : "genetic cerebral small vessel disease"
+        },
+        {
+          "id" : "Orphanet:477754",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN776941",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018787",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018787",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:477754",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018787",
+            "UMLS:CN776941",
+            "Orphanet:477754"
+          ]
+        }
+      ]
+    }
+  ]
+}

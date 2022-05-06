@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:64b2ef0cbca1eeec70bf9425e73b26a474aa9dca77e36b00b771d141a2b29276",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207046",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020197",
+          "type" : "CLASS",
+          "lbl" : "EEC syndrome and related syndrome"
+        },
+        {
+          "id" : "Orphanet:98609",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN207046",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020197",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020197",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98609",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN207046",
+            "MONDO:0020197",
+            "Orphanet:98609"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:57315dc9fdb66ff6bfe396662d66a0b8169afe228b15b61b489e48b55ffc1f56",
+      "nodes" : [
+        {
+          "id" : "OMIM:613659",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001056",
+          "type" : "CLASS",
+          "lbl" : "gastric cancer"
+        },
+        {
+          "id" : "DOID:10534",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C9331",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:C16",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0001056",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9331",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001056",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613659",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10534",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001056",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:C16",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001056",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:10534",
+            "NCIT:C9331",
+            "ICD10CM:C16",
+            "OMIM:613659",
+            "MONDO:0001056"
+          ]
+        }
+      ]
+    }
+  ]
+}

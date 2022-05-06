@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9495c09b9103e32e2965fbcb93c22e4723842fca9fbd1b09c7ca99f7f3f3174c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN230280",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018929",
+          "type" : "CLASS",
+          "lbl" : "medial condensing osteitis of the clavicle"
+        },
+        {
+          "id" : "Orphanet:57196",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018929",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:57196",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN230280",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018929",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:57196",
+            "MONDO:0018929",
+            "UMLS:CN230280"
+          ]
+        }
+      ]
+    }
+  ]
+}

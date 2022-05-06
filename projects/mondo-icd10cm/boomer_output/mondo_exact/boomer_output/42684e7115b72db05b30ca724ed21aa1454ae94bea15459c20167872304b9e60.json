@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:42684e7115b72db05b30ca724ed21aa1454ae94bea15459c20167872304b9e60",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225385",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014570",
+          "type" : "CLASS",
+          "lbl" : "lethal congenital contracture syndrome 8"
+        },
+        {
+          "id" : "OMIM:616287",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014570",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616287",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225385",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014570",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014570",
+            "OMIM:616287",
+            "UMLS:C4225385"
+          ]
+        }
+      ]
+    }
+  ]
+}

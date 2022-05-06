@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b7d358ce93c71df913a45837087a2f8fbc4b7f732baad22caa49af801ec89f94",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332633",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006119",
+          "type" : "CLASS",
+          "lbl" : "breast mucosa-associated lymphoid tissue lymphoma"
+        },
+        {
+          "id" : "NCIT:C35688",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006119",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35688",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332633",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006119",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006119",
+            "NCIT:C35688",
+            "UMLS:C1332633"
+          ]
+        }
+      ]
+    }
+  ]
+}

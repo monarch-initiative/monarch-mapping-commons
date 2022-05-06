@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:23ba15ee37347024f054ae35f2f54afb00c58532ef84d5f3ab2b268f146be47b",
+      "nodes" : [
+        {
+          "id" : "SCTID:204552001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:Q31.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015395",
+          "type" : "CLASS",
+          "lbl" : "congenital subglottic stenosis"
+        },
+        {
+          "id" : "Orphanet:141121",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015395",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:141121",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:Q31.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015395",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:204552001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015395",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:141121",
+            "MONDO:0015395",
+            "ICD10CM:Q31.1",
+            "SCTID:204552001"
+          ]
+        }
+      ]
+    }
+  ]
+}

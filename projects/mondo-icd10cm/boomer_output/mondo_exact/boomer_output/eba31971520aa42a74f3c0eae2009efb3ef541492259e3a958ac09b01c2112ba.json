@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eba31971520aa42a74f3c0eae2009efb3ef541492259e3a958ac09b01c2112ba",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227203",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017758",
+          "type" : "CLASS",
+          "lbl" : "disorder of vitamin and non-protein cofactor absorption and transport"
+        },
+        {
+          "id" : "Orphanet:309827",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017758",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309827",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227203",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017758",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017758",
+            "Orphanet:309827",
+            "UMLS:CN227203"
+          ]
+        }
+      ]
+    }
+  ]
+}

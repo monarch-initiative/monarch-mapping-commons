@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2b2a1cfba4a5ed0fb7c0fbbb399ea120b97b36b0e5aa736dc2ff7f5712516006",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2826783",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006164",
+          "type" : "CLASS",
+          "lbl" : "colorectal sessile serrated adenoma/polyp"
+        },
+        {
+          "id" : "NCIT:C83176",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006164",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C83176",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2826783",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006164",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006164",
+            "NCIT:C83176",
+            "UMLS:C2826783"
+          ]
+        }
+      ]
+    }
+  ]
+}

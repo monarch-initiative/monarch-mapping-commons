@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f80f894e05a8c4fddf6b977740b5ae98c018b333e6b9d1e3f6e56482d7da7686",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310735",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:8000013",
+          "type" : "CLASS",
+          "lbl" : "portal hypertension, noncirrhotic, 1"
+        },
+        {
+          "id" : "OMIM:617068",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:8000013",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617068",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310735",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:8000013",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:617068",
+            "MONDO:8000013",
+            "UMLS:C4310735"
+          ]
+        }
+      ]
+    }
+  ]
+}

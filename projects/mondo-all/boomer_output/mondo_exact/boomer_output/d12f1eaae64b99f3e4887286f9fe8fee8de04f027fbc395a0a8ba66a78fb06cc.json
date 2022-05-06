@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d12f1eaae64b99f3e4887286f9fe8fee8de04f027fbc395a0a8ba66a78fb06cc",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3538951",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009633",
+          "type" : "CLASS",
+          "lbl" : "microspherophakia and/or megalocornea, with ectopia lentis and with or without secondary glaucoma"
+        },
+        {
+          "id" : "OMIM:251750",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3538951",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009633",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009633",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:251750",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009633",
+            "UMLS:C3538951",
+            "OMIM:251750"
+          ]
+        }
+      ]
+    }
+  ]
+}

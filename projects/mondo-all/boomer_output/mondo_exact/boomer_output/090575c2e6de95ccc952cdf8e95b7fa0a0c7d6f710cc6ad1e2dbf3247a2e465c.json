@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:090575c2e6de95ccc952cdf8e95b7fa0a0c7d6f710cc6ad1e2dbf3247a2e465c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111463",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014114",
+          "type" : "CLASS",
+          "lbl" : "cardiofaciocutaneous syndrome 4"
+        },
+        {
+          "id" : "OMIM:615280",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0111463",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014114",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3809007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014114",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014114",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615280",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014114",
+            "DOID:0111463",
+            "UMLS:C3809007",
+            "OMIM:615280"
+          ]
+        }
+      ]
+    }
+  ]
+}

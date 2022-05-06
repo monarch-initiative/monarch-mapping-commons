@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:af28bfc6db5f6ca051790a10161924f5382e4f82e9a180b5cc4eae3cffb8772b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4540265",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111212",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060585",
+          "type" : "CLASS",
+          "lbl" : "neuronopathy, distal hereditary motor, type 9"
+        },
+        {
+          "id" : "OMIM:617721",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0111212",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060585",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4540265",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060585",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060585",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617721",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0060585",
+            "DOID:0111212",
+            "OMIM:617721",
+            "UMLS:C4540265"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bed03a5a36c57adc212fb099e8884040401304a4cf5e219faef2befc466c5d01",
+      "nodes" : [
+        {
+          "id" : "MESH:C538230",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0334302",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021659",
+          "type" : "CLASS",
+          "lbl" : "combined carcinoid and adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C4139",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021659",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4139",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538230",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021659",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334302",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021659",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4139",
+            "MONDO:0021659",
+            "MESH:C538230",
+            "UMLS:C0334302"
+          ]
+        }
+      ]
+    }
+  ]
+}

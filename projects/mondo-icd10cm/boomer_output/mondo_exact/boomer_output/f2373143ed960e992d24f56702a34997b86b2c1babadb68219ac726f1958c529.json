@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f2373143ed960e992d24f56702a34997b86b2c1babadb68219ac726f1958c529",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0278595",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3516",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002676",
+          "type" : "CLASS",
+          "lbl" : "adult fibrosarcoma"
+        },
+        {
+          "id" : "NCIT:C7809",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0278595",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002676",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002676",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7809",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3516",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002676",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0278595",
+            "MONDO:0002676",
+            "NCIT:C7809",
+            "DOID:3516"
+          ]
+        }
+      ]
+    }
+  ]
+}

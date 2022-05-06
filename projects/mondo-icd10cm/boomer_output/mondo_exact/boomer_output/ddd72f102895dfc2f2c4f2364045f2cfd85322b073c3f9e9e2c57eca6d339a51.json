@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ddd72f102895dfc2f2c4f2364045f2cfd85322b073c3f9e9e2c57eca6d339a51",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0153661",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003274",
+          "type" : "CLASS",
+          "lbl" : "thoracic cancer"
+        },
+        {
+          "id" : "NCIT:C3576",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:188361007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5093",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003274",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3576",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5093",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003274",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0153661",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003274",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:188361007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003274",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0153661",
+            "MONDO:0003274",
+            "NCIT:C3576",
+            "SCTID:188361007",
+            "DOID:5093"
+          ]
+        }
+      ]
+    }
+  ]
+}

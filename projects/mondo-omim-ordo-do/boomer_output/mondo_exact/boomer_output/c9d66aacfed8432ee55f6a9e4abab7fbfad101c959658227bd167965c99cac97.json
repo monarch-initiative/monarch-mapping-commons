@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c9d66aacfed8432ee55f6a9e4abab7fbfad101c959658227bd167965c99cac97",
+      "nodes" : [
+        {
+          "id" : "MESH:C564025",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1839022",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010774",
+          "type" : "CLASS",
+          "lbl" : "striatonigral degeneration, infantile, mitochondrial"
+        },
+        {
+          "id" : "OMIM:500003",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1839022",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010774",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010774",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:500003",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564025",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010774",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1839022",
+            "MONDO:0010774",
+            "OMIM:500003",
+            "MESH:C564025"
+          ]
+        }
+      ]
+    }
+  ]
+}

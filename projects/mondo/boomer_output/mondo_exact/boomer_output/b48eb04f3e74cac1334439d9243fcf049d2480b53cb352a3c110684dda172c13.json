@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b48eb04f3e74cac1334439d9243fcf049d2480b53cb352a3c110684dda172c13",
+      "nodes" : [
+        {
+          "id" : "SCTID:254435009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0345555",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021329",
+          "type" : "CLASS",
+          "lbl" : "carcinoma of soft palate"
+        },
+        {
+          "id" : "NCIT:C8395",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0345555",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021329",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:254435009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021329",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021329",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8395",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0345555",
+            "MONDO:0021329",
+            "SCTID:254435009",
+            "NCIT:C8395"
+          ]
+        }
+      ]
+    }
+  ]
+}

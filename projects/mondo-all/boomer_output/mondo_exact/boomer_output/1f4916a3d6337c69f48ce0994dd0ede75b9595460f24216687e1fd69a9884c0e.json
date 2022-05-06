@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1f4916a3d6337c69f48ce0994dd0ede75b9595460f24216687e1fd69a9884c0e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1851549",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007558",
+          "type" : "CLASS",
+          "lbl" : "benign occipital epilepsy"
+        },
+        {
+          "id" : "Orphanet:25968",
+          "type" : "CLASS",
+          "lbl" : "Benign occipital epilepsy"
+        },
+        {
+          "id" : "OMIM:132090",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007558",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:25968",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1851549",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007558",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007558",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:132090",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007558",
+            "Orphanet:25968",
+            "UMLS:C1851549",
+            "OMIM:132090"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c9c19c791249527fbf125dc75605ebc4ddaf98ce2eaa714700e60b82943a21d9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1377909",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5973",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003716",
+          "type" : "CLASS",
+          "lbl" : "renal pelvis papillary urothelial carcinoma"
+        },
+        {
+          "id" : "NCIT:C6148",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1377909",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003716",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003716",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6148",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5973",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003716",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003716",
+            "UMLS:C1377909",
+            "NCIT:C6148",
+            "DOID:5973"
+          ]
+        }
+      ]
+    }
+  ]
+}

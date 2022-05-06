@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:33b03a24b343ccbfc28117d66ad61017a0edf6eeecab324874046b7b9517d2bc",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336048",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6872",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006426",
+          "type" : "CLASS",
+          "lbl" : "spinal cord primitive neuroectodermal tumor"
+        },
+        {
+          "id" : "NCIT:C5406",
+          "type" : "CLASS",
+          "lbl" : "Spinal Cord Embryonal Tumor, Not Otherwise Specified"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6872",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006426",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006426",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5406",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336048",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006426",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C5406",
+            "MONDO:0006426",
+            "DOID:6872",
+            "UMLS:C1336048"
+          ]
+        }
+      ]
+    }
+  ]
+}

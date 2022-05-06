@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ef438d5f30073748c462bd5a76da0a139c69fe0704fdf17edb4e2046bc00fa56",
+      "nodes" : [
+        {
+          "id" : "MESH:C566946",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1969478",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012051",
+          "type" : "CLASS",
+          "lbl" : "periodontitis, aggressive, 2"
+        },
+        {
+          "id" : "OMIM:608526",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1969478",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012051",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566946",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012051",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012051",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608526",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012051",
+            "UMLS:C1969478",
+            "MESH:C566946",
+            "OMIM:608526"
+          ]
+        }
+      ]
+    }
+  ]
+}

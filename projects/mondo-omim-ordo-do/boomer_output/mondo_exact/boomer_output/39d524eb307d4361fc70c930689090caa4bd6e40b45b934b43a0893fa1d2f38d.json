@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:39d524eb307d4361fc70c930689090caa4bd6e40b45b934b43a0893fa1d2f38d",
+      "nodes" : [
+        {
+          "id" : "MESH:C563724",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1836255",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012266",
+          "type" : "CLASS",
+          "lbl" : "preeclampsia/eclampsia 4"
+        },
+        {
+          "id" : "OMIM:609404",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012266",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609404",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563724",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012266",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1836255",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012266",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:609404",
+            "MONDO:0012266",
+            "MESH:C563724",
+            "UMLS:C1836255"
+          ]
+        }
+      ]
+    }
+  ]
+}

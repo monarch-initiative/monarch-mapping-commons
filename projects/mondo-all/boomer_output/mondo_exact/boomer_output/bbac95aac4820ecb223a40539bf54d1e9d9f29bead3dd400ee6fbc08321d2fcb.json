@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bbac95aac4820ecb223a40539bf54d1e9d9f29bead3dd400ee6fbc08321d2fcb",
+      "nodes" : [
+        {
+          "id" : "MONDO:0019998",
+          "type" : "CLASS",
+          "lbl" : "gastroduodenal malformation"
+        },
+        {
+          "id" : "UMLS:CN226627",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:108965",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:97944",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015210",
+          "type" : "CLASS",
+          "lbl" : "syndromic gastroduodenal malformation"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015210",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:108965",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015210",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0019998",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226627",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015210",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019998",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:97944",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015210",
+            "Orphanet:108965",
+            "UMLS:CN226627"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "MONDO:0019998",
+            "Orphanet:97944"
+          ]
+        }
+      ]
+    }
+  ]
+}

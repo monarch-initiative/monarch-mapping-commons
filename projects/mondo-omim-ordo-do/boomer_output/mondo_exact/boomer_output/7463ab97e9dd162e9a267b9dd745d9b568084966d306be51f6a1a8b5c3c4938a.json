@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7463ab97e9dd162e9a267b9dd745d9b568084966d306be51f6a1a8b5c3c4938a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1511049",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6518",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003909",
+          "type" : "CLASS",
+          "lbl" : "Bartholin gland adenomyoma"
+        },
+        {
+          "id" : "NCIT:C40300",
+          "type" : "CLASS",
+          "lbl" : "Bartholin Gland Adenomyoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6518",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003909",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1511049",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003909",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003909",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6518",
+            "MONDO:0003909",
+            "UMLS:C1511049",
+            "NCIT:C40300"
+          ]
+        }
+      ]
+    }
+  ]
+}

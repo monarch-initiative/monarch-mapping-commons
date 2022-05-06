@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:469ede12b7b3f53e4d2d3e8e2bb9cb1dfb1fd1cbe4e1397103ebdbf4ae5200a7",
+      "nodes" : [
+        {
+          "id" : "MESH:C566292",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1862956",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007102",
+          "type" : "CLASS",
+          "lbl" : "amyotrophic dystonic paraplegia"
+        },
+        {
+          "id" : "OMIM:105300",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007102",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:105300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566292",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007102",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1862956",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007102",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007102",
+            "OMIM:105300",
+            "MESH:C566292",
+            "UMLS:C1862956"
+          ]
+        }
+      ]
+    }
+  ]
+}

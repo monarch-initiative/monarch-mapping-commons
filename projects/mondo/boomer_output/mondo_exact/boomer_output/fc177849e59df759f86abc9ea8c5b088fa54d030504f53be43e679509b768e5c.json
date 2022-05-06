@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fc177849e59df759f86abc9ea8c5b088fa54d030504f53be43e679509b768e5c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200394",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015801",
+          "type" : "CLASS",
+          "lbl" : "hemorrhagic disease due to alpha-1-antitrypsin Pittsburgh mutation"
+        },
+        {
+          "id" : "Orphanet:178396",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN200394",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015801",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015801",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:178396",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015801",
+            "Orphanet:178396",
+            "UMLS:CN200394"
+          ]
+        }
+      ]
+    }
+  ]
+}

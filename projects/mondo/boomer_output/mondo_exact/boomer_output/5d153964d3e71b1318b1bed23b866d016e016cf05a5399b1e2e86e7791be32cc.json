@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5d153964d3e71b1318b1bed23b866d016e016cf05a5399b1e2e86e7791be32cc",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553264",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110986",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013824",
+          "type" : "CLASS",
+          "lbl" : "Joubert syndrome 17"
+        },
+        {
+          "id" : "OMIM:614615",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110986",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013824",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3553264",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013824",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013824",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614615",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013824",
+            "DOID:0110986",
+            "UMLS:C3553264",
+            "OMIM:614615"
+          ]
+        }
+      ]
+    }
+  ]
+}

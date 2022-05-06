@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7f613409f1287e3b2f9d71be5e1834a6301c3063bef37057c51fb615d57f00cd",
+      "nodes" : [
+        {
+          "id" : "MESH:D011151",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:82675004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008288",
+          "type" : "CLASS",
+          "lbl" : "popliteal cyst"
+        },
+        {
+          "id" : "OMIM:175750",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008288",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:175750",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D011151",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008288",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:82675004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008288",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008288",
+            "OMIM:175750",
+            "MESH:D011151",
+            "SCTID:82675004"
+          ]
+        }
+      ]
+    }
+  ]
+}

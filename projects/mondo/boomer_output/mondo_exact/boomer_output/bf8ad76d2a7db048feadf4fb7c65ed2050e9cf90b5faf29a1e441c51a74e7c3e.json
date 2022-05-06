@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bf8ad76d2a7db048feadf4fb7c65ed2050e9cf90b5faf29a1e441c51a74e7c3e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1842031",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080609",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007662",
+          "type" : "CLASS",
+          "lbl" : "anterior segment dysgenesis 4"
+        },
+        {
+          "id" : "OMIM:137600",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007662",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:137600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080609",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007662",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1842031",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007662",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007662",
+            "OMIM:137600",
+            "DOID:0080609",
+            "UMLS:C1842031"
+          ]
+        }
+      ]
+    }
+  ]
+}

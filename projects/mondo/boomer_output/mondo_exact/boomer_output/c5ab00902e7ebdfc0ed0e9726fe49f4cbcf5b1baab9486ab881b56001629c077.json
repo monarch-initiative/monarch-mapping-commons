@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c5ab00902e7ebdfc0ed0e9726fe49f4cbcf5b1baab9486ab881b56001629c077",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2019443",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5531",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003494",
+          "type" : "CLASS",
+          "lbl" : "ovarian squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C40093",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003494",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40093",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5531",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003494",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2019443",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003494",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C40093",
+            "MONDO:0003494",
+            "DOID:5531",
+            "UMLS:C2019443"
+          ]
+        }
+      ]
+    }
+  ]
+}

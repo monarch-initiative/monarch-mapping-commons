@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4437a64c3fbe5d444c65c40cee573c476b32fd5f830a0a54c63c9de51507cc65",
+      "nodes" : [
+        {
+          "id" : "MESH:C566504",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1865018",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012314",
+          "type" : "CLASS",
+          "lbl" : "short QT syndrome type 3"
+        },
+        {
+          "id" : "OMIM:609622",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012314",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609622",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1865018",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012314",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566504",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012314",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:609622",
+            "MONDO:0012314",
+            "UMLS:C1865018",
+            "MESH:C566504"
+          ]
+        }
+      ]
+    }
+  ]
+}

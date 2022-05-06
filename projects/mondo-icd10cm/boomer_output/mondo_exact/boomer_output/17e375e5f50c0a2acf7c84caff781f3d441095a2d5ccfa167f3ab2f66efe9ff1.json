@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:17e375e5f50c0a2acf7c84caff781f3d441095a2d5ccfa167f3ab2f66efe9ff1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280065",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013614",
+          "type" : "CLASS",
+          "lbl" : "hypertelorism-preauricular sinus-punctual pits-deafness syndrome"
+        },
+        {
+          "id" : "Orphanet:293958",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:614187",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013614",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614187",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3280065",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013614",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013614",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:293958",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013614",
+            "OMIM:614187",
+            "UMLS:C3280065",
+            "Orphanet:293958"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c5f40efce37d7eb7a82af4e1f2e048e1b4378aae19f377ccbdb7def120f6467e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1395264",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021660",
+          "type" : "CLASS",
+          "lbl" : "deep seated dermatophytosis"
+        },
+        {
+          "id" : "NCIT:C35073",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:397587",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021660",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35073",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1395264",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021660",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021660",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:397587",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C35073",
+            "MONDO:0021660",
+            "Orphanet:397587",
+            "UMLS:C1395264"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b75471972f41df43a7d35fc707e108ecc0fe1ed97bdbf155e8203e779950c101",
+      "nodes" : [
+        {
+          "id" : "DOID:0111027",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011216",
+          "type" : "CLASS",
+          "lbl" : "hemochromatosis type 2A"
+        },
+        {
+          "id" : "OMIM:602390",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011216",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:602390",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111027",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011216",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011216",
+            "OMIM:602390",
+            "DOID:0111027"
+          ]
+        }
+      ]
+    }
+  ]
+}

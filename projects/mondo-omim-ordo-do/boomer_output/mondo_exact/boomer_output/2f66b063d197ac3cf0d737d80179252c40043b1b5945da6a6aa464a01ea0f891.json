@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2f66b063d197ac3cf0d737d80179252c40043b1b5945da6a6aa464a01ea0f891",
+      "nodes" : [
+        {
+          "id" : "MESH:C566543",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1865360",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011228",
+          "type" : "CLASS",
+          "lbl" : "creases, infra-auricular cutaneous, with tall stature and advanced bone age"
+        },
+        {
+          "id" : "OMIM:602472",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011228",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:602472",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1865360",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011228",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566543",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011228",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011228",
+            "OMIM:602472",
+            "UMLS:C1865360",
+            "MESH:C566543"
+          ]
+        }
+      ]
+    }
+  ]
+}

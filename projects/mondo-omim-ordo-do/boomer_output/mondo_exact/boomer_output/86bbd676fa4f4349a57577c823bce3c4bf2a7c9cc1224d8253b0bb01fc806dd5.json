@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:86bbd676fa4f4349a57577c823bce3c4bf2a7c9cc1224d8253b0bb01fc806dd5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333494",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5538",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003501",
+          "type" : "CLASS",
+          "lbl" : "external ear squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C6083",
+          "type" : "CLASS",
+          "lbl" : "External Ear Squamous Cell Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5538",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003501",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333494",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003501",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003501",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6083",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5538",
+            "MONDO:0003501",
+            "UMLS:C1333494",
+            "NCIT:C6083"
+          ]
+        }
+      ]
+    }
+  ]
+}

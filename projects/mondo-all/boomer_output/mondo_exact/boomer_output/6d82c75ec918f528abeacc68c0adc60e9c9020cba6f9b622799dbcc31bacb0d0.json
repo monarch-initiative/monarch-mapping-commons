@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6d82c75ec918f528abeacc68c0adc60e9c9020cba6f9b622799dbcc31bacb0d0",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334108",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000147",
+          "type" : "CLASS",
+          "lbl" : "polyposis"
+        },
+        {
+          "id" : "NCIT:C4089",
+          "type" : "CLASS",
+          "lbl" : "Polyposis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000147",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4089",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334108",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000147",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000147",
+            "NCIT:C4089",
+            "UMLS:C0334108"
+          ]
+        }
+      ]
+    }
+  ]
+}

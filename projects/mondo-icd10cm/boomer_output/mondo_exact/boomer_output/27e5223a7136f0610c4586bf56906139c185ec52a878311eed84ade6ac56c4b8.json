@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:27e5223a7136f0610c4586bf56906139c185ec52a878311eed84ade6ac56c4b8",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201960",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060103",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000640",
+          "type" : "CLASS",
+          "lbl" : "central nervous system primitive neuroectodermal neoplasm"
+        },
+        {
+          "id" : "NCIT:C5398",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0060103",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000640",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201960",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000640",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000640",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5398",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0060103",
+            "MONDO:0000640",
+            "UMLS:CN201960",
+            "NCIT:C5398"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:90e38510b7b240cba17c89a71e33a75a9601362c835090de61114bb88f5ef51e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332950",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6386",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003870",
+          "type" : "CLASS",
+          "lbl" : "childhood brainstem astrocytoma"
+        },
+        {
+          "id" : "NCIT:C6216",
+          "type" : "CLASS",
+          "lbl" : "Childhood Brain Stem Astrocytoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6386",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003870",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332950",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003870",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003870",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6216",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6386",
+            "MONDO:0003870",
+            "UMLS:C1332950",
+            "NCIT:C6216"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ce0f77975d561f80db88dc2143507e4a2b068b59cd433a0c157e68a20918fa35",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809645",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014204",
+          "type" : "CLASS",
+          "lbl" : "basal ganglia calcification, idiopathic, 5"
+        },
+        {
+          "id" : "OMIM:615483",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3809645",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014204",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014204",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615483",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3809645",
+            "MONDO:0014204",
+            "OMIM:615483"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2ed49b1845a08b9105daef1ddb6d39bbb3e28d4a9ae06a5728d926ae25ec1a87",
+      "nodes" : [
+        {
+          "id" : "SCTID:80660001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0221005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0022435",
+          "type" : "CLASS",
+          "lbl" : "Mauriac syndrome"
+        },
+        {
+          "id" : "NCIT:C130997",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0221005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022435",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0022435",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C130997",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:80660001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022435",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0022435",
+            "UMLS:C0221005",
+            "NCIT:C130997",
+            "SCTID:80660001"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4c4110ed30e5cadb8a022bf85688f1625380a05d42ddb9986c2ee075b0045c69",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202957",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:90505000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050949",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017324",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive hypophosphatemic rickets"
+        },
+        {
+          "id" : "Orphanet:289176",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:90505000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017324",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017324",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:289176",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050949",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017324",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202957",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017324",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017324",
+            "SCTID:90505000",
+            "UMLS:CN202957",
+            "Orphanet:289176",
+            "DOID:0050949"
+          ]
+        }
+      ]
+    }
+  ]
+}

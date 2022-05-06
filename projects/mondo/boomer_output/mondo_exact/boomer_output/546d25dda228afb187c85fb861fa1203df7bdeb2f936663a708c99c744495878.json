@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:546d25dda228afb187c85fb861fa1203df7bdeb2f936663a708c99c744495878",
+      "nodes" : [
+        {
+          "id" : "SCTID:5505005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0001311",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020680",
+          "type" : "CLASS",
+          "lbl" : "acute bronchiolitis"
+        },
+        {
+          "id" : "NCIT:C39659",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020680",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39659",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:5505005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020680",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0001311",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020680",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C39659",
+            "MONDO:0020680",
+            "SCTID:5505005",
+            "UMLS:C0001311"
+          ]
+        }
+      ]
+    }
+  ]
+}

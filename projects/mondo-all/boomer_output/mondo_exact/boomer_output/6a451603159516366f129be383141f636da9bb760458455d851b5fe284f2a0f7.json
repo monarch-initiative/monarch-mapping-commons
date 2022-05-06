@@ -1,0 +1,113 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6a451603159516366f129be383141f636da9bb760458455d851b5fe284f2a0f7",
+      "nodes" : [
+        {
+          "id" : "Orphanet:183500",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3273225",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C97073",
+          "type" : "CLASS",
+          "lbl" : "Hereditary Neurodegenerative Disorder"
+        },
+        {
+          "id" : "UMLS:CN200549",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024237",
+          "type" : "CLASS",
+          "lbl" : "inherited neurodegenerative disorder"
+        },
+        {
+          "id" : "MESH:D020271",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN200549",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024237",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0024237",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:183500",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0024237",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C3273225",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0024237",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C97073",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D020271",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024237",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:183500",
+            "UMLS:CN200549",
+            "NCIT:C97073",
+            "MESH:D020271",
+            "MONDO:0024237"
+          ]
+        }
+      ]
+    }
+  ]
+}

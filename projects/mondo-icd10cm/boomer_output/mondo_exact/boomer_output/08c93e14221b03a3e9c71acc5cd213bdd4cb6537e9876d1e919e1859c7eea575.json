@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:08c93e14221b03a3e9c71acc5cd213bdd4cb6537e9876d1e919e1859c7eea575",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332276",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4066",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002864",
+          "type" : "CLASS",
+          "lbl" : "anus rhabdomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C5610",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4066",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002864",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332276",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002864",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002864",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5610",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:4066",
+            "MONDO:0002864",
+            "UMLS:C1332276",
+            "NCIT:C5610"
+          ]
+        }
+      ]
+    }
+  ]
+}

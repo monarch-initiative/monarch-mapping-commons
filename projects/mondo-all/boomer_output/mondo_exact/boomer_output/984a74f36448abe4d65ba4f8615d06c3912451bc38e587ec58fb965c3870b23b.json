@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:984a74f36448abe4d65ba4f8615d06c3912451bc38e587ec58fb965c3870b23b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333770",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:275",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002414",
+          "type" : "CLASS",
+          "lbl" : "gastric hemangioma"
+        },
+        {
+          "id" : "NCIT:C5481",
+          "type" : "CLASS",
+          "lbl" : "Gastric Hemangioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333770",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002414",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002414",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5481",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:275",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002414",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333770",
+            "MONDO:0002414",
+            "NCIT:C5481",
+            "DOID:275"
+          ]
+        }
+      ]
+    }
+  ]
+}

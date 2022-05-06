@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5c57904ffa1735b1dd354f8611d0f4cff1cffec7ef33dd8e8dc6961d4002432e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3276161",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013768",
+          "type" : "CLASS",
+          "lbl" : "arterial calcification, generalized, of infancy, 2"
+        },
+        {
+          "id" : "OMIM:614473",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013768",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614473",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3276161",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013768",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013768",
+            "OMIM:614473",
+            "UMLS:C3276161"
+          ]
+        }
+      ]
+    }
+  ]
+}

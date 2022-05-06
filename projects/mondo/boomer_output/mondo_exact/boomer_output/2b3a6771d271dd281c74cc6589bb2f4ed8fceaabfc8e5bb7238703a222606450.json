@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2b3a6771d271dd281c74cc6589bb2f4ed8fceaabfc8e5bb7238703a222606450",
+      "nodes" : [
+        {
+          "id" : "Orphanet:336",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:135580",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D005352",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C537929",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006761",
+          "type" : "CLASS",
+          "lbl" : "fibromuscular dysplasia"
+        },
+        {
+          "id" : "NCIT:C84714",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006761",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:135580",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D005352",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006761",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006761",
+          "pred" : "siblingOf",
+          "obj" : "MESH:C537929",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006761",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C84714",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006761",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:336",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:336",
+            "MONDO:0006761",
+            "MESH:D005352",
+            "NCIT:C84714",
+            "OMIM:135580"
+          ]
+        }
+      ]
+    }
+  ]
+}

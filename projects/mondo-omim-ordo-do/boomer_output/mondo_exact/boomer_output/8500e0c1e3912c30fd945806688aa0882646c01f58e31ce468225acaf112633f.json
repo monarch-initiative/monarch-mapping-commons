@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8500e0c1e3912c30fd945806688aa0882646c01f58e31ce468225acaf112633f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201347",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016414",
+          "type" : "CLASS",
+          "lbl" : "hypotrichosis-intellectual disability, Lopes type"
+        },
+        {
+          "id" : "Orphanet:2266",
+          "type" : "CLASS",
+          "lbl" : "Hypotrichosis-intellectual disability, Lopes type"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201347",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016414",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016414",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2266",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016414",
+            "UMLS:CN201347",
+            "Orphanet:2266"
+          ]
+        }
+      ]
+    }
+  ]
+}

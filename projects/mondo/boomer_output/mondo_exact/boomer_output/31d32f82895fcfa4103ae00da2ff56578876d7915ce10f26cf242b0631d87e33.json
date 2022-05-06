@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:31d32f82895fcfa4103ae00da2ff56578876d7915ce10f26cf242b0631d87e33",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:E70.40",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:9265",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019228",
+          "type" : "CLASS",
+          "lbl" : "inborn disorder of histidine metabolism"
+        },
+        {
+          "id" : "Orphanet:79181",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:E70.40",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019228",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:9265",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019228",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019228",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79181",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:E70.40",
+            "MONDO:0019228",
+            "DOID:9265",
+            "Orphanet:79181"
+          ]
+        }
+      ]
+    }
+  ]
+}

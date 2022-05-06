@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1b6ef0d552f5f2608730309937683b9c4ef1530df93f1e7fa9f3a60b8c570680",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3151784",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010443",
+          "type" : "CLASS",
+          "lbl" : "macular degeneration, X-linked atrophic"
+        },
+        {
+          "id" : "OMIM:300834",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010443",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300834",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3151784",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010443",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:300834",
+            "MONDO:0010443",
+            "UMLS:C3151784"
+          ]
+        }
+      ]
+    }
+  ]
+}

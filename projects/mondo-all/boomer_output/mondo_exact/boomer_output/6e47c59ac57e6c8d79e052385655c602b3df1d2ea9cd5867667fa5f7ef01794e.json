@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6e47c59ac57e6c8d79e052385655c602b3df1d2ea9cd5867667fa5f7ef01794e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479431",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044311",
+          "type" : "CLASS",
+          "lbl" : "brachycephaly, trichomegaly, and developmental delay"
+        },
+        {
+          "id" : "OMIM:617412",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0044311",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617412",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4479431",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044311",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0044311",
+            "OMIM:617412",
+            "UMLS:C4479431"
+          ]
+        }
+      ]
+    }
+  ]
+}

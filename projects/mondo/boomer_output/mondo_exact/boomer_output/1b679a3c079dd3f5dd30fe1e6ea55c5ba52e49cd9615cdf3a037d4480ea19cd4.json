@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1b679a3c079dd3f5dd30fe1e6ea55c5ba52e49cd9615cdf3a037d4480ea19cd4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0002959",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021658",
+          "type" : "CLASS",
+          "lbl" : "vascular ectasia"
+        },
+        {
+          "id" : "NCIT:C45481",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021658",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C45481",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0002959",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021658",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021658",
+            "NCIT:C45481",
+            "UMLS:C0002959"
+          ]
+        }
+      ]
+    }
+  ]
+}

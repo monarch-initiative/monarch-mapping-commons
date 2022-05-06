@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8bb6eb5af906abdd3e4bd346a258973f946102ac884baed6fbd2572182d84bab",
+      "nodes" : [
+        {
+          "id" : "Orphanet:480864",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4225171",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN776869",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018820",
+          "type" : "CLASS",
+          "lbl" : "recurrent metabolic encephalomyopathic crises-rhabdomyolysis-cardiac arrhythmia-intellectual disability syndrome"
+        },
+        {
+          "id" : "OMIM:616878",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN776869",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018820",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018820",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:480864",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018820",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616878",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018820",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4225171",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018820",
+            "UMLS:CN776869",
+            "Orphanet:480864",
+            "OMIM:616878"
+          ]
+        }
+      ]
+    }
+  ]
+}

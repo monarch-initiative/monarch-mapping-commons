@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d0a533ebd6faa419a890ae76ac68543d66f7433f4d5ec6d34e1369ffb9b1cf68",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN800196",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060642",
+          "type" : "CLASS",
+          "lbl" : "neurodevelopmental disorder with movement abnormalities, abnormal gait, and autistic features"
+        },
+        {
+          "id" : "OMIM:617865",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0060642",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617865",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN800196",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060642",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0060642",
+            "OMIM:617865",
+            "UMLS:CN800196"
+          ]
+        }
+      ]
+    }
+  ]
+}

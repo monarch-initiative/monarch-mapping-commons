@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d0459f47239880061e2329d96b29ee50afad42b208f552d7a60311b9a39f60d1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334523",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006444",
+          "type" : "CLASS",
+          "lbl" : "teratoma with malignant transformation"
+        },
+        {
+          "id" : "NCIT:C4289",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006444",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4289",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334523",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006444",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006444",
+            "NCIT:C4289",
+            "UMLS:C0334523"
+          ]
+        }
+      ]
+    }
+  ]
+}

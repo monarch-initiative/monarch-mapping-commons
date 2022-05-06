@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1bd3f6a8c1da02c3a575483e29577493c986b4cdfc673e7a9896f46decc8625e",
+      "nodes" : [
+        {
+          "id" : "DOID:3620",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:126951006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C4627",
+          "type" : "CLASS",
+          "lbl" : "Malignant Central Nervous System Neoplasm"
+        },
+        {
+          "id" : "MONDO:0002714",
+          "type" : "CLASS",
+          "lbl" : "central nervous system cancer"
+        },
+        {
+          "id" : "MESH:D016543",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D016543",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002714",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:126951006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002714",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002714",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4627",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3620",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002714",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3620",
+            "MONDO:0002714",
+            "MESH:D016543",
+            "NCIT:C4627",
+            "SCTID:126951006"
+          ]
+        }
+      ]
+    }
+  ]
+}

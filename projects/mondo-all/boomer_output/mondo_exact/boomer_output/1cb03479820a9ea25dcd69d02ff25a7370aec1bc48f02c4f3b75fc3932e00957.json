@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1cb03479820a9ea25dcd69d02ff25a7370aec1bc48f02c4f3b75fc3932e00957",
+      "nodes" : [
+        {
+          "id" : "SCTID:92298003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0153955",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021457",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of pleura"
+        },
+        {
+          "id" : "NCIT:C3603",
+          "type" : "CLASS",
+          "lbl" : "Benign Pleural Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0153955",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92298003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021457",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3603",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0153955",
+            "MONDO:0021457",
+            "SCTID:92298003",
+            "NCIT:C3603"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b59809993cd644d6b72e7ab46c4ad55c899d5994d78f92a6ad5247005adfa2a4",
+      "nodes" : [
+        {
+          "id" : "SCTID:274085008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0558355",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021337",
+          "type" : "CLASS",
+          "lbl" : "tonsil carcinoma"
+        },
+        {
+          "id" : "NCIT:C4825",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0558355",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:274085008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021337",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4825",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0558355",
+            "MONDO:0021337",
+            "SCTID:274085008",
+            "NCIT:C4825"
+          ]
+        }
+      ]
+    }
+  ]
+}

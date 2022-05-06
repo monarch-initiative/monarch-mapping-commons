@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b976542833335134acc3e81bd7a6263e31ec6540f50a2ac53e3965ff730092a5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205068",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008347",
+          "type" : "CLASS",
+          "lbl" : "idiopathic and/or familial pulmonary arterial hypertension"
+        },
+        {
+          "id" : "Orphanet:422",
+          "type" : "CLASS",
+          "lbl" : "Idiopathic/heritable pulmonary arterial hypertension"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008347",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:422",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205068",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008347",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008347",
+            "Orphanet:422",
+            "UMLS:CN205068"
+          ]
+        }
+      ]
+    }
+  ]
+}

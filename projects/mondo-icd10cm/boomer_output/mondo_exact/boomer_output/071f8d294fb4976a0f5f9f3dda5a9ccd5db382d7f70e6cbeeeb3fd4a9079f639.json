@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:071f8d294fb4976a0f5f9f3dda5a9ccd5db382d7f70e6cbeeeb3fd4a9079f639",
+      "nodes" : [
+        {
+          "id" : "NCIT:C3592",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:D10.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:92443005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021476",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of tongue"
+        },
+        {
+          "id" : "UMLS:C0153933",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:D10.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021476",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92443005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021476",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021476",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3592",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0153933",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021476",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:92443005",
+            "MONDO:0021476",
+            "ICD10CM:D10.1",
+            "UMLS:C0153933",
+            "NCIT:C3592"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f2406833d94b5066bc00795bd7ed8139b70ae2519b330f8cc6d395aa6b1c8add",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0856818",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2835",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005572",
+          "type" : "CLASS",
+          "lbl" : "polycythemia due to hypoxia"
+        },
+        {
+          "id" : "NCIT:C27312",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:2835",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005572",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0856818",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005572",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005572",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27312",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005572",
+            "DOID:2835",
+            "UMLS:C0856818",
+            "NCIT:C27312"
+          ]
+        }
+      ]
+    }
+  ]
+}

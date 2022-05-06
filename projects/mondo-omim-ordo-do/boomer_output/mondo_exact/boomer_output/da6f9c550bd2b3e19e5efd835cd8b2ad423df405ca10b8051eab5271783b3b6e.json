@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:da6f9c550bd2b3e19e5efd835cd8b2ad423df405ca10b8051eab5271783b3b6e",
+      "nodes" : [
+        {
+          "id" : "SCTID:57219006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN029978",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007399",
+          "type" : "CLASS",
+          "lbl" : "TWIST1-related craniosynostosis"
+        },
+        {
+          "id" : "OMIM:123100",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007399",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:123100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN029978",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007399",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:57219006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007399",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007399",
+            "OMIM:123100",
+            "UMLS:CN029978",
+            "SCTID:57219006"
+          ]
+        }
+      ]
+    }
+  ]
+}

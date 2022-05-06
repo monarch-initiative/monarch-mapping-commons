@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:64ca879f80dda8b57343de2df54fdeb1e9c476ecc426d260c8d03a2a8170a6ce",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN199246",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015296",
+          "type" : "CLASS",
+          "lbl" : "cardiac anomalies-heterotaxy syndrome"
+        },
+        {
+          "id" : "Orphanet:137628",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN199246",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015296",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015296",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:137628",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015296",
+            "UMLS:CN199246",
+            "Orphanet:137628"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d5647f0d9343e6ee8854ddd2d94c8277fbdc86d4c9b500bb0d6de964ffc95711",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203290",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017554",
+          "type" : "CLASS",
+          "lbl" : "radio-ulnar synostosis, unilateral"
+        },
+        {
+          "id" : "Orphanet:295217",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017554",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:295217",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203290",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017554",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017554",
+            "Orphanet:295217",
+            "UMLS:CN203290"
+          ]
+        }
+      ]
+    }
+  ]
+}

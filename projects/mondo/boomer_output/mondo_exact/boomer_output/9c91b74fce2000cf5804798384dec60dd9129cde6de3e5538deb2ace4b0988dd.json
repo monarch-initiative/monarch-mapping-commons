@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9c91b74fce2000cf5804798384dec60dd9129cde6de3e5538deb2ace4b0988dd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0340544",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017149",
+          "type" : "CLASS",
+          "lbl" : "drug- or toxin-induced pulmonary arterial hypertension"
+        },
+        {
+          "id" : "Orphanet:275786",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0340544",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017149",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017149",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:275786",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0340544",
+            "MONDO:0017149",
+            "Orphanet:275786"
+          ]
+        }
+      ]
+    }
+  ]
+}

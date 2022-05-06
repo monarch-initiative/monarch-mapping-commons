@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d01d87523aa1032a3d7b4944bf054a53ffade6fb33737d73836309bf769a33a4",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203228",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017490",
+          "type" : "CLASS",
+          "lbl" : "tibial hemimelia, unilateral"
+        },
+        {
+          "id" : "Orphanet:295077",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203228",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017490",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:295077",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN203228",
+            "MONDO:0017490",
+            "Orphanet:295077"
+          ]
+        }
+      ]
+    }
+  ]
+}

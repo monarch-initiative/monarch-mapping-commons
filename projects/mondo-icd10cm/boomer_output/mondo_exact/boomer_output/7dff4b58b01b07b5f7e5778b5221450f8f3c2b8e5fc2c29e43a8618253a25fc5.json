@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7dff4b58b01b07b5f7e5778b5221450f8f3c2b8e5fc2c29e43a8618253a25fc5",
+      "nodes" : [
+        {
+          "id" : "SCTID:697898008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3203102",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN202574",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017147",
+          "type" : "CLASS",
+          "lbl" : "idiopathic pulmonary arterial hypertension"
+        },
+        {
+          "id" : "Orphanet:275766",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:697898008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017147",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017147",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C3203102",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017147",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:275766",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202574",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017147",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017147",
+            "SCTID:697898008",
+            "Orphanet:275766",
+            "UMLS:CN202574"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9b46ed7a809e3ebf304b4933909963836d403852d40d39f3141ab2e1cc26e7c1",
+      "nodes" : [
+        {
+          "id" : "MESH:C565953",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859786",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008789",
+          "type" : "CLASS",
+          "lbl" : "anemia, nonspherocytic hemolytic, associated with abnormality of red cell membrane"
+        },
+        {
+          "id" : "OMIM:206300",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565953",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008789",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008789",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:206300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1859786",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008789",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C565953",
+            "MONDO:0008789",
+            "OMIM:206300",
+            "UMLS:C1859786"
+          ]
+        }
+      ]
+    }
+  ]
+}

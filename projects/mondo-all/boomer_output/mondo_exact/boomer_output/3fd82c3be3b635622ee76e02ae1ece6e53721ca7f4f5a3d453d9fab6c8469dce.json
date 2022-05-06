@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3fd82c3be3b635622ee76e02ae1ece6e53721ca7f4f5a3d453d9fab6c8469dce",
+      "nodes" : [
+        {
+          "id" : "MESH:C535370",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN036364",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016898",
+          "type" : "CLASS",
+          "lbl" : "partial monosomy of the short arm of chromosome 20"
+        },
+        {
+          "id" : "Orphanet:261992",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN036364",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016898",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016898",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:261992",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535370",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016898",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016898",
+            "UMLS:CN036364",
+            "Orphanet:261992",
+            "MESH:C535370"
+          ]
+        }
+      ]
+    }
+  ]
+}

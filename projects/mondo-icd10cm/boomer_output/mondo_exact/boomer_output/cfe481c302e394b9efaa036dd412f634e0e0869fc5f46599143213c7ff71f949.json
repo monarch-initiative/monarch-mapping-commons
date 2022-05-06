@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cfe481c302e394b9efaa036dd412f634e0e0869fc5f46599143213c7ff71f949",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336750",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8162",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004483",
+          "type" : "CLASS",
+          "lbl" : "thyroid gland oncocytic adenoma"
+        },
+        {
+          "id" : "NCIT:C6042",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004483",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6042",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336750",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004483",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8162",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004483",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004483",
+            "NCIT:C6042",
+            "UMLS:C1336750",
+            "DOID:8162"
+          ]
+        }
+      ]
+    }
+  ]
+}

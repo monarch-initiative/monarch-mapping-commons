@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bbcd2937bbaefd750a98081980635f14daf8429313d161897f844d42635b870e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1563215",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:416707008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050179",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0032858",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000276",
+          "type" : "CLASS",
+          "lbl" : "Powassan encephalitis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0032858",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000276",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050179",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000276",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:416707008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000276",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000276",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1563215",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000276",
+            "UMLS:C0032858",
+            "DOID:0050179",
+            "SCTID:416707008"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8e715b0f578a0e17701b7d79d5c47e45c3376d0201eb2ec7d901c6d38a8e2f25",
+      "nodes" : [
+        {
+          "id" : "OMIM:612713",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2675185",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012991",
+          "type" : "CLASS",
+          "lbl" : "Kahrizi syndrome"
+        },
+        {
+          "id" : "MESH:C567196",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN200191",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050807",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0050807",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012991",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN200191",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012991",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567196",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012991",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012991",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C2675185",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012991",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:612713",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0050807",
+            "UMLS:CN200191",
+            "MONDO:0012991",
+            "OMIM:612713",
+            "MESH:C567196"
+          ]
+        }
+      ]
+    }
+  ]
+}

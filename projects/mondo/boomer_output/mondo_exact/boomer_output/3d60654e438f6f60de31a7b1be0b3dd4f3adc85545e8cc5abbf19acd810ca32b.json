@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3d60654e438f6f60de31a7b1be0b3dd4f3adc85545e8cc5abbf19acd810ca32b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1305256",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3615",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002710",
+          "type" : "CLASS",
+          "lbl" : "infiltrating angiolipoma"
+        },
+        {
+          "id" : "NCIT:C7449",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3615",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002710",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002710",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7449",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1305256",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002710",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3615",
+            "MONDO:0002710",
+            "NCIT:C7449",
+            "UMLS:C1305256"
+          ]
+        }
+      ]
+    }
+  ]
+}

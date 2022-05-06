@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ceaa85949f949d1832cfc88f9562f5e6ab808a65331bedcf5b254b5b46930e38",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4317112",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080298",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0027766",
+          "type" : "CLASS",
+          "lbl" : "generalized lipodystrophy"
+        },
+        {
+          "id" : "NCIT:C131815",
+          "type" : "CLASS",
+          "lbl" : "Generalized Lipodystrophy"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4317112",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0027766",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0027766",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C131815",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080298",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0027766",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4317112",
+            "MONDO:0027766",
+            "NCIT:C131815",
+            "DOID:0080298"
+          ]
+        }
+      ]
+    }
+  ]
+}

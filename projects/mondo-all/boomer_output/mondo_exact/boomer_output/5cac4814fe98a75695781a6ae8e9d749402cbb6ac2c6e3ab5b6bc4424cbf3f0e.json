@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5cac4814fe98a75695781a6ae8e9d749402cbb6ac2c6e3ab5b6bc4424cbf3f0e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3554018",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013960",
+          "type" : "CLASS",
+          "lbl" : "sinoatrial node dysfunction and deafness"
+        },
+        {
+          "id" : "Orphanet:324321",
+          "type" : "CLASS",
+          "lbl" : "Sinoatrial node dysfunction and deafness"
+        },
+        {
+          "id" : "OMIM:614896",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013960",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614896",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013960",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:324321",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3554018",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013960",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:614896",
+            "MONDO:0013960",
+            "Orphanet:324321",
+            "UMLS:C3554018"
+          ]
+        }
+      ]
+    }
+  ]
+}

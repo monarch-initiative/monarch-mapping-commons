@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:41d10ac3bdfb52d1f2b4df2e256b4edc683995ad248290fe618fc94d649f9235",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334380",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6115",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003775",
+          "type" : "CLASS",
+          "lbl" : "lateral ventricle meningioma"
+        },
+        {
+          "id" : "NCIT:C5302",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6115",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003775",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003775",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5302",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334380",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003775",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6115",
+            "MONDO:0003775",
+            "NCIT:C5302",
+            "UMLS:C1334380"
+          ]
+        }
+      ]
+    }
+  ]
+}

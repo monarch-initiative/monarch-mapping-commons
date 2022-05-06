@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8e54073095a0f455c6c8fb97a7d063479bfc33fe3e05b86de810c2ba50930a6a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310789",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014837",
+          "type" : "CLASS",
+          "lbl" : "thrombocytopenia 6"
+        },
+        {
+          "id" : "Orphanet:480851",
+          "type" : "CLASS",
+          "lbl" : "Hereditary thrombocytopenia with early-onset myelofibrosis"
+        },
+        {
+          "id" : "OMIM:616937",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014837",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:480851",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014837",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616937",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310789",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014837",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014837",
+            "Orphanet:480851",
+            "OMIM:616937",
+            "UMLS:C4310789"
+          ]
+        }
+      ]
+    }
+  ]
+}

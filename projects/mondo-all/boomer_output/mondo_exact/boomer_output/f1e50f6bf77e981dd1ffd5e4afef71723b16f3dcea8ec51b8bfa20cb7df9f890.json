@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f1e50f6bf77e981dd1ffd5e4afef71723b16f3dcea8ec51b8bfa20cb7df9f890",
+      "nodes" : [
+        {
+          "id" : "OMIM:616580",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:453504",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4225274",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014700",
+          "type" : "CLASS",
+          "lbl" : "neurodevelopmental disorder-craniofacial dysmorphism-cardiac defect-hip dysplasia syndrome due to a point mutation"
+        },
+        {
+          "id" : "UMLS:CN237748",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4225274",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014700",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:453504",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014700",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN237748",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014700",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616580",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4225274",
+            "MONDO:0014700",
+            "Orphanet:453504",
+            "OMIM:616580"
+          ]
+        }
+      ]
+    }
+  ]
+}

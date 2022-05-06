@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cbebd680e7bb3c1457c3659914cf6f3b4211c75516861f414b85cbfb6ce17ad3",
+      "nodes" : [
+        {
+          "id" : "OMIM:235000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009331",
+          "type" : "CLASS",
+          "lbl" : "isolated hemihyperplasia"
+        },
+        {
+          "id" : "Orphanet:2128",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C565524",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1856184",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1856184",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009331",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009331",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2128",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009331",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:235000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565524",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009331",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:235000",
+            "UMLS:C1856184",
+            "MONDO:0009331",
+            "MESH:C565524",
+            "Orphanet:2128"
+          ]
+        }
+      ]
+    }
+  ]
+}

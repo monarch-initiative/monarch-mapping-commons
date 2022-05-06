@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9bf3dc56a1b50e44d5582b0cfb25987bc6dab6617d250c7468c362ab56697e41",
+      "nodes" : [
+        {
+          "id" : "MESH:C565856",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859161",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008968",
+          "type" : "CLASS",
+          "lbl" : "cholestasis with gallstone, ataxia, and visual disturbance"
+        },
+        {
+          "id" : "OMIM:214980",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1859161",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008968",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008968",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:214980",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565856",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008968",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008968",
+            "UMLS:C1859161",
+            "OMIM:214980",
+            "MESH:C565856"
+          ]
+        }
+      ]
+    }
+  ]
+}

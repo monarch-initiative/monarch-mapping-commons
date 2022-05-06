@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:795110e1cf21e14580ea8435e947a4d70a78e7fbfb83ad8d09268675108d5175",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518737",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7650",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004318",
+          "type" : "CLASS",
+          "lbl" : "pulmonary type ovarian small cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C40440",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7650",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004318",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004318",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40440",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518737",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004318",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:7650",
+            "MONDO:0004318",
+            "NCIT:C40440",
+            "UMLS:C1518737"
+          ]
+        }
+      ]
+    }
+  ]
+}

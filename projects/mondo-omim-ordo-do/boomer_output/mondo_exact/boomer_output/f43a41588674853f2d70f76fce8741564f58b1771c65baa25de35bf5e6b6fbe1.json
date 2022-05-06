@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f43a41588674853f2d70f76fce8741564f58b1771c65baa25de35bf5e6b6fbe1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1306557",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050853",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000492",
+          "type" : "CLASS",
+          "lbl" : "chronic venous insufficiency"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0050853",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000492",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1306557",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000492",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000492",
+            "DOID:0050853",
+            "UMLS:C1306557"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:22f4275df96701b40c2c94f5d09400764e331b4bf444b2dae97accd83c50a97f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3714580",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0042979",
+          "type" : "CLASS",
+          "lbl" : "hypokalemic periodic paralysis, type 1"
+        },
+        {
+          "id" : "OMIM:170400",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0042979",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:170400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3714580",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0042979",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0042979",
+            "OMIM:170400",
+            "UMLS:C3714580"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3ad719691c444991b05e7b9b221b02fbc0c17607faf1b57a083ea12159c7421a",
+      "nodes" : [
+        {
+          "id" : "MESH:C565371",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1854982",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009645",
+          "type" : "CLASS",
+          "lbl" : "chronic mucocutaneous candidiasis due to monocyte chemotactic disorder"
+        },
+        {
+          "id" : "OMIM:252250",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565371",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009645",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009645",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:252250",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1854982",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009645",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C565371",
+            "MONDO:0009645",
+            "OMIM:252250",
+            "UMLS:C1854982"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1467da98fca365fec3f11b86a49454008c97c57d35da2a8cb53ab04c84f6f7c9",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227166",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017642",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability-microcephaly-phalangeal-facial abnormalities syndrome"
+        },
+        {
+          "id" : "Orphanet:3067",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227166",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017642",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017642",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3067",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017642",
+            "UMLS:CN227166",
+            "Orphanet:3067"
+          ]
+        }
+      ]
+    }
+  ]
+}

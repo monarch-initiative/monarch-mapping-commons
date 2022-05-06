@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8d0c0ef6f07d5073538d1a301e1e3768f81c069f9c9a37233984c431bd705b02",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN241791",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016106",
+          "type" : "CLASS",
+          "lbl" : "progressive muscular dystrophy"
+        },
+        {
+          "id" : "Orphanet:206644",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016106",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:206644",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN241791",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016106",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016106",
+            "Orphanet:206644",
+            "UMLS:CN241791"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1bde9abfc603518a024f7cd3dda994800a51430c6d1581bba428169bfd7141fe",
+      "nodes" : [
+        {
+          "id" : "SCTID:722343009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:420429",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0342753",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018485",
+          "type" : "CLASS",
+          "lbl" : "glycogen storage disease due to acid maltase deficiency, late-onset"
+        },
+        {
+          "id" : "UMLS:C3888925",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018485",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C3888925",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018485",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:420429",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0342753",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018485",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:722343009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018485",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018485",
+            "Orphanet:420429",
+            "UMLS:C0342753",
+            "SCTID:722343009"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fedec3f365a8070804a3760d6d8968e6efd7a93820664a9cea0d735fb8b08bf5",
+      "nodes" : [
+        {
+          "id" : "MESH:C535856",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2931047",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016641",
+          "type" : "CLASS",
+          "lbl" : "limb transversal defect-cardiac anomaly syndrome"
+        },
+        {
+          "id" : "Orphanet:2492",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2931047",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016641",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535856",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016641",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016641",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2492",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2931047",
+            "MONDO:0016641",
+            "MESH:C535856",
+            "Orphanet:2492"
+          ]
+        }
+      ]
+    }
+  ]
+}

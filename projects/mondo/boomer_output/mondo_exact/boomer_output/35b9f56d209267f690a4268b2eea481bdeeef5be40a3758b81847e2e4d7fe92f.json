@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:35b9f56d209267f690a4268b2eea481bdeeef5be40a3758b81847e2e4d7fe92f",
+      "nodes" : [
+        {
+          "id" : "MESH:C566301",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1863092",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007084",
+          "type" : "CLASS",
+          "lbl" : "familial focal alopecia"
+        },
+        {
+          "id" : "OMIM:104110",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007084",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:104110",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1863092",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007084",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566301",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007084",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:104110",
+            "MONDO:0007084",
+            "UMLS:C1863092",
+            "MESH:C566301"
+          ]
+        }
+      ]
+    }
+  ]
+}

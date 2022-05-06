@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8c4251d7cbac78edc169d378f19d2965335b11a04b1ca06c10a8c512e6c907db",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3810384",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110929",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014326",
+          "type" : "CLASS",
+          "lbl" : "nemaline myopathy 9"
+        },
+        {
+          "id" : "OMIM:615731",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014326",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615731",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110929",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014326",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3810384",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014326",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:615731",
+            "MONDO:0014326",
+            "DOID:0110929",
+            "UMLS:C3810384"
+          ]
+        }
+      ]
+    }
+  ]
+}

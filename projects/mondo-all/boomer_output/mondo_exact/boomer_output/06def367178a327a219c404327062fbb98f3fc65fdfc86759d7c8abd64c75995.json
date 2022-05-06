@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:06def367178a327a219c404327062fbb98f3fc65fdfc86759d7c8abd64c75995",
+      "nodes" : [
+        {
+          "id" : "NCIT:C4018",
+          "type" : "CLASS",
+          "lbl" : "Breast Lobular Carcinoma In Situ"
+        },
+        {
+          "id" : "SCTID:109888004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0279563",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006270",
+          "type" : "CLASS",
+          "lbl" : "lobular breast carcinoma in situ"
+        },
+        {
+          "id" : "UMLS:C0334381",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006270",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0334381",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0279563",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006270",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006270",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4018",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:109888004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006270",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0279563",
+            "MONDO:0006270",
+            "NCIT:C4018",
+            "SCTID:109888004"
+          ]
+        }
+      ]
+    }
+  ]
+}

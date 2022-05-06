@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d3dd6a57153c41e13a08dbd61d204589eb75f9d0099ad9e99754a25887da1ed4",
+      "nodes" : [
+        {
+          "id" : "MESH:C563483",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1833697",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008160",
+          "type" : "CLASS",
+          "lbl" : "osteosclerosis with ichthyosis and fractures"
+        },
+        {
+          "id" : "OMIM:166740",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1833697",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008160",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008160",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:166740",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563483",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008160",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1833697",
+            "MONDO:0008160",
+            "OMIM:166740",
+            "MESH:C563483"
+          ]
+        }
+      ]
+    }
+  ]
+}

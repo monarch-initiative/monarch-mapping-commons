@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9ae03749feb493bf16a30410f91c7d7ecbf24b933e7c06db2038fd98e19c4882",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:D12.8",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C4774",
+          "type" : "CLASS",
+          "lbl" : "Benign Rectal Neoplasm"
+        },
+        {
+          "id" : "MONDO:0021462",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of rectum"
+        },
+        {
+          "id" : "UMLS:C0496867",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:92318000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:92318000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021462",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D12.8",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021462",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0496867",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021462",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021462",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4774",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4774",
+            "UMLS:C0496867",
+            "SCTID:92318000",
+            "ICD10CM:D12.8",
+            "MONDO:0021462"
+          ]
+        }
+      ]
+    }
+  ]
+}

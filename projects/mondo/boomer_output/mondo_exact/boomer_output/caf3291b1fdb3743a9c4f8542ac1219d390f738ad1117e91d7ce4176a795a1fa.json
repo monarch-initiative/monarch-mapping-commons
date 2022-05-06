@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:caf3291b1fdb3743a9c4f8542ac1219d390f738ad1117e91d7ce4176a795a1fa",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1516856",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7664",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004321",
+          "type" : "CLASS",
+          "lbl" : "endometrial mixed adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C40153",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7664",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004321",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1516856",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004321",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004321",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40153",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:7664",
+            "MONDO:0004321",
+            "UMLS:C1516856",
+            "NCIT:C40153"
+          ]
+        }
+      ]
+    }
+  ]
+}

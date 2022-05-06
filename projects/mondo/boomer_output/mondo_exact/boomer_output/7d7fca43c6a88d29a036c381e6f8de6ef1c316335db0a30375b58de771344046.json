@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7d7fca43c6a88d29a036c381e6f8de6ef1c316335db0a30375b58de771344046",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN234898",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110213",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007336",
+          "type" : "CLASS",
+          "lbl" : "isolated cleft palate"
+        },
+        {
+          "id" : "OMIM:119540",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN234898",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007336",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007336",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:119540",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110213",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007336",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007336",
+            "UMLS:CN234898",
+            "OMIM:119540",
+            "DOID:0110213"
+          ]
+        }
+      ]
+    }
+  ]
+}

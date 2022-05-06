@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b7e9b78ba2f95040343a933cc5eb4291ab4811532660d6d96026cbbc98619b07",
+      "nodes" : [
+        {
+          "id" : "MONDO:0016460",
+          "type" : "CLASS",
+          "lbl" : "polyvalvular heart disease syndrome"
+        },
+        {
+          "id" : "Orphanet:228410",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4509918",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:723448007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN201425",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016460",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:228410",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016460",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN201425",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4509918",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016460",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:723448007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016460",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016460",
+            "Orphanet:228410",
+            "UMLS:C4509918",
+            "SCTID:723448007"
+          ]
+        }
+      ]
+    }
+  ]
+}

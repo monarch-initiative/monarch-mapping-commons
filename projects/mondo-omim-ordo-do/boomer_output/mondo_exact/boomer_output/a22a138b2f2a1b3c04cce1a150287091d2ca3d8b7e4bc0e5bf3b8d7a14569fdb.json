@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a22a138b2f2a1b3c04cce1a150287091d2ca3d8b7e4bc0e5bf3b8d7a14569fdb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279983",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7731",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004344",
+          "type" : "CLASS",
+          "lbl" : "childhood malignant hemangiopericytoma"
+        },
+        {
+          "id" : "NCIT:C8090",
+          "type" : "CLASS",
+          "lbl" : "Malignant Childhood Hemangiopericytoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004344",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8090",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0279983",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004344",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7731",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004344",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004344",
+            "NCIT:C8090",
+            "UMLS:C0279983",
+            "DOID:7731"
+          ]
+        }
+      ]
+    }
+  ]
+}

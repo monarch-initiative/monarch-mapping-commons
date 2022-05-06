@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ff6327a149b11c2a6c465a42d963b365f5fd56c20c64c572a895706297605bd3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1520092",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7409",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004213",
+          "type" : "CLASS",
+          "lbl" : "vulvar non-keratinizing squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C40285",
+          "type" : "CLASS",
+          "lbl" : "Vulvar Non-Keratinizing Squamous Cell Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7409",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004213",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1520092",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004213",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004213",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40285",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:7409",
+            "MONDO:0004213",
+            "UMLS:C1520092",
+            "NCIT:C40285"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:89375f2123402e570c91850c40aca8c005f906c4dfefb442f5fa0b69aaa8554d",
+      "nodes" : [
+        {
+          "id" : "MESH:C536849",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1836438",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012242",
+          "type" : "CLASS",
+          "lbl" : "syncope, familial vasovagal"
+        },
+        {
+          "id" : "OMIM:609289",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012242",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609289",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1836438",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012242",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536849",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012242",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:609289",
+            "MONDO:0012242",
+            "UMLS:C1836438",
+            "MESH:C536849"
+          ]
+        }
+      ]
+    }
+  ]
+}

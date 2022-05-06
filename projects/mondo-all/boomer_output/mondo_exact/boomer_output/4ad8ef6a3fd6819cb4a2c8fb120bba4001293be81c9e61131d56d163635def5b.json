@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4ad8ef6a3fd6819cb4a2c8fb120bba4001293be81c9e61131d56d163635def5b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479344",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018816",
+          "type" : "CLASS",
+          "lbl" : "isolated neonatal sclerosing cholangitis"
+        },
+        {
+          "id" : "Orphanet:480556",
+          "type" : "CLASS",
+          "lbl" : "Isolated neonatal sclerosing cholangitis"
+        },
+        {
+          "id" : "OMIM:617394",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018816",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617394",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018816",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:480556",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4479344",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018816",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:617394",
+            "MONDO:0018816",
+            "Orphanet:480556",
+            "UMLS:C4479344"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bff2d35b7b97d08d70ca122a463e755ec9b2588ffed2b41e7c1d3a22a1e2ec9e",
+      "nodes" : [
+        {
+          "id" : "OMIM:603829",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2751898",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C567851",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011376",
+          "type" : "CLASS",
+          "lbl" : "ventricular fibrillation, paroxysmal familial, type 1"
+        },
+        {
+          "id" : "SCTID:233915000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:233915000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011376",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567851",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011376",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011376",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603829",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2751898",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011376",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011376",
+            "UMLS:C2751898",
+            "OMIM:603829",
+            "SCTID:233915000",
+            "MESH:C567851"
+          ]
+        }
+      ]
+    }
+  ]
+}

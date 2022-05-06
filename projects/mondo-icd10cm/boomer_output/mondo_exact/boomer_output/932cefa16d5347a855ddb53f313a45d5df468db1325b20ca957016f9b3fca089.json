@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:932cefa16d5347a855ddb53f313a45d5df468db1325b20ca957016f9b3fca089",
+      "nodes" : [
+        {
+          "id" : "MESH:C564378",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1843661",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011858",
+          "type" : "CLASS",
+          "lbl" : "spastic paraplegia, ataxia, and intellectual disability"
+        },
+        {
+          "id" : "OMIM:607565",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564378",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011858",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011858",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607565",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1843661",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011858",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C564378",
+            "MONDO:0011858",
+            "OMIM:607565",
+            "UMLS:C1843661"
+          ]
+        }
+      ]
+    }
+  ]
+}

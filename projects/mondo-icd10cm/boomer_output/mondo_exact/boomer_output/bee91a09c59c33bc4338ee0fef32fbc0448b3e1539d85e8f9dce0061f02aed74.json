@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bee91a09c59c33bc4338ee0fef32fbc0448b3e1539d85e8f9dce0061f02aed74",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227207",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017765",
+          "type" : "CLASS",
+          "lbl" : "disorder of magnesium transport"
+        },
+        {
+          "id" : "Orphanet:309848",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227207",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017765",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017765",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309848",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017765",
+            "UMLS:CN227207",
+            "Orphanet:309848"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:46b5c02a5d122336faed56366e2873fdf96555ddec97a7b481ebe88abe4be635",
+      "nodes" : [
+        {
+          "id" : "MESH:D052958",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:81634008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019000",
+          "type" : "CLASS",
+          "lbl" : "perineural cyst"
+        },
+        {
+          "id" : "Orphanet:65250",
+          "type" : "CLASS",
+          "lbl" : "Perineural cyst"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:65250",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D052958",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:81634008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019000",
+            "Orphanet:65250",
+            "MESH:D052958",
+            "SCTID:81634008"
+          ]
+        }
+      ]
+    }
+  ]
+}

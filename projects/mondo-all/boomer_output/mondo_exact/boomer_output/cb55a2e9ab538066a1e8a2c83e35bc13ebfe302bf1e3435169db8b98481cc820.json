@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cb55a2e9ab538066a1e8a2c83e35bc13ebfe302bf1e3435169db8b98481cc820",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237671",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018628",
+          "type" : "CLASS",
+          "lbl" : "HIV-associated cancer"
+        },
+        {
+          "id" : "Orphanet:443291",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018628",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:443291",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237671",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018628",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018628",
+            "Orphanet:443291",
+            "UMLS:CN237671"
+          ]
+        }
+      ]
+    }
+  ]
+}

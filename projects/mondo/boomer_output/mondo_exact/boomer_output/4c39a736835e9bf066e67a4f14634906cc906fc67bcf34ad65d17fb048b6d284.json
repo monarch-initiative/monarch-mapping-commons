@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4c39a736835e9bf066e67a4f14634906cc906fc67bcf34ad65d17fb048b6d284",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200399",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060307",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015802",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant non-syndromic intellectual disability"
+        },
+        {
+          "id" : "Orphanet:178469",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN200399",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015802",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060307",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015802",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015802",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:178469",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015802",
+            "UMLS:CN200399",
+            "DOID:0060307",
+            "Orphanet:178469"
+          ]
+        }
+      ]
+    }
+  ]
+}

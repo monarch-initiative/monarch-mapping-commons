@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4ef734d21f0238fa17faca14fe448e51537c25a00bc24db27d5a67a742816133",
+      "nodes" : [
+        {
+          "id" : "MESH:C566253",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1862510",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007155",
+          "type" : "CLASS",
+          "lbl" : "arteritis, familial granulomatous, with juvenile polyarthritis"
+        },
+        {
+          "id" : "OMIM:108050",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1862510",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007155",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566253",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007155",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007155",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:108050",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C566253",
+            "MONDO:0007155",
+            "UMLS:C1862510",
+            "OMIM:108050"
+          ]
+        }
+      ]
+    }
+  ]
+}

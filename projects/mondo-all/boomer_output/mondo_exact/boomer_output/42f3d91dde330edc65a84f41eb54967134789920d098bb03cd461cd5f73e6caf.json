@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:42f3d91dde330edc65a84f41eb54967134789920d098bb03cd461cd5f73e6caf",
+      "nodes" : [
+        {
+          "id" : "MESH:C566380",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1863922",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011315",
+          "type" : "CLASS",
+          "lbl" : "Osebold skeletal dysplasia/osteolysis syndrome"
+        },
+        {
+          "id" : "OMIM:603389",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011315",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603389",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566380",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011315",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1863922",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011315",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011315",
+            "MESH:C566380",
+            "OMIM:603389",
+            "UMLS:C1863922"
+          ]
+        }
+      ]
+    }
+  ]
+}

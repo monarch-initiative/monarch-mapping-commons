@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:38fae2710d06d2f65cafbc0758f87cacf8430d3d51b03bc6cee77319f3b0e29b",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201642",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016559",
+          "type" : "CLASS",
+          "lbl" : "glaucoma secondary to spherophakia/ectopia lentis and megalocornea"
+        },
+        {
+          "id" : "Orphanet:238763",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201642",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016559",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016559",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:238763",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016559",
+            "UMLS:CN201642",
+            "Orphanet:238763"
+          ]
+        }
+      ]
+    }
+  ]
+}

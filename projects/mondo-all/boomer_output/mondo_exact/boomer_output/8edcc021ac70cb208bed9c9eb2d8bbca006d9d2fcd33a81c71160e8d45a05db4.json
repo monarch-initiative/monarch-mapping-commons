@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8edcc021ac70cb208bed9c9eb2d8bbca006d9d2fcd33a81c71160e8d45a05db4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332312",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4510",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003023",
+          "type" : "CLASS",
+          "lbl" : "aorta angiosarcoma"
+        },
+        {
+          "id" : "NCIT:C5376",
+          "type" : "CLASS",
+          "lbl" : "Aortic Angiosarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4510",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003023",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332312",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003023",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003023",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5376",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003023",
+            "DOID:4510",
+            "UMLS:C1332312",
+            "NCIT:C5376"
+          ]
+        }
+      ]
+    }
+  ]
+}

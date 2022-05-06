@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e3b1ee343fa87ed4d50be7b758640d03375d580d0c2f6fc70f65ee4be96c643f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334270",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002831",
+          "type" : "CLASS",
+          "lbl" : "non-keratinizing sinonasal squamous cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C54287",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002831",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C54287",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334270",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002831",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002831",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C54287",
+            "MONDO:0002831",
+            "UMLS:C0334270",
+            "DOID:4003"
+          ]
+        }
+      ]
+    }
+  ]
+}

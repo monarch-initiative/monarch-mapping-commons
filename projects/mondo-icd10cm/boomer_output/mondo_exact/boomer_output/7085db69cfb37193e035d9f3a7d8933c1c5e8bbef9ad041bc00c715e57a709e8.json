@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7085db69cfb37193e035d9f3a7d8933c1c5e8bbef9ad041bc00c715e57a709e8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1516413",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060777",
+          "type" : "CLASS",
+          "lbl" : "cervical fibroepithelial polyp"
+        },
+        {
+          "id" : "NCIT:C40200",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0060777",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1516413",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060777",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C40200",
+            "MONDO:0060777",
+            "UMLS:C1516413"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a286fcb52d14abf91f4e6155ce8fc88dafe78f331e44ac97c8451e3db6b1aea3",
+      "nodes" : [
+        {
+          "id" : "MESH:C566246",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1862440",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007166",
+          "type" : "CLASS",
+          "lbl" : "ataxia with fasciculations"
+        },
+        {
+          "id" : "OMIM:108700",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1862440",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007166",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566246",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007166",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007166",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:108700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1862440",
+            "MONDO:0007166",
+            "MESH:C566246",
+            "OMIM:108700"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:49c3e047d7bd64d451b91709a49231e5b6196e242f1a841d597c6d9e89569fe6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3275750",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010859",
+          "type" : "CLASS",
+          "lbl" : "atrioventricular septal defect 3"
+        },
+        {
+          "id" : "OMIM:600309",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3275750",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010859",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010859",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600309",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3275750",
+            "MONDO:0010859",
+            "OMIM:600309"
+          ]
+        }
+      ]
+    }
+  ]
+}

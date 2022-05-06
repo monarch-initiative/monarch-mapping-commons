@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4930fc07b2f097c72ce932043865a31e846a56f65e3145a2021ae6829e0a63b6",
+      "nodes" : [
+        {
+          "id" : "MESH:C563382",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1832677",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011005",
+          "type" : "CLASS",
+          "lbl" : "trisomy 18-like syndrome"
+        },
+        {
+          "id" : "OMIM:601161",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601161",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1832677",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011005",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563382",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011005",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:601161",
+            "MONDO:0011005",
+            "UMLS:C1832677",
+            "MESH:C563382"
+          ]
+        }
+      ]
+    }
+  ]
+}

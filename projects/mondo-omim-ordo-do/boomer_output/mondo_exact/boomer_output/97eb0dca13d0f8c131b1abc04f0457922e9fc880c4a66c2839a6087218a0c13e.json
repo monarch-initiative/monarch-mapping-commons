@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:97eb0dca13d0f8c131b1abc04f0457922e9fc880c4a66c2839a6087218a0c13e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4014762",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014411",
+          "type" : "CLASS",
+          "lbl" : "myopia 24, autosomal dominant"
+        },
+        {
+          "id" : "OMIM:615946",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4014762",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014411",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014411",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615946",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014411",
+            "OMIM:615946",
+            "UMLS:C4014762"
+          ]
+        }
+      ]
+    }
+  ]
+}

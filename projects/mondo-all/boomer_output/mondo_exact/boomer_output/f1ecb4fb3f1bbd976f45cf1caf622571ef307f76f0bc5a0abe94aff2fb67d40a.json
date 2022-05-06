@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f1ecb4fb3f1bbd976f45cf1caf622571ef307f76f0bc5a0abe94aff2fb67d40a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203741",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017791",
+          "type" : "CLASS",
+          "lbl" : "high bone mass osteogenesis imperfecta"
+        },
+        {
+          "id" : "Orphanet:314029",
+          "type" : "CLASS",
+          "lbl" : "High bone mass osteogenesis imperfecta"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203741",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017791",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017791",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:314029",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN203741",
+            "MONDO:0017791",
+            "Orphanet:314029"
+          ]
+        }
+      ]
+    }
+  ]
+}

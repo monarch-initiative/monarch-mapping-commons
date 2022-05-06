@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4dcb2db77a36df860f2ff2df4f37eaa07d408900e90bc3740643a59ffea26bca",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310624",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111067",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015015",
+          "type" : "CLASS",
+          "lbl" : "congenital bile acid synthesis defect 6"
+        },
+        {
+          "id" : "OMIM:617308",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015015",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617308",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310624",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015015",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111067",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015015",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:617308",
+            "MONDO:0015015",
+            "UMLS:C4310624",
+            "DOID:0111067"
+          ]
+        }
+      ]
+    }
+  ]
+}

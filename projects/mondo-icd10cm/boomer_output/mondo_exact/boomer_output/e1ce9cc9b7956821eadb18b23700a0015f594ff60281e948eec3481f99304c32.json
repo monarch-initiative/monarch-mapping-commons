@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e1ce9cc9b7956821eadb18b23700a0015f594ff60281e948eec3481f99304c32",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237430",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016219",
+          "type" : "CLASS",
+          "lbl" : "dysmorphism-pectus carinatum-joint laxity syndrome"
+        },
+        {
+          "id" : "Orphanet:2104",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016219",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2104",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237430",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016219",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:2104",
+            "MONDO:0016219",
+            "UMLS:CN237430"
+          ]
+        }
+      ]
+    }
+  ]
+}

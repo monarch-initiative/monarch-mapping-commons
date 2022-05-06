@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c988623e994e2c85ce95a874805dba3d844afef337b3d9dfab4c5ed3737de428",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1710067",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006408",
+          "type" : "CLASS",
+          "lbl" : "sex hormone-producing adrenal cortex adenoma"
+        },
+        {
+          "id" : "NCIT:C48452",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006408",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C48452",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1710067",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006408",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C48452",
+            "MONDO:0006408",
+            "UMLS:C1710067"
+          ]
+        }
+      ]
+    }
+  ]
+}

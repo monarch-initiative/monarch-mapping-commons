@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b83184fc048c129bd2864a92e06e7ea280e50873f7a857f94dab4b2b737f1026",
+      "nodes" : [
+        {
+          "id" : "MESH:C580233",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016527",
+          "type" : "CLASS",
+          "lbl" : "glycogen storage disease due to lactate dehydrogenase deficiency"
+        },
+        {
+          "id" : "Orphanet:2364",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016527",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2364",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C580233",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016527",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:2364",
+            "MONDO:0016527",
+            "MESH:C580233"
+          ]
+        }
+      ]
+    }
+  ]
+}

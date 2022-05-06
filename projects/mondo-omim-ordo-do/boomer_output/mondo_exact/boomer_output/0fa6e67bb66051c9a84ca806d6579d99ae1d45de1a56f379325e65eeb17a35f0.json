@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0fa6e67bb66051c9a84ca806d6579d99ae1d45de1a56f379325e65eeb17a35f0",
+      "nodes" : [
+        {
+          "id" : "SCTID:270881008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009220",
+          "type" : "CLASS",
+          "lbl" : "visceral steatosis, congenital"
+        },
+        {
+          "id" : "OMIM:228100",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009220",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:228100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:270881008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009220",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:228100",
+            "MONDO:0009220",
+            "SCTID:270881008"
+          ]
+        }
+      ]
+    }
+  ]
+}

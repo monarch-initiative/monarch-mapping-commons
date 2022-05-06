@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:17dd5be4c740128ee8af03fc393c344a5ece921eff82a9bb23ccb53b83049501",
+      "nodes" : [
+        {
+          "id" : "MONDO:0013851",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant aplasia and myelodysplasia"
+        },
+        {
+          "id" : "OMIM:614675",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:314399",
+          "type" : "CLASS",
+          "lbl" : "Autosomal dominant aplasia and myelodysplasia"
+        },
+        {
+          "id" : "UMLS:CN203751",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3808553",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203751",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013851",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013851",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C3808553",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013851",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:314399",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013851",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614675",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN203751",
+            "MONDO:0013851",
+            "Orphanet:314399",
+            "OMIM:614675"
+          ]
+        }
+      ]
+    }
+  ]
+}

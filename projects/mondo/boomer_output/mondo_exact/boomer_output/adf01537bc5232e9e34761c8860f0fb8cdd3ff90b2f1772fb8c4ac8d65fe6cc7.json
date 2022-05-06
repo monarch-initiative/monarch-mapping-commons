@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:adf01537bc5232e9e34761c8860f0fb8cdd3ff90b2f1772fb8c4ac8d65fe6cc7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1850864",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009680",
+          "type" : "CLASS",
+          "lbl" : "congenital muscular dystrophy-infantile cataract-hypogonadism syndrome"
+        },
+        {
+          "id" : "Orphanet:1875",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2931578",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:254000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009680",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C2931578",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009680",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1875",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1850864",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009680",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009680",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:254000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009680",
+            "Orphanet:1875",
+            "UMLS:C1850864",
+            "OMIM:254000"
+          ]
+        }
+      ]
+    }
+  ]
+}

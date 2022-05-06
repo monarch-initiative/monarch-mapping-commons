@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2a2b85945986c7482a442c909af17728b2042b8ef786539f43383c2165371944",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334584",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003112",
+          "type" : "CLASS",
+          "lbl" : "malignant gastric germ cell tumor"
+        },
+        {
+          "id" : "NCIT:C5486",
+          "type" : "CLASS",
+          "lbl" : "Malignant Gastric Germ Cell Tumor"
+        },
+        {
+          "id" : "DOID:4716",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1333769",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003112",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5486",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003112",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1334584",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4716",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003112",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333769",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003112",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C5486",
+            "MONDO:0003112",
+            "DOID:4716",
+            "UMLS:C1333769"
+          ]
+        }
+      ]
+    }
+  ]
+}

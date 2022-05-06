@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c58b4738d2249554b7aeab2408b6429b7e0ad45f0e8324200d6c761f5b5d1c1a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333443",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7051",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004093",
+          "type" : "CLASS",
+          "lbl" : "esophageal basaloid carcinoma"
+        },
+        {
+          "id" : "NCIT:C7032",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333443",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004093",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004093",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7032",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7051",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004093",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333443",
+            "MONDO:0004093",
+            "NCIT:C7032",
+            "DOID:7051"
+          ]
+        }
+      ]
+    }
+  ]
+}

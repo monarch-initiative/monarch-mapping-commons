@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9de90abc9709b20a2621601c3eaadfbf8c084c944f7d11cfeed2b38c3f1e61ba",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204101",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017955",
+          "type" : "CLASS",
+          "lbl" : "granulomatous autoinflammatory syndrome"
+        },
+        {
+          "id" : "Orphanet:324930",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017955",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:324930",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204101",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017955",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:324930",
+            "MONDO:0017955",
+            "UMLS:CN204101"
+          ]
+        }
+      ]
+    }
+  ]
+}

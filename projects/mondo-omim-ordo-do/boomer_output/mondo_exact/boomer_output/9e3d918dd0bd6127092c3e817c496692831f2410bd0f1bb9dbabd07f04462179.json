@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9e3d918dd0bd6127092c3e817c496692831f2410bd0f1bb9dbabd07f04462179",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1513782",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0045071",
+          "type" : "CLASS",
+          "lbl" : "mycosis fungoides variant"
+        },
+        {
+          "id" : "NCIT:C39644",
+          "type" : "CLASS",
+          "lbl" : "Mycosis Fungoides Variant"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0045071",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39644",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1513782",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0045071",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C39644",
+            "MONDO:0045071",
+            "UMLS:C1513782"
+          ]
+        }
+      ]
+    }
+  ]
+}

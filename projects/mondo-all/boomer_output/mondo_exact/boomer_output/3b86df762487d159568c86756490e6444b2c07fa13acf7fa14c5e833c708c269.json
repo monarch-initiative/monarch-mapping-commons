@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3b86df762487d159568c86756490e6444b2c07fa13acf7fa14c5e833c708c269",
+      "nodes" : [
+        {
+          "id" : "MESH:C567200",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3502055",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060026",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000583",
+          "type" : "CLASS",
+          "lbl" : "immunoglobulin beta deficiency"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0060026",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000583",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567200",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000583",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3502055",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000583",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0060026",
+            "MONDO:0000583",
+            "MESH:C567200",
+            "UMLS:C3502055"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1b4e9c82e285b4dcd1ee6485bc01cf79b4e4c684235aa2d627c8a11a255e430c",
+      "nodes" : [
+        {
+          "id" : "MESH:C565475",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1855793",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009438",
+          "type" : "CLASS",
+          "lbl" : "hypouricemia, hypercalcinuria, and decreased bone density"
+        },
+        {
+          "id" : "OMIM:242050",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009438",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:242050",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1855793",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009438",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565475",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009438",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:242050",
+            "MONDO:0009438",
+            "UMLS:C1855793",
+            "MESH:C565475"
+          ]
+        }
+      ]
+    }
+  ]
+}

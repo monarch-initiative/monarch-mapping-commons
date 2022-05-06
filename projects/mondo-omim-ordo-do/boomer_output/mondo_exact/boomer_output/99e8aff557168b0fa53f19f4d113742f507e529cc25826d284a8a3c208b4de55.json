@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:99e8aff557168b0fa53f19f4d113742f507e529cc25826d284a8a3c208b4de55",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227645",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019520",
+          "type" : "CLASS",
+          "lbl" : "syndromic lymphedema"
+        },
+        {
+          "id" : "Orphanet:89832",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227645",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019520",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019520",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:89832",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019520",
+            "UMLS:CN227645",
+            "Orphanet:89832"
+          ]
+        }
+      ]
+    }
+  ]
+}

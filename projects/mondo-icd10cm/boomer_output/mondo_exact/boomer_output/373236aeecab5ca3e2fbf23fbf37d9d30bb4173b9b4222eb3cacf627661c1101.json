@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:373236aeecab5ca3e2fbf23fbf37d9d30bb4173b9b4222eb3cacf627661c1101",
+      "nodes" : [
+        {
+          "id" : "SCTID:92337009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0684358",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021490",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of sebaceous gland"
+        },
+        {
+          "id" : "NCIT:C8525",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0684358",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92337009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021490",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8525",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021490",
+            "UMLS:C0684358",
+            "SCTID:92337009",
+            "NCIT:C8525"
+          ]
+        }
+      ]
+    }
+  ]
+}

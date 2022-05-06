@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a273dd2999db0ab3e257d7864a6172d066b8e0183a96d1d73bf34b01e1b289d6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334229",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2705",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002402",
+          "type" : "CLASS",
+          "lbl" : "malignant giant cell tumor"
+        },
+        {
+          "id" : "NCIT:C4090",
+          "type" : "CLASS",
+          "lbl" : "Malignant Giant Cell Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:2705",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002402",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002402",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4090",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334229",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002402",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4090",
+            "MONDO:0002402",
+            "DOID:2705",
+            "UMLS:C0334229"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:93862944e4acefe5c9db610b8fa39f04c3182c62e95f6109b52e43e7ed5b6de8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3806742",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010485",
+          "type" : "CLASS",
+          "lbl" : "X-linked colobomatous microphthalmia-microcephaly-intellectual disability-short stature syndrome"
+        },
+        {
+          "id" : "Orphanet:431140",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:300915",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010485",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300915",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010485",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:431140",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3806742",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010485",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:300915",
+            "MONDO:0010485",
+            "Orphanet:431140",
+            "UMLS:C3806742"
+          ]
+        }
+      ]
+    }
+  ]
+}

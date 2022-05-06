@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ec53407a6421d5230a2747be17f57be5a3cc87a922d9672b1be2c022fb2213ec",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3554607",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080113",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014065",
+          "type" : "CLASS",
+          "lbl" : "mitochondrial complex III deficiency nuclear type 4"
+        },
+        {
+          "id" : "OMIM:615159",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014065",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615159",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080113",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014065",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3554607",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014065",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:615159",
+            "MONDO:0014065",
+            "DOID:0080113",
+            "UMLS:C3554607"
+          ]
+        }
+      ]
+    }
+  ]
+}

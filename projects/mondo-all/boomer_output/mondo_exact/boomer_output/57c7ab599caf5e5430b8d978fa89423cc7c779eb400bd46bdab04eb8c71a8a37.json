@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:57c7ab599caf5e5430b8d978fa89423cc7c779eb400bd46bdab04eb8c71a8a37",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310762",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080417",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014868",
+          "type" : "CLASS",
+          "lbl" : "developmental and epileptic encephalopathy, 38"
+        },
+        {
+          "id" : "OMIM:617020",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080417",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014868",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014868",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617020",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310762",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014868",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0080417",
+            "MONDO:0014868",
+            "OMIM:617020",
+            "UMLS:C4310762"
+          ]
+        }
+      ]
+    }
+  ]
+}

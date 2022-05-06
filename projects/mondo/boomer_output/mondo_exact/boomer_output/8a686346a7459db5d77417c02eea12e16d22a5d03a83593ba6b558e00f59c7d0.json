@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8a686346a7459db5d77417c02eea12e16d22a5d03a83593ba6b558e00f59c7d0",
+      "nodes" : [
+        {
+          "id" : "MESH:D016137",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017069",
+          "type" : "CLASS",
+          "lbl" : "spina bifida cystica"
+        },
+        {
+          "id" : "NCIT:C101201",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:268744",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017069",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:268744",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D016137",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017069",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017069",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C101201",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017069",
+            "Orphanet:268744",
+            "MESH:D016137",
+            "NCIT:C101201"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3b808184c1ebb74bfd6dd55c0d52667aff087db934b19c59ae0ebbdf73c603ac",
+      "nodes" : [
+        {
+          "id" : "MESH:C563024",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0599464",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010050",
+          "type" : "CLASS",
+          "lbl" : "spastic pseudosclerosis"
+        },
+        {
+          "id" : "OMIM:270900",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0599464",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010050",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563024",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010050",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010050",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:270900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010050",
+            "UMLS:C0599464",
+            "MESH:C563024",
+            "OMIM:270900"
+          ]
+        }
+      ]
+    }
+  ]
+}

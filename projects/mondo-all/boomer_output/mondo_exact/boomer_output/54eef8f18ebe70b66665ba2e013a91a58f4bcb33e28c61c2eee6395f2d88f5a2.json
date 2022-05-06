@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:54eef8f18ebe70b66665ba2e013a91a58f4bcb33e28c61c2eee6395f2d88f5a2",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN248517",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060720",
+          "type" : "CLASS",
+          "lbl" : "congenital disorder of glycosylation with defective fucosylation"
+        },
+        {
+          "id" : "OMIMPS:618005",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0060720",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:618005",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN248517",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060720",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIMPS:618005",
+            "MONDO:0060720",
+            "UMLS:CN248517"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:60a22db514a858cbb2d49ce9416e6b94c9fd4c17b7613101601aa2d2c1539d21",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206526",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019653",
+          "type" : "CLASS",
+          "lbl" : "familial idiopathic steroid-resistant nephrotic syndrome with minimal changes"
+        },
+        {
+          "id" : "Orphanet:93216",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206526",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019653",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019653",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93216",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN206526",
+            "MONDO:0019653",
+            "Orphanet:93216"
+          ]
+        }
+      ]
+    }
+  ]
+}

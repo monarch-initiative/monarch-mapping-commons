@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6afc91386650d7beaea20e0aa4e2293cea303f596d928ae247e8619231d984cb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553843",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0090089",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013912",
+          "type" : "CLASS",
+          "lbl" : "hypogonadotropic hypogonadism 10 with or without anosmia"
+        },
+        {
+          "id" : "OMIM:614839",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013912",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614839",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3553843",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013912",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0090089",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013912",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013912",
+            "OMIM:614839",
+            "UMLS:C3553843",
+            "DOID:0090089"
+          ]
+        }
+      ]
+    }
+  ]
+}

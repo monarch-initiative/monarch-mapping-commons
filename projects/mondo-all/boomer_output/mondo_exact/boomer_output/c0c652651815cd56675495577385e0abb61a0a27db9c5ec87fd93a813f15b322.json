@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c0c652651815cd56675495577385e0abb61a0a27db9c5ec87fd93a813f15b322",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1516490",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7642",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004315",
+          "type" : "CLASS",
+          "lbl" : "cholangiolocellular carcinoma"
+        },
+        {
+          "id" : "NCIT:C41617",
+          "type" : "CLASS",
+          "lbl" : "Cholangiolocellular Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004315",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C41617",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7642",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004315",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1516490",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004315",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004315",
+            "NCIT:C41617",
+            "DOID:7642",
+            "UMLS:C1516490"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a96dcb54c47b98d7e9c085c7dfeb516d3cf6d3a84808d6f00431f122cfbd1000",
+      "nodes" : [
+        {
+          "id" : "MESH:D005667",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0025419",
+          "type" : "CLASS",
+          "lbl" : "furunculosis"
+        },
+        {
+          "id" : "NCIT:C34629",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0025419",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C34629",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D005667",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025419",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0025419",
+            "NCIT:C34629",
+            "MESH:D005667"
+          ]
+        }
+      ]
+    }
+  ]
+}

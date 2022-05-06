@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:19b0ba0480092428d1dded2fc98af4b6005352924d46a792a5f6778b96a9f706",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3146244",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050668",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000395",
+          "type" : "CLASS",
+          "lbl" : "alcohol-related birth defect"
+        },
+        {
+          "id" : "NCIT:C92727",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3146244",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000395",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000395",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C92727",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050668",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000395",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3146244",
+            "MONDO:0000395",
+            "NCIT:C92727",
+            "DOID:0050668"
+          ]
+        }
+      ]
+    }
+  ]
+}

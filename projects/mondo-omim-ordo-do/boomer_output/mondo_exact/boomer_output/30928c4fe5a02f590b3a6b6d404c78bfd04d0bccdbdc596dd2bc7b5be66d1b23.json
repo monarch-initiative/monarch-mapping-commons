@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:30928c4fe5a02f590b3a6b6d404c78bfd04d0bccdbdc596dd2bc7b5be66d1b23",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280471",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080495",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013689",
+          "type" : "CLASS",
+          "lbl" : "ovarian dysgenesis 3"
+        },
+        {
+          "id" : "OMIM:614324",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080495",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013689",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3280471",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013689",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013689",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614324",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0080495",
+            "MONDO:0013689",
+            "OMIM:614324",
+            "UMLS:C3280471"
+          ]
+        }
+      ]
+    }
+  ]
+}

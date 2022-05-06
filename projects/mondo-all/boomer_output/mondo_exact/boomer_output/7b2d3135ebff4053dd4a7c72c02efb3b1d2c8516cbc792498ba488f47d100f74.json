@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7b2d3135ebff4053dd4a7c72c02efb3b1d2c8516cbc792498ba488f47d100f74",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335420",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5341",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003399",
+          "type" : "CLASS",
+          "lbl" : "pineal region yolk sac tumor"
+        },
+        {
+          "id" : "NCIT:C6752",
+          "type" : "CLASS",
+          "lbl" : "Pineal Region Yolk Sac Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003399",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6752",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335420",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003399",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5341",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003399",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6752",
+            "MONDO:0003399",
+            "UMLS:C1335420",
+            "DOID:5341"
+          ]
+        }
+      ]
+    }
+  ]
+}

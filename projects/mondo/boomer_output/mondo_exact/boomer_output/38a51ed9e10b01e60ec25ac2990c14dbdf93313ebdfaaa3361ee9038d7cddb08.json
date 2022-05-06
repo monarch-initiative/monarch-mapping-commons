@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:38a51ed9e10b01e60ec25ac2990c14dbdf93313ebdfaaa3361ee9038d7cddb08",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN242146",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018596",
+          "type" : "CLASS",
+          "lbl" : "systemic polyarteritis nodosa"
+        },
+        {
+          "id" : "Orphanet:439762",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN242146",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018596",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018596",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:439762",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018596",
+            "Orphanet:439762",
+            "UMLS:CN242146"
+          ]
+        }
+      ]
+    }
+  ]
+}

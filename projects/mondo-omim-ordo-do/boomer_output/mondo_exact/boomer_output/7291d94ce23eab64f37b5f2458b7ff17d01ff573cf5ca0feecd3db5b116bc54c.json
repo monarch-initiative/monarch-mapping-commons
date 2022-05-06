@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7291d94ce23eab64f37b5f2458b7ff17d01ff573cf5ca0feecd3db5b116bc54c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150852",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013318",
+          "type" : "CLASS",
+          "lbl" : "early repolarization associated with ventricular fibrillation"
+        },
+        {
+          "id" : "OMIM:613601",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013318",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613601",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3150852",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013318",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013318",
+            "OMIM:613601",
+            "UMLS:C3150852"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ad8fa6c3ca67a15b8c265eb5f2687638b027445a4bdcb439bcf60fbc4bff4136",
+      "nodes" : [
+        {
+          "id" : "OMIM:170650",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D010520",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0031106",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008226",
+          "type" : "CLASS",
+          "lbl" : "periodontitis, aggressive 1"
+        },
+        {
+          "id" : "DOID:1474",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:1474",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008226",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D010520",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008226",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008226",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:170650",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0031106",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008226",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:1474",
+            "MONDO:0008226",
+            "MESH:D010520",
+            "OMIM:170650",
+            "UMLS:C0031106"
+          ]
+        }
+      ]
+    }
+  ]
+}

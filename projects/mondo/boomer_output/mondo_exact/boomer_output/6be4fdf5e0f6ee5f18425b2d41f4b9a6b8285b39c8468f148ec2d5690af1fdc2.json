@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6be4fdf5e0f6ee5f18425b2d41f4b9a6b8285b39c8468f148ec2d5690af1fdc2",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200367",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015785",
+          "type" : "CLASS",
+          "lbl" : "Prader-Willi syndrome due to translocation"
+        },
+        {
+          "id" : "Orphanet:177907",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015785",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:177907",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN200367",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015785",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:177907",
+            "MONDO:0015785",
+            "UMLS:CN200367"
+          ]
+        }
+      ]
+    }
+  ]
+}

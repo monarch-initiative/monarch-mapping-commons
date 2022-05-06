@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c56b9da36e531fe92b54fd96a83614c440cf50cfa4308b3a5452973e6e69d093",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3272611",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006162",
+          "type" : "CLASS",
+          "lbl" : "colorectal neuroendocrine tumor G1"
+        },
+        {
+          "id" : "NCIT:C96160",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3272611",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006162",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006162",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C96160",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006162",
+            "NCIT:C96160",
+            "UMLS:C3272611"
+          ]
+        }
+      ]
+    }
+  ]
+}

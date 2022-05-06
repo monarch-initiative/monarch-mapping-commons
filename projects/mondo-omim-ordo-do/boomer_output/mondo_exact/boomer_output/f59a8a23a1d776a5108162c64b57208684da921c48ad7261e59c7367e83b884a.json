@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f59a8a23a1d776a5108162c64b57208684da921c48ad7261e59c7367e83b884a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0339556",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:774",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C4365",
+          "type" : "CLASS",
+          "lbl" : "Primary Retinal Non-Hodgkin Lymphoma"
+        },
+        {
+          "id" : "SCTID:232075002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004349",
+          "type" : "CLASS",
+          "lbl" : "retina lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004349",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4365",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0339556",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004349",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:774",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004349",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:232075002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004349",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0339556",
+            "DOID:774",
+            "MONDO:0004349",
+            "NCIT:C4365",
+            "SCTID:232075002"
+          ]
+        }
+      ]
+    }
+  ]
+}

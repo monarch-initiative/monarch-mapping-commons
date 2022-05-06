@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:928634350a0733592fc00b27a22f94c0d8f5f014e7ba7b33aed4fde40fc7adc6",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:D47.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:109983007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D010265",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004960",
+          "type" : "CLASS",
+          "lbl" : "monoclonal gammopathy"
+        },
+        {
+          "id" : "NCIT:C35548",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:109983007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004960",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D010265",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004960",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004960",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35548",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D47.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004960",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D010265",
+            "SCTID:109983007",
+            "MONDO:0004960",
+            "NCIT:C35548",
+            "ICD10CM:D47.2"
+          ]
+        }
+      ]
+    }
+  ]
+}

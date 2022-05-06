@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:de66a840914327daa805393271ade70ddc0272713c085c0d973d1cd4d2f832da",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204833",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018258",
+          "type" : "CLASS",
+          "lbl" : "Angora hair nevus"
+        },
+        {
+          "id" : "Orphanet:370039",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018258",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:370039",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204833",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018258",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:370039",
+            "MONDO:0018258",
+            "UMLS:CN204833"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:92d33e7bcc577cc07b8ed99af186cf7e55e886638e10e9f8d063f3a88fbfe085",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1510784",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10368",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001017",
+          "type" : "CLASS",
+          "lbl" : "epididymal adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C39957",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0001017",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39957",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10368",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001017",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1510784",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001017",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001017",
+            "DOID:10368",
+            "NCIT:C39957",
+            "UMLS:C1510784"
+          ]
+        }
+      ]
+    }
+  ]
+}

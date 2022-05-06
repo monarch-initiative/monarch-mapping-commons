@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:63a13ff2b4322a6a30da6ea0c89b2df6607384ed82dea35b1122fde30b800f85",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN437676",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017950",
+          "type" : "CLASS",
+          "lbl" : "microcephalic primordial dwarfism"
+        },
+        {
+          "id" : "Orphanet:324761",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017950",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:324761",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN437676",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017950",
+            "Orphanet:324761",
+            "UMLS:CN437676"
+          ]
+        }
+      ]
+    }
+  ]
+}

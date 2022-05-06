@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:32b080db590ef4b466216387ec7d62e9e08d2a775283af8c0c1fe7d096de0f99",
+      "nodes" : [
+        {
+          "id" : "SCTID:92385005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0153944",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021501",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of small intestine"
+        },
+        {
+          "id" : "NCIT:C3600",
+          "type" : "CLASS",
+          "lbl" : "Benign Small Intestinal Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021501",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92385005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021501",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0153944",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021501",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C3600",
+            "MONDO:0021501",
+            "SCTID:92385005",
+            "UMLS:C0153944"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:379b4dcf175f5b125f536e94e607bf6e4ad68ad9551530ab61c7bcc0b0c63f32",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0474836",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080189",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000898",
+          "type" : "CLASS",
+          "lbl" : "malignant hemangioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0474836",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000898",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080189",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000898",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0474836",
+            "MONDO:0000898",
+            "DOID:0080189"
+          ]
+        }
+      ]
+    }
+  ]
+}

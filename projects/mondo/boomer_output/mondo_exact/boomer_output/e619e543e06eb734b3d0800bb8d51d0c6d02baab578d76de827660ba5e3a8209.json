@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e619e543e06eb734b3d0800bb8d51d0c6d02baab578d76de827660ba5e3a8209",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310776",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014850",
+          "type" : "CLASS",
+          "lbl" : "retinitis pigmentosa and erythrocytic microcytosis"
+        },
+        {
+          "id" : "OMIM:616959",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014850",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616959",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310776",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014850",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014850",
+            "OMIM:616959",
+            "UMLS:C4310776"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:719fcb6bfa04b1fafcc5416d79d2492639cf11fd6c5cf4465facbcfb51e8081e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0345988",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C4463",
+          "type" : "CLASS",
+          "lbl" : "Skin Appendage Neoplasm"
+        },
+        {
+          "id" : "MONDO:0002297",
+          "type" : "CLASS",
+          "lbl" : "epidermal appendage tumor"
+        },
+        {
+          "id" : "SCTID:126489007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2433",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:2433",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002297",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002297",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4463",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0345988",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002297",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:126489007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002297",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:2433",
+            "MONDO:0002297",
+            "NCIT:C4463",
+            "SCTID:126489007",
+            "UMLS:C0345988"
+          ]
+        }
+      ]
+    }
+  ]
+}

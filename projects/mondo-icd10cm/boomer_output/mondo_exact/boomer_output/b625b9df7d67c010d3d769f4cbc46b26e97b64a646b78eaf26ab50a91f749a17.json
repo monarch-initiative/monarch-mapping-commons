@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b625b9df7d67c010d3d769f4cbc46b26e97b64a646b78eaf26ab50a91f749a17",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0205945",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4235",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002927",
+          "type" : "CLASS",
+          "lbl" : "spindle cell sarcoma"
+        },
+        {
+          "id" : "NCIT:C27005",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4235",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002927",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002927",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27005",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0205945",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002927",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:4235",
+            "MONDO:0002927",
+            "NCIT:C27005",
+            "UMLS:C0205945"
+          ]
+        }
+      ]
+    }
+  ]
+}

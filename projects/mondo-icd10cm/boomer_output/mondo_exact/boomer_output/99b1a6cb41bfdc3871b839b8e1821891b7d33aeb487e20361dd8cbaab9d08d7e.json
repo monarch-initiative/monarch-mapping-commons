@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:99b1a6cb41bfdc3871b839b8e1821891b7d33aeb487e20361dd8cbaab9d08d7e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0155515",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1777",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002107",
+          "type" : "CLASS",
+          "lbl" : "unilateral hyperactive labyrinth"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:1777",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002107",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0155515",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002107",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002107",
+            "UMLS:C0155515",
+            "DOID:1777"
+          ]
+        }
+      ]
+    }
+  ]
+}

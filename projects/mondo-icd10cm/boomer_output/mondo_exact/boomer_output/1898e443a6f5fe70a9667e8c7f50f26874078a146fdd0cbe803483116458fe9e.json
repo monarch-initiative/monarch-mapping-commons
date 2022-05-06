@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1898e443a6f5fe70a9667e8c7f50f26874078a146fdd0cbe803483116458fe9e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202351",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017040",
+          "type" : "CLASS",
+          "lbl" : "exposure-related interstitial lung disease"
+        },
+        {
+          "id" : "Orphanet:264984",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202351",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017040",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017040",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:264984",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017040",
+            "UMLS:CN202351",
+            "Orphanet:264984"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2e94218a05aea429623ae7267d91e298d1b19738a87ac859c5f804777215b0ce",
+      "nodes" : [
+        {
+          "id" : "MESH:C566651",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1866608",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011117",
+          "type" : "CLASS",
+          "lbl" : "iris pigment epithelium anomalies"
+        },
+        {
+          "id" : "OMIM:601616",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011117",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601616",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566651",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011117",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1866608",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011117",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011117",
+            "OMIM:601616",
+            "MESH:C566651",
+            "UMLS:C1866608"
+          ]
+        }
+      ]
+    }
+  ]
+}

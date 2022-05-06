@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0a4c785a70ffb012638718c49ba69b16394706235e8bf79650b96e1e2715e0c1",
+      "nodes" : [
+        {
+          "id" : "SCTID:703270004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:210589",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016223",
+          "type" : "CLASS",
+          "lbl" : "infantile hemangioma of rare localization"
+        },
+        {
+          "id" : "UMLS:CN226884",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3839613",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN226884",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016223",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016223",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:210589",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016223",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C3839613",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:703270004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016223",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016223",
+            "UMLS:CN226884",
+            "Orphanet:210589",
+            "SCTID:703270004"
+          ]
+        }
+      ]
+    }
+  ]
+}

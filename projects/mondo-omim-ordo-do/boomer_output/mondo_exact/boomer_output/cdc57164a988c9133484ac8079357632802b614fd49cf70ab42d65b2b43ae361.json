@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cdc57164a988c9133484ac8079357632802b614fd49cf70ab42d65b2b43ae361",
+      "nodes" : [
+        {
+          "id" : "SCTID:92059004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0154028",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021487",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of choroid"
+        },
+        {
+          "id" : "NCIT:C3625",
+          "type" : "CLASS",
+          "lbl" : "Benign Choroid Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:92059004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021487",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021487",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3625",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0154028",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021487",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:92059004",
+            "MONDO:0021487",
+            "NCIT:C3625",
+            "UMLS:C0154028"
+          ]
+        }
+      ]
+    }
+  ]
+}

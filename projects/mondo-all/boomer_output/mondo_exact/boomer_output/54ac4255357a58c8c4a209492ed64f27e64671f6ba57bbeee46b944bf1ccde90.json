@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:54ac4255357a58c8c4a209492ed64f27e64671f6ba57bbeee46b944bf1ccde90",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1860213",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0100457",
+          "type" : "CLASS",
+          "lbl" : "achalasia, familial esophageal"
+        },
+        {
+          "id" : "OMIM:200400",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0100457",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:200400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1860213",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0100457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0100457",
+            "OMIM:200400",
+            "UMLS:C1860213"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:890dc8540008a307b73f7e9becb5df5427db820982cfaabc4adfd8ae45b1a598",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205736",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019176",
+          "type" : "CLASS",
+          "lbl" : "trichorhinophalangeal syndrome type I or III"
+        },
+        {
+          "id" : "Orphanet:77258",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN205736",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019176",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019176",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:77258",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019176",
+            "UMLS:CN205736",
+            "Orphanet:77258"
+          ]
+        }
+      ]
+    }
+  ]
+}

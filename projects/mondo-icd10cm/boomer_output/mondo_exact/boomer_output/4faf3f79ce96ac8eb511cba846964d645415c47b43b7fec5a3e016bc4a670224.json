@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4faf3f79ce96ac8eb511cba846964d645415c47b43b7fec5a3e016bc4a670224",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310680",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014955",
+          "type" : "CLASS",
+          "lbl" : "retinal dystrophy with or without extraocular anomalies"
+        },
+        {
+          "id" : "OMIM:617175",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014955",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617175",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310680",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014955",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014955",
+            "OMIM:617175",
+            "UMLS:C4310680"
+          ]
+        }
+      ]
+    }
+  ]
+}

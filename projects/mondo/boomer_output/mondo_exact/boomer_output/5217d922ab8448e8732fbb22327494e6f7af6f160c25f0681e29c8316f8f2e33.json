@@ -1,0 +1,129 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5217d922ab8448e8732fbb22327494e6f7af6f160c25f0681e29c8316f8f2e33",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0153420",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C4911",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0699791",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004950",
+          "type" : "CLASS",
+          "lbl" : "gastric carcinoma"
+        },
+        {
+          "id" : "DOID:5517",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10538",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:187741001",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:10538",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004950",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4911",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:187741001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004950",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0153420",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0699791",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004950",
+          "pred" : "siblingOf",
+          "obj" : "DOID:5517",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:10538",
+            "NCIT:C4911",
+            "MONDO:0004950",
+            "SCTID:187741001",
+            "UMLS:C0699791"
+          ]
+        }
+      ]
+    }
+  ]
+}

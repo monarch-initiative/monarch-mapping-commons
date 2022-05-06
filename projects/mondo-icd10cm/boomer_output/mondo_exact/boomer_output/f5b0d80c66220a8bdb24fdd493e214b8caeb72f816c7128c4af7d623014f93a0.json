@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f5b0d80c66220a8bdb24fdd493e214b8caeb72f816c7128c4af7d623014f93a0",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3806745",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010486",
+          "type" : "CLASS",
+          "lbl" : "Olmsted syndrome, X-linked"
+        },
+        {
+          "id" : "OMIM:300918",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3806745",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010486",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010486",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300918",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010486",
+            "OMIM:300918",
+            "UMLS:C3806745"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:790f82dfcb570d990e562146723c6c8e0c3307aef432a31c4a778b3b027f3235",
+      "nodes" : [
+        {
+          "id" : "MESH:C563817",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1837014",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011857",
+          "type" : "CLASS",
+          "lbl" : "atrial fibrillation, familial, 3"
+        },
+        {
+          "id" : "OMIM:607554",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1837014",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011857",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011857",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607554",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563817",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011857",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1837014",
+            "MONDO:0011857",
+            "OMIM:607554",
+            "MESH:C563817"
+          ]
+        }
+      ]
+    }
+  ]
+}

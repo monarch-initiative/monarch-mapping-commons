@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:40799031820b49c2051cc73d1644be66a571d649a50f981076c3614b7c341ae6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280785",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013749",
+          "type" : "CLASS",
+          "lbl" : "ventricular septal defect 3"
+        },
+        {
+          "id" : "OMIM:614432",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013749",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614432",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3280785",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013749",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013749",
+            "OMIM:614432",
+            "UMLS:C3280785"
+          ]
+        }
+      ]
+    }
+  ]
+}

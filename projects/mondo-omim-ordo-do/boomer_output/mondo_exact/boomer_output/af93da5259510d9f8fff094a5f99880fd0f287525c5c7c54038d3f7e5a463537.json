@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:af93da5259510d9f8fff094a5f99880fd0f287525c5c7c54038d3f7e5a463537",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2239351",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110523",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013386",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive nonsyndromic hearing loss 74"
+        },
+        {
+          "id" : "OMIM:613718",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013386",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613718",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110523",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013386",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2239351",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013386",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013386",
+            "OMIM:613718",
+            "DOID:0110523",
+            "UMLS:C2239351"
+          ]
+        }
+      ]
+    }
+  ]
+}

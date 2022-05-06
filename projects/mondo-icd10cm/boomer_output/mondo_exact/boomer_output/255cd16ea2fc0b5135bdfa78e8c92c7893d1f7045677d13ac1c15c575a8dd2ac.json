@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:255cd16ea2fc0b5135bdfa78e8c92c7893d1f7045677d13ac1c15c575a8dd2ac",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519485",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7459",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004229",
+          "type" : "CLASS",
+          "lbl" : "acantholytic variant squamous cell breast carcinoma"
+        },
+        {
+          "id" : "NCIT:C40359",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004229",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40359",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7459",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004229",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1519485",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004229",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004229",
+            "NCIT:C40359",
+            "DOID:7459",
+            "UMLS:C1519485"
+          ]
+        }
+      ]
+    }
+  ]
+}

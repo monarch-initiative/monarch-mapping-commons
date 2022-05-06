@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ee2b25996f93cf31d9d8d214d3556cef6d5061a965b01f7601a04c0d899de3cf",
+      "nodes" : [
+        {
+          "id" : "SCTID:328661000119108",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN202324",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017014",
+          "type" : "CLASS",
+          "lbl" : "interstitial lung disease specific to childhood"
+        },
+        {
+          "id" : "Orphanet:264656",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202324",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017014",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017014",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:264656",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:328661000119108",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017014",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017014",
+            "UMLS:CN202324",
+            "Orphanet:264656",
+            "SCTID:328661000119108"
+          ]
+        }
+      ]
+    }
+  ]
+}

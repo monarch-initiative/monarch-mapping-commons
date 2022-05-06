@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:69332273f3a3160e0fbffcb0a9f0180b5bb5d797ba1e3a277e41c7013fa12e45",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3887964",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110860",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010916",
+          "type" : "CLASS",
+          "lbl" : "polycystic kidney disease 3 with or without polycystic liver disease"
+        },
+        {
+          "id" : "OMIM:600666",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010916",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600666",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110860",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010916",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3887964",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010916",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010916",
+            "OMIM:600666",
+            "DOID:0110860",
+            "UMLS:C3887964"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:33f275d8065a5879d4c355f976ae5c996339e6930aa0f5f7cf81bf8d130c53e2",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1840402",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007767",
+          "type" : "CLASS",
+          "lbl" : "hyperparathyroidism 1"
+        },
+        {
+          "id" : "OMIM:145000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1840402",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007767",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007767",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:145000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1840402",
+            "MONDO:0007767",
+            "OMIM:145000"
+          ]
+        }
+      ]
+    }
+  ]
+}

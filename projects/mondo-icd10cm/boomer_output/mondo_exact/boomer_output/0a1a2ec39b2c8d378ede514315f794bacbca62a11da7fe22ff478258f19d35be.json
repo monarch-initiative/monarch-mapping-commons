@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0a1a2ec39b2c8d378ede514315f794bacbca62a11da7fe22ff478258f19d35be",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335149",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7787",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004360",
+          "type" : "CLASS",
+          "lbl" : "breast extraskeletal osteosarcoma"
+        },
+        {
+          "id" : "NCIT:C5189",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7787",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004360",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004360",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5189",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335149",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004360",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:7787",
+            "MONDO:0004360",
+            "NCIT:C5189",
+            "UMLS:C1335149"
+          ]
+        }
+      ]
+    }
+  ]
+}

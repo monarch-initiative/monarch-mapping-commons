@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cf93aacbbe583fa34955d9029255736934a3593c1849e3c3ea148395d9186fec",
+      "nodes" : [
+        {
+          "id" : "DOID:0111720",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020359",
+          "type" : "CLASS",
+          "lbl" : "congenital symblepharon"
+        },
+        {
+          "id" : "Orphanet:98948",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020359",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98948",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111720",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020359",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020359",
+            "DOID:0111720",
+            "Orphanet:98948"
+          ]
+        }
+      ]
+    }
+  ]
+}

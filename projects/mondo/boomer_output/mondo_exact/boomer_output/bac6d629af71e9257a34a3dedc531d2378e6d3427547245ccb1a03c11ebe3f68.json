@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bac6d629af71e9257a34a3dedc531d2378e6d3427547245ccb1a03c11ebe3f68",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0349501",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021583",
+          "type" : "CLASS",
+          "lbl" : "melanocytic skin neoplasm"
+        },
+        {
+          "id" : "NCIT:C7161",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0349501",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021583",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021583",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7161",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0349501",
+            "MONDO:0021583",
+            "NCIT:C7161"
+          ]
+        }
+      ]
+    }
+  ]
+}

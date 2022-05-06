@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5f91976471e856ea4bcd6cd538d59d693192bc3a22602bcb18278edc83e9359e",
+      "nodes" : [
+        {
+          "id" : "SCTID:105629000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:11263",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005701",
+          "type" : "CLASS",
+          "lbl" : "chlamydia trachomatis infectious disease"
+        },
+        {
+          "id" : "NCIT:C34463",
+          "type" : "CLASS",
+          "lbl" : "Chlamydial Infection"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005701",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C34463",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:105629000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005701",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:11263",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005701",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005701",
+            "NCIT:C34463",
+            "SCTID:105629000",
+            "DOID:11263"
+          ]
+        }
+      ]
+    }
+  ]
+}

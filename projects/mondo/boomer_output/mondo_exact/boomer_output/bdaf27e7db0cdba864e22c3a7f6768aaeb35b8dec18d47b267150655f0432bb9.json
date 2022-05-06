@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bdaf27e7db0cdba864e22c3a7f6768aaeb35b8dec18d47b267150655f0432bb9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1709865",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0056817",
+          "type" : "CLASS",
+          "lbl" : "rectal adenosquamous carcinoma"
+        },
+        {
+          "id" : "NCIT:C43594",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1709865",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0056817",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0056817",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C43594",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0056817",
+            "UMLS:C1709865",
+            "NCIT:C43594"
+          ]
+        }
+      ]
+    }
+  ]
+}

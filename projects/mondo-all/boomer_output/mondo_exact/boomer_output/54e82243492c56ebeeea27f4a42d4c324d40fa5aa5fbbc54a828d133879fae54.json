@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:54e82243492c56ebeeea27f4a42d4c324d40fa5aa5fbbc54a828d133879fae54",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332301",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4436",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002997",
+          "type" : "CLASS",
+          "lbl" : "anterior cranial fossa meningioma"
+        },
+        {
+          "id" : "NCIT:C5286",
+          "type" : "CLASS",
+          "lbl" : "Anterior Cranial Fossa Meningioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332301",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002997",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002997",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5286",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4436",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002997",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332301",
+            "MONDO:0002997",
+            "NCIT:C5286",
+            "DOID:4436"
+          ]
+        }
+      ]
+    }
+  ]
+}

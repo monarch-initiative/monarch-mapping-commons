@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:25f623d644e0a9cc5b1dab1851860c43ede14369b08511ab6746c7deeb55dc51",
+      "nodes" : [
+        {
+          "id" : "MESH:C564345",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1843211",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011896",
+          "type" : "CLASS",
+          "lbl" : "Parkinson disease 11, autosomal dominant, susceptibility to"
+        },
+        {
+          "id" : "OMIM:607688",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011896",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607688",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564345",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011896",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1843211",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011896",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C564345",
+            "MONDO:0011896",
+            "OMIM:607688",
+            "UMLS:C1843211"
+          ]
+        }
+      ]
+    }
+  ]
+}

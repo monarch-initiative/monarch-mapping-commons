@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d4a0bfe0d6814c91b649e83e99cd53fcd21025540cade468cd16029978ef9b9c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1512259",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0045056",
+          "type" : "CLASS",
+          "lbl" : "grade II meningioma"
+        },
+        {
+          "id" : "NCIT:C38937",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0045056",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C38937",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1512259",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0045056",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0045056",
+            "NCIT:C38937",
+            "UMLS:C1512259"
+          ]
+        }
+      ]
+    }
+  ]
+}

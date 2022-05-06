@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:151ddc93c7a7bf846310a848f3fdc21ba5c65147059b89775cf07df6fda0f9c9",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:G44.82",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011848",
+          "type" : "CLASS",
+          "lbl" : "headache associated with sexual activity"
+        },
+        {
+          "id" : "OMIM:607504",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011848",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607504",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:G44.82",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011848",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011848",
+            "ICD10CM:G44.82",
+            "OMIM:607504"
+          ]
+        }
+      ]
+    }
+  ]
+}

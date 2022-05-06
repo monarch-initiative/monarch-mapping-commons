@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c2e06ca77d5bd1bd6c40086f4558c2ebaee1e11dd6a87edaf0e8f2daa61bf331",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225304",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080360",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014668",
+          "type" : "CLASS",
+          "lbl" : "cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 4"
+        },
+        {
+          "id" : "OMIM:616501",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080360",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014668",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014668",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616501",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225304",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014668",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014668",
+            "DOID:0080360",
+            "OMIM:616501",
+            "UMLS:C4225304"
+          ]
+        }
+      ]
+    }
+  ]
+}

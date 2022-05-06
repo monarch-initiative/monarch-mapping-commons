@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f8b3f48b50da73fc4f42bc4deba588f40f83ad52c4ee2c1bac06fb3749aa2d25",
+      "nodes" : [
+        {
+          "id" : "SCTID:402913004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0334106",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0022022",
+          "type" : "CLASS",
+          "lbl" : "bowenoid papulosis"
+        },
+        {
+          "id" : "NCIT:C8374",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0022022",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8374",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334106",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022022",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:402913004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022022",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0022022",
+            "NCIT:C8374",
+            "UMLS:C0334106",
+            "SCTID:402913004"
+          ]
+        }
+      ]
+    }
+  ]
+}

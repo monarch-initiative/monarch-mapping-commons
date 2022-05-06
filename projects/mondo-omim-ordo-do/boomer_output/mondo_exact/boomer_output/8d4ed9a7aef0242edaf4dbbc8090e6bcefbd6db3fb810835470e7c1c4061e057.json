@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8d4ed9a7aef0242edaf4dbbc8090e6bcefbd6db3fb810835470e7c1c4061e057",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332222",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5022",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003245",
+          "type" : "CLASS",
+          "lbl" : "aflatoxin-related hepatocellular carcinoma"
+        },
+        {
+          "id" : "NCIT:C27922",
+          "type" : "CLASS",
+          "lbl" : "Aflatoxins-Related Hepatocellular Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003245",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27922",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332222",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003245",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5022",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003245",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003245",
+            "NCIT:C27922",
+            "UMLS:C1332222",
+            "DOID:5022"
+          ]
+        }
+      ]
+    }
+  ]
+}

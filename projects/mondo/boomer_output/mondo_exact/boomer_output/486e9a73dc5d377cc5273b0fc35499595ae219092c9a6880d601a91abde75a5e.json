@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:486e9a73dc5d377cc5273b0fc35499595ae219092c9a6880d601a91abde75a5e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519926",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:133",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001680",
+          "type" : "CLASS",
+          "lbl" : "vaginal mullerian papilloma"
+        },
+        {
+          "id" : "NCIT:C40255",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:133",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001680",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001680",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40255",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1519926",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001680",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001680",
+            "DOID:133",
+            "NCIT:C40255",
+            "UMLS:C1519926"
+          ]
+        }
+      ]
+    }
+  ]
+}

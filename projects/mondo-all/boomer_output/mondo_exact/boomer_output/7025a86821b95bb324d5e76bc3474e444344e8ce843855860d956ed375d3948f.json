@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7025a86821b95bb324d5e76bc3474e444344e8ce843855860d956ed375d3948f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN492437",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080286",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0033479",
+          "type" : "CLASS",
+          "lbl" : "spinocerebellar ataxia 44"
+        },
+        {
+          "id" : "OMIM:617691",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0033479",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617691",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080286",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0033479",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN492437",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0033479",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:617691",
+            "MONDO:0033479",
+            "DOID:0080286",
+            "UMLS:CN492437"
+          ]
+        }
+      ]
+    }
+  ]
+}

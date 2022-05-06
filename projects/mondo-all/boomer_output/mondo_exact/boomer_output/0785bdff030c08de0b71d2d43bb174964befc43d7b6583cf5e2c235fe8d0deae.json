@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0785bdff030c08de0b71d2d43bb174964befc43d7b6583cf5e2c235fe8d0deae",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518574",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6585",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003935",
+          "type" : "CLASS",
+          "lbl" : "oncocytic breast carcinoma"
+        },
+        {
+          "id" : "NCIT:C40366",
+          "type" : "CLASS",
+          "lbl" : "Breast Oncocytic Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003935",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40366",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518574",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003935",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6585",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003935",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003935",
+            "NCIT:C40366",
+            "UMLS:C1518574",
+            "DOID:6585"
+          ]
+        }
+      ]
+    }
+  ]
+}

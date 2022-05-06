@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7e7052348b8f7a4959b1e759b20f5e832a0fad185df10c077fd86f0dd5ad3196",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN199461",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015369",
+          "type" : "CLASS",
+          "lbl" : "Joubert syndrome and related disorders"
+        },
+        {
+          "id" : "Orphanet:140874",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015369",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:140874",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN199461",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015369",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015369",
+            "Orphanet:140874",
+            "UMLS:CN199461"
+          ]
+        }
+      ]
+    }
+  ]
+}

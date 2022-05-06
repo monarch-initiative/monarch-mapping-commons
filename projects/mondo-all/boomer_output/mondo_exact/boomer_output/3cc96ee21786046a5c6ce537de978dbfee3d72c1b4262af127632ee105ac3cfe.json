@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3cc96ee21786046a5c6ce537de978dbfee3d72c1b4262af127632ee105ac3cfe",
+      "nodes" : [
+        {
+          "id" : "OMIM:603956",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:363354003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C9311",
+          "type" : "CLASS",
+          "lbl" : "Malignant Cervical Neoplasm"
+        },
+        {
+          "id" : "MONDO:0002974",
+          "type" : "CLASS",
+          "lbl" : "cervical cancer"
+        },
+        {
+          "id" : "DOID:4362",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002974",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603956",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4362",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002974",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002974",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9311",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:363354003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002974",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C9311",
+            "SCTID:363354003",
+            "DOID:4362",
+            "MONDO:0002974",
+            "OMIM:603956"
+          ]
+        }
+      ]
+    }
+  ]
+}

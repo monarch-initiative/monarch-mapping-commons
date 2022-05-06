@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4ada813471361f9fc9ca959dcfdcb85e49ced25efacd41df18c017136058dcc9",
+      "nodes" : [
+        {
+          "id" : "DOID:7808",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004365",
+          "type" : "CLASS",
+          "lbl" : "necrotic uveal melanoma"
+        },
+        {
+          "id" : "NCIT:C7990",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004365",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7990",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7808",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004365",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C7990",
+            "MONDO:0004365",
+            "DOID:7808"
+          ]
+        }
+      ]
+    }
+  ]
+}

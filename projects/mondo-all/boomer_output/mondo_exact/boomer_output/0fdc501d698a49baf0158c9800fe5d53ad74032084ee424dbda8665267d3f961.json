@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0fdc501d698a49baf0158c9800fe5d53ad74032084ee424dbda8665267d3f961",
+      "nodes" : [
+        {
+          "id" : "SCTID:127018007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015074",
+          "type" : "CLASS",
+          "lbl" : "thyroid tumor"
+        },
+        {
+          "id" : "NCIT:C3414",
+          "type" : "CLASS",
+          "lbl" : "Thyroid Gland Neoplasm"
+        },
+        {
+          "id" : "Orphanet:100087",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015074",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100087",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:127018007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015074",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015074",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3414",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015074",
+            "Orphanet:100087",
+            "SCTID:127018007",
+            "NCIT:C3414"
+          ]
+        }
+      ]
+    }
+  ]
+}

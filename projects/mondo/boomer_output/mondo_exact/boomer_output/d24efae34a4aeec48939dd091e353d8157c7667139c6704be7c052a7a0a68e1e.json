@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d24efae34a4aeec48939dd091e353d8157c7667139c6704be7c052a7a0a68e1e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3272804",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006394",
+          "type" : "CLASS",
+          "lbl" : "rectal tubular adenoma"
+        },
+        {
+          "id" : "NCIT:C96477",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3272804",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006394",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006394",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C96477",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006394",
+            "UMLS:C3272804",
+            "NCIT:C96477"
+          ]
+        }
+      ]
+    }
+  ]
+}

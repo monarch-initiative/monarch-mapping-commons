@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a143c5bc60358426c1b3dff8d42d25ecd6b82d792644474343fe2fd9c4c0145b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335345",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8216",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004502",
+          "type" : "CLASS",
+          "lbl" : "parapharyngeal meningioma"
+        },
+        {
+          "id" : "NCIT:C5303",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335345",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004502",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004502",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5303",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8216",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004502",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1335345",
+            "MONDO:0004502",
+            "NCIT:C5303",
+            "DOID:8216"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7d20c3246e440856f137f55e882a5258f4d506feaad7a78420acd22ba7933e19",
+      "nodes" : [
+        {
+          "id" : "MESH:C566617",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1866139",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011155",
+          "type" : "CLASS",
+          "lbl" : "vacuolar Neuromyopathy"
+        },
+        {
+          "id" : "OMIM:601846",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011155",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601846",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566617",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011155",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1866139",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011155",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C566617",
+            "MONDO:0011155",
+            "OMIM:601846",
+            "UMLS:C1866139"
+          ]
+        }
+      ]
+    }
+  ]
+}

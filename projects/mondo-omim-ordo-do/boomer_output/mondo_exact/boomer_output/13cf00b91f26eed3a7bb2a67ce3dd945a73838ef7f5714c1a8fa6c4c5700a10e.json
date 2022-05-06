@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:13cf00b91f26eed3a7bb2a67ce3dd945a73838ef7f5714c1a8fa6c4c5700a10e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1516435",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3743",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002761",
+          "type" : "CLASS",
+          "lbl" : "cervical verrucous carcinoma"
+        },
+        {
+          "id" : "NCIT:C40190",
+          "type" : "CLASS",
+          "lbl" : "Cervical Verrucous Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002761",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40190",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3743",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002761",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1516435",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002761",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002761",
+            "NCIT:C40190",
+            "DOID:3743",
+            "UMLS:C1516435"
+          ]
+        }
+      ]
+    }
+  ]
+}

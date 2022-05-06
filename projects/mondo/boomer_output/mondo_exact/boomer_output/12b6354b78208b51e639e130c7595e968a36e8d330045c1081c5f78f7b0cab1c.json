@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:12b6354b78208b51e639e130c7595e968a36e8d330045c1081c5f78f7b0cab1c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227583",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4329999",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:79088",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019194",
+          "type" : "CLASS",
+          "lbl" : "localized lipodystrophy"
+        },
+        {
+          "id" : "NCIT:C131814",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019194",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN227583",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019194",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C131814",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4329999",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019194",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019194",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79088",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019194",
+            "NCIT:C131814",
+            "UMLS:C4329999",
+            "Orphanet:79088"
+          ]
+        }
+      ]
+    }
+  ]
+}

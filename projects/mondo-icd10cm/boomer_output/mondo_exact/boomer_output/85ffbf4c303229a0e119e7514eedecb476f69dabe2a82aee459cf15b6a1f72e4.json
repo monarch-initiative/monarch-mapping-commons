@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:85ffbf4c303229a0e119e7514eedecb476f69dabe2a82aee459cf15b6a1f72e4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518164",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:736",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004197",
+          "type" : "CLASS",
+          "lbl" : "male urethral cancer"
+        },
+        {
+          "id" : "NCIT:C39867",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004197",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39867",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518164",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004197",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:736",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004197",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004197",
+            "NCIT:C39867",
+            "UMLS:C1518164",
+            "DOID:736"
+          ]
+        }
+      ]
+    }
+  ]
+}

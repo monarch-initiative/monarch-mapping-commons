@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b9b2635bf140c7138514aeaff0b47f531811b1333e38e5742fd58d178a063aac",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333120",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7088",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004102",
+          "type" : "CLASS",
+          "lbl" : "columnar cell variant thyroid gland papillary carcinoma"
+        },
+        {
+          "id" : "NCIT:C35830",
+          "type" : "CLASS",
+          "lbl" : "Columnar Cell Variant Thyroid Gland Papillary Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004102",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35830",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7088",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004102",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333120",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004102",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004102",
+            "NCIT:C35830",
+            "DOID:7088",
+            "UMLS:C1333120"
+          ]
+        }
+      ]
+    }
+  ]
+}

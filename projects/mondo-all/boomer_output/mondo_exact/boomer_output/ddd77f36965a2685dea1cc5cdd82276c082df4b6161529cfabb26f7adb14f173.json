@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ddd77f36965a2685dea1cc5cdd82276c082df4b6161529cfabb26f7adb14f173",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3810265",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110719",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014296",
+          "type" : "CLASS",
+          "lbl" : "Warburg micro syndrome 4"
+        },
+        {
+          "id" : "OMIM:615663",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3810265",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014296",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014296",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615663",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110719",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014296",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3810265",
+            "MONDO:0014296",
+            "OMIM:615663",
+            "DOID:0110719"
+          ]
+        }
+      ]
+    }
+  ]
+}

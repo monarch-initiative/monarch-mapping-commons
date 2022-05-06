@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8cdb95d9738a2c7ea4129a7ab386493b3766be91f1c8120bdd67ea3a3f29cf6e",
+      "nodes" : [
+        {
+          "id" : "MONDO:0001699",
+          "type" : "CLASS",
+          "lbl" : "tinea manuum"
+        },
+        {
+          "id" : "DOID:13369",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0153246",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:B35.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:48971001",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0153246",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001699",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:B35.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001699",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:13369",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001699",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:48971001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001699",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:B35.2",
+            "UMLS:C0153246",
+            "SCTID:48971001",
+            "MONDO:0001699",
+            "DOID:13369"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9d6dea139516a796026120951270fe3e2488676cfdb5bc0bdf539cbd8d8b7422",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3151218",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110351",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012592",
+          "type" : "CLASS",
+          "lbl" : "osteogenesis imperfecta type 11"
+        },
+        {
+          "id" : "OMIM:610968",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3151218",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012592",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012592",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610968",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110351",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012592",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3151218",
+            "MONDO:0012592",
+            "OMIM:610968",
+            "DOID:0110351"
+          ]
+        }
+      ]
+    }
+  ]
+}

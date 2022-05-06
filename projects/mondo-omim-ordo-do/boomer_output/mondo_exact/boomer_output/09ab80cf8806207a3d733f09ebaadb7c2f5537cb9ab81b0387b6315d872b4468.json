@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:09ab80cf8806207a3d733f09ebaadb7c2f5537cb9ab81b0387b6315d872b4468",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2007059",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7718",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006479",
+          "type" : "CLASS",
+          "lbl" : "undifferentiated pancreatic carcinoma with osteoclast-like giant cells"
+        },
+        {
+          "id" : "NCIT:C5723",
+          "type" : "CLASS",
+          "lbl" : "Pancreatic Undifferentiated Carcinoma with Osteoclast-Like Giant Cells"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006479",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5723",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7718",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006479",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2007059",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006479",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006479",
+            "NCIT:C5723",
+            "DOID:7718",
+            "UMLS:C2007059"
+          ]
+        }
+      ]
+    }
+  ]
+}

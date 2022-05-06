@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d7a8612caaed4587651bbe5b15ebfbab87ec1593cbfb5ff4a675adde6d18b54b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332954",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6654",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003958",
+          "type" : "CLASS",
+          "lbl" : "childhood central nervous system immature teratoma"
+        },
+        {
+          "id" : "NCIT:C27405",
+          "type" : "CLASS",
+          "lbl" : "Childhood Central Nervous System Immature Teratoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6654",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003958",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003958",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27405",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332954",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003958",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6654",
+            "MONDO:0003958",
+            "NCIT:C27405",
+            "UMLS:C1332954"
+          ]
+        }
+      ]
+    }
+  ]
+}

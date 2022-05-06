@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:47e46376876ecb541889db60c21989c8a8404757d0c1e9af9c44f81bb21ad5dd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0700110",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024884",
+          "type" : "CLASS",
+          "lbl" : "metastatic carcinoma in the bone"
+        },
+        {
+          "id" : "NCIT:C36082",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024884",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C36082",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0700110",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024884",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C36082",
+            "MONDO:0024884",
+            "UMLS:C0700110"
+          ]
+        }
+      ]
+    }
+  ]
+}

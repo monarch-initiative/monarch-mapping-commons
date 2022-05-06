@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fe2f3ea9db35a1f9093155d17484b16f2b335f8f9d8fe54c5b3de49c5801098f",
+      "nodes" : [
+        {
+          "id" : "MONDO:0003107",
+          "type" : "CLASS",
+          "lbl" : "infratentorial cancer"
+        },
+        {
+          "id" : "NCIT:C4966",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0751593",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D015192",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4706",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4706",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003107",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0751593",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003107",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003107",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4966",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D015192",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003107",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4966",
+            "DOID:4706",
+            "MONDO:0003107",
+            "MESH:D015192",
+            "UMLS:C0751593"
+          ]
+        }
+      ]
+    }
+  ]
+}

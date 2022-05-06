@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a4fcf133953ed0291f8483af92a005a07a40a18a712cf6c9e9931a8f866b5ed9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3279964",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013595",
+          "type" : "CLASS",
+          "lbl" : "hyperbiliverdinemia"
+        },
+        {
+          "id" : "Orphanet:276405",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:614156",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013595",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:276405",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3279964",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013595",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013595",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614156",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:276405",
+            "MONDO:0013595",
+            "UMLS:C3279964",
+            "OMIM:614156"
+          ]
+        }
+      ]
+    }
+  ]
+}

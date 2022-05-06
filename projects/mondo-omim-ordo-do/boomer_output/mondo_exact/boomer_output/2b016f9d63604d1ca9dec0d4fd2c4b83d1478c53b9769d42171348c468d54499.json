@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2b016f9d63604d1ca9dec0d4fd2c4b83d1478c53b9769d42171348c468d54499",
+      "nodes" : [
+        {
+          "id" : "SCTID:75047002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1533847",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020120",
+          "type" : "CLASS",
+          "lbl" : "skeletal muscle disorder"
+        },
+        {
+          "id" : "Orphanet:98472",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1533847",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020120",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:75047002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020120",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020120",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98472",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020120",
+            "UMLS:C1533847",
+            "SCTID:75047002",
+            "Orphanet:98472"
+          ]
+        }
+      ]
+    }
+  ]
+}

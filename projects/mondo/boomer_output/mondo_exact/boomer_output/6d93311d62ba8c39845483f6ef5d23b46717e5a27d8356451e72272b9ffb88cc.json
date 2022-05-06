@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6d93311d62ba8c39845483f6ef5d23b46717e5a27d8356451e72272b9ffb88cc",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202083",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016815",
+          "type" : "CLASS",
+          "lbl" : "Leigh syndrome with leukodystrophy"
+        },
+        {
+          "id" : "Orphanet:255241",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016815",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:255241",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202083",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016815",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:255241",
+            "MONDO:0016815",
+            "UMLS:CN202083"
+          ]
+        }
+      ]
+    }
+  ]
+}

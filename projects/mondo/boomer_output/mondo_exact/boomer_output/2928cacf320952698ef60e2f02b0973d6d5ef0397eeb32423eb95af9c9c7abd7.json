@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2928cacf320952698ef60e2f02b0973d6d5ef0397eeb32423eb95af9c9c7abd7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206633",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019726",
+          "type" : "CLASS",
+          "lbl" : "type II mixed cryoglobulinemia"
+        },
+        {
+          "id" : "Orphanet:93554",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206633",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019726",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019726",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93554",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019726",
+            "UMLS:CN206633",
+            "Orphanet:93554"
+          ]
+        }
+      ]
+    }
+  ]
+}

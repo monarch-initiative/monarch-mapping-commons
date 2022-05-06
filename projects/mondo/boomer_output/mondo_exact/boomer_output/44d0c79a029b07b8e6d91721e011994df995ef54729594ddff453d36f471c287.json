@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:44d0c79a029b07b8e6d91721e011994df995ef54729594ddff453d36f471c287",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225157",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014630",
+          "type" : "CLASS",
+          "lbl" : "NTHL1-related attenuated familial adenomatous polyposis"
+        },
+        {
+          "id" : "Orphanet:454840",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616415",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014630",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616415",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014630",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:454840",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225157",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014630",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:616415",
+            "MONDO:0014630",
+            "Orphanet:454840",
+            "UMLS:C4225157"
+          ]
+        }
+      ]
+    }
+  ]
+}

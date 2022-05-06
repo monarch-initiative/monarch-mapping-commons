@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ab649ba5b4cfee84eb2e145f014d96916b4fea3e43c42c8bda702f17614dc051",
+      "nodes" : [
+        {
+          "id" : "MESH:D052065",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2004487",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:N94.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021723",
+          "type" : "CLASS",
+          "lbl" : "vaginismus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2004487",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021723",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D052065",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021723",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:N94.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021723",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2004487",
+            "MONDO:0021723",
+            "MESH:D052065",
+            "ICD10CM:N94.2"
+          ]
+        }
+      ]
+    }
+  ]
+}

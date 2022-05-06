@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fb4b991b96a48fc516c9563ec287d3d6d5486574dd2f39bb2be6575e485cd4a2",
+      "nodes" : [
+        {
+          "id" : "DOID:5866",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5859",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0334549",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003680",
+          "type" : "CLASS",
+          "lbl" : "periosteal chondrosarcoma"
+        },
+        {
+          "id" : "NCIT:C7357",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5859",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003680",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334549",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003680",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003680",
+          "pred" : "siblingOf",
+          "obj" : "DOID:5866",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003680",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7357",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5859",
+            "MONDO:0003680",
+            "UMLS:C0334549",
+            "NCIT:C7357"
+          ]
+        }
+      ]
+    }
+  ]
+}

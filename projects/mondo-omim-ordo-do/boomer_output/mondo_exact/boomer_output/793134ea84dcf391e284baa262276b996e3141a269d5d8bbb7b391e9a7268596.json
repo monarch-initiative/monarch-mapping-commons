@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:793134ea84dcf391e284baa262276b996e3141a269d5d8bbb7b391e9a7268596",
+      "nodes" : [
+        {
+          "id" : "DOID:0080332",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007194",
+          "type" : "CLASS",
+          "lbl" : "familial bicuspid aortic valve"
+        },
+        {
+          "id" : "Orphanet:402075",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIMPS:109730",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007194",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:402075",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080332",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007194",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007194",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:109730",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007194",
+            "Orphanet:402075",
+            "DOID:0080332",
+            "OMIMPS:109730"
+          ]
+        }
+      ]
+    }
+  ]
+}

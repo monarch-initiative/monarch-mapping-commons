@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2bb6dde428add7210fd6b74a6c29806b3ecd865bd7b8502d1c441e7541a0bd56",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332209",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6495",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003899",
+          "type" : "CLASS",
+          "lbl" : "adult myxoid chondrosarcoma"
+        },
+        {
+          "id" : "NCIT:C27378",
+          "type" : "CLASS",
+          "lbl" : "Adult Myxoid Chondrosarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003899",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27378",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332209",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003899",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6495",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003899",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003899",
+            "NCIT:C27378",
+            "UMLS:C1332209",
+            "DOID:6495"
+          ]
+        }
+      ]
+    }
+  ]
+}

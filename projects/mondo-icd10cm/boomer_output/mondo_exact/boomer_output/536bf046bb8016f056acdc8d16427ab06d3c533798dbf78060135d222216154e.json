@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:536bf046bb8016f056acdc8d16427ab06d3c533798dbf78060135d222216154e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3281289",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111416",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013818",
+          "type" : "CLASS",
+          "lbl" : "trichohepatoenteric syndrome 2"
+        },
+        {
+          "id" : "OMIM:614602",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013818",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111416",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013818",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3281289",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013818",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013818",
+            "OMIM:614602",
+            "DOID:0111416",
+            "UMLS:C3281289"
+          ]
+        }
+      ]
+    }
+  ]
+}

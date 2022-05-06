@@ -1,0 +1,76 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:58d517896c19a0401913ba3777392544d546ca96d7ecff7ecd9c61b04f6ab5c4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1853623",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009470",
+          "type" : "CLASS",
+          "lbl" : "Baraitser-Winter syndrome 1"
+        },
+        {
+          "id" : "OMIM:243310",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1837819",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009470",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:243310",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009470",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1837819",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1853623",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:243310",
+            "MONDO:0009470",
+            "UMLS:C1853623"
+          ]
+        }
+      ]
+    }
+  ]
+}

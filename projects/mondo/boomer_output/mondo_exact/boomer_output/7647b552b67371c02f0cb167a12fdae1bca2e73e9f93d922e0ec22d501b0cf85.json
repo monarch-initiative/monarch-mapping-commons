@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7647b552b67371c02f0cb167a12fdae1bca2e73e9f93d922e0ec22d501b0cf85",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1096639",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3607",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002703",
+          "type" : "CLASS",
+          "lbl" : "appendix mucinous cystadenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C5511",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3607",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002703",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1096639",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002703",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002703",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5511",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002703",
+            "DOID:3607",
+            "UMLS:C1096639",
+            "NCIT:C5511"
+          ]
+        }
+      ]
+    }
+  ]
+}

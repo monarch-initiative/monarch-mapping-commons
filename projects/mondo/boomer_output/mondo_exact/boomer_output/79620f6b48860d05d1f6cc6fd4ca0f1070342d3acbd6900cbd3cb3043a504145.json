@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:79620f6b48860d05d1f6cc6fd4ca0f1070342d3acbd6900cbd3cb3043a504145",
+      "nodes" : [
+        {
+          "id" : "MESH:C567817",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2751696",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013079",
+          "type" : "CLASS",
+          "lbl" : "primary biliary cholangitis 2"
+        },
+        {
+          "id" : "OMIM:613007",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C567817",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013079",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013079",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613007",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2751696",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013079",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013079",
+            "MESH:C567817",
+            "OMIM:613007",
+            "UMLS:C2751696"
+          ]
+        }
+      ]
+    }
+  ]
+}

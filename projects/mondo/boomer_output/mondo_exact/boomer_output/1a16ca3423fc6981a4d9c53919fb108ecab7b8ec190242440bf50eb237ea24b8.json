@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1a16ca3423fc6981a4d9c53919fb108ecab7b8ec190242440bf50eb237ea24b8",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227742",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020047",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive syndromic cerebellar ataxia"
+        },
+        {
+          "id" : "Orphanet:98099",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227742",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020047",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020047",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98099",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020047",
+            "UMLS:CN227742",
+            "Orphanet:98099"
+          ]
+        }
+      ]
+    }
+  ]
+}

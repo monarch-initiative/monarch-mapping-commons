@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3d6ef3e7dd06e901e87c2029e398e138ce2259efaf2bff2144608fa2fd51cb96",
+      "nodes" : [
+        {
+          "id" : "SCTID:239095007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0028992",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021562",
+          "type" : "CLASS",
+          "lbl" : "omphalitis"
+        },
+        {
+          "id" : "NCIT:C116008",
+          "type" : "CLASS",
+          "lbl" : "Omphalitis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0028992",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021562",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:239095007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021562",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021562",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C116008",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021562",
+            "UMLS:C0028992",
+            "SCTID:239095007",
+            "NCIT:C116008"
+          ]
+        }
+      ]
+    }
+  ]
+}

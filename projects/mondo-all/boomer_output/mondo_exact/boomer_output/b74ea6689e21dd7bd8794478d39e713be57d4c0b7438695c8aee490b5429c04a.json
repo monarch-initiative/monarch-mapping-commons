@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b74ea6689e21dd7bd8794478d39e713be57d4c0b7438695c8aee490b5429c04a",
+      "nodes" : [
+        {
+          "id" : "MESH:C565477",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1855800",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009432",
+          "type" : "CLASS",
+          "lbl" : "hypopituitarism, congenital, with central diabetes insipidus"
+        },
+        {
+          "id" : "OMIM:241540",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009432",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:241540",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1855800",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009432",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565477",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009432",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:241540",
+            "MONDO:0009432",
+            "UMLS:C1855800",
+            "MESH:C565477"
+          ]
+        }
+      ]
+    }
+  ]
+}

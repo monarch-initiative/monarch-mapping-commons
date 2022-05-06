@@ -1,0 +1,76 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:965b9d4a20bc54730af8cd1898c10517d25b6f7c032a9eb358d744193e0b6cca",
+      "nodes" : [
+        {
+          "id" : "MESH:D002280",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020804",
+          "type" : "CLASS",
+          "lbl" : "basal cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C7586",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C156767",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020804",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7586",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D002280",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020804",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020804",
+          "pred" : "siblingOf",
+          "obj" : "NCIT:C156767",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020804",
+            "NCIT:C7586",
+            "MESH:D002280"
+          ]
+        }
+      ]
+    }
+  ]
+}

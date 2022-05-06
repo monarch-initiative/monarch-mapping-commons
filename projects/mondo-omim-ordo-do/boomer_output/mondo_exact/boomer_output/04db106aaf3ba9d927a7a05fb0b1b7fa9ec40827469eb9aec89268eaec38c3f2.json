@@ -1,0 +1,113 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:04db106aaf3ba9d927a7a05fb0b1b7fa9ec40827469eb9aec89268eaec38c3f2",
+      "nodes" : [
+        {
+          "id" : "MESH:C536830",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:71277",
+          "type" : "CLASS",
+          "lbl" : "Classic glucose transporter type 1 deficiency syndrome"
+        },
+        {
+          "id" : "OMIM:606777",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1847501",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN030711",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011724",
+          "type" : "CLASS",
+          "lbl" : "encephalopathy due to GLUT1 deficiency"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN030711",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011724",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536830",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011724",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011724",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:71277",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011724",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1847501",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011724",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:606777",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011724",
+            "UMLS:CN030711",
+            "MESH:C536830",
+            "OMIM:606777",
+            "Orphanet:71277"
+          ]
+        }
+      ]
+    }
+  ]
+}

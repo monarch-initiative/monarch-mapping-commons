@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8255d5520258afa8f47d01d158813b71ac34ae4217f53e9be18f8e5313bfc8a5",
+      "nodes" : [
+        {
+          "id" : "SCTID:25981000119102",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1956396",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018165",
+          "type" : "CLASS",
+          "lbl" : "venous thoracic outlet syndrome"
+        },
+        {
+          "id" : "Orphanet:357131",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018165",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:357131",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1956396",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018165",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:25981000119102",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018165",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:357131",
+            "MONDO:0018165",
+            "UMLS:C1956396",
+            "SCTID:25981000119102"
+          ]
+        }
+      ]
+    }
+  ]
+}

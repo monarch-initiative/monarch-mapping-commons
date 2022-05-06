@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c8ae30051a4b8761ea5131ca1abcf99cbfd843193a3117149fb8bdb79bd0a113",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1511053",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3998",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002828",
+          "type" : "CLASS",
+          "lbl" : "Bartholin gland transitional cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C40297",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002828",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40297",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1511053",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002828",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3998",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002828",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002828",
+            "NCIT:C40297",
+            "UMLS:C1511053",
+            "DOID:3998"
+          ]
+        }
+      ]
+    }
+  ]
+}

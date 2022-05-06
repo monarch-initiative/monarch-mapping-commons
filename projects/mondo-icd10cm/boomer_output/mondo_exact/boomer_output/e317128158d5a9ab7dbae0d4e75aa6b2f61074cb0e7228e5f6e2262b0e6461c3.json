@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e317128158d5a9ab7dbae0d4e75aa6b2f61074cb0e7228e5f6e2262b0e6461c3",
+      "nodes" : [
+        {
+          "id" : "Orphanet:99715",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1858556",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011431",
+          "type" : "CLASS",
+          "lbl" : "MASS syndrome"
+        },
+        {
+          "id" : "MESH:C536030",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:604308",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1858556",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011431",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011431",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:604308",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536030",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011431",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011431",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011431",
+            "UMLS:C1858556",
+            "MESH:C536030",
+            "Orphanet:99715",
+            "OMIM:604308"
+          ]
+        }
+      ]
+    }
+  ]
+}

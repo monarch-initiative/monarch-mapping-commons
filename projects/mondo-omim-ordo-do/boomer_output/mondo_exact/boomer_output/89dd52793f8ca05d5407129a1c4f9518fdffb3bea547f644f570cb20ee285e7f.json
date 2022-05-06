@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:89dd52793f8ca05d5407129a1c4f9518fdffb3bea547f644f570cb20ee285e7f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2675730",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007420",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant deafness - onychodystrophy syndrome"
+        },
+        {
+          "id" : "Orphanet:79499",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:124480",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007420",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79499",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2675730",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007420",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007420",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:124480",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007420",
+            "Orphanet:79499",
+            "OMIM:124480",
+            "UMLS:C2675730"
+          ]
+        }
+      ]
+    }
+  ]
+}

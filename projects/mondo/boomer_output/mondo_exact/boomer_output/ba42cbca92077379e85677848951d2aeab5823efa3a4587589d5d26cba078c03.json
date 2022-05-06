@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ba42cbca92077379e85677848951d2aeab5823efa3a4587589d5d26cba078c03",
+      "nodes" : [
+        {
+          "id" : "SCTID:254250002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0432371",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016007",
+          "type" : "CLASS",
+          "lbl" : "cocaine embryofetopathy"
+        },
+        {
+          "id" : "Orphanet:1911",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0432371",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016007",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1911",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:254250002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016007",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016007",
+            "UMLS:C0432371",
+            "Orphanet:1911",
+            "SCTID:254250002"
+          ]
+        }
+      ]
+    }
+  ]
+}

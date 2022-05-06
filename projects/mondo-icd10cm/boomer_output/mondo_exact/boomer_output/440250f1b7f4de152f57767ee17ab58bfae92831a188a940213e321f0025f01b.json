@@ -1,0 +1,76 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:440250f1b7f4de152f57767ee17ab58bfae92831a188a940213e321f0025f01b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2673609",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019308",
+          "type" : "CLASS",
+          "lbl" : "junctional epidermolysis bullosa inversa"
+        },
+        {
+          "id" : "Orphanet:79405",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2673610",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019308",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C2673610",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2673609",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019308",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019308",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79405",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019308",
+            "UMLS:C2673609",
+            "Orphanet:79405"
+          ]
+        }
+      ]
+    }
+  ]
+}

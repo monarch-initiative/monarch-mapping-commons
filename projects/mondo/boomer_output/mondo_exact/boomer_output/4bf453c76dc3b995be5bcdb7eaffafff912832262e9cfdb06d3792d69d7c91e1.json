@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4bf453c76dc3b995be5bcdb7eaffafff912832262e9cfdb06d3792d69d7c91e1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332934",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8043",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004443",
+          "type" : "CLASS",
+          "lbl" : "chest wall parachordoma"
+        },
+        {
+          "id" : "NCIT:C6720",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004443",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6720",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332934",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004443",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8043",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004443",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004443",
+            "NCIT:C6720",
+            "UMLS:C1332934",
+            "DOID:8043"
+          ]
+        }
+      ]
+    }
+  ]
+}

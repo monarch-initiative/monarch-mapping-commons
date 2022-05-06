@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6b680366f0352e2e6314367267357912ffad36b3de5c07bfc0ec7005dce53705",
+      "nodes" : [
+        {
+          "id" : "SCTID:717184007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN205995",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019332",
+          "type" : "CLASS",
+          "lbl" : "punctate palmoplantar keratoderma type 1"
+        },
+        {
+          "id" : "Orphanet:79501",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019332",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79501",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205995",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019332",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:717184007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019332",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019332",
+            "Orphanet:79501",
+            "UMLS:CN205995",
+            "SCTID:717184007"
+          ]
+        }
+      ]
+    }
+  ]
+}

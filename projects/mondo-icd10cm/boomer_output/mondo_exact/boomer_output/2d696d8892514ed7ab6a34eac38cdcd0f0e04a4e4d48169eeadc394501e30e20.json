@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2d696d8892514ed7ab6a34eac38cdcd0f0e04a4e4d48169eeadc394501e30e20",
+      "nodes" : [
+        {
+          "id" : "NCIT:C7955",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070322",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN204349",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018055",
+          "type" : "CLASS",
+          "lbl" : "pediatric hepatocellular carcinoma"
+        },
+        {
+          "id" : "Orphanet:33402",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0070322",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018055",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018055",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7955",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204349",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018055",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018055",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:33402",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN204349",
+            "Orphanet:33402",
+            "MONDO:0018055",
+            "DOID:0070322",
+            "NCIT:C7955"
+          ]
+        }
+      ]
+    }
+  ]
+}

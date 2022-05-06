@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:aa721b9a9483bf4daaf5b1645a589dcad0eb27950dd40e9e02467df969fcff8e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227650",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019554",
+          "type" : "CLASS",
+          "lbl" : "idiopathic localized lipodystrophy"
+        },
+        {
+          "id" : "Orphanet:90158",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227650",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019554",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019554",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:90158",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019554",
+            "UMLS:CN227650",
+            "Orphanet:90158"
+          ]
+        }
+      ]
+    }
+  ]
+}

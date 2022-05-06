@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c1f403beffb6d44d683e2ea3d4c78f940fc5798df8d03c1c6e8c33ea7d2774de",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334984",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5907",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003697",
+          "type" : "CLASS",
+          "lbl" : "non-invasive verrucous carcinoma of the penis"
+        },
+        {
+          "id" : "NCIT:C27791",
+          "type" : "CLASS",
+          "lbl" : "Non-Invasive Verrucous Carcinoma of the Penis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5907",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003697",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334984",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003697",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003697",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27791",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003697",
+            "UMLS:C1334984",
+            "DOID:5907",
+            "NCIT:C27791"
+          ]
+        }
+      ]
+    }
+  ]
+}

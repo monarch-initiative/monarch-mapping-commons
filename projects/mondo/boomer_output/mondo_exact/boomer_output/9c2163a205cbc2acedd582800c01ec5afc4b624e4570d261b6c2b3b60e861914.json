@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9c2163a205cbc2acedd582800c01ec5afc4b624e4570d261b6c2b3b60e861914",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333019",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3813",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002779",
+          "type" : "CLASS",
+          "lbl" : "central nervous system chondroma"
+        },
+        {
+          "id" : "NCIT:C7001",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3813",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002779",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002779",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7001",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333019",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002779",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3813",
+            "MONDO:0002779",
+            "NCIT:C7001",
+            "UMLS:C1333019"
+          ]
+        }
+      ]
+    }
+  ]
+}

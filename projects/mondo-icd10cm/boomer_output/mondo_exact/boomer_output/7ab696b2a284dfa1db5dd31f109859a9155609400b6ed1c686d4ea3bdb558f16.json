@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7ab696b2a284dfa1db5dd31f109859a9155609400b6ed1c686d4ea3bdb558f16",
+      "nodes" : [
+        {
+          "id" : "SCTID:720753002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN199601",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015466",
+          "type" : "CLASS",
+          "lbl" : "cranio-osteoarthropathy"
+        },
+        {
+          "id" : "Orphanet:1525",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:720753002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015466",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015466",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1525",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN199601",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015466",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:720753002",
+            "MONDO:0015466",
+            "Orphanet:1525",
+            "UMLS:CN199601"
+          ]
+        }
+      ]
+    }
+  ]
+}

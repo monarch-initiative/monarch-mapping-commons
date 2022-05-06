@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b7b528a05cefe8bec7d108c4f785d9ba30fb48571a81a4fa4e996bb989401d62",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518231",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6212",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003812",
+          "type" : "CLASS",
+          "lbl" : "ovarian endometrial cancer"
+        },
+        {
+          "id" : "NCIT:C40051",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6212",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003812",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003812",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40051",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518231",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003812",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003812",
+            "NCIT:C40051",
+            "DOID:6212",
+            "UMLS:C1518231"
+          ]
+        }
+      ]
+    }
+  ]
+}

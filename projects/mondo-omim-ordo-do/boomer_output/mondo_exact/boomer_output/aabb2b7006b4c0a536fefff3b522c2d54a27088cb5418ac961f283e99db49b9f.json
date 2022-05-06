@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:aabb2b7006b4c0a536fefff3b522c2d54a27088cb5418ac961f283e99db49b9f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333369",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8307",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004530",
+          "type" : "CLASS",
+          "lbl" : "early invasive cervical adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C36096",
+          "type" : "CLASS",
+          "lbl" : "Early Invasive Cervical Adenocarcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:8307",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004530",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333369",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004530",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004530",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C36096",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333369",
+            "MONDO:0004530",
+            "DOID:8307",
+            "NCIT:C36096"
+          ]
+        }
+      ]
+    }
+  ]
+}

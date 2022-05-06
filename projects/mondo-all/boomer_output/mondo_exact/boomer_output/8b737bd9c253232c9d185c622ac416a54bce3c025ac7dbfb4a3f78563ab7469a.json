@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8b737bd9c253232c9d185c622ac416a54bce3c025ac7dbfb4a3f78563ab7469a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336829",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7713",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004339",
+          "type" : "CLASS",
+          "lbl" : "tuberculum sellae meningioma"
+        },
+        {
+          "id" : "NCIT:C5284",
+          "type" : "CLASS",
+          "lbl" : "Tuberculum Sellae Meningioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1336829",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004339",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004339",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5284",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7713",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004339",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004339",
+            "UMLS:C1336829",
+            "NCIT:C5284",
+            "DOID:7713"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3a46c05dd5d9cbed95b3edddedad2bb77b71cbeb1f9ee60daafb3c46a9847825",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226999",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016789",
+          "type" : "CLASS",
+          "lbl" : "pyruvate metabolism disorder"
+        },
+        {
+          "id" : "Orphanet:254746",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016789",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:254746",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226999",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016789",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:254746",
+            "MONDO:0016789",
+            "UMLS:CN226999"
+          ]
+        }
+      ]
+    }
+  ]
+}

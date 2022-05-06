@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1b3446400f24be6cc0a8de6c14ff0d3d9c19e75e7eea185ab76ab82fdc75865e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1514608",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4087",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002874",
+          "type" : "CLASS",
+          "lbl" : "testicular pure germ cell tumor"
+        },
+        {
+          "id" : "NCIT:C39915",
+          "type" : "CLASS",
+          "lbl" : "Testicular Pure Germ Cell Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4087",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002874",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1514608",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002874",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002874",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39915",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:4087",
+            "MONDO:0002874",
+            "UMLS:C1514608",
+            "NCIT:C39915"
+          ]
+        }
+      ]
+    }
+  ]
+}

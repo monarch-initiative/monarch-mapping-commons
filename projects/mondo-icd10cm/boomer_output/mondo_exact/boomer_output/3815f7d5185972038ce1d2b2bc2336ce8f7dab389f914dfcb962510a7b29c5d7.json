@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3815f7d5185972038ce1d2b2bc2336ce8f7dab389f914dfcb962510a7b29c5d7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2675993",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:424039",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018521",
+          "type" : "CLASS",
+          "lbl" : "squamous cell carcinoma of pancreas"
+        },
+        {
+          "id" : "DOID:0080323",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN237524",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018521",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C2675993",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080323",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018521",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237524",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018521",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018521",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:424039",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018521",
+            "DOID:0080323",
+            "UMLS:CN237524",
+            "Orphanet:424039"
+          ]
+        }
+      ]
+    }
+  ]
+}

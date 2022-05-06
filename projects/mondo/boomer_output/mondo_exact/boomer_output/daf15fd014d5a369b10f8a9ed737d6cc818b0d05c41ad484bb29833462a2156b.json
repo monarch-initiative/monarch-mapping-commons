@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:daf15fd014d5a369b10f8a9ed737d6cc818b0d05c41ad484bb29833462a2156b",
+      "nodes" : [
+        {
+          "id" : "MESH:C564943",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1850381",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009754",
+          "type" : "CLASS",
+          "lbl" : "neutropenia, lethal congenital, with eosinophilia"
+        },
+        {
+          "id" : "OMIM:257100",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C564943",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009754",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1850381",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009754",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009754",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:257100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009754",
+            "MESH:C564943",
+            "UMLS:C1850381",
+            "OMIM:257100"
+          ]
+        }
+      ]
+    }
+  ]
+}

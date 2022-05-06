@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bef2931e55d165ee15728157fb4958e9d1c5843a86f0be17a5926054024aa2b8",
+      "nodes" : [
+        {
+          "id" : "MONDO:0021506",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of spinal cord"
+        },
+        {
+          "id" : "UMLS:C0154034",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C3627",
+          "type" : "CLASS",
+          "lbl" : "Benign Spinal Cord Neoplasm"
+        },
+        {
+          "id" : "ICD10CM:D33.4",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:92405007",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021506",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3627",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92405007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021506",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D33.4",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021506",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0154034",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021506",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021506",
+            "SCTID:92405007",
+            "ICD10CM:D33.4",
+            "NCIT:C3627",
+            "UMLS:C0154034"
+          ]
+        }
+      ]
+    }
+  ]
+}

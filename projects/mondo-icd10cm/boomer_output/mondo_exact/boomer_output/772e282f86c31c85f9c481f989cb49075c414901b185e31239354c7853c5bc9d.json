@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:772e282f86c31c85f9c481f989cb49075c414901b185e31239354c7853c5bc9d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN226154",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018438",
+          "type" : "CLASS",
+          "lbl" : "eosinophilic gastrointestinal disease"
+        },
+        {
+          "id" : "Orphanet:402029",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018438",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:402029",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226154",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018438",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:402029",
+            "MONDO:0018438",
+            "UMLS:CN226154"
+          ]
+        }
+      ]
+    }
+  ]
+}

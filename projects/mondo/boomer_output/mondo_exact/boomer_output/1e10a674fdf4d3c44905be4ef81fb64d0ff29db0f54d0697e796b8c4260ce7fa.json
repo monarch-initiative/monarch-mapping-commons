@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1e10a674fdf4d3c44905be4ef81fb64d0ff29db0f54d0697e796b8c4260ce7fa",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553404",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013845",
+          "type" : "CLASS",
+          "lbl" : "auriculocondylar syndrome 2"
+        },
+        {
+          "id" : "OMIM:614669",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3553404",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013845",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013845",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614669",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013845",
+            "UMLS:C3553404",
+            "OMIM:614669"
+          ]
+        }
+      ]
+    }
+  ]
+}

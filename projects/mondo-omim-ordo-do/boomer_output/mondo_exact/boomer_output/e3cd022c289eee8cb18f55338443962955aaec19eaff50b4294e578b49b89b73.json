@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e3cd022c289eee8cb18f55338443962955aaec19eaff50b4294e578b49b89b73",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332849",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6285",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003841",
+          "type" : "CLASS",
+          "lbl" : "heart lipoma"
+        },
+        {
+          "id" : "NCIT:C6741",
+          "type" : "CLASS",
+          "lbl" : "Cardiac Lipoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6285",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003841",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332849",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003841",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003841",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6741",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003841",
+            "DOID:6285",
+            "UMLS:C1332849",
+            "NCIT:C6741"
+          ]
+        }
+      ]
+    }
+  ]
+}

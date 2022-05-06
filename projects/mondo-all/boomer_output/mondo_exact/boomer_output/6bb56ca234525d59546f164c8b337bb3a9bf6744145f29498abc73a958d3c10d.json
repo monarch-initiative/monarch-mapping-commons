@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6bb56ca234525d59546f164c8b337bb3a9bf6744145f29498abc73a958d3c10d",
+      "nodes" : [
+        {
+          "id" : "MESH:D009759",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0028738",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:9650",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004843",
+          "type" : "CLASS",
+          "lbl" : "pathologic nystagmus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0028738",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004843",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:9650",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004843",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D009759",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004843",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004843",
+            "UMLS:C0028738",
+            "DOID:9650",
+            "MESH:D009759"
+          ]
+        }
+      ]
+    }
+  ]
+}

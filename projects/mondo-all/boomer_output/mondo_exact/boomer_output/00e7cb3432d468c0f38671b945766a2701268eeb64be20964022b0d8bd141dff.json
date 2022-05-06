@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:00e7cb3432d468c0f38671b945766a2701268eeb64be20964022b0d8bd141dff",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225167",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014816",
+          "type" : "CLASS",
+          "lbl" : "split-foot malformation-mesoaxial polydactyly syndrome"
+        },
+        {
+          "id" : "Orphanet:488232",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616890",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014816",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616890",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225167",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014816",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014816",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:488232",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014816",
+            "OMIM:616890",
+            "Orphanet:488232",
+            "UMLS:C4225167"
+          ]
+        }
+      ]
+    }
+  ]
+}

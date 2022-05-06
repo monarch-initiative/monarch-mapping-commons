@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b4e550a2339fd1b138d377c00b36dfcf779643a129d03ba59e902cb1bfb46678",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2751600",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013106",
+          "type" : "CLASS",
+          "lbl" : "basal cell carcinoma, susceptibility to, 6"
+        },
+        {
+          "id" : "OMIM:613063",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2751600",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013106",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013106",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613063",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2751600",
+            "MONDO:0013106",
+            "OMIM:613063"
+          ]
+        }
+      ]
+    }
+  ]
+}

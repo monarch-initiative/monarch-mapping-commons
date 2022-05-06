@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7ac2000a47f540fed09f2e676b0afad3e1e289655cecb874e4bea09d7e45fd11",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519933",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8104",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004461",
+          "type" : "CLASS",
+          "lbl" : "vaginal tubulovillous adenoma"
+        },
+        {
+          "id" : "NCIT:C40258",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004461",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40258",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:8104",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004461",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1519933",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004461",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004461",
+            "NCIT:C40258",
+            "DOID:8104",
+            "UMLS:C1519933"
+          ]
+        }
+      ]
+    }
+  ]
+}

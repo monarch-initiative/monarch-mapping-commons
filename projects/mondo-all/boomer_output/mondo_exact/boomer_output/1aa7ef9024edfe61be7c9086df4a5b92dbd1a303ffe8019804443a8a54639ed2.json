@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1aa7ef9024edfe61be7c9086df4a5b92dbd1a303ffe8019804443a8a54639ed2",
+      "nodes" : [
+        {
+          "id" : "MONDO:0020568",
+          "type" : "CLASS",
+          "lbl" : "cutaneous myiasis"
+        },
+        {
+          "id" : "SCTID:240877000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:B87.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:99983",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0027031",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:B87.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020568",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:240877000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020568",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0027031",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020568",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020568",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99983",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020568",
+            "Orphanet:99983",
+            "ICD10CM:B87.0",
+            "UMLS:C0027031",
+            "SCTID:240877000"
+          ]
+        }
+      ]
+    }
+  ]
+}

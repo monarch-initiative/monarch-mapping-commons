@@ -1,0 +1,113 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7ccb2d4fca17f4b9d44b30c0e76c1f0f6221fde0e1c43480b4e997597ebac175",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:L95.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0040099",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:542643",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0343081",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0025514",
+          "type" : "CLASS",
+          "lbl" : "livedoid vasculopathy"
+        },
+        {
+          "id" : "SCTID:238762002",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0025514",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:542643",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0040099",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025514",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0343081",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025514",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:L95.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025514",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:238762002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025514",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0025514",
+            "DOID:0040099",
+            "UMLS:C0343081",
+            "Orphanet:542643",
+            "ICD10CM:L95.0",
+            "SCTID:238762002"
+          ]
+        }
+      ]
+    }
+  ]
+}

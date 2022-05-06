@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5108198864f073e44ee34f4da6ee787269f63ca11d5bf4fb9e5478d2b3a7e051",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206363",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019536",
+          "type" : "CLASS",
+          "lbl" : "typical hemolytic-uremic syndrome"
+        },
+        {
+          "id" : "Orphanet:90038",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206363",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019536",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019536",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:90038",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN206363",
+            "MONDO:0019536",
+            "Orphanet:90038"
+          ]
+        }
+      ]
+    }
+  ]
+}

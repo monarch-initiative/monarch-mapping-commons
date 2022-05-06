@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fb10e53673d13babf16933babe25387396826c7900f531cd4a53b15292544895",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333052",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6043",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003746",
+          "type" : "CLASS",
+          "lbl" : "ciliary body spindle cell melanoma"
+        },
+        {
+          "id" : "NCIT:C6117",
+          "type" : "CLASS",
+          "lbl" : "Ciliary Body Spindle Cell Melanoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003746",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6117",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6043",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003746",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333052",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003746",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003746",
+            "NCIT:C6117",
+            "DOID:6043",
+            "UMLS:C1333052"
+          ]
+        }
+      ]
+    }
+  ]
+}

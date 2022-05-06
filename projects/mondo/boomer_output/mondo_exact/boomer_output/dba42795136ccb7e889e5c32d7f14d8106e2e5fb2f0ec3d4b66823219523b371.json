@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dba42795136ccb7e889e5c32d7f14d8106e2e5fb2f0ec3d4b66823219523b371",
+      "nodes" : [
+        {
+          "id" : "SCTID:304990002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0582885",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021543",
+          "type" : "CLASS",
+          "lbl" : "hemangioma of gingiva"
+        },
+        {
+          "id" : "NCIT:C4831",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0582885",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021543",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021543",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4831",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:304990002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021543",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021543",
+            "UMLS:C0582885",
+            "NCIT:C4831",
+            "SCTID:304990002"
+          ]
+        }
+      ]
+    }
+  ]
+}

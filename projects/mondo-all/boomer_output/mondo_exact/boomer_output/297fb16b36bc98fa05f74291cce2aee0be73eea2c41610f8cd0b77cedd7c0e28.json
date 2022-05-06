@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:297fb16b36bc98fa05f74291cce2aee0be73eea2c41610f8cd0b77cedd7c0e28",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1861347",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:186350",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C566091",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008517",
+          "type" : "CLASS",
+          "lbl" : "syndactyly-polydactyly-ear lobe syndrome"
+        },
+        {
+          "id" : "Orphanet:3259",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008517",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:186350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1861347",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008517",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008517",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3259",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566091",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008517",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1861347",
+            "Orphanet:3259",
+            "OMIM:186350",
+            "MONDO:0008517",
+            "MESH:C566091"
+          ]
+        }
+      ]
+    }
+  ]
+}

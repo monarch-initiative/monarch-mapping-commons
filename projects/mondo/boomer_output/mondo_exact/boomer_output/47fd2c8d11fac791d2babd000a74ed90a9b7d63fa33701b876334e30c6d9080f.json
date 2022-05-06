@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:47fd2c8d11fac791d2babd000a74ed90a9b7d63fa33701b876334e30c6d9080f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332636",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1634",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002063",
+          "type" : "CLASS",
+          "lbl" : "breast papillomatosis"
+        },
+        {
+          "id" : "NCIT:C6977",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:1634",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002063",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6977",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332636",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002063",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:1634",
+            "MONDO:0002063",
+            "NCIT:C6977",
+            "UMLS:C1332636"
+          ]
+        }
+      ]
+    }
+  ]
+}

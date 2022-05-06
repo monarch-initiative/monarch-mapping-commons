@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6ffb766ec89e7e71863cd7f2aca0a038a8a85ddd577bea2bfcce6d0637dc146c",
+      "nodes" : [
+        {
+          "id" : "MONDO:0020522",
+          "type" : "CLASS",
+          "lbl" : "Ehlers-Danlos syndrome type 7B"
+        },
+        {
+          "id" : "MESH:C565061",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:99876",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN706304",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1851801",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020522",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99876",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020522",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1851801",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565061",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020522",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN706304",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020522",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020522",
+            "Orphanet:99876",
+            "MESH:C565061",
+            "UMLS:CN706304"
+          ]
+        }
+      ]
+    }
+  ]
+}

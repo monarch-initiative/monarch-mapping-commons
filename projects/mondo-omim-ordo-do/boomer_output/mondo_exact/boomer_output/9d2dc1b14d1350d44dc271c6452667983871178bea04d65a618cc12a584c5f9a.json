@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9d2dc1b14d1350d44dc271c6452667983871178bea04d65a618cc12a584c5f9a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333966",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8022",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004435",
+          "type" : "CLASS",
+          "lbl" : "liver fibrosarcoma"
+        },
+        {
+          "id" : "NCIT:C5832",
+          "type" : "CLASS",
+          "lbl" : "Liver Fibrosarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:8022",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004435",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333966",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004435",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004435",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5832",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:8022",
+            "MONDO:0004435",
+            "UMLS:C1333966",
+            "NCIT:C5832"
+          ]
+        }
+      ]
+    }
+  ]
+}

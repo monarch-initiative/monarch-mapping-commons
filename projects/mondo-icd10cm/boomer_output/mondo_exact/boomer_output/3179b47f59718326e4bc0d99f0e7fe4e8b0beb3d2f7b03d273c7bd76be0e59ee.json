@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3179b47f59718326e4bc0d99f0e7fe4e8b0beb3d2f7b03d273c7bd76be0e59ee",
+      "nodes" : [
+        {
+          "id" : "DOID:0111439",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024569",
+          "type" : "CLASS",
+          "lbl" : "optic atrophy 8"
+        },
+        {
+          "id" : "OMIM:616648",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024569",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616648",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111439",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024569",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:616648",
+            "MONDO:0024569",
+            "DOID:0111439"
+          ]
+        }
+      ]
+    }
+  ]
+}

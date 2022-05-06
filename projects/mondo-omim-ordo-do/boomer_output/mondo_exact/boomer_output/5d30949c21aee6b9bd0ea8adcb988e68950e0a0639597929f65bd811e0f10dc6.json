@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5d30949c21aee6b9bd0ea8adcb988e68950e0a0639597929f65bd811e0f10dc6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0021828",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10486",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001045",
+          "type" : "CLASS",
+          "lbl" : "intestinal atresia"
+        },
+        {
+          "id" : "NCIT:C84790",
+          "type" : "CLASS",
+          "lbl" : "Intestinal Atresia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:10486",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001045",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001045",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C84790",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0021828",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001045",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:10486",
+            "MONDO:0001045",
+            "NCIT:C84790",
+            "UMLS:C0021828"
+          ]
+        }
+      ]
+    }
+  ]
+}

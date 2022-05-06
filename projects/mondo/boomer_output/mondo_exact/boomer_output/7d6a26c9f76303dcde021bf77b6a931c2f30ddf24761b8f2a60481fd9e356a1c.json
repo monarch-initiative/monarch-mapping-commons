@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7d6a26c9f76303dcde021bf77b6a931c2f30ddf24761b8f2a60481fd9e356a1c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201066",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016276",
+          "type" : "CLASS",
+          "lbl" : "high-grade neuroendocrine carcinoma of the cervix uteri"
+        },
+        {
+          "id" : "Orphanet:213777",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201066",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016276",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016276",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:213777",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016276",
+            "UMLS:CN201066",
+            "Orphanet:213777"
+          ]
+        }
+      ]
+    }
+  ]
+}

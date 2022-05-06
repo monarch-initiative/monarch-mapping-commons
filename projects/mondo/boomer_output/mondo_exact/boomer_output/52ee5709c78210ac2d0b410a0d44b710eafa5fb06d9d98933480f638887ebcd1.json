@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:52ee5709c78210ac2d0b410a0d44b710eafa5fb06d9d98933480f638887ebcd1",
+      "nodes" : [
+        {
+          "id" : "MESH:C538272",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2931789",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016051",
+          "type" : "CLASS",
+          "lbl" : "cleft lip-retinopathy syndrome"
+        },
+        {
+          "id" : "Orphanet:1995",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2931789",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016051",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538272",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016051",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016051",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1995",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C2931789",
+            "MONDO:0016051",
+            "MESH:C538272",
+            "Orphanet:1995"
+          ]
+        }
+      ]
+    }
+  ]
+}

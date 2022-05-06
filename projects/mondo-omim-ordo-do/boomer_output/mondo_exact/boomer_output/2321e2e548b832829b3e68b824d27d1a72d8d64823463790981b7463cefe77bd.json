@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2321e2e548b832829b3e68b824d27d1a72d8d64823463790981b7463cefe77bd",
+      "nodes" : [
+        {
+          "id" : "MESH:C565799",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060783",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011428",
+          "type" : "CLASS",
+          "lbl" : "ectrodactyly, ectodermal dysplasia, and cleft lip-palate syndrome 3"
+        },
+        {
+          "id" : "OMIM:604292",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565799",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011428",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011428",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:604292",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060783",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011428",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C565799",
+            "MONDO:0011428",
+            "OMIM:604292",
+            "DOID:0060783"
+          ]
+        }
+      ]
+    }
+  ]
+}

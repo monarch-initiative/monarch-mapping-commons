@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8f0c4cb474bcaf6c44c732c7c69dc5f1a9156a6106f0290fc36b6b8bd35b1872",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0342474",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:90790",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:201710",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008725",
+          "type" : "CLASS",
+          "lbl" : "congenital lipoid adrenal hyperplasia due to STAR deficency"
+        },
+        {
+          "id" : "SCTID:44231009",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008725",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:90790",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:44231009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008725",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0342474",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008725",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008725",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:201710",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0342474",
+            "MONDO:0008725",
+            "SCTID:44231009",
+            "OMIM:201710",
+            "Orphanet:90790"
+          ]
+        }
+      ]
+    }
+  ]
+}

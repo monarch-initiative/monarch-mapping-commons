@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c8d9f394481d3011d7d899e8b5201ce3ed129c9702a6a11bd5988a06e4cd32ac",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN737161",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060629",
+          "type" : "CLASS",
+          "lbl" : "neurodevelopmental disorder with or without hyperkinetic movements and seizures, autosomal recessive"
+        },
+        {
+          "id" : "OMIM:617820",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0060629",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617820",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN737161",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060629",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:617820",
+            "MONDO:0060629",
+            "UMLS:CN737161"
+          ]
+        }
+      ]
+    }
+  ]
+}

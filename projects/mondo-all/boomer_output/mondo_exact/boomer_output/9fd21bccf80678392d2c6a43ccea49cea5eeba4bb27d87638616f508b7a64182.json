@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9fd21bccf80678392d2c6a43ccea49cea5eeba4bb27d87638616f508b7a64182",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335503",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5634",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003558",
+          "type" : "CLASS",
+          "lbl" : "adenosquamous prostate carcinoma"
+        },
+        {
+          "id" : "NCIT:C5538",
+          "type" : "CLASS",
+          "lbl" : "Prostate Adenosquamous Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003558",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5538",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5634",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003558",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335503",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003558",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C5538",
+            "MONDO:0003558",
+            "DOID:5634",
+            "UMLS:C1335503"
+          ]
+        }
+      ]
+    }
+  ]
+}

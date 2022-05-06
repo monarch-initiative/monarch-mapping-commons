@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f14a1bb29f78a23f2da35f44807bf2c6e6f4ec8621421fa1fb8788b02be12fcf",
+      "nodes" : [
+        {
+          "id" : "MESH:D001353",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0004421",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0025381",
+          "type" : "CLASS",
+          "lbl" : "avian leukosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0004421",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025381",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D001353",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025381",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0004421",
+            "MONDO:0025381",
+            "MESH:D001353"
+          ]
+        }
+      ]
+    }
+  ]
+}

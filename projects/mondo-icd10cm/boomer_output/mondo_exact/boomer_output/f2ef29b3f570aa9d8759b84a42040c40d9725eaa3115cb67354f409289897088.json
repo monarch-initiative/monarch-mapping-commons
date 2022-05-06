@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f2ef29b3f570aa9d8759b84a42040c40d9725eaa3115cb67354f409289897088",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3148970",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011594",
+          "type" : "CLASS",
+          "lbl" : "ovarian dysgenesis, hypergonadotropic, with short stature and recurrent metabolic acidosis"
+        },
+        {
+          "id" : "OMIM:605756",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3148970",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011594",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011594",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:605756",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011594",
+            "UMLS:C3148970",
+            "OMIM:605756"
+          ]
+        }
+      ]
+    }
+  ]
+}

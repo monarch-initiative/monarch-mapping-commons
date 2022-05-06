@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b804c945d9ca8ea1db9b8464147703477b623ebfeff752dec501f012a24b45ab",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332536",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050622",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000383",
+          "type" : "CLASS",
+          "lbl" : "benign reproductive system neoplasm"
+        },
+        {
+          "id" : "NCIT:C7617",
+          "type" : "CLASS",
+          "lbl" : "Benign Reproductive System Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000383",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7617",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332536",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000383",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050622",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000383",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000383",
+            "NCIT:C7617",
+            "UMLS:C1332536",
+            "DOID:0050622"
+          ]
+        }
+      ]
+    }
+  ]
+}

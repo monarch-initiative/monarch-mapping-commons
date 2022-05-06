@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dbe7670d70bcc0f6205dbfd92dcdff99403b0ac5b51e465f57f0f4281c5c4f58",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3872695",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:708127008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019396",
+          "type" : "CLASS",
+          "lbl" : "collagen type III glomerulopathy"
+        },
+        {
+          "id" : "UMLS:CN206095",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:84087",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019396",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C3872695",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019396",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:84087",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN206095",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019396",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:708127008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019396",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019396",
+            "Orphanet:84087",
+            "UMLS:CN206095",
+            "SCTID:708127008"
+          ]
+        }
+      ]
+    }
+  ]
+}

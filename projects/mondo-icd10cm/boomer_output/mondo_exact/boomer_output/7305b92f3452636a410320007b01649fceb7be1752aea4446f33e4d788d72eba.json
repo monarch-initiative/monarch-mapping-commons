@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7305b92f3452636a410320007b01649fceb7be1752aea4446f33e4d788d72eba",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201057",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016268",
+          "type" : "CLASS",
+          "lbl" : "papillary carcinoma of the corpus uteri"
+        },
+        {
+          "id" : "Orphanet:213726",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201057",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016268",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016268",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:213726",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN201057",
+            "MONDO:0016268",
+            "Orphanet:213726"
+          ]
+        }
+      ]
+    }
+  ]
+}

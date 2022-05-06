@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:75556f1100237a99dc9367997f0c273fbf656585faa227f29f6b1323153acbd7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN228400",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000172",
+          "type" : "CLASS",
+          "lbl" : "muscular dystrophy-dystroglycanopathy, type B"
+        },
+        {
+          "id" : "OMIMPS:613155",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000172",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:613155",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN228400",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000172",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000172",
+            "OMIMPS:613155",
+            "UMLS:CN228400"
+          ]
+        }
+      ]
+    }
+  ]
+}

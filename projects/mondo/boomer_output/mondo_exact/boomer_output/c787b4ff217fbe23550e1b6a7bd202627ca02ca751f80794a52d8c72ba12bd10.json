@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c787b4ff217fbe23550e1b6a7bd202627ca02ca751f80794a52d8c72ba12bd10",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3151206",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110189",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013457",
+          "type" : "CLASS",
+          "lbl" : "Leber congenital amaurosis 15"
+        },
+        {
+          "id" : "OMIM:613843",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110189",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3151206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013457",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613843",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013457",
+            "DOID:0110189",
+            "UMLS:C3151206",
+            "OMIM:613843"
+          ]
+        }
+      ]
+    }
+  ]
+}

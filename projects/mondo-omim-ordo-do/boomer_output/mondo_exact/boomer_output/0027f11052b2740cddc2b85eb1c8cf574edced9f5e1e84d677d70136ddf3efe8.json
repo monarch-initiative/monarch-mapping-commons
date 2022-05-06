@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0027f11052b2740cddc2b85eb1c8cf574edced9f5e1e84d677d70136ddf3efe8",
+      "nodes" : [
+        {
+          "id" : "SCTID:766874001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN237491",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018490",
+          "type" : "CLASS",
+          "lbl" : "cono-spondylar dysplasia"
+        },
+        {
+          "id" : "Orphanet:420794",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237491",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018490",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:420794",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:766874001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:420794",
+            "MONDO:0018490",
+            "UMLS:CN237491",
+            "SCTID:766874001"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:524804de03232d5ca5b1d253d910a3f50b19f56675da250249e483d85c1aa6d5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206631",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019724",
+          "type" : "CLASS",
+          "lbl" : "secondary glomerular disease"
+        },
+        {
+          "id" : "Orphanet:93551",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206631",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019724",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019724",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93551",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN206631",
+            "MONDO:0019724",
+            "Orphanet:93551"
+          ]
+        }
+      ]
+    }
+  ]
+}

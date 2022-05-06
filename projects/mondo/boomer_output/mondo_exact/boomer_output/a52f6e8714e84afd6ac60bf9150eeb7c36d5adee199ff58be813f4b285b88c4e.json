@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a52f6e8714e84afd6ac60bf9150eeb7c36d5adee199ff58be813f4b285b88c4e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280342",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013666",
+          "type" : "CLASS",
+          "lbl" : "Stickler syndrome, type 5"
+        },
+        {
+          "id" : "OMIM:614284",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013666",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614284",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3280342",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013666",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013666",
+            "OMIM:614284",
+            "UMLS:C3280342"
+          ]
+        }
+      ]
+    }
+  ]
+}

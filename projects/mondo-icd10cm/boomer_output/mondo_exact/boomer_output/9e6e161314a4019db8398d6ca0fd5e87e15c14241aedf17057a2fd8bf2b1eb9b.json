@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9e6e161314a4019db8398d6ca0fd5e87e15c14241aedf17057a2fd8bf2b1eb9b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334801",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5495",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005067",
+          "type" : "CLASS",
+          "lbl" : "monophasic synovial sarcoma"
+        },
+        {
+          "id" : "NCIT:C6534",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5495",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005067",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005067",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6534",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334801",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005067",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5495",
+            "MONDO:0005067",
+            "NCIT:C6534",
+            "UMLS:C1334801"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:26c83177ea4b451340c8d2864e12fd737e2eda284d3a7c075e4315d019b2bd79",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3151136",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110598",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013434",
+          "type" : "CLASS",
+          "lbl" : "primary ciliary dyskinesia 14"
+        },
+        {
+          "id" : "OMIM:613807",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013434",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613807",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3151136",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013434",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110598",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013434",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013434",
+            "OMIM:613807",
+            "UMLS:C3151136",
+            "DOID:0110598"
+          ]
+        }
+      ]
+    }
+  ]
+}

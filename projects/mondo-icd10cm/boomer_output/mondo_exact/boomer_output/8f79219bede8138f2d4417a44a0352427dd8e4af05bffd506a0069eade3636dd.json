@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8f79219bede8138f2d4417a44a0352427dd8e4af05bffd506a0069eade3636dd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333746",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5275",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003364",
+          "type" : "CLASS",
+          "lbl" : "gallbladder leiomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C5841",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003364",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5841",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5275",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003364",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333746",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003364",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003364",
+            "NCIT:C5841",
+            "DOID:5275",
+            "UMLS:C1333746"
+          ]
+        }
+      ]
+    }
+  ]
+}

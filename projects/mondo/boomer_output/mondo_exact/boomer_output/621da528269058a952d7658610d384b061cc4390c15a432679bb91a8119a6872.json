@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:621da528269058a952d7658610d384b061cc4390c15a432679bb91a8119a6872",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332591",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3374",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002628",
+          "type" : "CLASS",
+          "lbl" : "peripheral osteosarcoma"
+        },
+        {
+          "id" : "NCIT:C7134",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002628",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7134",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3374",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002628",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332591",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002628",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002628",
+            "NCIT:C7134",
+            "DOID:3374",
+            "UMLS:C1332591"
+          ]
+        }
+      ]
+    }
+  ]
+}

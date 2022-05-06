@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cbeda4701a2a3819c0e69e54af65b9d3436fd22acc0187692d0530797640694e",
+      "nodes" : [
+        {
+          "id" : "MESH:D018280",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0206697",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006973",
+          "type" : "CLASS",
+          "lbl" : "skin appendage carcinoma"
+        },
+        {
+          "id" : "NCIT:C3775",
+          "type" : "CLASS",
+          "lbl" : "Adnexal Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0206697",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006973",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006973",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3775",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D018280",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006973",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0006973",
+            "UMLS:C0206697",
+            "NCIT:C3775",
+            "MESH:D018280"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0d10eaf723b409dd408addabea3fa29da39030bd4201cf30822a1db10d7df2f1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0205815",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5264",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003356",
+          "type" : "CLASS",
+          "lbl" : "epithelioid leiomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C3700",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0205815",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003356",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003356",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5264",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003356",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003356",
+            "UMLS:C0205815",
+            "NCIT:C3700",
+            "DOID:5264"
+          ]
+        }
+      ]
+    }
+  ]
+}

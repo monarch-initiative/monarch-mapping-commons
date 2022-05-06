@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6cc49b48fcf806eef787f032a35d365e1f4b900e662f5f414851dbb98534066c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227577",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019131",
+          "type" : "CLASS",
+          "lbl" : "ossification anomalies-psychomotor developmental delay syndrome"
+        },
+        {
+          "id" : "Orphanet:73230",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227577",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019131",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019131",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:73230",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019131",
+            "UMLS:CN227577",
+            "Orphanet:73230"
+          ]
+        }
+      ]
+    }
+  ]
+}

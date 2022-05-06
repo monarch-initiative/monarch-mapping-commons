@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9f6b63bb542de39718c856f898897ed0c57a6333117a886c9ae68b4048aa1498",
+      "nodes" : [
+        {
+          "id" : "MESH:C565229",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1853364",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012343",
+          "type" : "CLASS",
+          "lbl" : "aortic aneurysm, familial abdominal, 2"
+        },
+        {
+          "id" : "OMIM:609782",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1853364",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012343",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565229",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012343",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012343",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609782",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1853364",
+            "MONDO:0012343",
+            "MESH:C565229",
+            "OMIM:609782"
+          ]
+        }
+      ]
+    }
+  ]
+}

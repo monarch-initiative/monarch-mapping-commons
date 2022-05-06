@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:efca994bb04cb8a818f98c175dea99e47ec7a6e24e850ce966329161dc0fd007",
+      "nodes" : [
+        {
+          "id" : "MESH:C536519",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008555",
+          "type" : "CLASS",
+          "lbl" : "thrombocytopenia 2"
+        },
+        {
+          "id" : "NCIT:C129035",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:188000",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008555",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:188000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008555",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C129035",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536519",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008555",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008555",
+            "OMIM:188000",
+            "NCIT:C129035",
+            "MESH:C536519"
+          ]
+        }
+      ]
+    }
+  ]
+}

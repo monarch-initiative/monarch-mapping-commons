@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:76e46f42f8d2407c62a1a2f0304685b021b77232ca16959c26fce5cc92033913",
+      "nodes" : [
+        {
+          "id" : "MESH:C564655",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1847387",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011734",
+          "type" : "CLASS",
+          "lbl" : "Cardioneuromyopathy with hyaline masses and nemaline rods"
+        },
+        {
+          "id" : "OMIM:606842",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011734",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:606842",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1847387",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011734",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564655",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011734",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011734",
+            "OMIM:606842",
+            "UMLS:C1847387",
+            "MESH:C564655"
+          ]
+        }
+      ]
+    }
+  ]
+}

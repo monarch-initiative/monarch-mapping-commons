@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0dcf74812d7b73bbc54eb531d40181142a8f061e308049f3165aa1ac7926815a",
+      "nodes" : [
+        {
+          "id" : "SCTID:128091003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0242584",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019098",
+          "type" : "CLASS",
+          "lbl" : "autoimmune thrombocytopenia"
+        },
+        {
+          "id" : "Orphanet:71203",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019098",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:71203",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:128091003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019098",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0242584",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019098",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019098",
+            "Orphanet:71203",
+            "SCTID:128091003",
+            "UMLS:C0242584"
+          ]
+        }
+      ]
+    }
+  ]
+}

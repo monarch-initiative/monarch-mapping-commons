@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2ea9692f908c88bb6a7e656725e5356badb5b06c433b9bb0d2740ed68e16a906",
+      "nodes" : [
+        {
+          "id" : "SCTID:65710008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0264490",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001208",
+          "type" : "CLASS",
+          "lbl" : "acute respiratory failure"
+        },
+        {
+          "id" : "NCIT:C27043",
+          "type" : "CLASS",
+          "lbl" : "Acute Respiratory Failure"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0001208",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27043",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0264490",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001208",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:65710008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001208",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0001208",
+            "NCIT:C27043",
+            "UMLS:C0264490",
+            "SCTID:65710008"
+          ]
+        }
+      ]
+    }
+  ]
+}

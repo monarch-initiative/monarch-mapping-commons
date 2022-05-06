@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a1e2d6dcea689843f582f49f2f64bd939882411881dedfebe5ca414214650dbb",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227225",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017961",
+          "type" : "CLASS",
+          "lbl" : "46,XX disorder of gonadal development"
+        },
+        {
+          "id" : "Orphanet:325055",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227225",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017961",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017961",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:325055",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017961",
+            "UMLS:CN227225",
+            "Orphanet:325055"
+          ]
+        }
+      ]
+    }
+  ]
+}

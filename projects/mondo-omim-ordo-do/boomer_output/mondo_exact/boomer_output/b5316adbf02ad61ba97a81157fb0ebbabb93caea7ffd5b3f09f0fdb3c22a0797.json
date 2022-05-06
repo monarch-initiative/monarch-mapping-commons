@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b5316adbf02ad61ba97a81157fb0ebbabb93caea7ffd5b3f09f0fdb3c22a0797",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0279603",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3372",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002627",
+          "type" : "CLASS",
+          "lbl" : "chondroblastic osteosarcoma"
+        },
+        {
+          "id" : "NCIT:C4021",
+          "type" : "CLASS",
+          "lbl" : "Chondroblastic Osteosarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0279603",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002627",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002627",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4021",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3372",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002627",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002627",
+            "UMLS:C0279603",
+            "NCIT:C4021",
+            "DOID:3372"
+          ]
+        }
+      ]
+    }
+  ]
+}

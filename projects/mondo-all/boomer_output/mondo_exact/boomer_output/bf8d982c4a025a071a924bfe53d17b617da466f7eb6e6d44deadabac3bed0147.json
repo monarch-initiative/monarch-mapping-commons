@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bf8d982c4a025a071a924bfe53d17b617da466f7eb6e6d44deadabac3bed0147",
+      "nodes" : [
+        {
+          "id" : "SCTID:52353000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0395863",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:9736",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004865",
+          "type" : "CLASS",
+          "lbl" : "blue drum syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:9736",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004865",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0395863",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004865",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:52353000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004865",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004865",
+            "DOID:9736",
+            "SCTID:52353000",
+            "UMLS:C0395863"
+          ]
+        }
+      ]
+    }
+  ]
+}

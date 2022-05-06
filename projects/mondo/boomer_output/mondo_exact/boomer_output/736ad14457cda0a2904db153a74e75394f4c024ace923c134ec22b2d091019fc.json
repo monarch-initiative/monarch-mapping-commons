@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:736ad14457cda0a2904db153a74e75394f4c024ace923c134ec22b2d091019fc",
+      "nodes" : [
+        {
+          "id" : "MESH:C564899",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1850054",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009842",
+          "type" : "CLASS",
+          "lbl" : "Pelger-Huet-like anomaly and episodic fever with abdominal pain"
+        },
+        {
+          "id" : "OMIM:260570",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009842",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:260570",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564899",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009842",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1850054",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009842",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009842",
+            "OMIM:260570",
+            "MESH:C564899",
+            "UMLS:C1850054"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6ec46c4d8052bf71b01646e0d9b8b483f55877872ed9addd9c11db16cc182fb4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1845567",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010316",
+          "type" : "CLASS",
+          "lbl" : "FG syndrome 3"
+        },
+        {
+          "id" : "OMIM:300406",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010316",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300406",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1845567",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010316",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1845567",
+            "MONDO:0010316",
+            "OMIM:300406"
+          ]
+        }
+      ]
+    }
+  ]
+}

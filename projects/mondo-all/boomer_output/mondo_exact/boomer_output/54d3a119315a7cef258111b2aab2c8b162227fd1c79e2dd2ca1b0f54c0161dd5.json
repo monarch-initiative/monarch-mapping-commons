@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:54d3a119315a7cef258111b2aab2c8b162227fd1c79e2dd2ca1b0f54c0161dd5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0864950",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5727",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003612",
+          "type" : "CLASS",
+          "lbl" : "uterine ligament cancer"
+        },
+        {
+          "id" : "NCIT:C126498",
+          "type" : "CLASS",
+          "lbl" : "Malignant Uterine Ligament Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003612",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C126498",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0864950",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003612",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5727",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003612",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C126498",
+            "MONDO:0003612",
+            "UMLS:C0864950",
+            "DOID:5727"
+          ]
+        }
+      ]
+    }
+  ]
+}

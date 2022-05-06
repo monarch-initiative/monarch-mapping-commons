@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:640e58fc75c55bd1aefb17212758217c4319d9b12abff2df236d26f87e16ddbe",
+      "nodes" : [
+        {
+          "id" : "SCTID:201000006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0406363",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016772",
+          "type" : "CLASS",
+          "lbl" : "annular lichen planus"
+        },
+        {
+          "id" : "Orphanet:254424",
+          "type" : "CLASS",
+          "lbl" : "Annular lichen planus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016772",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:254424",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:201000006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016772",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0406363",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016772",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016772",
+            "Orphanet:254424",
+            "SCTID:201000006",
+            "UMLS:C0406363"
+          ]
+        }
+      ]
+    }
+  ]
+}

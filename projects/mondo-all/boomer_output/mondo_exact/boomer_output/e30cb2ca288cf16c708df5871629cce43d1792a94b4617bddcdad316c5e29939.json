@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e30cb2ca288cf16c708df5871629cce43d1792a94b4617bddcdad316c5e29939",
+      "nodes" : [
+        {
+          "id" : "MESH:C537544",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2931529",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016719",
+          "type" : "CLASS",
+          "lbl" : "microcephaly-seizures-intellectual disability-heart disease syndrome"
+        },
+        {
+          "id" : "Orphanet:2519",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C2931529",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016719",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016719",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2519",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537544",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016719",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016719",
+            "UMLS:C2931529",
+            "Orphanet:2519",
+            "MESH:C537544"
+          ]
+        }
+      ]
+    }
+  ]
+}

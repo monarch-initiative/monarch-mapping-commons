@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e4bec3b713e3153fc306682c797d85e06711e624a9c636078f24618378452b77",
+      "nodes" : [
+        {
+          "id" : "MONDO:0002492",
+          "type" : "CLASS",
+          "lbl" : "acute kidney failure"
+        },
+        {
+          "id" : "MESH:D058186",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:N17",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C26808",
+          "type" : "CLASS",
+          "lbl" : "Acute Renal Failure"
+        },
+        {
+          "id" : "DOID:3021",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3021",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002492",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D058186",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002492",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:N17",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002492",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002492",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C26808",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3021",
+            "NCIT:C26808",
+            "MESH:D058186",
+            "ICD10CM:N17",
+            "MONDO:0002492"
+          ]
+        }
+      ]
+    }
+  ]
+}

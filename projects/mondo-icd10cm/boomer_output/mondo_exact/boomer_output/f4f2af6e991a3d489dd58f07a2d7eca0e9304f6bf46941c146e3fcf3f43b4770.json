@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f4f2af6e991a3d489dd58f07a2d7eca0e9304f6bf46941c146e3fcf3f43b4770",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207429",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020529",
+          "type" : "CLASS",
+          "lbl" : "ACTH-independent Cushing syndrome"
+        },
+        {
+          "id" : "Orphanet:99893",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020529",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99893",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN207429",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020529",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020529",
+            "Orphanet:99893",
+            "UMLS:CN207429"
+          ]
+        }
+      ]
+    }
+  ]
+}

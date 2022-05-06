@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:73abd71eedc958e67414b4d2db1307b53c780b858d8b225392d0beb7c6db6059",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335724",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:712",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004111",
+          "type" : "CLASS",
+          "lbl" : "refractory hematologic cancer"
+        },
+        {
+          "id" : "NCIT:C27357",
+          "type" : "CLASS",
+          "lbl" : "Refractory Hematologic Malignancy"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004111",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27357",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335724",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004111",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:712",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004111",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004111",
+            "NCIT:C27357",
+            "UMLS:C1335724",
+            "DOID:712"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0b9c2a5131c7e0925bb07792a27deb52fbba052c19ec336f7deb75e312c2fcfc",
+      "nodes" : [
+        {
+          "id" : "MESH:D015275",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0041364",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C3425",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0043875",
+          "type" : "CLASS",
+          "lbl" : "tumor lysis syndrome"
+        },
+        {
+          "id" : "SCTID:277605001",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0041364",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043875",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:277605001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043875",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D015275",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0043875",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0043875",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3425",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:277605001",
+            "MESH:D015275",
+            "NCIT:C3425",
+            "UMLS:C0041364",
+            "MONDO:0043875"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ed1a18a348821031b42f25e66ee053c70cec659f6d910fc78c253533db5e6381",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN228161",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000023",
+          "type" : "CLASS",
+          "lbl" : "infantile liver failure"
+        },
+        {
+          "id" : "Orphanet:464724",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIMPS:615438",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000023",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:464724",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN228161",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000023",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000023",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:615438",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000023",
+            "Orphanet:464724",
+            "UMLS:CN228161",
+            "OMIMPS:615438"
+          ]
+        }
+      ]
+    }
+  ]
+}

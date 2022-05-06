@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f8b5cad740b480a7eac32cd9eab3c9a7b75c1cec0d51257136bdc0c91a423777",
+      "nodes" : [
+        {
+          "id" : "SCTID:725001004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4511700",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020510",
+          "type" : "CLASS",
+          "lbl" : "idiopathic syringomyelia"
+        },
+        {
+          "id" : "Orphanet:99858",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020510",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99858",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4511700",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020510",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:725001004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020510",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020510",
+            "Orphanet:99858",
+            "UMLS:C4511700",
+            "SCTID:725001004"
+          ]
+        }
+      ]
+    }
+  ]
+}

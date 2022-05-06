@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2f1c2fe01f390726bd07df7a6c7d081d693c3b4cd7e7880adca0e215fec7397d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1516402",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5476",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003459",
+          "type" : "CLASS",
+          "lbl" : "cervical adenofibroma"
+        },
+        {
+          "id" : "NCIT:C40230",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003459",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40230",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1516402",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003459",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5476",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003459",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003459",
+            "NCIT:C40230",
+            "UMLS:C1516402",
+            "DOID:5476"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fab315b39bc62f4e4606319951796b493eb8936fe52b89cd2ec9580010f79b9f",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN197364",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:717918002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4305468",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015071",
+          "type" : "CLASS",
+          "lbl" : "middle ear neuroendocrine tumor"
+        },
+        {
+          "id" : "Orphanet:100084",
+          "type" : "CLASS",
+          "lbl" : "Middle ear neuroendocrine tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN197364",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015071",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015071",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:100084",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015071",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4305468",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:717918002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015071",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN197364",
+            "MONDO:0015071",
+            "Orphanet:100084",
+            "SCTID:717918002"
+          ]
+        }
+      ]
+    }
+  ]
+}

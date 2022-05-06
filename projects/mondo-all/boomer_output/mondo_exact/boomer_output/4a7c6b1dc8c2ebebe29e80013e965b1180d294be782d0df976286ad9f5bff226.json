@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4a7c6b1dc8c2ebebe29e80013e965b1180d294be782d0df976286ad9f5bff226",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336940",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5283",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003369",
+          "type" : "CLASS",
+          "lbl" : "vagina leiomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C6326",
+          "type" : "CLASS",
+          "lbl" : "Vaginal Leiomyosarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5283",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003369",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003369",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6326",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336940",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003369",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5283",
+            "MONDO:0003369",
+            "NCIT:C6326",
+            "UMLS:C1336940"
+          ]
+        }
+      ]
+    }
+  ]
+}

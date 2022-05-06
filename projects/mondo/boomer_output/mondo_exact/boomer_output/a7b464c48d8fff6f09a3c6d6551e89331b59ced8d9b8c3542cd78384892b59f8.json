@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a7b464c48d8fff6f09a3c6d6551e89331b59ced8d9b8c3542cd78384892b59f8",
+      "nodes" : [
+        {
+          "id" : "UMLS:C2939461",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005170",
+          "type" : "CLASS",
+          "lbl" : "myeloid neoplasm"
+        },
+        {
+          "id" : "NCIT:C9290",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005170",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9290",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005170",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2939461",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005170",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C9290",
+            "MONDO:0005170",
+            "DOID:0070004",
+            "UMLS:C2939461"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:90e81f1476db7f896a74b7608cd080d6dc8d48b5e39d3f1ad1d6928474d79715",
+      "nodes" : [
+        {
+          "id" : "SCTID:92560002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0345795",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021294",
+          "type" : "CLASS",
+          "lbl" : "carcinoma in situ of gastric cardia"
+        },
+        {
+          "id" : "NCIT:C4428",
+          "type" : "CLASS",
+          "lbl" : "Gastric Cardia Carcinoma In Situ AJCC v6 and v7"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021294",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4428",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92560002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021294",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0345795",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021294",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021294",
+            "NCIT:C4428",
+            "SCTID:92560002",
+            "UMLS:C0345795"
+          ]
+        }
+      ]
+    }
+  ]
+}

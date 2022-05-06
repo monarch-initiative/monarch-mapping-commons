@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8e348c35a243dc78d2b010d4dba5df448a6f32103eacf0cf4d2ed3af61556e00",
+      "nodes" : [
+        {
+          "id" : "MESH:D000069544",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:312215006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020067",
+          "type" : "CLASS",
+          "lbl" : "infectious encephalitis"
+        },
+        {
+          "id" : "NCIT:C79550",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:312215006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020067",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D000069544",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020067",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020067",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C79550",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:312215006",
+            "MONDO:0020067",
+            "MESH:D000069544",
+            "NCIT:C79550"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cd85e298cb8431bb89532b289018491a73a5d619c2a0a9189dbe5538fabfff36",
+      "nodes" : [
+        {
+          "id" : "Orphanet:1456",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:471268000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3496579",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3805239",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015446",
+          "type" : "CLASS",
+          "lbl" : "atypical coarctation of aorta"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015446",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C3496579",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3805239",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015446",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015446",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1456",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:471268000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015446",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3805239",
+            "MONDO:0015446",
+            "Orphanet:1456",
+            "SCTID:471268000"
+          ]
+        }
+      ]
+    }
+  ]
+}

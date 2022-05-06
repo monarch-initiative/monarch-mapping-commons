@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5f049dfb0e91137e26988ff8dd0d24ef7d9e86b6b430c70dcc1c7b0cb66a9c3c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336544",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6696",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003967",
+          "type" : "CLASS",
+          "lbl" : "synchronous multifocal osteogenic sarcoma"
+        },
+        {
+          "id" : "NCIT:C6471",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1336544",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003967",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003967",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6471",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6696",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003967",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1336544",
+            "MONDO:0003967",
+            "NCIT:C6471",
+            "DOID:6696"
+          ]
+        }
+      ]
+    }
+  ]
+}

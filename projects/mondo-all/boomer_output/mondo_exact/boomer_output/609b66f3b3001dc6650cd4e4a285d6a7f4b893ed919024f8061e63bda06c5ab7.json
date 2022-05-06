@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:609b66f3b3001dc6650cd4e4a285d6a7f4b893ed919024f8061e63bda06c5ab7",
+      "nodes" : [
+        {
+          "id" : "MESH:D019522",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3767",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002770",
+          "type" : "CLASS",
+          "lbl" : "vaginal discharge"
+        },
+        {
+          "id" : "NCIT:C50795",
+          "type" : "CLASS",
+          "lbl" : "Abnormal Vaginal Discharge"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3767",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002770",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002770",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C50795",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D019522",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002770",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3767",
+            "MONDO:0002770",
+            "NCIT:C50795",
+            "MESH:D019522"
+          ]
+        }
+      ]
+    }
+  ]
+}

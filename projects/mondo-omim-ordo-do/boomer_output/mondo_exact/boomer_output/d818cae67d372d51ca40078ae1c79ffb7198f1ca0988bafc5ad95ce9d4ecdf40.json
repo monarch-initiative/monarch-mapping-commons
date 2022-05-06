@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d818cae67d372d51ca40078ae1c79ffb7198f1ca0988bafc5ad95ce9d4ecdf40",
+      "nodes" : [
+        {
+          "id" : "DOID:0070354",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0032735",
+          "type" : "CLASS",
+          "lbl" : "cataract 48"
+        },
+        {
+          "id" : "OMIM:618415",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0032735",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:618415",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070354",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0032735",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:618415",
+            "MONDO:0032735",
+            "DOID:0070354"
+          ]
+        }
+      ]
+    }
+  ]
+}

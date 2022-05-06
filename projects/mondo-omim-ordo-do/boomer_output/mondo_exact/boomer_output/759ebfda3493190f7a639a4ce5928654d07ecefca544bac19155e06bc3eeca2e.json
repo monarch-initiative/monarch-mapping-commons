@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:759ebfda3493190f7a639a4ce5928654d07ecefca544bac19155e06bc3eeca2e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332631",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5285",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003371",
+          "type" : "CLASS",
+          "lbl" : "breast leiomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C5186",
+          "type" : "CLASS",
+          "lbl" : "Breast Leiomyosarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332631",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003371",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003371",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5186",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5285",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003371",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332631",
+            "MONDO:0003371",
+            "NCIT:C5186",
+            "DOID:5285"
+          ]
+        }
+      ]
+    }
+  ]
+}

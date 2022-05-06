@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3aecd8126a12f0f91c69f769f703da75ff993452a60cc7e79b1b51a9df79f8e8",
+      "nodes" : [
+        {
+          "id" : "SCTID:237929000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:E72.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017351",
+          "type" : "CLASS",
+          "lbl" : "inborn disorder of lysine and hydroxylysine metabolism"
+        },
+        {
+          "id" : "Orphanet:289832",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:E72.3",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017351",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:237929000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017351",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017351",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:289832",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017351",
+            "ICD10CM:E72.3",
+            "SCTID:237929000",
+            "Orphanet:289832"
+          ]
+        }
+      ]
+    }
+  ]
+}

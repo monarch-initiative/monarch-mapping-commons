@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3ff74e9e407907daf5cb05a91f342bfc9a218e92d649877f82def00e4fce7260",
+      "nodes" : [
+        {
+          "id" : "MESH:C565904",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859518",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008860",
+          "type" : "CLASS",
+          "lbl" : "beta-aminoisobutyric acid, urinary excretion of"
+        },
+        {
+          "id" : "OMIM:210100",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565904",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008860",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1859518",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008860",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008860",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:210100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008860",
+            "MESH:C565904",
+            "UMLS:C1859518",
+            "OMIM:210100"
+          ]
+        }
+      ]
+    }
+  ]
+}

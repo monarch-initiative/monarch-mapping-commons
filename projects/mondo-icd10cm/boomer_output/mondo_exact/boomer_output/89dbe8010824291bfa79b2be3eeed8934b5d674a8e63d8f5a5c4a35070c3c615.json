@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:89dbe8010824291bfa79b2be3eeed8934b5d674a8e63d8f5a5c4a35070c3c615",
+      "nodes" : [
+        {
+          "id" : "MESH:C567803",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2751608",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024464",
+          "type" : "CLASS",
+          "lbl" : "pituitary hormone deficiency, combined, 1"
+        },
+        {
+          "id" : "OMIM:613038",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024464",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613038",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2751608",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024464",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C567803",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024464",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024464",
+            "OMIM:613038",
+            "UMLS:C2751608",
+            "MESH:C567803"
+          ]
+        }
+      ]
+    }
+  ]
+}

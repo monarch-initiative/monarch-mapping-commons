@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1ef9d502be5c6d4dc5e96f67afd1d06ad40954d3ff0a6305b8a5cd453972ea17",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN229208",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019697",
+          "type" : "CLASS",
+          "lbl" : "mesomelic and rhizo-mesomelic dysplasia"
+        },
+        {
+          "id" : "Orphanet:93438",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN229208",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019697",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019697",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93438",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019697",
+            "UMLS:CN229208",
+            "Orphanet:93438"
+          ]
+        }
+      ]
+    }
+  ]
+}

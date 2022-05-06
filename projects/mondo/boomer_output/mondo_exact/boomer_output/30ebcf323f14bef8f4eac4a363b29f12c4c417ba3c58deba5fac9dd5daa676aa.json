@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:30ebcf323f14bef8f4eac4a363b29f12c4c417ba3c58deba5fac9dd5daa676aa",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1847967",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020506",
+          "type" : "CLASS",
+          "lbl" : "ovarioleukodystrophy"
+        },
+        {
+          "id" : "Orphanet:99853",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1847967",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020506",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020506",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99853",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1847967",
+            "MONDO:0020506",
+            "Orphanet:99853"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4b55e827fa84f3d6be73e0e64dbbf5da5f77a556ba0e8b90d6002940d329504d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3278664",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013111",
+          "type" : "CLASS",
+          "lbl" : "acute infantile liver failure due to synthesis defect of mtDNA-encoded proteins"
+        },
+        {
+          "id" : "Orphanet:217371",
+          "type" : "CLASS",
+          "lbl" : "Acute infantile liver failure due to synthesis defect of mtDNA-encoded proteins"
+        },
+        {
+          "id" : "OMIM:613070",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013111",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:217371",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3278664",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013111",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013111",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613070",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013111",
+            "Orphanet:217371",
+            "UMLS:C3278664",
+            "OMIM:613070"
+          ]
+        }
+      ]
+    }
+  ]
+}

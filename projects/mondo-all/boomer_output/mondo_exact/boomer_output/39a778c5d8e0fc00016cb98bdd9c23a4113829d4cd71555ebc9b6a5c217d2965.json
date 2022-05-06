@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:39a778c5d8e0fc00016cb98bdd9c23a4113829d4cd71555ebc9b6a5c217d2965",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205528",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019044",
+          "type" : "CLASS",
+          "lbl" : "tumor of hematopoietic and lymphoid tissues"
+        },
+        {
+          "id" : "Orphanet:68347",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019044",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:68347",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205528",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019044",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019044",
+            "Orphanet:68347",
+            "UMLS:CN205528"
+          ]
+        }
+      ]
+    }
+  ]
+}

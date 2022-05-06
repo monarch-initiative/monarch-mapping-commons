@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:66f1259e737be78840b8ced6318ee2591c1561a8facd53367349c9654e5c8ab7",
+      "nodes" : [
+        {
+          "id" : "MESH:D018291",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0010635",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006859",
+          "type" : "CLASS",
+          "lbl" : "mucinous cystadenoma"
+        },
+        {
+          "id" : "NCIT:C2973",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0010635",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006859",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006859",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C2973",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D018291",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006859",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0010635",
+            "MONDO:0006859",
+            "NCIT:C2973",
+            "MESH:D018291"
+          ]
+        }
+      ]
+    }
+  ]
+}

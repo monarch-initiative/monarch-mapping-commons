@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7248e185bab3ffbd401adcb8afac16094f03adc6e724a274e7c539e1f1a6bd8c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1834556",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4011725",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008049",
+          "type" : "CLASS",
+          "lbl" : "myopathy, distal, infantile-onset"
+        },
+        {
+          "id" : "OMIM:160300",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070196",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008049",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:160300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070196",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008049",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4011725",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008049",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008049",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1834556",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008049",
+            "OMIM:160300",
+            "DOID:0070196",
+            "UMLS:C4011725"
+          ]
+        }
+      ]
+    }
+  ]
+}

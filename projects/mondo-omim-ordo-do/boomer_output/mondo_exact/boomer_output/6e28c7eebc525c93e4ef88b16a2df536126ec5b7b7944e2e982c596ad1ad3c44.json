@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6e28c7eebc525c93e4ef88b16a2df536126ec5b7b7944e2e982c596ad1ad3c44",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150274",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009005",
+          "type" : "CLASS",
+          "lbl" : "complement component C1r/C1s deficiency"
+        },
+        {
+          "id" : "NCIT:C119991",
+          "type" : "CLASS",
+          "lbl" : "C1r/C1s Deficiency"
+        },
+        {
+          "id" : "OMIM:216950",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3150274",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009005",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:216950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C119991",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3150274",
+            "MONDO:0009005",
+            "OMIM:216950",
+            "NCIT:C119991"
+          ]
+        }
+      ]
+    }
+  ]
+}

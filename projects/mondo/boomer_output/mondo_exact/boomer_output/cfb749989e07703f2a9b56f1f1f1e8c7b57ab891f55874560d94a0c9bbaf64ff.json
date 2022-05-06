@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cfb749989e07703f2a9b56f1f1f1e8c7b57ab891f55874560d94a0c9bbaf64ff",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1852242",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0050864",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000499",
+          "type" : "CLASS",
+          "lbl" : "non-arteritic anterior ischemic optic neuropathy"
+        },
+        {
+          "id" : "Orphanet:415300",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0050864",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000499",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1852242",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000499",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000499",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:415300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0050864",
+            "MONDO:0000499",
+            "UMLS:C1852242",
+            "Orphanet:415300"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b49e5a80ed18d9684c01820eb147325a45afcb0cbf32df2af3c0b506441ec032",
+      "nodes" : [
+        {
+          "id" : "ICD10CM:D25.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:13955",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001843",
+          "type" : "CLASS",
+          "lbl" : "uterus interstitial leiomyoma"
+        },
+        {
+          "id" : "SCTID:93616000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0153994",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:13955",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001843",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:93616000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001843",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0153994",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001843",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D25.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001843",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:13955",
+            "MONDO:0001843",
+            "UMLS:C0153994",
+            "ICD10CM:D25.1",
+            "SCTID:93616000"
+          ]
+        }
+      ]
+    }
+  ]
+}

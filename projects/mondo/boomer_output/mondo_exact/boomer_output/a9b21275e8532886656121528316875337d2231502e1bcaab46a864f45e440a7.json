@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a9b21275e8532886656121528316875337d2231502e1bcaab46a864f45e440a7",
+      "nodes" : [
+        {
+          "id" : "SCTID:255058005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0039981",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021350",
+          "type" : "CLASS",
+          "lbl" : "neoplasm of thorax"
+        },
+        {
+          "id" : "NCIT:C3406",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0039981",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021350",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3406",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:255058005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021350",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0039981",
+            "MONDO:0021350",
+            "NCIT:C3406",
+            "SCTID:255058005"
+          ]
+        }
+      ]
+    }
+  ]
+}

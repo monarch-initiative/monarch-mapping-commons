@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5c934a3c39725f33586544b8453644fc65ae7c629f7c969b1e857eddf729c3e9",
+      "nodes" : [
+        {
+          "id" : "SCTID:238081000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007751",
+          "type" : "CLASS",
+          "lbl" : "hypercholesterolemia, autosomal dominant, type B"
+        },
+        {
+          "id" : "OMIM:144010",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:238081000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007751",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007751",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:144010",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007751",
+            "SCTID:238081000",
+            "OMIM:144010"
+          ]
+        }
+      ]
+    }
+  ]
+}

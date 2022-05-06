@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8c0dfcd89411f14946af517747937dafc7217a3d8340e9d75e8fe8b71dda2d25",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334811",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024338",
+          "type" : "CLASS",
+          "lbl" : "mucinous neoplasm"
+        },
+        {
+          "id" : "NCIT:C7070",
+          "type" : "CLASS",
+          "lbl" : "Mucinous Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024338",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7070",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334811",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024338",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C7070",
+            "MONDO:0024338",
+            "UMLS:C1334811"
+          ]
+        }
+      ]
+    }
+  ]
+}

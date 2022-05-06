@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dde52609b1b097fe64e2da232645274a3fca16fc6ad716b99fe4d625f5b88448",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225302",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014671",
+          "type" : "CLASS",
+          "lbl" : "neuropathy, hereditary motor and sensory, type 6B"
+        },
+        {
+          "id" : "OMIM:616505",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4225302",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014671",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014671",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616505",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014671",
+            "OMIM:616505",
+            "UMLS:C4225302"
+          ]
+        }
+      ]
+    }
+  ]
+}

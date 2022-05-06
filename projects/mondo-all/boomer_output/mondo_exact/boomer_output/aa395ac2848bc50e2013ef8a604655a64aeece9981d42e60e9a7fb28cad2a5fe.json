@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:aa395ac2848bc50e2013ef8a604655a64aeece9981d42e60e9a7fb28cad2a5fe",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332341",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7559",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004280",
+          "type" : "CLASS",
+          "lbl" : "asymmetric motor neuropathy"
+        },
+        {
+          "id" : "NCIT:C27953",
+          "type" : "CLASS",
+          "lbl" : "Asymmetric Motor Neuropathy"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004280",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27953",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7559",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004280",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332341",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004280",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C27953",
+            "MONDO:0004280",
+            "DOID:7559",
+            "UMLS:C1332341"
+          ]
+        }
+      ]
+    }
+  ]
+}

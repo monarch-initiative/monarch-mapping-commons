@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b9c5159732c7ee9e3d1977ca878f28f1d094181609da6f51328e90fb3cb921fd",
+      "nodes" : [
+        {
+          "id" : "MESH:C536182",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1864966",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012373",
+          "type" : "CLASS",
+          "lbl" : "ectodermal dysplasia, sensorineural hearing loss, and distinctive facial features"
+        },
+        {
+          "id" : "OMIM:609944",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012373",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609944",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1864966",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012373",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536182",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012373",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012373",
+            "OMIM:609944",
+            "UMLS:C1864966",
+            "MESH:C536182"
+          ]
+        }
+      ]
+    }
+  ]
+}

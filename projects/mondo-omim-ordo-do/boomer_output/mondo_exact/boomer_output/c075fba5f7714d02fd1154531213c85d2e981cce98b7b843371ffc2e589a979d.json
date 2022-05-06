@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c075fba5f7714d02fd1154531213c85d2e981cce98b7b843371ffc2e589a979d",
+      "nodes" : [
+        {
+          "id" : "MONDO:0018065",
+          "type" : "CLASS",
+          "lbl" : "isolated trigonocephaly"
+        },
+        {
+          "id" : "UMLS:CN239481",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:3366",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN236409",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIMPS:190440",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018065",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:190440",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018065",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3366",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN236409",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018065",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018065",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN239481",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIMPS:190440",
+            "MONDO:0018065",
+            "Orphanet:3366",
+            "UMLS:CN236409"
+          ]
+        }
+      ]
+    }
+  ]
+}

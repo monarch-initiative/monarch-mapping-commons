@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1a98d8a587b7d41351953234be760ae840a9ac05c8b43f48bd68ca3cf92b7852",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0349534",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4284",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002941",
+          "type" : "CLASS",
+          "lbl" : "anal margin carcinoma"
+        },
+        {
+          "id" : "NCIT:C7472",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4284",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002941",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0349534",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002941",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002941",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7472",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:4284",
+            "MONDO:0002941",
+            "UMLS:C0349534",
+            "NCIT:C7472"
+          ]
+        }
+      ]
+    }
+  ]
+}

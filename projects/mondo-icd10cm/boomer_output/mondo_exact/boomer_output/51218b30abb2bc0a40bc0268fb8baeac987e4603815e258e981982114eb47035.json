@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:51218b30abb2bc0a40bc0268fb8baeac987e4603815e258e981982114eb47035",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201988",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1332876",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C7012",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016740",
+          "type" : "CLASS",
+          "lbl" : "choriocarcinoma of the central nervous system"
+        },
+        {
+          "id" : "Orphanet:252015",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016740",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:252015",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016740",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7012",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201988",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016740",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016740",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1332876",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016740",
+            "Orphanet:252015",
+            "NCIT:C7012",
+            "UMLS:CN201988"
+          ]
+        }
+      ]
+    }
+  ]
+}

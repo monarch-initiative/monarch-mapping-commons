@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3ef6e87512222b37d700e098b6f68381b71e06b744962847a86909336099c3a3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0267792",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3118",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002515",
+          "type" : "CLASS",
+          "lbl" : "hepatobiliary disorder"
+        },
+        {
+          "id" : "NCIT:C3959",
+          "type" : "CLASS",
+          "lbl" : "Hepatobiliary Disorder"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3118",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002515",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002515",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3959",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0267792",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002515",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C3959",
+            "MONDO:0002515",
+            "DOID:3118",
+            "UMLS:C0267792"
+          ]
+        }
+      ]
+    }
+  ]
+}

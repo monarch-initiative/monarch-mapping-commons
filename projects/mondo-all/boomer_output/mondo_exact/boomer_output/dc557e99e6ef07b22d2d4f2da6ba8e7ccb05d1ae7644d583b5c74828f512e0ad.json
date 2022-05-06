@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dc557e99e6ef07b22d2d4f2da6ba8e7ccb05d1ae7644d583b5c74828f512e0ad",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310778",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014848",
+          "type" : "CLASS",
+          "lbl" : "TELO2-related intellectual disability-neurodevelopmental disorder"
+        },
+        {
+          "id" : "Orphanet:488642",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616954",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014848",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616954",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310778",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014848",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014848",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:488642",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014848",
+            "OMIM:616954",
+            "UMLS:C4310778",
+            "Orphanet:488642"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f6dd8bd6579c4d9e8d15862e85bbbe45e286190b4fe198930977188a6caa27eb",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200231",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015720",
+          "type" : "CLASS",
+          "lbl" : "moderately severe hemophilia A"
+        },
+        {
+          "id" : "Orphanet:169805",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015720",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:169805",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN200231",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015720",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015720",
+            "Orphanet:169805",
+            "UMLS:CN200231"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5833a8b68c2bfe33f0ac0d0eb91119f2b484019470614a4f675866c856845f51",
+      "nodes" : [
+        {
+          "id" : "MESH:C565932",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859645",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008837",
+          "type" : "CLASS",
+          "lbl" : "ataxia, deafness, and cardiomyopathy"
+        },
+        {
+          "id" : "OMIM:208750",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008837",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:208750",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1859645",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008837",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565932",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008837",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:208750",
+            "MONDO:0008837",
+            "UMLS:C1859645",
+            "MESH:C565932"
+          ]
+        }
+      ]
+    }
+  ]
+}

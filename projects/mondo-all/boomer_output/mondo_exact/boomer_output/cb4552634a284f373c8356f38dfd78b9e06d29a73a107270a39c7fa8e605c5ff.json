@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cb4552634a284f373c8356f38dfd78b9e06d29a73a107270a39c7fa8e605c5ff",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0396058",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015316",
+          "type" : "CLASS",
+          "lbl" : "congenital laryngeal palsy"
+        },
+        {
+          "id" : "Orphanet:137932",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015316",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:137932",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0396058",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015316",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:137932",
+            "MONDO:0015316",
+            "UMLS:C0396058"
+          ]
+        }
+      ]
+    }
+  ]
+}

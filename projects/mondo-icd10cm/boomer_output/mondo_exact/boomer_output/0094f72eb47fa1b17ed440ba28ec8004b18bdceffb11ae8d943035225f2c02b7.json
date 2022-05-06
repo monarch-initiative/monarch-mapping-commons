@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0094f72eb47fa1b17ed440ba28ec8004b18bdceffb11ae8d943035225f2c02b7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0263610",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:L56.3",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019945",
+          "type" : "CLASS",
+          "lbl" : "solar urticaria"
+        },
+        {
+          "id" : "Orphanet:97230",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:10347006",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0263610",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019945",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019945",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:97230",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:L56.3",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019945",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:10347006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019945",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:97230",
+            "SCTID:10347006",
+            "ICD10CM:L56.3",
+            "UMLS:C0263610",
+            "MONDO:0019945"
+          ]
+        }
+      ]
+    }
+  ]
+}

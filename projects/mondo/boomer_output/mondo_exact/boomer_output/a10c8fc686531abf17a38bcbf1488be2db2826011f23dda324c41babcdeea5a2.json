@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a10c8fc686531abf17a38bcbf1488be2db2826011f23dda324c41babcdeea5a2",
+      "nodes" : [
+        {
+          "id" : "MESH:C565597",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1856991",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009163",
+          "type" : "CLASS",
+          "lbl" : "encephalomalacia, multilocular"
+        },
+        {
+          "id" : "OMIM:225700",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009163",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:225700",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565597",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009163",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1856991",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009163",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009163",
+            "OMIM:225700",
+            "MESH:C565597",
+            "UMLS:C1856991"
+          ]
+        }
+      ]
+    }
+  ]
+}

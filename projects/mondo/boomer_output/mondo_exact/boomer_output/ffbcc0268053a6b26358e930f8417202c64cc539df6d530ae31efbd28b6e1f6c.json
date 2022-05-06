@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ffbcc0268053a6b26358e930f8417202c64cc539df6d530ae31efbd28b6e1f6c",
+      "nodes" : [
+        {
+          "id" : "SCTID:716586009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN203734",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017784",
+          "type" : "CLASS",
+          "lbl" : "Epstein-Barr virus-associated gastric carcinoma"
+        },
+        {
+          "id" : "Orphanet:313920",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017784",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:313920",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203734",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017784",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:716586009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017784",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017784",
+            "Orphanet:313920",
+            "UMLS:CN203734",
+            "SCTID:716586009"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2375dc9274dff61265c5d0c8071a47d1056220e937a50cf567706d70a75266de",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201986",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016738",
+          "type" : "CLASS",
+          "lbl" : "primary germ cell tumor of central nervous system"
+        },
+        {
+          "id" : "Orphanet:251995",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201986",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016738",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016738",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:251995",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN201986",
+            "MONDO:0016738",
+            "Orphanet:251995"
+          ]
+        }
+      ]
+    }
+  ]
+}

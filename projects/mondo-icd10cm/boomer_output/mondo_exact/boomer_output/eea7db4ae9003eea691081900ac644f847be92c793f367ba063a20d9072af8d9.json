@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eea7db4ae9003eea691081900ac644f847be92c793f367ba063a20d9072af8d9",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204670",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018180",
+          "type" : "CLASS",
+          "lbl" : "staphylococcal scarlet fever"
+        },
+        {
+          "id" : "Orphanet:36235",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018180",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:36235",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204670",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018180",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:36235",
+            "MONDO:0018180",
+            "UMLS:CN204670"
+          ]
+        }
+      ]
+    }
+  ]
+}

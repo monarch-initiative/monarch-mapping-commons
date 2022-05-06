@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c07c94fbf49c180ff138d18f106911b2e0d24637006ad031649511ca2d4a8632",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332612",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4209",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002916",
+          "type" : "CLASS",
+          "lbl" : "brainstem intraparenchymal clear cell meningioma"
+        },
+        {
+          "id" : "NCIT:C5295",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332612",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002916",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002916",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5295",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4209",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002916",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332612",
+            "MONDO:0002916",
+            "NCIT:C5295",
+            "DOID:4209"
+          ]
+        }
+      ]
+    }
+  ]
+}

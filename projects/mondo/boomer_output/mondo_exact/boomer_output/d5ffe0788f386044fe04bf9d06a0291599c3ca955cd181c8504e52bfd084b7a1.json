@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d5ffe0788f386044fe04bf9d06a0291599c3ca955cd181c8504e52bfd084b7a1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334585",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10536",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001057",
+          "type" : "CLASS",
+          "lbl" : "malignant gastric granular cell tumor"
+        },
+        {
+          "id" : "NCIT:C5484",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:10536",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001057",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001057",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5484",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334585",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001057",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:10536",
+            "MONDO:0001057",
+            "NCIT:C5484",
+            "UMLS:C1334585"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fb8de15545ea4e1ca3e36719b20bccf7d4a05fd806b21ba528615eed66d8a2ef",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3280266",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013652",
+          "type" : "CLASS",
+          "lbl" : "narcolepsy 7"
+        },
+        {
+          "id" : "OMIM:614250",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C3280266",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013652",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013652",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614250",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C3280266",
+            "MONDO:0013652",
+            "OMIM:614250"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ac2a6da1c9ccb8f9ea0d667b96f6784e2023411298e96ce580260e7578f9e6e0",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519932",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6809",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003998",
+          "type" : "CLASS",
+          "lbl" : "vaginal tubular adenoma"
+        },
+        {
+          "id" : "NCIT:C40257",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6809",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003998",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003998",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40257",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1519932",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003998",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6809",
+            "MONDO:0003998",
+            "NCIT:C40257",
+            "UMLS:C1519932"
+          ]
+        }
+      ]
+    }
+  ]
+}

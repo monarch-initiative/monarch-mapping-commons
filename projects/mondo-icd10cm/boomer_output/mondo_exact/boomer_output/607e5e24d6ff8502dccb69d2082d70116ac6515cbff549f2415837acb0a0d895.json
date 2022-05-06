@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:607e5e24d6ff8502dccb69d2082d70116ac6515cbff549f2415837acb0a0d895",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200619",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015994",
+          "type" : "CLASS",
+          "lbl" : "muscular dystrophy-white matter spongiosis syndrome"
+        },
+        {
+          "id" : "Orphanet:1877",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN200619",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015994",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015994",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1877",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN200619",
+            "MONDO:0015994",
+            "Orphanet:1877"
+          ]
+        }
+      ]
+    }
+  ]
+}

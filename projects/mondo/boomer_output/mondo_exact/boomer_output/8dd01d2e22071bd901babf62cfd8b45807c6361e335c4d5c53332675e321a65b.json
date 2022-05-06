@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8dd01d2e22071bd901babf62cfd8b45807c6361e335c4d5c53332675e321a65b",
+      "nodes" : [
+        {
+          "id" : "MESH:C564042",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1839114",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010755",
+          "type" : "CLASS",
+          "lbl" : "vesicoureteral reflux, X-linked"
+        },
+        {
+          "id" : "OMIM:314550",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010755",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:314550",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564042",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010755",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1839114",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010755",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:314550",
+            "MONDO:0010755",
+            "MESH:C564042",
+            "UMLS:C1839114"
+          ]
+        }
+      ]
+    }
+  ]
+}

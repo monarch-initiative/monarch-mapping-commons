@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:046dbee02a0c9636f9742b9b6aed53f7447338c3331a77218578e687eae3f746",
+      "nodes" : [
+        {
+          "id" : "MESH:C564883",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1849773",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009886",
+          "type" : "CLASS",
+          "lbl" : "pleoconial myopathy with salt craving"
+        },
+        {
+          "id" : "OMIM:262900",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1849773",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009886",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C564883",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009886",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009886",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:262900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009886",
+            "UMLS:C1849773",
+            "MESH:C564883",
+            "OMIM:262900"
+          ]
+        }
+      ]
+    }
+  ]
+}

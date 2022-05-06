@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4711de3dba1ee516b551ad42de3a6701970a616f0a23fff734046ab5b71cfcb9",
+      "nodes" : [
+        {
+          "id" : "SCTID:92093000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0345670",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0021515",
+          "type" : "CLASS",
+          "lbl" : "benign neoplasm of ethmoidal sinus"
+        },
+        {
+          "id" : "NCIT:C4417",
+          "type" : "CLASS",
+          "lbl" : "Benign Ethmoid Sinus Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0021515",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4417",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0345670",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021515",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92093000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021515",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0021515",
+            "NCIT:C4417",
+            "UMLS:C0345670",
+            "SCTID:92093000"
+          ]
+        }
+      ]
+    }
+  ]
+}

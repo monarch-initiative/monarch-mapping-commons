@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5124b380dcae4bf05020d9f4864ed6a824c3f5708ab25d41366e292958d21ffd",
+      "nodes" : [
+        {
+          "id" : "MESH:D009383",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:175",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002095",
+          "type" : "CLASS",
+          "lbl" : "vascular cancer"
+        },
+        {
+          "id" : "NCIT:C8538",
+          "type" : "CLASS",
+          "lbl" : "Malignant Blood Vessel Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:175",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002095",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D009383",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002095",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002095",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8538",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002095",
+            "DOID:175",
+            "MESH:D009383",
+            "NCIT:C8538"
+          ]
+        }
+      ]
+    }
+  ]
+}

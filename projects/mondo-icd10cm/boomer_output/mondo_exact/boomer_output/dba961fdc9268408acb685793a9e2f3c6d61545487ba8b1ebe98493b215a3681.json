@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dba961fdc9268408acb685793a9e2f3c6d61545487ba8b1ebe98493b215a3681",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4303566",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:139573",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015354",
+          "type" : "CLASS",
+          "lbl" : "hereditary sensory and autonomic neuropathy with deafness and global delay"
+        },
+        {
+          "id" : "SCTID:717826009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN226662",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015354",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4303566",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015354",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:139573",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:717826009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015354",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN226662",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015354",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015354",
+            "Orphanet:139573",
+            "SCTID:717826009",
+            "UMLS:CN226662"
+          ]
+        }
+      ]
+    }
+  ]
+}

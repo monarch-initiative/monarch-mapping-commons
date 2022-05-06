@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d3e35f18b47d4636672af0dab85aaafa22a34a5a7effc6fb6275f2d8d08cc157",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1707390",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006146",
+          "type" : "CLASS",
+          "lbl" : "chondroid hamartoma"
+        },
+        {
+          "id" : "NCIT:C42589",
+          "type" : "CLASS",
+          "lbl" : "Chondroid Hamartoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006146",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C42589",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1707390",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006146",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C42589",
+            "MONDO:0006146",
+            "UMLS:C1707390"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e83e5018bf3777314e725832ef888b79288ab8b1389f1cbad3acb08289b32650",
+      "nodes" : [
+        {
+          "id" : "MESH:C565941",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859725",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008819",
+          "type" : "CLASS",
+          "lbl" : "arteriosclerosis, severe juvenile"
+        },
+        {
+          "id" : "OMIM:208060",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008819",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:208060",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1859725",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008819",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565941",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008819",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:208060",
+            "MONDO:0008819",
+            "UMLS:C1859725",
+            "MESH:C565941"
+          ]
+        }
+      ]
+    }
+  ]
+}

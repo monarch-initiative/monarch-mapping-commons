@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ee0f4e2415a39750adc255172b44b717d60318de7346416b97f069f1b191466d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0342190",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006120",
+          "type" : "CLASS",
+          "lbl" : "C-cell hyperplasia"
+        },
+        {
+          "id" : "NCIT:C46100",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0342190",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006120",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006120",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C46100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0342190",
+            "MONDO:0006120",
+            "NCIT:C46100"
+          ]
+        }
+      ]
+    }
+  ]
+}

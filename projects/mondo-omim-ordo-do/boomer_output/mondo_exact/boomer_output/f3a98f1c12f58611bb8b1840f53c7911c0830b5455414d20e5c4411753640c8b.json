@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f3a98f1c12f58611bb8b1840f53c7911c0830b5455414d20e5c4411753640c8b",
+      "nodes" : [
+        {
+          "id" : "MESH:D038901",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010341",
+          "type" : "CLASS",
+          "lbl" : "autism, susceptibility to, X-linked 2"
+        },
+        {
+          "id" : "OMIM:300495",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D038901",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010341",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010341",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300495",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D038901",
+            "MONDO:0010341",
+            "OMIM:300495"
+          ]
+        }
+      ]
+    }
+  ]
+}

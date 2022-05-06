@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:17e31a0c439459451ee2d1d2484dd211756612926269b3a9eac57b81028826c7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201058",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016269",
+          "type" : "CLASS",
+          "lbl" : "high-grade neuroendocrine carcinoma of the corpus uteri"
+        },
+        {
+          "id" : "Orphanet:213731",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201058",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016269",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016269",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:213731",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN201058",
+            "MONDO:0016269",
+            "Orphanet:213731"
+          ]
+        }
+      ]
+    }
+  ]
+}

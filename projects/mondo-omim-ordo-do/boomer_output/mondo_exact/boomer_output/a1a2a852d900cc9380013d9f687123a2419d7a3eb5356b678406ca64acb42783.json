@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a1a2a852d900cc9380013d9f687123a2419d7a3eb5356b678406ca64acb42783",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205268",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018897",
+          "type" : "CLASS",
+          "lbl" : "primary cutaneous CD30+ T-cell lymphoproliferative disease"
+        },
+        {
+          "id" : "Orphanet:541",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018897",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:541",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205268",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018897",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018897",
+            "Orphanet:541",
+            "UMLS:CN205268"
+          ]
+        }
+      ]
+    }
+  ]
+}

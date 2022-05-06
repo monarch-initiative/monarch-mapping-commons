@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:482efdec7c8243f89ab0329308641e59764859a0dc246ebe7a444567e4adc729",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334287",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7328",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004188",
+          "type" : "CLASS",
+          "lbl" : "iris spindle cell melanoma"
+        },
+        {
+          "id" : "NCIT:C6098",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334287",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004188",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004188",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6098",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7328",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004188",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1334287",
+            "MONDO:0004188",
+            "NCIT:C6098",
+            "DOID:7328"
+          ]
+        }
+      ]
+    }
+  ]
+}

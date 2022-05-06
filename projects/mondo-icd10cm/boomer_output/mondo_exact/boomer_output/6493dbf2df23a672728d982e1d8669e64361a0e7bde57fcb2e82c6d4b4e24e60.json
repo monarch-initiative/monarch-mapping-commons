@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6493dbf2df23a672728d982e1d8669e64361a0e7bde57fcb2e82c6d4b4e24e60",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206914",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019984",
+          "type" : "CLASS",
+          "lbl" : "renal tubular dysgenesis due to twin-twin transfusion"
+        },
+        {
+          "id" : "Orphanet:97367",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019984",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:97367",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN206914",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019984",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019984",
+            "Orphanet:97367",
+            "UMLS:CN206914"
+          ]
+        }
+      ]
+    }
+  ]
+}

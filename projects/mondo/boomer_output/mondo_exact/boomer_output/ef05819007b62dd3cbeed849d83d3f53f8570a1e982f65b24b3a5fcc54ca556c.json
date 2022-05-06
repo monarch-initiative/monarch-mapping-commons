@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ef05819007b62dd3cbeed849d83d3f53f8570a1e982f65b24b3a5fcc54ca556c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201905",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016666",
+          "type" : "CLASS",
+          "lbl" : "unexplained long-lasting fever/inflammatory syndrome"
+        },
+        {
+          "id" : "Orphanet:251332",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201905",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016666",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016666",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:251332",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN201905",
+            "MONDO:0016666",
+            "Orphanet:251332"
+          ]
+        }
+      ]
+    }
+  ]
+}

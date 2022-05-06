@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5ae28b5b3f27ca31473e03f09d183c969b46e424023828abea9b8699e1018ac7",
+      "nodes" : [
+        {
+          "id" : "MESH:C535890",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:62647006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0023628",
+          "type" : "CLASS",
+          "lbl" : "levator syndrome"
+        },
+        {
+          "id" : "NCIT:C113615",
+          "type" : "CLASS",
+          "lbl" : "Proctalgia Fugax"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:62647006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0023628",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C535890",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0023628",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0023628",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C113615",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0023628",
+            "SCTID:62647006",
+            "MESH:C535890",
+            "NCIT:C113615"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:59707f5ba657898399753d1e89e0be660a5cf714c4a683c7151d654648c58c5d",
+      "nodes" : [
+        {
+          "id" : "MONDO:0019413",
+          "type" : "CLASS",
+          "lbl" : "ischio-vertebral syndrome"
+        },
+        {
+          "id" : "Orphanet:85200",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN206143",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:715654001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4274732",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:715654001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019413",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019413",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:85200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019413",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4274732",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN206143",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019413",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:715654001",
+            "MONDO:0019413",
+            "Orphanet:85200",
+            "UMLS:CN206143"
+          ]
+        }
+      ]
+    }
+  ]
+}

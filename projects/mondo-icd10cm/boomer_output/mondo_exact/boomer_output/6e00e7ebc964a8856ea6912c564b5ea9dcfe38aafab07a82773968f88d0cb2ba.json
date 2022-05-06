@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6e00e7ebc964a8856ea6912c564b5ea9dcfe38aafab07a82773968f88d0cb2ba",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204972",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4510873",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:725146001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018321",
+          "type" : "CLASS",
+          "lbl" : "atypical juvenile parkinsonism"
+        },
+        {
+          "id" : "Orphanet:391411",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:725146001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018321",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018321",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN204972",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018321",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:391411",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4510873",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018321",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018321",
+            "SCTID:725146001",
+            "UMLS:C4510873",
+            "Orphanet:391411"
+          ]
+        }
+      ]
+    }
+  ]
+}

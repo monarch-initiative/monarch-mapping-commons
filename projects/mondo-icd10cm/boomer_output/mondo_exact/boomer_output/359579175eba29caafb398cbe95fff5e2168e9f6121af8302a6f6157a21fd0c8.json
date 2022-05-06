@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:359579175eba29caafb398cbe95fff5e2168e9f6121af8302a6f6157a21fd0c8",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN205951",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019310",
+          "type" : "CLASS",
+          "lbl" : "recessive dystrophic epidermolysis bullosa inversa"
+        },
+        {
+          "id" : "Orphanet:79409",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019310",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79409",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205951",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019310",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:79409",
+            "MONDO:0019310",
+            "UMLS:CN205951"
+          ]
+        }
+      ]
+    }
+  ]
+}

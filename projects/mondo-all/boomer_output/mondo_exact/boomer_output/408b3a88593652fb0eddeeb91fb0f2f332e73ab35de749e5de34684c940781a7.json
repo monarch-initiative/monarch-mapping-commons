@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:408b3a88593652fb0eddeeb91fb0f2f332e73ab35de749e5de34684c940781a7",
+      "nodes" : [
+        {
+          "id" : "Orphanet:101995",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C118240",
+          "type" : "CLASS",
+          "lbl" : "Periodic Fever Syndrome"
+        },
+        {
+          "id" : "UMLS:C3889979",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0015974",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015137",
+          "type" : "CLASS",
+          "lbl" : "periodic fever syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015137",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C118240",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015137",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:101995",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3889979",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015137",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015137",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0015974",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015137",
+            "NCIT:C118240",
+            "Orphanet:101995",
+            "UMLS:C3889979"
+          ]
+        }
+      ]
+    }
+  ]
+}

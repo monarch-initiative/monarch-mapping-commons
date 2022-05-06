@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1c7bddc5cca701642a84ac3bc146d5b841f4feafcc01ba9aee415e17662acef6",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203760",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017801",
+          "type" : "CLASS",
+          "lbl" : "atypical Meigs syndrome"
+        },
+        {
+          "id" : "Orphanet:314466",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203760",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017801",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017801",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:314466",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN203760",
+            "MONDO:0017801",
+            "Orphanet:314466"
+          ]
+        }
+      ]
+    }
+  ]
+}

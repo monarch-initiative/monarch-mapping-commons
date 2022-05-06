@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2dbf9302ffff7577c36adfda9fb9b85cf79d729bc5261f6ad68bd28166ec3536",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332900",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6500",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003901",
+          "type" : "CLASS",
+          "lbl" : "cerebellar hemangioblastoma"
+        },
+        {
+          "id" : "NCIT:C5146",
+          "type" : "CLASS",
+          "lbl" : "Cerebellar Hemangioblastoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003901",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5146",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6500",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003901",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332900",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003901",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C5146",
+            "MONDO:0003901",
+            "DOID:6500",
+            "UMLS:C1332900"
+          ]
+        }
+      ]
+    }
+  ]
+}

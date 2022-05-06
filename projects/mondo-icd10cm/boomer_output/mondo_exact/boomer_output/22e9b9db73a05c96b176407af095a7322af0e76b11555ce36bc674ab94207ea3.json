@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:22e9b9db73a05c96b176407af095a7322af0e76b11555ce36bc674ab94207ea3",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN168921",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011101",
+          "type" : "CLASS",
+          "lbl" : "peroxisome biogenesis disorder 1B"
+        },
+        {
+          "id" : "OMIM:601539",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011101",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601539",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN168921",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011101",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:601539",
+            "MONDO:0011101",
+            "UMLS:CN168921"
+          ]
+        }
+      ]
+    }
+  ]
+}

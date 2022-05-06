@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4ec8f4cff9f4ed9ae525871ba0b6a3ecbad37cb64c1521f75ab2768fd269a5d9",
+      "nodes" : [
+        {
+          "id" : "NCIT:C4259",
+          "type" : "CLASS",
+          "lbl" : "Rhabdomyosarcoma with Mixed Embryonal and Alveolar Features"
+        },
+        {
+          "id" : "DOID:4065",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002863",
+          "type" : "CLASS",
+          "lbl" : "rhabdomyosarcoma with mixed embryonal and alveolar features"
+        },
+        {
+          "id" : "UMLS:C0334481",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1709053",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0334481",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002863",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4065",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002863",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002863",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1709053",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002863",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4259",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0334481",
+            "MONDO:0002863",
+            "DOID:4065",
+            "NCIT:C4259"
+          ]
+        }
+      ]
+    }
+  ]
+}

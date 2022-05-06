@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3a3476a28759bca28757083e573725f81cb84b4865fa9b196105f689b405e4b7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334232",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0036976",
+          "type" : "CLASS",
+          "lbl" : "benign epithelial neoplasm"
+        },
+        {
+          "id" : "NCIT:C4092",
+          "type" : "CLASS",
+          "lbl" : "Benign Epithelial Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0334232",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0036976",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0036976",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4092",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0036976",
+            "UMLS:C0334232",
+            "NCIT:C4092"
+          ]
+        }
+      ]
+    }
+  ]
+}

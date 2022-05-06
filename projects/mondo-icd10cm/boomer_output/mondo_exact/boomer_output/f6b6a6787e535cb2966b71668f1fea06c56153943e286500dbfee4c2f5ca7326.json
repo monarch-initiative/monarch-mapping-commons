@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f6b6a6787e535cb2966b71668f1fea06c56153943e286500dbfee4c2f5ca7326",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207440",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020539",
+          "type" : "CLASS",
+          "lbl" : "extragonadal non-dysgerminomatous germ cell tumor"
+        },
+        {
+          "id" : "Orphanet:99913",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020539",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99913",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN207440",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020539",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020539",
+            "Orphanet:99913",
+            "UMLS:CN207440"
+          ]
+        }
+      ]
+    }
+  ]
+}

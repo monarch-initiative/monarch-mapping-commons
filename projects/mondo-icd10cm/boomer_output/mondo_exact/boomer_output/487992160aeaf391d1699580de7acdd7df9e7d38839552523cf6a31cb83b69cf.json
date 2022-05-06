@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:487992160aeaf391d1699580de7acdd7df9e7d38839552523cf6a31cb83b69cf",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203872",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017857",
+          "type" : "CLASS",
+          "lbl" : "spina bifida-hypospadias syndrome"
+        },
+        {
+          "id" : "Orphanet:3176",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017857",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3176",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN203872",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017857",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017857",
+            "Orphanet:3176",
+            "UMLS:CN203872"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4fcf0d69d391b42e0212cffe61e86c6dc06a3f72bc8ead28ccb717cd45f7cade",
+      "nodes" : [
+        {
+          "id" : "MESH:C563806",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1836898",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012182",
+          "type" : "CLASS",
+          "lbl" : "skeletal dysplasia, rhizomelic, with retinitis pigmentosa"
+        },
+        {
+          "id" : "OMIM:609047",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012182",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609047",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1836898",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012182",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563806",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012182",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:609047",
+            "MONDO:0012182",
+            "UMLS:C1836898",
+            "MESH:C563806"
+          ]
+        }
+      ]
+    }
+  ]
+}

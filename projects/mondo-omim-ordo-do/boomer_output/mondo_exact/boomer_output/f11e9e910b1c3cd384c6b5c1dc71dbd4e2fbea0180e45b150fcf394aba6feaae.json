@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f11e9e910b1c3cd384c6b5c1dc71dbd4e2fbea0180e45b150fcf394aba6feaae",
+      "nodes" : [
+        {
+          "id" : "SCTID:26147006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:L75.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0022171",
+          "type" : "CLASS",
+          "lbl" : "chromhidrosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:L75.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022171",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:26147006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0022171",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:L75.1",
+            "MONDO:0022171",
+            "SCTID:26147006"
+          ]
+        }
+      ]
+    }
+  ]
+}

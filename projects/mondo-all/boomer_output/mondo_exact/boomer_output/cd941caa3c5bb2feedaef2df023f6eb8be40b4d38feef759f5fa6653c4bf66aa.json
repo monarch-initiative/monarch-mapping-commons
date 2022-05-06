@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cd941caa3c5bb2feedaef2df023f6eb8be40b4d38feef759f5fa6653c4bf66aa",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0920196",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6425",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003876",
+          "type" : "CLASS",
+          "lbl" : "eyelid carcinoma"
+        },
+        {
+          "id" : "NCIT:C6078",
+          "type" : "CLASS",
+          "lbl" : "Eyelid Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003876",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6078",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6425",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003876",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0920196",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003876",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003876",
+            "NCIT:C6078",
+            "DOID:6425",
+            "UMLS:C0920196"
+          ]
+        }
+      ]
+    }
+  ]
+}

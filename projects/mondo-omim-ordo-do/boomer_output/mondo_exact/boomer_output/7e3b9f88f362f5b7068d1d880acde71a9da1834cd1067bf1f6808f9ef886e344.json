@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7e3b9f88f362f5b7068d1d880acde71a9da1834cd1067bf1f6808f9ef886e344",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518729",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5474",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006340",
+          "type" : "CLASS",
+          "lbl" : "ovarian serous adenofibroma"
+        },
+        {
+          "id" : "NCIT:C40031",
+          "type" : "CLASS",
+          "lbl" : "Ovarian Serous Adenofibroma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006340",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40031",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518729",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006340",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5474",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006340",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C40031",
+            "MONDO:0006340",
+            "UMLS:C1518729",
+            "DOID:5474"
+          ]
+        }
+      ]
+    }
+  ]
+}

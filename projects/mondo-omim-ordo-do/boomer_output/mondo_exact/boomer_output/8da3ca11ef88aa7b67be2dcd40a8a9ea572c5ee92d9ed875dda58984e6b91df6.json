@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8da3ca11ef88aa7b67be2dcd40a8a9ea572c5ee92d9ed875dda58984e6b91df6",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202968",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017328",
+          "type" : "CLASS",
+          "lbl" : "non-central nervous system-localized embryonal carcinoma"
+        },
+        {
+          "id" : "Orphanet:289362",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017328",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:289362",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202968",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017328",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:289362",
+            "MONDO:0017328",
+            "UMLS:CN202968"
+          ]
+        }
+      ]
+    }
+  ]
+}

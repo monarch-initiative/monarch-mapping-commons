@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:069dd49be69ac6229ce0ce6f7e754fef4f5b33c1fe53e36db974d978a45090fa",
+      "nodes" : [
+        {
+          "id" : "OMIM:232900",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:7810004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1856275",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009296",
+          "type" : "CLASS",
+          "lbl" : "glycoprotein storage disease"
+        },
+        {
+          "id" : "UMLS:C0268220",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C565538",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0268220",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009296",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009296",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C1856275",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009296",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:232900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565538",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009296",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:7810004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009296",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:232900",
+            "MESH:C565538",
+            "SCTID:7810004",
+            "UMLS:C0268220",
+            "MONDO:0009296"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:28ef2be92b55e1982efe116c7ecaa980dc379abaaf435a3703f67168ca8e525c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1384416",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7689",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004330",
+          "type" : "CLASS",
+          "lbl" : "leptomeningeal sarcoma"
+        },
+        {
+          "id" : "NCIT:C8312",
+          "type" : "CLASS",
+          "lbl" : "Leptomeningeal Sarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004330",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8312",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1384416",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004330",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7689",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004330",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004330",
+            "NCIT:C8312",
+            "UMLS:C1384416",
+            "DOID:7689"
+          ]
+        }
+      ]
+    }
+  ]
+}

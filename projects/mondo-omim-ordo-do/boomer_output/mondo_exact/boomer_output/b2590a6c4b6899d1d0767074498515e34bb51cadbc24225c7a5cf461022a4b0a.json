@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b2590a6c4b6899d1d0767074498515e34bb51cadbc24225c7a5cf461022a4b0a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204100",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017954",
+          "type" : "CLASS",
+          "lbl" : "pyogenic autoinflammatory syndrome"
+        },
+        {
+          "id" : "Orphanet:324927",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN204100",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017954",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017954",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:324927",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN204100",
+            "MONDO:0017954",
+            "Orphanet:324927"
+          ]
+        }
+      ]
+    }
+  ]
+}

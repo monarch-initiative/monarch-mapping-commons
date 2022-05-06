@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:245797e8f6cd2967aa088e3542159f7439d3bb3098dd47f9c0a6b5de65fccd6d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0262565",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5855",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003679",
+          "type" : "CLASS",
+          "lbl" : "anteroseptal myocardial infarction"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:5855",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003679",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0262565",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003679",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:5855",
+            "MONDO:0003679",
+            "UMLS:C0262565"
+          ]
+        }
+      ]
+    }
+  ]
+}

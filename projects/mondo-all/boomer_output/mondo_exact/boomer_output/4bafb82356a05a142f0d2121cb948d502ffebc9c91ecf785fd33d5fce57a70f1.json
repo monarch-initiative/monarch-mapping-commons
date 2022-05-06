@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4bafb82356a05a142f0d2121cb948d502ffebc9c91ecf785fd33d5fce57a70f1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1845051",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110059",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010522",
+          "type" : "CLASS",
+          "lbl" : "X-linked amelogenesis imperfecta hypoplastic/hypomaturation 2"
+        },
+        {
+          "id" : "OMIM:301201",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1845051",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010522",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110059",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010522",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010522",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:301201",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1845051",
+            "MONDO:0010522",
+            "DOID:0110059",
+            "OMIM:301201"
+          ]
+        }
+      ]
+    }
+  ]
+}

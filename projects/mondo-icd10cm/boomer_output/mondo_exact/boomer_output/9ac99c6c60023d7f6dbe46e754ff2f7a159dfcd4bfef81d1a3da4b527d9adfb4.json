@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9ac99c6c60023d7f6dbe46e754ff2f7a159dfcd4bfef81d1a3da4b527d9adfb4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479333",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044306",
+          "type" : "CLASS",
+          "lbl" : "neurodevelopmental disorder with epilepsy, cataracts, feeding difficulties, and delayed brain myelination"
+        },
+        {
+          "id" : "Orphanet:500545",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:617393",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0044306",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617393",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4479333",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044306",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044306",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:500545",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0044306",
+            "UMLS:C4479333",
+            "OMIM:617393",
+            "Orphanet:500545"
+          ]
+        }
+      ]
+    }
+  ]
+}

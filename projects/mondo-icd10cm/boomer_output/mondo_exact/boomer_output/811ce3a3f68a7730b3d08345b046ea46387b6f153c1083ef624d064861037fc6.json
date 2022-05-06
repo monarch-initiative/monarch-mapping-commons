@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:811ce3a3f68a7730b3d08345b046ea46387b6f153c1083ef624d064861037fc6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1515893",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6848",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004013",
+          "type" : "CLASS",
+          "lbl" : "adult vagina botryoid embryonal rhabdomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C40267",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004013",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40267",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6848",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004013",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1515893",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004013",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004013",
+            "NCIT:C40267",
+            "DOID:6848",
+            "UMLS:C1515893"
+          ]
+        }
+      ]
+    }
+  ]
+}

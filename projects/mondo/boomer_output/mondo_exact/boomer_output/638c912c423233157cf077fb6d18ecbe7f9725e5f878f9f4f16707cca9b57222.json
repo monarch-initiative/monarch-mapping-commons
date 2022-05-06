@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:638c912c423233157cf077fb6d18ecbe7f9725e5f878f9f4f16707cca9b57222",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3888065",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111663",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007509",
+          "type" : "CLASS",
+          "lbl" : "ectodermal dysplasia 10A, hypohidrotic/hair/nail type, autosomal dominant"
+        },
+        {
+          "id" : "OMIM:129490",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0111663",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007509",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3888065",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007509",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007509",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:129490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007509",
+            "DOID:0111663",
+            "UMLS:C3888065",
+            "OMIM:129490"
+          ]
+        }
+      ]
+    }
+  ]
+}

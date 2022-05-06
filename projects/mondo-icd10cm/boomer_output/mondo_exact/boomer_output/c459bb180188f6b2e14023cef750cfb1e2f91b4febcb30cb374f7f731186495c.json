@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c459bb180188f6b2e14023cef750cfb1e2f91b4febcb30cb374f7f731186495c",
+      "nodes" : [
+        {
+          "id" : "SCTID:92260003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060112",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000646",
+          "type" : "CLASS",
+          "lbl" : "ovarian benign neoplasm"
+        },
+        {
+          "id" : "NCIT:C2895",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000646",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C2895",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060112",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000646",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:92260003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000646",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C2895",
+            "MONDO:0000646",
+            "DOID:0060112",
+            "SCTID:92260003"
+          ]
+        }
+      ]
+    }
+  ]
+}

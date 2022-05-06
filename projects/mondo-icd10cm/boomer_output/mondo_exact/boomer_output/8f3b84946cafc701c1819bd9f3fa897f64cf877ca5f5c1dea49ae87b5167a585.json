@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8f3b84946cafc701c1819bd9f3fa897f64cf877ca5f5c1dea49ae87b5167a585",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1516599",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4293",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002950",
+          "type" : "CLASS",
+          "lbl" : "skin clear cell basal cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C27536",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1516599",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002950",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27536",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4293",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002950",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002950",
+            "UMLS:C1516599",
+            "NCIT:C27536",
+            "DOID:4293"
+          ]
+        }
+      ]
+    }
+  ]
+}

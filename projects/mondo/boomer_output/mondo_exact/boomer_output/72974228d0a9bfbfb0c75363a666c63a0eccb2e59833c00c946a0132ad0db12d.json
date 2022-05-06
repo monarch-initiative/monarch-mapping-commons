@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:72974228d0a9bfbfb0c75363a666c63a0eccb2e59833c00c946a0132ad0db12d",
+      "nodes" : [
+        {
+          "id" : "SCTID:723406000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4509879",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017055",
+          "type" : "CLASS",
+          "lbl" : "mycophenolate mofetil embryopathy"
+        },
+        {
+          "id" : "Orphanet:268249",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:723406000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017055",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017055",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:268249",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4509879",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017055",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017055",
+            "SCTID:723406000",
+            "Orphanet:268249",
+            "UMLS:C4509879"
+          ]
+        }
+      ]
+    }
+  ]
+}

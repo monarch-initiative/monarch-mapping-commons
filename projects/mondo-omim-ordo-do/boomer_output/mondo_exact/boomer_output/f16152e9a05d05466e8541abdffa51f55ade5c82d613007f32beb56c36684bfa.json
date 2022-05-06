@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f16152e9a05d05466e8541abdffa51f55ade5c82d613007f32beb56c36684bfa",
+      "nodes" : [
+        {
+          "id" : "MESH:D009234",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0027152",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005811",
+          "type" : "CLASS",
+          "lbl" : "infectious myxomatosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0027152",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005811",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D009234",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005811",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005811",
+            "UMLS:C0027152",
+            "MESH:D009234"
+          ]
+        }
+      ]
+    }
+  ]
+}

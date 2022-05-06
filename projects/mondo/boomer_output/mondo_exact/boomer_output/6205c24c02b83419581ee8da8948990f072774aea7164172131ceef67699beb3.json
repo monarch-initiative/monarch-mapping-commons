@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6205c24c02b83419581ee8da8948990f072774aea7164172131ceef67699beb3",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237530",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018527",
+          "type" : "CLASS",
+          "lbl" : "osteoclastic giant cell tumor of pancreas"
+        },
+        {
+          "id" : "Orphanet:424080",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018527",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:424080",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN237530",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018527",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018527",
+            "Orphanet:424080",
+            "UMLS:CN237530"
+          ]
+        }
+      ]
+    }
+  ]
+}

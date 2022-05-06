@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c2515de25223a87080dbbecab9d5b7d116271123fa029c34ecf08a39770f9cc6",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334370",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10070",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000934",
+          "type" : "CLASS",
+          "lbl" : "laryngeal leiomyoma"
+        },
+        {
+          "id" : "NCIT:C6027",
+          "type" : "CLASS",
+          "lbl" : "Laryngeal Leiomyoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334370",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000934",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000934",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6027",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10070",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000934",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1334370",
+            "MONDO:0000934",
+            "NCIT:C6027",
+            "DOID:10070"
+          ]
+        }
+      ]
+    }
+  ]
+}

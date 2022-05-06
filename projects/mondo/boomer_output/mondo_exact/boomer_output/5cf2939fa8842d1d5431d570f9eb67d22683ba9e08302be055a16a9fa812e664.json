@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5cf2939fa8842d1d5431d570f9eb67d22683ba9e08302be055a16a9fa812e664",
+      "nodes" : [
+        {
+          "id" : "MESH:C538307",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015740",
+          "type" : "CLASS",
+          "lbl" : "trisomy 18p"
+        },
+        {
+          "id" : "Orphanet:1715",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015740",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C538307",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015740",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:1715",
+            "MONDO:0015740",
+            "MESH:C538307"
+          ]
+        }
+      ]
+    }
+  ]
+}

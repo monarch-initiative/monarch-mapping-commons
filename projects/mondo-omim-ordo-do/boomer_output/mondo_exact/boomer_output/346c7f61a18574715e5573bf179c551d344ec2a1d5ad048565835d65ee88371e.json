@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:346c7f61a18574715e5573bf179c551d344ec2a1d5ad048565835d65ee88371e",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0796063",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009622",
+          "type" : "CLASS",
+          "lbl" : "Jawad syndrome"
+        },
+        {
+          "id" : "Orphanet:313795",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:251255",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009622",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:251255",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0796063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009622",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009622",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:313795",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009622",
+            "OMIM:251255",
+            "UMLS:C0796063",
+            "Orphanet:313795"
+          ]
+        }
+      ]
+    }
+  ]
+}

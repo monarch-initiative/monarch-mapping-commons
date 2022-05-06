@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:faefc11f46836ddec482d8f47bc1aa4c78b632ee39c613390ea0c74afa81136d",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN244562",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060677",
+          "type" : "CLASS",
+          "lbl" : "chromosome 1p35 deletion syndrome"
+        },
+        {
+          "id" : "OMIM:617930",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN244562",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060677",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060677",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617930",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0060677",
+            "UMLS:CN244562",
+            "OMIM:617930"
+          ]
+        }
+      ]
+    }
+  ]
+}

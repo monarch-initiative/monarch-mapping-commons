@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c55141f8d0c9ca73e7393edf1c23fb17d19ac26d402ead3cdc5ab081ff45f164",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN227191",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017744",
+          "type" : "CLASS",
+          "lbl" : "disorder of O-xylosyl/N-acetylgalactosaminylglycan synthesis"
+        },
+        {
+          "id" : "Orphanet:309463",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017744",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:309463",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN227191",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017744",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017744",
+            "Orphanet:309463",
+            "UMLS:CN227191"
+          ]
+        }
+      ]
+    }
+  ]
+}

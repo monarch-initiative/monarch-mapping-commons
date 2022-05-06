@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8afb247ab4f9f2970c060ed142ec7f05475379d07ce4010daa3cb34e0ba078cb",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332907",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6291",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003843",
+          "type" : "CLASS",
+          "lbl" : "cerebral hemisphere lipoma"
+        },
+        {
+          "id" : "NCIT:C6220",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003843",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6220",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332907",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003843",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6291",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003843",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6220",
+            "MONDO:0003843",
+            "UMLS:C1332907",
+            "DOID:6291"
+          ]
+        }
+      ]
+    }
+  ]
+}

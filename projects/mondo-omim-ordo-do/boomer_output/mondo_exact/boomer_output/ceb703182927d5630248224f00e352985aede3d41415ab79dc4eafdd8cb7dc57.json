@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ceb703182927d5630248224f00e352985aede3d41415ab79dc4eafdd8cb7dc57",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332619",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6491",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003896",
+          "type" : "CLASS",
+          "lbl" : "breast capillary hemangioma"
+        },
+        {
+          "id" : "NCIT:C5210",
+          "type" : "CLASS",
+          "lbl" : "Breast Capillary Hemangioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003896",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5210",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6491",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003896",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332619",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003896",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003896",
+            "NCIT:C5210",
+            "UMLS:C1332619",
+            "DOID:6491"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ddb30daf1cd75ef2876f107bc6701d3d0cd59ddd075178a38291a8d899e08c3d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150679",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013260",
+          "type" : "CLASS",
+          "lbl" : "esophagitis, eosinophilic, 2"
+        },
+        {
+          "id" : "OMIM:613412",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013260",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613412",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3150679",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013260",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:613412",
+            "MONDO:0013260",
+            "UMLS:C3150679"
+          ]
+        }
+      ]
+    }
+  ]
+}

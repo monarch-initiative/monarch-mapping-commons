@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ddadf49318a7120b949ccc61453fac0211a8f9a861a46fa8998b4f356e4a1733",
+      "nodes" : [
+        {
+          "id" : "MESH:C562746",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011957",
+          "type" : "CLASS",
+          "lbl" : "retinal macular dystrophy type 2"
+        },
+        {
+          "id" : "Orphanet:319640",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:608051",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011957",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:608051",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C562746",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011957",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011957",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:319640",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011957",
+            "OMIM:608051",
+            "MESH:C562746",
+            "Orphanet:319640"
+          ]
+        }
+      ]
+    }
+  ]
+}

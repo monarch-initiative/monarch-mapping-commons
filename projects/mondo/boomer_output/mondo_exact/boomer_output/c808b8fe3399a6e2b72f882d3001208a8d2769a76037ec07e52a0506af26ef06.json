@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c808b8fe3399a6e2b72f882d3001208a8d2769a76037ec07e52a0506af26ef06",
+      "nodes" : [
+        {
+          "id" : "MESH:D011648",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0034049",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0025457",
+          "type" : "CLASS",
+          "lbl" : "pulmonary adenomatosis, ovine"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0034049",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D011648",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0025457",
+            "UMLS:C0034049",
+            "MESH:D011648"
+          ]
+        }
+      ]
+    }
+  ]
+}

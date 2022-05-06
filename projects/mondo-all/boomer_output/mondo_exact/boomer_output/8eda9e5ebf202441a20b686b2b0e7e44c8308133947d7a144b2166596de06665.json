@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8eda9e5ebf202441a20b686b2b0e7e44c8308133947d7a144b2166596de06665",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN199660",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015521",
+          "type" : "CLASS",
+          "lbl" : "juvenile or adult CACH syndrome"
+        },
+        {
+          "id" : "Orphanet:157719",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN199660",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015521",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015521",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:157719",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN199660",
+            "MONDO:0015521",
+            "Orphanet:157719"
+          ]
+        }
+      ]
+    }
+  ]
+}

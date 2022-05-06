@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6a20e06a208f047c18d7c4ad75a31011029aa59c98ad66b47855efb7aa9f906b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0431129",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3846",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002787",
+          "type" : "CLASS",
+          "lbl" : "adamantinous craniopharyngioma"
+        },
+        {
+          "id" : "NCIT:C4726",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3846",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002787",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0431129",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002787",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002787",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4726",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3846",
+            "MONDO:0002787",
+            "UMLS:C0431129",
+            "NCIT:C4726"
+          ]
+        }
+      ]
+    }
+  ]
+}

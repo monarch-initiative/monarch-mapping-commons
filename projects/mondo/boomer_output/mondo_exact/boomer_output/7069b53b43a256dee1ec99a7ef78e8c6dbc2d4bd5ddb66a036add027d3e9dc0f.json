@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7069b53b43a256dee1ec99a7ef78e8c6dbc2d4bd5ddb66a036add027d3e9dc0f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519320",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4304",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002958",
+          "type" : "CLASS",
+          "lbl" : "signet ring basal cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C38110",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4304",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002958",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1519320",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002958",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002958",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C38110",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002958",
+            "DOID:4304",
+            "UMLS:C1519320",
+            "NCIT:C38110"
+          ]
+        }
+      ]
+    }
+  ]
+}

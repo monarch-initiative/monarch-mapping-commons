@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dc324aad37c59b6718325aee844af84889be02d6a4291c109f6b24120222b2c9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335518",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3252",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006389",
+          "type" : "CLASS",
+          "lbl" : "prostate rhabdomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C5522",
+          "type" : "CLASS",
+          "lbl" : "Prostate Rhabdomyosarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1335518",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006389",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006389",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5522",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3252",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006389",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1335518",
+            "MONDO:0006389",
+            "NCIT:C5522",
+            "DOID:3252"
+          ]
+        }
+      ]
+    }
+  ]
+}

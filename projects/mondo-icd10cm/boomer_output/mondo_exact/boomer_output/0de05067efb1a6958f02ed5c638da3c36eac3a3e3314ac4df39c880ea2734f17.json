@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0de05067efb1a6958f02ed5c638da3c36eac3a3e3314ac4df39c880ea2734f17",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334814",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4678",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003086",
+          "type" : "CLASS",
+          "lbl" : "thymic mucoepidermoid carcinoma"
+        },
+        {
+          "id" : "NCIT:C6457",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4678",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003086",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334814",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003086",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003086",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:4678",
+            "MONDO:0003086",
+            "UMLS:C1334814",
+            "NCIT:C6457"
+          ]
+        }
+      ]
+    }
+  ]
+}

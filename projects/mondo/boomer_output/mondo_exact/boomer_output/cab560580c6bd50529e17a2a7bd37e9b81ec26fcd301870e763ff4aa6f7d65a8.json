@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cab560580c6bd50529e17a2a7bd37e9b81ec26fcd301870e763ff4aa6f7d65a8",
+      "nodes" : [
+        {
+          "id" : "MESH:D007855",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:38342005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018019",
+          "type" : "CLASS",
+          "lbl" : "lead poisoning"
+        },
+        {
+          "id" : "Orphanet:330015",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:38342005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018019",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D007855",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018019",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018019",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:330015",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D007855",
+            "MONDO:0018019",
+            "SCTID:38342005",
+            "Orphanet:330015"
+          ]
+        }
+      ]
+    }
+  ]
+}

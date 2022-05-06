@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bd3403a2c0bf6deca2ab859de51854a702a780c260ea2007af67fefd32596253",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1301048",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7716",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004340",
+          "type" : "CLASS",
+          "lbl" : "mixed ductal-endocrine carcinoma of pancreas"
+        },
+        {
+          "id" : "NCIT:C6879",
+          "type" : "CLASS",
+          "lbl" : "Pancreatic Mixed Ductal-Neuroendocrine Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004340",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6879",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1301048",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004340",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7716",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004340",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004340",
+            "UMLS:C1301048",
+            "NCIT:C6879",
+            "DOID:7716"
+          ]
+        }
+      ]
+    }
+  ]
+}

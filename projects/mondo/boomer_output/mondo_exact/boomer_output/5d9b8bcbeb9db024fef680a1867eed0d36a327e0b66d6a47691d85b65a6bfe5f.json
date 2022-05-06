@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5d9b8bcbeb9db024fef680a1867eed0d36a327e0b66d6a47691d85b65a6bfe5f",
+      "nodes" : [
+        {
+          "id" : "NCIT:C124517",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:268820",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017079",
+          "type" : "CLASS",
+          "lbl" : "meningoencephalocele"
+        },
+        {
+          "id" : "SCTID:52330001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0009694",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0009694",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017079",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017079",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:268820",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:52330001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017079",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017079",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C124517",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017079",
+            "UMLS:C0009694",
+            "Orphanet:268820",
+            "NCIT:C124517",
+            "SCTID:52330001"
+          ]
+        }
+      ]
+    }
+  ]
+}

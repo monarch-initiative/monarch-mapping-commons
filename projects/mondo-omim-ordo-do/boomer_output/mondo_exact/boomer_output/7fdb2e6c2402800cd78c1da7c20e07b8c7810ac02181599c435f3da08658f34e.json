@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7fdb2e6c2402800cd78c1da7c20e07b8c7810ac02181599c435f3da08658f34e",
+      "nodes" : [
+        {
+          "id" : "Orphanet:319494",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3501843",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN227216",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017896",
+          "type" : "CLASS",
+          "lbl" : "familial nonmedullary thyroid carcinoma"
+        },
+        {
+          "id" : "OMIMPS:188550",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN227216",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017896",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017896",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C3501843",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017896",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:319494",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017896",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:188550",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN227216",
+            "MONDO:0017896",
+            "Orphanet:319494",
+            "OMIMPS:188550"
+          ]
+        }
+      ]
+    }
+  ]
+}

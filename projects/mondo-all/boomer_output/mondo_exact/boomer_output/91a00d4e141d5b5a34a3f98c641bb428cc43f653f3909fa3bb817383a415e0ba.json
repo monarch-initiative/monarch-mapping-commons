@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:91a00d4e141d5b5a34a3f98c641bb428cc43f653f3909fa3bb817383a415e0ba",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335168",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6067",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003756",
+          "type" : "CLASS",
+          "lbl" : "ovarian mucinous neoplasm"
+        },
+        {
+          "id" : "NCIT:C5242",
+          "type" : "CLASS",
+          "lbl" : "Ovarian Mucinous Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003756",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5242",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6067",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003756",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335168",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003756",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003756",
+            "NCIT:C5242",
+            "DOID:6067",
+            "UMLS:C1335168"
+          ]
+        }
+      ]
+    }
+  ]
+}

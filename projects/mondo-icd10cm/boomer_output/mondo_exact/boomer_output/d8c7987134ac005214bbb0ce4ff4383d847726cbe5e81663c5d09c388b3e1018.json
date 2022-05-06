@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d8c7987134ac005214bbb0ce4ff4383d847726cbe5e81663c5d09c388b3e1018",
+      "nodes" : [
+        {
+          "id" : "SCTID:44509000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0023650",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016769",
+          "type" : "CLASS",
+          "lbl" : "linear lichen planus"
+        },
+        {
+          "id" : "Orphanet:254379",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0023650",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016769",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016769",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:254379",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:44509000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016769",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0023650",
+            "MONDO:0016769",
+            "Orphanet:254379",
+            "SCTID:44509000"
+          ]
+        }
+      ]
+    }
+  ]
+}

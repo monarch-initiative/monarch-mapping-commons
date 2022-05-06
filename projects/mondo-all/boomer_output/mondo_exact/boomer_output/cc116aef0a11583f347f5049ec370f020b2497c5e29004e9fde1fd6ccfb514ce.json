@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cc116aef0a11583f347f5049ec370f020b2497c5e29004e9fde1fd6ccfb514ce",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150857",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013319",
+          "type" : "CLASS",
+          "lbl" : "chromosome 4Q32.1-q32.2 triplication syndrome"
+        },
+        {
+          "id" : "OMIM:613603",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013319",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613603",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3150857",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013319",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:613603",
+            "MONDO:0013319",
+            "UMLS:C3150857"
+          ]
+        }
+      ]
+    }
+  ]
+}

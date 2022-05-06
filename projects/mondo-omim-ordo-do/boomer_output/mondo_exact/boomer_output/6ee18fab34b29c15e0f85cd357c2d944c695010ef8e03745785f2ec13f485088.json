@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6ee18fab34b29c15e0f85cd357c2d944c695010ef8e03745785f2ec13f485088",
+      "nodes" : [
+        {
+          "id" : "SCTID:59548005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111396",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020337",
+          "type" : "CLASS",
+          "lbl" : "congenital dyserythropoietic anemia type 1"
+        },
+        {
+          "id" : "Orphanet:98869",
+          "type" : "CLASS",
+          "lbl" : "Congenital dyserythropoietic anemia type I"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0111396",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020337",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98869",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:59548005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020337",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020337",
+            "DOID:0111396",
+            "Orphanet:98869",
+            "SCTID:59548005"
+          ]
+        }
+      ]
+    }
+  ]
+}

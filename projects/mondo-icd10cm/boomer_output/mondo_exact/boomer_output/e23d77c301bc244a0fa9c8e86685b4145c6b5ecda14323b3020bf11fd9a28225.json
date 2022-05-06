@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e23d77c301bc244a0fa9c8e86685b4145c6b5ecda14323b3020bf11fd9a28225",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1266050",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006382",
+          "type" : "CLASS",
+          "lbl" : "poorly differentiated thyroid gland carcinoma"
+        },
+        {
+          "id" : "NCIT:C6040",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1266050",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006382",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006382",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6040",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1266050",
+            "MONDO:0006382",
+            "NCIT:C6040"
+          ]
+        }
+      ]
+    }
+  ]
+}

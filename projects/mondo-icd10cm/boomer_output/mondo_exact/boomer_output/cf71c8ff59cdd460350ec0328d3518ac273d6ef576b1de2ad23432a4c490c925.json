@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cf71c8ff59cdd460350ec0328d3518ac273d6ef576b1de2ad23432a4c490c925",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4479424",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044309",
+          "type" : "CLASS",
+          "lbl" : "Diamond-Blackfan anemia 16"
+        },
+        {
+          "id" : "OMIM:617408",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0044309",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617408",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4479424",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044309",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0044309",
+            "OMIM:617408",
+            "UMLS:C4479424"
+          ]
+        }
+      ]
+    }
+  ]
+}

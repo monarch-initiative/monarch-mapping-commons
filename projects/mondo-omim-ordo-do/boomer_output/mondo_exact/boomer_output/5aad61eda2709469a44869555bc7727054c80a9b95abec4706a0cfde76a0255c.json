@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5aad61eda2709469a44869555bc7727054c80a9b95abec4706a0cfde76a0255c",
+      "nodes" : [
+        {
+          "id" : "MESH:C536715",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0796264",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017614",
+          "type" : "CLASS",
+          "lbl" : "X-linked intellectual disability-hypogonadism-ichthyosis-obesity-short stature syndrome"
+        },
+        {
+          "id" : "Orphanet:3055",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0796264",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017614",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536715",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017614",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017614",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:3055",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0796264",
+            "MONDO:0017614",
+            "MESH:C536715",
+            "Orphanet:3055"
+          ]
+        }
+      ]
+    }
+  ]
+}

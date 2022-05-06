@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7e4243e60600adb60ae4c58a5ffd4dcc9a5340abf5c8ed31bd8b92aedd4d9a39",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335777",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5373",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003412",
+          "type" : "CLASS",
+          "lbl" : "retroperitoneal hemangiopericytoma"
+        },
+        {
+          "id" : "NCIT:C5386",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003412",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5386",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335777",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003412",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5373",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003412",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003412",
+            "NCIT:C5386",
+            "UMLS:C1335777",
+            "DOID:5373"
+          ]
+        }
+      ]
+    }
+  ]
+}

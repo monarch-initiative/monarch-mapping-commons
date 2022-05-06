@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7717ac0c7d5acb60b7b6f7c6bf19931883350d9750c1268cf7e9f49ab5856f83",
+      "nodes" : [
+        {
+          "id" : "MESH:C563016",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:L73.1",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:612318",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012865",
+          "type" : "CLASS",
+          "lbl" : "Pseudofolliculitis barbae"
+        },
+        {
+          "id" : "UMLS:C0549150",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:L73.1",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012865",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0549150",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012865",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012865",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:612318",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563016",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012865",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:612318",
+            "ICD10CM:L73.1",
+            "UMLS:C0549150",
+            "MESH:C563016",
+            "MONDO:0012865"
+          ]
+        }
+      ]
+    }
+  ]
+}

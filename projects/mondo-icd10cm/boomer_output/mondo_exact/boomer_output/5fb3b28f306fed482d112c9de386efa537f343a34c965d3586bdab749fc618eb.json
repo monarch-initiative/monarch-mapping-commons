@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5fb3b28f306fed482d112c9de386efa537f343a34c965d3586bdab749fc618eb",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN032247",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012548",
+          "type" : "CLASS",
+          "lbl" : "Kostmann syndrome"
+        },
+        {
+          "id" : "Orphanet:99749",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:610738",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012548",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99749",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN032247",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012548",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012548",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610738",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012548",
+            "Orphanet:99749",
+            "UMLS:CN032247",
+            "OMIM:610738"
+          ]
+        }
+      ]
+    }
+  ]
+}

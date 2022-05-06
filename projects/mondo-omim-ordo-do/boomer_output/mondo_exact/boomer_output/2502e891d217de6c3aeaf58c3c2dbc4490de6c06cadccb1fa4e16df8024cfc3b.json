@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2502e891d217de6c3aeaf58c3c2dbc4490de6c06cadccb1fa4e16df8024cfc3b",
+      "nodes" : [
+        {
+          "id" : "MESH:D001437",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0004659",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1412",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001882",
+          "type" : "CLASS",
+          "lbl" : "bacteriuria"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:1412",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001882",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D001437",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001882",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0004659",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001882",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:1412",
+            "MONDO:0001882",
+            "MESH:D001437",
+            "UMLS:C0004659"
+          ]
+        }
+      ]
+    }
+  ]
+}

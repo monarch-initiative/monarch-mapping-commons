@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c7cc1a8f559977bd0845a22d56b67f9e2a2e2a6308f99dee351f78715b138cc7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1859966",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008742",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant severe congenital neutropenia"
+        },
+        {
+          "id" : "Orphanet:486",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1859966",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008742",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008742",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:486",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008742",
+            "UMLS:C1859966",
+            "Orphanet:486"
+          ]
+        }
+      ]
+    }
+  ]
+}

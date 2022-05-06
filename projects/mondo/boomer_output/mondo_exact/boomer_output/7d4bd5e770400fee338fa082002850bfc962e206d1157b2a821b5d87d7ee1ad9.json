@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7d4bd5e770400fee338fa082002850bfc962e206d1157b2a821b5d87d7ee1ad9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332316",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6581",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003934",
+          "type" : "CLASS",
+          "lbl" : "breast apocrine carcinoma"
+        },
+        {
+          "id" : "NCIT:C5141",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332316",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003934",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003934",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5141",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6581",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003934",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332316",
+            "MONDO:0003934",
+            "NCIT:C5141",
+            "DOID:6581"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cbc1d403166f49b92181ab5cf611194ab5e49009ff9eb633b309e7ccdaa926f7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334571",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0037740",
+          "type" : "CLASS",
+          "lbl" : "malignant central nervous system mesenchymal, non-meningothelial neoplasm"
+        },
+        {
+          "id" : "NCIT:C6758",
+          "type" : "CLASS",
+          "lbl" : "Malignant Central Nervous System Mesenchymal, Non-Meningothelial Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334571",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0037740",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0037740",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6758",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1334571",
+            "MONDO:0037740",
+            "NCIT:C6758"
+          ]
+        }
+      ]
+    }
+  ]
+}

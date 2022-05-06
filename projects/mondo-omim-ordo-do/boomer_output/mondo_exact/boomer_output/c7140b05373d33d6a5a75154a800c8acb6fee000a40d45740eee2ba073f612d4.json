@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c7140b05373d33d6a5a75154a800c8acb6fee000a40d45740eee2ba073f612d4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1514523",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6167",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003791",
+          "type" : "CLASS",
+          "lbl" : "prostatic urethral cancer"
+        },
+        {
+          "id" : "NCIT:C39870",
+          "type" : "CLASS",
+          "lbl" : "Prostatic Urethral Malignant Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1514523",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003791",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003791",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C39870",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6167",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003791",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1514523",
+            "MONDO:0003791",
+            "NCIT:C39870",
+            "DOID:6167"
+          ]
+        }
+      ]
+    }
+  ]
+}

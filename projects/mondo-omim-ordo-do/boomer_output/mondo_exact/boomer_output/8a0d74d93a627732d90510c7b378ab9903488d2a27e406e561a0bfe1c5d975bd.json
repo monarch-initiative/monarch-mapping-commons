@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8a0d74d93a627732d90510c7b378ab9903488d2a27e406e561a0bfe1c5d975bd",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0002963",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2931193",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D000788",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:87343002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111151",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006021",
+          "type" : "CLASS",
+          "lbl" : "Prinzmetal angina"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D000788",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006021",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:87343002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006021",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111151",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006021",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006021",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C2931193",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0002963",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006021",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0002963",
+            "SCTID:87343002",
+            "DOID:0111151",
+            "MESH:D000788",
+            "MONDO:0006021"
+          ]
+        }
+      ]
+    }
+  ]
+}

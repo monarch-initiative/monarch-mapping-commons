@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3df731afcf396109be3bc58b9412f0fc0cda979f06e74bf2e15b0e9f86de3766",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203795",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017825",
+          "type" : "CLASS",
+          "lbl" : "silent pituitary adenoma"
+        },
+        {
+          "id" : "Orphanet:314786",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203795",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017825",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017825",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:314786",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN203795",
+            "MONDO:0017825",
+            "Orphanet:314786"
+          ]
+        }
+      ]
+    }
+  ]
+}

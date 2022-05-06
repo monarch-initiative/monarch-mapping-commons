@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b38c3a037a6a8bd73b58e82a6a74e91d5d2e13f078187a51aa794b34c1a31c0f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518746",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2153",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002230",
+          "type" : "CLASS",
+          "lbl" : "ovarian Wilms tumor"
+        },
+        {
+          "id" : "NCIT:C40443",
+          "type" : "CLASS",
+          "lbl" : "Ovarian Wilms Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002230",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40443",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1518746",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002230",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:2153",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002230",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002230",
+            "NCIT:C40443",
+            "UMLS:C1518746",
+            "DOID:2153"
+          ]
+        }
+      ]
+    }
+  ]
+}

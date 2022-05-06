@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b17131cfde085ea4598555d17ff0d7e9d8db5d9e7333cd1d153967ab8c6699c4",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204443",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:725031005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018101",
+          "type" : "CLASS",
+          "lbl" : "familial primary hypomagnesemia with normocalciuria and normocalcemia"
+        },
+        {
+          "id" : "Orphanet:34527",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4510731",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN204443",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018101",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018101",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:34527",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018101",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4510731",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:725031005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018101",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018101",
+            "UMLS:CN204443",
+            "Orphanet:34527",
+            "SCTID:725031005"
+          ]
+        }
+      ]
+    }
+  ]
+}

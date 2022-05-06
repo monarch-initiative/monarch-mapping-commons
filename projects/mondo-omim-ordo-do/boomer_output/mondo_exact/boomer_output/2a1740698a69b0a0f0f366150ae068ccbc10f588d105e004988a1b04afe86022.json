@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2a1740698a69b0a0f0f366150ae068ccbc10f588d105e004988a1b04afe86022",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333492",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4288",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002944",
+          "type" : "CLASS",
+          "lbl" : "external ear carcinoma"
+        },
+        {
+          "id" : "NCIT:C6081",
+          "type" : "CLASS",
+          "lbl" : "External Ear Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4288",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002944",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002944",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6081",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333492",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002944",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:4288",
+            "MONDO:0002944",
+            "NCIT:C6081",
+            "UMLS:C1333492"
+          ]
+        }
+      ]
+    }
+  ]
+}

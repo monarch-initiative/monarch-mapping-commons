@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:46456a7c19e8ee0fe3e062ef58a2bf21acf91953dd90a3817caf44ce76e99ba9",
+      "nodes" : [
+        {
+          "id" : "MESH:D063926",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:702809001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015340",
+          "type" : "CLASS",
+          "lbl" : "drug rash with eosinophilia and systemic symptoms"
+        },
+        {
+          "id" : "Orphanet:139402",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:702809001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015340",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015340",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:139402",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D063926",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015340",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:702809001",
+            "MONDO:0015340",
+            "Orphanet:139402",
+            "MESH:D063926"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d56c0d86c8efd07392f7507d7e860f6bd768d78130437eb177e1d6d9354fcc50",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333059",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10193",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000967",
+          "type" : "CLASS",
+          "lbl" : "conventional lipoma"
+        },
+        {
+          "id" : "NCIT:C27530",
+          "type" : "CLASS",
+          "lbl" : "Conventional Lipoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:10193",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000967",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000967",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27530",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333059",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000967",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:10193",
+            "MONDO:0000967",
+            "NCIT:C27530",
+            "UMLS:C1333059"
+          ]
+        }
+      ]
+    }
+  ]
+}

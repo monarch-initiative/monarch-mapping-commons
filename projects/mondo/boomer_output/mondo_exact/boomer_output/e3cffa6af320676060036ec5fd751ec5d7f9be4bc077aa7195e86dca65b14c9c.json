@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e3cffa6af320676060036ec5fd751ec5d7f9be4bc077aa7195e86dca65b14c9c",
+      "nodes" : [
+        {
+          "id" : "MESH:C537567",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1865209",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011247",
+          "type" : "CLASS",
+          "lbl" : "jejunal atresia with renal adysplasia"
+        },
+        {
+          "id" : "OMIM:602551",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1865209",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011247",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011247",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:602551",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537567",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011247",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1865209",
+            "MONDO:0011247",
+            "OMIM:602551",
+            "MESH:C537567"
+          ]
+        }
+      ]
+    }
+  ]
+}

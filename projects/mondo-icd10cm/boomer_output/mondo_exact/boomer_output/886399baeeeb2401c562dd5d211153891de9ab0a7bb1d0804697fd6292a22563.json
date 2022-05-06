@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:886399baeeeb2401c562dd5d211153891de9ab0a7bb1d0804697fd6292a22563",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332204",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6090",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003765",
+          "type" : "CLASS",
+          "lbl" : "adult leptomeningeal melanoma"
+        },
+        {
+          "id" : "NCIT:C5319",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6090",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003765",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003765",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5319",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1332204",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003765",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6090",
+            "MONDO:0003765",
+            "UMLS:C1332204",
+            "NCIT:C5319"
+          ]
+        }
+      ]
+    }
+  ]
+}

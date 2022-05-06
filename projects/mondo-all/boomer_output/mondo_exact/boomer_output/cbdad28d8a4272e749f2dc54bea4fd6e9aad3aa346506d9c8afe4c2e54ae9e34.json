@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cbdad28d8a4272e749f2dc54bea4fd6e9aad3aa346506d9c8afe4c2e54ae9e34",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206337",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019522",
+          "type" : "CLASS",
+          "lbl" : "recessive dystrophic epidermolysis bullosa-generalized other"
+        },
+        {
+          "id" : "Orphanet:89842",
+          "type" : "CLASS",
+          "lbl" : "Autosomal recessive generalized dystrophic epidermolysis bullosa, intermediate form"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206337",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019522",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019522",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:89842",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019522",
+            "UMLS:CN206337",
+            "Orphanet:89842"
+          ]
+        }
+      ]
+    }
+  ]
+}

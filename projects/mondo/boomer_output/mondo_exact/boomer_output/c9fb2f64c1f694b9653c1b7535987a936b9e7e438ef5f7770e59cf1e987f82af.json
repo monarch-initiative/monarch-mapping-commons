@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c9fb2f64c1f694b9653c1b7535987a936b9e7e438ef5f7770e59cf1e987f82af",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4540520",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0060627",
+          "type" : "CLASS",
+          "lbl" : "glycosylphosphatidylinositol biosynthesis defect 15"
+        },
+        {
+          "id" : "Orphanet:529665",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:617810",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0060627",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:529665",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4540520",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0060627",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0060627",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617810",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:529665",
+            "MONDO:0060627",
+            "UMLS:C4540520",
+            "OMIM:617810"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e733640541b00017e51826adfb91267e431c0a9f56f5353aebc368a603f56464",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN228160",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000192",
+          "type" : "CLASS",
+          "lbl" : "polyglucosan body myopathy"
+        },
+        {
+          "id" : "OMIMPS:615895",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000192",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:615895",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN228160",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000192",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0000192",
+            "OMIMPS:615895",
+            "UMLS:CN228160"
+          ]
+        }
+      ]
+    }
+  ]
+}

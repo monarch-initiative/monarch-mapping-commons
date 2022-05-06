@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e9cfa9e8cfca52c4da916812b9d87b131e89a3d4eeb7ae1288841209fa03acf2",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN237511",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018506",
+          "type" : "CLASS",
+          "lbl" : "mesenchymal tumor of small intestine"
+        },
+        {
+          "id" : "Orphanet:423798",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN237511",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018506",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018506",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:423798",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018506",
+            "Orphanet:423798",
+            "UMLS:CN237511"
+          ]
+        }
+      ]
+    }
+  ]
+}

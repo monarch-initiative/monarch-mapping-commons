@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:31684d8c6766f485777857c6e278d5eced5289bd828bfd946558cb76a6497f92",
+      "nodes" : [
+        {
+          "id" : "SCTID:309742004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:D59.0",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019535",
+          "type" : "CLASS",
+          "lbl" : "drug-induced autoimmune hemolytic anemia"
+        },
+        {
+          "id" : "Orphanet:90037",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019535",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:90037",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:309742004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019535",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:D59.0",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019535",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019535",
+            "Orphanet:90037",
+            "SCTID:309742004",
+            "ICD10CM:D59.0"
+          ]
+        }
+      ]
+    }
+  ]
+}

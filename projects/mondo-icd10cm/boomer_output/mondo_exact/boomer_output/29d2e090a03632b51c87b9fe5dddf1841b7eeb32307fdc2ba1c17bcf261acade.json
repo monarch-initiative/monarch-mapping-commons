@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:29d2e090a03632b51c87b9fe5dddf1841b7eeb32307fdc2ba1c17bcf261acade",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0205645",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4929",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005606",
+          "type" : "CLASS",
+          "lbl" : "tubular adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C65192",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4929",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005606",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005606",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C65192",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0205645",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005606",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005606",
+            "DOID:4929",
+            "NCIT:C65192",
+            "UMLS:C0205645"
+          ]
+        }
+      ]
+    }
+  ]
+}

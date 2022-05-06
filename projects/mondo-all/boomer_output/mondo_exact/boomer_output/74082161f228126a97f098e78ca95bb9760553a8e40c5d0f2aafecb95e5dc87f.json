@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:74082161f228126a97f098e78ca95bb9760553a8e40c5d0f2aafecb95e5dc87f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1516421",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8340",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004538",
+          "type" : "CLASS",
+          "lbl" : "endocervical type cervical mucinous adenocarcinoma"
+        },
+        {
+          "id" : "NCIT:C40202",
+          "type" : "CLASS",
+          "lbl" : "Cervical Mucinous Adenocarcinoma, Endocervical-Type"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:8340",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004538",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004538",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40202",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1516421",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004538",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:8340",
+            "MONDO:0004538",
+            "NCIT:C40202",
+            "UMLS:C1516421"
+          ]
+        }
+      ]
+    }
+  ]
+}

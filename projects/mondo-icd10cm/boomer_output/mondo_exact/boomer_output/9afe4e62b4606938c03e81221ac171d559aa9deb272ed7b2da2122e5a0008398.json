@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9afe4e62b4606938c03e81221ac171d559aa9deb272ed7b2da2122e5a0008398",
+      "nodes" : [
+        {
+          "id" : "SCTID:31537005",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:G47.22",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024378",
+          "type" : "CLASS",
+          "lbl" : "circadian rhythm sleep disorder, advanced sleep phase type"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "ICD10CM:G47.22",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024378",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:31537005",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024378",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "ICD10CM:G47.22",
+            "MONDO:0024378",
+            "SCTID:31537005"
+          ]
+        }
+      ]
+    }
+  ]
+}

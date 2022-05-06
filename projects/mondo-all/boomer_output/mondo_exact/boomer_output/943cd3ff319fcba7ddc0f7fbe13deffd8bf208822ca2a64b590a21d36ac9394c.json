@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:943cd3ff319fcba7ddc0f7fbe13deffd8bf208822ca2a64b590a21d36ac9394c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN769090",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080473",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0044326",
+          "type" : "CLASS",
+          "lbl" : "developmental delay and seizures with or without movement abnormalities"
+        },
+        {
+          "id" : "OMIM:617836",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080473",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044326",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0044326",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617836",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN769090",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0044326",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0044326",
+            "DOID:0080473",
+            "OMIM:617836",
+            "UMLS:CN769090"
+          ]
+        }
+      ]
+    }
+  ]
+}

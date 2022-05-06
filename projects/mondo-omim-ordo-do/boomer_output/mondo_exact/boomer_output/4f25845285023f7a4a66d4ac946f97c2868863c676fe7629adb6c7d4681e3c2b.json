@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4f25845285023f7a4a66d4ac946f97c2868863c676fe7629adb6c7d4681e3c2b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0740479",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3352",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002618",
+          "type" : "CLASS",
+          "lbl" : "undifferentiated high grade pleomorphic sarcoma of bone"
+        },
+        {
+          "id" : "NCIT:C8563",
+          "type" : "CLASS",
+          "lbl" : "Undifferentiated High Grade Pleomorphic Sarcoma of Bone"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002618",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8563",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3352",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002618",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0740479",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002618",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C8563",
+            "MONDO:0002618",
+            "DOID:3352",
+            "UMLS:C0740479"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5d834d64ac18078063d802cd83203e52014ae00b9b53c4c3f7e446a256dae338",
+      "nodes" : [
+        {
+          "id" : "SCTID:42681006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:443095",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIMPS:256450",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005803",
+          "type" : "CLASS",
+          "lbl" : "hyperinsulinemic hypoglycemia"
+        },
+        {
+          "id" : "DOID:13317",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:13317",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005803",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005803",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:443095",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005803",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:256450",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:42681006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005803",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:443095",
+            "MONDO:0005803",
+            "DOID:13317",
+            "OMIMPS:256450",
+            "SCTID:42681006"
+          ]
+        }
+      ]
+    }
+  ]
+}

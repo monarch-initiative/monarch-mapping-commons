@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b7a75cfecf32bc37f03ce23601c373ac275da1f682093ca47c89e8cb4385e69f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335973",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7049",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004091",
+          "type" : "CLASS",
+          "lbl" : "skin basaloid carcinoma"
+        },
+        {
+          "id" : "NCIT:C27543",
+          "type" : "CLASS",
+          "lbl" : "Skin Basaloid Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0004091",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27543",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335973",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004091",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:7049",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004091",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0004091",
+            "NCIT:C27543",
+            "UMLS:C1335973",
+            "DOID:7049"
+          ]
+        }
+      ]
+    }
+  ]
+}

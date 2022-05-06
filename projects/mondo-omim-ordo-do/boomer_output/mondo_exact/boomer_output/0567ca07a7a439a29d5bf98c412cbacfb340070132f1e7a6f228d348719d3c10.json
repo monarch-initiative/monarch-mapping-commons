@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0567ca07a7a439a29d5bf98c412cbacfb340070132f1e7a6f228d348719d3c10",
+      "nodes" : [
+        {
+          "id" : "MESH:D013555",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0039010",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0025130",
+          "type" : "CLASS",
+          "lbl" : "swine vesicular disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0039010",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025130",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D013555",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0025130",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C0039010",
+            "MONDO:0025130",
+            "MESH:D013555"
+          ]
+        }
+      ]
+    }
+  ]
+}

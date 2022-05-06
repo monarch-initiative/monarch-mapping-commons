@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:50b6b3e6a9ce05a2acacffe92735ec987e2826c14553345ff5ffbdedfcf61716",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334606",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7211",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004144",
+          "type" : "CLASS",
+          "lbl" : "fibrous meningioma"
+        },
+        {
+          "id" : "NCIT:C4330",
+          "type" : "CLASS",
+          "lbl" : "Fibrous Meningioma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7211",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004144",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004144",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4330",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334606",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004144",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:7211",
+            "MONDO:0004144",
+            "NCIT:C4330",
+            "UMLS:C0334606"
+          ]
+        }
+      ]
+    }
+  ]
+}

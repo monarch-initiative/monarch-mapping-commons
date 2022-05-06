@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0bb85ceaf6af1aaf7364e42e5f7d0c9e4dd0897affb02f1ab908eeb08a08f59c",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1378703",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4451",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005206",
+          "type" : "CLASS",
+          "lbl" : "renal carcinoma"
+        },
+        {
+          "id" : "NCIT:C9384",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4451",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005206",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1378703",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005206",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0005206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C9384",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005206",
+            "DOID:4451",
+            "UMLS:C1378703",
+            "NCIT:C9384"
+          ]
+        }
+      ]
+    }
+  ]
+}

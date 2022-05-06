@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6d6d0358af37f001ad842190398d18995b216b48256e12d499dade06f42b0902",
+      "nodes" : [
+        {
+          "id" : "MESH:D004403",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0013369",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:111939009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:12384",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001517",
+          "type" : "CLASS",
+          "lbl" : "dysentery"
+        },
+        {
+          "id" : "SCTID:19213003",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:12384",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001517",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:D004403",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001517",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:111939009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001517",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0001517",
+          "pred" : "siblingOf",
+          "obj" : "SCTID:19213003",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0013369",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001517",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:D004403",
+            "SCTID:111939009",
+            "MONDO:0001517",
+            "UMLS:C0013369",
+            "DOID:12384"
+          ]
+        }
+      ]
+    }
+  ]
+}

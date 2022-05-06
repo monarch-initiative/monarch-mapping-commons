@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:af364d91726eefb0a8e80497a0f115893b9bebef04e9b544a5ad8a0450973642",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335521",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7152",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004124",
+          "type" : "CLASS",
+          "lbl" : "prostate stromal sarcoma"
+        },
+        {
+          "id" : "NCIT:C5524",
+          "type" : "CLASS",
+          "lbl" : "Prostate Stromal Sarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7152",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004124",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335521",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004124",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004124",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5524",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:7152",
+            "MONDO:0004124",
+            "UMLS:C1335521",
+            "NCIT:C5524"
+          ]
+        }
+      ]
+    }
+  ]
+}

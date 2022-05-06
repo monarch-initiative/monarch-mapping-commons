@@ -1,0 +1,112 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b10bdda9865c9a9e9a052db6d373564523c94f383019f024fc50044300307941",
+      "nodes" : [
+        {
+          "id" : "OMIM:610743",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012549",
+          "type" : "CLASS",
+          "lbl" : "autosomal recessive ataxia, Beauce type"
+        },
+        {
+          "id" : "UMLS:C1853116",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3683483",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:88644",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111618",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1853116",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012549",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012549",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:88644",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012549",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C3683483",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111618",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012549",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012549",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610743",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:610743",
+            "MONDO:0012549",
+            "Orphanet:88644",
+            "UMLS:C1853116",
+            "DOID:0111618"
+          ]
+        }
+      ]
+    }
+  ]
+}

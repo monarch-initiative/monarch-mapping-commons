@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5e5b920c80458580e7a37b42044c3e9ca4923464aae1a88235c2307e250fcda5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334362",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4321",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002961",
+          "type" : "CLASS",
+          "lbl" : "large cell acanthoma"
+        },
+        {
+          "id" : "NCIT:C27518",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334362",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002961",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002961",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27518",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4321",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002961",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1334362",
+            "MONDO:0002961",
+            "NCIT:C27518",
+            "DOID:4321"
+          ]
+        }
+      ]
+    }
+  ]
+}

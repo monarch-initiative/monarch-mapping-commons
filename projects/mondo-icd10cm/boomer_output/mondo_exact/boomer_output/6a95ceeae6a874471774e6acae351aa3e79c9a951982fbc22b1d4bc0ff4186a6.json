@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6a95ceeae6a874471774e6acae351aa3e79c9a951982fbc22b1d4bc0ff4186a6",
+      "nodes" : [
+        {
+          "id" : "MESH:C563341",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:719379001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:2516",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011050",
+          "type" : "CLASS",
+          "lbl" : "microcephaly-cardiac defect-lung malsegmentation syndrome"
+        },
+        {
+          "id" : "OMIM:601355",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C563341",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011050",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011050",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601355",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:719379001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011050",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011050",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2516",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:2516",
+            "MESH:C563341",
+            "OMIM:601355",
+            "MONDO:0011050",
+            "SCTID:719379001"
+          ]
+        }
+      ]
+    }
+  ]
+}

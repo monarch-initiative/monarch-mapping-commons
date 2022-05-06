@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b42ba9f47402eac90132fbd57b1030f3b7f7c6de4123d5a1dd1286d40aea0886",
+      "nodes" : [
+        {
+          "id" : "SCTID:702382000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011603",
+          "type" : "CLASS",
+          "lbl" : "GNE myopathy"
+        },
+        {
+          "id" : "Orphanet:602",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:605820",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011603",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:605820",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011603",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:602",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:702382000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011603",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:605820",
+            "MONDO:0011603",
+            "Orphanet:602",
+            "SCTID:702382000"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c1b0eb7fdc67f84c6923adb409e90a6d1bbc7200d6fd6e3e167a29b4723ed8d5",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204208",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018000",
+          "type" : "CLASS",
+          "lbl" : "hereditary thrombocytosis with transverse limb defect"
+        },
+        {
+          "id" : "Orphanet:329319",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018000",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:329319",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204208",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018000",
+            "Orphanet:329319",
+            "UMLS:CN204208"
+          ]
+        }
+      ]
+    }
+  ]
+}

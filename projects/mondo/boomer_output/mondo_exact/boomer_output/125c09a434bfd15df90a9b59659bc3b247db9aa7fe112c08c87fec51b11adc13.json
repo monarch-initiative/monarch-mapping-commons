@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:125c09a434bfd15df90a9b59659bc3b247db9aa7fe112c08c87fec51b11adc13",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1695985",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018826",
+          "type" : "CLASS",
+          "lbl" : "Lewis-Sumner syndrome"
+        },
+        {
+          "id" : "Orphanet:48162",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018826",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:48162",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1695985",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018826",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:48162",
+            "MONDO:0018826",
+            "UMLS:C1695985"
+          ]
+        }
+      ]
+    }
+  ]
+}

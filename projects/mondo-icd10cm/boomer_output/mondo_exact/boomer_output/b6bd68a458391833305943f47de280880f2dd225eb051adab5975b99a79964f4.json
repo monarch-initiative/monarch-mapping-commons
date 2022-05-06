@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b6bd68a458391833305943f47de280880f2dd225eb051adab5975b99a79964f4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4310756",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014875",
+          "type" : "CLASS",
+          "lbl" : "hyperaldosteronism, familial, type IV"
+        },
+        {
+          "id" : "OMIM:617027",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014875",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617027",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4310756",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014875",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014875",
+            "OMIM:617027",
+            "UMLS:C4310756"
+          ]
+        }
+      ]
+    }
+  ]
+}

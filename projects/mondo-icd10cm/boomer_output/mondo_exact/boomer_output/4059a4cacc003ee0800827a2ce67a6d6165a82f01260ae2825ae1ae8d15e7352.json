@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4059a4cacc003ee0800827a2ce67a6d6165a82f01260ae2825ae1ae8d15e7352",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206369",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019540",
+          "type" : "CLASS",
+          "lbl" : "diffuse alveolar hemorrhage"
+        },
+        {
+          "id" : "Orphanet:90060",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206369",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019540",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019540",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:90060",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN206369",
+            "MONDO:0019540",
+            "Orphanet:90060"
+          ]
+        }
+      ]
+    }
+  ]
+}

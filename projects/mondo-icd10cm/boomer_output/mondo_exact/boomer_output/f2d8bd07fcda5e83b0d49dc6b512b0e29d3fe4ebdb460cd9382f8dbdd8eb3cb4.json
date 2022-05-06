@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f2d8bd07fcda5e83b0d49dc6b512b0e29d3fe4ebdb460cd9382f8dbdd8eb3cb4",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335936",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:663",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003951",
+          "type" : "CLASS",
+          "lbl" : "scrotal hemangioma"
+        },
+        {
+          "id" : "NCIT:C6387",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:663",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003951",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335936",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003951",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003951",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6387",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003951",
+            "DOID:663",
+            "UMLS:C1335936",
+            "NCIT:C6387"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5d446b3419c8ee8c4fb6eeda13cf52dba396b3d737a020da08f3bf56ac1606af",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204831",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:725390002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4511003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:370026",
+          "type" : "CLASS",
+          "lbl" : "Acute myeloid leukemia with t(8;16)(p11;p13) translocation"
+        },
+        {
+          "id" : "MONDO:0018256",
+          "type" : "CLASS",
+          "lbl" : "acute myeloid leukemia with t(8;16)(p11;p13) translocation"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "SCTID:725390002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018256",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018256",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:370026",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018256",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN204831",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4511003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018256",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "SCTID:725390002",
+            "MONDO:0018256",
+            "Orphanet:370026",
+            "UMLS:C4511003"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a2c6b0218952c34c871f79f0cb9c201697893408494b6d7c46d7c3f5b6293079",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0272084",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016670",
+          "type" : "CLASS",
+          "lbl" : "sickle cell-hemoglobin d disease syndrome"
+        },
+        {
+          "id" : "Orphanet:251370",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0272084",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016670",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016670",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:251370",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016670",
+            "UMLS:C0272084",
+            "Orphanet:251370"
+          ]
+        }
+      ]
+    }
+  ]
+}

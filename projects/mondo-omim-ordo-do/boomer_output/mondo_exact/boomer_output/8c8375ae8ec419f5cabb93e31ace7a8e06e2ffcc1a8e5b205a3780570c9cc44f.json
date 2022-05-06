@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8c8375ae8ec419f5cabb93e31ace7a8e06e2ffcc1a8e5b205a3780570c9cc44f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334643",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:7198",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006297",
+          "type" : "CLASS",
+          "lbl" : "maxillary sinus adenoid cystic carcinoma"
+        },
+        {
+          "id" : "NCIT:C6239",
+          "type" : "CLASS",
+          "lbl" : "Maxillary Sinus Adenoid Cystic Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:7198",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006297",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0006297",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6239",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1334643",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006297",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:7198",
+            "MONDO:0006297",
+            "NCIT:C6239",
+            "UMLS:C1334643"
+          ]
+        }
+      ]
+    }
+  ]
+}

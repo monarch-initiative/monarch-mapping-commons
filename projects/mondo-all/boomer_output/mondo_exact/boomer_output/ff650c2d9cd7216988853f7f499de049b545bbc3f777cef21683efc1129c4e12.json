@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ff650c2d9cd7216988853f7f499de049b545bbc3f777cef21683efc1129c4e12",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4225162",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014821",
+          "type" : "CLASS",
+          "lbl" : "complex lethal osteochondrodysplasia"
+        },
+        {
+          "id" : "Orphanet:457378",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:616897",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014821",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:457378",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014821",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616897",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4225162",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014821",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:457378",
+            "MONDO:0014821",
+            "OMIM:616897",
+            "UMLS:C4225162"
+          ]
+        }
+      ]
+    }
+  ]
+}

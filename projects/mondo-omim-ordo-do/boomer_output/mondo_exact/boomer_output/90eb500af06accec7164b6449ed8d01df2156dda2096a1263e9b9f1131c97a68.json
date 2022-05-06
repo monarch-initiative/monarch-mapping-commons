@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:90eb500af06accec7164b6449ed8d01df2156dda2096a1263e9b9f1131c97a68",
+      "nodes" : [
+        {
+          "id" : "DOID:1789",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002112",
+          "type" : "CLASS",
+          "lbl" : "benign peritoneal mesothelioma"
+        },
+        {
+          "id" : "NCIT:C7354",
+          "type" : "CLASS",
+          "lbl" : "Peritoneal Adenomatoid Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002112",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C7354",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1789",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002112",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002112",
+            "NCIT:C7354",
+            "DOID:1789"
+          ]
+        }
+      ]
+    }
+  ]
+}

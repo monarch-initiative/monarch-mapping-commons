@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8b0ab43e322b23575146a059281db09a13889e3c2b6727ddb5924b1d4fedd7f6",
+      "nodes" : [
+        {
+          "id" : "OMIM:616202",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN221667",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:444072",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014529",
+          "type" : "CLASS",
+          "lbl" : "cerebellar-facial-dental syndrome"
+        },
+        {
+          "id" : "UMLS:C4015495",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014529",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4015495",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN221667",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014529",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014529",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:616202",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014529",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:444072",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN221667",
+            "MONDO:0014529",
+            "OMIM:616202",
+            "Orphanet:444072"
+          ]
+        }
+      ]
+    }
+  ]
+}

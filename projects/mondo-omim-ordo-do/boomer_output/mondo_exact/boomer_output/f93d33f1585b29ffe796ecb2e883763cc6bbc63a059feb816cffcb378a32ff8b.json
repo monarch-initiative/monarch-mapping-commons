@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f93d33f1585b29ffe796ecb2e883763cc6bbc63a059feb816cffcb378a32ff8b",
+      "nodes" : [
+        {
+          "id" : "MONDO:0001681",
+          "type" : "CLASS",
+          "lbl" : "diphtheritic cystitis"
+        },
+        {
+          "id" : "DOID:13306",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0152954",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:48278001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:A36.85",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0152954",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001681",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:A36.85",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001681",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:13306",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001681",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:48278001",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001681",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:13306",
+            "MONDO:0001681",
+            "ICD10CM:A36.85",
+            "UMLS:C0152954",
+            "SCTID:48278001"
+          ]
+        }
+      ]
+    }
+  ]
+}

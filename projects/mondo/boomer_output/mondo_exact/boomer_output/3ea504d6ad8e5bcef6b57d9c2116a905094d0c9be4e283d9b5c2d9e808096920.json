@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3ea504d6ad8e5bcef6b57d9c2116a905094d0c9be4e283d9b5c2d9e808096920",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1518233",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024282",
+          "type" : "CLASS",
+          "lbl" : "mucinous ovarian cancer"
+        },
+        {
+          "id" : "NCIT:C40033",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1518233",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024282",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0024282",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40033",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1518233",
+            "MONDO:0024282",
+            "NCIT:C40033"
+          ]
+        }
+      ]
+    }
+  ]
+}

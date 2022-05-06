@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2b904e6ee403a29ac832c82b6ffa4ca6de446cea3979915c6a34b72c31bf92f3",
+      "nodes" : [
+        {
+          "id" : "MESH:C565340",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1854405",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011538",
+          "type" : "CLASS",
+          "lbl" : "frontoocular syndrome"
+        },
+        {
+          "id" : "OMIM:605321",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011538",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:605321",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565340",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011538",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1854405",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011538",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:605321",
+            "MONDO:0011538",
+            "MESH:C565340",
+            "UMLS:C1854405"
+          ]
+        }
+      ]
+    }
+  ]
+}

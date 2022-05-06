@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a220e1a1d768c84b70314ff46fd1296491e48117d4e5be55c47d337362257501",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4273962",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:717263009",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN776908",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019643",
+          "type" : "CLASS",
+          "lbl" : "transient pseudohypoaldosteronism"
+        },
+        {
+          "id" : "Orphanet:93164",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN776908",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019643",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019643",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4273962",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019643",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93164",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:717263009",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019643",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN776908",
+            "MONDO:0019643",
+            "Orphanet:93164",
+            "SCTID:717263009"
+          ]
+        }
+      ]
+    }
+  ]
+}

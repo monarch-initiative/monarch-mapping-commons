@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bc2fc1ae5195a8cf9e645ada86009470cd39ab059e6a5a873b47f154f742ca05",
+      "nodes" : [
+        {
+          "id" : "SCTID:715626008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:75565",
+          "type" : "CLASS",
+          "lbl" : "Tropical endomyocardial fibrosis"
+        },
+        {
+          "id" : "UMLS:C2882252",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN205710",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019158",
+          "type" : "CLASS",
+          "lbl" : "tropical endomyocardial fibrosis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019158",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C2882252",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019158",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:75565",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN205710",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019158",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:715626008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019158",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019158",
+            "Orphanet:75565",
+            "UMLS:CN205710",
+            "SCTID:715626008"
+          ]
+        }
+      ]
+    }
+  ]
+}

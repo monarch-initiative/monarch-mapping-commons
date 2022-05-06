@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:31e5f97687719fee631f4da4ee5acd481532949fa2b421aef98546edc1f48300",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0751434",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019259",
+          "type" : "CLASS",
+          "lbl" : "classic phenylketonuria"
+        },
+        {
+          "id" : "Orphanet:79254",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019259",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:79254",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0751434",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019259",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:79254",
+            "MONDO:0019259",
+            "UMLS:C0751434"
+          ]
+        }
+      ]
+    }
+  ]
+}

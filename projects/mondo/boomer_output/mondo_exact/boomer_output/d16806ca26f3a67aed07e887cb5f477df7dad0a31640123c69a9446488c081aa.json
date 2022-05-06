@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d16806ca26f3a67aed07e887cb5f477df7dad0a31640123c69a9446488c081aa",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334499",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:2700",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002398",
+          "type" : "CLASS",
+          "lbl" : "mucinous adenofibroma"
+        },
+        {
+          "id" : "NCIT:C8978",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:2700",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002398",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334499",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002398",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002398",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8978",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:2700",
+            "MONDO:0002398",
+            "UMLS:C0334499",
+            "NCIT:C8978"
+          ]
+        }
+      ]
+    }
+  ]
+}

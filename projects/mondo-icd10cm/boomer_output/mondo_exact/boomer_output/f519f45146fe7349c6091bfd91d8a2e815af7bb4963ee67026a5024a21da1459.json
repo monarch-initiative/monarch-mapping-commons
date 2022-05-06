@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f519f45146fe7349c6091bfd91d8a2e815af7bb4963ee67026a5024a21da1459",
+      "nodes" : [
+        {
+          "id" : "MESH:C565227",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1853345",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111293",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012346",
+          "type" : "CLASS",
+          "lbl" : "generalized epilepsy with febrile seizures plus, type 4"
+        },
+        {
+          "id" : "OMIM:609800",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1853345",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012346",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565227",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012346",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012346",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609800",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111293",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012346",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:609800",
+            "DOID:0111293",
+            "MESH:C565227",
+            "MONDO:0012346",
+            "UMLS:C1853345"
+          ]
+        }
+      ]
+    }
+  ]
+}

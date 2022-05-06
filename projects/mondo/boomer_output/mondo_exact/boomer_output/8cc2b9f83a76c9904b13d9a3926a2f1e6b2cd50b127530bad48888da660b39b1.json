@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8cc2b9f83a76c9904b13d9a3926a2f1e6b2cd50b127530bad48888da660b39b1",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1520087",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5142",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003298",
+          "type" : "CLASS",
+          "lbl" : "vulvar leiomyoma"
+        },
+        {
+          "id" : "NCIT:C40326",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003298",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40326",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1520087",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003298",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5142",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003298",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003298",
+            "NCIT:C40326",
+            "UMLS:C1520087",
+            "DOID:5142"
+          ]
+        }
+      ]
+    }
+  ]
+}

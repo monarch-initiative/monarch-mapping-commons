@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5f27d419fe61752d1631d4f902c1bc7a806846fceb520ad40050f054ac7cf550",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1865704",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011207",
+          "type" : "CLASS",
+          "lbl" : "xanthomatosis, susceptibility to"
+        },
+        {
+          "id" : "OMIM:602247",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011207",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:602247",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1865704",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011207",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:602247",
+            "MONDO:0011207",
+            "UMLS:C1865704"
+          ]
+        }
+      ]
+    }
+  ]
+}

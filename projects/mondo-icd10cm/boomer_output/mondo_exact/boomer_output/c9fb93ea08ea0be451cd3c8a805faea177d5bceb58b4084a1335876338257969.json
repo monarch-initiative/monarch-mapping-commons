@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c9fb93ea08ea0be451cd3c8a805faea177d5bceb58b4084a1335876338257969",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1334820",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3360",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002622",
+          "type" : "CLASS",
+          "lbl" : "multifocal osteogenic sarcoma"
+        },
+        {
+          "id" : "NCIT:C6470",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1334820",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002622",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002622",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3360",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002622",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002622",
+            "UMLS:C1334820",
+            "NCIT:C6470",
+            "DOID:3360"
+          ]
+        }
+      ]
+    }
+  ]
+}

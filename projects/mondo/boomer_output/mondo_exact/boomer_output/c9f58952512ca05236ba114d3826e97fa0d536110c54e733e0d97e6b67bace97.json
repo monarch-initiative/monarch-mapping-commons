@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c9f58952512ca05236ba114d3826e97fa0d536110c54e733e0d97e6b67bace97",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202422",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017063",
+          "type" : "CLASS",
+          "lbl" : "total spina bifida aperta"
+        },
+        {
+          "id" : "Orphanet:268377",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN202422",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017063",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017063",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:268377",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN202422",
+            "MONDO:0017063",
+            "Orphanet:268377"
+          ]
+        }
+      ]
+    }
+  ]
+}

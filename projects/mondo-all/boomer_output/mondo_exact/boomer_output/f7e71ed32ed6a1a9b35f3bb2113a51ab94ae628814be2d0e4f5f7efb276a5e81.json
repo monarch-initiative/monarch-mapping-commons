@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f7e71ed32ed6a1a9b35f3bb2113a51ab94ae628814be2d0e4f5f7efb276a5e81",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN200366",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015784",
+          "type" : "CLASS",
+          "lbl" : "Prader-Willi syndrome due to paternal deletion of 15q11q13 type 2"
+        },
+        {
+          "id" : "Orphanet:177904",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN200366",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015784",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015784",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:177904",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0015784",
+            "UMLS:CN200366",
+            "Orphanet:177904"
+          ]
+        }
+      ]
+    }
+  ]
+}

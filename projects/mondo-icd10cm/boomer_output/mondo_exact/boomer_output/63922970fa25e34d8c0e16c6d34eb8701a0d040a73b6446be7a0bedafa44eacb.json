@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:63922970fa25e34d8c0e16c6d34eb8701a0d040a73b6446be7a0bedafa44eacb",
+      "nodes" : [
+        {
+          "id" : "MESH:C565755",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1858182",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011478",
+          "type" : "CLASS",
+          "lbl" : "growth and developintellectual disability, ocular ptosis, cardiac defect, and anal atresia"
+        },
+        {
+          "id" : "OMIM:604690",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1858182",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011478",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011478",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:604690",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565755",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011478",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1858182",
+            "MONDO:0011478",
+            "OMIM:604690",
+            "MESH:C565755"
+          ]
+        }
+      ]
+    }
+  ]
+}

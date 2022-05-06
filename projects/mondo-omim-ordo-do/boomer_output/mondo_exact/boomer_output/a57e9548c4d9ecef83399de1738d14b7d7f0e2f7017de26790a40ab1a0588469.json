@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a57e9548c4d9ecef83399de1738d14b7d7f0e2f7017de26790a40ab1a0588469",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0546345",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4777",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003133",
+          "type" : "CLASS",
+          "lbl" : "exudative glomerulonephritis"
+        },
+        {
+          "id" : "NCIT:C35706",
+          "type" : "CLASS",
+          "lbl" : "Exudative Glomerulonephritis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4777",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003133",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003133",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C35706",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0546345",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003133",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003133",
+            "DOID:4777",
+            "NCIT:C35706",
+            "UMLS:C0546345"
+          ]
+        }
+      ]
+    }
+  ]
+}

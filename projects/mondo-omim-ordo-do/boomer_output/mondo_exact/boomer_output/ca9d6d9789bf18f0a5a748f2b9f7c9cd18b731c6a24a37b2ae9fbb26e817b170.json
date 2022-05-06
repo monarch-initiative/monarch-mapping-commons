@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ca9d6d9789bf18f0a5a748f2b9f7c9cd18b731c6a24a37b2ae9fbb26e817b170",
+      "nodes" : [
+        {
+          "id" : "OMIM:500001",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1839040",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010772",
+          "type" : "CLASS",
+          "lbl" : "Leber optic atrophy and dystonia"
+        },
+        {
+          "id" : "MESH:C536024",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0111755",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C536024",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010772",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010772",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:500001",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111755",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010772",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1839040",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010772",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0111755",
+            "MESH:C536024",
+            "OMIM:500001",
+            "UMLS:C1839040",
+            "MONDO:0010772"
+          ]
+        }
+      ]
+    }
+  ]
+}

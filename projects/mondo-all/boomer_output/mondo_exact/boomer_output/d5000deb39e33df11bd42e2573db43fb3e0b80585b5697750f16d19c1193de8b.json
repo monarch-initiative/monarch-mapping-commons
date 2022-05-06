@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d5000deb39e33df11bd42e2573db43fb3e0b80585b5697750f16d19c1193de8b",
+      "nodes" : [
+        {
+          "id" : "MESH:C566409",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1864185",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0011288",
+          "type" : "CLASS",
+          "lbl" : "spastic paraplegia, optic atrophy, microcephaly, and 10Y sex reversal"
+        },
+        {
+          "id" : "OMIM:603117",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011288",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603117",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C566409",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011288",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1864185",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011288",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:603117",
+            "MONDO:0011288",
+            "MESH:C566409",
+            "UMLS:C1864185"
+          ]
+        }
+      ]
+    }
+  ]
+}

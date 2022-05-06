@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:32273c3249f737cecd31b5e39950d2be6a3a86fbdd215e6c0c57c8e8790b919d",
+      "nodes" : [
+        {
+          "id" : "Orphanet:1192",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008843",
+          "type" : "CLASS",
+          "lbl" : "atherosclerosis-deafness-diabetes-epilepsy-nephropathy syndrome"
+        },
+        {
+          "id" : "OMIM:209010",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:C565928",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:720519003",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008843",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:209010",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:720519003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008843",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565928",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008843",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008843",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:1192",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008843",
+            "MESH:C565928",
+            "Orphanet:1192",
+            "SCTID:720519003",
+            "OMIM:209010"
+          ]
+        }
+      ]
+    }
+  ]
+}

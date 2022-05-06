@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1d8a0a885d0a1163f620fa1b987b7912f658345f81efcb60b4e46997e858e827",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1332865",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4435",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002996",
+          "type" : "CLASS",
+          "lbl" : "cavernous sinus meningioma"
+        },
+        {
+          "id" : "NCIT:C5268",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1332865",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002996",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002996",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5268",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4435",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002996",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1332865",
+            "MONDO:0002996",
+            "NCIT:C5268",
+            "DOID:4435"
+          ]
+        }
+      ]
+    }
+  ]
+}

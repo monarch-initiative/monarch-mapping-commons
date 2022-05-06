@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:66f90421c293391408e9463ccc6d16dd1216b86acbe746c788ae4e25edeeade5",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336751",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6203",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003806",
+          "type" : "CLASS",
+          "lbl" : "thyroid hyalinizing trabecular adenoma"
+        },
+        {
+          "id" : "NCIT:C6846",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003806",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6846",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336751",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003806",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6203",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003806",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6846",
+            "MONDO:0003806",
+            "UMLS:C1336751",
+            "DOID:6203"
+          ]
+        }
+      ]
+    }
+  ]
+}

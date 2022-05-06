@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:742579d66b730fab58a2adadee6ec0b4397d45b2f825d841f362899a7dc55bee",
+      "nodes" : [
+        {
+          "id" : "MESH:C565209",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0060252",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019629",
+          "type" : "CLASS",
+          "lbl" : "sclerocornea"
+        },
+        {
+          "id" : "Orphanet:91490",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019629",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:91490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060252",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019629",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565209",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019629",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019629",
+            "Orphanet:91490",
+            "DOID:0060252",
+            "MESH:C565209"
+          ]
+        }
+      ]
+    }
+  ]
+}

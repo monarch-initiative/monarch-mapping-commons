@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9239d0bd0ac1bb8f951a5bea18421489578d2cc3e50ad4d752eb30c3f7c4c3ed",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333787",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6703",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003971",
+          "type" : "CLASS",
+          "lbl" : "gastric pylorus carcinoma"
+        },
+        {
+          "id" : "NCIT:C6795",
+          "type" : "CLASS",
+          "lbl" : "Gastric Pylorus Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6703",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003971",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003971",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6795",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333787",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003971",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0003971",
+            "DOID:6703",
+            "NCIT:C6795",
+            "UMLS:C1333787"
+          ]
+        }
+      ]
+    }
+  ]
+}

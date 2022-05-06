@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:804b8360eb1cb09b1fe9453652eef3e609d44b6dab368b40a0c4f4e13f3869f7",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN207136",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020315",
+          "type" : "CLASS",
+          "lbl" : "obsolete unclassified myelodysplastic syndrome"
+        },
+        {
+          "id" : "Orphanet:98827",
+          "type" : "CLASS",
+          "lbl" : "Unclassified myelodysplastic syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020315",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98827",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN207136",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020315",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020315",
+            "Orphanet:98827",
+            "UMLS:CN207136"
+          ]
+        }
+      ]
+    }
+  ]
+}

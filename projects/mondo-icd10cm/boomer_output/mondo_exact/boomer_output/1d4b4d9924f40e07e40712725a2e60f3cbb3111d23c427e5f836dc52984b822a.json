@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1d4b4d9924f40e07e40712725a2e60f3cbb3111d23c427e5f836dc52984b822a",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201205",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016354",
+          "type" : "CLASS",
+          "lbl" : "xeroderma pigmentosum-Cockayne syndrome complex"
+        },
+        {
+          "id" : "Orphanet:220295",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN201205",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016354",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016354",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:220295",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016354",
+            "UMLS:CN201205",
+            "Orphanet:220295"
+          ]
+        }
+      ]
+    }
+  ]
+}

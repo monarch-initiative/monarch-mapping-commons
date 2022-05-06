@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:146a8fee7857600390616417b9b4aa1a94152ed1414795b5b8ba8bcd0bc5a257",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202346",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017034",
+          "type" : "CLASS",
+          "lbl" : "secondary interstitial lung disease in childhood and adulthood"
+        },
+        {
+          "id" : "Orphanet:264944",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017034",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:264944",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202346",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017034",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:264944",
+            "MONDO:0017034",
+            "UMLS:CN202346"
+          ]
+        }
+      ]
+    }
+  ]
+}

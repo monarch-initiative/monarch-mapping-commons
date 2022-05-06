@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:be728ff1cb05d08314febfcbd913c502aeaecb23d7715f5dcfb34a5711257d53",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN203265",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017534",
+          "type" : "CLASS",
+          "lbl" : "postaxial polydactyly type B, bilateral"
+        },
+        {
+          "id" : "Orphanet:295169",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN203265",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017534",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0017534",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:295169",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017534",
+            "UMLS:CN203265",
+            "Orphanet:295169"
+          ]
+        }
+      ]
+    }
+  ]
+}

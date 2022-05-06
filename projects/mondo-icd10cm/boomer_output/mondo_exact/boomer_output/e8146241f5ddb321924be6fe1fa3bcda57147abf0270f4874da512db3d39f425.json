@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e8146241f5ddb321924be6fe1fa3bcda57147abf0270f4874da512db3d39f425",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3809031",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0014118",
+          "type" : "CLASS",
+          "lbl" : "congenital neutropenia-myelofibrosis-nephromegaly syndrome"
+        },
+        {
+          "id" : "Orphanet:369852",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:615285",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0014118",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:369852",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3809031",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0014118",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0014118",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:615285",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0014118",
+            "Orphanet:369852",
+            "UMLS:C3809031",
+            "OMIM:615285"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7704027f075e0548013461a63209b7bcaac5c8e6e7fec82d3524f7da74436c6e",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206266",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019486",
+          "type" : "CLASS",
+          "lbl" : "myoclonic epilepsy of infancy"
+        },
+        {
+          "id" : "Orphanet:86909",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN206266",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019486",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019486",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:86909",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN206266",
+            "MONDO:0019486",
+            "Orphanet:86909"
+          ]
+        }
+      ]
+    }
+  ]
+}

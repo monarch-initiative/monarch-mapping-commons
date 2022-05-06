@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e9834fdda1e66203e15b478ab65d312f99dccd35923431cf5c1bf31194ebc655",
+      "nodes" : [
+        {
+          "id" : "MESH:C537354",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1864944",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012385",
+          "type" : "CLASS",
+          "lbl" : "metaphyseal chondrodysplasia with cone-shaped epiphyses, normal hair, and normal hands"
+        },
+        {
+          "id" : "OMIM:609989",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1864944",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012385",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C537354",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012385",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012385",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609989",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012385",
+            "UMLS:C1864944",
+            "MESH:C537354",
+            "OMIM:609989"
+          ]
+        }
+      ]
+    }
+  ]
+}

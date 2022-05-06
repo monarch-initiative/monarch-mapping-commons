@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bda285d41cda22486ae0a76c1325d9db29d53a023eff820ad1c57cafc0669a0b",
+      "nodes" : [
+        {
+          "id" : "SCTID:82108004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "ICD10CM:H46.2",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:1209",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0155302",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0001431",
+          "type" : "CLASS",
+          "lbl" : "toxic or nutritional optic neuropathy"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C0155302",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001431",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "ICD10CM:H46.2",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001431",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:1209",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001431",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:82108004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0001431",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:1209",
+            "UMLS:C0155302",
+            "ICD10CM:H46.2",
+            "SCTID:82108004",
+            "MONDO:0001431"
+          ]
+        }
+      ]
+    }
+  ]
+}

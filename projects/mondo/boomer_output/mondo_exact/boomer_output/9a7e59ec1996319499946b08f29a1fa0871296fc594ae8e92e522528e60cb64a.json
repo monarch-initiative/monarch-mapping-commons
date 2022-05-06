@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9a7e59ec1996319499946b08f29a1fa0871296fc594ae8e92e522528e60cb64a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334353",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6446",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003880",
+          "type" : "CLASS",
+          "lbl" : "ceruminous carcinoma"
+        },
+        {
+          "id" : "NCIT:C4176",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003880",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4176",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6446",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003880",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334353",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003880",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4176",
+            "MONDO:0003880",
+            "DOID:6446",
+            "UMLS:C0334353"
+          ]
+        }
+      ]
+    }
+  ]
+}

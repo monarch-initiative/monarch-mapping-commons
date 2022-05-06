@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5e7f4069197828a298dc4ea10ced45294208e342dee7314fe87713523ae1fde7",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0856817",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:8431",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0004563",
+          "type" : "CLASS",
+          "lbl" : "physiological polycythemia"
+        },
+        {
+          "id" : "NCIT:C27311",
+          "type" : "CLASS",
+          "lbl" : "Physiological Polycythemia"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:8431",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004563",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0856817",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0004563",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0004563",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27311",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:8431",
+            "MONDO:0004563",
+            "UMLS:C0856817",
+            "NCIT:C27311"
+          ]
+        }
+      ]
+    }
+  ]
+}

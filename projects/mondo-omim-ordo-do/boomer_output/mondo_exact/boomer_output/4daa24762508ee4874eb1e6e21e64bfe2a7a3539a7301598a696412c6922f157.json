@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4daa24762508ee4874eb1e6e21e64bfe2a7a3539a7301598a696412c6922f157",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0205650",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3172",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002533",
+          "type" : "CLASS",
+          "lbl" : "papillary adenoma"
+        },
+        {
+          "id" : "NCIT:C79951",
+          "type" : "CLASS",
+          "lbl" : "Papillary Adenoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:3172",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002533",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0205650",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002533",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002533",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C79951",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:3172",
+            "MONDO:0002533",
+            "NCIT:C79951",
+            "UMLS:C0205650"
+          ]
+        }
+      ]
+    }
+  ]
+}

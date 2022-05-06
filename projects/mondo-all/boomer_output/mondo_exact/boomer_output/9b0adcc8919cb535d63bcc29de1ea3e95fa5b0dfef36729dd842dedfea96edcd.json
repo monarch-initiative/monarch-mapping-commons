@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9b0adcc8919cb535d63bcc29de1ea3e95fa5b0dfef36729dd842dedfea96edcd",
+      "nodes" : [
+        {
+          "id" : "MESH:C536947",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1839235",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010740",
+          "type" : "CLASS",
+          "lbl" : "taurodontism, microdontia, and dens invaginatus"
+        },
+        {
+          "id" : "OMIM:313490",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1839235",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010740",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010740",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:313490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C536947",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010740",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1839235",
+            "MONDO:0010740",
+            "OMIM:313490",
+            "MESH:C536947"
+          ]
+        }
+      ]
+    }
+  ]
+}

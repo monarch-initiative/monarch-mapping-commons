@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:be74309a3d93371be5866ae3f0c6ac1c600f8e0c7c5a0171e9826d6adfa598e3",
+      "nodes" : [
+        {
+          "id" : "MESH:C567280",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C2675859",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012925",
+          "type" : "CLASS",
+          "lbl" : "Diamond-Blackfan anemia 5"
+        },
+        {
+          "id" : "OMIM:612528",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C567280",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012925",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012925",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:612528",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C2675859",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012925",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MESH:C567280",
+            "MONDO:0012925",
+            "OMIM:612528",
+            "UMLS:C2675859"
+          ]
+        }
+      ]
+    }
+  ]
+}

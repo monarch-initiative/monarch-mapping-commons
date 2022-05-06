@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5df2f5bcfb6f48369375ec4162db3a2f1524a71425b425827ca5edfd19844b32",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0855073",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0005102",
+          "type" : "CLASS",
+          "lbl" : "undifferentiated (embryonal) sarcoma"
+        },
+        {
+          "id" : "NCIT:C27096",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0005102",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C27096",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0855073",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0005102",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0005102",
+            "NCIT:C27096",
+            "UMLS:C0855073"
+          ]
+        }
+      ]
+    }
+  ]
+}

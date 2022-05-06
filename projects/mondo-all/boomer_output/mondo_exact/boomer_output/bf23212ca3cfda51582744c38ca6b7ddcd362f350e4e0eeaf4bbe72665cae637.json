@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bf23212ca3cfda51582744c38ca6b7ddcd362f350e4e0eeaf4bbe72665cae637",
+      "nodes" : [
+        {
+          "id" : "MESH:C565881",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1859328",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008916",
+          "type" : "CLASS",
+          "lbl" : "cardiomyopathy associated with myopathy and sudden death"
+        },
+        {
+          "id" : "OMIM:212130",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C565881",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008916",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008916",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:212130",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1859328",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008916",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008916",
+            "MESH:C565881",
+            "OMIM:212130",
+            "UMLS:C1859328"
+          ]
+        }
+      ]
+    }
+  ]
+}

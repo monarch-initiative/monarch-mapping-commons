@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f8804aa210fdda74fbcc3af66c0f18dff00e6dc159ebcc5b66ee542c32cd8a57",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN202725",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0017234",
+          "type" : "CLASS",
+          "lbl" : "inherited prion disease"
+        },
+        {
+          "id" : "Orphanet:280400",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0017234",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:280400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202725",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0017234",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0017234",
+            "Orphanet:280400",
+            "UMLS:CN202725"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cd6674007980d36333d5f17dcceaa4ac36e75a3b3c52309b9e6695c44e72870d",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335301",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4433",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002994",
+          "type" : "CLASS",
+          "lbl" : "pancreatic delta cell neuroendocrine tumor"
+        },
+        {
+          "id" : "NCIT:C28396",
+          "type" : "CLASS",
+          "lbl" : "Pancreatic Delta Cell Neuroendocrine Tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002994",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C28396",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335301",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002994",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4433",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002994",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002994",
+            "NCIT:C28396",
+            "UMLS:C1335301",
+            "DOID:4433"
+          ]
+        }
+      ]
+    }
+  ]
+}

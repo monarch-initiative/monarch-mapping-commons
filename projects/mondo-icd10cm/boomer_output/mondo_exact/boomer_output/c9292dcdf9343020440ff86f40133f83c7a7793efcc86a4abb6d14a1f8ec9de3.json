@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c9292dcdf9343020440ff86f40133f83c7a7793efcc86a4abb6d14a1f8ec9de3",
+      "nodes" : [
+        {
+          "id" : "UMLS:C4289586",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4521",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003031",
+          "type" : "CLASS",
+          "lbl" : "endometrioid stromal and related neoplasms of the cervix"
+        },
+        {
+          "id" : "NCIT:C40218",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4289586",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003031",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003031",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40218",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4521",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003031",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4289586",
+            "MONDO:0003031",
+            "NCIT:C40218",
+            "DOID:4521"
+          ]
+        }
+      ]
+    }
+  ]
+}

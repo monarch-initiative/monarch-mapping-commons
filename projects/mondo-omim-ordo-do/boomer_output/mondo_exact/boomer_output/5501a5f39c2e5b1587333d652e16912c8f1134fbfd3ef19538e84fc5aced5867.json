@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5501a5f39c2e5b1587333d652e16912c8f1134fbfd3ef19538e84fc5aced5867",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN242076",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018743",
+          "type" : "CLASS",
+          "lbl" : "immune-mediated acquired neuromuscular junction disease"
+        },
+        {
+          "id" : "Orphanet:464764",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018743",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:464764",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN242076",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018743",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018743",
+            "Orphanet:464764",
+            "UMLS:CN242076"
+          ]
+        }
+      ]
+    }
+  ]
+}

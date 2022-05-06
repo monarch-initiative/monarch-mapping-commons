@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f5d49d086edda9e4e323dbba30e4d70088e86f9daddf744531de443730c68d66",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1510778",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4422",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002991",
+          "type" : "CLASS",
+          "lbl" : "adenocarcinofibroma"
+        },
+        {
+          "id" : "NCIT:C40035",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:4422",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002991",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1510778",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002991",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002991",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40035",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:4422",
+            "MONDO:0002991",
+            "UMLS:C1510778",
+            "NCIT:C40035"
+          ]
+        }
+      ]
+    }
+  ]
+}

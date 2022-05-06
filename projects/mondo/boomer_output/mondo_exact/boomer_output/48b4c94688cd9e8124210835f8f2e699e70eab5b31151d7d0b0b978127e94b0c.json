@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:48b4c94688cd9e8124210835f8f2e699e70eab5b31151d7d0b0b978127e94b0c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN206941",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020007",
+          "type" : "CLASS",
+          "lbl" : "absence of the pulmonary artery"
+        },
+        {
+          "id" : "Orphanet:980",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0020007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:980",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN206941",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020007",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0020007",
+            "Orphanet:980",
+            "UMLS:CN206941"
+          ]
+        }
+      ]
+    }
+  ]
+}

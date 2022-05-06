@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9ed985c303e834131c73b9cec7e934254d625704f0e943ccf22225231d295627",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0085668",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0024878",
+          "type" : "CLASS",
+          "lbl" : "secondary carcinoma"
+        },
+        {
+          "id" : "NCIT:C36310",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0024878",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C36310",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0085668",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0024878",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0024878",
+            "NCIT:C36310",
+            "UMLS:C0085668"
+          ]
+        }
+      ]
+    }
+  ]
+}

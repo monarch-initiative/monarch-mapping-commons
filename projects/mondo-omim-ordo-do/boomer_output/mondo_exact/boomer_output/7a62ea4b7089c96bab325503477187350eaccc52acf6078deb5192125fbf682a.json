@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7a62ea4b7089c96bab325503477187350eaccc52acf6078deb5192125fbf682a",
+      "nodes" : [
+        {
+          "id" : "MESH:C538115",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0007722",
+          "type" : "CLASS",
+          "lbl" : "heterochromia iridis"
+        },
+        {
+          "id" : "OMIM:142500",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C538115",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007722",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007722",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:142500",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007722",
+            "OMIM:142500",
+            "MESH:C538115"
+          ]
+        }
+      ]
+    }
+  ]
+}

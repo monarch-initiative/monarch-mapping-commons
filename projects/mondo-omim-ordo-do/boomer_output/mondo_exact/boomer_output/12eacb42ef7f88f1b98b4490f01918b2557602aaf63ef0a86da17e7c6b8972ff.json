@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:12eacb42ef7f88f1b98b4490f01918b2557602aaf63ef0a86da17e7c6b8972ff",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1517128",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4008",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002833",
+          "type" : "CLASS",
+          "lbl" : "fallopian tube transitional cell carcinoma"
+        },
+        {
+          "id" : "NCIT:C40104",
+          "type" : "CLASS",
+          "lbl" : "Fallopian Tube Transitional Cell Carcinoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002833",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40104",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1517128",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002833",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4008",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002833",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0002833",
+            "NCIT:C40104",
+            "UMLS:C1517128",
+            "DOID:4008"
+          ]
+        }
+      ]
+    }
+  ]
+}

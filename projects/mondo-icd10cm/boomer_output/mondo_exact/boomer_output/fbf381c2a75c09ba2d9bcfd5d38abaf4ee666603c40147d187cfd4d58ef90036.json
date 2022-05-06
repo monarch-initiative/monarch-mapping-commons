@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fbf381c2a75c09ba2d9bcfd5d38abaf4ee666603c40147d187cfd4d58ef90036",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1511312",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:3011",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002487",
+          "type" : "CLASS",
+          "lbl" : "breast granular cell tumor"
+        },
+        {
+          "id" : "NCIT:C40400",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1511312",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002487",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0002487",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3011",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002487",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1511312",
+            "MONDO:0002487",
+            "NCIT:C40400",
+            "DOID:3011"
+          ]
+        }
+      ]
+    }
+  ]
+}

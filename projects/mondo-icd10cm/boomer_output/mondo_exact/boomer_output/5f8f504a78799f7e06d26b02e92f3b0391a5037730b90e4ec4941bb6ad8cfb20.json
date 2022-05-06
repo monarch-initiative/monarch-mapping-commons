@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5f8f504a78799f7e06d26b02e92f3b0391a5037730b90e4ec4941bb6ad8cfb20",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN244932",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0054806",
+          "type" : "CLASS",
+          "lbl" : "microcephaly 23, primary, autosomal recessive"
+        },
+        {
+          "id" : "OMIM:617985",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:CN244932",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0054806",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0054806",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617985",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:CN244932",
+            "MONDO:0054806",
+            "OMIM:617985"
+          ]
+        }
+      ]
+    }
+  ]
+}

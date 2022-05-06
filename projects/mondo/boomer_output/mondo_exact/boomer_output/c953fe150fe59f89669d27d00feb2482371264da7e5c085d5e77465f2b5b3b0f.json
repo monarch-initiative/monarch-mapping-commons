@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c953fe150fe59f89669d27d00feb2482371264da7e5c085d5e77465f2b5b3b0f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3553788",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013900",
+          "type" : "CLASS",
+          "lbl" : "alternating hemiplegia of childhood 2"
+        },
+        {
+          "id" : "OMIM:614820",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013900",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614820",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3553788",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013900",
+            "OMIM:614820",
+            "UMLS:C3553788"
+          ]
+        }
+      ]
+    }
+  ]
+}

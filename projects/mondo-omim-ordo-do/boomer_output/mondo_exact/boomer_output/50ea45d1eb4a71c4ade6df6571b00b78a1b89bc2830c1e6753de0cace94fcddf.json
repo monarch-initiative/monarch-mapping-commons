@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:50ea45d1eb4a71c4ade6df6571b00b78a1b89bc2830c1e6753de0cace94fcddf",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0598428",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0015512",
+          "type" : "CLASS",
+          "lbl" : "genetic hypertension"
+        },
+        {
+          "id" : "Orphanet:156629",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0015512",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:156629",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0598428",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0015512",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "Orphanet:156629",
+            "MONDO:0015512",
+            "UMLS:C0598428"
+          ]
+        }
+      ]
+    }
+  ]
+}

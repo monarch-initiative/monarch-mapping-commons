@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2e2094969a702fe8886eb3c9c948e0f6bf9eef5a37ebb906393a2b3012368652",
+      "nodes" : [
+        {
+          "id" : "MESH:C562753",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4082198",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0008064",
+          "type" : "CLASS",
+          "lbl" : "nasal bones, absence of"
+        },
+        {
+          "id" : "OMIM:161480",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:C562753",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008064",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008064",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:161480",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4082198",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008064",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008064",
+            "MESH:C562753",
+            "OMIM:161480",
+            "UMLS:C4082198"
+          ]
+        }
+      ]
+    }
+  ]
+}

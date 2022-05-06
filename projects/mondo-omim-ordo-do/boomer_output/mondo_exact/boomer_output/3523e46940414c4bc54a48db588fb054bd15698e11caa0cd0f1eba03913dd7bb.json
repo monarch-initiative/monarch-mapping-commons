@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3523e46940414c4bc54a48db588fb054bd15698e11caa0cd0f1eba03913dd7bb",
+      "nodes" : [
+        {
+          "id" : "SCTID:733626002",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:CN202196",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:261501",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4518083",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016850",
+          "type" : "CLASS",
+          "lbl" : "atypical Norrie disease due to monosomy Xp11.3"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016850",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:261501",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:733626002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016850",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN202196",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016850",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016850",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C4518083",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016850",
+            "Orphanet:261501",
+            "SCTID:733626002",
+            "UMLS:CN202196"
+          ]
+        }
+      ]
+    }
+  ]
+}

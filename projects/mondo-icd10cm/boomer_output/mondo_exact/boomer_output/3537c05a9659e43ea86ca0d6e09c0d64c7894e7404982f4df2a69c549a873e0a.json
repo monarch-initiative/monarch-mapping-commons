@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3537c05a9659e43ea86ca0d6e09c0d64c7894e7404982f4df2a69c549a873e0a",
+      "nodes" : [
+        {
+          "id" : "SCTID:609581006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0012522",
+          "type" : "CLASS",
+          "lbl" : "diabetes mellitus, transient neonatal, 3"
+        },
+        {
+          "id" : "OMIM:610582",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012522",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:610582",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:609581006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012522",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0012522",
+            "OMIM:610582",
+            "SCTID:609581006"
+          ]
+        }
+      ]
+    }
+  ]
+}

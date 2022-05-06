@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e16ee6c0fe16bcd81854cb20883e1fae461c648956b93ad06761524f9411d1ab",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN696018",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080297",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0033492",
+          "type" : "CLASS",
+          "lbl" : "Coffin-Siris syndrome 6"
+        },
+        {
+          "id" : "OMIM:617808",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080297",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0033492",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0033492",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:617808",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN696018",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0033492",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0033492",
+            "DOID:0080297",
+            "UMLS:CN696018",
+            "OMIM:617808"
+          ]
+        }
+      ]
+    }
+  ]
+}

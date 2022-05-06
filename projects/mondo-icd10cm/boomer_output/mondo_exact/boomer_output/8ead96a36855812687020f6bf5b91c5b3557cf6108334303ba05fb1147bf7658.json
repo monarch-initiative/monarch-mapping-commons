@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8ead96a36855812687020f6bf5b91c5b3557cf6108334303ba05fb1147bf7658",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1336727",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:4062",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0002861",
+          "type" : "CLASS",
+          "lbl" : "testis sarcoma"
+        },
+        {
+          "id" : "NCIT:C6359",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0002861",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6359",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4062",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002861",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1336727",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002861",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6359",
+            "MONDO:0002861",
+            "DOID:4062",
+            "UMLS:C1336727"
+          ]
+        }
+      ]
+    }
+  ]
+}

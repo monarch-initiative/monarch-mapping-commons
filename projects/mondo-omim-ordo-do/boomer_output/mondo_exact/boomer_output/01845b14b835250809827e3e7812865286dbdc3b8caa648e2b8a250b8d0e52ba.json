@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:01845b14b835250809827e3e7812865286dbdc3b8caa648e2b8a250b8d0e52ba",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1301359",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003537",
+          "type" : "CLASS",
+          "lbl" : "precursor T-lymphoblastic lymphoma/leukemia"
+        },
+        {
+          "id" : "NCIT:C8694",
+          "type" : "CLASS",
+          "lbl" : "T Lymphoblastic Leukemia/Lymphoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1301359",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003537",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003537",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C8694",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1301359",
+            "MONDO:0003537",
+            "NCIT:C8694"
+          ]
+        }
+      ]
+    }
+  ]
+}

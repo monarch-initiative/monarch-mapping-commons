@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:37729f388c3a35d1ced087b9a5b21bc51913fc6670964794300a731f73068d2f",
+      "nodes" : [
+        {
+          "id" : "UMLS:C3150764",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0110105",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0013295",
+          "type" : "CLASS",
+          "lbl" : "atopic dermatitis 9"
+        },
+        {
+          "id" : "OMIM:613519",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013295",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613519",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3150764",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013295",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0110105",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013295",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013295",
+            "OMIM:613519",
+            "UMLS:C3150764",
+            "DOID:0110105"
+          ]
+        }
+      ]
+    }
+  ]
+}

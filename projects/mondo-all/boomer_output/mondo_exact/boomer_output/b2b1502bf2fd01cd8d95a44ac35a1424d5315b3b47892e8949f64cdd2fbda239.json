@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b2b1502bf2fd01cd8d95a44ac35a1424d5315b3b47892e8949f64cdd2fbda239",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN204961",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0018316",
+          "type" : "CLASS",
+          "lbl" : "fatal post-viral neurodegenerative disorder"
+        },
+        {
+          "id" : "Orphanet:391343",
+          "type" : "CLASS",
+          "lbl" : "Fatal post-viral neurodegenerative disorder"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0018316",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:391343",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN204961",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0018316",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0018316",
+            "Orphanet:391343",
+            "UMLS:CN204961"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b6870d2179519cfd6ac5fc21af8bc96cae341dfce661b54b32bc394ee1aaefbf",
+      "nodes" : [
+        {
+          "id" : "MONDO:0010491",
+          "type" : "CLASS",
+          "lbl" : "X-linked acrogigantism due to Xq26 microduplication"
+        },
+        {
+          "id" : "UMLS:CN237731",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:768472004",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C3891556",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:300942",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010491",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:300942",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C3891556",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010491",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010491",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:CN237731",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:768472004",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010491",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010491",
+            "OMIM:300942",
+            "UMLS:C3891556",
+            "SCTID:768472004"
+          ]
+        }
+      ]
+    }
+  ]
+}

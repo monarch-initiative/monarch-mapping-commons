@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:27d19a2ceb8917663a243544b30a2fe54c04b3117109e7b100e350e1cfa6efb0",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333091",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6804",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003997",
+          "type" : "CLASS",
+          "lbl" : "colon Kaposi sarcoma"
+        },
+        {
+          "id" : "NCIT:C5516",
+          "type" : "CLASS",
+          "lbl" : "Colon Kaposi Sarcoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:6804",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003997",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1333091",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003997",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003997",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5516",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:6804",
+            "MONDO:0003997",
+            "UMLS:C1333091",
+            "NCIT:C5516"
+          ]
+        }
+      ]
+    }
+  ]
+}

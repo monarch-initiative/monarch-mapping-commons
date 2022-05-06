@@ -1,0 +1,94 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:24bfa78e2efe743d2988e05d483ad0669df981159de61ccfac4f0b4d2ade15c8",
+      "nodes" : [
+        {
+          "id" : "MONDO:0016570",
+          "type" : "CLASS",
+          "lbl" : "primary pulmonary lymphoma"
+        },
+        {
+          "id" : "Orphanet:2420",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4273669",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C0519063",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "SCTID:718200007",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016570",
+          "pred" : "siblingOf",
+          "obj" : "UMLS:C0519063",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.050000000000000044
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C4273669",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016570",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0016570",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2420",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:718200007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016570",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C4273669",
+            "MONDO:0016570",
+            "Orphanet:2420",
+            "SCTID:718200007"
+          ]
+        }
+      ]
+    }
+  ]
+}

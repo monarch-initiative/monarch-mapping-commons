@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4678ea683b4ac795a2d37aa4fbac97a58ec4db1a2a278cef862b4bfd59a42f9c",
+      "nodes" : [
+        {
+          "id" : "UMLS:CN201401",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0016450",
+          "type" : "CLASS",
+          "lbl" : "autoimmune hemolytic anemia, cold type"
+        },
+        {
+          "id" : "Orphanet:228312",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0016450",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:228312",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:CN201401",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0016450",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0016450",
+            "Orphanet:228312",
+            "UMLS:CN201401"
+          ]
+        }
+      ]
+    }
+  ]
+}

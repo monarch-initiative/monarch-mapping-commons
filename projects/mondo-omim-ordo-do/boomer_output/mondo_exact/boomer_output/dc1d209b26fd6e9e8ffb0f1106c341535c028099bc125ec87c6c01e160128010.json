@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dc1d209b26fd6e9e8ffb0f1106c341535c028099bc125ec87c6c01e160128010",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1519936",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:6613",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003946",
+          "type" : "CLASS",
+          "lbl" : "vaginal villous adenoma"
+        },
+        {
+          "id" : "NCIT:C40259",
+          "type" : "CLASS",
+          "lbl" : "Vaginal Villous Adenoma"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0003946",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C40259",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1519936",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003946",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:6613",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003946",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C40259",
+            "MONDO:0003946",
+            "UMLS:C1519936",
+            "DOID:6613"
+          ]
+        }
+      ]
+    }
+  ]
+}

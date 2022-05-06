@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0550a318daedf483d64686bf49990165e00e45e34cacf5c4ddcba366b80a7183",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1333508",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:5293",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0003377",
+          "type" : "CLASS",
+          "lbl" : "extrahepatic bile duct leiomyosarcoma"
+        },
+        {
+          "id" : "NCIT:C5848",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1333508",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003377",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0003377",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C5848",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5293",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0003377",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1333508",
+            "MONDO:0003377",
+            "NCIT:C5848",
+            "DOID:5293"
+          ]
+        }
+      ]
+    }
+  ]
+}

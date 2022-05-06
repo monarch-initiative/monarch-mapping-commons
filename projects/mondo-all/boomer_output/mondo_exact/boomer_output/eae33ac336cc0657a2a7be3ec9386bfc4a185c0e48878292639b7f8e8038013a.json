@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eae33ac336cc0657a2a7be3ec9386bfc4a185c0e48878292639b7f8e8038013a",
+      "nodes" : [
+        {
+          "id" : "MESH:C563391",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1832813",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010991",
+          "type" : "CLASS",
+          "lbl" : "laterality defects, autosomal dominant"
+        },
+        {
+          "id" : "OMIM:601086",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1832813",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010991",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C563391",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010991",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010991",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:601086",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UMLS:C1832813",
+            "MONDO:0010991",
+            "MESH:C563391",
+            "OMIM:601086"
+          ]
+        }
+      ]
+    }
+  ]
+}

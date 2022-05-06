@@ -1,0 +1,95 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e9c67aa4e2c9646ee8bbbc90ce0b5d0c87e5fef7db9418ff7cae1c0433658b7a",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0024523",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MESH:D008286",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0020598",
+          "type" : "CLASS",
+          "lbl" : "malabsorption syndrome"
+        },
+        {
+          "id" : "SCTID:32230006",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "NCIT:C3214",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MESH:D008286",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020598",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0020598",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C3214",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:32230006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020598",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0024523",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0020598",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C3214",
+            "SCTID:32230006",
+            "MONDO:0020598",
+            "MESH:D008286",
+            "UMLS:C0024523"
+          ]
+        }
+      ]
+    }
+  ]
+}

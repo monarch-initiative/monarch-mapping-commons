@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b4dee4e401865b51bd0af8082a7f6d155f76f026d0c2085e0d7a327716adc7c9",
+      "nodes" : [
+        {
+          "id" : "UMLS:C0334357",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0006349",
+          "type" : "CLASS",
+          "lbl" : "papillary cystic neoplasm"
+        },
+        {
+          "id" : "NCIT:C4179",
+          "type" : "CLASS",
+          "lbl" : "Papillary Cystic Neoplasm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0006349",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C4179",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C0334357",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006349",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C4179",
+            "MONDO:0006349",
+            "UMLS:C0334357"
+          ]
+        }
+      ]
+    }
+  ]
+}

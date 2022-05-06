@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8a9514951ca2b1bdcbd0446c1479d46c17d0ae0cf5dfda858f807030c07aa764",
+      "nodes" : [
+        {
+          "id" : "MESH:C565592",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C1856971",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0009170",
+          "type" : "CLASS",
+          "lbl" : "endocardial fibroelastosis and coarctation of abdominal aorta"
+        },
+        {
+          "id" : "OMIM:226100",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C1856971",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009170",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009170",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:226100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MESH:C565592",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009170",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0009170",
+            "UMLS:C1856971",
+            "OMIM:226100",
+            "MESH:C565592"
+          ]
+        }
+      ]
+    }
+  ]
+}

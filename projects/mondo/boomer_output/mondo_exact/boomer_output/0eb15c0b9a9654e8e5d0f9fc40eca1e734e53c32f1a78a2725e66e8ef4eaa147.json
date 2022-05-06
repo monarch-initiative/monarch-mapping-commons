@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0eb15c0b9a9654e8e5d0f9fc40eca1e734e53c32f1a78a2725e66e8ef4eaa147",
+      "nodes" : [
+        {
+          "id" : "SCTID:717954003",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "UMLS:C4303540",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019851",
+          "type" : "CLASS",
+          "lbl" : "acquired primary ovarian failure"
+        },
+        {
+          "id" : "Orphanet:95709",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UMLS:C4303540",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019851",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:717954003",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019851",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019851",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:95709",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019851",
+            "UMLS:C4303540",
+            "SCTID:717954003",
+            "Orphanet:95709"
+          ]
+        }
+      ]
+    }
+  ]
+}

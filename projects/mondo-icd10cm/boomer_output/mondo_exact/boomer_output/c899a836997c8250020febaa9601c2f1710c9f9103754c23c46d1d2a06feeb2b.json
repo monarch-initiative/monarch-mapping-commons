@@ -1,0 +1,77 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c899a836997c8250020febaa9601c2f1710c9f9103754c23c46d1d2a06feeb2b",
+      "nodes" : [
+        {
+          "id" : "UMLS:C1335348",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:10207",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0000976",
+          "type" : "CLASS",
+          "lbl" : "paratesticular lipoma"
+        },
+        {
+          "id" : "NCIT:C6384",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000976",
+          "pred" : "owl:equivalentClass",
+          "obj" : "NCIT:C6384",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:10207",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000976",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UMLS:C1335348",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000976",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "NCIT:C6384",
+            "MONDO:0000976",
+            "DOID:10207",
+            "UMLS:C1335348"
+          ]
+        }
+      ]
+    }
+  ]
+}

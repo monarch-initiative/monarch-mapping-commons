@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:12ad91646c9e1ba0dcd3509659c3e94f7d5e33d676af238412c364a0cac2acb2",
+      "nodes" : [
+        {
+          "id" : "SCTID:27956007",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0019544",
+          "type" : "CLASS",
+          "lbl" : "cocaine intoxication"
+        },
+        {
+          "id" : "Orphanet:90068",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0019544",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:90068",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "SCTID:27956007",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019544",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 9.9
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019544",
+            "Orphanet:90068",
+            "SCTID:27956007"
+          ]
+        }
+      ]
+    }
+  ]
+}
