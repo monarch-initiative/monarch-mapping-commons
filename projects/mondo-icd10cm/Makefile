@@ -2,9 +2,9 @@ TMP_DIR = tmp
 BOOMER_INPUT_DIR = boomer_input
 BOOMER_OUTPUT_DIR = boomer_output
 
-ALL_RUNS=no_mappings exact_match_only all_precise all 
+ALL_RUNS=no_mappings mondo_exact 
 
-$(TMP_DIR)/ $(TMP_DIR)/no_mappings/ $(BOOMER_INPUT_DIR)/no_mappings/ $(BOOMER_OUTPUT_DIR)/no_mappings/ $(TMP_DIR)/exact_match_only/ $(BOOMER_INPUT_DIR)/exact_match_only/ $(BOOMER_OUTPUT_DIR)/exact_match_only/ $(TMP_DIR)/all_precise/ $(BOOMER_INPUT_DIR)/all_precise/ $(BOOMER_OUTPUT_DIR)/all_precise/ $(TMP_DIR)/all/ $(BOOMER_INPUT_DIR)/all/ $(BOOMER_OUTPUT_DIR)/all/ :
+$(TMP_DIR)/ $(TMP_DIR)/no_mappings/ $(BOOMER_INPUT_DIR)/no_mappings/ $(BOOMER_OUTPUT_DIR)/no_mappings/ $(TMP_DIR)/mondo_exact/ $(BOOMER_INPUT_DIR)/mondo_exact/ $(BOOMER_OUTPUT_DIR)/mondo_exact/ :
 	mkdir -p $@
 
 .PHONY: all
@@ -21,14 +21,8 @@ reports: $(patsubst %, reports-%, $(ALL_RUNS))
 .PHONY: prepare-data-no_mappings
 prepare-data-no_mappings: $(BOOMER_INPUT_DIR)/no_mappings/combined.ptable.tsv $(BOOMER_INPUT_DIR)/no_mappings/prefix.yaml $(BOOMER_INPUT_DIR)/no_mappings/symbiont-merged-all.owl 
 
-.PHONY: prepare-data-exact_match_only
-prepare-data-exact_match_only: $(BOOMER_INPUT_DIR)/exact_match_only/combined.ptable.tsv $(BOOMER_INPUT_DIR)/exact_match_only/prefix.yaml $(BOOMER_INPUT_DIR)/exact_match_only/symbiont-merged-all.owl 
-
-.PHONY: prepare-data-all_precise
-prepare-data-all_precise: $(BOOMER_INPUT_DIR)/all_precise/combined.ptable.tsv $(BOOMER_INPUT_DIR)/all_precise/prefix.yaml $(BOOMER_INPUT_DIR)/all_precise/symbiont-merged-all.owl 
-
-.PHONY: prepare-data-all
-prepare-data-all: $(BOOMER_INPUT_DIR)/all/combined.ptable.tsv $(BOOMER_INPUT_DIR)/all/prefix.yaml $(BOOMER_INPUT_DIR)/all/symbiont-merged-all.owl 
+.PHONY: prepare-data-mondo_exact
+prepare-data-mondo_exact: $(BOOMER_INPUT_DIR)/mondo_exact/combined.ptable.tsv $(BOOMER_INPUT_DIR)/mondo_exact/prefix.yaml $(BOOMER_INPUT_DIR)/mondo_exact/symbiont-merged-all.owl 
 
 
 .PHONY: boomer
@@ -51,7 +45,7 @@ reset_boomer_output:
 .PHONY: sssom
 sssom:
 	echo "skipping.."
-#	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall git+https://github.com/mapping-commons/sssom-py.git@master
+#	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall git+https://github.com/mapping-commons/sssom-py.git@curie_detection_patch
 #	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall sssom==0.3.7
 
 #####################
@@ -59,7 +53,6 @@ sssom:
 #####################
 
 ONTOLOGIES= mondo icd10cm 
-ONTOLOGY_PREFIXES= MONDO ICD10CM 
 
 ALL_ONTOLOGIES=$(patsubst %, $(TMP_DIR)/%.owl, $(ONTOLOGIES))
 
@@ -68,7 +61,7 @@ $(TMP_DIR)/mondo.owl: | $(TMP_DIR)/
 	wget http://purl.obolibrary.org/obo/mondo.owl -O $@
 
 $(TMP_DIR)/icd10cm.owl: | $(TMP_DIR)/
-	wget http://purl.obolibrary.org/obo/icd10cm.owl -O $@
+	wget https://github.com/monarch-initiative/mondo-ingest/releases/download/v2022-04-26/icd10cm.owl -O $@
 
 
 $(TMP_DIR)/symbiont-merged-all.owl: $(ALL_ONTOLOGIES)
@@ -81,36 +74,36 @@ $(BOOMER_INPUT_DIR)/%/symbiont-merged-all.owl: $(TMP_DIR)/symbiont-merged-all.ow
 ## Mappings #########
 #####################
 
-ALL_MAPPINGS=$(TMP_DIR)/empty.sssom.tsv $(TMP_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv $(TMP_DIR)/mondo_exactmatch_icd10cm.sssom.tsv $(TMP_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv $(TMP_DIR)/mondo_broadmatch_icd10cm.sssom.tsv $(TMP_DIR)/ncit_icd10_2017.sssom.tsv $(TMP_DIR)/mondo.sssom.tsv
+ALL_MAPPINGS=$(TMP_DIR)/empty.sssom.tsv $(TMP_DIR)/mondo.sssom.tsv $(TMP_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv $(TMP_DIR)/mondo_exactmatch_icd10cm.sssom.tsv $(TMP_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv $(TMP_DIR)/mondo_broadmatch_icd10cm.sssom.tsv $(TMP_DIR)/ncit_icd10_2017.sssom.tsv 
 
 
-$(TMP_DIR)/empty.sssom.tsv: | $(TMP_DIR)/
-	wget https://raw.githubusercontent.com/mapping-commons/mapping-commons.github.io/main/mappings/empty.sssom.tsv -O $@
+$(TMP_DIR)/empty.sssom.tsv: ../../mappings/empty.sssom.tsv | $(TMP_DIR)/
+	cp $< $@
 
-$(TMP_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv: | $(TMP_DIR)/
-	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_hasdbxref_icd10cm.sssom.tsv -O $@
+$(TMP_DIR)/mondo.sssom.tsv: ../../mappings/mondo.sssom.tsv | $(TMP_DIR)/
+	cp $< $@
 
-$(TMP_DIR)/mondo_exactmatch_icd10cm.sssom.tsv: | $(TMP_DIR)/
-	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_exactmatch_icd10cm.sssom.tsv -O $@
+$(TMP_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv: ../../mappings/mondo_hasdbxref_icd10cm.sssom.tsv | $(TMP_DIR)/
+	cp $< $@
 
-$(TMP_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv: | $(TMP_DIR)/
-	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_narrowmatch_icd10cm.sssom.tsv -O $@
+$(TMP_DIR)/mondo_exactmatch_icd10cm.sssom.tsv: ../../mappings/mondo_exactmatch_icd10cm.sssom.tsv | $(TMP_DIR)/
+	cp $< $@
 
-$(TMP_DIR)/mondo_broadmatch_icd10cm.sssom.tsv: | $(TMP_DIR)/
-	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_broadmatch_icd10cm.sssom.tsv -O $@
+$(TMP_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv: ../../mappings/mondo_narrowmatch_icd10cm.sssom.tsv | $(TMP_DIR)/
+	cp $< $@
 
-$(TMP_DIR)/ncit_icd10_2017.sssom.tsv: | $(TMP_DIR)/
-	wget https://raw.githubusercontent.com/mapping-commons/disease-mappings/main/mappings/ncit_icd10_2017.sssom.tsv -O $@
+$(TMP_DIR)/mondo_broadmatch_icd10cm.sssom.tsv: ../../mappings/mondo_broadmatch_icd10cm.sssom.tsv | $(TMP_DIR)/
+	cp $< $@
 
-$(TMP_DIR)/mondo.sssom.tsv: | $(TMP_DIR)/
-	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo.sssom.tsv -O $@
+$(TMP_DIR)/ncit_icd10_2017.sssom.tsv: ../../mappings/ncit_icd10_2017.sssom.tsv | $(TMP_DIR)/
+	cp $< $@
+
 
 $(BOOMER_INPUT_DIR)/%/combined.sssom.tsv $(BOOMER_INPUT_DIR)/%/prefix.yaml: $(ALL_MAPPINGS) | $(BOOMER_INPUT_DIR)/%/
 	python $(HOME_DIR)/scripts/gen_boomer_input.py run \
 		--source-location $(TMP_DIR) \
 		--target-location $(BOOMER_INPUT_DIR)/$* \
-		--config ../mondo-all.symbiont.yaml
-#		--config ../mondo-icd10cm.symbiont.yaml
+		--config ../mondo-icd10cm.symbiont.yaml
 
 $(BOOMER_INPUT_DIR)/%/combined.ptable.tsv: $(BOOMER_INPUT_DIR)/%/combined.sssom.tsv
 	sssom ptable $< -o $@
@@ -125,44 +118,24 @@ boomer-no_mappings: | $(BOOMER_OUTPUT_DIR)/no_mappings/
 		--ontology $(BOOMER_INPUT_DIR)/no_mappings/symbiont-merged-all.owl \
 		--prefixes $(BOOMER_INPUT_DIR)/no_mappings/prefix.yaml \
 		--output $(BOOMER_OUTPUT_DIR)/no_mappings/boomer_output \
-		--window-count 100 \
-		--runs 10 \
+		--window-count 1 \
+		--exhaustive-search-limit 15 \
+		--runs 1 \ 
 		--restrict-output-to-prefixes=MONDO \
 		--restrict-output-to-prefixes=ICD10CM
 	find $(BOOMER_OUTPUT_DIR)/no_mappings -name "*.json" -type 'f' -size -500c -delete # Hack for removing individual singleton json files.
 
-boomer-exact_match_only: | $(BOOMER_OUTPUT_DIR)/exact_match_only/
-	boomer --ptable $(BOOMER_INPUT_DIR)/exact_match_only/combined.ptable.tsv \
-		--ontology $(BOOMER_INPUT_DIR)/exact_match_only/symbiont-merged-all.owl \
-		--prefixes $(BOOMER_INPUT_DIR)/exact_match_only/prefix.yaml \
-		--output $(BOOMER_OUTPUT_DIR)/exact_match_only/boomer_output \
-		--window-count 10 \
-		--runs 1 \
+boomer-mondo_exact: | $(BOOMER_OUTPUT_DIR)/mondo_exact/
+	boomer --ptable $(BOOMER_INPUT_DIR)/mondo_exact/combined.ptable.tsv \
+		--ontology $(BOOMER_INPUT_DIR)/mondo_exact/symbiont-merged-all.owl \
+		--prefixes $(BOOMER_INPUT_DIR)/mondo_exact/prefix.yaml \
+		--output $(BOOMER_OUTPUT_DIR)/mondo_exact/boomer_output \
+		--window-count 1 \
+		--exhaustive-search-limit 10 \
+		--runs 1 \ 
 		--restrict-output-to-prefixes=MONDO \
 		--restrict-output-to-prefixes=ICD10CM
-	find $(BOOMER_OUTPUT_DIR)/exact_match_only -name "*.json" -type 'f' -size -500c -delete # Hack for removing individual singleton json files.
-
-boomer-all_precise: | $(BOOMER_OUTPUT_DIR)/all_precise/
-	boomer --ptable $(BOOMER_INPUT_DIR)/all_precise/combined.ptable.tsv \
-		--ontology $(BOOMER_INPUT_DIR)/all_precise/symbiont-merged-all.owl \
-		--prefixes $(BOOMER_INPUT_DIR)/all_precise/prefix.yaml \
-		--output $(BOOMER_OUTPUT_DIR)/all_precise/boomer_output \
-		--window-count 10 \
-		--runs 1 \
-		--restrict-output-to-prefixes=MONDO \
-		--restrict-output-to-prefixes=ICD10CM
-	find $(BOOMER_OUTPUT_DIR)/all_precise -name "*.json" -type 'f' -size -500c -delete # Hack for removing individual singleton json files.
-
-boomer-all: | $(BOOMER_OUTPUT_DIR)/all/
-	boomer --ptable $(BOOMER_INPUT_DIR)/all/combined.ptable.tsv \
-		--ontology $(BOOMER_INPUT_DIR)/all/symbiont-merged-all.owl \
-		--prefixes $(BOOMER_INPUT_DIR)/all/prefix.yaml \
-		--output $(BOOMER_OUTPUT_DIR)/all/boomer_output \
-		--window-count 10 \
-		--runs 1 \
-		--restrict-output-to-prefixes=MONDO \
-		--restrict-output-to-prefixes=ICD10CM
-	find $(BOOMER_OUTPUT_DIR)/all -name "*.json" -type 'f' -size -500c -delete # Hack for removing individual singleton json files.
+	find $(BOOMER_OUTPUT_DIR)/mondo_exact -name "*.json" -type 'f' -size -500c -delete # Hack for removing individual singleton json files.
 
 
 #####################
@@ -181,23 +154,11 @@ PNGS_NO_MAPPINGS=$(patsubst %.json, %.png, $(filter-out singletons, $(JSONS_NO_M
 .PHONY: reports-no_mappings
 reports-no_mappings: $(PNGS_NO_MAPPINGS)
 
-JSONS_EXACT_MATCH_ONLY=$(wildcard $(BOOMER_OUTPUT_DIR)/exact_match_only/boomer_output/*.json)
-PNGS_EXACT_MATCH_ONLY=$(patsubst %.json, %.png, $(filter-out singletons, $(JSONS_EXACT_MATCH_ONLY)))
+JSONS_MONDO_EXACT=$(wildcard $(BOOMER_OUTPUT_DIR)/mondo_exact/boomer_output/*.json)
+PNGS_MONDO_EXACT=$(patsubst %.json, %.png, $(filter-out singletons, $(JSONS_MONDO_EXACT)))
 
-.PHONY: reports-exact_match_only
-reports-exact_match_only: $(PNGS_EXACT_MATCH_ONLY)
-
-JSONS_ALL_PRECISE=$(wildcard $(BOOMER_OUTPUT_DIR)/all_precise/boomer_output/*.json)
-PNGS_ALL_PRECISE=$(patsubst %.json, %.png, $(filter-out singletons, $(JSONS_ALL_PRECISE)))
-
-.PHONY: reports-all_precise
-reports-all_precise: $(PNGS_ALL_PRECISE)
-
-JSONS_ALL=$(wildcard $(BOOMER_OUTPUT_DIR)/all/boomer_output/*.json)
-PNGS_ALL=$(patsubst %.json, %.png, $(filter-out singletons, $(JSONS_ALL)))
-
-.PHONY: reports-all
-reports-all: $(PNGS_ALL)
+.PHONY: reports-mondo_exact
+reports-mondo_exact: $(PNGS_MONDO_EXACT)
 
 
 include custom.Makefile
