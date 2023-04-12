@@ -23,7 +23,7 @@ symbiont-%:
 ## Mappings #########
 #####################
 
-ALL_MAPPINGS=$(MAPPINGS_DIR)/empty.sssom.tsv $(MAPPINGS_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_exactmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_broadmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/ncit_icd10_2017.sssom.tsv $(MAPPINGS_DIR)/mondo.sssom.tsv $(MAPPINGS_DIR)/mondo_all.sssom.tsv 
+ALL_MAPPINGS=$(MAPPINGS_DIR)/empty.sssom.tsv $(MAPPINGS_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_exactmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_broadmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/ncit_icd10_2017.sssom.tsv $(MAPPINGS_DIR)/mondo.sssom.tsv $(MAPPINGS_DIR)/mondo_all.sssom.tsv
 
 
 $(MAPPINGS_DIR)/empty.sssom.tsv: | $(MAPPINGS_DIR)/
@@ -50,9 +50,12 @@ $(MAPPINGS_DIR)/mondo.sssom.tsv: | $(MAPPINGS_DIR)/
 $(MAPPINGS_DIR)/mondo_all.sssom.tsv: | $(MAPPINGS_DIR)/
 	wget http://w3id.org/sssom/commons/monarch/mondo_all.sssom.tsv -O $@
 
+.PHONY: biomappings
+biomappings: | $(MAPPINGS_DIR)/
+	python3 scripts/process_biomappings.py
 
-mappings: $(ALL_MAPPINGS)
+mappings: $(ALL_MAPPINGS) biomappings
 
-all: $(ALL_MAPPINGS)
+all: $(ALL_MAPPINGS) biomappings
 
 include custom.Makefile
