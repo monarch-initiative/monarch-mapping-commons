@@ -23,7 +23,7 @@ symbiont-%:
 ## Mappings #########
 #####################
 
-ALL_MAPPINGS=$(MAPPINGS_DIR)/empty.sssom.tsv $(MAPPINGS_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_exactmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_broadmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/ncit_icd10_2017.sssom.tsv $(MAPPINGS_DIR)/mondo.sssom.tsv $(MAPPINGS_DIR)/mondo_all.sssom.tsv
+ALL_MAPPINGS=$(MAPPINGS_DIR)/empty.sssom.tsv $(MAPPINGS_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_exactmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_broadmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/ncit_icd10_2017.sssom.tsv $(MAPPINGS_DIR)/mondo.sssom.tsv $(MAPPINGS_DIR)/mondo_all.sssom.tsv 
 
 
 $(MAPPINGS_DIR)/empty.sssom.tsv: | $(MAPPINGS_DIR)/
