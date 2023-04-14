@@ -20,7 +20,11 @@ converter = curies.Converter([
     )
 ])
 
-biomappings_file = sys.argv[1] or "https://raw.githubusercontent.com/biopragmatics/biomappings/master/docs/_data/sssom/biomappings.sssom.tsv"
+try:
+    biomappings_file = sys.argv[1]
+except IndexError:
+    biomappings_file = "https://raw.githubusercontent.com/biopragmatics/biomappings/master/docs/_data/sssom/biomappings.sssom.tsv"
+    
 df = pd.read_csv(biomappings_file, sep='\t')
 
 # Get only chebi to mesh rows
