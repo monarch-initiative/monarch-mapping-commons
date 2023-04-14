@@ -30,12 +30,8 @@ $(MAPPINGS_DIR)/{{ mapping.local_name }}: | $(MAPPINGS_DIR)/
 	wget {{ mapping.mirror_from|default(mapping.mapping_set_id) }} -O $@
 {% endfor %}
 
-.PHONY: biomappings
-biomappings: | $(MAPPINGS_DIR)/
-	python3 scripts/process_biomappings.py
+mappings: $(ALL_MAPPINGS)
 
-mappings: $(ALL_MAPPINGS) biomappings
-
-all: $(ALL_MAPPINGS) biomappings
+all: $(ALL_MAPPINGS)
 
 include custom.Makefile
