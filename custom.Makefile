@@ -24,8 +24,9 @@ MONDO_JSON=http://purl.obolibrary.org/obo/mondo/mondo.json
 $(TMP_DIR)/mondo.json:
 	wget $(MONDO_JSON) -O $@
 
-$(MAPPINGS_DIR)/mondo_all.sssom.tsv: $(TMP_DIR)/mondo.json
-	sssom parse $< --input-format obographs-json -m config/metadata.yaml --prefix-map-mode merged -o $@
+.PHONY: mondo_all
+mondo_all: $(TMP_DIR)/mondo.json
+	sssom parse $< --input-format obographs-json -m config/metadata.yaml --prefix-map-mode merged -o $(MAPPINGS_DIR)/mondo_all.sssom.tsv
 
 .PHONY: biomappings
 biomappings: install
