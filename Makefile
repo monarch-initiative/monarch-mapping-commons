@@ -1,3 +1,9 @@
+##############################################
+### Generated Makefile - Do not edit!      ###
+### Add custom targets to custom.Makefile  ###
+### See README.md for more information     ###
+##############################################
+
 PROJECT_DIR=projects
 CONFIG_DIR=config
 MAPPINGS_DIR=mappings
