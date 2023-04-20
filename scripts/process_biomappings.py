@@ -45,4 +45,4 @@ assert all(row.subject_id.__contains__("MESH") for row in df.itertuples()), \
     f"\n\tSubject IDs are not all MESH: {df.subject_id.unique()}\n"
 
 # Write to file
-df.to_csv("mappings/biomappings.sssom.tsv", sep='\t', index=False)
+df.to_csv("mappings/mesh-chebi.biomappings.sssom.tsv", sep='\t', index=False)
