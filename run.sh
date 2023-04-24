@@ -24,11 +24,3 @@ fi
 
 echo "Running Process with Memory $MEMORY and Image $IMAGE"
 docker run -v $PWD/:/work -w /work -e ROBOT_JAVA_ARGS="-Xmx${MEMORY}" -e JAVA_OPTS="-Xmx${MEMORY}" --rm -ti $IMAGE $TIMECMD "$@"
-
-
-
-
-
-
-
-
