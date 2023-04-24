@@ -5,7 +5,7 @@ It contains all mappings used in and around the knowledge graph underlying https
 
 ### Requirements
 
-- [Make](https://www.gnu.org/software/make/)/[build-essential](https://packages.ubuntu.com/focal/build-essential)
+- [Make](https://www.gnu.org/software/make/) / [build-essential](https://packages.ubuntu.com/focal/build-essential)
 - [Docker](https://docs.docker.com/engine/install/)
 - [Python 3](https://www.python.org/downloads/) with:  
     - [J2CLI](https://github.com/kolypto/j2cli)
@@ -32,24 +32,29 @@ poetry install
 poetry shell
 ```
 
-### How to run the workflows
+### Usage
 
-Now we can run all configured workflows:
-```
-MEMORY=48G sh run_build.sh
-```
+These make commands are designed to be run in an ODK Docker container.
 
-You can run a specific project like this:
-```
-make symbiont-mondo-icd10cm
-```
+- To build the Docker iamge and run all workflows:
+    ```bash
+    sh run_build.sh
 
-This will generate a custom workflow for the project specified by `projects/mondo-icd10cm.symbiont.yaml`.
+    # Optionally specify available memory, for example
+    MEMORY=48G sh run_build.sh
+    ```
 
-You can update the commons workflows by running (part of `run_build.sh`):
-```
-sh update_registry.sh
-```
+- The run script can be used to run a single workflow within the container, for example:
+    ```bash
+    sh run.sh make symbiont-mondo-icd10cm
+    ```
+
+    This will generate a custom workflow for the project specified by `projects/mondo-icd10cm.symbiont.yaml`.
+
+- You can manually update the commons workflows by running (part of `run_build.sh`):
+    ```bash
+    sh update_registry.sh
+    ```
 
 # Contributing 
 

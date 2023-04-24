@@ -12,5 +12,5 @@ RUN wget -nv https://github.com/INCATools/boomer/releases/download/v$BOOMER_VERS
 && chmod +x /tools/boomer/bin/boomer
 
 RUN pip install --upgrade pip &&\
-  pip install --upgrade --force-reinstall sssom==0.3.10
+  pip install --upgrade --force-reinstall sssom==0.3.10 curies pandas j2cli
 
