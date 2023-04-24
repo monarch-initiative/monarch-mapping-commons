@@ -2,9 +2,11 @@ name: Test
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    types: [opened, synchronize, reopened]
+  cron: '0 0 * * MON'
+
 
 jobs:
 
