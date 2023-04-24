@@ -29,4 +29,7 @@ def test_registry():
         print('The following urls are not available:')
         for url in missing:
             print(url)
-        raise HTTPError
+        raise Exception
+
+if __name__ == '__main__':
+    test_registry()
