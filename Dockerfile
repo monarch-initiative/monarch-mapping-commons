@@ -13,7 +13,7 @@ RUN wget -nv https://github.com/INCATools/boomer/releases/download/v$BOOMER_VERS
 
 # Install python dependencies
 RUN pip install --upgrade pip && \
-  pip install --upgrade --force-reinstall sssom==0.3.10 curies pandas j2cli
+  pip install --upgrade --force-reinstall sssom curies pandas j2cli
 
 # Install nodejs for og2dot
 RUN curl -sL https://deb.nodesource.com/setup_20.x | bash - && \
