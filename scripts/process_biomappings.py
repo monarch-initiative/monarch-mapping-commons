@@ -40,13 +40,10 @@ for row in df.itertuples():
 # Get only chebi to mesh rows
 df = df[(df['subject_id'].str.startswith('CHEBI')) & (df['object_id'].str.startswith('MESH'))]
 
-# Invert subject and object with sssom
-df = sssom.util.invert_mappings(df=df, subject_prefix="MESH", merge_inverted=False)
-
-# Assert that all subject IDs are MESH and all object IDs are CHEBI
-assert all(row.object_id.__contains__("CHEBI") for row in df.itertuples()), \
+# Assert that all subject IDs are CHEBI and all object IDs are MESH
+assert all(row.object_id.__contains__("MESH") for row in df.itertuples()), \
     f"\n\tObject IDs are not all CHEBI: {df.subject_id.unique()}\n"
-assert all(row.subject_id.__contains__("MESH") for row in df.itertuples()), \
+assert all(row.subject_id.__contains__("CHEBI") for row in df.itertuples()), \
     f"\n\tSubject IDs are not all MESH: {df.subject_id.unique()}\n"
 
 # Write to file
