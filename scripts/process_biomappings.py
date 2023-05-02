@@ -1,5 +1,5 @@
 # A script to process Biopragmatics' biomappings file
-# into MESH-to-CHEBI mappings for use in the Monarch KG pipeline.
+# into CHEBI-to-MESH mappings for use in the Monarch KG pipeline.
 
 import argparse
 
