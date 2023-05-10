@@ -1,6 +1,4 @@
-# Final ODK image
-# (built upon the odklite image)
-FROM obolibrary/odkfull:latest
+FROM obolibrary/odkfull:dev
 LABEL maintainer="nicolas.matentzoglu@gmail.com"
 
 # Install boomer
@@ -10,10 +8,6 @@ RUN wget -nv https://github.com/INCATools/boomer/releases/download/v$BOOMER_VERS
   tar -zxvf boomer-$BOOMER_VERSION.tgz && \
   mv boomer-$BOOMER_VERSION /tools/boomer && \
   chmod +x /tools/boomer/bin/boomer
-
-# Install python dependencies
-RUN pip install --upgrade pip && \
-  pip install --upgrade --force-reinstall sssom curies pandas j2cli
 
 # Install nodejs for og2dot
 RUN curl -sL https://deb.nodesource.com/setup_20.x | bash - && \
