@@ -36,7 +36,7 @@ poetry shell
 
 These make commands are designed to be run in an ODK Docker container.
 
-- To build the Docker iamge and run all workflows:
+- To build the Docker image and run all workflows:
     ```bash
     sh run_build.sh
 
