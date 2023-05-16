@@ -1,14 +1,13 @@
 #!/bin/sh
+
 # Wrapper script for docker.
 #
 # This is used primarily for wrapping the GNU Make workflow.
 # Instead of typing "make TARGET", type "./run.sh make TARGET".
 # This will run the make workflow within a docker container.
 #
-# The assumption is that you are working in the src/ontology folder;
-# we therefore map the whole repo (../..) to a docker volume.
-#
-# See README-editors.md for more details.
+# Assumes that you are working in the root directory
+
 
 IMAGE=${IMAGE:-monarchinitiative/mapping-commons}
 MEMORY=${MEMORY:-20G}
@@ -25,11 +24,3 @@ fi
 
 echo "Running Process with Memory $MEMORY and Image $IMAGE"
 docker run -v $PWD/:/work -w /work -e ROBOT_JAVA_ARGS="-Xmx${MEMORY}" -e JAVA_OPTS="-Xmx${MEMORY}" --rm -ti $IMAGE $TIMECMD "$@"
-
-
-
-
-
-
-
-

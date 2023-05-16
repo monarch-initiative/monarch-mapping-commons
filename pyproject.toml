@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "monarch-mapping-commons"
+version = "0.1.0"
+description = "Mapping Commons for the Monarch Initiative knowledge graph"
+authors = [
+    "The Monarch Initiative <info@monarchinitiative.org>",
+    "Nico Matentzoglu <nicolas.matentzoglu@gmail.com>",
+    "Harshad Hegde <hhegde@lbl.gov>",
+    "Kevin Schaper <kevin@tislab.org>",
+    "glass-ships <glass.ships@outlook.com>"]
+readme = "README.md"
+# packages = [{include = "monarch_mapping_commons"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = ">=2.0.0"
+curies = ">=0.5.3"
+sssom = ">=0.3.30"
+j2cli = ">=0.3.10"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

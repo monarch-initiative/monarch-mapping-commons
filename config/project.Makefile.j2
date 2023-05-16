@@ -110,7 +110,7 @@ boomer-{{ run.id }}: | $(BOOMER_OUTPUT_DIR)/{{ run.id }}/
 #####################
 
 %.dot: %.json
-	og2dot.js -s {{ config.boomer_style }} $< >$@ 
+	og2dot -s {{ config.boomer_style }} $< >$@ 
 %.png: %.dot
 	test `wc -c <$<` -gt 650000 || dot $< -Tpng -Grankdir=BT >$@
 

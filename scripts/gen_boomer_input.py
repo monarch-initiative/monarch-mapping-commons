@@ -1,7 +1,7 @@
 import logging
 from os.path import join, dirname, realpath
 from pathlib import Path
-from sssom.parsers import read_sssom_table
+from sssom.parsers import parse_sssom_table
 from sssom.writers import write_table
 from sssom.util import MappingSetDataFrame, reconcile_prefix_and_data
 import pandas as pd
@@ -110,7 +110,7 @@ def run(config:Path, source_location:Path, target_location:Path):
 
         fp = join(source_location, fn)
         print(f"Loading file:{fn} ")
-        msdf = read_sssom_table(fp)
+        msdf = parse_sssom_table(fp)
         # confidence, metadata and prefix_map from global config.
         msdf = _load_default_info(msdf)
         # confidence, metadata and prefix_map from local config.
