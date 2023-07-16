@@ -28,4 +28,7 @@ $(MAPPINGS_DIR)/mondo_all.sssom.tsv: $(TMP_DIR)/mondo.json
 	sssom parse $< --input-format obographs-json -m config/metadata.yaml --prefix-map-mode merged -o $@
 
 $(MAPPINGS_DIR)/mesh-chebi-biomappings.sssom.tsv: 
-	$(RUN) python3 scripts/biomappings.py --input $(MAPPINGS_DIR)/biomappings.sssom.tsv --output $@
+	$(RUN) python3 scripts/process_biomappings.py --input $(MAPPINGS_DIR)/biomappings.sssom.tsv --output $@
+
+.PHONY: biomappings
+biomappings: $(MAPPINGS_DIR)/mesh-chebi-biomappings.sssom.tsv
