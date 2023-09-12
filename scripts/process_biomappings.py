@@ -2,7 +2,6 @@
 A script to process Biopragmatics' biomappings file into CHEBI-to-MESH mappings for use in the Monarch KG pipeline.
 """
 
-from datetime import datetime
 from pathlib import Path
 
 import requests
@@ -10,6 +9,10 @@ import pandas as pd
 import curies
 import click
 import yaml
+
+HERE = Path(__file__).parent.resolve()
+ROOT = HERE.parent.resolve()
+DEFAULT_OUTPUT = ROOT.joinpath("mappings", "biomappings.sssom.tsv")
 
 
 TSV_URL = "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv"
@@ -22,7 +25,9 @@ YAML_URL = "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.y
     default=TSV_URL,
     help="URL or path to biomappings file",
 )
-@click.option("--output", type=click.Path(), help="Path to output file")
+@click.option(
+    "--output", type=click.Path(), default=DEFAULT_OUTPUT, help="Path to output file"
+)
 def main(path: str, output: Path):
     converter = curies.Converter(
         [
@@ -66,12 +71,17 @@ def main(path: str, output: Path):
         row.object_id.__contains__("CHEBI") for row in df.itertuples()
     ), f"\n\tObject IDs are not all CHEBI: {df.subject_id.unique()}\n"
 
-    # TODO @cthoyt make this version information available inside the YAML metadata
-    df = df.assign(license=metadata["license"])
-    df = df.assign(mapping_source=path)
-    df = df.assign(
-        mapping_source_version=f'biomappings_{datetime.now().strftime("%Y%m%d")}'
-    )
+    subset = {
+        key: metadata[key]
+        # these are all SSSOM keys, see https://mapping-commons.github.io/sssom/
+        for key in [
+            "license",
+            "mapping_set_title",
+            "mapping_set_version",
+            "mapping_set_id",
+        ]
+    }
+    df = df.assign(**subset)
 
     # Write to file
     df.to_csv(output, sep="\t", index=False)
