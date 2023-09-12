@@ -1,60 +1,78 @@
-# A script to process Biopragmatics' biomappings file
-# into CHEBI-to-MESH mappings for use in the Monarch KG pipeline.
+"""
+A script to process Biopragmatics' biomappings file into CHEBI-to-MESH mappings for use in the Monarch KG pipeline.
+"""
 
-import argparse
 from datetime import datetime
+from pathlib import Path
 
+import requests
 import pandas as pd
 import curies
-# import sssom
+import click
+import yaml
 
-# Parse arguments
-parser = argparse.ArgumentParser(prog='Monarch Mapping Commons')
-parser.add_argument("--input", type=str, help="URL or path to biomappings file")
-parser.add_argument("--output", type=str, help="Path to output file")
-args = parser.parse_args()
-biomappings_file = args.input
-biomappings_filename = biomappings_file.split('/')[-1]
-output_file = args.output
 
-# Initialize curie converter
-converter = curies.Converter([
-    curies.Record(
-        prefix="CHEBI",
-        prefix_synonyms=["chebi"],
-        uri_prefix="http://purl.obolibrary.org/obo/CHEBI_",
-    ),
-    curies.Record(
-        prefix="MESH",
-        prefix_synonyms=["mesh"],
-        uri_prefix="http://purl.obolibrary.org/obo/MESH_",
+TSV_URL = "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv"
+YAML_URL = "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.yml"
+
+
+@click.command(name="Monarch Mapping Commons")
+@click.option(
+    "--path",
+    default=TSV_URL,
+    help="URL or path to biomappings file",
+)
+@click.option("--output", type=click.Path(), help="Path to output file")
+def main(path: str, output: Path):
+    converter = curies.Converter(
+        [
+            curies.Record(
+                prefix="CHEBI",
+                prefix_synonyms=["chebi"],
+                uri_prefix="http://purl.obolibrary.org/obo/CHEBI_",
+            ),
+            curies.Record(
+                prefix="MESH",
+                prefix_synonyms=["mesh"],
+                uri_prefix="http://purl.obolibrary.org/obo/MESH_",
+            ),
+        ]
     )
-])
 
-# Read biomappings file    
-df = pd.read_csv(biomappings_file, sep='\t')
-# Standardize curies
-for row in df.itertuples():
-    df.at[row.Index, 'subject_id'] = converter.standardize_curie(row.subject_id)
-    df.at[row.Index, 'object_id'] = converter.standardize_curie(row.object_id)
+    # Read biomappings file
+    df = pd.read_csv(path, sep="\t")
 
-# Get only chebi to mesh rows
-df = df[
-    (df['subject_id'].str.startswith('MESH')) & (df['object_id'].str.startswith('CHEBI'))
-]
+    res = requests.get(YAML_URL)
+    metadata = yaml.safe_load(res.text)
 
-print(df.head())
+    converter.pd_standardize_curie(df, column="subject_id")
+    converter.pd_standardize_curie(df, column="object_id")
 
-# Assert that all subject-IDs are MESH and all object-IDs are CHEBI
-assert all(row.subject_id.__contains__("MESH") for row in df.itertuples()), \
-    f"\n\tSubject IDs are not all MESH: {df.subject_id.unique()}\n"
+    # Get only chebi to mesh rows
+    df = df[
+        (df["subject_id"].str.startswith("MESH"))
+        & (df["object_id"].str.startswith("CHEBI"))
+    ]
 
-assert all(row.object_id.__contains__("CHEBI") for row in df.itertuples()), \
-    f"\n\tObject IDs are not all CHEBI: {df.subject_id.unique()}\n"
+    # Assert that all subject-IDs are MESH and all object-IDs are CHEBI
+    assert all(
+        row.subject_id.__contains__("MESH") for row in df.itertuples()
+    ), f"\n\tSubject IDs are not all MESH: {df.subject_id.unique()}\n"
 
-# Add metadata
-df = df.assign(mapping_source = f'https://github.com/biopragmatics/biomappings/docs/_data/sssom/{biomappings_filename}')
-df = df.assign(mapping_source_version = f'biomappings_{datetime.now().strftime("%Y%m%d")}')
+    assert all(
+        row.object_id.__contains__("CHEBI") for row in df.itertuples()
+    ), f"\n\tObject IDs are not all CHEBI: {df.subject_id.unique()}\n"
 
-# Write to file
-df.to_csv(output_file, sep='\t', index=False)
+    # TODO @cthoyt make this version information available inside the YAML metadata
+    df = df.assign(license=metadata["license"])
+    df = df.assign(mapping_source=path)
+    df = df.assign(
+        mapping_source_version=f'biomappings_{datetime.now().strftime("%Y%m%d")}'
+    )
+
+    # Write to file
+    df.to_csv(output, sep="\t", index=False)
+
+
+if __name__ == "__main__":
+    main()
