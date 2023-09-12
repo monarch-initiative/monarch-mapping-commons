@@ -48,7 +48,10 @@ def main(path: str, output: Path):
     converter.pd_standardize_curie(df, column="subject_id")
     converter.pd_standardize_curie(df, column="object_id")
 
-    # Get only chebi to mesh rows
+    # Remove negative mappings
+    df = df[df["predicate_modifier"] != "Not"]
+
+    # Get only ChEBI to MeSH rows
     df = df[
         (df["subject_id"].str.startswith("MESH"))
         & (df["object_id"].str.startswith("CHEBI"))
