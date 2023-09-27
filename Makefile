@@ -1,64 +1,158 @@
-##############################################
-### Generated Makefile - Do not edit!      ###
-### Add custom targets to custom.Makefile  ###
-### See README.md for more information     ###
-##############################################
+###Configuration
+#
+# These are standard options to make Make sane:
+# <http://clarkgrubb.com/makefile-style-guide#toc2>
 
-PROJECT_DIR=projects
-CONFIG_DIR=config
-MAPPINGS_DIR=mappings
-TMP_DIR=tmp
+MAKEFLAGS += --warn-undefined-variables
+SHELL := bash
+.SHELLFLAGS := -eu -o pipefail -c
+.DEFAULT_GOAL := all
+.DELETE_ON_ERROR:
+.SUFFIXES:
+.SECONDARY:
 
-$(MAPPINGS_DIR)/ $(TMP_DIR)/:
+VERSION_MAKEFILE = 				0.1
+TODAY ?=                    	$(shell date +%Y-%m-%d)
+ROBOT =							robot
+MAPPING_DIR = 					mappings
+SCRIPT_DIR =					scripts
+SRC_DIR = 						sources
+TMP_DIR = 						tmp
+SSSOM_TOOLKIT = 				sssom
+TSVALID = 						tsvalid
+
+
+$(MAPPING_DIR)/ $(SCRIPT_DIR)/ $(SRC_DIR)/ $(TMP_DIR)/:
 	mkdir -p $@
 
-MAKEFILE_TEMPLATE=$(CONFIG_DIR)/project.Makefile.j2
+#######################################
+##### Mapping maintenance  ############
+#######################################
 
-ALL_PROJECTS=$(strip $(patsubst %.symbiont.yaml, %, $(notdir $(wildcard $(PROJECT_DIR)/*.yaml))))
-ALL_SYMBIONT = $(patsubst %, symbiont-%, $(ALL_PROJECTS))
+mapping-%:
+	make $(MAPPING_DIR)/$*.sssom.tsv -B
 
-all:
+.PHONY: mappings
+mappings:
+	make $(shell grep local_name registry.yml | sed 's/local_name: /$(MAPPING_DIR)\//' )
 
-symbiont-%:
-	mkdir -p $(PROJECT_DIR)/$*
-	j2 $(MAKEFILE_TEMPLATE) $(PROJECT_DIR)/$*.symbiont.yaml > $(PROJECT_DIR)/$*/Makefile
-	touch $(PROJECT_DIR)/$*/custom.Makefile
-	cd $(PROJECT_DIR)/$* && make reset_boomer_output && make all HOME_DIR=$(shell pwd) -B
+#######################################
+##### Mapping validation  #############
+#######################################
 
-#####################
-## Mappings #########
-#####################
+validate-%:
+	tsvalid $(MAPPING_DIR)/$*.sssom.tsv --comment "#"
+	$(SSSOM_TOOLKIT) validate $(MAPPING_DIR)/$*.sssom.tsv
+	$(SSSOM_TOOLKIT) convert $(MAPPING_DIR)/$*.sssom.tsv --output-format rdf -o $(TMP_DIR)/$*.sssom.ttl
 
-ALL_MAPPINGS=$(MAPPINGS_DIR)/empty.sssom.tsv $(MAPPINGS_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_exactmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/mondo_broadmatch_icd10cm.sssom.tsv $(MAPPINGS_DIR)/ncit_icd10_2017.sssom.tsv $(MAPPINGS_DIR)/mondo.sssom.tsv $(MAPPINGS_DIR)/biomappings.sssom.tsv 
+MAPPINGS=$(notdir $(wildcard $(MAPPING_DIR)/*.sssom.tsv))
+VALIDATE_MAPPINGS=$(patsubst %.sssom.tsv, validate-%, $(MAPPINGS))
 
+.PHONY: validate-mappings
+validate-mappings: 
+ifeq ($(strip $(MAPPINGS)),)	# Check if MAPPINGS is empty
+	@echo "No mappings found to validate."
+else
+	$(MAKE) $(VALIDATE_MAPPINGS)
+endif
 
-$(MAPPINGS_DIR)/empty.sssom.tsv: | $(MAPPINGS_DIR)/
-	wget https://raw.githubusercontent.com/mapping-commons/mapping-commons.github.io/main/mappings/empty.sssom.tsv -O $@
+#######################################
+##### Mappings  #######################
+#######################################
 
-$(MAPPINGS_DIR)/mondo_hasdbxref_icd10cm.sssom.tsv: | $(MAPPINGS_DIR)/
-	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_hasdbxref_icd10cm.sssom.tsv -O $@
+$(MAPPING_DIR)/%.sssom.tsv:
+	echo "The $* command is not currently implemented"
 
-$(MAPPINGS_DIR)/mondo_exactmatch_icd10cm.sssom.tsv: | $(MAPPINGS_DIR)/
-	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_exactmatch_icd10cm.sssom.tsv -O $@
+#######################################
+##### Utilities  ######################
+#######################################
 
-$(MAPPINGS_DIR)/mondo_narrowmatch_icd10cm.sssom.tsv: | $(MAPPINGS_DIR)/
-	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_narrowmatch_icd10cm.sssom.tsv -O $@
+.PHONY: test
+test: validate-mappings
 
-$(MAPPINGS_DIR)/mondo_broadmatch_icd10cm.sssom.tsv: | $(MAPPINGS_DIR)/
-	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_broadmatch_icd10cm.sssom.tsv -O $@
+.PHONY: version
+version:
+	@echo "Mapping Commons Makefile version: $(VERSION_MAKEFILE) (this is the version of the Mapping Commons Toolkit with which this Makefile was generated)" &&\
+	$(ROBOT) --version
 
-$(MAPPINGS_DIR)/ncit_icd10_2017.sssom.tsv: | $(MAPPINGS_DIR)/
-	wget https://raw.githubusercontent.com/mapping-commons/disease-mappings/main/mappings/ncit_icd10_2017.sssom.tsv -O $@
+# Install cruft if not already installed (needed for running in ODK).
+.PHONY: install-cruft
+install-cruft: 
+	@if ! which cruft > /dev/null; then \
+		echo "Installing cruft..."; \
+		pip install cruft; \
+	else \
+		echo "cruft is already installed."; \
+	fi
 
-$(MAPPINGS_DIR)/mondo.sssom.tsv: | $(MAPPINGS_DIR)/
-	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo.sssom.tsv -O $@
+# Check we are up-to-date with the template
+.PHONY: cruft-check
+cruft-check: install-cruft
+	cruft check
 
-$(MAPPINGS_DIR)/biomappings.sssom.tsv: | $(MAPPINGS_DIR)/
-	wget https://raw.githubusercontent.com/biopragmatics/biomappings/master/docs/_data/sssom/biomappings.sssom.tsv -O $@
+# To view any differences from the template
+.PHONY: cruft-diff
+cruft-diff: install-cruft
+	cruft diff
 
+# To update to the latest version of the template
+.PHONY: update-repo
+update-repo: install-cruft
+	cruft update
 
-mappings: $(ALL_MAPPINGS)
+# To update a project to use new values of template variables
+.PHONY: update-variables
+update-variables: config/project-cruft.json install-cruft
+	cruft update --variables-to-update-file $<
 
-all: $(ALL_MAPPINGS)
+.PHONY: public-release
+public-release:
+	echo "The $* command is not currently implemented" && fail
 
-include custom.Makefile
+.PHONY: clean
+clean:
+	[ -n "$(TMP_DIR)" ] && [ $(TMP_DIR) != "." ] && [ $(TMP_DIR) != "/" ] && [ $(TMP_DIR) != ".." ] && [ -d ./$(TMP_DIR) ] && rm -rf ./$(TMP_DIR)/*
+
+.PHONY: help
+help:
+	@echo "$$data"
+
+define data
+Usage: [IMAGE=(odklite|odkfull)] [ODK_DEBUG=yes] sh odk.sh make command
+
+----------------------------------------
+	Command reference
+----------------------------------------
+
+Core commands:
+* mappings:				Rebuild all mapping files
+* test:					Run all validation tests
+* version:				Show the current version of the Mapping Commons Makefile and ROBOT.
+* help:					Print Mapping Commons Usage information
+* public-release:			Uploads the release file to a release management system, such as GitHub releases. Must be configured.
+
+Mapping management:
+* mapping-%:				Updates the mapping with the id %.
+* validate-%:				Validates the mapping with the id %.
+
+Repo management:
+* update-repo:				Update the repository to the latest version of the template.
+* update-variables:			Update the repository to use new values for the template variables.
+* cruft-check:				Check if the repository is up-to-date with the template.
+* cruft-diff:				View any differences from the template.
+* clean:				Delete all temporary files
+
+Examples: 
+* sh odk.sh make mappings
+* sh odk.sh make update-repo
+* sh odk.sh make test
+
+Tricks:
+* Add -B to the end of your command to force re-running it even if nothing has changed
+* Use the IMAGE parameter to the odk.sh script to use a different image like odklite
+* Use ODK_DEBUG=yes sh odk.sh make ... to print information about timing and debugging
+
+endef
+export data
+
+include monarch_mapping_commons.Makefile
