@@ -17,7 +17,7 @@ MAKEFILE_TEMPLATE=$(CONFIG_DIR)/project.Makefile.j2
 ALL_PROJECTS=$(strip $(patsubst %.symbiont.yaml, %, $(notdir $(wildcard $(PROJECT_DIR)/*.yaml))))
 ALL_SYMBIONT = $(patsubst %, symbiont-%, $(ALL_PROJECTS))
 
-all: $(ALL_SYMBIONT)
+all:
 
 symbiont-%:
 	mkdir -p $(PROJECT_DIR)/$*
