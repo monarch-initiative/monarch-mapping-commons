@@ -1,0 +1,27 @@
+mapping_registry_id: https://w3id.org/sssom/commons/monarch
+mapping_registry_title: Monarch Mapping Commons
+mapping_registry_description: A collection of the SSSOM-format mappings used for the Monarch Initiative knowledge graph
+homepage: https://github.com/monarch-initiative/monarch-mapping-commons
+
+mapping_set_references:
+  # MONDO disease mappings
+  - mapping_set_id: http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv
+    mapping_set_group: disease_mappings
+    local_name: mondo.sssom.tsv
+    mapping_set_confidence: "0.99"
+    other:
+      local_id: mondo
+
+  # Biomappings for CTD
+  - mapping_set_id: http://w3id.org/sssom/commons/monarch/biomappings.sssom.tsv
+    # mapping_set_group: disease_mappings
+    local_name: biomappings.sssom.tsv
+    mirror_from: https://raw.githubusercontent.com/biopragmatics/biomappings/master/docs/_data/sssom/biomappings.sssom.tsv
+    mapping_set_confidence: "0.9"
+
+  # Monarch Gene Mappings
+  - mapping_set_id: http://w3id.org/sssom/commons/monarch/gene_mappings.sssom.tsv
+    mapping_set_group: gene_mappings
+    local_name: gene_mappings.sssom.tsv
+    mirror_from: http://data.monarchinitiative.org/monarch-gene-mapping/latest/gene_mappings.tsv
+    mapping_set_confidence: "0.9"

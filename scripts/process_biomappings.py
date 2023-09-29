@@ -21,14 +21,14 @@ YAML_URL = "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.y
 
 @click.command(name="Monarch Mapping Commons")
 @click.option(
-    "--path",
+    "--input",
     default=TSV_URL,
     help="URL or path to biomappings file",
 )
 @click.option(
     "--output", type=click.Path(), default=DEFAULT_OUTPUT, help="Path to output file"
 )
-def main(path: str, output: Path):
+def main(input: str, output: Path):
     converter = curies.Converter(
         [
             curies.Record(
@@ -45,7 +45,7 @@ def main(path: str, output: Path):
     )
 
     # Read biomappings file
-    df = pd.read_csv(path, sep="\t")
+    df = pd.read_csv(input, sep="\t")
 
     res = requests.get(YAML_URL)
     metadata = yaml.safe_load(res.text)
