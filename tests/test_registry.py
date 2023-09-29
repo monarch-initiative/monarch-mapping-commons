@@ -7,7 +7,7 @@ import yaml
 def test_registry():
     """Test that all files in the registry are available at the expected URLs"""
 
-    registry = Path(__file__).parent.parent / 'registry.yaml'
+    registry = Path(__file__).parent.parent / 'registry.yml'
     with open(registry, 'r') as f:
         registry = yaml.safe_load(f)
 
