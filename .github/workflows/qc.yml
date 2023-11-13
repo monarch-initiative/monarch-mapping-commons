@@ -24,6 +24,10 @@ jobs:
           DEFAULT_BRANCH: main
         run: pip install --upgrade pip && pip install -U sssom 
       - uses: actions/checkout@v2
+      - name: Prepare mappings
+        env:
+          DEFAULT_BRANCH: main
+        run: make mappings
       - name: Run Mapping QC checks
         env:
           DEFAULT_BRANCH: main
