@@ -30,4 +30,5 @@ $(MAPPING_DIR)/gene_mappings.sssom.tsv:
 	wget http://data.monarchinitiative.org/monarch-gene-mapping/latest/gene_mappings.tsv -O $(TMP_DIR)/gene_mappings.sssom.tsv
 	# see https://github.com/monarch-initiative/monarch-mapping-commons/issues/33
 	grep -v "<NA>" $(TMP_DIR)/gene_mappings.sssom.tsv > $@.tmp && mv $@.tmp $(TMP_DIR)/gene_mappings.sssom.tsv
+	grep -v ";" $(TMP_DIR)/gene_mappings.sssom.tsv > $@.tmp && mv $@.tmp $(TMP_DIR)/gene_mappings.sssom.tsv
 	sssom parse $(TMP_DIR)/gene_mappings.sssom.tsv -m $(METADATA_DIR)/gene_mappings.sssom.yml --prefix-map-mode merged -o $@
