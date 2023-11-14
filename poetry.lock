@@ -2007,6 +2007,24 @@ files = [
 ]
 
 [[package]]
+name = "tsvalid"
+version = "0.0.3"
+description = "Validation of TSV files"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "tsvalid-0.0.3.tar.gz", hash = "sha256:277f20c241cb5646fbd2d9d2fab70e6bd3f37f5724fcf1a519195747cef0297f"},
+]
+
+[package.dependencies]
+click = "*"
+validators = "*"
+
+[package.extras]
+docs = ["recommonmark", "sphinx", "sphinx-autodoc-typehints", "sphinx-click", "sphinx-rtd-theme"]
+test = ["pytest"]
+
+[[package]]
 name = "typer"
 version = "0.9.0"
 description = "Typer, build great CLIs. Easy to code. Based on Python type hints."
@@ -2224,4 +2242,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.13"
-content-hash = "08161f32bfb4efa7c91e1c76bf4bda8c14468d954b1ac360ff0893614dd26553"
+content-hash = "93f89156c9bab57a4acca7821757033a459d48c9840300f921a85d814ff16b67"
