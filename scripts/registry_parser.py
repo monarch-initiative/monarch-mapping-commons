@@ -1,5 +1,6 @@
 """
-Script to process the registry and transform them into Turtle to upload on OxO2
+Script to process the registry and transform the mapping sets into Turtle to
+upload on OxO2
 """
 
 import argparse
@@ -16,7 +17,7 @@ from sssom_schema import SSSOM, MappingRegistry, MappingSetReference
 
 def registry_parser(config: str) -> MappingRegistry:
     """ Parse registry and return MappingRegistry """
-    with open(file=config, mode="r", encoding="") as f:
+    with open(file=config, mode="r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
 
     map_set_refs = (
@@ -88,7 +89,7 @@ def add_uuid_n_expand_curie(entry: dict) -> dict:
 
         mapping["subject_id"] = expand_curie(mapping["subject_id"], context)
         mapping["object_id"] = expand_curie(mapping["object_id"], context)
-    return input
+    return entry
 
 
 def get_context(entry: dict) -> dict:
@@ -112,9 +113,15 @@ def read_mappings(config: str):
     for _, mapping_set_ref in registry.mapping_set_references.items():
         print(f"Parsing mapping_set_id {mapping_set_ref.mapping_set_id}")
 
-        mapping_json = update_context(add_uuid_n_expand_curie(
-            to_json(
-                parse_sssom_table(f"mappings/{mapping_set_ref.local_name}"))))
+        mapping_json = update_context(
+            add_uuid_n_expand_curie(
+                to_json(
+                    parse_sssom_table(
+                        f"mappings/{mapping_set_ref.local_name}"
+                    )
+                )
+            )
+        )
 
         context = get_context(mapping_json)
 
