@@ -89,6 +89,8 @@ def add_uuid_n_expand_curie(entry: dict) -> dict:
 
         mapping["subject_id"] = expand_curie(mapping["subject_id"], context)
         mapping["object_id"] = expand_curie(mapping["object_id"], context)
+        # Add default confidence 1 for each mapping
+        mapping["confidence"] = 1.0
     return entry
 
 
