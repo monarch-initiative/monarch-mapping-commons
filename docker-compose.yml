@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  api:
+    image: anitacaron/sssom-api:v0.1.0
+    command: uvicorn app.main:app --host 0.0.0.0
+    ports:
+      - 8008:8008
+    depends_on:
+      - triplestore
+      - upload-triplestore
+    environment:
+      - SPARQL_ENDPOINT=http://triplestore:9999/blazegraph/namespace/kb/sparql
+  triplestore:
+    image: anitacaron/blazegraph:v0.4
+    environment:
+      - JAVA_OPTS=-Xmx16G
+    ports:
+      - 9999:9999
+    volumes:
+      - ./data:/data
+      - ./config/RWStore.properties:/RWStore.properties
+      - ./config/log4j.properties:/log4j.properties
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://triplestore:9999/"]
+      interval: 3s
+      timeout: 5s
+      retries: 3
+  upload-triplestore:
+    image: anitacaron/upload-triplestore:v0.1.0
+    depends_on:
+      - triplestore
+    links:
+      - triplestore
+    environment:
+      - SERVER=http://triplestore:9999/blazegraph
+    volumes:
+      - ./data:/data
+      - ./config/RWStore.properties:/RWStore.properties
+  oxo2:
+    image: ghcr.io/ebispot/oxo2:dev
+    env_file: .env
+    ports:
+      - 8080:8080
