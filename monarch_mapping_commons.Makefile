@@ -30,5 +30,6 @@ $(MAPPING_DIR)/gene_mappings.sssom.tsv:
 	wget http://data.monarchinitiative.org/monarch-gene-mapping/latest/gene_mappings.sssom.tsv -O $(TMP_DIR)/gene_mappings.sssom.tsv
 	sssom parse $(TMP_DIR)/gene_mappings.sssom.tsv -m $(METADATA_DIR)/gene_mappings.sssom.yml --prefix-map-mode merged -o $@
 
+.PHONY: mappings_to_ttl
 mappings_to_ttl: mappings
 	$(RUN) python3 $(SCRIPT_DIR)/registry_parser.py registry.yml
