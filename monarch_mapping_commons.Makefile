@@ -31,8 +31,8 @@ $(MAPPING_DIR)/gene_mappings.sssom.tsv:
 	sssom parse $(TMP_DIR)/gene_mappings.sssom.tsv -m $(METADATA_DIR)/gene_mappings.sssom.yml --prefix-map-mode merged -o $@
 
 
-hp_mesh:$(MAPPING_DIR)/hp_mesh.sssom.tsv
-umls_hp:$(MAPPING_DIR)/umls_hp.sssom.tsv
+$(MAPPING_DIR)/hp_mesh.sssom.tsv:
+	wget https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/hp_mesh.sssom.tsv -O $@
 
-$(MAPPING_DIR)/%.sssom.tsv:
-	wget https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/$*.sssom.tsv -O $@
+$(MAPPING_DIR)/umls_hp.sssom.tsv:
+	wget https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/umls_hp.sssom.tsv -O $@
