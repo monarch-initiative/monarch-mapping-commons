@@ -29,3 +29,10 @@ $(MAPPING_DIR)/gene_mappings.sssom.tsv:
 	mkdir -p $(MAPPING_DIR) $(TMP_DIR)
 	wget http://data.monarchinitiative.org/monarch-gene-mapping/latest/gene_mappings.sssom.tsv -O $(TMP_DIR)/gene_mappings.sssom.tsv
 	sssom parse $(TMP_DIR)/gene_mappings.sssom.tsv -m $(METADATA_DIR)/gene_mappings.sssom.yml --prefix-map-mode merged -o $@
+
+
+hp_mesh:$(MAPPING_DIR)/hp_mesh.sssom.tsv
+umls_hp:$(MAPPING_DIR)/umls_hp.sssom.tsv
+
+$(MAPPING_DIR)/%.sssom.tsv:
+	wget https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/$*.sssom.tsv -O $@
