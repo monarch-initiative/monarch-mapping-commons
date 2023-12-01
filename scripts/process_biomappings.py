@@ -14,7 +14,6 @@ HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
 DEFAULT_OUTPUT = ROOT.joinpath("mappings", "biomappings.sssom.tsv")
 
-
 TSV_URL = "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv"
 YAML_URL = "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.yml"
 
@@ -29,21 +28,22 @@ YAML_URL = "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.y
     "--output", type=click.Path(), default=DEFAULT_OUTPUT, help="Path to output file"
 )
 def main(input: str, output: Path):
-    converter = curies.Converter(
-        [
-            curies.Record(
-                prefix="CHEBI",
-                prefix_synonyms=["chebi"],
-                uri_prefix="http://purl.obolibrary.org/obo/CHEBI_",
-            ),
-            curies.Record(
-                prefix="MESH",
-                prefix_synonyms=["mesh"],
-                uri_prefix="http://purl.obolibrary.org/obo/MESH_",
-            ),
-        ]
-    )
-
+    # converter = curies.Converter(
+    #     [
+    #         curies.Record(
+    #             prefix="CHEBI",
+    #             prefix_synonyms=["chebi"],
+    #             uri_prefix="http://purl.obolibrary.org/obo/CHEBI_",
+    #         ),
+    #         curies.Record(
+    #             prefix="MESH",
+    #             prefix_synonyms=["mesh"],
+    #             uri_prefix="http://purl.obolibrary.org/obo/MESH_",
+    #         ),
+    #     ]
+    # )
+    converter = curies.get_obo_converter()
+    
     # Read biomappings file
     df = pd.read_csv(input, sep="\t")
 
