@@ -5,7 +5,7 @@ services:
     image: anitacaron/sssom-api:v0.1.0
     command: uvicorn app.main:app --host 0.0.0.0
     ports:
-      - 8008:8008
+      - 8008:8000
     depends_on:
       - triplestore
       - upload-triplestore
