@@ -3,12 +3,12 @@ A script to process Biopragmatics' biomappings file into CHEBI-to-MESH mappings 
 """
 
 from pathlib import Path
+import yaml
 
+import click
 import requests
 import pandas as pd
-import curies
-import click
-import yaml
+from sssom import get_converter
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
@@ -28,21 +28,7 @@ YAML_URL = "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.y
     "--output", type=click.Path(), default=DEFAULT_OUTPUT, help="Path to output file"
 )
 def main(input: str, output: Path):
-    # converter = curies.Converter(
-    #     [
-    #         curies.Record(
-    #             prefix="CHEBI",
-    #             prefix_synonyms=["chebi"],
-    #             uri_prefix="http://purl.obolibrary.org/obo/CHEBI_",
-    #         ),
-    #         curies.Record(
-    #             prefix="MESH",
-    #             prefix_synonyms=["mesh"],
-    #             uri_prefix="http://purl.obolibrary.org/obo/MESH_",
-    #         ),
-    #     ]
-    # )
-    converter = curies.get_obo_converter()
+    converter = get_converter()
     
     # Read biomappings file
     df = pd.read_csv(input, sep="\t")
