@@ -8,7 +8,7 @@ import yaml
 import click
 import requests
 import pandas as pd
-from sssom import get_converter
+from sssom.context import get_converter
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
@@ -24,33 +24,27 @@ YAML_URL = "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.y
     default=TSV_URL,
     help="URL or path to biomappings file",
 )
-@click.option(
-    "--output", type=click.Path(), default=DEFAULT_OUTPUT, help="Path to output file"
-)
+@click.option("--output", type=click.Path(), default=DEFAULT_OUTPUT, help="Path to output file")
 def main(input: str, output: Path):
-    converter = get_converter()
-    
     # Read biomappings file
     df = pd.read_csv(input, sep="\t")
 
     res = requests.get(YAML_URL)
     metadata = yaml.safe_load(res.text)
 
-    converter.pd_standardize_curie(df, column="subject_id")
-    converter.pd_standardize_curie(df, column="object_id")
-
     # Remove negative mappings
     df = df[df["predicate_modifier"] != "Not"]
 
-    # Get only ChEBI to MeSH rows
-    df = df[
-        (df["subject_id"].str.startswith("MESH"))
-        & (df["object_id"].str.startswith("CHEBI"))
-    ]
+    # Get only ChEBI to MESH rows
+    df = df[(df["subject_id"].str.startswith("mesh")) & (df["object_id"].str.startswith("CHEBI"))]
+
+    # Convert subject_id to upper case
+    # df["subject_id"] = df["subject_id"].str.upper()
 
     # Assert that all subject-IDs are MESH and all object-IDs are CHEBI
     assert all(
-        row.subject_id.__contains__("MESH") for row in df.itertuples()
+        # row.subject_id.__contains__("MESH") for row in df.itertuples()
+        row.subject_id.__contains__("mesh") for row in df.itertuples()
     ), f"\n\tSubject IDs are not all MESH: {df.subject_id.unique()}\n"
 
     assert all(
@@ -68,6 +62,11 @@ def main(input: str, output: Path):
         ]
     }
     df = df.assign(**subset)
+
+    # Standardize CURIEs
+    converter = get_converter()
+    converter.pd_standardize_curie(df, column="subject_id")
+    converter.pd_standardize_curie(df, column="object_id")
 
     # Write to file
     df.to_csv(output, sep="\t", index=False)
