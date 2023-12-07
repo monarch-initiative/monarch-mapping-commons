@@ -36,3 +36,7 @@ $(MAPPING_DIR)/hp_mesh.sssom.tsv:
 
 $(MAPPING_DIR)/umls_hp.sssom.tsv:
 	wget https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/umls_hp.sssom.tsv -O $@
+
+benchmark:
+	pip install py-spy
+	sudo py-spy record -o flamegraph.svg -- $(SSSOM_TOOLKIT) validate $(MAPPING_DIR)/gene_mappings.sssom.tsv
