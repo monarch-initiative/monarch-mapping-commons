@@ -39,12 +39,12 @@ def main(input: str, output: Path):
     df = df[(df["subject_id"].str.startswith("mesh")) & (df["object_id"].str.startswith("CHEBI"))]
 
     # Convert subject_id to upper case
-    # df["subject_id"] = df["subject_id"].str.upper()
+    df["subject_id"] = df["subject_id"].str.upper()
 
     # Assert that all subject-IDs are MESH and all object-IDs are CHEBI
     assert all(
-        # row.subject_id.__contains__("MESH") for row in df.itertuples()
-        row.subject_id.__contains__("mesh") for row in df.itertuples()
+        row.subject_id.__contains__("MESH") for row in df.itertuples()
+        # row.subject_id.__contains__("mesh") for row in df.itertuples()
     ), f"\n\tSubject IDs are not all MESH: {df.subject_id.unique()}\n"
 
     assert all(
