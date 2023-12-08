@@ -32,3 +32,13 @@ $(MAPPING_DIR)/gene_mappings.sssom.tsv:
 	grep -v "<NA>" $(TMP_DIR)/gene_mappings.sssom.tsv > $@.tmp && mv $@.tmp $(TMP_DIR)/gene_mappings.sssom.tsv
 	grep -v ";" $(TMP_DIR)/gene_mappings.sssom.tsv > $@.tmp && mv $@.tmp $(TMP_DIR)/gene_mappings.sssom.tsv
 	sssom parse $(TMP_DIR)/gene_mappings.sssom.tsv -m $(METADATA_DIR)/gene_mappings.sssom.yml --prefix-map-mode merged -o $@
+
+
+$(TMP_DIR)/upheno/%:
+	mkdir -p $(TMP_DIR)/upheno/
+	wget https://bbop-ontologies.s3.amazonaws.com/upheno/current/upheno-release/all/$* -O $@
+
+$(MAPPING_DIR)/upheno_custom_mapping.sssom.tsv: $(patsubst %, $(TMP_DIR)/upheno/%, upheno_species_lexical.csv upheno_mapping_logical.csv upheno_all_with_relations.owl)
+	mkdir -p $(MAPPING_DIR) $(TMP_DIR)
+	phenio-toolkit lexical-mapping --species-lexical $(TMP_DIR)/upheno/upheno_species_lexical.csv -m $(TMP_DIR)/upheno/upheno_mapping_logical.csv -o $(TMP_DIR)
+	sssom parse $(TMP_DIR)/upheno_custom_mapping.sssom.tsv --metadata $(METADATA_DIR)/upheno_custom_mapping.sssom.yml -C merged -o $@
