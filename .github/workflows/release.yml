@@ -1,0 +1,33 @@
+name: Run and deploy release
+on:
+  workflow_dispatch:
+#  schedule:
+#    - cron: "0 0 1 * *"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container: obolibrary/odkfull:v1.4
+    steps:
+      - name: Install latest SSSOM
+        env:
+          DEFAULT_BRANCH: main
+        run: pip install --upgrade pip && pip install -U sssom>=0.4.0 
+      - uses: actions/checkout@v2
+      - name: Prepare mappings
+        env:
+          DEFAULT_BRANCH: main
+        run: make RUN="" mappings
+      - name: Run Mapping QC checks
+        env:
+          DEFAULT_BRANCH: main
+        run: make test
+      - name: Run release
+        uses: softprops/action-gh-release@v1
+        with:
+          generate_release_notes: true
+          draft: true
+          tag_name: v${{ steps.date.outputs.date }}
+          files: |
+            mappings/*.sssom.tsv
+            

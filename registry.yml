@@ -23,5 +23,19 @@ mapping_set_references:
   - mapping_set_id: http://w3id.org/sssom/commons/monarch/gene_mappings.sssom.tsv
     mapping_set_group: gene_mappings
     local_name: gene_mappings.sssom.tsv
-    mirror_from: http://data.monarchinitiative.org/monarch-gene-mapping/latest/gene_mappings.tsv
+    mirror_from: https://data.monarchinitiative.org/monarch-gene-mapping/latest/gene_mappings.sssom.tsv
+    mapping_set_confidence: "0.9"
+
+  # HP-Mesh Mappings
+  - mapping_set_id: http://w3id.org/sssom/commons/monarch/hp_mesh.sssom.tsv
+    mapping_set_group: phenotype
+    local_name: hp_mesh.sssom.tsv
+    mirror_from: https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/hp_mesh.sssom.tsv
+    mapping_set_confidence: "0.9"
+
+  # UMLS-HP Mappings
+  - mapping_set_id: http://w3id.org/sssom/commons/monarch/umls_hp.sssom.tsv
+    mapping_set_group: phenotype
+    local_name: umls_hp.sssom.tsv
+    mirror_from: https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/umls_hp.sssom.tsv
     mapping_set_confidence: "0.9"

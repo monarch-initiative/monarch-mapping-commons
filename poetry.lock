@@ -1546,14 +1546,14 @@ files = [
 
 [[package]]
 name = "oaklib"
-version = "0.5.23"
+version = "0.5.24"
 description = "Ontology Access Kit: Python library for common ontology operations over a variety of backends"
 category = "main"
 optional = false
 python-versions = ">=3.9,<4.0.0"
 files = [
-    {file = "oaklib-0.5.23-py3-none-any.whl", hash = "sha256:a6c1bd2a368298b941a66b16ec213bd3640ffcd3998a3fe45b3853d6b9de549f"},
-    {file = "oaklib-0.5.23.tar.gz", hash = "sha256:6eec623f0b07a359518814092588e60b49b6f9179f6b918817294bc60aa7f0b9"},
+    {file = "oaklib-0.5.24-py3-none-any.whl", hash = "sha256:21a9b49677caf44686e908b9d76a6dec2167620404f79745a966fcb9d9974e34"},
+    {file = "oaklib-0.5.24.tar.gz", hash = "sha256:279a570012eecc309dd0adf178d369ef6ec70be43debd528ffecb106f7abaa4b"},
 ]
 
 [package.dependencies]
@@ -1583,7 +1583,7 @@ semsimian = ">=0.2.1,<0.3.0"
 semsql = ">=0.3.1"
 SPARQLWrapper = "*"
 SQLAlchemy = ">=1.4.32"
-sssom = "<0.4.0"
+sssom = ">=0.4.0,<0.5.0"
 
 [package.extras]
 gilda = ["gilda (>=1.0.0)", "urllib3 (<2)"]
@@ -2986,25 +2986,24 @@ url = ["furl (>=0.4.1)"]
 
 [[package]]
 name = "sssom"
-version = "0.3.41"
+version = "0.4.0"
 description = "Operations on SSSOM mapping tables"
 category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "sssom-0.3.41-py3-none-any.whl", hash = "sha256:04ce1935b3492019b16b7b748c49af366f84bbd3c059982af992d049f46098e7"},
-    {file = "sssom-0.3.41.tar.gz", hash = "sha256:1d09fa9f88153963372811af829ebc1e5aefff935a4e6e12bcb65c94181aa730"},
+    {file = "sssom-0.4.0-py3-none-any.whl", hash = "sha256:5510f58b8a82528afe7d66df9f2bded1415bb95e491cb93f92925badbec62774"},
+    {file = "sssom-0.4.0.tar.gz", hash = "sha256:263fa80456b74068dbd64126395875f6535c6b6f2311e4811c5dbac786d77ce1"},
 ]
 
 [package.dependencies]
 click = ">=8.1.6"
-curies = ">=0.5.7"
+curies = ">=0.7.3"
 deprecation = ">=2.1.0,<3.0.0"
-importlib-metadata = ">=6.8.0"
 linkml-runtime = ">=1.5.5"
-networkx = ">=3.1"
-pandas = ">=2.0.3"
-pansql = ">=0.0.1"
+networkx = {version = ">=3.1", extras = ["networkx"]}
+pandas = ">1.0.3"
+pansql = {version = ">=0.0.1", extras = ["pansql"]}
 pyyaml = ">=6.0.1,<7.0.0"
 rdflib = ">=6.0.0"
 scipy = {version = "*", extras = ["scipy"]}
@@ -3100,6 +3099,25 @@ dev = ["pytest (>=6)", "pytest-cov", "pytest-timeout", "pytest-xdist"]
 notebook = ["ipywidgets (>=6)"]
 slack = ["slack-sdk"]
 telegram = ["requests"]
+
+[[package]]
+name = "tsvalid"
+version = "0.0.3"
+description = "Validation of TSV files"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "tsvalid-0.0.3.tar.gz", hash = "sha256:277f20c241cb5646fbd2d9d2fab70e6bd3f37f5724fcf1a519195747cef0297f"},
+]
+
+[package.dependencies]
+click = "*"
+validators = "*"
+
+[package.extras]
+docs = ["recommonmark", "sphinx", "sphinx-autodoc-typehints", "sphinx-click", "sphinx-rtd-theme"]
+test = ["pytest"]
 
 [[package]]
 name = "typer"
@@ -3374,4 +3392,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.13"
-content-hash = "bb8bbc6557dda3e4e79ff0cc4b95dad0142702806c18209b9668f04b51ed88df"
+content-hash = "fa8ed6c4fb8606cac65bc1364fff106edbde603ac3edf982569ea38dd41ef86c"
