@@ -51,6 +51,6 @@ $(TMP_DIR)/upheno/%:
 
 $(MAPPING_DIR)/upheno_custom.sssom.tsv: $(patsubst %, $(TMP_DIR)/upheno/%, upheno_species_lexical.csv upheno_mapping_logical.csv upheno_all_with_relations.owl)
 	mkdir -p $(MAPPING_DIR) $(TMP_DIR)
-	phenio-toolkit lexical-mapping --species-lexical $(TMP_DIR)/upheno/upheno_species_lexical.csv -m $(TMP_DIR)/upheno/upheno_mapping_logical.csv -o $(TMP_DIR)
-	sssom parse $(TMP_DIR)/upheno_custom_mapping.sssom.tsv --metadata $(METADATA_DIR)/upheno_custom_mapping.sssom.yml -C merged -o $@
+	$(RUN) phenio-toolkit lexical-mapping --species-lexical $(TMP_DIR)/upheno/upheno_species_lexical.csv -m $(TMP_DIR)/upheno/upheno_mapping_logical.csv -o $(TMP_DIR)
+	$(RUN) sssom parse $(TMP_DIR)/upheno_custom_mapping.sssom.tsv --metadata $(METADATA_DIR)/upheno_custom_mapping.sssom.yml -C merged -o $@
 
