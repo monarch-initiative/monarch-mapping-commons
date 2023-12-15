@@ -15,8 +15,14 @@ HERE = pathlib.Path(__file__).parent.absolute()
 DOWNLOAD_YAML = f"{HERE}/download.yaml"
 
 # prefixes = {
+#     "FB": "https://flybase.org/reports/",
 #     "HGNC": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
-#     "WB": "https://wormbase.org/",
+#     "OMIM": "https://omim.org/MIM:",
+#     "RGD": "http://rgd.mcw.edu/rgdweb/report/gene/main.html?id=",
+#     "UniProtKB": "http://purl.uniprot.org/uniprot/",
+#     "WB": "https://www.wormbase.org/get?name=",
+#     "Xenbase": "https://www.xenbase.org/entry/",
+#     "ZFIN": "http://zfin.org/"
 # }
 # gene_converter = Converter.from_prefix_map(prefixes)
 # sssom_converter = get_converter()
