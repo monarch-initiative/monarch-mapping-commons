@@ -19,7 +19,7 @@ pipeline {
                 ls -la data
 
                 # Copy the data to the GCP bucket
-                gsutil cp data/* gs://monarch-archive/mapping-data-cache/${RELEASE}/
+                gsutil cp -r data/* gs://monarch-archive/mapping-data-cache/${RELEASE}/
                 '''
             }
         }

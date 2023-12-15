@@ -3,24 +3,25 @@ import typer
 import pathlib
 
 from kghub_downloader.download_utils import download_from_yaml
-from sssom.context import get_converter
-from curies import Converter, chain
+# from sssom.context import get_converter
+# from curies import Converter, chain
+from prefixmaps import load_converter
 
 from monarch_gene_mapping.cli_utils import generate_gene_mappings
 from monarch_gene_mapping.uniprot_idmapping_preprocess import filter_uniprot_id_mapping_file
 
 typer_app = typer.Typer()
-sssom_converter = get_converter()
 HERE = pathlib.Path(__file__).parent.absolute()
 DOWNLOAD_YAML = f"{HERE}/download.yaml"
 
-prefixes = {
-    "HGNC": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
-    "WB": "https://wormbase.org/",
-}
-gene_converter = Converter.from_prefix_map(prefixes)
-converter = chain([sssom_converter, gene_converter])
-
+# prefixes = {
+#     "HGNC": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+#     "WB": "https://wormbase.org/",
+# }
+# gene_converter = Converter.from_prefix_map(prefixes)
+# sssom_converter = get_converter()
+# converter = chain([sssom_converter, gene_converter])
+converter = load_converter(["merged"])
 
 @typer_app.command(name="download")
 def _download():
