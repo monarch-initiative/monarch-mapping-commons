@@ -25,7 +25,10 @@ pipeline {
         }
         stage('generate-mapping-files') {
             steps {
-                sh 'make mappings'
+                sh '''
+                poetry shell
+                make mappings
+                '''
             }
         }
         stage('upload-mapping-files'){
