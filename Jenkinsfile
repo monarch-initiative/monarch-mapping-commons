@@ -26,8 +26,7 @@ pipeline {
         stage('generate-mapping-files') {
             steps {
                 sh '''
-                poetry shell
-                make mappings
+                poetry run make mappings
                 '''
             }
         }
