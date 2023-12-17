@@ -36,7 +36,7 @@ pipeline {
                     gsutil cp mappings/*.sssom.tsv gs://monarch-archive/mappings/${RELEASE}/
                     gsutil cp mappings/*.sssom.tsv gs://data-public-monarchinitiative/mappings/${RELEASE}/
 
-                    gsutil rm -f gs://data-public-monarchinitiative/mappings/latest/*
+                    gsutil rm -f gs://data-public-monarchinitiative/mappings/latest/* || true
                     gsutil cp gs://data-public-monarchinitiative/mappings/${RELEASE}/* gs://data-public-monarchinitiative/mappings/latest/
                 '''
             }
