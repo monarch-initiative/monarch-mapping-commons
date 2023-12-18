@@ -29,7 +29,9 @@ jobs:
       - name: Prepare mappings
         env:
           DEFAULT_BRANCH: main
-        run: GH_ACTION=true make RUN="" mappings
+        run: |
+        export GH_ACTION=true
+        make RUN="" mappings
 
       - name: Run Mapping QC checks
         env:
