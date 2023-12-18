@@ -30,8 +30,7 @@ jobs:
         env:
           DEFAULT_BRANCH: main
         run: |
-        export GH_ACTION=true
-        make RUN="" mappings 
+        make RUN="" GH_ACTION=true mappings 
 
       - name: Run Mapping QC checks
         env:

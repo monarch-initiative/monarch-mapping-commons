@@ -1,7 +1,7 @@
 # monarch-mapping-commons
 
-A collection of all SSSOM-style mapping files used for the Monarch Initiative knowledge graph.  
-This repository was created
+This repository contains the source code which generates the SSSOM-style mapping files used for the Monarch Initiative knowledge graph.  
+The pipeline is run via Jenkins and the resulting mapping files are uploaded to Google Cloud Storage, hosted at https://data.monarchinitiative.org/mappings/
 
 ## Repository Structure
 
