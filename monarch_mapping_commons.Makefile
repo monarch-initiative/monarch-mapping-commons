@@ -34,7 +34,7 @@ $(MAPPING_DIR)/mesh_chebi_biomappings.sssom.tsv:
 
 
 $(MAPPING_DIR)/gene_mappings.sssom.tsv:
-	ifeq ($(GH_ACTION),true)
+	ifeq ($(GH_ACTION), true)
 		mkdir -p $(MAPPING_DIR) $(TMP_DIR)
 		$(RUN) gene-mapping generate --download --preprocess-uniprot --output-dir $(TMP_DIR)
 		$(RUN) sssom parse $(TMP_DIR)/gene_mappings.sssom.tsv -m $(METADATA_DIR)/gene_mappings.sssom.yml --prefix-map-mode merged -o $@
