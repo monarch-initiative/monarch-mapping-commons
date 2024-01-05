@@ -4,15 +4,25 @@ version = "0.1.0"
 description = "A collection of all SSSOM-style mapping files used for the Monarch Initiative knowledge graph"
 authors = ["glass-ships <glass.ships@outlook.com>"]
 readme = "README.md"
+packages = [
+    { include = "monarch_gene_mapping", from = "src" },
+]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.13"
 cruft = "^2.15.0"
+kghub-downloader = "<1"
 pandas = "^2.1"
 pytest = "^7.4.2"
 sssom = "^0.4"
 tsvalid = "^0.0.3"
+typer = "<1"
 phenio-toolkit = "^0.1.2"
+# pin prefixmaps until fixed
+prefixmaps = "0.1.7"
+
+[tool.poetry.scripts]
+gene-mapping = "monarch_gene_mapping.main:typer_app"
 
 [build-system]
 requires = ["poetry-core"]
