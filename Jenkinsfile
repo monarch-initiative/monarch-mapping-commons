@@ -26,7 +26,7 @@ pipeline {
         stage('generate-mapping-files') {
             steps {
                 sh '''
-                poetry run make mappings
+                poetry run make GH_ACTION=false mappings
                 '''
             }
         }
