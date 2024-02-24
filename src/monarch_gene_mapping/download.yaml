@@ -1,0 +1,42 @@
+---
+# Alliance
+-
+  url: https://fms.alliancegenome.org/download/GENECROSSREFERENCE_COMBINED.tsv.gz
+  local_name: data/alliance/GENECROSSREFERENCE_COMBINED.tsv.gz
+  tag: alliance
+
+# HGNC
+-
+  url: http://ftp.ebi.ac.uk/pub/databases/genenames/hgnc/tsv/hgnc_complete_set.txt
+  local_name: data/hgnc/hgnc_complete_set.txt
+  tag: hgnc_gene
+
+  # NCBI
+-
+  url: https://ftp.ncbi.nih.gov/gene/DATA/gene2ensembl.gz
+  local_name: data/ncbi/gene2ensembl.gz
+  tag: ncbi
+
+  # UniProtKB - caution! the original UniProt file is a *huge* 11 GB archive file!
+  # This file may be prefiltered down to target species using the 'uniprot_idmapping_preprocess.py' script:
+  #
+  # usage: uniprot_idmapping_preprocess.py [-h] [-d DIRECTORY] [-s SOURCE] [-t TARGET] [-n NUMBER_OF_LINES]
+  #
+  # optional arguments:
+  #  -h, --help            show this help message and exit
+  #  -d DIRECTORY, --directory DIRECTORY
+  #                        Working directory containing the data (default: '../data/uniprot')
+  #  -s SOURCE, --source SOURCE
+  #                        Source root data file name (default: 'idmapping_selected.tab')
+  #  -t TARGET, --target TARGET
+  #                        Target root data file name (default: 'idmapping_filtered.tsv')
+  #  -n NUMBER_OF_LINES, --number_of_lines NUMBER_OF_LINES
+  #                        Maximum (positive) number of lines to process; n == 0 implies 'process all' (default: 0 == 'all')
+  #
+  # NOTE: the above scripts assume default values that convert the 'data/uniprot/idmapping_selected.tab.gz' to a
+  #       taxonomically-filtered file named 'data/uniprot/idmapping_filtered.tsv.gz'
+  #       The set of target species is currently hard-coded at the top of this filter script.
+-
+  url: https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/idmapping/idmapping_selected.tab.gz
+  local_name: data/uniprot/idmapping_selected.tab.gz
+  tag: uniprot

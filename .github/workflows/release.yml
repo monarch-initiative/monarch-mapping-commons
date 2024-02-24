@@ -9,10 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     container: obolibrary/odkfull:v1.4
     steps:
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - name: Install latest SSSOM
         env:
           DEFAULT_BRANCH: main
-        run: pip install --upgrade pip && pip install -U sssom>=0.4.0 
+        run: pip install --upgrade pip && pip install -U sssom>=0.4.0  phenio-toolkit
       - uses: actions/checkout@v2
       - name: Prepare mappings
         env:

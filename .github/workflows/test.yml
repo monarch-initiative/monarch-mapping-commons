@@ -1,4 +1,4 @@
-name: Test Registry
+name: Test
 on:
   push:
     branches: [ main ]
@@ -23,5 +23,8 @@ jobs:
       - name: Install library
         run: poetry install --no-interaction
 
-      - name: Run tests
-        run: poetry run pytest
+      - name: Test Registry
+        run: poetry run pytest tests/test_registry.py
+
+      - name: Test Gene Mapping Utils
+        run: poetry run pytest tests/unit
