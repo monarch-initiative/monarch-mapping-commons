@@ -50,6 +50,13 @@ $(MAPPING_DIR)/hp_mesh.sssom.tsv:
 $(MAPPING_DIR)/umls_hp.sssom.tsv:
 	wget https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/umls_hp.sssom.tsv -O $@
 
+.PHONY: mappings_to_ttl
+mappings_to_ttl: mappings
+	$(RUN) python3 $(SCRIPT_DIR)/registry_parser.py registry.yml
+
+benchmark:
+	pip install py-spy
+	sudo py-spy record -o flamegraph.svg -- $(SSSOM_TOOLKIT) validate $(MAPPING_DIR)/gene_mappings.sssom.tsv
 
 $(TMP_DIR)/upheno/%:
 	mkdir -p $(TMP_DIR)/upheno/
@@ -58,5 +65,5 @@ $(TMP_DIR)/upheno/%:
 
 $(MAPPING_DIR)/upheno_custom.sssom.tsv: $(patsubst %, $(TMP_DIR)/upheno/%, upheno_species_lexical.csv upheno_mapping_logical.csv upheno_all_with_relations.owl)
 	mkdir -p $(MAPPING_DIR) $(TMP_DIR)
-	phenio-toolkit lexical-mapping --species-lexical $(TMP_DIR)/upheno/upheno_species_lexical.csv -m $(TMP_DIR)/upheno/upheno_mapping_logical.csv -o $(TMP_DIR)
-	sssom parse $(TMP_DIR)/upheno_custom_mapping.sssom.tsv --metadata $(METADATA_DIR)/upheno_custom_mapping.sssom.yml -C merged -o $@
+	$(RUN) phenio-toolkit lexical-mapping --species-lexical $(TMP_DIR)/upheno/upheno_species_lexical.csv -m $(TMP_DIR)/upheno/upheno_mapping_logical.csv -o $(TMP_DIR)
+	$(RUN) sssom parse $(TMP_DIR)/upheno_custom_mapping.sssom.tsv --metadata $(METADATA_DIR)/upheno_custom_mapping.sssom.yml -C merged -o $@
