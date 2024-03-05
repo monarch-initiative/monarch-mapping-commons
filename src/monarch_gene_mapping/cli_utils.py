@@ -267,6 +267,27 @@ def generate_gene_mappings() -> DataFrame:
     assert len(uniprot_to_ncbi) > 70000
     mapping_dataframes.append(uniprot_to_ncbi)
 
+    print("\nGenerating NCBI Gene to PomBase mappings...")
+    ncbigene_df = pd.read_csv("data/ncbi/gene_info.gz", compression="gzip", sep="\t", usecols=["#tax_id", "GeneID", "LocusTag"])
+    # rename #tax_id column to tax_id
+    ncbigene_df.rename(columns={"#tax_id": "tax_id"}, inplace=True)
+    # filter to just pombe
+    ncbigene_df = ncbigene_df[ncbigene_df["tax_id"] == 4896]
+
+    ncbi_to_pombase = df_mappings(df=ncbigene_df,
+                subject_column="GeneID",
+                object_column="LocusTag",
+                subject_curie_prefix="NCBIGene:",
+                object_curie_prefix="PomBase:",
+                predicate_id="skos:exactMatch",
+                mapping_justification="semapv:UnspecifiedMatching")
+    valid_pombase_genes = pd.read_csv("data/pombase/gene_IDs_names_products.tsv",
+                                      sep="\t", usecols=["gene_systematic_id_with_prefix"])
+    # only keep ncbi_to_pombase rows where the object_id is in valid_pombase_genes
+    ncbi_to_pombase = ncbi_to_pombase[ncbi_to_pombase["object_id"].isin(valid_pombase_genes["gene_systematic_id_with_prefix"])]
+    assert len(ncbi_to_pombase) > 6000
+    mapping_dataframes.append(ncbi_to_pombase)
+
     mappings = pd.concat(mapping_dataframes)
     for row in mappings.itertuples():
         assert not ("<NA>" in row.subject_id)
