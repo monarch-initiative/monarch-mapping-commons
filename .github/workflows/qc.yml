@@ -2,13 +2,13 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -22,12 +22,16 @@ jobs:
       - name: Install latest SSSOM
         env:
           DEFAULT_BRANCH: main
-        run: pip install --upgrade pip && pip install -U sssom 
-      - uses: actions/checkout@v2
+        run: pip install --upgrade pip && pip install -U sssom phenio-toolkit
+
+      - uses: actions/checkout@v4
+
       - name: Prepare mappings
         env:
           DEFAULT_BRANCH: main
-        run: make RUN="" mappings
+        run: |
+          make RUN="" GH_ACTION=true mappings 
+
       - name: Run Mapping QC checks
         env:
           DEFAULT_BRANCH: main

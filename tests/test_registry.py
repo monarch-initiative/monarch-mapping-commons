@@ -12,24 +12,14 @@ def test_registry():
         registry = yaml.safe_load(f)
 
     # Get download url for each mapping set
-    urls = []
-    for i in registry['mapping_set_references']:
-        try:
-            urls.append(i['mirror_from'])
-        except KeyError:
-            urls.append(i['mapping_set_id'])
 
-    missing = []
-    for url in urls:
-        try:
-            r = request.urlopen(url)
-        except HTTPError:
-            missing.append(url)
-    if len(missing) > 0:
-        print('The following urls are not available:')
-        for url in missing:
-            print(url)
-        raise Exception
+    for i in registry['mapping_set_references']:
+        if 'mirror_from' in i:
+            url = i['mirror_from']
+            try:
+                r = request.urlopen(url)
+            except HTTPError:
+                raise Exception(f"{url} cannot be downloaded from mirror location")
 
 if __name__ == '__main__':
     test_registry()
