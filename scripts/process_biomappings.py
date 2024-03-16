@@ -8,6 +8,7 @@ import yaml
 import click
 import requests
 import pandas as pd
+from prefixmaps import load_converter
 from sssom.context import get_converter
 
 HERE = Path(__file__).parent.resolve()
@@ -59,16 +60,6 @@ def main(input: str, output: Path):
     # Convert object_id (MESH) to upper case
     df["object_id"] = df["object_id"].str.upper()
 
-    # Assert that all subject-IDs are CHEBI and all object-IDs are MESH
-    assert all(
-        row.subject_id.__contains__("CHEBI") for row in df.itertuples()
-        # row.subject_id.__contains__("mesh") for row in df.itertuples()
-    ), f"\n\tSubject IDs are not all CHEBI: {df.subject_id.unique()}\n"
-
-    assert all(
-        row.object_id.__contains__("MESH") for row in df.itertuples()
-    ), f"\n\tObject IDs are not all MESH: {df.object_id.unique()}\n"
-
     subset = {
         key: metadata[key]
         # these are all SSSOM keys, see https://mapping-commons.github.io/sssom/
@@ -82,9 +73,20 @@ def main(input: str, output: Path):
     df = df.assign(**subset)
 
     # Standardize CURIEs
-    converter = get_converter()
+    converter = load_converter("merged")
     converter.pd_standardize_curie(df, column="subject_id")
     converter.pd_standardize_curie(df, column="object_id")
+
+    # Assert that all subject-IDs are CHEBI and all object-IDs are MESH
+    assert all(
+        row.subject_id.__contains__("CHEBI") for row in df.itertuples()
+        # row.subject_id.__contains__("mesh") for row in df.itertuples()
+    ), f"\n\tSubject IDs are not all CHEBI: {df.subject_id.unique()}\n"
+
+    assert all(
+        row.object_id.__contains__("MESH") for row in df.itertuples()
+    ), f"\n\tObject IDs are not all MESH: {df.object_id.unique()}\n"
+
 
     # Write to file
     df.to_csv(output, sep="\t", index=False)
