@@ -50,7 +50,7 @@ def target_taxon(line: Optional[str]) -> bool:
         return False
 
 
-PROGRESS_MONITOR_INCR: int = 1000
+PROGRESS_MONITOR_INCR: int = 50_000_000
 
 
 def filter_uniprot_id_mapping_file(

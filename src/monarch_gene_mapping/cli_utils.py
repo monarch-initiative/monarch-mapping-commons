@@ -264,7 +264,7 @@ def generate_gene_mappings() -> DataFrame:
         entity_delimiter=";",
     )
     print(f"Generated {len(uniprot_to_ncbi)} UniProtKB-NCBIGene Gene mappings")
-    assert len(uniprot_to_ncbi) > 70000
+    assert len(uniprot_to_ncbi) > 70000, f"Expected > 70000 mappings for uniprot_to_ncbi, got {len(uniprot_to_ncbi)}"
     mapping_dataframes.append(uniprot_to_ncbi)
 
     print("\nGenerating PomBase to NCBI Gene mappings...")

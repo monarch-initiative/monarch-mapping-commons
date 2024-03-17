@@ -23,12 +23,12 @@ $(MAPPING_DIR)/ $(SCRIPT_DIR)/ $(SRC_DIR)/ $(TMP_DIR)/:
 
 $(MAPPING_DIR)/mondo.sssom.tsv:
 	mkdir -p $(MAPPING_DIR) $(TMP_DIR)
-	wget http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv -O $@
+	wget -q http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv -O $@
 
 
 $(MAPPING_DIR)/mesh_chebi_biomappings.sssom.tsv:
 	mkdir -p $(MAPPING_DIR) $(TMP_DIR)
-	wget https://raw.githubusercontent.com/biopragmatics/biomappings/master/docs/_data/sssom/biomappings.sssom.tsv -O $(TMP_DIR)/biomappings.sssom.tsv
+	wget -q https://raw.githubusercontent.com/biopragmatics/biomappings/master/docs/_data/sssom/biomappings.sssom.tsv -O $(TMP_DIR)/biomappings.sssom.tsv
 	$(RUN) python3 $(SCRIPT_DIR)/process_biomappings.py --input $(TMP_DIR)/biomappings.sssom.tsv --output $(TMP_DIR)/mesh_chebi_biomappings.sssom.tsv
 	$(RUN) sssom parse $(TMP_DIR)/mesh_chebi_biomappings.sssom.tsv -m $(METADATA_DIR)/mesh_chebi_biomappings.sssom.yml --prefix-map-mode merged -o $@
 
@@ -44,11 +44,11 @@ endif
 
 
 $(MAPPING_DIR)/hp_mesh.sssom.tsv:
-	wget https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/hp_mesh.sssom.tsv -O $@
+	wget -q https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/hp_mesh.sssom.tsv -O $@
 
 
 $(MAPPING_DIR)/umls_hp.sssom.tsv:
-	wget https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/umls_hp.sssom.tsv -O $@
+	wget -q https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/umls_hp.sssom.tsv -O $@
 
 .PHONY: mappings_to_ttl
 mappings_to_ttl: mappings
@@ -60,7 +60,7 @@ benchmark:
 
 $(TMP_DIR)/upheno/%:
 	mkdir -p $(TMP_DIR)/upheno/
-	wget https://bbop-ontologies.s3.amazonaws.com/upheno/current/upheno-release/all/$* -O $@
+	wget -q https://bbop-ontologies.s3.amazonaws.com/upheno/current/upheno-release/all/$* -O $@
 
 
 $(MAPPING_DIR)/upheno_custom.sssom.tsv: $(patsubst %, $(TMP_DIR)/upheno/%, upheno_species_lexical.csv upheno_mapping_logical.csv upheno_all_with_relations.owl)
