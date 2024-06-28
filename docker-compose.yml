@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   api:
-    image: anitacaron/sssom-api:v0.1.0
+    image: anitacaron/sssom-api:v0.1.1
     command: uvicorn app.main:app --host 0.0.0.0
     ports:
       - 8008:8000
@@ -12,7 +12,7 @@ services:
     environment:
       - SPARQL_ENDPOINT=http://triplestore:9999/blazegraph/namespace/kb/sparql
   triplestore:
-    image: anitacaron/blazegraph:v0.4
+    image: anitacaron/blazegraph:v0.4.2
     environment:
       - JAVA_OPTS=-Xmx16G
     ports:
