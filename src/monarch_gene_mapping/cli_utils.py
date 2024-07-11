@@ -281,6 +281,7 @@ def generate_gene_mappings() -> DataFrame:
                 object_curie_prefix="NCBIGene:",
                 predicate_id="skos:exactMatch",
                 mapping_justification="semapv:UnspecifiedMatching")
+    pombase_to_ncbi['subject_id'] = pombase_to_ncbi['subject_id'].str.replace("SPOM_","") # remove SPOM_ prefix
     valid_pombase_genes = pd.read_csv("data/pombase/gene_IDs_names_products.tsv",
                                       sep="\t", usecols=["gene_systematic_id_with_prefix"])
     # only keep rows where the subject_id is in valid_pombase_genes
