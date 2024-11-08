@@ -10,7 +10,7 @@
 #
 # See README-editors.md for more details.
 
-IMAGE=${IMAGE:-odkfull}
+IMAGE=${IMAGE:-odkfull:v1.5.3}
 ODK_JAVA_OPTS=-Xmx20G
 ODK_DEBUG=${ODK_DEBUG:-yes}
 
