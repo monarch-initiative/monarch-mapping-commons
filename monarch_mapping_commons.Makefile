@@ -58,6 +58,11 @@ $(MAPPING_DIR)/uberon.sssom.tsv:
 $(MAPPING_DIR)/upheno-species-independent.sssom.tsv:
 	wget -q https://raw.githubusercontent.com/obophenotype/upheno-dev/refs/heads/master/src/mappings/upheno-species-independent.sssom.tsv -O $@
 
+$(MAPPING_DIR)/mondo_hasdbxref_hp.sssom.tsv:
+	wget -q  http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv -O $@
+$(MAPPING_DIR)/mondo_hp_lexical.sssom.tsv:
+	wget -q https://raw.githubusercontent.com/mapping-commons/disease-mappings/refs/heads/main/mappings/mondo_hp_lexical.sssom.tsv -O $@
+
 .PHONY: mappings_to_ttl
 mappings_to_ttl: mappings
 	$(RUN) python3 $(SCRIPT_DIR)/registry_parser.py registry.yml
