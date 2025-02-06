@@ -222,7 +222,7 @@ def generate_gene_mappings() -> DataFrame:
 
     ### NCBI mappings
 
-    print("\nGenerating NCBIGene to ENSEMBL Gene mappings...")
+    print("\nGenerating NCBIGene to ENSEMBL Gene mappings from gene2ensembl.gz...")
     ensembl_df = pd.read_csv("data/ncbi/gene2ensembl.gz", compression="gzip", sep="\t")
     ensembl_to_ncbi = df_mappings(
         df=ensembl_df,
@@ -239,6 +239,21 @@ def generate_gene_mappings() -> DataFrame:
     print(f"Generated {len(ensembl_to_ncbi)} ENSEMBL-NCBIGene Gene mappings")
     assert len(ensembl_to_ncbi) > 70000
     mapping_dataframes.append(ensembl_to_ncbi)
+
+    print("\nGenerating NCBIGene to ENSEMBL Gene mappings from Bos_taurus.ARS-UCD1.3.113.entrez.tsv.gz...")
+    ensembl_bos_taurus_1_3_df = pd.read_csv("data/ensembl/Bos_taurus.ARS-UCD1.3.113.entrez.tsv.gz", compression="gzip", sep="\t")
+    ensembl_bos_taurus_1_3_to_ncbi = df_mappings(
+        df=ensembl_bos_taurus_1_3_df,
+        subject_column="xref",
+        subject_curie_prefix="NCBIGene:",
+        object_column="gene_stable_id",
+        object_curie_prefix="ENSEMBL:",
+        predicate_id="skos:exactMatch",
+        mapping_justification="semapv:UnspecifiedMatching",
+    )
+    print(f"Generated {len(ensembl_bos_taurus_1_3_to_ncbi)} Bos Taurus 1.3 ENSEMBL-NCBIGene Gene mappings")
+    assert len(ensembl_bos_taurus_1_3_to_ncbi) > 20000
+    mapping_dataframes.append(ensembl_bos_taurus_1_3_to_ncbi)
 
     ### UniProtKB mappings
 
