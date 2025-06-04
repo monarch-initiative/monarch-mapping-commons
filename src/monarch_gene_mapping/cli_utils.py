@@ -255,6 +255,21 @@ def generate_gene_mappings() -> DataFrame:
     assert len(ensembl_bos_taurus_1_3_to_ncbi) > 20000
     mapping_dataframes.append(ensembl_bos_taurus_1_3_to_ncbi)
 
+    print("\nGenerating NCBIGene to ENSEMBL Gene mappings from Gallus_gallus.GRCg6a.106.entrez.tsv.gz...")
+    ensembl_gallus_106_df = pd.read_csv("data/ensembl/Gallus_gallus.GRCg6a.106.entrez.tsv.gz", compression="gzip", sep="\t")
+    ensembl_gallus_106_to_ncbi = df_mappings(
+        df=ensembl_gallus_106_df,
+        subject_column="xref",
+        subject_curie_prefix="NCBIGene:",
+        object_column="gene_stable_id",
+        object_curie_prefix="ENSEMBL:",
+        predicate_id="skos:exactMatch",
+        mapping_justification="semapv:UnspecifiedMatching",
+    )
+    print(f"Generated {len(ensembl_gallus_106_to_ncbi)} Gallus gallus v106 ENSEMBL-NCBIGene Gene mappings")
+    assert len(ensembl_gallus_106_to_ncbi) > 20000
+    mapping_dataframes.append(ensembl_gallus_106_to_ncbi)
+
     ### UniProtKB mappings
 
     print("\nGenerating UniProtKB to NCBI Gene mappings...")
