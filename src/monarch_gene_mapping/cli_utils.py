@@ -233,8 +233,8 @@ def generate_gene_mappings() -> DataFrame:
         predicate_id="skos:exactMatch",
         mapping_justification="semapv:UnspecifiedMatching",
         filter_column="#tax_id",
-        # Chicken: 9031, Dog: 9615, Cow, 9913, Pig: 9823, Aspergillus ('Emericella') nidulans: 227321
-        filter_ids=[9031, 9615, 9913, 9823, 227321],
+        # Chicken: 9031, Dog: 9615, Cow, 9913, Pig: 9823
+        filter_ids=[9031, 9615, 9913, 9823] # Aspergillus ('Emericella') nidulans: 227321 is not in this file... But is in gene_info
     )
     print(f"Generated {len(ensembl_to_ncbi)} ENSEMBL-NCBIGene Gene mappings")
     assert len(ensembl_to_ncbi) > 70000
@@ -297,14 +297,14 @@ def generate_gene_mappings() -> DataFrame:
     assert len(uniprot_to_ncbi) > 70000, f"Expected > 70000 mappings for uniprot_to_ncbi, got {len(uniprot_to_ncbi)}"
     mapping_dataframes.append(uniprot_to_ncbi)
 
-    print("\nGenerating PomBase to NCBI Gene mappings...")
+    print("\nGenerating PomBase, and  Aspergillus Nidulans (Emericella nidulans) to NCBI Gene mappings...")
     ncbigene_df = pd.read_csv("data/ncbi/gene_info.gz", compression="gzip", sep="\t", usecols=["#tax_id", "GeneID", "LocusTag"])
-    # rename #tax_id column to tax_id
-    ncbigene_df.rename(columns={"#tax_id": "tax_id"}, inplace=True)
-    # filter to just pombe
-    ncbigene_df = ncbigene_df[ncbigene_df["tax_id"] == 4896]
+    ncbigene_df.rename(columns={"#tax_id": "tax_id"}, inplace=True) # rename #tax_id column to tax_id
+    ncbigene_pombe_df = ncbigene_df[ncbigene_df["tax_id"] == 4896] # filter for pombe
+    ncbigene_asp_df = ncbigene_df[ncbigene_df["tax_id"] == 227321] # filter for aspergillus nidulans
 
-    pombase_to_ncbi = df_mappings(df=ncbigene_df,
+    # PomBase to NCBI Gene mappings
+    pombase_to_ncbi = df_mappings(df=ncbigene_pombe_df,
                 subject_column="LocusTag",
                 object_column="GeneID",
                 subject_curie_prefix="PomBase:",
@@ -318,6 +318,18 @@ def generate_gene_mappings() -> DataFrame:
     pombase_to_ncbi = pombase_to_ncbi[pombase_to_ncbi["subject_id"].isin(valid_pombase_genes["gene_systematic_id_with_prefix"])]
     assert len(pombase_to_ncbi) > 6000
     mapping_dataframes.append(pombase_to_ncbi)
+
+    # Aspergillus Nidulans to NCBI Gene mappings
+    asp_to_ncbi = df_mappings(df=ncbigene_asp_df,
+                subject_column="LocusTag",
+                object_column="GeneID",
+                subject_curie_prefix="", #? Note sure here
+                object_curie_prefix="NCBIGene:",
+                predicate_id="skos:exactMatch",
+                mapping_justification="semapv:UnspecifiedMatching")
+    asp_to_ncbi['subject_id'] = asp_to_ncbi['subject_id'].str.replace("ANIA_","") # ANIA_ prefix
+    assert len(asp_to_ncbi) > 10_000 # 10560 genes in genome according to panther db
+    mapping_dataframes.append(asp_to_ncbi)
 
     mappings = pd.concat(mapping_dataframes)
     for row in mappings.itertuples():
