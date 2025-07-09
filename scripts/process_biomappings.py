@@ -28,7 +28,7 @@ YAML_URL = "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.y
 @click.option("--output", type=click.Path(), default=DEFAULT_OUTPUT, help="Path to output file")
 def main(input: str, output: Path):
     # Read biomappings file
-    df = pd.read_csv(input, sep="\t")
+    df = pd.read_csv(input, sep="\t", comment='#')
 
     res = requests.get(YAML_URL)
     metadata = yaml.safe_load(res.text)
