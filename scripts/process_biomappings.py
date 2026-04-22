@@ -60,15 +60,13 @@ def main(input: str, output: Path):
     # Convert object_id (MESH) to upper case
     df["object_id"] = df["object_id"].str.upper()
 
+    # Propagate per-row license from upstream metadata (title, id, etc. come from local metadata yml)
     subset = {
         key: metadata[key]
-        # these are all SSSOM keys, see https://mapping-commons.github.io/sssom/
         for key in [
             "license",
-            "mapping_set_title",
-            "mapping_set_version",
-            "mapping_set_id",
         ]
+        if key in metadata
     }
     df = df.assign(**subset)
 
