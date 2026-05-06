@@ -59,7 +59,7 @@ sh odk.sh make mappings
 If the run requires a recently published SSSOM or OAK feature, first update ODK:
 
 ```sh
-docker pull obolibrary/odkfull:dev
+docker pull obolibrary/odkfull:latest
 ```
 
 and then run the `dependencies` goal together with the mappings goal:
