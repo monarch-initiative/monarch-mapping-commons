@@ -47,7 +47,11 @@ $(MAPPING_DIR)/umls_hp.sssom.tsv:
 	wget -q https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/umls_hp.sssom.tsv -O $@
 
 $(MAPPING_DIR)/upheno-cross-species.sssom.tsv:
-	wget -q https://raw.githubusercontent.com/obophenotype/upheno-dev/refs/heads/master/src/mappings/upheno-cross-species.sssom.tsv -O $@
+	wget -q https://raw.githubusercontent.com/obophenotype/upheno-dev/refs/heads/master/src/mappings/upheno-cross-species.sssom.tsv -O $@.tmp
+	# Workaround: upstream emits `semapv:LexicalAndLogicalMatching`, which is not a valid SSSOM mapping_justification.
+	# Map it to the closest valid value (`semapv:CompositeMatching`) until upstream is fixed at obophenotype/upheno-dev.
+	sed 's/semapv:LexicalAndLogicalMatching/semapv:CompositeMatching/g' $@.tmp > $@
+	rm $@.tmp
 
 $(MAPPING_DIR)/nbo-go.sssom.tsv:
 	wget -q https://raw.githubusercontent.com/obophenotype/upheno-dev/refs/heads/master/src/mappings/nbo-go.sssom.tsv -O $@
