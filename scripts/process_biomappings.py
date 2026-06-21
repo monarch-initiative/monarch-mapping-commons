@@ -1,93 +1,104 @@
-"""
-A script to process Biopragmatics' biomappings file into CHEBI-to-MESH mappings for use in the Monarch KG pipeline.
+#!/usr/bin/env -S uv run --script
+
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "biomappings>=0.5.2",
+#     "click>=8.3.3",
+#     "prefixmaps>=0.2.6",
+#     "sssom-pydantic>=0.5.4",
+#     "curies>=0.13.7",
+# ]
+# ///
+
+"""Subset Biomappings to ChEBI-MeSH terms.
+
+This script defines inline metadata compliant with `PEP-723 <https://peps.python.org/pep-0723/>`_,
+meaning that any modern Python tooling should be able to install and run it.
+
+This is used in combination with a _shebang_ (i.e., the first line starting with ``#!``) so
+it knows how it can be run when called as an executable script from the command line
+like in:
+
+.. code-block:: console
+
+    $ ./process_biomappings.py
+
+Currently, it uses a shebang that works with ``uv`` as documented in
+https://docs.astral.sh/uv/guides/scripts/#using-a-shebang-to-create-an-executable-file,
+but can be changed to use a different runner if desired. As such, this script
+can also be run with ``uv run process_biomappings.py``.
 """
 
+import importlib.util
 from pathlib import Path
-import yaml
 
 import click
-import requests
-import pandas as pd
+import curies
+import sssom_pydantic
+from curies.mixins import standardize_many
+from curies.triples import keep_predicates, keep_prefixes_both
+from curies.vocabulary import exact_match
 from prefixmaps import load_converter
-from sssom.context import get_converter
+from pystow.utils import read_pydantic_yaml
+from sssom_pydantic.process import (
+    exclude_negative,
+    exclude_unsure,
+    invert_by_prefix_pair,
+)
+
+URL = "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv"
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
-DEFAULT_OUTPUT = ROOT.joinpath("mappings", "biomappings.sssom.tsv")
-
-TSV_URL = "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv"
-YAML_URL = "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.yml"
+METADATA_PATH = ROOT.joinpath("metadata", "mesh_chebi_biomappings.sssom.yml")
+DEFAULT_OUTPUT = ROOT.joinpath("mappings", "mesh_chebi_biomappings.sssom.tsv")
 
 
-@click.command(name="Monarch Mapping Commons")
+@click.command()
+@click.option("--input", help="URL or path to biomappings file")
+@click.option("--output", type=Path, default=DEFAULT_OUTPUT)
 @click.option(
-    "--input",
-    default=TSV_URL,
-    help="URL or path to biomappings file",
+    "--remote",
+    is_flag=True,
+    help="If true, read the remote Biomappings instead of the local version",
 )
-@click.option("--output", type=click.Path(), default=DEFAULT_OUTPUT, help="Path to output file")
-def main(input: str, output: Path):
-    # Read biomappings file
-    df = pd.read_csv(input, sep="\t", comment='#')
+def main(input: str | None, output: Path, remote: bool) -> None:
+    """Subset Biomappings to ChEBI-MeSH terms."""
+    if input is not None:
+        mappings, _converter, metadata = sssom_pydantic.read(input)
+        version = metadata.version
+    elif remote or not importlib.util.find_spec("biomappings"):
+        click.echo(f"reading SSSOM from {URL}")
+        mappings, _converter, metadata = sssom_pydantic.read(URL)
+        version = metadata.version
+    else:
+        import biomappings
+        import biomappings.version
 
-    res = requests.get(YAML_URL)
-    metadata = yaml.safe_load(res.text)
+        mappings = biomappings.read_mappings()
+        version = biomappings.version.get_version()
 
-    # Remove negative mappings
-    df = df[df["predicate_modifier"] != "Not"]
+    converter: curies.Converter = load_converter("merged")
+    # prefixmaps converters would be much more useful if they had synonyms built in.
+    # I want this to be streamlined.
+    converter.add_prefix_synonym("CHEBI", "chebi")
+    converter.add_prefix_synonym("MESH", "mesh")
+    converter.add_prefix_synonym("SEMAPV", "semapv")
+    converter.add_prefix_synonym("ORCID", "orcid")
 
-    # Capture MESH to ChEBI rows
-    df_to_flip = df[(df["subject_id"].str.startswith("mesh"))
-                    & (df["object_id"].str.startswith("CHEBI"))
-                    & (df["predicate_id"] == "skos:exactMatch")]
+    mappings = exclude_negative(mappings)
+    mappings = exclude_unsure(mappings)
+    mappings = keep_prefixes_both(mappings, {"chebi", "mesh"})
+    mappings = keep_predicates(mappings, exact_match)
+    mappings = invert_by_prefix_pair(mappings, "mesh", "chebi")
+    mappings = standardize_many(mappings, converter)
 
-    # Get only ChEBI to MESH rows
-    df = df[(df["subject_id"].str.startswith("CHEBI"))
-            & (df["object_id"].str.startswith("mesh"))
-            & (df["predicate_id"] == "skos:exactMatch")]
+    metadata = read_pydantic_yaml(METADATA_PATH, sssom_pydantic.MappingSetRecord)
+    metadata = metadata.model_copy(update={"mapping_set_version": version})
 
-    # Flip the subject_id, subject_label and object_id, object_label columns on df_to_flip,
-    df_to_flip = df_to_flip.rename(columns={
-        "subject_id": "object_id",
-        "subject_label": "object_label",
-        "object_id": "subject_id",
-        "object_label": "subject_label"
-    })
-    # put the columns back into the original order
-    df_to_flip = df_to_flip[df.columns]
-    df = pd.concat([df, df_to_flip])
-
-    # Convert object_id (MESH) to upper case
-    df["object_id"] = df["object_id"].str.upper()
-
-    # Propagate per-row license from upstream metadata (title, id, etc. come from local metadata yml)
-    subset = {
-        key: metadata[key]
-        for key in [
-            "license",
-        ]
-        if key in metadata
-    }
-    df = df.assign(**subset)
-
-    # Standardize CURIEs
-    converter = load_converter("merged")
-    converter.pd_standardize_curie(df, column="subject_id")
-    converter.pd_standardize_curie(df, column="object_id")
-
-    # Assert that all subject-IDs are CHEBI and all object-IDs are MESH
-    assert all(
-        row.subject_id.__contains__("CHEBI") for row in df.itertuples()
-        # row.subject_id.__contains__("mesh") for row in df.itertuples()
-    ), f"\n\tSubject IDs are not all CHEBI: {df.subject_id.unique()}\n"
-
-    assert all(
-        row.object_id.__contains__("MESH") for row in df.itertuples()
-    ), f"\n\tObject IDs are not all MESH: {df.object_id.unique()}\n"
-
-
-    # Write to file
-    df.to_csv(output, sep="\t", index=False)
+    click.echo(f"Writing to {output}")
+    sssom_pydantic.write(mappings, output, converter=converter, metadata=metadata)
 
 
 if __name__ == "__main__":
