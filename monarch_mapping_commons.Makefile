@@ -47,25 +47,26 @@ $(MAPPING_DIR)/umls_hp.sssom.tsv:
 	wget -q https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/umls_hp.sssom.tsv -O $@
 
 $(MAPPING_DIR)/upheno-cross-species.sssom.tsv:
-	wget -q https://raw.githubusercontent.com/obophenotype/upheno-dev/refs/heads/master/src/mappings/upheno-cross-species.sssom.tsv -O $@.tmp
+	wget -q https://raw.githubusercontent.com/obophenotype/upheno/refs/heads/master/src/mappings/upheno-cross-species.sssom.tsv -O $@.tmp
 	# Workaround: upstream emits `semapv:LexicalAndLogicalMatching`, which is not a valid SSSOM mapping_justification.
 	# Map it to the closest valid value (`semapv:CompositeMatching`) until upstream is fixed at obophenotype/upheno-dev.
 	sed 's/semapv:LexicalAndLogicalMatching/semapv:CompositeMatching/g' $@.tmp > $@
 	rm $@.tmp
 
 $(MAPPING_DIR)/nbo-go.sssom.tsv:
-	wget -q https://raw.githubusercontent.com/obophenotype/upheno-dev/refs/heads/master/src/mappings/nbo-go.sssom.tsv -O $@
+	wget -q https://raw.githubusercontent.com/obophenotype/upheno/refs/heads/master/src/mappings/nbo-go.sssom.tsv -O $@
 
 $(MAPPING_DIR)/uberon.sssom.tsv:
-	wget -q https://raw.githubusercontent.com/obophenotype/upheno-dev/refs/heads/master/src/mappings/uberon.sssom.tsv -O $@
+	wget -q https://github.com/obophenotype/uberon/releases/latest/download/uberon.sssom.tsv -O $@
 
 $(MAPPING_DIR)/upheno-species-independent.sssom.tsv:
-	wget -q https://raw.githubusercontent.com/obophenotype/upheno-dev/refs/heads/master/src/mappings/upheno-species-independent.sssom.tsv -O $@
+	wget -q https://raw.githubusercontent.com/obophenotype/upheno/refs/heads/master/src/mappings/upheno-species-independent.sssom.tsv -O $@
 
 $(MAPPING_DIR)/mondo_hasdbxref_hp.sssom.tsv:
 	wget -q  http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv -O $@
+
 $(MAPPING_DIR)/mondo_hp_lexical.sssom.tsv:
-	wget -q https://raw.githubusercontent.com/mapping-commons/disease-mappings/refs/heads/main/mappings/mondo_hp_lexical.sssom.tsv -O $@
+	wget -q http://w3id.org/sssom/commons/monarch/mappings/mondo_hp_lexical.sssom.tsv -O $@
 
 .PHONY: mappings_to_ttl
 mappings_to_ttl: mappings
