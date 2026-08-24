@@ -27,7 +27,7 @@ $(MAPPING_DIR)/mondo.sssom.tsv:
 
 $(MAPPING_DIR)/mesh_chebi_biomappings.sssom.tsv:
 	mkdir -p $(MAPPING_DIR) $(TMP_DIR)
-	wget -q https://raw.githubusercontent.com/biopragmatics/biomappings/master/docs/_data/sssom/biomappings.sssom.tsv -O $(TMP_DIR)/biomappings.sssom.tsv
+	wget -q https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv -O $(TMP_DIR)/biomappings.sssom.tsv
 	$(RUN) python3 $(SCRIPT_DIR)/process_biomappings.py --input $(TMP_DIR)/biomappings.sssom.tsv --output $(TMP_DIR)/mesh_chebi_biomappings.sssom.tsv
 	$(RUN) sssom parse $(TMP_DIR)/mesh_chebi_biomappings.sssom.tsv -m $(METADATA_DIR)/mesh_chebi_biomappings.sssom.yml --prefix-map-mode merged -o $@
 
