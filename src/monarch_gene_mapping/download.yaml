@@ -7,23 +7,33 @@
 
 # HGNC
 -
-  url: http://ftp.ebi.ac.uk/pub/databases/genenames/hgnc/tsv/hgnc_complete_set.txt
+  url: https://storage.googleapis.com/public-download-files/hgnc/tsv/tsv/hgnc_complete_set.txt
   local_name: data/hgnc/hgnc_complete_set.txt
   tag: hgnc_gene
 
   # NCBI
 -
-  url: https://ftp.ncbi.nih.gov/gene/DATA/gene2ensembl.gz
+  url: https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2ensembl.gz
   local_name: data/ncbi/gene2ensembl.gz
   tag: ncbi
 -
-  url: https://ftp.ncbi.nih.gov/gene/DATA/gene_info.gz
+  url: https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz
   local_name: data/ncbi/gene_info.gz
   tag: ncbi
 -
   url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
   local_name: data/pombase/gene_IDs_names_products.tsv
   tag: pombase
+
+  # Ensembl
+-
+  url: https://ftp.ensembl.org/pub/release-113/tsv/bos_taurus/Bos_taurus.ARS-UCD1.3.113.entrez.tsv.gz
+  local_name: data/ensembl/Bos_taurus.ARS-UCD1.3.113.entrez.tsv.gz
+  tag: ensembl
+-
+  url: https://ftp.ensembl.org/pub/release-106/tsv/gallus_gallus/Gallus_gallus.GRCg6a.106.entrez.tsv.gz
+  local_name: data/ensembl/Gallus_gallus.GRCg6a.106.entrez.tsv.gz
+  tag: ensembl
 
   # UniProtKB - caution! the original UniProt file is a *huge* 11 GB archive file!
   # This file may be prefiltered down to target species using the 'uniprot_idmapping_preprocess.py' script:

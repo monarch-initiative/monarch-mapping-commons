@@ -19,7 +19,7 @@ pipeline {
                 ls -la data
 
                 # Copy the data to the GCP bucket
-                gsutil cp -r data/* gs://monarch-archive/mapping-data-cache/${RELEASE}/
+                gsutil -q -m cp -r data/* gs://monarch-archive/mapping-data-cache/${RELEASE}/
                 '''
             }
         }
@@ -33,11 +33,11 @@ pipeline {
         stage('upload-mapping-files'){
             steps{
                 sh '''
-                    gsutil cp mappings/*.sssom.tsv gs://monarch-archive/mappings/${RELEASE}/
-                    gsutil cp mappings/*.sssom.tsv gs://data-public-monarchinitiative/mappings/${RELEASE}/
+                    gsutil -q -m cp mappings/*.sssom.tsv gs://monarch-archive/mappings/${RELEASE}/
+                    gsutil -q -m cp mappings/*.sssom.tsv gs://data-public-monarchinitiative/mappings/${RELEASE}/
 
-                    gsutil rm -f gs://data-public-monarchinitiative/mappings/latest/* || true
-                    gsutil cp gs://data-public-monarchinitiative/mappings/${RELEASE}/* gs://data-public-monarchinitiative/mappings/latest/
+                    gsutil -q rm -f gs://data-public-monarchinitiative/mappings/latest/* || true
+                    gsutil -q -m cp gs://data-public-monarchinitiative/mappings/${RELEASE}/* gs://data-public-monarchinitiative/mappings/latest/
                 '''
             }
         }

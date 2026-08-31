@@ -3,6 +3,10 @@ data/
 tmp/
 *.pyc
 .DS_Store
+# there are a few files, e.g., hpo-snomed.sssom.tsv and
+# ncit-hp.sssom.tsv that have been force committed, because
+# these are the source of truth. Do not commit other derived
+# files here, like the one produced by scripts/process_biomappings.py
 mappings/*.sssom.tsv
 mappings/ttl
 data/
