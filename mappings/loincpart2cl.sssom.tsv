@@ -1,0 +1,30 @@
+# curie_map:
+#   semapv: https://w3id.org/semapv/vocab/
+#   LOINC: http://loinc.org/rdf/
+#   CL: http://purl.obolibrary.org/obo/CL_
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   wikidata: https://www.wikidata.org/entity/
+#   orcid: https://orcid.org/
+# license: http://creativecommons.org/publicdomain/zero/1.0/
+# mapping_date: '2023-05-01'
+# mapping_set_description: "LOINC part to Cell Ontology mappings. Parts carrying a '^' qualifier denote a measurement context (timing, specimen order, posture, challenge protocol) applied to the same underlying entity; these are asserted as skos:broadMatch, since the LOINC part is narrower than the ontology concept. Unqualified parts use skos:exactMatch. Predicate revisions on qualified parts, and the derived unqualified rows, were produced by an LLM agent (semapv:AgentBasedMatching); the underlying subject-object mappings remain the original manual curation."
+# mapping_set_id: http://w3id.org/sssom/commons/monarch/mappings/loincpart2cl.sssom.tsv
+# mapping_tool: https://claude.com/claude-code
+# issue_tracker: https://github.com/monarch-initiative/monarch-mapping-commons/issues
+# creator_label: "Monarch Initiative"
+# creator_id:
+#   - wikidata:Q34645736
+#   - orcid:0000-0002-5316-1399
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification
+LOINC:LP7536-8	RBC	skos:exactMatch	CL:0000232	erythrocyte	semapv:ManualMappingCuration
+LOINC:LP30226-2	RBC^BPU	skos:broadMatch	CL:0000232	erythrocyte	semapv:ManualMappingCuration
+LOINC:LP30227-0	Red Blood Cells^Donor	skos:broadMatch	CL:0000232	erythrocyte	semapv:ManualMappingCuration
+LOINC:LP14304-7	Erythrocytes	skos:exactMatch	CL:0000232	erythrocyte	semapv:ManualMappingCuration
+LOINC:LP7720-8	White blood cells	skos:exactMatch	CL:0000738	leukocyte	semapv:ManualMappingCuration
+LOINC:LP14419-3	Leukocytes	skos:exactMatch	CL:0000738	leukocyte	semapv:ManualMappingCuration
+LOINC:LP7234-0	Fibroblast	skos:exactMatch	CL:0000057	fibroblast	semapv:ManualMappingCuration
+LOINC:LP14267-6	Neutrophils	skos:exactMatch	CL:0000775	neutrophil	semapv:ManualMappingCuration
+LOINC:LP14540-6	Lymphocytes	skos:exactMatch	CL:0000542	lymphocyte	semapv:ManualMappingCuration
+LOINC:LP14597-6	Platelets	skos:exactMatch	CL:0000233	platelet	semapv:ManualMappingCuration
+LOINC:LP14539-8	Eosinophils	skos:exactMatch	CL:0000771	eosinophil	semapv:ManualMappingCuration
+LOINC:LP18643-4	Granulocytes	skos:exactMatch	CL:0000094	granulocyte	semapv:ManualMappingCuration
