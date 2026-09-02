@@ -7,7 +7,7 @@
 #   orcid: https://orcid.org/
 # license: http://creativecommons.org/publicdomain/zero/1.0/
 # mapping_date: '2023-05-01'
-# mapping_set_description: "LOINC part to ChEBI mappings. Parts carrying a '^' qualifier denote a measurement context (timing, specimen order, posture, challenge protocol) applied to the same underlying entity; these are asserted as skos:broadMatch, since the LOINC part is narrower than the ontology concept. Unqualified parts use skos:exactMatch. Rows carrying semapv:LexicalMatching with mapping_tool set are the unqualified COMPONENT parts, derived by an LLM agent: the qualified part's base label was matched to a LOINC COMPONENT part and the curated target inherited; part type was verified against CompLOINC. (semapv:AgentBasedMatching would be more precise but is not in the sssom-schema version pinned by CI.) Predicate revisions on qualified parts, and the derived unqualified rows, were produced by an LLM agent (see mapping_tool); the underlying subject-object mappings remain the original manual curation."
+# mapping_set_description: "LOINC part to ChEBI mappings. Parts carrying a '^' qualifier denote a measurement context (timing, specimen order, posture, challenge protocol) applied to the same underlying entity; these are asserted as skos:broadMatch, since the LOINC part is narrower than the ontology concept. Unqualified parts use skos:exactMatch. Predicate revisions on qualified parts, and the derived unqualified rows, were produced by an LLM agent (see mapping_tool); the underlying subject-object mappings remain the original manual curation."
 # mapping_set_id: http://w3id.org/sssom/commons/monarch/mappings/loinc2chebi_2.sssom.tsv
 # mapping_tool: https://claude.com/claude-code
 # issue_tracker: https://github.com/monarch-initiative/monarch-mapping-commons/issues
@@ -1993,82 +1993,3 @@ LOINC:LP433316-9	vasopressin^9th specimen post xxx challenge	skos:broadMatch	CHE
 LOINC:LP307240-4	vasopressin^baseline	skos:broadMatch	CHEBI:9937	vasopressin	semapv:ManualMappingCuration
 LOINC:LP308059-7	vigabatrin^trough	skos:broadMatch	CHEBI:63638	vigabatrin	semapv:ManualMappingCuration
 LOINC:LP308060-5	voriconazole^trough	skos:broadMatch	CHEBI:10023	voriconazole	semapv:ManualMappingCuration
-LOINC:LP15283-2	11-Deoxycorticosterone	skos:exactMatch	CHEBI:16973	11-deoxycorticosterone	semapv:LexicalMatching
-LOINC:LP15252-7	11-Deoxycortisol	skos:exactMatch	CHEBI:28324	11-deoxycortisol	semapv:LexicalMatching
-LOINC:LP15284-0	11-Hydroxyandrostenedione	skos:exactMatch	CHEBI:166766	11-hydroxyandrostenedione	semapv:LexicalMatching
-LOINC:LP15285-7	11-Hydroxyandrosterone	skos:exactMatch	CHEBI:173050	11-hydroxyandrosterone	semapv:LexicalMatching
-LOINC:LP15287-3	11-Ketoandrosterone	skos:exactMatch	CHEBI:34134	11-ketoandrosterone	semapv:LexicalMatching
-LOINC:LP15288-1	11-Ketoetiocholanolone	skos:exactMatch	CHEBI:34135	11-ketoetiocholanolone	semapv:LexicalMatching
-LOINC:LP15293-1	18-Hydroxycorticosterone	skos:exactMatch	CHEBI:16485	18-hydroxycorticosterone	semapv:LexicalMatching
-LOINC:LP18570-9	18-Hydroxycortisol	skos:exactMatch	CHEBI:89455	18-hydroxycortisol	semapv:LexicalMatching
-LOINC:LP15148-7	18-Hydroxydeoxycorticosterone	skos:exactMatch	CHEBI:195166	18-hydroxydeoxycorticosterone	semapv:LexicalMatching
-LOINC:LP65144-5	21-Deoxycortisol	skos:exactMatch	CHEBI:28697	21-deoxycortisol	semapv:LexicalMatching
-LOINC:LP15299-8	3-Alpha-Androstanediol glucuronide	skos:exactMatch	CHEBI:176154	3-alpha-androstanediol glucuronide	semapv:LexicalMatching
-LOINC:LP15312-9	Acetoacetate	skos:exactMatch	CHEBI:13705	acetoacetate	semapv:LexicalMatching
-LOINC:LP14377-3	Aldosterone	skos:exactMatch	CHEBI:27584	aldosterone	semapv:LexicalMatching
-LOINC:LP14333-6	Alloisoleucine	skos:exactMatch	CHEBI:22359	alloisoleucine	semapv:LexicalMatching
-LOINC:LP17988-4	Allopurinol	skos:exactMatch	CHEBI:40279	allopurinol	semapv:LexicalMatching
-LOINC:LP15386-3	Androsterone	skos:exactMatch	CHEBI:16032	androsterone	semapv:LexicalMatching
-LOINC:LP15389-7	Angiotensin II	skos:exactMatch	CHEBI:48432	angiotensin ii	semapv:LexicalMatching
-LOINC:LP15416-8	Arginine	skos:exactMatch	CHEBI:29016	arginine	semapv:LexicalMatching
-LOINC:LP15254-3	Ascorbate	skos:exactMatch	CHEBI:22651	ascorbate	semapv:LexicalMatching
-LOINC:LP15444-0	Bile acid	skos:exactMatch	CHEBI:3098	bile acid	semapv:LexicalMatching
-LOINC:LP15455-6	Calcidiol	skos:exactMatch	CHEBI:17933	calcidiol	semapv:LexicalMatching
-LOINC:LP14649-5	Calcitonin	skos:exactMatch	CHEBI:3306	calcitonin	semapv:LexicalMatching
-LOINC:LP15277-4	Calcitriol	skos:exactMatch	CHEBI:17823	calcitriol	semapv:LexicalMatching
-LOINC:LP15257-6	Calcium	skos:exactMatch	CHEBI:22984	calcium atom	semapv:LexicalMatching
-LOINC:LP15150-3	Carbon dioxide	skos:exactMatch	CHEBI:16526	carbon dioxide	semapv:LexicalMatching
-LOINC:LP15477-0	Carotene	skos:exactMatch	CHEBI:23042	carotene	semapv:LexicalMatching
-LOINC:LP15090-1	Catecholamines	skos:exactMatch	CHEBI:33567	catecholamines	semapv:LexicalMatching
-LOINC:LP15483-8	Chloride	skos:exactMatch	CHEBI:17996	chloride	semapv:LexicalMatching
-LOINC:LP15505-8	Cobalamins	skos:exactMatch	CHEBI:23334	cobalamins	semapv:LexicalMatching
-LOINC:LP15508-2	Corticosterone	skos:exactMatch	CHEBI:16827	corticosterone	semapv:LexicalMatching
-LOINC:LP14656-0	Corticotropin	skos:exactMatch	CHEBI:3892	corticotropin	semapv:LexicalMatching
-LOINC:LP14161-1	Cortisol	skos:exactMatch	CHEBI:17650	cortisol	semapv:LexicalMatching
-LOINC:LP29041-8	Cortisol.free	skos:exactMatch	CHEBI:17650	cortisol	semapv:LexicalMatching
-LOINC:LP18544-4	Cortisone	skos:exactMatch	CHEBI:16962	cortisone	semapv:LexicalMatching
-LOINC:LP14355-9	Creatinine	skos:exactMatch	CHEBI:16737	creatinine	semapv:LexicalMatching
-LOINC:LP15528-0	Dehydroepiandrosterone	skos:exactMatch	CHEBI:28689	dehydroepiandrosterone	semapv:LexicalMatching
-LOINC:LP15527-2	Dehydroepiandrosterone sulfate	skos:exactMatch	CHEBI:16814	dehydroepiandrosterone sulfate	semapv:LexicalMatching
-LOINC:LP15543-9	DOPamine	skos:exactMatch	CHEBI:18243	dopamine	semapv:LexicalMatching
-LOINC:LP14497-9	Estradiol	skos:exactMatch	CHEBI:23965	estradiol	semapv:LexicalMatching
-LOINC:LP14661-0	Estrogen	skos:exactMatch	CHEBI:50114	estrogen	semapv:LexicalMatching
-LOINC:LP15263-4	Galactose	skos:exactMatch	CHEBI:28260	galactose	semapv:LexicalMatching
-LOINC:LP14665-1	Gastrin	skos:exactMatch	CHEBI:75436	gastrin	semapv:LexicalMatching
-LOINC:LP14667-7	Glucagon	skos:exactMatch	CHEBI:5391	glucagon	semapv:LexicalMatching
-LOINC:LP14635-4	Glucose	skos:exactMatch	CHEBI:17234	glucose	semapv:LexicalMatching
-LOINC:LP15641-1	Homocystine	skos:exactMatch	CHEBI:17485	homocystine	semapv:LexicalMatching
-LOINC:LP15650-2	Hydroxyproline	skos:exactMatch	CHEBI:24741	hydroxyproline	semapv:LexicalMatching
-LOINC:LP15682-5	Isoleucine	skos:exactMatch	CHEBI:24898	isoleucine	semapv:LexicalMatching
-LOINC:LP15683-3	Ketones	skos:exactMatch	CHEBI:17087	ketones	semapv:LexicalMatching
-LOINC:LP15686-6	Lactate	skos:exactMatch	CHEBI:24996	lactate	semapv:LexicalMatching
-LOINC:LP15269-1	Lactose	skos:exactMatch	CHEBI:17716	lactose	semapv:LexicalMatching
-LOINC:LP173648-9	Lactulose	skos:exactMatch	CHEBI:6359	lactulose	semapv:LexicalMatching
-LOINC:LP15699-9	Leucine	skos:exactMatch	CHEBI:25017	leucine	semapv:LexicalMatching
-LOINC:LP16175-9	Lithium	skos:exactMatch	CHEBI:30145	lithium	semapv:LexicalMatching
-LOINC:LP14343-5	Magnesium	skos:exactMatch	CHEBI:25107	magnesium	semapv:LexicalMatching
-LOINC:LP15722-9	Mannitol	skos:exactMatch	CHEBI:29864	mannitol	semapv:LexicalMatching
-LOINC:LP15753-4	Ornithine	skos:exactMatch	CHEBI:18257	ornithine	semapv:LexicalMatching
-LOINC:LP15761-7	Oxalate	skos:exactMatch	CHEBI:132952	oxalate	semapv:LexicalMatching
-LOINC:LP15770-8	Pancreatic polypeptide	skos:exactMatch	CHEBI:80329	pancreatic polypeptide	semapv:LexicalMatching
-LOINC:LP15792-2	Phenylalanine	skos:exactMatch	CHEBI:28044	phenylalanine	semapv:LexicalMatching
-LOINC:LP14912-7	Phosphate	skos:exactMatch	CHEBI:18367	phosphate	semapv:LexicalMatching
-LOINC:LP15098-4	Potassium	skos:exactMatch	CHEBI:26216	potassium	semapv:LexicalMatching
-LOINC:LP15815-1	Pregnanediol	skos:exactMatch	CHEBI:8387	pregnanediol	semapv:LexicalMatching
-LOINC:LP15817-7	Pregnenolone	skos:exactMatch	CHEBI:16581	pregnenolone	semapv:LexicalMatching
-LOINC:LP14041-5	Progesterone	skos:exactMatch	CHEBI:17026	progesterone	semapv:LexicalMatching
-LOINC:LP14688-3	Prolactin	skos:exactMatch	CHEBI:81580	prolactin	semapv:LexicalMatching
-LOINC:LP15842-5	Pyridoxine	skos:exactMatch	CHEBI:16709	pyridoxine	semapv:LexicalMatching
-LOINC:LP15693-2	Pyruvate	skos:exactMatch	CHEBI:15361	pyruvate	semapv:LexicalMatching
-LOINC:LP15274-1	Retinol	skos:exactMatch	CHEBI:50211	retinol	semapv:LexicalMatching
-LOINC:LP15099-2	Sodium	skos:exactMatch	CHEBI:26708	sodium	semapv:LexicalMatching
-LOINC:LP15873-0	Sucrose	skos:exactMatch	CHEBI:17992	sucrose	semapv:LexicalMatching
-LOINC:LP14045-6	Testosterone	skos:exactMatch	CHEBI:17347	testosterone	semapv:LexicalMatching
-LOINC:LP15900-1	Thyroxine	skos:exactMatch	CHEBI:30660	thyroxine	semapv:LexicalMatching
-LOINC:LP15275-8	Triglyceride	skos:exactMatch	CHEBI:17855	triglyceride	semapv:LexicalMatching
-LOINC:LP14698-2	Trypsin	skos:exactMatch	CHEBI:9765	trypsin	semapv:LexicalMatching
-LOINC:LP15793-0	Tyrosine	skos:exactMatch	CHEBI:18186	tyrosine	semapv:LexicalMatching
-LOINC:LP14288-2	Urea	skos:exactMatch	CHEBI:16199	urea	semapv:LexicalMatching
-LOINC:LP15946-4	Valine	skos:exactMatch	CHEBI:27266	valine	semapv:LexicalMatching
-LOINC:LP15949-8	Vasopressin	skos:exactMatch	CHEBI:9937	vasopressin	semapv:LexicalMatching
-LOINC:LP14638-8	Xylose	skos:exactMatch	CHEBI:18222	xylose	semapv:LexicalMatching
