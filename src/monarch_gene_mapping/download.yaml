@@ -26,13 +26,45 @@
   tag: pombase
 
   # Ensembl
+  #
+  # NCBI's gene2ensembl carries only one Ensembl gene ID series per species, but our
+  # ingest sources are pinned to assorted genome assemblies and use whichever series
+  # was current when they were built. PantherDB is frozen at 2024-04-02, for instance,
+  # and emits ROS_Cfam_1.0 dog IDs (ENSCAFG00845*) while gene2ensembl now carries only
+  # CanFam3.1 (ENSCAFG00000*). Pulling the per-assembly entrez xrefs straight from
+  # Ensembl lets both series resolve to the same NCBIGene node.
+  #
+  # Files here are pinned by release deliberately. Do not "upgrade" one in place -- an
+  # older release is often the only source of a retired ID series, and even within one
+  # series a newer release can drop xrefs the older one had. Add releases, don't replace
+  # them; the mappings are unioned.
 -
   url: https://ftp.ensembl.org/pub/release-113/tsv/bos_taurus/Bos_taurus.ARS-UCD1.3.113.entrez.tsv.gz
   local_name: data/ensembl/Bos_taurus.ARS-UCD1.3.113.entrez.tsv.gz
   tag: ensembl
 -
+  url: https://ftp.ensembl.org/pub/release-115/tsv/bos_taurus/Bos_taurus.ARS-UCD2.0.115.entrez.tsv.gz
+  local_name: data/ensembl/Bos_taurus.ARS-UCD2.0.115.entrez.tsv.gz
+  tag: ensembl
+-
   url: https://ftp.ensembl.org/pub/release-106/tsv/gallus_gallus/Gallus_gallus.GRCg6a.106.entrez.tsv.gz
   local_name: data/ensembl/Gallus_gallus.GRCg6a.106.entrez.tsv.gz
+  tag: ensembl
+-
+  url: https://ftp.ensembl.org/pub/release-115/tsv/gallus_gallus/Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.115.entrez.tsv.gz
+  local_name: data/ensembl/Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.115.entrez.tsv.gz
+  tag: ensembl
+-
+  url: https://ftp.ensembl.org/pub/release-115/tsv/canis_lupus_familiaris/Canis_lupus_familiaris.ROS_Cfam_1.0.115.entrez.tsv.gz
+  local_name: data/ensembl/Canis_lupus_familiaris.ROS_Cfam_1.0.115.entrez.tsv.gz
+  tag: ensembl
+-
+  url: https://ftp.ensembl.org/pub/release-115/tsv/sus_scrofa/Sus_scrofa.Sscrofa11.1.115.entrez.tsv.gz
+  local_name: data/ensembl/Sus_scrofa.Sscrofa11.1.115.entrez.tsv.gz
+  tag: ensembl
+-
+  url: https://ftp.ensembl.org/pub/release-115/tsv/xenopus_tropicalis/Xenopus_tropicalis.UCB_Xtro_10.0.115.entrez.tsv.gz
+  local_name: data/ensembl/Xenopus_tropicalis.UCB_Xtro_10.0.115.entrez.tsv.gz
   tag: ensembl
 
   # UniProtKB - caution! the original UniProt file is a *huge* 11 GB archive file!

@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Union
 
 import numpy as np
 import pandas as pd
@@ -31,6 +31,32 @@ UNIPROT_ID_MAPPING_SELECTED_COLUMNS = [
 ]
 
 
+# Ensembl entrez xref files, mapped to a floor for the number of mappings each should
+# yield. One file per species per genome assembly: NCBI's gene2ensembl carries only one
+# Ensembl gene ID series per species, and our ingest sources are pinned to assorted
+# assemblies, so a single series leaves the rest dangling. See download.yaml for why the
+# releases are pinned and why older ones are kept alongside newer ones.
+#
+# Floors sit ~15% below observed counts: low enough to ride out release churn, high
+# enough to catch a file that stopped parsing or a filter that matched nothing.
+ENSEMBL_ENTREZ_FILES = {
+    # Cow. gene2ensembl carries ENSBTAG00070; both files below carry ENSBTAG00000, and
+    # release 113 is kept because 115 drops xrefs for ~1,500 genes that it still has.
+    "Bos_taurus.ARS-UCD1.3.113.entrez.tsv.gz": 15000,
+    "Bos_taurus.ARS-UCD2.0.115.entrez.tsv.gz": 18000,
+    # Chicken. gene2ensembl carries ENSGALG00010; GRCg6a is the only source of the
+    # retired ENSGALG00000 series, GRCg7b fills gaps in ENSGALG00010.
+    "Gallus_gallus.GRCg6a.106.entrez.tsv.gz": 13000,
+    "Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.115.entrez.tsv.gz": 17000,
+    # Dog. gene2ensembl carries only CanFam3.1 (ENSCAFG00000); this is the sole source
+    # of the ROS_Cfam_1.0 series (ENSCAFG00845) that PantherDB emits.
+    "Canis_lupus_familiaris.ROS_Cfam_1.0.115.entrez.tsv.gz": 19000,
+    # Pig and X. tropicalis. Same ID series as gene2ensembl, but better covered here.
+    "Sus_scrofa.Sscrofa11.1.115.entrez.tsv.gz": 14000,
+    "Xenopus_tropicalis.UCB_Xtro_10.0.115.entrez.tsv.gz": 17000,
+}
+
+
 def add_prefix(prefix: str, column: pd.Series) -> pd.Series:
     """
     Add a prefix to all values in a series
@@ -51,7 +77,7 @@ def df_mappings(
     filter_column: str = None,  # "#tax_id",
     subject_curie_prefix: str = None,  # "NCBIGene:"
     object_curie_prefix: str = None,  # "ENSEMBL:"
-    filter_ids: List[int] = None,  # [9031]
+    filter_ids: List[Union[int, str]] = None,  # [9031]
 ) -> DataFrame:
     """
     Create specified mappings from DataFrame
@@ -155,6 +181,35 @@ def alliance_mapping() -> DataFrame:
     return alliance_mappings
 
 
+def ensembl_entrez_mapping(filename: str) -> DataFrame:
+    """
+    Map an Ensembl gene ID series to NCBIGene from one Ensembl entrez xref TSV.
+
+    Each file covers a single species and genome assembly, and the gene ID series is
+    assembly-specific, so several files per species are needed to resolve the ID series
+    our various ingest sources emit.
+
+    The files carry two kinds of row, distinguished by db_name: 'EntrezGene' rows whose
+    xref is the NCBI gene ID we want, and 'EntrezGene_trans_name' rows whose xref is a
+    transcript name such as 'HMOX1-201'. Only the former are mappings.
+
+    :param filename: Path to a gzipped Ensembl <species>.<assembly>.<release>.entrez.tsv.gz
+    :return: DataFrame of NCBIGene-ENSEMBL mappings
+    """
+    df = pd.read_csv(filename, compression="gzip", sep="\t")
+    return df_mappings(
+        df=df,
+        subject_column="xref",
+        subject_curie_prefix="NCBIGene:",
+        object_column="gene_stable_id",
+        object_curie_prefix="ENSEMBL:",
+        predicate_id="skos:exactMatch",
+        mapping_justification="semapv:UnspecifiedMatching",
+        filter_column="db_name",
+        filter_ids=["EntrezGene"],
+    )
+
+
 def generate_gene_mappings() -> DataFrame:
     mapping_dataframes = []
 
@@ -240,35 +295,14 @@ def generate_gene_mappings() -> DataFrame:
     assert len(ensembl_to_ncbi) > 70000
     mapping_dataframes.append(ensembl_to_ncbi)
 
-    print("\nGenerating NCBIGene to ENSEMBL Gene mappings from Bos_taurus.ARS-UCD1.3.113.entrez.tsv.gz...")
-    ensembl_bos_taurus_1_3_df = pd.read_csv("data/ensembl/Bos_taurus.ARS-UCD1.3.113.entrez.tsv.gz", compression="gzip", sep="\t")
-    ensembl_bos_taurus_1_3_to_ncbi = df_mappings(
-        df=ensembl_bos_taurus_1_3_df,
-        subject_column="xref",
-        subject_curie_prefix="NCBIGene:",
-        object_column="gene_stable_id",
-        object_curie_prefix="ENSEMBL:",
-        predicate_id="skos:exactMatch",
-        mapping_justification="semapv:UnspecifiedMatching",
-    )
-    print(f"Generated {len(ensembl_bos_taurus_1_3_to_ncbi)} Bos Taurus 1.3 ENSEMBL-NCBIGene Gene mappings")
-    assert len(ensembl_bos_taurus_1_3_to_ncbi) > 20000
-    mapping_dataframes.append(ensembl_bos_taurus_1_3_to_ncbi)
-
-    print("\nGenerating NCBIGene to ENSEMBL Gene mappings from Gallus_gallus.GRCg6a.106.entrez.tsv.gz...")
-    ensembl_gallus_106_df = pd.read_csv("data/ensembl/Gallus_gallus.GRCg6a.106.entrez.tsv.gz", compression="gzip", sep="\t")
-    ensembl_gallus_106_to_ncbi = df_mappings(
-        df=ensembl_gallus_106_df,
-        subject_column="xref",
-        subject_curie_prefix="NCBIGene:",
-        object_column="gene_stable_id",
-        object_curie_prefix="ENSEMBL:",
-        predicate_id="skos:exactMatch",
-        mapping_justification="semapv:UnspecifiedMatching",
-    )
-    print(f"Generated {len(ensembl_gallus_106_to_ncbi)} Gallus gallus v106 ENSEMBL-NCBIGene Gene mappings")
-    assert len(ensembl_gallus_106_to_ncbi) > 20000
-    mapping_dataframes.append(ensembl_gallus_106_to_ncbi)
+    for filename, minimum in ENSEMBL_ENTREZ_FILES.items():
+        print(f"\nGenerating NCBIGene to ENSEMBL Gene mappings from {filename}...")
+        ensembl_to_ncbi_by_assembly = ensembl_entrez_mapping(f"data/ensembl/{filename}")
+        print(f"Generated {len(ensembl_to_ncbi_by_assembly)} ENSEMBL-NCBIGene Gene mappings from {filename}")
+        assert len(ensembl_to_ncbi_by_assembly) > minimum, (
+            f"Expected > {minimum} mappings from {filename}, got {len(ensembl_to_ncbi_by_assembly)}"
+        )
+        mapping_dataframes.append(ensembl_to_ncbi_by_assembly)
 
     ### UniProtKB mappings
 
