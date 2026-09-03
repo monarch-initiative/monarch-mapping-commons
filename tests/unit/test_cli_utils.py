@@ -4,7 +4,13 @@ Unit tests for the mapping generation framework
 import pandas as pd
 import pytest
 
-from monarch_gene_mapping.cli_utils import df_mappings, explode_column, UNIPROT_ID_MAPPING_SELECTED_COLUMNS
+from monarch_gene_mapping.cli_utils import (
+    df_mappings,
+    ensembl_entrez_mapping,
+    explode_column,
+    ENSEMBL_ENTREZ_FILES,
+    UNIPROT_ID_MAPPING_SELECTED_COLUMNS,
+)
 
 
 def test_null_mapping():
@@ -38,3 +44,31 @@ def test_semicolon_in_id():
         filter_ids=[9031, 9615, 9913, 9823, 227321],
     )
     assert len(mapped) == 4
+
+
+def test_ensembl_entrez_trans_name_rows_are_not_mappings():
+    """
+    Ensembl entrez files interleave EntrezGene rows, whose xref is an NCBI gene ID, with
+    EntrezGene_trans_name rows, whose xref is a transcript name like 'HTR2C-201'. Only
+    the former are mappings; taking both mints nonexistent NCBIGene:<transcript> nodes.
+    """
+    mapped = ensembl_entrez_mapping("tests/resources/ensembl_entrez_test.tsv.gz")
+
+    assert len(mapped) == 3
+    assert set(mapped["subject_id"]) == {
+        "NCBIGene:119868660",
+        "NCBIGene:119868661",
+        "NCBIGene:491802",
+    }
+    assert mapped["object_id"].str.startswith("ENSEMBL:ENSCAFG00845").all()
+
+
+def test_ensembl_entrez_files_cover_both_dog_assemblies():
+    """
+    PantherDB emits ROS_Cfam_1.0 dog IDs while NCBI's gene2ensembl carries only
+    CanFam3.1, so the ROS_Cfam_1.0 file is what keeps those ortholog edges resolvable.
+    """
+    assert any(
+        name.startswith("Canis_lupus_familiaris.ROS_Cfam_1.0")
+        for name in ENSEMBL_ENTREZ_FILES
+    )
