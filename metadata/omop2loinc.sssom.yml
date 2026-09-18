@@ -1,0 +1,22 @@
+mapping_set_id: http://w3id.org/sssom/commons/monarch/mappings/omop2loinc.sssom.tsv
+mapping_set_title: "OMOP concept_id to LOINC code"
+license: https://creativecommons.org/publicdomain/zero/1.0/
+mapping_set_description: >-
+  Identifier bridge from OMOP concept_ids to the LOINC codes they were loaded from.
+  An OMOP concept_id is a surrogate key OHDSI assigns to a term taken verbatim from a
+  source vocabulary; the CONCEPT row carries that term's native vocabulary_id and
+  concept_code, so subject and object denote the same concept (skos:exactMatch).
+  This is NOT the OHDSI "Maps to" relation, which links non-standard to standard
+  concepts and is lossy. Scope: the 93 LOINC-sourced concepts in the BDC priority
+  measurement set. The BDC harmonized data model codes clinical measurements in OMOP,
+  but OMOP is not ingested into the Monarch/BDC KG; 84 of these 93 LOINC codes already
+  exist as biolink:ClinicalMeasurement nodes, so this bridge makes that coverage
+  reachable. The 9 that do not are LOINC Part (LP) codes, flagged in the comment column.
+mapping_set_source:
+  - https://athena.ohdsi.org/vocabulary/list
+see_also: https://loinc.org/license/
+curie_map:
+  OMOP: https://athena.ohdsi.org/search-terms/terms/
+  LOINC: https://loinc.org/
+  skos: http://www.w3.org/2004/02/skos/core#
+  semapv: https://w3id.org/semapv/vocab/

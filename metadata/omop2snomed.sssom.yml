@@ -1,0 +1,25 @@
+mapping_set_id: http://w3id.org/sssom/commons/monarch/mappings/omop2snomed.sssom.tsv
+mapping_set_title: "OMOP concept_id to SNOMED CT code"
+license: https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf
+mapping_set_description: >-
+  Identifier bridge from OMOP concept_ids to the SNOMED CT codes they were loaded from.
+  Same semantics as omop2loinc: the OMOP concept_id is a surrogate key for a term taken
+  verbatim from SNOMED CT, so subject and object denote the same concept
+  (skos:exactMatch). Scope: the 118 SNOMED-sourced concepts in the BDC priority
+  measurement set; all 118 are standard and valid.
+  LICENSING: the published artifact is the OUTPUT_TIER=open build, in which every label
+  column is blank. SNOMED CT description text is UMLS-license-gated and is not openly
+  redistributable, while the SCTID codes themselves are referenceable (Mondo distributes
+  SCTIDs). Because a SNOMED-sourced OMOP concept_name IS SNOMED description text,
+  subject_label is blanked alongside object_label.
+  A labelled OUTPUT_TIER=restricted build exists for license-gated destinations only.
+  NOTE: as of the mapping date, monarch-kg contains no SNOMED-prefixed nodes under any
+  CURIE form, so this set is forward-looking rather than immediately redemptive.
+mapping_set_source:
+  - https://athena.ohdsi.org/vocabulary/list
+see_also: https://www.nlm.nih.gov/healthit/snomedct/snomed_licensing.html
+curie_map:
+  OMOP: https://athena.ohdsi.org/search-terms/terms/
+  SNOMEDCT: http://identifiers.org/snomedct/
+  skos: http://www.w3.org/2004/02/skos/core#
+  semapv: https://w3id.org/semapv/vocab/

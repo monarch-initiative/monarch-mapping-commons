@@ -1,0 +1,116 @@
+# curie_map:
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   OMOP: https://athena.ohdsi.org/search-terms/terms/
+#   wikidata: https://www.wikidata.org/entity/
+#   orcid: https://orcid.org/
+#   LOINC: https://loinc.org/
+# license: http://creativecommons.org/publicdomain/zero/1.0/
+# mapping_set_title: "OMOP concept_id to LOINC code"
+# mapping_set_id: http://w3id.org/sssom/commons/monarch/mappings/omop2loinc.sssom.tsv
+# mapping_set_description: "Identifier bridge from OMOP concept_ids to the LOINC codes they were loaded from. An OMOP concept_id is a surrogate key OHDSI assigns to a term taken verbatim from a source vocabulary; the CONCEPT row carries that term's native vocabulary_id and concept_code. Subject and object therefore denote the same concept and the predicate is skos:exactMatch. This is deliberately NOT the OHDSI 'Maps to' relation, which links non-standard to standard concepts and is lossy. Scope: the 93 LOINC-sourced concepts in the BDC priority measurement set (326 terms), which the BDC harmonized data model codes in OMOP. 9 of the 93 are LOINC Part (LP) codes rather than LOINC term codes; these are flagged in the comment column. All 93 concepts are valid (OMOP invalid_reason V) as of the resolution date. Generated automatically by a vocabulary-table join, hence semapv:UnspecifiedMatching - no manual curation was performed. LOINC codes and names are freely redistributable under the LOINC license; see https://loinc.org/license/."
+# mapping_set_source: https://athena.ohdsi.org/vocabulary/list
+# see_also: https://loinc.org/license/
+# mapping_date: '2026-09-17'
+# mapping_tool: https://github.com/monarch-initiative/monarch-mapping-commons (scripts/build_omop_mappings.py)
+# mapping_provider: https://athena.ohdsi.org/
+# subject_source_version: "OMOP CDM vocabulary unknown (atlas-demo public instance)"
+# issue_tracker: https://github.com/monarch-initiative/monarch-mapping-commons/issues
+# creator_label: "Monarch Initiative"
+# creator_id:
+#   - wikidata:Q34645736
+#   - orcid:0000-0002-5316-1399
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	comment
+OMOP:1002430	Ventilatory equivalent for carbon dioxide --W exercise	skos:exactMatch	LOINC:94126-0	Ventilatory equivalent for carbon dioxide --W exercise	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:1006339	Post-bronchodilator forced expiratory volume in 1 second (FEV1) attempt	skos:exactMatch	LOINC:LP115582-1	Post-bronchodilator forced expiratory volume in 1 second (FEV1) attempt	semapv:UnspecifiedMatching	LOINC Part code (OMOP concept_class_id 'LOINC Component', standard_concept 'N'), not a LOINC term code; OMOP domain_id Observation
+OMOP:1175351	Respiratory disturbance index	skos:exactMatch	LOINC:90566-1	Respiratory disturbance index	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:1259612	Oxygen consumption (VO2) --peak	skos:exactMatch	LOINC:103749-8	Oxygen consumption (VO2) --peak	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:1617307	Chemokine (C-C motif) ligand 2 [Mass/volume] in Serum or Plasma	skos:exactMatch	LOINC:97052-5	Chemokine (C-C motif) ligand 2 [Mass/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:1988928	Myeloperoxidase [Mass/volume] in Serum by Immunoassay	skos:exactMatch	LOINC:99407-9	Myeloperoxidase [Mass/volume] in Serum by Immunoassay	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3000848	Systolic blood pressure Posterior tibial artery - left/Brachial artery	skos:exactMatch	LOINC:8579-5	Systolic blood pressure Posterior tibial artery - left/Brachial artery	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3001122	Ferritin [Mass/volume] in Serum or Plasma	skos:exactMatch	LOINC:2276-4	Ferritin [Mass/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3001604	Monocytes [#/volume] in Blood	skos:exactMatch	LOINC:26484-6	Monocytes [#/volume] in Blood	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3001804	Interleukin 1 beta [Mass/volume] in Serum or Plasma	skos:exactMatch	LOINC:13629-1	Interleukin 1 beta [Mass/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3002094	Forced vital capacity [Volume] Respiratory system Predicted	skos:exactMatch	LOINC:19869-7	Forced vital capacity [Volume] Respiratory system Predicted	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3003205	Brachial artery Systolic blood pressure	skos:exactMatch	LOINC:8508-4	Brachial artery Systolic blood pressure	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3004248	Sex hormone binding globulin [Moles/volume] in Serum or Plasma	skos:exactMatch	LOINC:13967-5	Sex hormone binding globulin [Moles/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3004282	Tumor necrosis factor.alpha [Mass/volume] in Serum or Plasma	skos:exactMatch	LOINC:3074-2	Tumor necrosis factor.alpha [Mass/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3004578	Interleukin 10 [Mass/volume] in Serum or Plasma	skos:exactMatch	LOINC:26848-2	Interleukin 10 [Mass/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3005600	FVC measured/predicted	skos:exactMatch	LOINC:19872-1	FVC measured/predicted	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3006315	Basophils [#/volume] in Blood	skos:exactMatch	LOINC:26444-0	Basophils [#/volume] in Blood	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3006504	Eosinophils/100 leukocytes in Blood	skos:exactMatch	LOINC:26450-7	Eosinophils/100 leukocytes in Blood	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3007081	Creatinine [Interpretation] in Urine	skos:exactMatch	LOINC:20511-2	Creatinine [Interpretation] in Urine	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3007352	Cholesterol in VLDL [Mass/volume] in Serum or Plasma	skos:exactMatch	LOINC:2091-7	Cholesterol in VLDL [Mass/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3007356	CD62P cells/100 cells in Blood	skos:exactMatch	LOINC:17181-9	CD62P cells/100 cells in Blood	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3008223	Glasgow coma score motor	skos:exactMatch	LOINC:9268-4	Glasgow coma score motor	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3009024	Chloride [Moles/volume] in Specimen	skos:exactMatch	LOINC:32307-1	Chloride [Moles/volume] in Specimen	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3009094	Glasgow coma score verbal	skos:exactMatch	LOINC:9270-0	Glasgow coma score verbal	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3009395	Systolic blood pressure--supine	skos:exactMatch	LOINC:8461-6	Systolic blood pressure--supine	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3009718	Cholesterol in HDL 2 [Mass/volume] in Serum or Plasma	skos:exactMatch	LOINC:9832-7	Cholesterol in HDL 2 [Mass/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3010175	Systolic blood pressure Posterior tibial artery - right/Brachial artery	skos:exactMatch	LOINC:8580-3	Systolic blood pressure Posterior tibial artery - right/Brachial artery	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3010372	E selectin [Mass/volume] in Blood	skos:exactMatch	LOINC:28071-9	E selectin [Mass/volume] in Blood	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3010404	Brachial artery Diastolic blood pressure	skos:exactMatch	LOINC:8496-2	Brachial artery Diastolic blood pressure	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3010421	pH of Blood	skos:exactMatch	LOINC:11558-4	pH of Blood	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3010587	Aspartate aminotransferase [Presence] in Serum or Plasma	skos:exactMatch	LOINC:27344-1	Aspartate aminotransferase [Presence] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3011417	Gas flow FEV 25%-75%	skos:exactMatch	LOINC:19927-3	Gas flow FEV 25%-75%	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3011505	FEV1/FVC	skos:exactMatch	LOINC:19926-5	FEV1/FVC	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3011670	Insulin [Mass/volume] in Serum or Plasma --12 hours fasting	skos:exactMatch	LOINC:1573-5	Insulin [Mass/volume] in Serum or Plasma --12 hours fasting	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3011708	FEV1 measured/predicted	skos:exactMatch	LOINC:20152-5	FEV1 measured/predicted	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3011888	Prostaglandin F2 alpha [Mass/volume] in Urine	skos:exactMatch	LOINC:17494-6	Prostaglandin F2 alpha [Mass/volume] in Urine	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3011961	Ferritin [Mass/volume] in Blood	skos:exactMatch	LOINC:24373-3	Ferritin [Mass/volume] in Blood	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3013115	Eosinophils [#/volume] in Blood	skos:exactMatch	LOINC:26449-9	Eosinophils [#/volume] in Blood	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3013682	Urea nitrogen [Mass/volume] in Serum or Plasma	skos:exactMatch	LOINC:3094-0	Urea nitrogen [Mass/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3014111	Lactate [Moles/volume] in Serum or Plasma	skos:exactMatch	LOINC:2524-7	Lactate [Moles/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3015183	Erythrocyte sedimentation rate	skos:exactMatch	LOINC:30341-2	Erythrocyte sedimentation rate	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3016205	Systolic blood pressure Posterior tibial artery/Brachial artery	skos:exactMatch	LOINC:8581-1	Systolic blood pressure Posterior tibial artery/Brachial artery	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3016335	Glasgow coma score eye opening	skos:exactMatch	LOINC:9267-6	Glasgow coma score eye opening	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3016527	FEV.5 Predicted	skos:exactMatch	LOINC:20147-5	FEV.5 Predicted	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3016723	Creatinine [Mass/volume] in Serum or Plasma	skos:exactMatch	LOINC:2160-0	Creatinine [Mass/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3018586	Systolic blood pressure--sitting	skos:exactMatch	LOINC:8459-0	Systolic blood pressure--sitting	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3019069	Monocytes/100 leukocytes in Blood	skos:exactMatch	LOINC:26485-3	Monocytes/100 leukocytes in Blood	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3021627	Systolic blood pressure Brachial artery - right/Brachial artery	skos:exactMatch	LOINC:8577-9	Systolic blood pressure Brachial artery - right/Brachial artery	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3021930	FEV.5	skos:exactMatch	LOINC:20148-3	FEV.5	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3022096	Basophils/100 leukocytes in Blood	skos:exactMatch	LOINC:30180-4	Basophils/100 leukocytes in Blood	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3022466	Insulin [Mass/volume] in Serum or Plasma	skos:exactMatch	LOINC:3695-4	Insulin [Mass/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3022891	FEV1 Predicted	skos:exactMatch	LOINC:20149-1	FEV1 Predicted	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3023574	Cholesterol in HDL 3 [Mass/volume] in Serum or Plasma	skos:exactMatch	LOINC:9833-5	Cholesterol in HDL 3 [Mass/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3024594	FEV1/FVC Predicted	skos:exactMatch	LOINC:19925-7	FEV1/FVC Predicted	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3027018	Heart rate	skos:exactMatch	LOINC:8867-4	Heart rate	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3031569	Natriuretic peptide B [Mass/volume] in Blood	skos:exactMatch	LOINC:42637-9	Natriuretic peptide B [Mass/volume] in Blood	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3035856	Systolic blood pressure--standing	skos:exactMatch	LOINC:8460-8	Systolic blood pressure--standing	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3038553	Body mass index (BMI) [Ratio]	skos:exactMatch	LOINC:39156-5	Body mass index (BMI) [Ratio]	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3040436	FEV3 Predicted	skos:exactMatch	LOINC:41233-8	FEV3 Predicted	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3041450	Lipoprotein associated phospholipase A2 [Mass/volume] in Serum or Plasma	skos:exactMatch	LOINC:39804-0	Lipoprotein associated phospholipase A2 [Mass/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3043144	Interleukin 18 [Mass/volume] in Serum or Plasma	skos:exactMatch	LOINC:33823-6	Interleukin 18 [Mass/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3046279	Procalcitonin [Mass/volume] in Serum or Plasma	skos:exactMatch	LOINC:33959-8	Procalcitonin [Mass/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3051825	Creatinine [Mass/volume] in Blood	skos:exactMatch	LOINC:38483-4	Creatinine [Mass/volume] in Blood	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:3966129	Maximum heart rate	skos:exactMatch	LOINC:101692-2	Maximum heart rate	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:21490733	Potassium [Mass/volume] in Blood	skos:exactMatch	LOINC:75940-7	Potassium [Mass/volume] in Blood	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:21490770	Left ventricular End diastolic volume	skos:exactMatch	LOINC:75988-6	Left ventricular End diastolic volume	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:21490771	Left ventricular End systolic volume	skos:exactMatch	LOINC:75989-4	Left ventricular End systolic volume	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:21493059	Fruit servings 24 hour Estimated	skos:exactMatch	LOINC:80457-5	Fruit servings 24 hour Estimated	semapv:UnspecifiedMatching	OMOP domain_id Observation
+OMOP:21494019	Left atrial End-systolic volume (by US.2D+Calculated by biplane area-length method)/Body surface area	skos:exactMatch	LOINC:79982-5	Left atrial End-systolic volume (by US.2D+Calculated by biplane area-length method)/Body surface area	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:36303297	Center for Epidemiologic Studies Depression Scale-Revised total score [CESD-R]	skos:exactMatch	LOINC:89205-9	Center for Epidemiologic Studies Depression Scale-Revised total score [CESD-R]	semapv:UnspecifiedMatching	OMOP domain_id Observation
+OMOP:36303745	Sodium [Mass/volume] in Specimen	skos:exactMatch	LOINC:87451-1	Sodium [Mass/volume] in Specimen	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:36305170	Lipoprotein associated phospholipase A2 [Enzymatic activity/volume] in Serum or Plasma	skos:exactMatch	LOINC:86951-1	Lipoprotein associated phospholipase A2 [Enzymatic activity/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:37043929	FEF 50%	skos:exactMatch	LOINC:LP145597-3	FEF 50%	semapv:UnspecifiedMatching	LOINC Part code (OMOP concept_class_id 'LOINC Component', standard_concept 'N'), not a LOINC term code; OMOP domain_id Observation
+OMOP:37050322	Internal diameter minor axis systole | Heart ventricle - left | Cardiac ultrasound	skos:exactMatch	LOINC:LP407923-4	Internal diameter minor axis systole | Heart ventricle - left | Cardiac ultrasound	semapv:UnspecifiedMatching	LOINC Part code (OMOP concept_class_id 'LOINC Hierarchy', standard_concept 'C'), not a LOINC term code; OMOP domain_id Measurement
+OMOP:37057122	Blood flow deceleration time during diastole	skos:exactMatch	LOINC:LP203300-1	Blood flow deceleration time during diastole	semapv:UnspecifiedMatching	LOINC Part code (OMOP concept_class_id 'LOINC Component', standard_concept 'N'), not a LOINC term code; OMOP domain_id Observation
+OMOP:37057590	Fractional shortening	skos:exactMatch	LOINC:LP72609-8	Fractional shortening	semapv:UnspecifiedMatching	LOINC Part code (OMOP concept_class_id 'LOINC Component', standard_concept 'N'), not a LOINC term code; OMOP domain_id Observation
+OMOP:37060340	FEF 25%	skos:exactMatch	LOINC:LP145613-8	FEF 25%	semapv:UnspecifiedMatching	LOINC Part code (OMOP concept_class_id 'LOINC Component', standard_concept 'N'), not a LOINC term code; OMOP domain_id Observation
+OMOP:37065791	Blood flow velocity E-wave	skos:exactMatch	LOINC:LP99769-9	Blood flow velocity E-wave	semapv:UnspecifiedMatching	LOINC Part code (OMOP concept_class_id 'LOINC Component', standard_concept 'N'), not a LOINC term code; OMOP domain_id Observation
+OMOP:37072486	FEV3	skos:exactMatch	LOINC:LP140654-7	FEV3	semapv:UnspecifiedMatching	LOINC Part code (OMOP concept_class_id 'LOINC Component', standard_concept 'N'), not a LOINC term code; OMOP domain_id Observation
+OMOP:37076446	Internal diameter minor axis diastole | Heart ventricle - left | Cardiac ultrasound	skos:exactMatch	LOINC:LP407922-6	Internal diameter minor axis diastole | Heart ventricle - left | Cardiac ultrasound	semapv:UnspecifiedMatching	LOINC Part code (OMOP concept_class_id 'LOINC Hierarchy', standard_concept 'C'), not a LOINC term code; OMOP domain_id Measurement
+OMOP:40761106	Matrix metallopeptidase 9 [Mass/volume] in Blood	skos:exactMatch	LOINC:58001-9	Matrix metallopeptidase 9 [Mass/volume] in Blood	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:40762222	Left ventricular E-wave/A-wave by US	skos:exactMatch	LOINC:59129-7	Left ventricular E-wave/A-wave by US	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:40766814	Six minute walk test	skos:exactMatch	LOINC:64098-7	Six minute walk test	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:40768346	FEV6	skos:exactMatch	LOINC:65655-3	FEV6	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:40768347	FEV6 Predicted	skos:exactMatch	LOINC:65656-1	FEV6 Predicted	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:40768506	Forced expiratory time	skos:exactMatch	LOINC:65819-5	Forced expiratory time	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:40768653	How many hours do you normally sleep [DI-PAD]	skos:exactMatch	LOINC:65968-0	How many hours do you normally sleep [DI-PAD]	semapv:UnspecifiedMatching	OMOP domain_id Observation
+OMOP:42868471	FVC percent change Respiratory system	skos:exactMatch	LOINC:69982-7	FVC percent change Respiratory system	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:42868473	FEV1/FVC percent change	skos:exactMatch	LOINC:69984-3	FEV1/FVC percent change	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:43054909	Tobacco smoking status	skos:exactMatch	LOINC:72166-2	Tobacco smoking status	semapv:UnspecifiedMatching	OMOP domain_id Observation
+OMOP:46235360	Tumor necrosis factor receptor superfamily member 1A [Mass/volume] in Serum or Plasma	skos:exactMatch	LOINC:75629-6	Tumor necrosis factor receptor superfamily member 1A [Mass/volume] in Serum or Plasma	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:46235897	Albumin/Creatinine [Ratio] in 24 hour Urine	skos:exactMatch	LOINC:76401-9	Albumin/Creatinine [Ratio] in 24 hour Urine	semapv:UnspecifiedMatching	OMOP domain_id Measurement
+OMOP:46236797	Tricuspid valve annulus Excursion distance during systole by US.M-mode	skos:exactMatch	LOINC:77903-3	Tricuspid valve annulus Excursion distance during systole by US.M-mode	semapv:UnspecifiedMatching	OMOP domain_id Measurement
