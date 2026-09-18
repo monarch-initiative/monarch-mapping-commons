@@ -1,0 +1,216 @@
+# curie_map:
+#   semapv: https://w3id.org/semapv/vocab/
+#   HP: http://purl.obolibrary.org/obo/HP_
+#   OBA: http://purl.obolibrary.org/obo/OBA_
+#   UPHENO: http://purl.obolibrary.org/obo/UPHENO_
+#   PATO: http://purl.obolibrary.org/obo/PATO_
+#   RO: http://purl.obolibrary.org/obo/RO_
+#   BFO: http://purl.obolibrary.org/obo/BFO_
+#   wikidata: https://www.wikidata.org/entity/
+# license: http://creativecommons.org/publicdomain/zero/1.0/
+# mapping_set_id: http://w3id.org/sssom/commons/monarch/mappings/upheno-oba-computed.sssom.tsv
+# mapping_set_title: "Computed HP to OBA trait bridge"
+# mapping_set_description: "HP phenotype classes mapped to the OBA trait classes they are phenotypes of, derived by joining the two ontologies' DOSDP logical definitions on shared fillers. OBA's entity_attribute_location pattern and uPheno's level patterns both nest RO:0000052 over BFO:0000050, and uPheno's directional qualities are PATO descendants of OBA's neutral PATO:0000070, so a phenotype and its trait can be matched structurally where both carry a definition. HP definitions are read from hp-edit.owl EquivalentClasses axioms rather than the DOSDP match tables, which omit roughly a third of them. Restricted to OBA's analyte-by-specimen block; covers HP only, not MP or ZP. Rows whose entity filler is the CHEBI root (CHEBI:24431) are excluded, since those join on a placeholder rather than an analyte."
+# issue_tracker: https://github.com/monarch-initiative/monarch-mapping-commons/issues
+# creator_label: "Monarch Initiative"
+# creator_id: wikidata:Q34645736
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification
+HP:0000848	Increased circulating renin concentration	UPHENO:phenotypeToTrait	OBA:VT0003349	blood renin amount	semapv:StructuralMatching
+HP:0000859	Increased circulating aldosterone concentration	UPHENO:phenotypeToTrait	OBA:VT0005346	blood aldosterone amount	semapv:StructuralMatching
+HP:0001900	Increased circulating hemoglobin concentration	UPHENO:phenotypeToTrait	OBA:2060175	amount of hemoglobin in blood	semapv:StructuralMatching
+HP:0001987	Hyperammonemia	UPHENO:phenotypeToTrait	OBA:VT0005308	blood ammonia amount	semapv:StructuralMatching
+HP:0002149	Hyperuricemia	UPHENO:phenotypeToTrait	OBA:VT0010302	blood uric acid amount	semapv:StructuralMatching
+HP:0002150	Hypercalciuria	UPHENO:phenotypeToTrait	OBA:VT0002985	urine calcium amount	semapv:StructuralMatching
+HP:0002152	Hyperproteinemia	UPHENO:phenotypeToTrait	OBA:2050071	serum protein amount	semapv:StructuralMatching
+HP:0002152	Hyperproteinemia	UPHENO:phenotypeToTrait	OBA:VT0005416	blood protein amount	semapv:StructuralMatching
+HP:0002155	Hypertriglyceridemia	UPHENO:phenotypeToTrait	OBA:2045035	level of triglyceride in blood serum	semapv:StructuralMatching
+HP:0002155	Hypertriglyceridemia	UPHENO:phenotypeToTrait	OBA:VT0002644	blood triglyceride amount	semapv:StructuralMatching
+HP:0002161	Hyperlysinemia	UPHENO:phenotypeToTrait	OBA:2020005	lysine in blood amount	semapv:StructuralMatching
+HP:0002720	Decreased circulating IgA concentration	UPHENO:phenotypeToTrait	OBA:2050074	serum IgA amount	semapv:StructuralMatching
+HP:0002720	Decreased circulating IgA concentration	UPHENO:phenotypeToTrait	OBA:VT0001807	blood immunoglobulin A amount	semapv:StructuralMatching
+HP:0002850	Decreased circulating IgM concentration	UPHENO:phenotypeToTrait	OBA:2050070	serum IgM amount	semapv:StructuralMatching
+HP:0002850	Decreased circulating IgM concentration	UPHENO:phenotypeToTrait	OBA:VT0010481	blood immunoglobulin M amount	semapv:StructuralMatching
+HP:0002904	Hyperbilirubinemia	UPHENO:phenotypeToTrait	OBA:VT0001569	blood bilirubin amount	semapv:StructuralMatching
+HP:0002913	Myoglobinuria	UPHENO:phenotypeToTrait	OBA:VT0006034	urine myoglobin amount	semapv:StructuralMatching
+HP:0002920	Decreased circulating ACTH concentration	UPHENO:phenotypeToTrait	OBA:VT0002664	blood adrenocorticotropin amount	semapv:StructuralMatching
+HP:0003073	Hypoalbuminemia	UPHENO:phenotypeToTrait	OBA:2050068	serum albumin amount	semapv:StructuralMatching
+HP:0003073	Hypoalbuminemia	UPHENO:phenotypeToTrait	OBA:2060178	amount of albumin in blood	semapv:StructuralMatching
+HP:0003076	Glycosuria	UPHENO:phenotypeToTrait	OBA:VT0001758	urine glucose amount	semapv:StructuralMatching
+HP:0003077	Hyperlipidemia	UPHENO:phenotypeToTrait	OBA:VT0003949	blood lipid amount	semapv:StructuralMatching
+HP:0003081	Increased urinary potassium	UPHENO:phenotypeToTrait	OBA:2050095	urine potassium amount	semapv:StructuralMatching
+HP:0003107	Abnormal circulating cholesterol concentration	UPHENO:phenotypeToTrait	OBA:VT0000180	blood cholesterol amount	semapv:StructuralMatching
+HP:0003109	Hyperphosphaturia	UPHENO:phenotypeToTrait	OBA:VT0002900	urine phosphate amount	semapv:StructuralMatching
+HP:0003112	Abnormal circulating amino acid concentration	UPHENO:phenotypeToTrait	OBA:VT0005311	blood amino acid amount	semapv:StructuralMatching
+HP:0003113	Hypochloremia	UPHENO:phenotypeToTrait	OBA:VT0003018	blood chloride amount	semapv:StructuralMatching
+HP:0003118	Increased circulating cortisol level	UPHENO:phenotypeToTrait	OBA:VT1000670	blood cortisol amount	semapv:StructuralMatching
+HP:0003119	Abnormal circulating lipid concentration	UPHENO:phenotypeToTrait	OBA:VT0003949	blood lipid amount	semapv:StructuralMatching
+HP:0003124	Hypercholesterolemia	UPHENO:phenotypeToTrait	OBA:VT0000180	blood cholesterol amount	semapv:StructuralMatching
+HP:0003127	Hypocalciuria	UPHENO:phenotypeToTrait	OBA:VT0002985	urine calcium amount	semapv:StructuralMatching
+HP:0003138	Increased blood urea nitrogen	UPHENO:phenotypeToTrait	OBA:2050065	serum urea amount	semapv:StructuralMatching
+HP:0003138	Increased blood urea nitrogen	UPHENO:phenotypeToTrait	OBA:VT0005265	blood urea nitrogen amount	semapv:StructuralMatching
+HP:0003141	Elevated circulating LDL-C concentration	UPHENO:phenotypeToTrait	OBA:2045398	serum low-density lipoprotein cholesterol  level	semapv:StructuralMatching
+HP:0003141	Elevated circulating LDL-C concentration	UPHENO:phenotypeToTrait	OBA:VT0000181	blood LDL cholesterol amount	semapv:StructuralMatching
+HP:0003146	Hypocholesterolemia	UPHENO:phenotypeToTrait	OBA:VT0000180	blood cholesterol amount	semapv:StructuralMatching
+HP:0003154	Increased circulating ACTH level	UPHENO:phenotypeToTrait	OBA:VT0002664	blood adrenocorticotropin amount	semapv:StructuralMatching
+HP:0003165	Elevated circulating parathyroid hormone level	UPHENO:phenotypeToTrait	OBA:2043094	level of parathyroid hormone in blood serum	semapv:StructuralMatching
+HP:0003212	Increased circulating IgE concentration	UPHENO:phenotypeToTrait	OBA:2050084	serum IgE amount	semapv:StructuralMatching
+HP:0003212	Increased circulating IgE concentration	UPHENO:phenotypeToTrait	OBA:VT0002492	blood immunoglobulin E amount	semapv:StructuralMatching
+HP:0003233	Decreased circulating HDL-C concentration	UPHENO:phenotypeToTrait	OBA:2045397	serum high-density lipoprotein cholesterol level	semapv:StructuralMatching
+HP:0003233	Decreased circulating HDL-C concentration	UPHENO:phenotypeToTrait	OBA:VT0000184	blood HDL cholesterol amount	semapv:StructuralMatching
+HP:0003234	Decreased circulating carnitine concentration	UPHENO:phenotypeToTrait	OBA:VT0003977	blood carnitine amount	semapv:StructuralMatching
+HP:0003237	Increased circulating IgG concentration	UPHENO:phenotypeToTrait	OBA:2050085	serum IgG amount	semapv:StructuralMatching
+HP:0003237	Increased circulating IgG concentration	UPHENO:phenotypeToTrait	OBA:VT0001805	blood immunoglobulin G amount	semapv:StructuralMatching
+HP:0003259	Elevated circulating creatinine concentration	UPHENO:phenotypeToTrait	OBA:2050096	serum creatinine amount	semapv:StructuralMatching
+HP:0003261	Increased circulating IgA concentration	UPHENO:phenotypeToTrait	OBA:2050074	serum IgA amount	semapv:StructuralMatching
+HP:0003261	Increased circulating IgA concentration	UPHENO:phenotypeToTrait	OBA:VT0001807	blood immunoglobulin A amount	semapv:StructuralMatching
+HP:0003292	Decreased serum leptin	UPHENO:phenotypeToTrait	OBA:VT0005667	blood leptin amount	semapv:StructuralMatching
+HP:0003351	Decreased circulating renin concentration	UPHENO:phenotypeToTrait	OBA:VT0003349	blood renin amount	semapv:StructuralMatching
+HP:0003355	Aminoaciduria	UPHENO:phenotypeToTrait	OBA:VT0003311	urine amino acid amount	semapv:StructuralMatching
+HP:0003362	Elevated circulating VLDL-C concentration	UPHENO:phenotypeToTrait	OBA:VT0005144	blood VLDL cholesterol amount	semapv:StructuralMatching
+HP:0003460	Chronic decreased circulating IgA concentration	UPHENO:phenotypeToTrait	OBA:2050074	serum IgA amount	semapv:StructuralMatching
+HP:0003460	Chronic decreased circulating IgA concentration	UPHENO:phenotypeToTrait	OBA:VT0001807	blood immunoglobulin A amount	semapv:StructuralMatching
+HP:0003496	Increased circulating IgM concentration	UPHENO:phenotypeToTrait	OBA:2050070	serum IgM amount	semapv:StructuralMatching
+HP:0003496	Increased circulating IgM concentration	UPHENO:phenotypeToTrait	OBA:VT0010481	blood immunoglobulin M amount	semapv:StructuralMatching
+HP:0003537	Hypouricemia	UPHENO:phenotypeToTrait	OBA:VT0010302	blood uric acid amount	semapv:StructuralMatching
+HP:0003563	Decreased circulating LDL-C concentration	UPHENO:phenotypeToTrait	OBA:2045398	serum low-density lipoprotein cholesterol  level	semapv:StructuralMatching
+HP:0003563	Decreased circulating LDL-C concentration	UPHENO:phenotypeToTrait	OBA:VT0000181	blood LDL cholesterol amount	semapv:StructuralMatching
+HP:0003572	Decreased circulating citrulline concentration	UPHENO:phenotypeToTrait	OBA:2055816	level of citrulline in blood	semapv:StructuralMatching
+HP:0003641	Hemoglobinuria	UPHENO:phenotypeToTrait	OBA:VT0000315	urine hemoglobin amount	semapv:StructuralMatching
+HP:0004315	Decreased circulating IgG concentration	UPHENO:phenotypeToTrait	OBA:2050085	serum IgG amount	semapv:StructuralMatching
+HP:0004315	Decreased circulating IgG concentration	UPHENO:phenotypeToTrait	OBA:VT0001805	blood immunoglobulin G amount	semapv:StructuralMatching
+HP:0004319	Decreased circulating aldosterone concentration	UPHENO:phenotypeToTrait	OBA:VT0005346	blood aldosterone amount	semapv:StructuralMatching
+HP:0004359	Abnormal circulating fatty acid concentration	UPHENO:phenotypeToTrait	OBA:VT0001553	blood free fatty acid amount	semapv:StructuralMatching
+HP:0004361	Abnormal circulating leptin concentration	UPHENO:phenotypeToTrait	OBA:VT0005667	blood leptin amount	semapv:StructuralMatching
+HP:0005479	Decreased circulating IgE concentration	UPHENO:phenotypeToTrait	OBA:2050084	serum IgE amount	semapv:StructuralMatching
+HP:0005479	Decreased circulating IgE concentration	UPHENO:phenotypeToTrait	OBA:VT0002492	blood immunoglobulin E amount	semapv:StructuralMatching
+HP:0008163	Decreased circulating cortisol level	UPHENO:phenotypeToTrait	OBA:VT1000670	blood cortisol amount	semapv:StructuralMatching
+HP:0008247	Euthyroid hyperthyroxinemia	UPHENO:phenotypeToTrait	OBA:2045449	plasma thyroxine level	semapv:StructuralMatching
+HP:0008247	Euthyroid hyperthyroxinemia	UPHENO:phenotypeToTrait	OBA:VT0005475	blood thyroxine amount	semapv:StructuralMatching
+HP:0009051	Increased muscle glycogen content	UPHENO:phenotypeToTrait	OBA:VT0010648	muscle glycogen amount	semapv:StructuralMatching
+HP:0009058	Increased muscle lipid content	UPHENO:phenotypeToTrait	OBA:VT1000479	muscle lipid amount	semapv:StructuralMatching
+HP:0010896	Hypersarcosinemia	UPHENO:phenotypeToTrait	OBA:2050392	level of sarcosine in blood	semapv:StructuralMatching
+HP:0010898	Abnormal circulating sarcosine concentration	UPHENO:phenotypeToTrait	OBA:2050392	level of sarcosine in blood	semapv:StructuralMatching
+HP:0010908	Abnormal circulating lysine concentration	UPHENO:phenotypeToTrait	OBA:2020005	lysine in blood amount	semapv:StructuralMatching
+HP:0010919	Abnormal circulating homocysteine concentration	UPHENO:phenotypeToTrait	OBA:VT0006076	blood homocysteine amount	semapv:StructuralMatching
+HP:0010967	Abnormal circulating carnitine concentration	UPHENO:phenotypeToTrait	OBA:VT0003977	blood carnitine amount	semapv:StructuralMatching
+HP:0011015	Abnormal blood glucose concentration	UPHENO:phenotypeToTrait	OBA:2045396	serum glucose level	semapv:StructuralMatching
+HP:0011015	Abnormal blood glucose concentration	UPHENO:phenotypeToTrait	OBA:VT0000188	blood glucose amount	semapv:StructuralMatching
+HP:0011043	Abnormal circulating adrenocorticotropin concentration	UPHENO:phenotypeToTrait	OBA:VT0002664	blood adrenocorticotropin amount	semapv:StructuralMatching
+HP:0011280	Abnormality of urine calcium concentration	UPHENO:phenotypeToTrait	OBA:VT0002985	urine calcium amount	semapv:StructuralMatching
+HP:0011281	Abnormality of urine catecholamine level	UPHENO:phenotypeToTrait	OBA:VT0010502	urine catecholamine amount	semapv:StructuralMatching
+HP:0011422	Abnormal circulating chloride concentration	UPHENO:phenotypeToTrait	OBA:VT0003018	blood chloride amount	semapv:StructuralMatching
+HP:0011423	Hyperchloremia	UPHENO:phenotypeToTrait	OBA:VT0003018	blood chloride amount	semapv:StructuralMatching
+HP:0011424	Increased serum zinc	UPHENO:phenotypeToTrait	OBA:2050076	serum zinc amount	semapv:StructuralMatching
+HP:0011731	Abnormality of circulating cortisol level	UPHENO:phenotypeToTrait	OBA:VT1000670	blood cortisol amount	semapv:StructuralMatching
+HP:0011788	Increased circulating free T3	UPHENO:phenotypeToTrait	OBA:VT0005476	blood triiodothyronine amount	semapv:StructuralMatching
+HP:0011965	Abnormal circulating citrulline concentration	UPHENO:phenotypeToTrait	OBA:2055816	level of citrulline in blood	semapv:StructuralMatching
+HP:0011966	Elevated circulating citrulline concentration	UPHENO:phenotypeToTrait	OBA:2055816	level of citrulline in blood	semapv:StructuralMatching
+HP:0011976	Elevated urinary catecholamine level	UPHENO:phenotypeToTrait	OBA:VT0010502	urine catecholamine amount	semapv:StructuralMatching
+HP:0012025	Abnormal circulating ornithine concentration	UPHENO:phenotypeToTrait	OBA:2055815	level of ornithine in blood	semapv:StructuralMatching
+HP:0012026	Hyperornithinemia	UPHENO:phenotypeToTrait	OBA:2055815	level of ornithine in blood	semapv:StructuralMatching
+HP:0012029	Abnormal urine steroid level	UPHENO:phenotypeToTrait	OBA:VT0001757	urine molecular composition	semapv:StructuralMatching
+HP:0012100	Abnormal circulating creatinine concentration	UPHENO:phenotypeToTrait	OBA:2050096	serum creatinine amount	semapv:StructuralMatching
+HP:0012100	Abnormal circulating creatinine concentration	UPHENO:phenotypeToTrait	OBA:VT0005328	blood creatinine amount	semapv:StructuralMatching
+HP:0012101	Decreased serum creatinine	UPHENO:phenotypeToTrait	OBA:2050096	serum creatinine amount	semapv:StructuralMatching
+HP:0012101	Decreased serum creatinine	UPHENO:phenotypeToTrait	OBA:VT0005328	blood creatinine amount	semapv:StructuralMatching
+HP:0012111	Abnormality of circulating glucocorticoid level	UPHENO:phenotypeToTrait	OBA:VT0003366	blood glucocorticoid amount	semapv:StructuralMatching
+HP:0012112	Abnormal circulating corticosterone level	UPHENO:phenotypeToTrait	OBA:VT0005345	blood corticosterone amount	semapv:StructuralMatching
+HP:0012153	Hypotriglyceridemia	UPHENO:phenotypeToTrait	OBA:2045035	level of triglyceride in blood serum	semapv:StructuralMatching
+HP:0012153	Hypotriglyceridemia	UPHENO:phenotypeToTrait	OBA:VT0002644	blood triglyceride amount	semapv:StructuralMatching
+HP:0012184	Elevated circulating HDL-C concentration	UPHENO:phenotypeToTrait	OBA:2045397	serum high-density lipoprotein cholesterol level	semapv:StructuralMatching
+HP:0012184	Elevated circulating HDL-C concentration	UPHENO:phenotypeToTrait	OBA:VT0000184	blood HDL cholesterol amount	semapv:StructuralMatching
+HP:0012202	Increased serum bile acid concentration	UPHENO:phenotypeToTrait	OBA:VT0010878	blood bile acid amount	semapv:StructuralMatching
+HP:0012269	Abnormal muscle glycogen content	UPHENO:phenotypeToTrait	OBA:VT0010648	muscle glycogen amount	semapv:StructuralMatching
+HP:0012270	Decreased muscle glycogen content	UPHENO:phenotypeToTrait	OBA:VT0010648	muscle glycogen amount	semapv:StructuralMatching
+HP:0012364	Decreased urinary potassium	UPHENO:phenotypeToTrait	OBA:2050095	urine potassium amount	semapv:StructuralMatching
+HP:0012365	Hypophosphaturia	UPHENO:phenotypeToTrait	OBA:VT0002900	urine phosphate amount	semapv:StructuralMatching
+HP:0012465	Elevated hepatic iron concentration	UPHENO:phenotypeToTrait	OBA:2045440	hepatic iron amount	semapv:StructuralMatching
+HP:0012598	Abnormal urine potassium concentration	UPHENO:phenotypeToTrait	OBA:2050095	urine potassium amount	semapv:StructuralMatching
+HP:0012599	Abnormal urine phosphate concentration	UPHENO:phenotypeToTrait	OBA:VT0002900	urine phosphate amount	semapv:StructuralMatching
+HP:0012603	Abnormal urine sodium concentration	UPHENO:phenotypeToTrait	OBA:VT0006274	urine sodium amount	semapv:StructuralMatching
+HP:0012607	Abnormal urine magnesium concentration	UPHENO:phenotypeToTrait	OBA:2060176	amount of magnesium atom in urine	semapv:StructuralMatching
+HP:0012608	Hypermagnesiuria	UPHENO:phenotypeToTrait	OBA:2060176	amount of magnesium atom in urine	semapv:StructuralMatching
+HP:0012609	Hypomagnesiuria	UPHENO:phenotypeToTrait	OBA:2060176	amount of magnesium atom in urine	semapv:StructuralMatching
+HP:0012675	Iron accumulation in brain	UPHENO:phenotypeToTrait	OBA:2045560	amount of iron in brain	semapv:StructuralMatching
+HP:0025321	Copper accumulation in liver	UPHENO:phenotypeToTrait	OBA:VT0003065	hepatic copper amount	semapv:StructuralMatching
+HP:0030087	Abnormal circulating testosterone concentration	UPHENO:phenotypeToTrait	OBA:VT0005180	blood testosterone amount	semapv:StructuralMatching
+HP:0030088	Increased serum testosterone level	UPHENO:phenotypeToTrait	OBA:VT0005180	blood testosterone amount	semapv:StructuralMatching
+HP:0030687	Abnormal circulating glucagon concentration	UPHENO:phenotypeToTrait	OBA:2051436	level of pro-glucagon in blood	semapv:StructuralMatching
+HP:0030688	Increased glucagon level	UPHENO:phenotypeToTrait	OBA:2051436	level of pro-glucagon in blood	semapv:StructuralMatching
+HP:0030689	Decreased glucagon level	UPHENO:phenotypeToTrait	OBA:2051436	level of pro-glucagon in blood	semapv:StructuralMatching
+HP:0030984	Abnormal serum bile acid concentration	UPHENO:phenotypeToTrait	OBA:VT0010878	blood bile acid amount	semapv:StructuralMatching
+HP:0030985	Decreased serum bile acid concentration	UPHENO:phenotypeToTrait	OBA:VT0010878	blood bile acid amount	semapv:StructuralMatching
+HP:0031030	Elevated circulating mucin 16 concentration	UPHENO:phenotypeToTrait	OBA:2042459	level of mucin-16 in blood serum	semapv:StructuralMatching
+HP:0031030	Elevated circulating mucin 16 concentration	UPHENO:phenotypeToTrait	OBA:2051111	level of mucin-16 in blood	semapv:StructuralMatching
+HP:0031212	Abnormal circulating progesterone level	UPHENO:phenotypeToTrait	OBA:VT0005184	blood progesterone amount	semapv:StructuralMatching
+HP:0031243	Decreased circulating VLDL-C concentration	UPHENO:phenotypeToTrait	OBA:VT0005144	blood VLDL cholesterol amount	semapv:StructuralMatching
+HP:0031793	Increased serum leptin	UPHENO:phenotypeToTrait	OBA:VT0005667	blood leptin amount	semapv:StructuralMatching
+HP:0031794	Decreased circulating glycerol level	UPHENO:phenotypeToTrait	OBA:VT0003442	blood glycerol amount	semapv:StructuralMatching
+HP:0031795	Abnormal circulating glycerol concentration	UPHENO:phenotypeToTrait	OBA:VT0003442	blood glycerol amount	semapv:StructuralMatching
+HP:0031799	Decreased circulating apolipoprotein A-I concentration	UPHENO:phenotypeToTrait	OBA:2040620	level of apolipoprotein A-I in blood serum	semapv:StructuralMatching
+HP:0031831	Decreased serum zinc	UPHENO:phenotypeToTrait	OBA:2050076	serum zinc amount	semapv:StructuralMatching
+HP:0031886	Abnormal LDL cholesterol concentration	UPHENO:phenotypeToTrait	OBA:2045398	serum low-density lipoprotein cholesterol  level	semapv:StructuralMatching
+HP:0031886	Abnormal LDL cholesterol concentration	UPHENO:phenotypeToTrait	OBA:VT0000181	blood LDL cholesterol amount	semapv:StructuralMatching
+HP:0031888	Abnormal circulating HDL-C concentration	UPHENO:phenotypeToTrait	OBA:2045397	serum high-density lipoprotein cholesterol level	semapv:StructuralMatching
+HP:0031888	Abnormal circulating HDL-C concentration	UPHENO:phenotypeToTrait	OBA:VT0000184	blood HDL cholesterol amount	semapv:StructuralMatching
+HP:0031889	Abnormal circulating VLDL-C concentration	UPHENO:phenotypeToTrait	OBA:VT0005144	blood VLDL cholesterol amount	semapv:StructuralMatching
+HP:0031969	Reduced blood urea nitrogen	UPHENO:phenotypeToTrait	OBA:2050065	serum urea amount	semapv:StructuralMatching
+HP:0031969	Reduced blood urea nitrogen	UPHENO:phenotypeToTrait	OBA:VT0005265	blood urea nitrogen amount	semapv:StructuralMatching
+HP:0031970	Abnormal blood urea nitrogen concentration	UPHENO:phenotypeToTrait	OBA:2050065	serum urea amount	semapv:StructuralMatching
+HP:0031970	Abnormal blood urea nitrogen concentration	UPHENO:phenotypeToTrait	OBA:VT0005265	blood urea nitrogen amount	semapv:StructuralMatching
+HP:0032209	Abnormal circulating free T3 concentration	UPHENO:phenotypeToTrait	OBA:VT0005476	blood triiodothyronine amount	semapv:StructuralMatching
+HP:0032210	Decreased circulating free T3	UPHENO:phenotypeToTrait	OBA:VT0005476	blood triiodothyronine amount	semapv:StructuralMatching
+HP:0032240	Elevated circulating E-selectin concentration	UPHENO:phenotypeToTrait	OBA:2052778	amount of E-selectin (human) in blood	semapv:StructuralMatching
+HP:0032362	Increased circulating corticosterone level	UPHENO:phenotypeToTrait	OBA:VT0005345	blood corticosterone amount	semapv:StructuralMatching
+HP:0032363	Decreased circulating corticosterone level	UPHENO:phenotypeToTrait	OBA:VT0005345	blood corticosterone amount	semapv:StructuralMatching
+HP:0032640	Elevated circulating CCL18 concentration	UPHENO:phenotypeToTrait	OBA:2052432	amount of C-C motif chemokine 18 (human) in blood	semapv:StructuralMatching
+HP:0032996	Abnormal circulating cystatin-C concentration	UPHENO:phenotypeToTrait	OBA:2052375	amount of cystatin-C (human) in blood	semapv:StructuralMatching
+HP:0032997	Decreased circulating cystatin-C concentration	UPHENO:phenotypeToTrait	OBA:2052375	amount of cystatin-C (human) in blood	semapv:StructuralMatching
+HP:0032998	Elevated circulating cystatin-C concentration	UPHENO:phenotypeToTrait	OBA:2052375	amount of cystatin-C (human) in blood	semapv:StructuralMatching
+HP:0033103	Elevated circulating CHI3L1 concentration	UPHENO:phenotypeToTrait	OBA:2052653	amount of chitinase-3-like protein 1 (human) in blood	semapv:StructuralMatching
+HP:0033123	Elevated circulating osteopontin concentration	UPHENO:phenotypeToTrait	OBA:2052936	amount of osteopontin (human) in blood	semapv:StructuralMatching
+HP:0033155	Elevated circulating L-alloisoleucine concentration	UPHENO:phenotypeToTrait	OBA:2050356	level of L-alloisoleucine in blood	semapv:StructuralMatching
+HP:0033410	Elevated circulating cartilage oligomeric matrix protein concentration	UPHENO:phenotypeToTrait	OBA:2052219	amount of cartilage oligomeric matrix protein (human) in blood	semapv:StructuralMatching
+HP:0033479	Abnormal circulating bilirubin concentration	UPHENO:phenotypeToTrait	OBA:VT0001569	blood bilirubin amount	semapv:StructuralMatching
+HP:0033480	Hypobilirubinemia	UPHENO:phenotypeToTrait	OBA:VT0001569	blood bilirubin amount	semapv:StructuralMatching
+HP:0034297	Elevated circulating tetracosanoic acid concentration	UPHENO:phenotypeToTrait	OBA:2055801	level of tetracosanoic acid in blood	semapv:StructuralMatching
+HP:0034456	Elevated circulating glutathione concentration	UPHENO:phenotypeToTrait	OBA:VT0010516	blood glutathione amount	semapv:StructuralMatching
+HP:0034618	Abnormal circulating membrane cofactor protein concentration	UPHENO:phenotypeToTrait	OBA:2052306	amount of membrane cofactor protein (human) in blood	semapv:StructuralMatching
+HP:0034619	Decreased circulating membrane cofactor protein concentration	UPHENO:phenotypeToTrait	OBA:2052306	amount of membrane cofactor protein (human) in blood	semapv:StructuralMatching
+HP:0034620	Elevated circulating membrane cofactor protein concentration	UPHENO:phenotypeToTrait	OBA:2052306	amount of membrane cofactor protein (human) in blood	semapv:StructuralMatching
+HP:0034741	Elevated circulating homoarginine concentration	UPHENO:phenotypeToTrait	OBA:2050056	serum homoarginine amount	semapv:StructuralMatching
+HP:0035030	Elevated circulating carnitine concentration	UPHENO:phenotypeToTrait	OBA:VT0003977	blood carnitine amount	semapv:StructuralMatching
+HP:0040084	Abnormal circulating renin concentration	UPHENO:phenotypeToTrait	OBA:VT0003349	blood renin amount	semapv:StructuralMatching
+HP:0040085	Abnormal circulating aldosterone concentration	UPHENO:phenotypeToTrait	OBA:VT0005346	blood aldosterone amount	semapv:StructuralMatching
+HP:0040130	Abnormal circulating iron concentration	UPHENO:phenotypeToTrait	OBA:2050055	serum iron amount	semapv:StructuralMatching
+HP:0040134	Abnormal hepatic iron concentration	UPHENO:phenotypeToTrait	OBA:2045440	hepatic iron amount	semapv:StructuralMatching
+HP:0040171	Decreased serum testosterone concentration	UPHENO:phenotypeToTrait	OBA:VT0005180	blood testosterone amount	semapv:StructuralMatching
+HP:0040176	Abnormal circulating phospholipid concentration	UPHENO:phenotypeToTrait	OBA:VT0006084	blood phospholipid amount	semapv:StructuralMatching
+HP:0040302	Hyperglycerolemia	UPHENO:phenotypeToTrait	OBA:VT0003442	blood glycerol amount	semapv:StructuralMatching
+HP:0041076	Abnormal immunoglobulin level in body fluid	UPHENO:phenotypeToTrait	OBA:2050079	serum immunoglobulin amount	semapv:StructuralMatching
+HP:0041077	Increased immunoglobulin level in body fluid	UPHENO:phenotypeToTrait	OBA:2050079	serum immunoglobulin amount	semapv:StructuralMatching
+HP:0041078	Decreased immunoglobulin level in body fluid	UPHENO:phenotypeToTrait	OBA:2050079	serum immunoglobulin amount	semapv:StructuralMatching
+HP:0045012	Decreased urinary catecholamine concentration	UPHENO:phenotypeToTrait	OBA:VT0010502	urine catecholamine amount	semapv:StructuralMatching
+HP:0045014	Hypolipidemia	UPHENO:phenotypeToTrait	OBA:VT0003949	blood lipid amount	semapv:StructuralMatching
+HP:0100493	Hypoammonemia	UPHENO:phenotypeToTrait	OBA:VT0005308	blood ammonia amount	semapv:StructuralMatching
+HP:0410154	Elevated circulating myristic acid concentration	UPHENO:phenotypeToTrait	OBA:2055797	level of tetradecanoic acid in blood	semapv:StructuralMatching
+HP:0410176	Abnormal circulating glucose-6-phosphate dehydrogenase concentration	UPHENO:phenotypeToTrait	OBA:2041645	level of glucose-6-phosphate 1-dehydrogenase in blood serum	semapv:StructuralMatching
+HP:0410240	Abnormal circulating IgA concentration	UPHENO:phenotypeToTrait	OBA:2050074	serum IgA amount	semapv:StructuralMatching
+HP:0410240	Abnormal circulating IgA concentration	UPHENO:phenotypeToTrait	OBA:VT0001807	blood immunoglobulin A amount	semapv:StructuralMatching
+HP:0410241	Abnormal circulating IgE concentration	UPHENO:phenotypeToTrait	OBA:2050084	serum IgE amount	semapv:StructuralMatching
+HP:0410241	Abnormal circulating IgE concentration	UPHENO:phenotypeToTrait	OBA:VT0002492	blood immunoglobulin E amount	semapv:StructuralMatching
+HP:0410242	Abnormal circulating IgG concentration	UPHENO:phenotypeToTrait	OBA:2050085	serum IgG amount	semapv:StructuralMatching
+HP:0410242	Abnormal circulating IgG concentration	UPHENO:phenotypeToTrait	OBA:VT0001805	blood immunoglobulin G amount	semapv:StructuralMatching
+HP:0410243	Abnormal circulating IgM concentration	UPHENO:phenotypeToTrait	OBA:2050070	serum IgM amount	semapv:StructuralMatching
+HP:0410243	Abnormal circulating IgM concentration	UPHENO:phenotypeToTrait	OBA:VT0010481	blood immunoglobulin M amount	semapv:StructuralMatching
+HP:0500142	Hypolysinemia	UPHENO:phenotypeToTrait	OBA:2020005	lysine in blood amount	semapv:StructuralMatching
+HP:0500163	Hypoornithinemia	UPHENO:phenotypeToTrait	OBA:2055815	level of ornithine in blood	semapv:StructuralMatching
+HP:0500166	Abnormal circulating gastrin concentration	UPHENO:phenotypeToTrait	OBA:2051433	level of gastrin in blood	semapv:StructuralMatching
+HP:0500167	Hypergastrinemia	UPHENO:phenotypeToTrait	OBA:2051433	level of gastrin in blood	semapv:StructuralMatching
+HP:0500181	Hypertaurinemia	UPHENO:phenotypeToTrait	OBA:2045209	level of taurine in blood serum	semapv:StructuralMatching
+HP:0500182	Hypotaurinemia	UPHENO:phenotypeToTrait	OBA:2045209	level of taurine in blood serum	semapv:StructuralMatching
+HP:6000271	Elevated circulating glycylproline concentration	UPHENO:phenotypeToTrait	OBA:2050414	level of Gly-Pro in blood	semapv:StructuralMatching
+HP:6000272	Elevated circulating octanoylcarnitine concentration	UPHENO:phenotypeToTrait	OBA:2055817	level of O-octanoylcarnitine in blood	semapv:StructuralMatching
+HP:6000273	Elevated circulating decanoylcarnitine concentration	UPHENO:phenotypeToTrait	OBA:2055814	level of O-decanoylcarnitine in blood	semapv:StructuralMatching
+HP:6000485	Elevated circulating beta-hCG concentration	UPHENO:phenotypeToTrait	OBA:2040995	level of choriogonadotropin subunit beta in blood serum	semapv:StructuralMatching
+HP:6000485	Elevated circulating beta-hCG concentration	UPHENO:phenotypeToTrait	OBA:2050558	level of choriogonadotropin subunit beta in blood	semapv:StructuralMatching
