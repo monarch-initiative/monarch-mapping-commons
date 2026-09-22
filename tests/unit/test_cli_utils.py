@@ -72,3 +72,18 @@ def test_ensembl_entrez_files_cover_both_dog_assemblies():
         name.startswith("Canis_lupus_familiaris.ROS_Cfam_1.0")
         for name in ENSEMBL_ENTREZ_FILES
     )
+
+
+def test_ensembl_files_exclude_species_with_a_naming_authority():
+    """
+    These files map Ensembl gene IDs to NCBIGene, which only resolves for species whose
+    KG nodes *are* NCBIGene nodes -- the ones with no naming authority. Human and
+    zebrafish genes are HGNC and ZFIN nodes, so such a mapping resolves almost nothing.
+
+    Zebrafish is the case to be careful about: ZFIN curates ENSDARG assignments
+    specifically to correct automated errors made on the Ensembl side, so ENSDARG to
+    ZFIN:ZDB-GENE must come from ZFIN via the Alliance file, never from these.
+    """
+    excluded = ("Homo_sapiens", "Danio_rerio", "Mus_musculus", "Rattus_norvegicus")
+    offenders = [f for f in ENSEMBL_ENTREZ_FILES if f.startswith(excluded)]
+    assert not offenders, f"Species with a naming authority must not be mapped here: {offenders}"
