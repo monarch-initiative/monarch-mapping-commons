@@ -165,7 +165,7 @@ def alliance_mapping() -> DataFrame:
     alliance_df_filtered = preprocess_alliance_df(
         df=alliance_df,
         exclude_taxon=["NCBITaxon:9606", "NCBITaxon:2697049"],
-        include_curie=["MGI:", "RGD:", "FB:", "WB:", "ZFIN:", "Xenbase:"],
+        include_curie=["MGI:", "RGD:", "FB:", "WB:", "ZFIN:", "Xenbase:", "SGD:"],
         include_xref_curie=["ENSEMBL:", "NCBI_Gene:", "UniProtKB:"],
     )
     alliance_mappings = df_mappings(
@@ -218,6 +218,14 @@ def generate_gene_mappings() -> DataFrame:
     alliance_mappings = alliance_mapping()
     print(f"Generated {len(alliance_mappings)} Alliance mappings")
     assert len(alliance_mappings) > 400000
+
+    # Guarded separately because the cost of losing these is invisible here: yeast genes
+    # are SGD nodes in the KG and nothing else in this file maps to them, so dropping
+    # SGD from include_curie silently strands every BioGRID yeast interaction.
+    sgd_mappings = alliance_mappings[alliance_mappings["subject_id"].str.startswith("SGD:")]
+    print(f"  ...of which {len(sgd_mappings)} are SGD mappings")
+    assert len(sgd_mappings) > 10000, f"Expected > 10000 SGD mappings, got {len(sgd_mappings)}"
+
     mapping_dataframes.append(alliance_mappings)
 
     ### HGNC mappings

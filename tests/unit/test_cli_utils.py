@@ -5,9 +5,11 @@ import pandas as pd
 import pytest
 
 from monarch_gene_mapping.cli_utils import (
+    alliance_mapping,
     df_mappings,
     ensembl_entrez_mapping,
     explode_column,
+    preprocess_alliance_df,
     ENSEMBL_ENTREZ_FILES,
     UNIPROT_ID_MAPPING_SELECTED_COLUMNS,
 )
@@ -72,3 +74,38 @@ def test_ensembl_entrez_files_cover_both_dog_assemblies():
         name.startswith("Canis_lupus_familiaris.ROS_Cfam_1.0")
         for name in ENSEMBL_ENTREZ_FILES
     )
+
+
+ALLIANCE_INCLUDE_CURIE = ["MGI:", "RGD:", "FB:", "WB:", "ZFIN:", "Xenbase:", "SGD:"]
+
+
+def _alliance_fixture():
+    return pd.read_csv("tests/resources/alliance_xref_test.tsv", sep="\t", dtype="string", comment="#")
+
+
+def test_alliance_includes_sgd():
+    """
+    Yeast genes are SGD nodes in the KG and the Alliance file is our only source of
+    cross-references to them, so SGD has to be in include_curie. Without it every
+    BioGRID yeast interaction references an NCBIGene node that does not exist.
+    """
+    mapped = preprocess_alliance_df(
+        df=_alliance_fixture(),
+        exclude_taxon=["NCBITaxon:9606", "NCBITaxon:2697049"],
+        include_curie=ALLIANCE_INCLUDE_CURIE,
+        include_xref_curie=["ENSEMBL:", "NCBI_Gene:", "UniProtKB:"],
+    )
+    sgd = mapped[mapped["GeneID"].str.startswith("SGD:")]
+    assert set(sgd["GlobalCrossReferenceID"]) == {"NCBIGene:851585", "NCBIGene:852238"}
+
+
+def test_alliance_drops_self_xrefs_and_excluded_taxa():
+    """SGD:x -> SGD:x carries no information, and human is excluded in favour of HGNC."""
+    mapped = preprocess_alliance_df(
+        df=_alliance_fixture(),
+        exclude_taxon=["NCBITaxon:9606", "NCBITaxon:2697049"],
+        include_curie=ALLIANCE_INCLUDE_CURIE,
+        include_xref_curie=["ENSEMBL:", "NCBI_Gene:", "UniProtKB:"],
+    )
+    assert not (mapped["GeneID"] == mapped["GlobalCrossReferenceID"]).any()
+    assert "NCBITaxon:9606" not in set(mapped["TaxonID"])
