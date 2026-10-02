@@ -1,26 +1,23 @@
-# curie_map:
-#   semapv: https://w3id.org/semapv/vocab/
-#   skos: http://www.w3.org/2004/02/skos/core#
-#   OMOP: https://athena.ohdsi.org/search-terms/terms/
-#   wikidata: https://www.wikidata.org/entity/
-#   orcid: https://orcid.org/
-#   SNOMEDCT: http://identifiers.org/snomedct/
-# license: https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf
-# mapping_set_title: "OMOP concept_id to SNOMED CT code"
 # mapping_set_id: http://w3id.org/sssom/commons/monarch/mappings/omop2snomed.sssom.tsv
-# mapping_set_description: "Identifier bridge from OMOP concept_ids to the SNOMED CT codes they were loaded from. Same semantics as omop2loinc: the OMOP concept_id is a surrogate key for a term taken verbatim from SNOMED CT, so subject and object denote the same concept and the predicate is skos:exactMatch. Scope: the 118 SNOMED-sourced concepts in the BDC priority measurement set. All 118 are standard and valid concepts. Generated automatically by a vocabulary-table join, hence semapv:UnspecifiedMatching. OUTPUT_TIER=open. OPEN TIER ARTIFACT - all label columns are deliberately blank. SNOMED CT description text is UMLS-license-gated and is not openly redistributable; the SCTID codes themselves are referenceable (Mondo distributes SCTIDs). Note that for a SNOMED-sourced OMOP concept the OMOP concept_name IS SNOMED description text, so subject_label is blanked alongside object_label. Regenerate with OUTPUT_TIER=restricted, into a license-gated destination only, to populate labels."
-# comment: "OPEN TIER ARTIFACT - all label columns are deliberately blank. SNOMED CT description text is UMLS-license-gated and is not openly redistributable; the SCTID codes themselves are referenceable (Mondo distributes SCTIDs). Note that for a SNOMED-sourced OMOP concept the OMOP concept_name IS SNOMED description text, so subject_label is blanked alongside object_label. Regenerate with OUTPUT_TIER=restricted, into a license-gated destination only, to populate labels."
-# mapping_set_source: https://athena.ohdsi.org/vocabulary/list
+# mapping_set_title: OMOP concept_id to SNOMED CT code
+# license: https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf
+# mapping_set_description: 'Identifier bridge from OMOP concept_ids to the SNOMED CT codes they were loaded from. Same semantics as omop2loinc: the OMOP concept_id is a surrogate key for a term taken verbatim from SNOMED CT, so subject and object denote the same concept (skos:exactMatch). Scope: the 118 SNOMED-sourced concepts in the BDC priority measurement set; all 118 are standard and valid. LICENSING: the published artifact is the OUTPUT_TIER=open build, in which every label column is blank. SNOMED CT description text is UMLS-license-gated and is not openly redistributable, while the SCTID codes themselves are referenceable (Mondo distributes SCTIDs). Because a SNOMED-sourced OMOP concept_name IS SNOMED description text, subject_label is blanked alongside object_label. A labelled OUTPUT_TIER=restricted build exists for license-gated destinations only. NOTE: as of the mapping date, monarch-kg contains no SNOMED-prefixed nodes under any CURIE form, so this set is forward-looking rather than
+#   immediately redemptive.'
+# mapping_set_source:
+# - https://athena.ohdsi.org/vocabulary/list
 # see_also: https://www.nlm.nih.gov/healthit/snomedct/snomed_licensing.html
-# mapping_date: '2026-09-17'
-# mapping_tool: https://github.com/monarch-initiative/monarch-mapping-commons (scripts/build_omop_mappings.py)
-# mapping_provider: https://athena.ohdsi.org/
-# subject_source_version: "OMOP CDM vocabulary unknown (atlas-demo public instance)"
 # issue_tracker: https://github.com/monarch-initiative/monarch-mapping-commons/issues
-# creator_label: "Monarch Initiative"
+# creator_label: Monarch Initiative
 # creator_id:
-#   - wikidata:Q34645736
-#   - orcid:0000-0002-5316-1399
+# - wikidata:Q34645736
+# curie_map:
+#   OMOP: https://athena.ohdsi.org/search-terms/terms/
+#   SNOMEDCT: http://identifiers.org/snomedct/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+#   wikidata: https://www.wikidata.org/entity/
+# mapping_date: '2026-10-02'
+# subject_source_version: OMOP vocabulary v5.0 27-FEB-25 (https://api.ohdsi.org/WebAPI, source ATLASPROD)
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	comment
 OMOP:606729		skos:exactMatch	SNOMEDCT:1148504005		semapv:UnspecifiedMatching	OMOP domain_id Observation; concept_class_id Observable Entity
 OMOP:607590		skos:exactMatch	SNOMEDCT:1153637007		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
@@ -139,4 +136,3 @@ OMOP:44812008		skos:exactMatch	SNOMEDCT:909691000000102		semapv:UnspecifiedMatch
 OMOP:44812009		skos:exactMatch	SNOMEDCT:909711000000100		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
 OMOP:44813037		skos:exactMatch	SNOMEDCT:513471000000106		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
 OMOP:45765566		skos:exactMatch	SNOMEDCT:702534005		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
-OMOP:45772840		skos:exactMatch	SNOMEDCT:706004007		semapv:UnspecifiedMatching	OMOP domain_id Device; concept_class_id Physical Object

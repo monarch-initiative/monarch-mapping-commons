@@ -1,25 +1,22 @@
-# curie_map:
-#   semapv: https://w3id.org/semapv/vocab/
-#   skos: http://www.w3.org/2004/02/skos/core#
-#   OMOP: https://athena.ohdsi.org/search-terms/terms/
-#   wikidata: https://www.wikidata.org/entity/
-#   orcid: https://orcid.org/
-#   LOINC: https://loinc.org/
-# license: http://creativecommons.org/publicdomain/zero/1.0/
-# mapping_set_title: "OMOP concept_id to LOINC code"
 # mapping_set_id: http://w3id.org/sssom/commons/monarch/mappings/omop2loinc.sssom.tsv
-# mapping_set_description: "Identifier bridge from OMOP concept_ids to the LOINC codes they were loaded from. An OMOP concept_id is a surrogate key OHDSI assigns to a term taken verbatim from a source vocabulary; the CONCEPT row carries that term's native vocabulary_id and concept_code. Subject and object therefore denote the same concept and the predicate is skos:exactMatch. This is deliberately NOT the OHDSI 'Maps to' relation, which links non-standard to standard concepts and is lossy. Scope: the 93 LOINC-sourced concepts in the BDC priority measurement set (326 terms), which the BDC harmonized data model codes in OMOP. 9 of the 93 are LOINC Part (LP) codes rather than LOINC term codes; these are flagged in the comment column. All 93 concepts are valid (OMOP invalid_reason V) as of the resolution date. Generated automatically by a vocabulary-table join, hence semapv:UnspecifiedMatching - no manual curation was performed. LOINC codes and names are freely redistributable under the LOINC license; see https://loinc.org/license/."
-# mapping_set_source: https://athena.ohdsi.org/vocabulary/list
+# mapping_set_title: OMOP concept_id to LOINC code
+# license: https://creativecommons.org/publicdomain/zero/1.0/
+# mapping_set_description: 'Identifier bridge from OMOP concept_ids to the LOINC codes they were loaded from. An OMOP concept_id is a surrogate key OHDSI assigns to a term taken verbatim from a source vocabulary; the CONCEPT row carries that term''s native vocabulary_id and concept_code, so subject and object denote the same concept (skos:exactMatch). This is NOT the OHDSI "Maps to" relation, which links non-standard to standard concepts and is lossy. Scope: the 93 LOINC-sourced concepts in the BDC priority measurement set. The BDC harmonized data model codes clinical measurements in OMOP, but OMOP is not ingested into the Monarch/BDC KG; 84 of these 93 LOINC codes already exist as biolink:ClinicalMeasurement nodes, so this bridge makes that coverage reachable. The 9 that do not are LOINC Part (LP) codes, flagged in the comment column.'
+# mapping_set_source:
+# - https://athena.ohdsi.org/vocabulary/list
 # see_also: https://loinc.org/license/
-# mapping_date: '2026-09-17'
-# mapping_tool: https://github.com/monarch-initiative/monarch-mapping-commons (scripts/build_omop_mappings.py)
-# mapping_provider: https://athena.ohdsi.org/
-# subject_source_version: "OMOP CDM vocabulary unknown (atlas-demo public instance)"
 # issue_tracker: https://github.com/monarch-initiative/monarch-mapping-commons/issues
-# creator_label: "Monarch Initiative"
+# creator_label: Monarch Initiative
 # creator_id:
-#   - wikidata:Q34645736
-#   - orcid:0000-0002-5316-1399
+# - wikidata:Q34645736
+# curie_map:
+#   OMOP: https://athena.ohdsi.org/search-terms/terms/
+#   LOINC: https://loinc.org/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+#   wikidata: https://www.wikidata.org/entity/
+# mapping_date: '2026-10-02'
+# subject_source_version: OMOP vocabulary v5.0 27-FEB-25 (https://api.ohdsi.org/WebAPI, source ATLASPROD)
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	comment
 OMOP:1002430	Ventilatory equivalent for carbon dioxide --W exercise	skos:exactMatch	LOINC:94126-0	Ventilatory equivalent for carbon dioxide --W exercise	semapv:UnspecifiedMatching	OMOP domain_id Measurement
 OMOP:1006339	Post-bronchodilator forced expiratory volume in 1 second (FEV1) attempt	skos:exactMatch	LOINC:LP115582-1	Post-bronchodilator forced expiratory volume in 1 second (FEV1) attempt	semapv:UnspecifiedMatching	LOINC Part code (OMOP concept_class_id 'LOINC Component', standard_concept 'N'), not a LOINC term code; OMOP domain_id Observation
