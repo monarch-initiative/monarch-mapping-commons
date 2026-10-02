@@ -18,7 +18,6 @@ from datetime import date
 from pathlib import Path
 
 import click
-import pprint
 import requests
 import yaml
 
@@ -48,8 +47,6 @@ COLUMNS = [
     "comment",
 ]
 
-pp = pprint.PrettyPrinter(indent=2)
-
 
 def load_text(location: str) -> str:
     """Read a local path or URL."""
@@ -76,8 +73,6 @@ def fetch_concepts(concept_ids: list[int]) -> dict[int, dict]:
         timeout=120,
     )
     res.raise_for_status()
-
-    pp.pprint(res.json())
     return {c["CONCEPT_ID"]: c for c in res.json()}
 
 
