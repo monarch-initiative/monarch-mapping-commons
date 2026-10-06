@@ -1,8 +1,11 @@
 """
 Unit tests for the mapping generation framework
 """
+from pathlib import Path
+
 import pandas as pd
 import pytest
+from sssom.io import parse_file
 
 from monarch_gene_mapping.cli_utils import (
     alliance_mapping,
@@ -146,3 +149,43 @@ def test_ensembl_files_exclude_species_with_a_naming_authority():
     excluded = ("Homo_sapiens", "Danio_rerio", "Mus_musculus", "Rattus_norvegicus")
     offenders = [f for f in ENSEMBL_ENTREZ_FILES if f.startswith(excluded)]
     assert not offenders, f"Species with a naming authority must not be mapped here: {offenders}"
+
+
+# Every CURIE prefix generate_gene_mappings can emit, gathered from the subject/object
+# prefixes and the Alliance include lists in cli_utils. Add to this when a source is added.
+GENE_MAPPING_PREFIXES = [
+    "MGI", "RGD", "FB", "WB", "ZFIN", "Xenbase", "SGD",     # Alliance subjects
+    "ENSEMBL", "NCBIGene", "UniProtKB",                      # Alliance xref targets
+    "HGNC", "OMIM",                                          # HGNC
+    "dictyBase", "PomBase",                                  # gene_info-derived
+]
+
+
+def test_every_emitted_prefix_is_in_the_gene_mappings_prefix_map(tmp_path):
+    """
+    `make mappings` pipes the generated TSV through `sssom parse -m
+    metadata/gene_mappings.sssom.yml --prefix-map-mode merged`, which hard-fails on any
+    prefix missing from the merged prefix map:
+
+        ValueError: {'SGD', 'dictyBase'} are used in the SSSOM mapping set
+        but it does not exist in the prefix map
+
+    That target is skipped under GH_ACTION, so CI cannot catch it and the failure only
+    shows up on Jenkins after merge. This runs the same parse over one row per prefix, so
+    adding a source without declaring its prefix fails here instead.
+    """
+    rows = "\n".join(
+        f"{prefix}:X{i}\tskos:exactMatch\tNCBIGene:{i}\tsemapv:UnspecifiedMatching"
+        for i, prefix in enumerate(GENE_MAPPING_PREFIXES, start=1)
+    )
+    source = tmp_path / "probe.sssom.tsv"
+    source.write_text("subject_id\tpredicate_id\tobject_id\tmapping_justification\n" + rows + "\n")
+
+    metadata = Path("metadata/gene_mappings.sssom.yml")
+    with (tmp_path / "out.sssom.tsv").open("w") as out:
+        parse_file(
+            input_path=str(source),
+            output=out,
+            metadata_path=str(metadata),
+            prefix_map_mode="merged",
+        )
