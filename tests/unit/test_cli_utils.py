@@ -6,11 +6,15 @@ from pathlib import Path
 
 import pandas as pd
 import pytest
+import yaml
+from prefixmaps import load_converter
 from sssom.io import parse_file
 
 from monarch_gene_mapping.cli_utils import (
     alliance_mapping,
     df_mappings,
+    emitted_prefixes,
+    prefixmaps_curie_map,
     dictybase_mapping,
     ensembl_entrez_mapping,
     explode_column,
@@ -195,33 +199,49 @@ def test_emitted_prefixes_are_derivable_from_the_source():
     }
 
 
-def test_every_emitted_prefix_is_in_the_gene_mappings_prefix_map(tmp_path):
+def test_generated_metadata_declares_every_emitted_prefix(tmp_path):
     """
-    `make mappings` pipes the generated TSV through `sssom parse -m
-    metadata/gene_mappings.sssom.yml --prefix-map-mode merged`, which hard-fails on any
-    prefix missing from the merged prefix map:
+    `make mappings` pipes the generated TSV through `sssom parse -m <generated>.yml
+    --prefix-map-mode merged`, which hard-fails on any prefix missing from the merged
+    prefix map:
 
         ValueError: {'SGD', 'dictyBase'} are used in the SSSOM mapping set
         but it does not exist in the prefix map
 
     That target is skipped under GH_ACTION, so CI cannot catch it and the failure only
-    shows up on Jenkins after merge. The prefixes come from cli_utils.py, so adding a
-    source without a declared expansion fails here rather than there.
+    shows up on Jenkins after merge. This builds the metadata the way main.py does, over
+    one row per prefix cli_utils can emit, and runs the real parse against it.
     """
     prefixes = sorted(emitted_curie_prefixes())
-    rows = "\n".join(
-        f"{prefix}:X{i}\tskos:exactMatch\tNCBIGene:{i}\tsemapv:UnspecifiedMatching"
-        for i, prefix in enumerate(prefixes, start=1)
+    frame = pd.DataFrame(
+        {
+            "subject_id": [f"{prefix}:X{i}" for i, prefix in enumerate(prefixes, start=1)],
+            "predicate_id": ["skos:exactMatch"] * len(prefixes),
+            "object_id": [f"NCBIGene:{i}" for i in range(1, len(prefixes) + 1)],
+            "mapping_justification": ["semapv:UnspecifiedMatching"] * len(prefixes),
+        }
     )
+    # every prefix the code can emit must be present in the data-derived set, so the
+    # generated curie_map cannot miss one
+    assert set(emitted_prefixes(frame)) >= set(prefixes)
+
+    metadata = yaml.safe_load(Path("metadata/gene_mappings.sssom.yml").read_text())
+    assert "curie_map" not in metadata, "the curie_map is generated; see main.py"
+    metadata["curie_map"] = prefixmaps_curie_map(
+        emitted_prefixes(frame), load_converter(["merged"])
+    )
+
     source = tmp_path / "probe.sssom.tsv"
-    source.write_text("subject_id\tpredicate_id\tobject_id\tmapping_justification\n" + rows + "\n")
+    frame.to_csv(source, sep="\t", index=False)
+    metadata_path = tmp_path / "probe.sssom.yml"
+    metadata_path.write_text(yaml.safe_dump(metadata, sort_keys=True))
 
     destination = tmp_path / "out.sssom.tsv"
     with destination.open("w") as out:
         parse_file(
             input_path=str(source),
             output=out,
-            metadata_path="metadata/gene_mappings.sssom.yml",
+            metadata_path=str(metadata_path),
             prefix_map_mode="merged",
         )
 
@@ -233,3 +253,24 @@ def test_every_emitted_prefix_is_in_the_gene_mappings_prefix_map(tmp_path):
     curie_map = written[written.index("# curie_map:"):]
     for prefix in prefixes:
         assert f"#   {prefix}:" in curie_map, f"{prefix} missing from the output curie_map"
+
+
+def test_generated_curie_map_is_uniformly_from_the_prefix_map():
+    """
+    The point of generating it is that one convention applies throughout, instead of the
+    mix of registry URIs and human-facing resolver URLs the hand-maintained map had. For
+    every prefix we emit, prefixmaps is identifiers.org.
+    """
+    curie_map = prefixmaps_curie_map(sorted(emitted_curie_prefixes()), load_converter(["merged"]))
+    assert curie_map["OMIM"] == "http://identifiers.org/mim/"
+    off_convention = {p: u for p, u in curie_map.items() if not u.startswith("http://identifiers.org/")}
+    assert not off_convention, off_convention
+
+
+def test_prefixmaps_curie_map_rejects_an_unknown_prefix():
+    """
+    A source emitting a prefix the converter does not know has to fail loudly at
+    generation rather than produce a mapping set sssom will later refuse to parse.
+    """
+    with pytest.raises(ValueError, match="NOTAPREFIX"):
+        prefixmaps_curie_map(["HGNC", "NOTAPREFIX"], load_converter(["merged"]))

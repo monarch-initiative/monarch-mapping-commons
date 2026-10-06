@@ -1,18 +1,27 @@
 from os import sep
-import typer
 import pathlib
+
+import typer
+import yaml
 
 from kghub_downloader.download_utils import download_from_yaml
 # from sssom.context import get_converter
 # from curies import Converter, chain
 from prefixmaps import load_converter
 
-from monarch_gene_mapping.cli_utils import generate_gene_mappings
+from monarch_gene_mapping.cli_utils import (
+    emitted_prefixes,
+    generate_gene_mappings,
+    prefixmaps_curie_map,
+)
 from monarch_gene_mapping.uniprot_idmapping_preprocess import filter_uniprot_id_mapping_file
 
 typer_app = typer.Typer()
 HERE = pathlib.Path(__file__).parent.absolute()
 DOWNLOAD_YAML = f"{HERE}/download.yaml"
+# Descriptive metadata is hand-maintained; the curie_map is generated alongside the
+# TSV so it always matches the converter the CURIEs were standardized against.
+METADATA_YAML = HERE.parent.parent / "metadata" / "gene_mappings.sssom.yml"
 
 # prefixes = {
 #     "FB": "https://flybase.org/reports/",
@@ -81,6 +90,16 @@ def generate(
 
     mappings.to_csv(f"{output_dir}/gene_mappings.sssom.tsv", sep="\t", index=False)
     print(f"\nResults saved in {output_dir}/gene_mappings.sssom.tsv")
+
+    print("\nGenerating SSSOM metadata with a curie_map from the prefix map...\n")
+    metadata = yaml.safe_load(METADATA_YAML.read_text())
+    prefixes = emitted_prefixes(mappings)
+    metadata["curie_map"] = prefixmaps_curie_map(prefixes, converter)
+    metadata_out = f"{output_dir}/gene_mappings.sssom.yml"
+    with open(metadata_out, "w") as handle:
+        yaml.safe_dump(metadata, handle, sort_keys=True, default_flow_style=False)
+    print(f"Declared {len(prefixes)} prefixes: {', '.join(prefixes)}")
+    print(f"Metadata saved in {metadata_out}")
 
 
 if __name__ == "__main__":
