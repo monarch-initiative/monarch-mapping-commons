@@ -167,13 +167,21 @@ def explode_column(df: DataFrame, column: str, delimiter: str) -> DataFrame:
 def preprocess_alliance_df(
     df: DataFrame, exclude_taxon: List, include_curie: List, include_xref_curie: List
 ) -> DataFrame:
-    # Some Alliance xrefs arrive with a bare prefix appended after a pipe, e.g.
-    # "ENSEMBL:ENSXETG00000006415|ENSEMBL". The trailing segment never carries an
-    # identifier -- across the file every one is a bare "RefSeq" or "ENSEMBL" with no
-    # colon -- so this is a malformed single value, not a pipe-delimited list. Keep the
-    # part before the pipe; left alone, sssom rejects the row as an invalid CURIE and
-    # silently drops the mapping. Done before the filters so self-xrefs are still caught.
-    df.loc[:, "GlobalCrossReferenceID"] = df["GlobalCrossReferenceID"].str.split("|").str[0]
+    # Some Alliance xrefs arrive with their own prefix repeated after a pipe, e.g.
+    # "ENSEMBL:ENSXETG00000006415|ENSEMBL". Left alone, sssom rejects the row as an
+    # invalid CURIE and silently drops the mapping.
+    #
+    # Matched as the specific "<PREFIX>:<id>|<PREFIX>" shape rather than by splitting on
+    # the pipe, because that shape is the evidence that this is one malformed value and
+    # not a pipe-delimited list: all 24,026 affected rows in the file have a single pipe
+    # whose trailing segment is exactly the leading prefix, bare, with no identifier. A
+    # genuine multi-value list would not match, and would be left to fail loudly here
+    # rather than quietly losing everything after the first value.
+    #
+    # Applied before the filters so a self-xref arriving with a pipe is still caught.
+    df.loc[:, "GlobalCrossReferenceID"] = df["GlobalCrossReferenceID"].str.replace(
+        r"^([^:|]+):([^|]+)\|\1$", r"\1:\2", regex=True
+    )
 
     taxon_filter = ~df["TaxonID"].isin(exclude_taxon)
     curie_filter = df["GeneID"].str.contains("|".join(include_curie))

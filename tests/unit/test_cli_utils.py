@@ -163,3 +163,31 @@ def test_alliance_strips_piped_prefix_suffix_from_xrefs():
     )
     assert not mapped["GlobalCrossReferenceID"].str.contains(r"\|").any()
     assert "ENSEMBL:ENSXETG00000006415" in set(mapped["GlobalCrossReferenceID"])
+
+
+def test_alliance_leaves_other_piped_shapes_alone():
+    """
+    The strip is deliberately narrow: only "<PREFIX>:<id>|<PREFIX>", where the trailing
+    segment repeats the leading prefix, is treated as one malformed value. Anything else
+    containing a pipe is left as-is so it fails loudly, rather than being truncated to
+    its first value on the assumption that the rest is noise.
+    """
+    probe = pd.DataFrame(
+        {
+            "GeneID": ["MGI:1"] * 3,
+            "GlobalCrossReferenceID": [
+                "ENSEMBL:ENSXETG00000006415|ENSEMBL",  # the real corruption
+                "ENSEMBL:ENSG00000121410|RefSeq",      # trailing prefix does not match
+                "ENSEMBL:ENSG1|ENSEMBL:ENSG2",         # a genuine two-value list
+            ],
+            "TaxonID": ["NCBITaxon:10090"] * 3,
+        }
+    )
+    out = preprocess_alliance_df(
+        df=probe.copy(), exclude_taxon=[], include_curie=["MGI:"], include_xref_curie=["ENSEMBL:"]
+    )
+    assert list(out["GlobalCrossReferenceID"]) == [
+        "ENSEMBL:ENSXETG00000006415",
+        "ENSEMBL:ENSG00000121410|RefSeq",
+        "ENSEMBL:ENSG1|ENSEMBL:ENSG2",
+    ]
