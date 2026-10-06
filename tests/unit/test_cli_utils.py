@@ -191,3 +191,24 @@ def test_alliance_leaves_other_piped_shapes_alone():
         "ENSEMBL:ENSG00000121410|RefSeq",
         "ENSEMBL:ENSG1|ENSEMBL:ENSG2",
     ]
+
+
+def test_alliance_strip_runs_before_the_ncbi_gene_rename():
+    """
+    The strip's backreference needs both halves of "<PREFIX>:<id>|<PREFIX>" to still
+    agree, so it has to run before NCBI_Gene is renamed to NCBIGene. Renaming first turns
+    "NCBI_Gene:123|NCBI_Gene" into "NCBIGene:123|NCBI_Gene", which no longer matches and
+    stays an invalid CURIE. The Alliance file has no such rows today, but NCBI_Gene: is in
+    include_xref_curie, so reordering the two replaces would be a live regression.
+    """
+    probe = pd.DataFrame(
+        {
+            "GeneID": ["MGI:1"],
+            "GlobalCrossReferenceID": ["NCBI_Gene:123|NCBI_Gene"],
+            "TaxonID": ["NCBITaxon:10090"],
+        }
+    )
+    out = preprocess_alliance_df(
+        df=probe, exclude_taxon=[], include_curie=["MGI:"], include_xref_curie=["NCBI_Gene:"]
+    )
+    assert list(out["GlobalCrossReferenceID"]) == ["NCBIGene:123"]

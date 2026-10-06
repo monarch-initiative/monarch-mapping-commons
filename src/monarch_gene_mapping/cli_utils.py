@@ -178,7 +178,10 @@ def preprocess_alliance_df(
     # genuine multi-value list would not match, and would be left to fail loudly here
     # rather than quietly losing everything after the first value.
     #
-    # Applied before the filters so a self-xref arriving with a pipe is still caught.
+    # Must run before the NCBI_Gene -> NCBIGene rename below. The backreference needs both
+    # halves to still agree, so renaming first would leave "NCBI_Gene:123|NCBI_Gene" as
+    # "NCBIGene:123|NCBI_Gene" -- no longer matching, and still an invalid CURIE. No such
+    # rows exist today, but NCBI_Gene: is in include_xref_curie, so the path is live.
     df.loc[:, "GlobalCrossReferenceID"] = df["GlobalCrossReferenceID"].str.replace(
         r"^([^:|]+):([^|]+)\|\1$", r"\1:\2", regex=True
     )
