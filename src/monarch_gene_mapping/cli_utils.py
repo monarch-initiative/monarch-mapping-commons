@@ -227,6 +227,46 @@ def ensembl_entrez_mapping(filename: str) -> DataFrame:
     )
 
 
+# Dictyostelium discoideum AX4. NCBI files dicty genes under this strain taxon; the KG
+# nodes carry the species taxon (44689), but we match on the dictyBase xref rather than
+# taxon, so the difference does not matter here.
+DICTY_TAXON = 352472
+
+
+def dictybase_mapping(gene_info_path: str) -> DataFrame:
+    """
+    Map dictyBase gene IDs to NCBIGene, read out of NCBI's gene_info.
+
+    Dicty has a naming authority but no Alliance cross-reference rows, so the usual
+    route does not reach it. gene_info carries the dictyBase ID directly in its
+    pipe-delimited dbXrefs column, e.g.
+    ``dictyBase:DDB_G0294382|AmoebaDB:DDB_G0294382|VEuPathDB:DDB_G0294382``.
+
+    (The LocusTag column happens to hold the same DDB_G identifier for every dicty gene,
+    but that is a quirk of dicty's naming rather than a declared cross-reference, so the
+    xref is what we read.)
+
+    :param gene_info_path: Path to a gzipped NCBI gene_info file
+    :return: DataFrame of dictyBase-NCBIGene mappings
+    """
+    df = pd.read_csv(
+        gene_info_path, compression="gzip", sep="\t", usecols=["#tax_id", "GeneID", "dbXrefs"]
+    ).rename(columns={"#tax_id": "tax_id"})
+    df = df[df["tax_id"] == DICTY_TAXON].copy()
+    df["dictybase_id"] = df["dbXrefs"].str.extract(r"dictyBase:([^|]+)")
+    df = df.dropna(subset=["dictybase_id"])
+
+    return df_mappings(
+        df=df,
+        subject_column="dictybase_id",
+        object_column="GeneID",
+        subject_curie_prefix="dictyBase:",
+        object_curie_prefix="NCBIGene:",
+        predicate_id="skos:exactMatch",
+        mapping_justification="semapv:UnspecifiedMatching",
+    )
+
+
 def generate_gene_mappings() -> DataFrame:
     mapping_dataframes = []
 
@@ -356,6 +396,14 @@ def generate_gene_mappings() -> DataFrame:
     print(f"Generated {len(uniprot_to_ncbi)} UniProtKB-NCBIGene Gene mappings")
     assert len(uniprot_to_ncbi) > 70000, f"Expected > 70000 mappings for uniprot_to_ncbi, got {len(uniprot_to_ncbi)}"
     mapping_dataframes.append(uniprot_to_ncbi)
+
+    print("\nGenerating dictyBase to NCBI Gene mappings...")
+    dictybase_to_ncbi = dictybase_mapping("data/ncbi/gene_info.gz")
+    print(f"Generated {len(dictybase_to_ncbi)} dictyBase-NCBIGene mappings")
+    assert len(dictybase_to_ncbi) > 11000, (
+        f"Expected > 11000 dictyBase mappings, got {len(dictybase_to_ncbi)}"
+    )
+    mapping_dataframes.append(dictybase_to_ncbi)
 
     print("\nGenerating PomBase to NCBI Gene mappings...")
     ncbigene_df = pd.read_csv("data/ncbi/gene_info.gz", compression="gzip", sep="\t", usecols=["#tax_id", "GeneID", "LocusTag"])
