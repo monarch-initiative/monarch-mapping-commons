@@ -146,3 +146,69 @@ def test_ensembl_files_exclude_species_with_a_naming_authority():
     excluded = ("Homo_sapiens", "Danio_rerio", "Mus_musculus", "Rattus_norvegicus")
     offenders = [f for f in ENSEMBL_ENTREZ_FILES if f.startswith(excluded)]
     assert not offenders, f"Species with a naming authority must not be mapped here: {offenders}"
+
+
+def test_alliance_strips_piped_prefix_suffix_from_xrefs():
+    """
+    Alliance ships some xrefs with a bare prefix appended after a pipe, e.g.
+    "ENSEMBL:ENSXETG00000006415|ENSEMBL". That is a malformed single value rather than a
+    pipe-delimited list -- no segment after the pipe ever carries an identifier -- and
+    left in place sssom rejects the row as an invalid CURIE and drops the mapping.
+    """
+    mapped = preprocess_alliance_df(
+        df=_alliance_fixture(),
+        exclude_taxon=["NCBITaxon:9606", "NCBITaxon:2697049"],
+        include_curie=ALLIANCE_INCLUDE_CURIE,
+        include_xref_curie=["ENSEMBL:", "NCBI_Gene:", "UniProtKB:"],
+    )
+    assert not mapped["GlobalCrossReferenceID"].str.contains(r"\|").any()
+    assert "ENSEMBL:ENSXETG00000006415" in set(mapped["GlobalCrossReferenceID"])
+
+
+def test_alliance_leaves_other_piped_shapes_alone():
+    """
+    The strip is deliberately narrow: only "<PREFIX>:<id>|<PREFIX>", where the trailing
+    segment repeats the leading prefix, is treated as one malformed value. Anything else
+    containing a pipe is left as-is so it fails loudly, rather than being truncated to
+    its first value on the assumption that the rest is noise.
+    """
+    probe = pd.DataFrame(
+        {
+            "GeneID": ["MGI:1"] * 3,
+            "GlobalCrossReferenceID": [
+                "ENSEMBL:ENSXETG00000006415|ENSEMBL",  # the real corruption
+                "ENSEMBL:ENSG00000121410|RefSeq",      # trailing prefix does not match
+                "ENSEMBL:ENSG1|ENSEMBL:ENSG2",         # a genuine two-value list
+            ],
+            "TaxonID": ["NCBITaxon:10090"] * 3,
+        }
+    )
+    out = preprocess_alliance_df(
+        df=probe.copy(), exclude_taxon=[], include_curie=["MGI:"], include_xref_curie=["ENSEMBL:"]
+    )
+    assert list(out["GlobalCrossReferenceID"]) == [
+        "ENSEMBL:ENSXETG00000006415",
+        "ENSEMBL:ENSG00000121410|RefSeq",
+        "ENSEMBL:ENSG1|ENSEMBL:ENSG2",
+    ]
+
+
+def test_alliance_strip_runs_before_the_ncbi_gene_rename():
+    """
+    The strip's backreference needs both halves of "<PREFIX>:<id>|<PREFIX>" to still
+    agree, so it has to run before NCBI_Gene is renamed to NCBIGene. Renaming first turns
+    "NCBI_Gene:123|NCBI_Gene" into "NCBIGene:123|NCBI_Gene", which no longer matches and
+    stays an invalid CURIE. The Alliance file has no such rows today, but NCBI_Gene: is in
+    include_xref_curie, so reordering the two replaces would be a live regression.
+    """
+    probe = pd.DataFrame(
+        {
+            "GeneID": ["MGI:1"],
+            "GlobalCrossReferenceID": ["NCBI_Gene:123|NCBI_Gene"],
+            "TaxonID": ["NCBITaxon:10090"],
+        }
+    )
+    out = preprocess_alliance_df(
+        df=probe, exclude_taxon=[], include_curie=["MGI:"], include_xref_curie=["NCBI_Gene:"]
+    )
+    assert list(out["GlobalCrossReferenceID"]) == ["NCBIGene:123"]

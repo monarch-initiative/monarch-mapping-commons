@@ -167,6 +167,25 @@ def explode_column(df: DataFrame, column: str, delimiter: str) -> DataFrame:
 def preprocess_alliance_df(
     df: DataFrame, exclude_taxon: List, include_curie: List, include_xref_curie: List
 ) -> DataFrame:
+    # Some Alliance xrefs arrive with their own prefix repeated after a pipe, e.g.
+    # "ENSEMBL:ENSXETG00000006415|ENSEMBL". Left alone, sssom rejects the row as an
+    # invalid CURIE and silently drops the mapping.
+    #
+    # Matched as the specific "<PREFIX>:<id>|<PREFIX>" shape rather than by splitting on
+    # the pipe, because that shape is the evidence that this is one malformed value and
+    # not a pipe-delimited list: all 24,026 affected rows in the file have a single pipe
+    # whose trailing segment is exactly the leading prefix, bare, with no identifier. A
+    # genuine multi-value list would not match, and would be left to fail loudly here
+    # rather than quietly losing everything after the first value.
+    #
+    # Must run before the NCBI_Gene -> NCBIGene rename below. The backreference needs both
+    # halves to still agree, so renaming first would leave "NCBI_Gene:123|NCBI_Gene" as
+    # "NCBIGene:123|NCBI_Gene" -- no longer matching, and still an invalid CURIE. No such
+    # rows exist today, but NCBI_Gene: is in include_xref_curie, so the path is live.
+    df.loc[:, "GlobalCrossReferenceID"] = df["GlobalCrossReferenceID"].str.replace(
+        r"^([^:|]+):([^|]+)\|\1$", r"\1:\2", regex=True
+    )
+
     taxon_filter = ~df["TaxonID"].isin(exclude_taxon)
     curie_filter = df["GeneID"].str.contains("|".join(include_curie))
     self_filter = df["GeneID"] != df["GlobalCrossReferenceID"]
