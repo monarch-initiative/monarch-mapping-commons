@@ -7,6 +7,7 @@ import pytest
 from monarch_gene_mapping.cli_utils import (
     alliance_mapping,
     df_mappings,
+    dictybase_mapping,
     ensembl_entrez_mapping,
     explode_column,
     preprocess_alliance_df,
@@ -109,6 +110,27 @@ def test_alliance_drops_self_xrefs_and_excluded_taxa():
     )
     assert not (mapped["GeneID"] == mapped["GlobalCrossReferenceID"]).any()
     assert "NCBITaxon:9606" not in set(mapped["TaxonID"])
+
+
+def test_dictybase_mapping_reads_the_xref_not_the_taxon():
+    """
+    Dicty has a naming authority but no Alliance rows, so gene_info's dbXrefs column is
+    our only route to dictyBase IDs. Rows without a dictyBase xref, and rows for other
+    species, must not produce mappings.
+    """
+    mapped = dictybase_mapping("tests/resources/gene_info_dicty_test.tsv.gz")
+
+    assert len(mapped) == 3
+    assert set(mapped["subject_id"]) == {
+        "dictyBase:DDB_G0294382",
+        "dictyBase:DDB_G0294384",
+        "dictyBase:DDB_G0294386",
+    }
+    assert mapped["object_id"].str.match(r"^NCBIGene:\d+$").all()
+    # the dicty-taxon row whose dbXrefs carry no dictyBase entry is dropped
+    assert "NCBIGene:99999999" not in set(mapped["object_id"])
+    # and the human row is excluded by taxon, despite having a HGNC: xref
+    assert not mapped["subject_id"].str.contains("HGNC").any()
 
 
 def test_ensembl_files_exclude_species_with_a_naming_authority():
