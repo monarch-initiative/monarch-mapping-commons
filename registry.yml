@@ -125,3 +125,16 @@ mapping_set_references:
     mapping_set_group: measurement_mappings
     local_name: loincpart2uberon.sssom.tsv
     mapping_set_confidence: "0.9"
+
+  # OMOP source-vocabulary identity bridges (BDC priority measurement set)
+  - mapping_set_id: http://w3id.org/sssom/commons/monarch/mappings/omop2loinc.sssom.tsv
+    mapping_set_group: measurement_mappings
+    local_name: omop2loinc.sssom.tsv
+    mapping_set_confidence: "0.99"
+
+  # Ships label-blanked: SNOMED CT description text is UMLS-license-gated.
+  # Do not publish a labelled build here.
+  - mapping_set_id: http://w3id.org/sssom/commons/monarch/mappings/omop2snomed.sssom.tsv
+    mapping_set_group: measurement_mappings
+    local_name: omop2snomed.sssom.tsv
+    mapping_set_confidence: "0.99"

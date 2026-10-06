@@ -1,0 +1,142 @@
+# curie_map:
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   OMOP: https://athena.ohdsi.org/search-terms/terms/
+#   wikidata: https://www.wikidata.org/entity/
+#   orcid: https://orcid.org/
+#   SNOMEDCT: http://identifiers.org/snomedct/
+# license: https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf
+# mapping_set_title: "OMOP concept_id to SNOMED CT code"
+# mapping_set_id: http://w3id.org/sssom/commons/monarch/mappings/omop2snomed.sssom.tsv
+# mapping_set_description: "Identifier bridge from OMOP concept_ids to the SNOMED CT codes they were loaded from. Same semantics as omop2loinc: the OMOP concept_id is a surrogate key for a term taken verbatim from SNOMED CT, so subject and object denote the same concept and the predicate is skos:exactMatch. Scope: the 118 SNOMED-sourced concepts in the BDC priority measurement set. All 118 are standard and valid concepts. Generated automatically by a vocabulary-table join, hence semapv:UnspecifiedMatching. OUTPUT_TIER=open. OPEN TIER ARTIFACT - all label columns are deliberately blank. SNOMED CT description text is UMLS-license-gated and is not openly redistributable; the SCTID codes themselves are referenceable (Mondo distributes SCTIDs). Note that for a SNOMED-sourced OMOP concept the OMOP concept_name IS SNOMED description text, so subject_label is blanked alongside object_label. Regenerate with OUTPUT_TIER=restricted, into a license-gated destination only, to populate labels."
+# comment: "OPEN TIER ARTIFACT - all label columns are deliberately blank. SNOMED CT description text is UMLS-license-gated and is not openly redistributable; the SCTID codes themselves are referenceable (Mondo distributes SCTIDs). Note that for a SNOMED-sourced OMOP concept the OMOP concept_name IS SNOMED description text, so subject_label is blanked alongside object_label. Regenerate with OUTPUT_TIER=restricted, into a license-gated destination only, to populate labels."
+# mapping_set_source: https://athena.ohdsi.org/vocabulary/list
+# see_also: https://www.nlm.nih.gov/healthit/snomedct/snomed_licensing.html
+# mapping_date: '2026-09-17'
+# mapping_tool: https://github.com/monarch-initiative/monarch-mapping-commons (scripts/build_omop_mappings.py)
+# mapping_provider: https://athena.ohdsi.org/
+# subject_source_version: "OMOP CDM vocabulary unknown (atlas-demo public instance)"
+# issue_tracker: https://github.com/monarch-initiative/monarch-mapping-commons/issues
+# creator_label: "Monarch Initiative"
+# creator_id:
+#   - wikidata:Q34645736
+#   - orcid:0000-0002-5316-1399
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	comment
+OMOP:606729		skos:exactMatch	SNOMEDCT:1148504005		semapv:UnspecifiedMatching	OMOP domain_id Observation; concept_class_id Observable Entity
+OMOP:607590		skos:exactMatch	SNOMEDCT:1153637007		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:1246795		skos:exactMatch	SNOMEDCT:372461000119109		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4008265		skos:exactMatch	SNOMEDCT:121868005		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4012918		skos:exactMatch	SNOMEDCT:11274001		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4017361		skos:exactMatch	SNOMEDCT:105011006		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4020553		skos:exactMatch	SNOMEDCT:104847001		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4021291		skos:exactMatch	SNOMEDCT:105000003		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4030871		skos:exactMatch	SNOMEDCT:14089001		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4032789		skos:exactMatch	SNOMEDCT:14740000		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4041557		skos:exactMatch	SNOMEDCT:166838001		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4041720		skos:exactMatch	SNOMEDCT:167073006		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4041721		skos:exactMatch	SNOMEDCT:167075004		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4041722		skos:exactMatch	SNOMEDCT:167084004		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4042061		skos:exactMatch	SNOMEDCT:166840006		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4042590		skos:exactMatch	SNOMEDCT:166849007		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4042886		skos:exactMatch	SNOMEDCT:22836000		semapv:UnspecifiedMatching	OMOP domain_id Observation; concept_class_id Substance
+OMOP:4060873		skos:exactMatch	SNOMEDCT:16890009		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4076114		skos:exactMatch	SNOMEDCT:224168007		semapv:UnspecifiedMatching	OMOP domain_id Observation; concept_class_id Observable Entity
+OMOP:4076704		skos:exactMatch	SNOMEDCT:17888004		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4081030		skos:exactMatch	SNOMEDCT:276772001		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4087260		skos:exactMatch	SNOMEDCT:18491006		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4087501		skos:exactMatch	SNOMEDCT:248367009		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4089153		skos:exactMatch	SNOMEDCT:251408004		semapv:UnspecifiedMatching	OMOP domain_id Observation; concept_class_id Observable Entity
+OMOP:4089932		skos:exactMatch	SNOMEDCT:251901004		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4089936		skos:exactMatch	SNOMEDCT:251910007		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4089939		skos:exactMatch	SNOMEDCT:251921003		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4090647		skos:exactMatch	SNOMEDCT:251832002		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4094436		skos:exactMatch	SNOMEDCT:250346004		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4094758		skos:exactMatch	SNOMEDCT:250220000		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Clinical Finding
+OMOP:4097430		skos:exactMatch	SNOMEDCT:25197003		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4097822		skos:exactMatch	SNOMEDCT:27051004		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4099154		skos:exactMatch	SNOMEDCT:27113001		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4108582		skos:exactMatch	SNOMEDCT:250908004		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4111665		skos:exactMatch	SNOMEDCT:284472007		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4112223		skos:exactMatch	SNOMEDCT:18207002		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4136584		skos:exactMatch	SNOMEDCT:412843006		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4138462		skos:exactMatch	SNOMEDCT:426203009		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4144921		skos:exactMatch	SNOMEDCT:307280005		semapv:UnspecifiedMatching	OMOP domain_id Procedure; concept_class_id Procedure
+OMOP:4146380		skos:exactMatch	SNOMEDCT:34608000		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4148587		skos:exactMatch	SNOMEDCT:269819008		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4149519		skos:exactMatch	SNOMEDCT:36048009		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4150326		skos:exactMatch	SNOMEDCT:270927009		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4151358		skos:exactMatch	SNOMEDCT:28317006		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4151768		skos:exactMatch	SNOMEDCT:315609007		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Staging / Scales
+OMOP:4152194		skos:exactMatch	SNOMEDCT:271649006		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4154347		skos:exactMatch	SNOMEDCT:271075006		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4154790		skos:exactMatch	SNOMEDCT:271650006		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4156660		skos:exactMatch	SNOMEDCT:271062006		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4166120		skos:exactMatch	SNOMEDCT:416320009		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4172830		skos:exactMatch	SNOMEDCT:276361009		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4176265		skos:exactMatch	SNOMEDCT:50834005		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4176561		skos:exactMatch	SNOMEDCT:489004		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4184637		skos:exactMatch	SNOMEDCT:43396009		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4188066		skos:exactMatch	SNOMEDCT:46511006		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4189511		skos:exactMatch	SNOMEDCT:414799001		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4190897		skos:exactMatch	SNOMEDCT:390956002		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4196583		skos:exactMatch	SNOMEDCT:313222007		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4208414		skos:exactMatch	SNOMEDCT:55235003		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4209737		skos:exactMatch	SNOMEDCT:56747004		semapv:UnspecifiedMatching	OMOP domain_id Observation; concept_class_id Substance
+OMOP:4213477		skos:exactMatch	SNOMEDCT:80274001		semapv:UnspecifiedMatching	OMOP domain_id Observation; concept_class_id Observable Entity
+OMOP:4217630		skos:exactMatch	SNOMEDCT:8196005		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4230543		skos:exactMatch	SNOMEDCT:359986008		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4231869		skos:exactMatch	SNOMEDCT:90096001		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4241837		skos:exactMatch	SNOMEDCT:59328004		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4245152		skos:exactMatch	SNOMEDCT:59573005		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4248526		skos:exactMatch	SNOMEDCT:407561008		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4252203		skos:exactMatch	SNOMEDCT:408275002		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4253820		skos:exactMatch	SNOMEDCT:74427007		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4254663		skos:exactMatch	SNOMEDCT:74765001		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4263457		skos:exactMatch	SNOMEDCT:45896001		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4265529		skos:exactMatch	SNOMEDCT:36421003		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4267147		skos:exactMatch	SNOMEDCT:61928009		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4273021		skos:exactMatch	SNOMEDCT:365415001		semapv:UnspecifiedMatching	OMOP domain_id Condition; concept_class_id Clinical Finding
+OMOP:4273023		skos:exactMatch	SNOMEDCT:365417009		semapv:UnspecifiedMatching	OMOP domain_id Condition; concept_class_id Clinical Finding
+OMOP:4274406		skos:exactMatch	SNOMEDCT:365411005		semapv:UnspecifiedMatching	OMOP domain_id Condition; concept_class_id Clinical Finding
+OMOP:4282779		skos:exactMatch	SNOMEDCT:66562002		semapv:UnspecifiedMatching	OMOP domain_id Observation; concept_class_id Substance
+OMOP:4284103		skos:exactMatch	SNOMEDCT:67164001		semapv:UnspecifiedMatching	OMOP domain_id Observation; concept_class_id Substance
+OMOP:4298431		skos:exactMatch	SNOMEDCT:767002		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4302666		skos:exactMatch	SNOMEDCT:386725007		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4307029		skos:exactMatch	SNOMEDCT:390917008		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4308122		skos:exactMatch	SNOMEDCT:83411002		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4313591		skos:exactMatch	SNOMEDCT:86290005		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:4315792		skos:exactMatch	SNOMEDCT:9456006		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4331302		skos:exactMatch	SNOMEDCT:22644003		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4332015		skos:exactMatch	SNOMEDCT:22766004		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:4353621		skos:exactMatch	SNOMEDCT:250811004		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:35609491		skos:exactMatch	SNOMEDCT:1082641000000106		semapv:UnspecifiedMatching	OMOP domain_id Observation; concept_class_id Observable Entity
+OMOP:37168599		skos:exactMatch	SNOMEDCT:1285244000		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:37172928		skos:exactMatch	SNOMEDCT:55561000237108		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:37208543		skos:exactMatch	SNOMEDCT:1106461000000104		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:37208635		skos:exactMatch	SNOMEDCT:1107411000000104		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:37208689		skos:exactMatch	SNOMEDCT:1107961000000106		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:37208690		skos:exactMatch	SNOMEDCT:1107971000000104		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:37208698		skos:exactMatch	SNOMEDCT:1108061000000108		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:37208699		skos:exactMatch	SNOMEDCT:1108071000000101		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:37311566		skos:exactMatch	SNOMEDCT:789334009		semapv:UnspecifiedMatching	OMOP domain_id Observation; concept_class_id Observable Entity
+OMOP:37393605		skos:exactMatch	SNOMEDCT:1019221000000107		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:37393850		skos:exactMatch	SNOMEDCT:1022481000000109		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:37393851		skos:exactMatch	SNOMEDCT:1022491000000106		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:37396400		skos:exactMatch	SNOMEDCT:716202005		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Staging / Scales
+OMOP:37397923		skos:exactMatch	SNOMEDCT:993481000000101		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:37397924		skos:exactMatch	SNOMEDCT:993501000000105		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:37398674		skos:exactMatch	SNOMEDCT:1022471000000107		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:40481601		skos:exactMatch	SNOMEDCT:444981005		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:40489833		skos:exactMatch	SNOMEDCT:446841001		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:42872742		skos:exactMatch	SNOMEDCT:450734004		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Staging / Scales
+OMOP:43020498		skos:exactMatch	SNOMEDCT:285191000119103		semapv:UnspecifiedMatching	OMOP domain_id Condition; concept_class_id Disorder
+OMOP:43021859		skos:exactMatch	SNOMEDCT:285201000119100		semapv:UnspecifiedMatching	OMOP domain_id Condition; concept_class_id Disorder
+OMOP:44791053		skos:exactMatch	SNOMEDCT:247801000000106		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:44791466		skos:exactMatch	SNOMEDCT:284031000000106		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:44805650		skos:exactMatch	SNOMEDCT:754931000000106		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:44811087		skos:exactMatch	SNOMEDCT:862851000000106		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:44812008		skos:exactMatch	SNOMEDCT:909691000000102		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:44812009		skos:exactMatch	SNOMEDCT:909711000000100		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Procedure
+OMOP:44813037		skos:exactMatch	SNOMEDCT:513471000000106		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:45765566		skos:exactMatch	SNOMEDCT:702534005		semapv:UnspecifiedMatching	OMOP domain_id Measurement; concept_class_id Observable Entity
+OMOP:45772840		skos:exactMatch	SNOMEDCT:706004007		semapv:UnspecifiedMatching	OMOP domain_id Device; concept_class_id Physical Object
