@@ -40,19 +40,36 @@ UNIPROT_ID_MAPPING_SELECTED_COLUMNS = [
 # Floors sit ~15% below observed counts: low enough to ride out release churn, high
 # enough to catch a file that stopped parsing or a filter that matched nothing.
 ENSEMBL_ENTREZ_FILES = {
-    # Cow. gene2ensembl carries ENSBTAG00070; both files below carry ENSBTAG00000, and
-    # release 113 is kept because 115 drops xrefs for ~1,500 genes that it still has.
+    # Cow. gene2ensembl carries ENSBTAG00070; the files below carry ENSBTAG00000. Older
+    # releases are kept because newer ones drop genes outright: ARS-UCD1.2 (rel 110) is
+    # the only source for ~2,200 genes that 1.3 and 2.0 no longer carry at all.
+    "Bos_taurus.ARS-UCD1.2.110.entrez.tsv.gz": 17000,
     "Bos_taurus.ARS-UCD1.3.113.entrez.tsv.gz": 15000,
     "Bos_taurus.ARS-UCD2.0.115.entrez.tsv.gz": 18000,
-    # Chicken. gene2ensembl carries ENSGALG00010; GRCg6a is the only source of the
-    # retired ENSGALG00000 series, GRCg7b fills gaps in ENSGALG00010.
+    # Chicken. gene2ensembl carries ENSGALG00010. GRCg6a is the only source of the
+    # retired ENSGALG00000 series and GRCg7w the only source of ENSGALG00015; the two
+    # GRCg7b releases fill gaps in ENSGALG00010.
     "Gallus_gallus.GRCg6a.106.entrez.tsv.gz": 13000,
+    "Gallus_gallus_gca000002315v5.GRCg6a.115.entrez.tsv.gz": 17000,
+    "Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.110.entrez.tsv.gz": 17000,
     "Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.115.entrez.tsv.gz": 17000,
-    # Dog. gene2ensembl carries only CanFam3.1 (ENSCAFG00000); this is the sole source
-    # of the ROS_Cfam_1.0 series (ENSCAFG00845) that PantherDB emits.
+    "Gallus_gallus_gca016700215v2.bGalGal1.pat.whiteleghornlayer.GRCg7w.115.entrez.tsv.gz": 17000,
+    # Dog. gene2ensembl carries only CanFam3.1 (ENSCAFG00000). ROS_Cfam_1.0 is the
+    # series PantherDB emits; the breed assemblies are each the sole source of their own.
     "Canis_lupus_familiaris.ROS_Cfam_1.0.115.entrez.tsv.gz": 19000,
-    # Pig and X. tropicalis. Same ID series as gene2ensembl, but better covered here.
+    "Canis_lupus_familiarisboxer.Dog10K_Boxer_Tasha.115.entrez.tsv.gz": 17000,
+    "Canis_lupus_familiarisbasenji.Basenji_breed-1.1.115.entrez.tsv.gz": 13000,
+    "Canis_lupus_familiarisgsd.UU_Cfam_GSD_1.0.115.entrez.tsv.gz": 18000,
+    "Canis_lupus_familiarisgreatdane.UMICH_Zoey_3.1.115.entrez.tsv.gz": 13000,
+    # Pig. gene2ensembl carries ENSSSCG00000, spread over three Sscrofa11.1 releases
+    # because each drops xrefs the others keep; the breed assemblies are sole sources.
+    "Sus_scrofa.Sscrofa11.1.106.entrez.tsv.gz": 15000,
     "Sus_scrofa.Sscrofa11.1.115.entrez.tsv.gz": 14000,
+    "Sus_scrofa.Sscrofa11.1.116.entrez.tsv.gz": 15000,
+    "Sus_scrofa_wuzhishan.minipig_v1.0.115.entrez.tsv.gz": 6000,
+    "Sus_scrofa_tibetan.Tibetan_Pig_v2.115.entrez.tsv.gz": 8000,
+    "Sus_scrofa_largewhite.Large_White_v1.115.entrez.tsv.gz": 10000,
+    # X. tropicalis. Same ID series as gene2ensembl, but better covered here.
     "Xenopus_tropicalis.UCB_Xtro_10.0.115.entrez.tsv.gz": 17000,
 }
 
@@ -303,6 +320,7 @@ def generate_gene_mappings() -> DataFrame:
     assert len(ensembl_to_ncbi) > 70000
     mapping_dataframes.append(ensembl_to_ncbi)
 
+    ensembl_frames = []
     for filename, minimum in ENSEMBL_ENTREZ_FILES.items():
         print(f"\nGenerating NCBIGene to ENSEMBL Gene mappings from {filename}...")
         ensembl_to_ncbi_by_assembly = ensembl_entrez_mapping(f"data/ensembl/{filename}")
@@ -310,7 +328,15 @@ def generate_gene_mappings() -> DataFrame:
         assert len(ensembl_to_ncbi_by_assembly) > minimum, (
             f"Expected > {minimum} mappings from {filename}, got {len(ensembl_to_ncbi_by_assembly)}"
         )
-        mapping_dataframes.append(ensembl_to_ncbi_by_assembly)
+        ensembl_frames.append(ensembl_to_ncbi_by_assembly)
+
+    # A gene keeps its ID across the releases and assemblies it appears in, so the same
+    # pair is emitted by several of these files. Deduplicate the group rather than
+    # writing the repeats out: with 20 files they would be 28% of the Ensembl rows.
+    ensembl_to_ncbi_all = pd.concat(ensembl_frames).drop_duplicates()
+    print(f"\n{len(ensembl_to_ncbi_all)} distinct ENSEMBL-NCBIGene mappings across "
+          f"{len(ENSEMBL_ENTREZ_FILES)} assembly files")
+    mapping_dataframes.append(ensembl_to_ncbi_all)
 
     ### UniProtKB mappings
 
