@@ -267,6 +267,52 @@ def dictybase_mapping(gene_info_path: str) -> DataFrame:
     )
 
 
+def emitted_prefixes(mappings: DataFrame) -> List[str]:
+    """
+    The CURIE prefixes a generated mapping set actually uses on either side.
+
+    Read off the data rather than restated anywhere, so a new source cannot be added
+    without its prefix being accounted for.
+
+    :param mappings: DataFrame with subject_id and object_id columns
+    :return: Sorted list of distinct prefixes
+    """
+    ids = pd.concat([mappings["subject_id"], mappings["object_id"]])
+    return sorted(set(ids.str.extract(r"^([^:]+):", expand=False).dropna()))
+
+
+def prefixmaps_curie_map(prefixes: List[str], converter) -> dict:
+    """
+    Build a curie_map from the converter the CURIEs were standardized against.
+
+    Taking the expansions from the converter rather than hand-maintaining them keeps the
+    published curie_map honest: it says how these identifiers were actually produced, and
+    a prefix added by a new source is covered without anyone editing a YAML file. It also
+    keeps one convention throughout -- prefixmaps is uniformly identifiers.org for the
+    prefixes we emit -- instead of mixing registry URIs with human-facing resolver URLs.
+
+    :param prefixes: Prefixes to declare
+    :param converter: curies.Converter the mapping set was standardized against
+    :return: Mapping of prefix to canonical URI prefix
+    :raises ValueError: If the converter has no expansion for a prefix
+    """
+    curie_map = {}
+    missing = []
+    for prefix in prefixes:
+        uri_prefix = converter.bimap.get(prefix)
+        if uri_prefix is None:
+            missing.append(prefix)
+        else:
+            curie_map[prefix] = uri_prefix
+    if missing:
+        raise ValueError(
+            f"No expansion in the prefix map for {sorted(missing)}. A source is emitting a "
+            f"prefix the converter does not know; either the prefix is wrong or it needs "
+            f"adding upstream in prefixmaps."
+        )
+    return curie_map
+
+
 def generate_gene_mappings() -> DataFrame:
     mapping_dataframes = []
 

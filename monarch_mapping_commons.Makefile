@@ -37,7 +37,9 @@ ifeq ($(GH_ACTION), true)
 else
 	mkdir -p $(MAPPING_DIR) $(TMP_DIR)
 	$(RUN) gene-mapping generate --download --preprocess-uniprot --output-dir $(TMP_DIR)
-	$(RUN) sssom parse $(TMP_DIR)/gene_mappings.sssom.tsv -m $(METADATA_DIR)/gene_mappings.sssom.yml --prefix-map-mode merged -o $@
+	# -m points at the generated metadata, not $(METADATA_DIR): gene-mapping emits a
+	# curie_map derived from the prefix map alongside the TSV. See metadata/gene_mappings.sssom.yml
+	$(RUN) sssom parse $(TMP_DIR)/gene_mappings.sssom.tsv -m $(TMP_DIR)/gene_mappings.sssom.yml --prefix-map-mode merged -o $@
 endif
 
 $(MAPPING_DIR)/hp_mesh.sssom.tsv:
