@@ -167,6 +167,14 @@ def explode_column(df: DataFrame, column: str, delimiter: str) -> DataFrame:
 def preprocess_alliance_df(
     df: DataFrame, exclude_taxon: List, include_curie: List, include_xref_curie: List
 ) -> DataFrame:
+    # Some Alliance xrefs arrive with a bare prefix appended after a pipe, e.g.
+    # "ENSEMBL:ENSXETG00000006415|ENSEMBL". The trailing segment never carries an
+    # identifier -- across the file every one is a bare "RefSeq" or "ENSEMBL" with no
+    # colon -- so this is a malformed single value, not a pipe-delimited list. Keep the
+    # part before the pipe; left alone, sssom rejects the row as an invalid CURIE and
+    # silently drops the mapping. Done before the filters so self-xrefs are still caught.
+    df.loc[:, "GlobalCrossReferenceID"] = df["GlobalCrossReferenceID"].str.split("|").str[0]
+
     taxon_filter = ~df["TaxonID"].isin(exclude_taxon)
     curie_filter = df["GeneID"].str.contains("|".join(include_curie))
     self_filter = df["GeneID"] != df["GlobalCrossReferenceID"]

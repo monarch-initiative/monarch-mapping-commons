@@ -146,3 +146,20 @@ def test_ensembl_files_exclude_species_with_a_naming_authority():
     excluded = ("Homo_sapiens", "Danio_rerio", "Mus_musculus", "Rattus_norvegicus")
     offenders = [f for f in ENSEMBL_ENTREZ_FILES if f.startswith(excluded)]
     assert not offenders, f"Species with a naming authority must not be mapped here: {offenders}"
+
+
+def test_alliance_strips_piped_prefix_suffix_from_xrefs():
+    """
+    Alliance ships some xrefs with a bare prefix appended after a pipe, e.g.
+    "ENSEMBL:ENSXETG00000006415|ENSEMBL". That is a malformed single value rather than a
+    pipe-delimited list -- no segment after the pipe ever carries an identifier -- and
+    left in place sssom rejects the row as an invalid CURIE and drops the mapping.
+    """
+    mapped = preprocess_alliance_df(
+        df=_alliance_fixture(),
+        exclude_taxon=["NCBITaxon:9606", "NCBITaxon:2697049"],
+        include_curie=ALLIANCE_INCLUDE_CURIE,
+        include_xref_curie=["ENSEMBL:", "NCBI_Gene:", "UniProtKB:"],
+    )
+    assert not mapped["GlobalCrossReferenceID"].str.contains(r"\|").any()
+    assert "ENSEMBL:ENSXETG00000006415" in set(mapped["GlobalCrossReferenceID"])
