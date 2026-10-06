@@ -1,6 +1,7 @@
 """
 Unit tests for the mapping generation framework
 """
+import ast
 from pathlib import Path
 
 import pandas as pd
@@ -151,14 +152,47 @@ def test_ensembl_files_exclude_species_with_a_naming_authority():
     assert not offenders, f"Species with a naming authority must not be mapped here: {offenders}"
 
 
-# Every CURIE prefix generate_gene_mappings can emit, gathered from the subject/object
-# prefixes and the Alliance include lists in cli_utils. Add to this when a source is added.
-GENE_MAPPING_PREFIXES = [
-    "MGI", "RGD", "FB", "WB", "ZFIN", "Xenbase", "SGD",     # Alliance subjects
-    "ENSEMBL", "NCBIGene", "UniProtKB",                      # Alliance xref targets
-    "HGNC", "OMIM",                                          # HGNC
-    "dictyBase", "PomBase",                                  # gene_info-derived
-]
+# HGNC is the one prefix not derivable from a *_curie_prefix literal: hgnc_complete_set
+# already carries "HGNC:" inline in its hgnc_id column, so the code never adds it.
+PREFIXES_NOT_SET_IN_CODE = {"HGNC"}
+
+
+def emitted_curie_prefixes() -> set:
+    """
+    Derive, from cli_utils.py itself, every CURIE prefix generate_gene_mappings can emit.
+
+    Read out of the source rather than restated here on purpose: a hand-maintained list
+    passes green when someone adds a source and forgets to update it, which is the exact
+    failure this guards against.
+    """
+    source = Path("src/monarch_gene_mapping/cli_utils.py").read_text()
+    tree = ast.parse(source)
+    prefixes = set(PREFIXES_NOT_SET_IN_CODE)
+    for node in ast.walk(tree):
+        if not isinstance(node, ast.keyword) or node.arg is None:
+            continue
+        # subject_curie_prefix="NCBIGene:" / object_curie_prefix="ENSEMBL:"
+        if node.arg.endswith("curie_prefix") and isinstance(node.value, ast.Constant):
+            if isinstance(node.value.value, str) and node.value.value.endswith(":"):
+                prefixes.add(node.value.value.rstrip(":"))
+        # include_curie=[...] / include_xref_curie=[...]
+        elif node.arg in {"include_curie", "include_xref_curie"} and isinstance(node.value, ast.List):
+            for element in node.value.elts:
+                if isinstance(element, ast.Constant) and isinstance(element.value, str):
+                    prefixes.add(element.value.rstrip(":"))
+    # the Alliance file's NCBI_Gene: is rewritten to NCBIGene: before it is emitted
+    prefixes.discard("NCBI_Gene")
+    prefixes.add("NCBIGene")
+    return prefixes
+
+
+def test_emitted_prefixes_are_derivable_from_the_source():
+    """Sanity-check the derivation itself, so a silent parse failure cannot empty it."""
+    prefixes = emitted_curie_prefixes()
+    assert prefixes == {
+        "MGI", "RGD", "FB", "WB", "ZFIN", "Xenbase", "SGD",
+        "ENSEMBL", "NCBIGene", "UniProtKB", "HGNC", "OMIM", "dictyBase", "PomBase",
+    }
 
 
 def test_every_emitted_prefix_is_in_the_gene_mappings_prefix_map(tmp_path):
@@ -171,21 +205,31 @@ def test_every_emitted_prefix_is_in_the_gene_mappings_prefix_map(tmp_path):
         but it does not exist in the prefix map
 
     That target is skipped under GH_ACTION, so CI cannot catch it and the failure only
-    shows up on Jenkins after merge. This runs the same parse over one row per prefix, so
-    adding a source without declaring its prefix fails here instead.
+    shows up on Jenkins after merge. The prefixes come from cli_utils.py, so adding a
+    source without a declared expansion fails here rather than there.
     """
+    prefixes = sorted(emitted_curie_prefixes())
     rows = "\n".join(
         f"{prefix}:X{i}\tskos:exactMatch\tNCBIGene:{i}\tsemapv:UnspecifiedMatching"
-        for i, prefix in enumerate(GENE_MAPPING_PREFIXES, start=1)
+        for i, prefix in enumerate(prefixes, start=1)
     )
     source = tmp_path / "probe.sssom.tsv"
     source.write_text("subject_id\tpredicate_id\tobject_id\tmapping_justification\n" + rows + "\n")
 
-    metadata = Path("metadata/gene_mappings.sssom.yml")
-    with (tmp_path / "out.sssom.tsv").open("w") as out:
+    destination = tmp_path / "out.sssom.tsv"
+    with destination.open("w") as out:
         parse_file(
             input_path=str(source),
             output=out,
-            metadata_path=str(metadata),
+            metadata_path="metadata/gene_mappings.sssom.yml",
             prefix_map_mode="merged",
         )
+
+    # parse_file drops offending rows rather than raising when strict checking is off, so
+    # assert the rows survived instead of relying on "it did not throw".
+    written = destination.read_text()
+    data_rows = [line for line in written.splitlines() if line and not line.startswith("#")][1:]
+    assert len(data_rows) == len(prefixes)
+    curie_map = written[written.index("# curie_map:"):]
+    for prefix in prefixes:
+        assert f"#   {prefix}:" in curie_map, f"{prefix} missing from the output curie_map"
